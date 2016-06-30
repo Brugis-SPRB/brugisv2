@@ -1,0 +1,37 @@
+
+{
+  "map": {
+    "projection": "EPSG:900913",
+    "units": "m",
+    "center": {"x": 1250000.000000, "y": 5370000.000000, "crs": "EPSG:900913"},
+    "zoom":5,
+    "maxExtent": [
+      -20037508.34, -20037508.34,
+      20037508.34, 20037508.34
+    ],
+    "layers": [{
+      "type": "osm",
+      "title": "Open Street Map",
+      "name": "mapnik",
+            "source": "osm",
+      "group": "background",
+            "visibility": true
+        },{
+        	"type": "wms",
+            "url":["http://svappmavw019:8080/geoserver/URBIS/wms"],
+        	"title": "UrbisFR",
+        	"name": "URBIS:urbisFR",
+            "group": "background",
+            "visibility": false,
+        	"format": "image/png"
+        },{
+        	"type": "wms",
+            "url":["http://svappmavw019:8080/geoserver/URBIS/wms"],
+        	"title": "UrbisFR",
+        	"name": "URBIS:urbisNL",
+            "group": "yolo",
+            "visibility": false,
+        	"format": "image/png"
+        }]
+  }
+}

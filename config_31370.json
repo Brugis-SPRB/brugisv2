@@ -1,0 +1,30 @@
+
+{
+  "map": {
+    "projection": "EPSG:31370",
+    "units": "m",
+    "center": {"x": 150000, "y": 170000, "crs": "EPSG:31370"},
+    "zoom":13,
+    "maxExtent": [
+      10000, 20000,
+      300000, 250000
+    ],
+    "layers": [{
+        	"type": "wms",
+            "url":["http://svappmavw019:8080/geoserver/URBIS/wms"],
+        	"title": "UrbisFR",
+        	"name": "URBIS:urbisFR",
+             "group": "background",
+            "visibility": true,
+        	"format": "image/png"
+        },{
+        	"type": "wms",
+            "url":["http://svappmavw019:8080/geoserver/URBIS/wms"],
+        	"title": "UrbisNL",
+        	"name": "URBIS:urbisNL",
+             "group": "background",
+            "visibility": false,
+        	"format": "image/png"
+        }]
+  }
+}
