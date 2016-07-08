@@ -9,6 +9,7 @@
       10000, 20000,
       300000, 250000
     ],
+
     "layers": [{
         	"type": "wms",
             "url":["http://svappmavw019:8080/geoserver/URBIS/wms"],
@@ -29,7 +30,7 @@
         	"type": "wms",
             "url":["http://svappmavw019:8080/geoserver/wms"],
         	"title": "Affectation détaillée",
-        	"name": "affectation_du_sol",
+        	"name": "Affectation_du_sol",
              "group": "PRAS",
             "visibility": false,
         	"format": "image/png8"
@@ -38,7 +39,15 @@
             "url":["http://svappmavw019:8080/geoserver/wms"],
         	"title": "Galeries commerçantes",
         	"name": "BDU:Galeries_commercantes",
-             "group": "PRAS.detail",
+            "group": "PRAS.details",
+            "visibility": false,
+        	"format": "image/png8"
+        },{
+        	"type": "wms",
+            "url":["http://svappmavw019:8080/geoserver/wms"],
+        	"title": "Galeries commerçantes",
+        	"name": "BDU:Galeries_commercantes",
+            "group": "PRAS.details.lol",
             "visibility": false,
         	"format": "image/png8"
         }]

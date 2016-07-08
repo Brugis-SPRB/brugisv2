@@ -11,7 +11,7 @@
             { "name" : "Toolbar"},
             { "name" : "TOC", "hide" : true },
             { "name" : "BackgroundSwitcher", "hide" : true},
-            { "name" : "Identify", "hide" : true},
+            { "name" : "Identify"},
             { "name" : "Measure", "hide" : true},
             { "name" : "Settings", "hide" : true},
             { "name" : "MousePosition" }
