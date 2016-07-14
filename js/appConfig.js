@@ -8,14 +8,14 @@
 
 module.exports = {
     pages: [{
-        name: "home",
+        name: "map",
         path: "/",
-        component: require('./pages/Home')
-    }, {
-        name: "home2",
-        path: "/main2",
         component: require('./pages/Main')
-    }, {
+    },{
+        name: "infos",
+        path: "/infos",
+        component: require('./pages/Home')
+    },  {
         name: "main",
         path: "/main",
         component: require('./pages/Main')

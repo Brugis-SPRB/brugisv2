@@ -1,5 +1,5 @@
 const assign = require('object-assign');
-
+const {isArray} = require('lodash');
 const {mapConfigHistory, createHistory} = require('../../MapStore2/web/client/utils/MapHistoryUtils');
 
 const map = mapConfigHistory(require('../../MapStore2/web/client/reducers/map'));
@@ -57,6 +57,20 @@ module.exports = (initialState = {defaultState: {}, mobile: {}}, appReducers = {
         return groupNames.map((group) => getGroup(group, lyrs));
     };
 
+    const splitMapAndLayers = function(mapState) {
+        if (mapState && isArray(mapState.layers)) {
+            const groups = LayersUtils.getLayersByGroup(mapState.layers);
+            const real_groups = getLayersByGroup(mapState.layers);
+            return assign({}, mapState, {
+                layers: {
+                    flat: LayersUtils.reorder(groups, mapState.layers),
+                    groups: real_groups
+                }
+            });
+        }
+        return mapState;
+    };
+
     const allReducers = combineReducers(plugins, {
         ...appReducers,
         locale: require('../../MapStore2/web/client/reducers/locale'),
@@ -71,14 +85,10 @@ module.exports = (initialState = {defaultState: {}, mobile: {}}, appReducers = {
     const mobileOverride = initialState.mobile;
 
     const rootReducer = (state, action) => {
-        let mapState = createHistory(LayersUtils.splitMapAndLayers(mapConfig(state, action)));
+        let mapState = createHistory(splitMapAndLayers(mapConfig(state, action)));
+
         let mapLayers = mapState ? layers(mapState.layers, action) : null;
-        let groupsTree = mapLayers.flat ? getLayersByGroup(mapLayers.flat) : null;
-        if (groupsTree) {
-            mapLayers = assign({}, mapLayers, {
-                groups: groupsTree
-            });
-        }
+
         let newState = {
             ...allReducers(state, action),
             map: mapState && mapState.map ? map(mapState.map, action) : null,
@@ -97,6 +107,4 @@ module.exports = (initialState = {defaultState: {}, mobile: {}}, appReducers = {
         return store;
     }
     return DebugUtils.createDebugStore(rootReducer, defaultState);
-
-
 };

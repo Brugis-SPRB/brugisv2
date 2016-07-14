@@ -17,6 +17,11 @@ const SettingsModal = require('../../../MapStore2/web/client/components/TOC/frag
 var GroupTitle = require('../../../MapStore2/web/client/components/TOC/fragments/GroupTitle');
 var GroupChildren = require('../../../MapStore2/web/client/components/TOC/fragments/GroupChildren');
 
+var DefaultGroup = require('../../../MapStore2/web/client/components/TOC/DefaultGroup');
+var DefaultLayer = require('../../../MapStore2/web/client/components/TOC/DefaultLayer');
+
+const Message = require('../../../MapStore2/web/client/plugins/locale/Message');
+
 var GroupOrLayer = React.createClass({
     propTypes: {
         node: React.PropTypes.object,
@@ -103,38 +108,118 @@ var GroupOrLayer = React.createClass({
         return tools;
     },
     render() {
-        let {children, propertiesChangeHandler, onToggle, ...other } = this.props;
+        if (this.props.node) {
+            let {children, propertiesChangeHandler, onToggle, ...other } = this.props;
 
-        if (this.props.node.type === 'group') {
+            if (this.props.node.type === 'group') {
+                return (
+                    <Node className="toc-default-group" sortableStyle={this.props.sortableStyle} style={this.props.style} type="group" {...other}>
+                        { this.props.groupVisibilityCheckbox &&
+                          <VisibilityCheck
+                                    key="visibility"
+                                    checkType={this.props.visibilityCheckType}
+                                    propertiesChangeHandler={this.props.groupPropertiesChangeHandler}/>}
+                        <GroupTitle onClick={this.props.onToggleGroup}/>
+                        <GroupChildren onSort={this.props.onSort} position="collapsible">
+
+                        <DefaultLayer
+                                settingsOptions={this.props.settingsOptions}
+                                onToggle={this.props.onToggle}
+                                onSettings={this.props.onSettings}
+                                propertiesChangeHandler={this.props.propertiesChangeHandler}
+                                hideSettings={this.props.hideSettings}
+                                settings={this.props.settings}
+                                updateSettings={this.props.updateSettings}
+                                updateNode={this.props.updateNode}
+                                visibilityCheckType={this.props.visibilityCheckType}
+                                activateLegendTool={this.props.activateLegendTool}
+                                activateSettingsTool={this.props.activateSettingsTool}
+                                opacityText={<Message msgId="opacity"/>}
+                                saveText={<Message msgId="save"/>}
+                                closeText={<Message msgId="close"/>}/>
+                        </GroupChildren>
+                    </Node>
+                    /*
+                    <DefaultGroup onSort={this.props.onSort}
+                        propertiesChangeHandler={this.props.groupPropertiesChangeHandler}
+                        onToggle={this.props.onToggleGroup}
+                        style={this.props.groupStyle}
+                        groupVisibilityCheckbox={true}
+                        visibilityCheckType={this.props.visibilityCheckType}>
+
+                        <DefaultLayer
+                                settingsOptions={this.props.settingsOptions}
+                                onToggle={this.props.onToggleLayer}
+                                onSettings={this.props.onSettings}
+                                propertiesChangeHandler={this.props.layerPropertiesChangeHandler}
+                                hideSettings={this.props.hideSettings}
+                                settings={this.props.settings}
+                                updateSettings={this.props.updateSettings}
+                                updateNode={this.props.updateNode}
+                                visibilityCheckType={this.props.visibilityCheckType}
+                                activateLegendTool={this.props.activateLegendTool}
+                                activateSettingsTool={this.props.activateSettingsTool}
+                                opacityText={<Message msgId="opacity"/>}
+                                saveText={<Message msgId="save"/>}
+                                closeText={<Message msgId="close"/>}/>
+
+                    </DefaultGroup>
+                    */
+                );
+                /*
+                return (
+                    <Node className="toc-default-group" sortableStyle={this.props.sortableStyle} style={this.props.style} type="group" {...other}>
+                        { this.props.groupVisibilityCheckbox &&
+                          <VisibilityCheck
+                                    key="visibility"
+                                    checkType={this.props.visibilityCheckType}
+                                    propertiesChangeHandler={this.props.groupPropertiesChangeHandler}/>}
+                        <GroupTitle onClick={this.props.onToggleGroup}/>
+                        <GroupChildren onSort={this.props.onSort} position="collapsible">
+                            <Node type="layer" >
+                                <VisibilityCheck checkType={this.props.visibilityCheckType} propertiesChangeHandler={this.props.propertiesChangeHandler}/>
+                                <Title onClick={this.props.onToggle}/>
+                                <InlineSpinner loading={this.props.node.loading}/>
+                                {this.renderCollapsible()}
+                                {this.renderTools()}
+                            </Node>
+                        </GroupChildren>
+                    </Node>
+                );
+                */
+                /*
+                return (
+                    <Node className="toc-default-group" sortableStyle={this.props.sortableStyle} style={this.props.style} type="group" {...other}>
+                        { this.props.groupVisibilityCheckbox &&
+                          <VisibilityCheck
+                                    key="visibility"
+                                    checkType={this.props.visibilityCheckType}
+                                    propertiesChangeHandler={this.props.groupPropertiesChangeHandler}/>}
+                        <GroupTitle onClick={this.props.onToggleGroup}/>
+                        <GroupChildren onSort={this.props.onSort} position="collapsible">
+                            <Node type="layer" >
+                                <VisibilityCheck checkType={this.props.visibilityCheckType} propertiesChangeHandler={this.props.propertiesChangeHandler}/>
+                                <Title onClick={this.props.onToggle}/>
+                                <InlineSpinner loading={this.props.node.loading}/>
+                                {this.renderCollapsible()}
+                                {this.renderTools()}
+                            </Node>
+                        </GroupChildren>
+                    </Node>
+                );
+                */
+            }
             return (
-                <Node className="toc-default-group" sortableStyle={this.props.sortableStyle} style={this.props.style} type="group" {...other}>
-                    { this.props.groupVisibilityCheckbox &&
-                      <VisibilityCheck
-                                key="visibility"
-                                checkType={this.props.visibilityCheckType}
-                                propertiesChangeHandler={this.props.groupPropertiesChangeHandler}/>}
-                    <GroupTitle onClick={this.props.onToggleGroup}/>
-                    <GroupChildren onSort={this.props.onSort} position="collapsible">
-                        <Node type="layer" >
-                            <VisibilityCheck checkType={this.props.visibilityCheckType} propertiesChangeHandler={this.props.propertiesChangeHandler}/>
-                            <Title onClick={this.props.onToggle}/>
-                            <InlineSpinner loading={this.props.node.loading}/>
-                            {this.renderCollapsible()}
-                            {this.renderTools()}
-                        </Node>
-                    </GroupChildren>
+                <Node className="toc-default-layer" sortableStyle={this.props.sortableStyle} style={this.props.style} type="layer" {...other}>
+                    <VisibilityCheck checkType={this.props.visibilityCheckType} propertiesChangeHandler={this.props.propertiesChangeHandler}/>
+                    <Title onClick={this.props.onToggle}/>
+                    <InlineSpinner loading={this.props.node.loading}/>
+                    {this.renderCollapsible()}
+                    {this.renderTools()}
                 </Node>
             );
         }
-        return (
-            <Node className="toc-default-layer" sortableStyle={this.props.sortableStyle} style={this.props.style} type="layer" {...other}>
-                <VisibilityCheck checkType={this.props.visibilityCheckType} propertiesChangeHandler={this.props.propertiesChangeHandler}/>
-                <Title onClick={this.props.onToggle}/>
-                <InlineSpinner loading={this.props.node.loading}/>
-                {this.renderCollapsible()}
-                {this.renderTools()}
-            </Node>
-        );
+        return null;
     }
 });
 
