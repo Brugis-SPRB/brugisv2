@@ -74,7 +74,7 @@ module.exports = (initialState = {defaultState: {}, mobile: {}}, appReducers = {
         let mapState = createHistory(LayersUtils.splitMapAndLayers(mapConfig(state, action)));
         let mapLayers = mapState ? layers(mapState.layers, action) : null;
         let groupsTree = mapLayers.flat ? getLayersByGroup(mapLayers.flat) : null;
-        if( groupsTree ){
+        if (groupsTree) {
             mapLayers = assign({}, mapLayers, {
                 groups: groupsTree
             });

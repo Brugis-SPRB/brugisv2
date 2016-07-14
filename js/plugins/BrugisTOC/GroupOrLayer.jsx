@@ -17,9 +17,6 @@ const SettingsModal = require('../../../MapStore2/web/client/components/TOC/frag
 var GroupTitle = require('../../../MapStore2/web/client/components/TOC/fragments/GroupTitle');
 var GroupChildren = require('../../../MapStore2/web/client/components/TOC/fragments/GroupChildren');
 
-const DefaultGroup = require('../../../MapStore2/web/client/components/TOC/DefaultGroup');
-const DefaultLayer = require('../../../MapStore2/web/client/components/TOC/DefaultLayer');
-
 var GroupOrLayer = React.createClass({
     propTypes: {
         node: React.PropTypes.object,
@@ -27,7 +24,6 @@ var GroupOrLayer = React.createClass({
         groupPropertiesChangeHandler: React.PropTypes.func,
         groupVisibilityCheckbox: React.PropTypes.bool,
         propertiesChangeHandler: React.PropTypes.func,
-        style: React.PropTypes.object,
         onSort: React.PropTypes.func,
         onToggle: React.PropTypes.func,
         onToggleGroup: React.PropTypes.func,
@@ -48,12 +44,11 @@ var GroupOrLayer = React.createClass({
     },
     getDefaultProps() {
         return {
-            style: {},
             sortableStyle: {},
             propertiesChangeHandler: () => {},
             groupPropertiesChangeHandler: () => {},
             onToggle: () => {},
-            onToggleGroup:  () => {},
+            onToggleGroup: () => {},
             onSettings: () => {},
             activateLegendTool: false,
             activateSettingsTool: false,
@@ -120,7 +115,7 @@ var GroupOrLayer = React.createClass({
                                 propertiesChangeHandler={this.props.groupPropertiesChangeHandler}/>}
                     <GroupTitle onClick={this.props.onToggleGroup}/>
                     <GroupChildren onSort={this.props.onSort} position="collapsible">
-                        <Node type="layer" style={{marginLeft: "9px"}}>
+                        <Node type="layer" >
                             <VisibilityCheck checkType={this.props.visibilityCheckType} propertiesChangeHandler={this.props.propertiesChangeHandler}/>
                             <Title onClick={this.props.onToggle}/>
                             <InlineSpinner loading={this.props.node.loading}/>
@@ -130,17 +125,16 @@ var GroupOrLayer = React.createClass({
                     </GroupChildren>
                 </Node>
             );
-        } else {
-            return (
-                <Node className="toc-default-layer" sortableStyle={this.props.sortableStyle} style={this.props.style} type="layer" {...other}>
-                    <VisibilityCheck checkType={this.props.visibilityCheckType} propertiesChangeHandler={this.props.propertiesChangeHandler}/>
-                    <Title onClick={this.props.onToggle}/>
-                    <InlineSpinner loading={this.props.node.loading}/>
-                    {this.renderCollapsible()}
-                    {this.renderTools()}
-                </Node>
-            );
         }
+        return (
+            <Node className="toc-default-layer" sortableStyle={this.props.sortableStyle} style={this.props.style} type="layer" {...other}>
+                <VisibilityCheck checkType={this.props.visibilityCheckType} propertiesChangeHandler={this.props.propertiesChangeHandler}/>
+                <Title onClick={this.props.onToggle}/>
+                <InlineSpinner loading={this.props.node.loading}/>
+                {this.renderCollapsible()}
+                {this.renderTools()}
+            </Node>
+        );
     }
 });
 

@@ -27,7 +27,6 @@ const tocSelector = createSelector(
 
 const TOC = require('../../../MapStore2/web/client/components/TOC/TOC');
 const DefaultGroup = require('../../../MapStore2/web/client/components/TOC/DefaultGroup');
-const DefaultLayer = require('../../../MapStore2/web/client/components/TOC/DefaultLayer');
 const GroupOrLayer = require('./GroupOrLayer');
 
 const LayerTree = React.createClass({

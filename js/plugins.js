@@ -9,9 +9,7 @@
 module.exports = {
     plugins: {
         MapPlugin: require('../MapStore2/web/client/plugins/Map'),
-        //MapPlugin: require('js/components/MapPlugin'),
         HomePlugin: require('../MapStore2/web/client/plugins/Home'),
-        //TOCPlugin: require('../MapStore2/web/client/plugins/TOC'),
         TOCPlugin: require('./plugins/BrugisTOC/TOC'),
         ScaleBoxPlugin: require('../MapStore2/web/client/plugins/ScaleBox'),
         ZoomAllPlugin: require('../MapStore2/web/client/plugins/ZoomAll'),
@@ -20,7 +18,7 @@ module.exports = {
         IdentifyPlugin: require('../MapStore2/web/client/plugins/Identify'),
         MeasurePlugin: require('../MapStore2/web/client/plugins/Measure'),
         SettingsPlugin: require('../MapStore2/web/client/plugins/Settings'),
-        MousePositionPlugin: require('../MapStore2/web/client/plugins/MousePosition'),
+        MousePositionPlugin: require('../MapStore2/web/client/plugins/MousePosition')
     },
     requires: {}
 };

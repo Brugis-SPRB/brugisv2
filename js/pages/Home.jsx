@@ -31,9 +31,6 @@ const Home = (props) => (
                     <Link to="/main">
                         <p><span style={{"color": "#808080", "fontSize": "16px"}}>MAIN</span></p>
                     </Link>
-                    <Link to="/main2">
-                        <p><span style={{"color": "#808080", "fontSize": "16px"}}>MAIN2</span></p>
-                    </Link>
                 </div>
             </div>
             <Debug/>
