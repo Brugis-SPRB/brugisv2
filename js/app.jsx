@@ -28,6 +28,13 @@ const appConfig = {
     appComponent: StandardRouter
 };
 
+var lb72_projection = new ol.proj.Projection({
+     code: 'EPSG:31370',
+     extent: [0,0,300000,300000],
+     units: 'm'
+ });
+ ol.proj.addProjection(lb72_projection);
+
 ReactDOM.render(
     <StandardApp {...appConfig}/>,
     document.getElementById('container')

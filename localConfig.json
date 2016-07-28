@@ -14,7 +14,16 @@
             { "name" : "Identify"},
             { "name" : "Measure", "hide" : true},
             { "name" : "Settings", "hide" : true},
-            { "name" : "MousePosition" }
+            { "name" : "MousePosition" },
+            {
+        	  "name": "Locate",
+        	  "override": {
+        		"Toolbar": {
+        		  "alwaysVisible": true
+        		}
+        	  }
+            },
+            { "name" : "Search" }
          ]
 	}
 }

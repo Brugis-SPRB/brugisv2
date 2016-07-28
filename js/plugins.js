@@ -18,7 +18,9 @@ module.exports = {
         IdentifyPlugin: require('../MapStore2/web/client/plugins/Identify'),
         MeasurePlugin: require('../MapStore2/web/client/plugins/Measure'),
         SettingsPlugin: require('../MapStore2/web/client/plugins/Settings'),
-        MousePositionPlugin: require('../MapStore2/web/client/plugins/MousePosition')
+        MousePositionPlugin: require('../MapStore2/web/client/plugins/MousePosition'),
+        LocatePlugin: require('../MapStore2/web/client/plugins/Locate'),
+        SearchPlugin: require('./plugins/BruSearch/Search'),
     },
     requires: {}
 };
