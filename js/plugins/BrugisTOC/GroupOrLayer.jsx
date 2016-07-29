@@ -17,7 +17,6 @@ const SettingsModal = require('../../../MapStore2/web/client/components/TOC/frag
 var GroupTitle = require('../../../MapStore2/web/client/components/TOC/fragments/GroupTitle');
 var GroupChildren = require('../../../MapStore2/web/client/components/TOC/fragments/GroupChildren');
 
-var DefaultGroup = require('../../../MapStore2/web/client/components/TOC/DefaultGroup');
 var DefaultLayer = require('../../../MapStore2/web/client/components/TOC/DefaultLayer');
 
 const Message = require('../../../MapStore2/web/client/plugins/locale/Message');

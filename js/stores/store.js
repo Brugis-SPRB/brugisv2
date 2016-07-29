@@ -60,11 +60,11 @@ module.exports = (initialState = {defaultState: {}, mobile: {}}, appReducers = {
     const splitMapAndLayers = function(mapState) {
         if (mapState && isArray(mapState.layers)) {
             const groups = LayersUtils.getLayersByGroup(mapState.layers);
-            const real_groups = getLayersByGroup(mapState.layers);
+            const realGroups = getLayersByGroup(mapState.layers);
             return assign({}, mapState, {
                 layers: {
                     flat: LayersUtils.reorder(groups, mapState.layers),
-                    groups: real_groups
+                    groups: realGroups
                 }
             });
         }

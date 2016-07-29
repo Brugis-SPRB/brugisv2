@@ -8,6 +8,7 @@
 const React = require('react');
 const ReactDOM = require('react-dom');
 const {connect} = require('react-redux');
+const ol = require('openlayers');
 
 const StandardApp = require('../MapStore2/web/client/components/app/StandardApp');
 
@@ -28,12 +29,12 @@ const appConfig = {
     appComponent: StandardRouter
 };
 
-var lb72_projection = new ol.proj.Projection({
+var lb72Projection = new ol.proj.Projection({
      code: 'EPSG:31370',
-     extent: [0,0,300000,300000],
+     extent: [0, 0, 300000, 300000],
      units: 'm'
- });
- ol.proj.addProjection(lb72_projection);
+});
+ol.proj.addProjection(lb72Projection);
 
 ReactDOM.render(
     <StandardApp {...appConfig}/>,

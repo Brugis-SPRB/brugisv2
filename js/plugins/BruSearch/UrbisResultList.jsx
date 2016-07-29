@@ -4,7 +4,7 @@ var UrbisResult = require('./UrbisResult');
 const mapUtils = require('../../../MapStore2/web/client/utils/MapUtils');
 const CoordinatesUtils = require('../../../MapStore2/web/client/utils/CoordinatesUtils');
 const I18N = require('../../../MapStore2/web/client/components/I18N/I18N');
-
+const ol = require('openlayers');
 
 let ResultList = React.createClass({
     propTypes: {
@@ -29,7 +29,7 @@ let ResultList = React.createClass({
 
         var newZoom = mapUtils.getZoomForExtent(CoordinatesUtils.reprojectBbox(bbox, "EPSG:31370", this.props.mapConfig.projection), mapSize, 0, 21, null);
 
-        let wgs84center = ol.proj.transform([item.point.x, item.point.y], 'EPSG:31370','EPSG:4326');
+        let wgs84center = ol.proj.transform([item.point.x, item.point.y], 'EPSG:31370', 'EPSG:4326');
 
         var newCenter = {
             x: wgs84center[0],

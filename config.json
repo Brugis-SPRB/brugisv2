@@ -1,5 +1,6 @@
 
 {
+   "version" : 2,
   "map": {
     "projection": "EPSG:31370",
     "units": "m",

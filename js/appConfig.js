@@ -11,11 +11,11 @@ module.exports = {
         name: "map",
         path: "/",
         component: require('./pages/Main')
-    },{
+    }, {
         name: "infos",
         path: "/infos",
         component: require('./pages/Home')
-    },  {
+    }, {
         name: "main",
         path: "/main",
         component: require('./pages/Main')
