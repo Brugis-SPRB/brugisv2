@@ -15,7 +15,9 @@ const assign = require('object-assign');
 const HelpWrapper = require('../../../MapStore2/web/client/plugins/help/HelpWrapper');
 const Message = require('../../../MapStore2/web/client/plugins/locale/Message');
 
-const {textSearch, resultsPurge, resetSearch, addMarker, searchTextChanged} = require("../../../MapStore2/web/client/actions/search");
+const {resultsPurge, resetSearch, addMarker, searchTextChanged} = require("../../../MapStore2/web/client/actions/search");
+
+const {textSearch} = require("./urbis_search_api");
 const {changeMapView} = require('../../../MapStore2/web/client/actions/map');
 
 const searchSelector = createSelector([
@@ -44,11 +46,11 @@ const selector = createSelector([
     results: searchState ? searchState.results : null
 }));
 
-const NominatimResultList = connect(selector, {
+const UrbisResultList = connect(selector, {
     onItemClick: changeMapView,
     addMarker: addMarker,
     afterItemClick: resultsPurge
-})(require('../../../MapStore2/web/client/components/mapcontrols/search/geocoding/NominatimResultList'));
+})(require('./UrbisResultList'));
 
 const ToggleButton = require('../../../MapStore2/web/client/plugins/searchbar/ToggleButton');
 
@@ -92,7 +94,7 @@ const SearchPlugin = connect((state) => ({
                     helpText={<Message msgId="helptexts.searchBar"/>}>
                     {this.getSearchAndToggleButton()}
                 </HelpWrapper>
-                <NominatimResultList key="nominatimresults"/>
+                <UrbisResultList key="nominatimresults"/>
             </span>
         );
     }
