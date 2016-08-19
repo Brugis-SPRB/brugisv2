@@ -23,7 +23,8 @@
         		}
         	  }
             },
-            { "name" : "Search" }
+            { "name" : "Search" },
+            { "name" : "BrugisTree" }
          ]
 	}
 }
