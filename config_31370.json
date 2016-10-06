@@ -25,6 +25,14 @@
              "group": "background",
             "visibility": false,
         	"format": "image/png"
+        },{
+            "type": "vectorTile",
+            "url":["http://svappmavw019:8080/geoserver/URBIS/wms"],
+        	"title": "UrbisNL",
+        	"name": "URBIS:urbisNL",
+             "group": "background",
+            "visibility": false,
+        	"format": "image/png"
         }]
   }
 }

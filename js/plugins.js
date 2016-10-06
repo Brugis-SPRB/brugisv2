@@ -20,8 +20,11 @@ module.exports = {
         SettingsPlugin: require('../MapStore2/web/client/plugins/Settings'),
         MousePositionPlugin: require('../MapStore2/web/client/plugins/MousePosition'),
         LocatePlugin: require('../MapStore2/web/client/plugins/Locate'),
+        ScaleBoxPlugin : require('../MapStore2/web/client/plugins/ScaleBox'),
         SearchPlugin: require('./plugins/BruSearch/Search'),
         BrugisTreePlugin : require('./plugins/BrugisTree/BrugisTree')
     },
-    requires: {}
+    requires: {
+
+    }
 };

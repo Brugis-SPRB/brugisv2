@@ -1,10 +1,4 @@
-/**
- * Copyright 2016, GeoSolutions Sas.
- * All rights reserved.
- *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree.
- */
+
 const React = require('react');
 const ReactDOM = require('react-dom');
 const {connect} = require('react-redux');
@@ -31,9 +25,19 @@ const appConfig = {
 
 var lb72Projection = new ol.proj.Projection({
      code: 'EPSG:31370',
-     extent: [0, 0, 300000, 300000],
-     units: 'm'
+    // extent: [140000.0,160000.0,165088.0,185088.0],
+     extent : [
+       0,0,
+       300000,300000
+   ],
+   /*
+  extent: [
+     17646.52218435664,21958.60926379636,
+     297198.78807110013,245254.64733992796
+   ],*/
+     units: "m"
 });
+
 ol.proj.addProjection(lb72Projection);
 
 ReactDOM.render(
