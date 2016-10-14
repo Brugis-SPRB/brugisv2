@@ -82,14 +82,14 @@
   top:1em; /* (line-height/2) */
   bottom:0;
 }
-
+/*
 input ~ ul {
  display: none;
 }
 input:checked ~ ul {
  display: block;
 }
-
+*/
 input ~ span .glyphicon-triangle-bottom {
  display: none;
 }
