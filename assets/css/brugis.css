@@ -90,6 +90,19 @@ input:checked ~ ul {
  display: block;
 }
 
+input ~ span .glyphicon-triangle-bottom {
+ display: none;
+}
+input:checked ~ span .glyphicon-triangle-right {
+ display: none;
+}
+input:checked ~ span .glyphicon-triangle-bottom {
+ display: inline;
+}
+
+
+
+/*
 input ~ .fa-angle-double-down {
  display: none;
 }
@@ -99,3 +112,4 @@ input:checked ~ .fa-angle-double-right {
 input:checked ~ .fa-angle-double-down {
  display: inline;
 }
+*/

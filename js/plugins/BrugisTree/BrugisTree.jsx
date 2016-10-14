@@ -2,19 +2,24 @@ const React = require('react');
 const assign = require('object-assign');
 const {connect} = require('react-redux');
 const layersIcon = require('../../../MapStore2/web/client/plugins/toolbar/assets/img/layers.png');
-const {loadBrugisTreeConfig} = require('./actions');
+const {loadBrugisTreeConfig, brugisTreeNodeToggle} = require('./actions');
+const LayersUtils = require('../../../MapStore2/web/client/utils/LayersUtils');
+const {addLayer, removeLayer} = require('../../../MapStore2/web/client/actions/layers');
+const {getNode} = require('../../../MapStore2/web/client/reducers/layers');
 
 const BrugisTreeNode = React.createClass({
+
+    propTypes: {
+        toggle: React.PropTypes.func,
+        toggleLayer: React.PropTypes.func
+    },
+
   toggle: function(path) {
       this.props.toggle(path);
   },
 
-  toggleLayer : function(layerName) {
-      this.props.toggleLayer(layerName);
-  },
-
-  shouldComponentUpdate: function(nextProps, nextState) {
-    return ! (nextProps.item ==  this.props.item)
+  toggleLayer : function(item, leaf) {
+    this.props.toggleLayer(item, leaf);
   },
 
   divStyle: function(item) {
@@ -25,8 +30,8 @@ const BrugisTreeNode = React.createClass({
   },
   renderChild: function(item) {
     return (
-        <ul className="tree">
-            <BrugisTreeNode item={item} toggle={this.props.toggle} />
+        <ul className="tree" key={item.name}>
+            <BrugisTreeNode item={item} toggle={this.props.toggle} toggleLayer={this.props.toggleLayer} />
         </ul>
     )
   },
@@ -36,12 +41,13 @@ const BrugisTreeNode = React.createClass({
     var collapsed = ! item.expanded;
     var text      = disabled ? "" : collapsed ? "+" : "-";
 
-    return (<li className="tree">
-               <input type="checkbox" disabled={disabled} onClick={this.toggleLayer.bind(this, item.path)}  style={this.divStyle(item)}></input>
-                   <i className="fa fa-angle-double-right">+</i>
-                   <i className="fa fa-angle-double-down">-</i>
+    return (<li className="tree" key={item.name}>
+               <input type="checkbox" onClick={this.toggleLayer.bind(this, item, disabled)}  style={this.divStyle(item)}></input>
+               { !disabled ? <span><i className="glyphicon glyphicon-triangle-right"></i>
+               <i className="glyphicon glyphicon-triangle-bottom"></i></span> : false }
+
                 <label onClick={this.toggle.bind(this, item.path)}>{item.title}</label>
-          {(item.expanded && item.childNodes) ? item.childNodes.map(this.renderChild, this) : false }
+          {(item.checked && item.childNodes) ? item.childNodes.map(this.renderChild, this) : false }
       </li>)
   }
 });
@@ -50,6 +56,9 @@ const BrugisTree = React.createClass({
     propTypes: {
         expanded: React.PropTypes.bool,
         loadTreeData: React.PropTypes.func,
+        onLayerAdd: React.PropTypes.func,
+        onLayerRemove: React.PropTypes.func,
+        onLayerToggle: React.PropTypes.func,
         treenodes : React.PropTypes.array
     },
     getDefaultProps() {
@@ -60,13 +69,61 @@ const BrugisTree = React.createClass({
         };
     },
     componentWillMount() {
-        this.props.loadTreeData();
+
+        if(!this.props.treenodes) {
+            console.log("Loading data");
+            this.props.loadTreeData();
+        } else {
+            console.log("AlreadyLoaded");
+        }
     },
     toggle: function(path) {
         console.log(path);
     },
-    toggleLayer: function(path) {
-        console.log(path);
+    toggleLayer: function(item, leaf) {
+        this.props.onLayerToggle(item);
+        if(leaf){
+            if(item && item.checked){
+                this.removeLayer(item);
+            } else {
+                this.addLayer(item);
+            }
+        }
+    },
+    removeLayer(item) {
+
+        this.props.onLayerRemove({
+            type: "wms",
+            url: "http://svappmavw019:8080/geoserver/wms",
+            visibility: true,
+            name: item.name,
+            title: item.title || item.name,
+            group: "mdr",
+            //boundingBox: this.props.record.boundingBox,
+            //links: this.getLinks(this.props.record)
+        });
+    },
+    addLayer(item) {
+        //let url = removeURLParameter(wms.url, "request");
+        //url = removeURLParameter(url, "layer");
+
+        this.props.onLayerAdd({
+            type: "wms",
+            url: "http://svappmavw019:8080/geoserver/wms",
+            visibility: true,
+            name: item.name,
+            title: item.title || item.name,
+            group: "mdr",
+            //boundingBox: this.props.record.boundingBox,
+            //links: this.getLinks(this.props.record)
+        });
+        /*
+        if (this.props.record.boundingBox) {
+            let extent = this.props.record.boundingBox.extent;
+            let crs = this.props.record.boundingBox.crs;
+            this.props.onZoomToExtent(extent, crs);
+        }
+        */
     },
     render() {
         if (!this.props.treenodes) {
@@ -80,7 +137,7 @@ const BrugisTree = React.createClass({
             <ul className="tree">
                 {
                     this.props.treenodes.map((node) => {
-                        return <BrugisTreeNode item={node} toggle={this.props.toggle} toggleLayer={this.props.toggleLayer} />;
+                        return <BrugisTreeNode item={node} toggle={this.toggle} toggleLayer={this.toggleLayer} key={node.name}/>;
                     })
                 }
             </ul>
@@ -92,7 +149,10 @@ const BrugisTree = React.createClass({
 const BrugisTreePlugin = connect((state) => ({
     treenodes: state && state.brugisTree && state.brugisTree.treenodes
 }), {
-    loadTreeData: loadBrugisTreeConfig
+    loadTreeData: loadBrugisTreeConfig,
+    onLayerAdd: addLayer,
+    onLayerRemove: removeLayer,
+    onLayerToggle: brugisTreeNodeToggle
 })(BrugisTree);
 
 module.exports = {

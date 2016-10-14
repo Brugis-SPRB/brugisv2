@@ -1,5 +1,5 @@
 
-var {BRUGIS_TREE_LOAD_START, BRUGIS_TREE_LOADED, BRUGIS_TREE_LOAD_ERROR} = require('./actions');
+var {BRUGIS_TREE_LOAD_START, BRUGIS_TREE_LOADED, BRUGIS_TREE_LOAD_ERROR, BRUGIS_TREE_NODE_TOGGLE} = require('./actions');
 const assign = require('object-assign');
 
 function wmsWalker(layers) {
@@ -21,6 +21,23 @@ function wmsWalker(layers) {
     }
 }
 
+function toggleNode(nodes, node){
+    if(typeof(nodes) == "undefined" || node == null || node.length == 0) {
+        return;
+    } else {
+        for(var i=0; i < nodes.length; i++){
+            if(nodes[i].name == node.name){
+                if(nodes[i].checked){
+                    nodes[i].checked = false;
+                } else {
+                    nodes[i].checked = true;
+                }
+            }
+            toggleNode(nodes[i].childNodes);
+        }
+    }
+}
+
 function brugisTree(state = null, action) {
     switch (action.type) {
         case BRUGIS_TREE_LOAD_START:
@@ -32,6 +49,13 @@ function brugisTree(state = null, action) {
 
             return assign({}, state, {
                 treenodes : nodes
+            });
+        case BRUGIS_TREE_NODE_TOGGLE:
+            let node = action.node;
+            let newtreenodes = (state.treenodes || []).concat();
+            toggleNode(newtreenodes,node);
+            return assign({}, state, {
+                treenodes : newtreenodes
             });
         case BRUGIS_TREE_LOAD_ERROR:
             return state;

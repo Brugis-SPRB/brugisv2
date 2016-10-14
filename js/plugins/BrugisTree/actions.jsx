@@ -5,6 +5,7 @@ let localXmlTree = 'wmsaatl.xml';
 const BRUGIS_TREE_LOAD_START = 'BRUGIS_TREE_LOAD_START';
 const BRUGIS_TREE_LOADED = 'BRUGIS_TREE_LOADED';
 const BRUGIS_TREE_LOAD_ERROR = 'BRUGIS_TREE_LOAD_ERROR';
+const BRUGIS_TREE_NODE_TOGGLE = 'BRUGIS_TREE_NODE_TOGGLE';
 
 function brugisTreeLoaded(info) {
     return {
@@ -21,6 +22,12 @@ function brugisTreeLoadError(error) {
 function brugisTreeLoadStart() {
     return {
         type: BRUGIS_TREE_LOAD_START
+    };
+}
+function brugisTreeNodeToggle(node) {
+    return {
+        type: BRUGIS_TREE_NODE_TOGGLE,
+        node
     };
 }
 
@@ -51,5 +58,7 @@ module.exports = {
     BRUGIS_TREE_LOAD_START,
     BRUGIS_TREE_LOADED,
     BRUGIS_TREE_LOAD_ERROR,
-    loadBrugisTreeConfig
+    BRUGIS_TREE_NODE_TOGGLE,
+    loadBrugisTreeConfig,
+    brugisTreeNodeToggle
 };

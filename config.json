@@ -18,6 +18,7 @@
     },
 
     "layers": [{
+            "id" : 1,
         	"type": "wms",
             "url":["http://svappmavw019:8080/geoserver/URBIS/wms"],
         	"title": "UrbisFR",
@@ -27,6 +28,7 @@
         	"format": "image/png8",
             "tiled" : true
         },{
+            "id" : 2,
         	"type": "wms",
             "url":["http://svappmavw019:8080/geoserver/URBIS/wms"],
         	"title": "UrbisNL",
@@ -36,6 +38,7 @@
             "tiled" : true,
         	"format": "image/png8"
         },{
+            "id" : 3,
         	"type": "wms",
             "url":["http://svappmavw019:8080/geoserver/URBIS/wms"],
         	"title": "UrbisNL Gray",
@@ -45,6 +48,7 @@
             "tiled" : true,
         	"format": "image/png8"
         },{
+            "id" : 4,
         	"type": "wms",
             "url":["http://svappmavw019:8080/geoserver/URBIS/wms"],
         	"title": "UrbisFR Gray",
@@ -54,14 +58,6 @@
             "tiled" : true,
         	"format": "image/png8"
         },{
-            "type": "vectortile",
-            "url":" http://svappmavw019:8080/geoserver/gwc/service/tms/1.0.0/",
-        	"title": "Troll",
-        	"name": "test:lc",
-             "group": "BDU PRAS",
-            "visibility": false,
-        	"format": "application/x-protobuf"
-        },{
         	"type": "wms",
             "url":["http://svappmavw019:8080/geoserver/wms"],
         	"title": "Affectation détaillée",
@@ -69,15 +65,6 @@
              "group": "BDU PRAS",
             "visibility": false,
             "tiled" : true,
-        	"format": "image/png8"
-        },{
-        	"type": "wms",
-            "url":["http://svappmavw019:8080/geoserver/wms"],
-        	"title": "Affectation détaillée 2",
-        	"name": "Affectation_du_sol",
-             "group": "BDU PRAS",
-            "visibility": false,
-            "tiled" : false,
         	"format": "image/png8"
         },{
         	"type": "wms",
@@ -108,30 +95,12 @@
         	"format": "image/png8"
         },{
         	"type": "wms",
-            "url":["http://svappmavw019:8080/geoserver/URBIS/wms"],
-        	"title": "UrbisFR Gray1",
-        	"name": "URBIS:urbisFR",
-            "group": "BDU PRAS.Bureaux",
-            "visibility": false,
-            "tiled" : true,
-        	"format": "image/png8"
-        },{
-        	"type": "wms",
             "url":["http://svappmavw019:8080/geoserver/wms"],
         	"title": "Limite communales",
         	"name": "BDU:Limites_communales",
             "group": "BDU PRAS.Bureaux",
             "visibility": false,
             "tiled" : true,
-        	"format": "image/png8"
-        },{
-        	"type": "wms",
-            "url":["http://svappmavw019:8080/geoserver/wms"],
-        	"title": "Limite communales",
-        	"name": "BDU:Limites_communales",
-            "group": "BDU PRAS.Bureaux",
-            "visibility": false,
-            "tiled" : false,
         	"format": "image/png8"
         }]
   }

@@ -10,7 +10,8 @@ module.exports = {
     plugins: {
         MapPlugin: require('../MapStore2/web/client/plugins/Map'),
         HomePlugin: require('../MapStore2/web/client/plugins/Home'),
-        TOCPlugin: require('./plugins/BrugisTOC/TOC'),
+        //TOCPlugin: require('./plugins/BrugisTOC/TOC'),
+        TOCPlugin: require('../MapStore2/web/client/plugins/TOC'),
         ScaleBoxPlugin: require('../MapStore2/web/client/plugins/ScaleBox'),
         ZoomAllPlugin: require('../MapStore2/web/client/plugins/ZoomAll'),
         ToolbarPlugin: require('../MapStore2/web/client/plugins/Toolbar'),
