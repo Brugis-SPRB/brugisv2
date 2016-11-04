@@ -1,5 +1,6 @@
 
 var {BRUGIS_TREE_LOAD_START, BRUGIS_TREE_LOADED, BRUGIS_TREE_LOAD_ERROR, BRUGIS_TREE_NODE_TOGGLE} = require('./actions');
+var {REMOVE_LAYER} = require('../../../MapStore2/web/client/actions/layers');
 const assign = require('object-assign');
 
 function wmsWalker(layers) {
@@ -77,6 +78,5 @@ function brugisTree(state = null, action) {
             return state;
     }
 }
-
 
 module.exports = brugisTree;

@@ -26,6 +26,7 @@
              "group": "background",
             "visibility": true,
         	"format": "image/png8",
+            "origin" : [140000.0,160000.0],
             "tiled" : true
         },{
             "id" : 2,
@@ -36,6 +37,7 @@
              "group": "background",
             "visibility": false,
             "tiled" : true,
+            "origin" : [140000.0,160000.0],
         	"format": "image/png8"
         },{
             "id" : 3,
@@ -45,6 +47,7 @@
         	"name": "URBIS:urbisNLGray",
              "group": "background",
             "visibility": false,
+            "origin" : [140000.0,160000.0],
             "tiled" : true,
         	"format": "image/png8"
         },{
@@ -53,53 +56,9 @@
             "url":["http://svappmavw019:8080/geoserver/URBIS/wms"],
         	"title": "UrbisFR Gray",
         	"name": "URBIS:urbisFRGray",
-             "group": "background",
+             "group": "test",
             "visibility": false,
-            "tiled" : true,
-        	"format": "image/png8"
-        },{
-        	"type": "wms",
-            "url":["http://svappmavw019:8080/geoserver/wms"],
-        	"title": "Affectation détaillée",
-        	"name": "Affectation_du_sol",
-             "group": "BDU PRAS",
-            "visibility": false,
-            "tiled" : true,
-        	"format": "image/png8"
-        },{
-        	"type": "wms",
-            "url":["http://svappmavw019:8080/geoserver/wms"],
-        	"title": "Galeries commerçantes",
-        	"name": "BDU:Galeries_commercantes",
-            "group": "BDU PRAS.Details",
-            "visibility": false,
-            "tiled" : true,
-        	"format": "image/png8"
-        },{
-        	"type": "wms",
-            "url":["http://svappmavw019:8080/geoserver/wms"],
-        	"title": "Parking de transit",
-        	"name": "BDU:Parking_de_transit",
-            "group": "BDU PRAS.Details",
-            "visibility": false,
-            "tiled" : true,
-        	"format": "image/png8"
-        },{
-        	"type": "wms",
-            "url":["http://svappmavw019:8080/geoserver/wms"],
-        	"title": "Maille",
-        	"name": "BDU:Maille",
-            "group": "BDU PRAS.Bureaux",
-            "visibility": false,
-            "tiled" : true,
-        	"format": "image/png8"
-        },{
-        	"type": "wms",
-            "url":["http://svappmavw019:8080/geoserver/wms"],
-        	"title": "Limite communales",
-        	"name": "BDU:Limites_communales",
-            "group": "BDU PRAS.Bureaux",
-            "visibility": false,
+            "origin" : [140000.0,160000.0],
             "tiled" : true,
         	"format": "image/png8"
         }]
