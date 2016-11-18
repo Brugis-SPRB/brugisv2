@@ -46,19 +46,21 @@ const BrugisTreeNode = React.createClass({
     var layer = this.props.layers.find((elem) => {
         return elem.id == item.id;
     });
+    /*
     if(layer){
         if(checked) {
             //we are all good sir!
         } else {
-            this.toggleLayer.bind(this, item, disabled);
+            this.toggleLayer(this, item, disabled);
         }
     } else {
         if(checked) {
-            this.toggleLayer.bind(this, item, disabled);
+            this.toggleLayer(this, item, disabled);
         } else {
             //we are all good sir!
         }
     }
+    */
 
     return (<li className="tree">
                <input type="checkbox" checked={ item.checked ? true : false} onChange={this.toggleLayer.bind(this, item, disabled)}  style={this.divStyle(item)}></input>

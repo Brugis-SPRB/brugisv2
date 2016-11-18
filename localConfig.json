@@ -14,6 +14,18 @@
             },
             { "name" : "Home", "hide" : true},
             {
+                "name" : "BrugisTree",
+                 "hide" : true,
+                 "override":{
+                   "DrawerMenu":{
+                      "glyph":"1-map",
+                      "buttonConfig":{
+                         "buttonClassName":"square-button no-border"
+                      }
+                   }
+                }
+            },
+            {
                "name":"TOC",
                "cfg":{
                   "visibilityCheckType":"glyph",
@@ -117,7 +129,12 @@
                   "glyph":"1-stilo",
                   "buttonStyle":"primary",
                   "buttonClassName":"square-button",
-                  "singleSection":true
+                  "singleSection":true,
+                  "menuOptions" : {
+                      "show" : false,
+                      "overlapMap" : false,
+                      "width" : 300
+                  }
                }
             },
             {
@@ -182,18 +199,6 @@
                "cfg":{
                   "className":"square-button"
                }
-            },
-            {
-                "name" : "BrugisTree",
-                 "hide" : true,
-                 "override":{
-                   "DrawerMenu":{
-                      "glyph":"1-map",
-                      "buttonConfig":{
-                         "buttonClassName":"square-button no-border"
-                      }
-                   }
-                }
             }
          ]
 	}

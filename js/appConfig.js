@@ -22,7 +22,22 @@ module.exports = {
     }],
     pluginsDef: require('./plugins.js'),
     initialState: {
-        defaultState: {},
-        mobile: {}
+        defaultState: {
+            mousePosition: {enabled: false},
+            controls: {
+                toolbar: {
+                    active: null,
+                    expanded: false
+                },
+                drawer: {
+                    enabled: true,
+                    menu: "4"
+                }
+            }
+        },
+        mobile: {
+            mapInfo: {enabled: true, infoFormat: 'text/html' },
+            mousePosition: {enabled: true, crs: "EPSG:4326", showCenter: true}
+        }
     }
 };

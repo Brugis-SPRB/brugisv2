@@ -18,7 +18,7 @@
     },
 
     "layers": [{
-            "id" : 1,
+
         	"type": "wms",
             "url":["http://svappmavw019:8080/geoserver/URBIS/wms"],
         	"title": "UrbisFR",
@@ -29,7 +29,7 @@
             "origin" : [140000.0,160000.0],
             "tiled" : true
         },{
-            "id" : 2,
+
         	"type": "wms",
             "url":["http://svappmavw019:8080/geoserver/URBIS/wms"],
         	"title": "UrbisNL",
@@ -40,7 +40,7 @@
             "origin" : [140000.0,160000.0],
         	"format": "image/png8"
         },{
-            "id" : 3,
+
         	"type": "wms",
             "url":["http://svappmavw019:8080/geoserver/URBIS/wms"],
         	"title": "UrbisNL Gray",
@@ -51,7 +51,7 @@
             "tiled" : true,
         	"format": "image/png8"
         },{
-            "id" : 4,
+            
         	"type": "wms",
             "url":["http://svappmavw019:8080/geoserver/URBIS/wms"],
         	"title": "UrbisFR Gray",
