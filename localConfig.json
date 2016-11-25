@@ -65,7 +65,48 @@
                }
             },
             {
-               "name":"Identify"
+               "name":"Identify",
+
+               "cfg":{
+                  "panelClassName":"modal-dialog info-panel modal-content",
+                  "headerClassName":"modal-header",
+                  "bodyClassName":"modal-body info-wrap",
+                  "asPanel":false,
+                  "headerGlyph":"",
+                  "glyph":"map-marker",
+                  "className":"square-button",
+                  "closeGlyph":"1-close",
+                  "wrapRevGeocode":false,
+                  "enableRevGeocode":true,
+                  "viewerOptions":{
+
+                     "headerOptions":{
+                        "useButtons":true
+                     },
+                     "containerProps":{
+                        "continuous":false
+                     },
+                     "collapsible":false
+                  },
+                  "excludeOptions":[
+                     "links",
+                     "allowedSRS",
+                     "title",
+                     "type",
+                     "visibility",
+                     "params",
+                     "legend",
+                     "statistics",
+                     "columnDefs",
+                     "advancedFilter",
+                     "boundingBox",
+                     "capabilities",
+                     "describeCoverage",
+                     "describeLayer",
+                     "loading",
+                     "origin"
+                  ]
+               }
             },
             {
                "name":"Measure",
@@ -147,8 +188,8 @@
                   "wrapWithPanel":false,
                   "closeGlyph":"1-close",
                   "initialCatalogURL":{
-                     "csw":"http://demo.geo-solutions.it/geoserver/csw",
-                     "wms":"http://demo.geo-solutions.it/geoserver/wms"
+                     "csw":"http://geobru.irisnet.be/geonetwork/srv/fr/csw",
+                     "wms":"http://www.mybrugis.irisnet.be/geoserver/wms"
                   }
                }
             },

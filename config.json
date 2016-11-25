@@ -27,6 +27,7 @@
             "visibility": true,
         	"format": "image/png8",
             "origin" : [140000.0,160000.0],
+            "thumbURL" : "assets/img/urbis_color.png",
             "tiled" : true
         },{
 
@@ -38,6 +39,7 @@
             "visibility": false,
             "tiled" : true,
             "origin" : [140000.0,160000.0],
+            "thumbURL" : "assets/img/urbis_color.png",
         	"format": "image/png8"
         },{
 
@@ -49,17 +51,20 @@
             "visibility": false,
             "origin" : [140000.0,160000.0],
             "tiled" : true,
+            "thumbURL" : "assets/img/urbis_gray.png",
         	"format": "image/png8"
         },{
-            
+
         	"type": "wms",
             "url":["http://svappmavw019:8080/geoserver/URBIS/wms"],
         	"title": "UrbisFR Gray",
         	"name": "URBIS:urbisFRGray",
-             "group": "test",
+            "group": "background",
+            "thumbURL" : "",
             "visibility": false,
             "origin" : [140000.0,160000.0],
             "tiled" : true,
+            "thumbURL" : "assets/img/urbis_gray.png",
         	"format": "image/png8"
         }]
   }
