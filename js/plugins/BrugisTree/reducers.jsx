@@ -1,31 +1,30 @@
 
 var {BRUGIS_TREE_LOAD_START, BRUGIS_TREE_LOADED, BRUGIS_TREE_LOAD_ERROR, BRUGIS_TREE_NODE_TOGGLE} = require('./actions');
-var {REMOVE_LAYER} = require('../../../MapStore2/web/client/actions/layers');
 const assign = require('object-assign');
 
 function wmsWalker(layers) {
-    if(typeof(layers) == "undefined" || layers == null || layers.length == 0) {
-        return [];
+    var tmpNodes = [];
+    var node = {};
+    if (typeof layers === "undefined" || layers === null || layers.length === 0) {
+        tmpNodes = [];
     } else {
-        var tmp_nodes = [];
-        for(var i=0; i<layers.length; i++){
-            var node = {};
-            var cur_layer = layers[i];
+        for (var i = 0; i < layers.length; i++){
+            node = {};
             node.expanded = true;
-            node.name = cur_layer.name;
-            node.title = cur_layer.title;
+            node.name = layers[i].name;
+            node.title = layers[i].title;
             node.path = true;
             node.checked = false;
             node.id = Math.random().toString(16).substr(2,8);
-            node.childNodes = wmsWalker(cur_layer.layer);
-            tmp_nodes.push(node);
+            node.childNodes = wmsWalker(layers[i].layer);
+            tmpNodes.push(node);
         }
-        return tmp_nodes;
     }
+    return tmpNodes;
 }
 
 function toggleNode(nodes, node){
-    if(typeof(nodes) == "undefined" || nodes == null || nodes.length == 0) {
+    if(typeof nodes === "undefined" || nodes === null || nodes.length === 0) {
         return [];
     } else {
         var new_nodes=[];

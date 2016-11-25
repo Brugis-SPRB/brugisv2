@@ -24,10 +24,11 @@ const BrugisTreeNode = React.createClass({
       this.props.toggleLayer(item, leaf);
   },
 
-  divStyle: function(item) {
+  divStyle: function(item, disabled) {
     //var indent    = item.path.size;
     return {
-      marginLeft: (1 * 1) + "px"
+      marginLeft: 1 + "px",
+      display: disabled ? "" : "none"
     };
   },
   renderChild: function(item) {
@@ -63,11 +64,12 @@ const BrugisTreeNode = React.createClass({
     */
 
     return (<li className="tree">
-               <input type="checkbox" checked={ item.checked ? true : false} onChange={this.toggleLayer.bind(this, item, disabled)}  style={this.divStyle(item)}></input>
-               { !disabled ? <span><i className="glyphicon glyphicon-triangle-right"></i>
-               <i className="glyphicon glyphicon-triangle-bottom"></i></span> : false }
+    { !disabled ? !checked ?<i className="glyphicon glyphicon-folder-close"></i>
+     : <i className="glyphicon glyphicon-folder-open"></i> : false }
 
-                <label onClick={this.toggle.bind(this, item.path)}>{item.title}</label>
+               <input type="checkbox" checked={ item.checked ? true : false} onChange={this.toggleLayer.bind(this, item, disabled)}  style={this.divStyle(item, disabled)}></input>
+
+                <label onClick={this.toggleLayer.bind(this, item, disabled)}>{item.title}</label>
           {(item.checked && item.childNodes) ? item.childNodes.map(this.renderChild, this) : false }
       </li>)
   }
