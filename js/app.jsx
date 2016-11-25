@@ -13,7 +13,7 @@ const StandardRouter = connect((state) => ({
     pages
 }))(require('../MapStore2/web/client/components/app/StandardRouter'));
 
-//const appStore = require('./stores/store').bind(null, initialState, {});
+//  const appStore = require('./stores/store').bind(null, initialState, {});
 
 const appStore = require('../MapStore2/web/client/stores/StandardStore').bind(null, initialState, {});
 
@@ -28,9 +28,9 @@ const appConfig = {
 var lb72Projection = new ol.proj.Projection({
      code: 'EPSG:31370',
     // extent: [140000.0,160000.0,165088.0,185088.0],
-     extent : [
-       0,0,
-       300000,300000
+     extent: [
+       0, 0,
+       300000, 300000
    ],
    /*
   extent: [

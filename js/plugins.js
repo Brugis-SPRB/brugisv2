@@ -34,7 +34,7 @@ module.exports = {
         UserManagerPlugin: require('../MapStore2/web/client/plugins/manager/UserManager'),
         RulesManagerPlugin: require('../MapStore2/web/client/plugins/manager/RulesManager'),
         ManagerMenuPlugin: require('../MapStore2/web/client/plugins/manager/ManagerMenu'),
-        BrugisTreePlugin : require('./plugins/BrugisTree/BrugisTree')
+        BrugisTreePlugin: require('./plugins/BrugisTree/BrugisTree')
     },
     requires: {
 
