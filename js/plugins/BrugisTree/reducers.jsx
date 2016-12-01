@@ -2,6 +2,23 @@
 var {BRUGIS_TREE_LOAD_START, BRUGIS_TREE_LOADED, BRUGIS_TREE_LOAD_ERROR, BRUGIS_TREE_NODE_TOGGLE} = require('./actions');
 const assign = require('object-assign');
 
+const SOURCES_DICT = {
+    'IBGE WMS - Mapserver' : "http://wms.ibgebim.be/ibgewms",
+    'default' : "http://www.mybrugis.irisnet.be/geoserver/wms"
+};
+
+function inspectKeywords(layer) {
+    var wmsserver = SOURCES_DICT['default'];
+    if(layer && layer.keywordList && layer.keywordList.keyword.length > 0) {
+        layer.keywordList.keyword.forEach(function(keyword){
+            if(keyword.value && SOURCES_DICT[keyword.value]) {
+                return SOURCES_DICT[keyword.value];
+            }
+        });
+    }
+    return wmsserver;
+};
+
 function wmsWalker(layers) {
     var tmpNodes = [];
     if (typeof layers === "undefined" || layers === null || layers.length === 0) {
@@ -14,13 +31,14 @@ function wmsWalker(layers) {
                 "title": curLayer.title,
                 "path": true,
                 "checked": false,
+                "wmsserver": inspectKeywords(curLayer),
                 "id": Math.random().toString(16).substr(2, 8),
                 "childNodes": wmsWalker(curLayer.layer)
             });
         });
     }
     return tmpNodes;
-}
+};
 
 function toggleNode(nodes, node) {
     var newNodes = [];
@@ -49,7 +67,7 @@ function toggleNode(nodes, node) {
         });
     }
     return newNodes;
-}
+};
 
 function brugisTree(state = null, action) {
     switch (action.type) {
@@ -57,6 +75,7 @@ function brugisTree(state = null, action) {
             return state;
         case BRUGIS_TREE_LOADED:
             const capabilities = action.info;
+            console.log(capabilities);
             return assign({}, state, {
                 treenodes: wmsWalker(capabilities.value.capability.layer.layer)
             });
@@ -72,6 +91,6 @@ function brugisTree(state = null, action) {
         default:
             return state;
     }
-}
+};
 
 module.exports = brugisTree;
