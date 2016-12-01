@@ -36,10 +36,11 @@ const BrugisTreeNode = React.createClass({
       */
 
       return (<li className="tree">
-            {this.renderTreeGlyph(disabled, checked)}
+                <div>
+               {this.renderTreeGlyph(disabled, checked)}
                <input type="checkbox" checked={ item.checked ? true : false} onChange={this.toggleLayer.bind(this, item, disabled)} style={this.divStyle(item, disabled)}></input>
-
                 <label onClick={this.toggleLayer.bind(this, item, disabled)}>{item.title}</label>
+                </div>
           {(item.checked && item.childNodes) ? item.childNodes.map(this.renderChild, this) : false }
       </li>);
   },
