@@ -1,23 +1,37 @@
 
 var {BRUGIS_TREE_LOAD_START, BRUGIS_TREE_LOADED, BRUGIS_TREE_LOAD_ERROR, BRUGIS_TREE_NODE_TOGGLE} = require('./actions');
 const assign = require('object-assign');
+const EnvUtils = require('../../utils/EnvUtils');
 
 const SOURCES_DICT = {
-    'IBGE WMS - Mapserver' : "http://wms.ibgebim.be/ibgewms",
-    'default' : "http://www.mybrugis.irisnet.be/geoserver/wms"
+    'IBSA WMS - Geoserver': 'http://gis.irisnet.be/geoserver/ibsa_bisa/wms',
+    'AGIV WMS - Basiskaart': 'http://geoservices.informatievlaanderen.be/raadpleegdiensten/GRB-basiskaart/wms',
+    'AGIV WMS - Historische kaarten': "http://geoservices.informatievlaanderen.be/raadpleegdiensten/histcart/wms",
+    'CIRB WMS - Geoserver': "http://geoservices-urbis.irisnet.be/geoserver/ows",
+    'STIB WMS - Geoserver': "http://gis.irisnet.be/geoserver/stib_mivb/wms",
+    'Bruxelles Mobilité WMS - Geoserver': "http://data-mobility.irisnet.be/geoserver/ows",
+    'IBGE WMS - Mapserver': "http://wms.ibgebim.be/ibgewms",
+    'default': EnvUtils.getBrugisGeoserverUrl()
 };
 
 function inspectKeywords(layer) {
-    var wmsserver = SOURCES_DICT['default'];
-    if(layer && layer.keywordList && layer.keywordList.keyword.length > 0) {
-        layer.keywordList.keyword.forEach(function(keyword){
-            if(keyword.value && SOURCES_DICT[keyword.value]) {
-                return SOURCES_DICT[keyword.value];
+    var wmsserver = SOURCES_DICT.default;
+    if (layer && layer.keywordList && layer.keywordList.keyword) {
+        layer.keywordList.keyword.forEach(function(keyword) {
+            if (keyword.value && SOURCES_DICT[keyword.value]) {
+                wmsserver = SOURCES_DICT[keyword.value];
             }
         });
     }
     return wmsserver;
-};
+}
+
+function guidGenerator() {
+    var s4 = function() {
+        return (((1 + Math.random()) * 0X10000) | 0).toString(16).substr(1);
+    };
+    return (s4() + s4() + "-" + s4() + "-" + s4() + "-" + s4() + "-" + s4() + s4() + s4());
+}
 
 function wmsWalker(layers) {
     var tmpNodes = [];
@@ -32,13 +46,13 @@ function wmsWalker(layers) {
                 "path": true,
                 "checked": false,
                 "wmsserver": inspectKeywords(curLayer),
-                "id": Math.random().toString(16).substr(2, 8),
+                "id": guidGenerator(),
                 "childNodes": wmsWalker(curLayer.layer)
             });
         });
     }
     return tmpNodes;
-};
+}
 
 function toggleNode(nodes, node) {
     var newNodes = [];
@@ -51,6 +65,7 @@ function toggleNode(nodes, node) {
                 "name": curNode.name,
                 "title": curNode.title,
                 "path": curNode.path,
+                "wmsserver": curNode.wmsserver,
                 "id": curNode.id
             };
             if (curNode.name === node.name) {
@@ -67,7 +82,7 @@ function toggleNode(nodes, node) {
         });
     }
     return newNodes;
-};
+}
 
 function brugisTree(state = null, action) {
     switch (action.type) {
@@ -75,7 +90,6 @@ function brugisTree(state = null, action) {
             return state;
         case BRUGIS_TREE_LOADED:
             const capabilities = action.info;
-            console.log(capabilities);
             return assign({}, state, {
                 treenodes: wmsWalker(capabilities.value.capability.layer.layer)
             });
@@ -91,6 +105,6 @@ function brugisTree(state = null, action) {
         default:
             return state;
     }
-};
+}
 
 module.exports = brugisTree;

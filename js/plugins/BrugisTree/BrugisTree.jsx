@@ -70,7 +70,7 @@ const BrugisTree = React.createClass({
     addLayer(item) {
         this.props.onLayerAdd({
             type: "wms",
-            url: "http://svappmavw019:8080/geoserver/wms",
+            url: item.wmsserver,
             visibility: true,
             name: item.name,
             title: item.title || item.name,
