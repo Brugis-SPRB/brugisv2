@@ -18,7 +18,7 @@
                  "hide" : true,
                  "override":{
                    "DrawerMenu":{
-                      "glyph":"1-map",
+                      "glyph":"list",
                       "buttonConfig":{
                          "buttonClassName":"square-button no-border"
                       }

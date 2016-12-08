@@ -1,5 +1,6 @@
 
 var {BRUGIS_TREE_LOAD_START, BRUGIS_TREE_LOADED, BRUGIS_TREE_LOAD_ERROR, BRUGIS_TREE_NODE_TOGGLE} = require('./actions');
+var {REMOVE_NODE} = require('../../../MapStore2/web/client/actions/layers');
 const assign = require('object-assign');
 const EnvUtils = require('../../utils/EnvUtils');
 
@@ -84,6 +85,36 @@ function toggleNode(nodes, node) {
     return newNodes;
 }
 
+function syncNodeWithLayer(nodes, node) {
+    var newNodes = [];
+    if (typeof nodes === "undefined" || nodes === null || nodes.length === 0) {
+        newNodes = [];
+    } else {
+        nodes.forEach(function(curNode) {
+            var newNode = {
+                "expanded": true,
+                "name": curNode.name,
+                "title": curNode.title,
+                "path": curNode.path,
+                "wmsserver": curNode.wmsserver,
+                "id": curNode.id
+            };
+            if (node === curNode.id) {
+                if (curNode.checked) {
+                    newNode.checked = false;
+                } else {
+                    newNode.checked = true;
+                }
+            } else {
+                newNode.checked = curNode.checked;
+            }
+            newNode.childNodes = syncNodeWithLayer(curNode.childNodes, node);
+            newNodes.push(assign({}, newNode));
+        });
+    }
+    return newNodes;
+}
+
 function brugisTree(state = null, action) {
     switch (action.type) {
         case BRUGIS_TREE_LOAD_START:
@@ -102,6 +133,12 @@ function brugisTree(state = null, action) {
             });
         case BRUGIS_TREE_LOAD_ERROR:
             return state;
+        case REMOVE_NODE:
+            let layernode = action.node;
+            let updatedtreenodes = syncNodeWithLayer(state.treenodes, layernode);
+            return assign({}, state, {
+                treenodes: updatedtreenodes
+            });
         default:
             return state;
     }

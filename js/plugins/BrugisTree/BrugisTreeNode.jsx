@@ -11,8 +11,8 @@ const BrugisTreeNode = React.createClass({
 
   renderChild: function(item) {
       return (
-          <ul className="tree" >
-            <BrugisTreeNode key={item.name} item={item} toggle={this.props.toggle} toggleLayer={this.props.toggleLayer} layers={this.props.layers} />
+          <ul className="tree" key={item.id}>
+            <BrugisTreeNode item={item} toggle={this.props.toggle} toggleLayer={this.props.toggleLayer} layers={this.props.layers} />
           </ul>
       );
   },
@@ -29,11 +29,6 @@ const BrugisTreeNode = React.createClass({
       var item = this.props.item;
       var disabled = item.childNodes === null || item.childNodes.length === 0;
       var checked = item.checked ? true : false;
-      /*
-      var layer = this.props.layers.find((elem) => {
-          return elem.id == item.id;
-      });
-      */
 
       return (<li className="tree">
                 <div>
@@ -48,7 +43,8 @@ const BrugisTreeNode = React.createClass({
   divStyle: function(item, disabled) {
       return {
           marginLeft: 1 + "px",
-          display: disabled ? "" : "none"
+          display: disabled ? "" : "none",
+          marginRight: disabled ? "1px" : "none"
       };
   },
 

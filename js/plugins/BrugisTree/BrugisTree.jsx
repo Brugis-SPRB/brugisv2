@@ -43,10 +43,10 @@ const BrugisTree = React.createClass({
             );
         }
         return (
-            <ul className="tree" >
+            <ul className="tree" key="brutree01" >
                 {
                     this.props.treenodes.map((node) => {
-                        return <BrugisTreeNode item={node} toggle={this.toggle} toggleLayer={this.toggleLayer} key={node.name} layers={this.props.layers}/>;
+                        return <BrugisTreeNode item={node} toggle={this.toggle} toggleLayer={this.toggleLayer} key={node.id} layers={this.props.layers}/>;
                     })
                 }
             </ul>
@@ -110,7 +110,7 @@ module.exports = {
         DrawerMenu: {
             name: 'brugistree',
             position: 1,
-            icon: <Glyphicon glyph="globe"/>,
+            icon: <Glyphicon glyph="glyphicon-th-list"/>,
             title: 'brugistree',
             priority: 1
         }
