@@ -1,5 +1,12 @@
+/**
+ * Copyright 2016, GeoSolutions Sas.
+ * All rights reserved.
+ *
+ * This source code is licensed under the BSD-style license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
 const assign = require('object-assign');
-const {isArray} = require('lodash');
+
 const {mapConfigHistory, createHistory} = require('../../MapStore2/web/client/utils/MapHistoryUtils');
 
 const map = mapConfigHistory(require('../../MapStore2/web/client/reducers/map'));
@@ -14,65 +21,12 @@ const LayersUtils = require('../../MapStore2/web/client/utils/LayersUtils');
 const {CHANGE_BROWSER_PROPERTIES} = require('../../MapStore2/web/client/actions/browser');
 const {persistStore, autoRehydrate} = require('redux-persist');
 
+const SecurityUtils = require('../../MapStore2/web/client/utils/SecurityUtils');
+
 module.exports = (initialState = {defaultState: {}, mobile: {}}, appReducers = {}, plugins, storeOpts) => {
-
-    const getGroup = (group, allLayers) => {
-        let groupName = group || 'Default';
-        let subGroups = allLayers.filter((layer) => layer.group.indexOf(groupName + '.') === 0)
-            .map((layer) => layer.group).reduce((previous, subGroupName) => {
-                let name = subGroupName.substring(subGroupName.indexOf('.') + 1);
-                return previous.indexOf(name) === -1 ? previous.concat([name]) : previous;
-            }, []);
-
-        return assign({}, {
-            id: groupName,
-            name: groupName,
-            title: groupName,
-            nodes: allLayers.filter((layer) => layer.group === group).map((layer) => layer.id).concat(
-                subGroups.map((subGroupName) => {
-                    return {
-                        id: groupName + '.' + subGroupName,
-                        type: "group",
-                        name: groupName + '.' + subGroupName,
-                        title: subGroupName,
-                        expanded: true,
-                        nodes: allLayers.filter((layer) => layer.group === (groupName + '.' + subGroupName)).map((layer) => layer.id)
-                    };
-                })
-            ),
-            expanded: true
-        });
-    };
-
-    const getLayersByGroup = function(configLayers) {
-        let i = 0;
-        let lyrs = configLayers.map((layer) => assign({}, layer, {storeIndex: i++}));
-        let groupNames = lyrs.reduce((groups, layer) => {
-            let groupName = layer.group;
-            if (groupName.indexOf('.') !== -1) {
-                groupName = groupName.split('.')[0];
-            }
-            return groups.indexOf(groupName) === -1 ? groups.concat([groupName]) : groups;
-        }, []);
-        return groupNames.map((group) => getGroup(group, lyrs));
-    };
-
-    const splitMapAndLayers = function(mapState) {
-        if (mapState && isArray(mapState.layers)) {
-            const groups = LayersUtils.getLayersByGroup(mapState.layers);
-            const realGroups = getLayersByGroup(mapState.layers);
-            return assign({}, mapState, {
-                layers: {
-                    flat: LayersUtils.reorder(groups, mapState.layers),
-                    groups: realGroups
-                }
-            });
-        }
-        return mapState;
-    };
-
     const allReducers = combineReducers(plugins, {
         ...appReducers,
+        localConfig: require('../../MapStore2/web/client/reducers/localConfig'),
         locale: require('../../MapStore2/web/client/reducers/locale'),
         browser: require('../../MapStore2/web/client/reducers/browser'),
         controls: require('../../MapStore2/web/client/reducers/controls'),
@@ -85,15 +39,17 @@ module.exports = (initialState = {defaultState: {}, mobile: {}}, appReducers = {
     const mobileOverride = initialState.mobile;
 
     const rootReducer = (state, action) => {
-        let mapState = createHistory(splitMapAndLayers(mapConfig(state, action)));
-
-        let mapLayers = mapState ? layers(mapState.layers, action) : null;
-
+        if(action.type == 'LOCAL_MAPS_LOAD' && action.state){
+            return action.state
+        }
+        let mapState = createHistory(LayersUtils.splitMapAndLayers(mapConfig(state, action)));
         let newState = {
             ...allReducers(state, action),
             map: mapState && mapState.map ? map(mapState.map, action) : null,
-            mapInitialConfig: mapState ? mapState.mapInitialConfig : null,
-            layers: mapLayers
+            mapInitialConfig: (mapState && mapState.mapInitialConfig) || (mapState && mapState.loadingError && {
+                loadingError: mapState.loadingError
+            }) || null,
+            layers: mapState ? layers(mapState.layers, action) : null
         };
         if (action && action.type === CHANGE_BROWSER_PROPERTIES && newState.browser.mobile) {
             newState = assign(newState, mobileOverride);
@@ -101,10 +57,13 @@ module.exports = (initialState = {defaultState: {}, mobile: {}}, appReducers = {
 
         return newState;
     };
+    let store;
     if (storeOpts && storeOpts.persist) {
-        let store = DebugUtils.createDebugStore(rootReducer, defaultState, [], autoRehydrate());
+        store = DebugUtils.createDebugStore(rootReducer, defaultState, [], autoRehydrate());
         persistStore(store, storeOpts.persist, storeOpts.onPersist);
-        return store;
+    } else {
+        store = DebugUtils.createDebugStore(rootReducer, defaultState);
     }
-    return DebugUtils.createDebugStore(rootReducer, defaultState);
+    SecurityUtils.setStore(store);
+    return store;
 };

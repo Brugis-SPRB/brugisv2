@@ -127,7 +127,6 @@ function brugisTree(state = null, action) {
         case BRUGIS_TREE_NODE_TOGGLE:
             let node = action.node;
             let newtreenodes = toggleNode(state.treenodes, node);
-
             return assign({}, state, {
                 treenodes: newtreenodes
             });

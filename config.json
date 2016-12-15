@@ -5,7 +5,7 @@
     "projection": "EPSG:31370",
     "units": "m",
     "center": {"x": 150000, "y": 170000, "crs": "EPSG:31370"},
-    "zoom":1,
+    "zoom":2,
     "maxExtent": [
       10000, 20000,
       300000, 250000
