@@ -43,12 +43,17 @@ const LocalMapsPlugin = connect(selector, {
 
 module.exports = {
     LocalMapsPlugin: assign(LocalMapsPlugin, {
-        DrawerMenu: {
+        Toolbar: {
             name: 'LocalMaps',
-            position: 1,
-            icon: <Glyphicon glyph="glyphicon-th-list"/>,
-            title: 'SaveMap',
-            priority: 1
+            position: 9,
+            exclusive: true,
+            panel: true,
+            tooltip: "LocalMaps",
+            wrap: true,
+            title: 'LocalMaps',
+            icon: <Glyphicon glyph="hdd"/>,
+            hide: false,
+            priority: 2
         }
     }),
     reducers: {

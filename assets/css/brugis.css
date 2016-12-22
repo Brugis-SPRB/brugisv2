@@ -55,7 +55,7 @@ html, body, #container, .fill {
 
 .tree,
 .tree ul {
-  margin:0 0 0 1em; /* indentation */
+  margin:0 0 0 0.5em; /* indentation */
   padding:0;
   list-style:none;
   font-size: small;
@@ -63,7 +63,9 @@ html, body, #container, .fill {
   position:relative;
 }
 
-.tree ul {margin-left:.5em} /* (indentation/2) */
+.tree ul {
+    margin-left:.25em; /* (indentation/2) */
+}
 
 .tree:before,
 .tree ul:before {

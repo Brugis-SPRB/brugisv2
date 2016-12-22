@@ -118,12 +118,13 @@
                   "useButtonGroup":false
                },
                "override":{
-                  "DrawerMenu":{
-                     "glyph":"1-stilo",
-                     "buttonConfig":{
-                        "buttonClassName":"square-button no-border"
-                     }
-                  }
+                   "DrawerMenu":{
+                      "glyph":"1-stilo",
+                      "priority": 0,
+                      "buttonConfig":{
+                         "buttonClassName":"square-button no-border"
+                       }
+                   }
                }
             },
             {
@@ -172,7 +173,7 @@
                   "buttonClassName":"square-button",
                   "singleSection":true,
                   "menuOptions" : {
-                      "show" : false,
+                      "show" : true,
                       "overlapMap" : false,
                       "width" : 300
                   }
@@ -247,6 +248,7 @@
             ,
              {
                 "name":"LocalMaps"
+
              }
          ]
 	}

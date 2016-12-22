@@ -6,7 +6,7 @@
  * LICENSE file in the root directory of this source tree.
  */
 const React = require('react');
-const {Input, Button} = require('react-bootstrap');
+const {Input, Button, Form, FormGroup, Col, FormControl, InputGroup} = require('react-bootstrap');
 
 
 const SaveButton = React.createClass({
@@ -39,13 +39,43 @@ const SaveButton = React.createClass({
     },
     render() {
         return (<div className="save">
-            <Button onClick={this.save} disabled={this.state.savename === ''}>Save</Button>
-            <Input ref="savename" onChange={this.onChangeSaveName} type="text"/>
-            <Button onClick={this.load} disabled={this.state.loadname === ''}>Load</Button>
-            <Input ref="loadname" onChange={this.onChangeLoadName} type="select">
-                {this.renderSaved()}
-            </Input>
+            <Form>
+                <FormGroup>
+                  <InputGroup>
+                    <FormControl type="text" placeholder="Map Name"onChange={this.onChangeSaveName} placeholder="..." />
+                    <InputGroup.Button>
+                        <Button
+                          id="input-dropdown-addon"
+                          title="Save Map"
+                          onClick={this.save}
+                          disabled={this.state.savename === ''}
+                        >
+                        Save
+                        </Button>
+                    </InputGroup.Button>
+                  </InputGroup>
+                  <InputGroup>
+                      <FormControl componentClass="select" placeholder="Map Name" onChange={this.onChangeLoadName}>
+                          {this.renderSaved()}
+                      </FormControl>
+                      <InputGroup.Button>
+                        <Button onClick={this.load} style={this.buttonStyle()} disabled={this.state.loadname === ''}>Load
+                        </Button>
+                      </InputGroup.Button>
+                  </InputGroup>
+                </FormGroup>
+             </Form>
             </div>);
+    },
+    buttonStyle: function(disabled) {
+        return {
+            "color": "white"
+        };
+    },
+    inputStyle: function(disabled) {
+        return {
+            border: "1px solid"
+        };
     },
     load() {
         this.props.onLoad(this.state.loadname);
