@@ -42,12 +42,13 @@ const SaveButton = React.createClass({
             <Form>
                 <FormGroup>
                   <InputGroup>
-                    <FormControl type="text" placeholder="Map Name"onChange={this.onChangeSaveName} placeholder="..." />
+                    <FormControl type="text" placeholder="Map Name" onChange={this.onChangeSaveName} />
                     <InputGroup.Button>
                         <Button
                           id="input-dropdown-addon"
                           title="Save Map"
                           onClick={this.save}
+                          style={this.buttonStyle(this.state.savename === '')}
                           disabled={this.state.savename === ''}
                         >
                         Save
@@ -59,7 +60,10 @@ const SaveButton = React.createClass({
                           {this.renderSaved()}
                       </FormControl>
                       <InputGroup.Button>
-                        <Button onClick={this.load} style={this.buttonStyle()} disabled={this.state.loadname === ''}>Load
+                        <Button onClick={this.load}
+                            style={this.buttonStyle(this.state.loadname === '')}
+                            disabled={this.state.loadname === ''}>
+                            Load
                         </Button>
                       </InputGroup.Button>
                   </InputGroup>
@@ -69,7 +73,7 @@ const SaveButton = React.createClass({
     },
     buttonStyle: function(disabled) {
         return {
-            "color": "white"
+            "color": disabled ? "white" : "inherit"
         };
     },
     inputStyle: function(disabled) {
