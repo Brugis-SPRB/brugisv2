@@ -6,7 +6,7 @@
  * LICENSE file in the root directory of this source tree.
  */
 const React = require('react');
-const {Input, Button, Form, FormGroup, Col, FormControl, InputGroup} = require('react-bootstrap');
+const {Button, Form, FormGroup, FormControl, InputGroup} = require('react-bootstrap');
 
 
 const SaveButton = React.createClass({
@@ -76,7 +76,7 @@ const SaveButton = React.createClass({
             "color": disabled ? "white" : "inherit"
         };
     },
-    inputStyle: function(disabled) {
+    inputStyle: function() {
         return {
             border: "1px solid"
         };

@@ -1,20 +1,19 @@
 const React = require('react');
 const assign = require('object-assign');
 const {createSelector} = require('reselect');
-var {saveMapState,loadMapState} = require('./actions');
+var {saveMapState, loadMapState} = require('./actions');
 const SaveAndLoad = require('./SaveAndLoad');
 const {connect} = require('react-redux');
 const {Glyphicon} = require('react-bootstrap');
-const {mapSelector} = require('../../../MapStore2/web/client/selectors/map');
 const {Modal, Button} = require('react-bootstrap');
 const Message = require("../../../MapStore2/web/client/components/I18N/Message");
-const {toggleControl,setControlProperty} = require("../../../MapStore2/web/client/actions/controls");
+const {toggleControl, setControlProperty} = require("../../../MapStore2/web/client/actions/controls");
 
 const stateSelector = state => state;
 
 const selector = createSelector(stateSelector, (state) => ({
     active: state.controls && state.controls.LocalMaps && state.controls.LocalMaps.enabled === true || state.controls && state.controls.toolbar && state.controls.toolbar.active === "LocalMaps",
-    currentstate : state
+    currentstate: state
 }));
 
 const LocalMaps = React.createClass({
@@ -35,7 +34,7 @@ const LocalMaps = React.createClass({
         };
     },
     render() {
-        if(this.props.active) {
+        if (this.props.active) {
             return (
                 <Modal show={this.props.active} onHide={this.close} bsSize="small" aria-labelledby="contained-modal-title-sm">
                   <Modal.Header closeButton>
@@ -49,15 +48,14 @@ const LocalMaps = React.createClass({
                   </Modal.Footer>
                 </Modal>
             );
-        } else {
-            return null;
         }
+        return null;
     },
     saveMap(name) {
-        this.props.onStateSave(name,this.props.currentstate);
+        this.props.onStateSave(name, this.props.currentstate);
     },
     close() {
-        if(this.props.currentstate.controls && this.props.currentstate.controls.toolbar && this.props.currentstate.controls.toolbar.active === "LocalMaps") {
+        if (this.props.currentstate.controls && this.props.currentstate.controls.toolbar && this.props.currentstate.controls.toolbar.active === "LocalMaps") {
             this.props.onCloseToolBar();
         } else {
             this.props.onClose();

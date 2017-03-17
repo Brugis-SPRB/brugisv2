@@ -1,5 +1,5 @@
 const assign = require('object-assign');
-var {LOCAL_MAPS_SAVE,saveMapState,loadMapState} = require('./actions');
+var {LOCAL_MAPS_SAVE} = require('./actions');
 const LOCAL_MAPS_PREFIX = 'mapstore.localmaps.';
 
 const save = (name, newstate) => {
@@ -15,9 +15,9 @@ const save = (name, newstate) => {
 function localMaps(state = null, action) {
     switch (action.type) {
         case LOCAL_MAPS_SAVE:
-            save(action.name,action.currentstate);
+            save(action.name, action.currentstate);
             return assign({}, state, {
-                localMap : true
+                localMap: true
             });
         default:
             return state;

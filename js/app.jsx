@@ -15,8 +15,6 @@ const StandardRouter = connect((state) => ({
 
 const appStore = require('./stores/store').bind(null, initialState, {});
 
-//const appStore = require('../MapStore2/web/client/stores/StandardStore').bind(null, initialState, {});
-
 const appConfig = {
     storeOpts,
     appStore,

@@ -39,8 +39,8 @@ module.exports = (initialState = {defaultState: {}, mobile: {}}, appReducers = {
     const mobileOverride = initialState.mobile;
 
     const rootReducer = (state, action) => {
-        if(action.type == 'LOCAL_MAPS_LOAD' && action.state){
-            return action.state
+        if (action.type === 'LOCAL_MAPS_LOAD' && action.state) {
+            return action.state;
         }
         let mapState = createHistory(LayersUtils.splitMapAndLayers(mapConfig(state, action)));
         let newState = {
