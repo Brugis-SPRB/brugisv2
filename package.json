@@ -106,7 +106,7 @@
       "qrcode.react": "0.6.1",
       "react": "0.14.8",
       "react-addons-shallow-compare": "0.14.8",
-      "react-bootstrap": "0.30.8",
+      "react-bootstrap": "0.28.1",
       "react-codemirror": "0.2.6",
       "react-color": "2.4.0",
       "react-confirm-button": "0.0.2",

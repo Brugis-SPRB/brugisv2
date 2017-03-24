@@ -52,10 +52,9 @@ html, body, #container, .fill {
  * Framework Brugis Treeview
  * ------------------------------
  */
-
 .tree,
 .tree ul {
-  margin:0 0 0 0.5em; /* indentation */
+  margin:0 0 0 0em; /* indentation */
   padding:0;
   list-style:none;
   font-size: small;
@@ -76,7 +75,7 @@ html, body, #container, .fill {
   top:0;
   bottom:0;
   left:0;
-  border-left:1px solid;
+  /*border-left:1px solid;*/
 }
 
 .tree li {
@@ -86,6 +85,8 @@ html, body, #container, .fill {
   line-height:2em; /* default list item's `line-height` */
   font-weight:bold;
   position:relative;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 .tree li:before {
@@ -93,7 +94,7 @@ html, body, #container, .fill {
   display:block;
   width:10px; /* same with indentation */
   height:0;
-  border-top:1px solid;
+  /*border-top:1px solid;*/
   margin-top:-1px; /* border top width */
   position:absolute;
   top:1em; /* (line-height/2) */
