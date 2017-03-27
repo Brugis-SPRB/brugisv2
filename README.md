@@ -18,4 +18,12 @@ Start the development application locally:
 
 The application runs at `http://localhost:8081` afterwards.
 
-Read more on the [wiki](https://github.com/Geode/brugis.git/wiki).
+Read more on the [wiki](http://gitlab.opengeode.be/sprb/brugis/wikis/home).
+
+Packaging
+---------
+
+Package the app as a java web archive:
+
+`mvn clean install`
+
