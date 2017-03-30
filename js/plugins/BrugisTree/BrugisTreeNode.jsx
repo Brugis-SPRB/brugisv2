@@ -20,11 +20,18 @@ const BrugisTreeNode = React.createClass({
   renderTreeGlyph: function(item, disabled, checked) {
       var close = <i className="glyphicon glyphicon-folder-close" onClick={this.toggleLayer.bind(this, item, disabled)}></i>;
       var open = <i className="glyphicon glyphicon-folder-open" onClick={this.toggleLayer.bind(this, item, disabled)}></i>;
+      var layer = <i className="glyphicon glyphicon-th-large" onClick={this.toggleLayer.bind(this, item, disabled)}></i>;
+      var glyph = null;
+
       if ( !disabled ) {
-          return !checked ? (close) : (open);
-      } else {
-          return (<i className="glyphicon glyphicon-th-large" onClick={this.toggleLayer.bind(this, item, disabled)}></i>);
-      }
+          if (!checked) {
+              glyph = close;
+          } else {
+              glyph = open;
+          }
+      } else { glyph = layer; }
+
+      return (glyph);
   },
 
   render: function() {
@@ -49,15 +56,15 @@ const BrugisTreeNode = React.createClass({
       };
   },
   labelStyle: function(item, disabled) {
-      if(item.checked && disabled) {
-          return {
+      var computedStyle = {
+          "backgroundColor": "white"
+      };
+      if (item.checked && disabled) {
+          computedStyle = {
               "backgroundColor": "lightgray"
           };
-      } else {
-          return {
-              "backgroundColor": "white"
-          };
       }
+      return computedStyle;
   },
 
   toggle: function(path) {
