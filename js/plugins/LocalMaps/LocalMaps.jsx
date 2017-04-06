@@ -9,11 +9,12 @@ const {Modal, Button} = require('react-bootstrap');
 const Message = require("../../../MapStore2/web/client/components/I18N/Message");
 const {toggleControl, setControlProperty} = require("../../../MapStore2/web/client/actions/controls");
 
-const stateSelector = state => state;
-
-const selector = createSelector(stateSelector, (state) => ({
-    active: state.controls && state.controls.LocalMaps && state.controls.LocalMaps.enabled === true || state.controls && state.controls.toolbar && state.controls.toolbar.active === "LocalMaps",
-    currentstate: state
+const selector = createSelector([
+    (state) => (state.controls && state.controls.LocalMaps && state.controls.LocalMaps.enabled) || (state.controls.toolbar && state.controls.toolbar.active === "LocalMaps"),
+    (state) => state
+], (enabled, currentState) => ({
+    active: enabled,
+    currentState: currentState
 }));
 
 const LocalMaps = React.createClass({
@@ -22,7 +23,7 @@ const LocalMaps = React.createClass({
         expanded: React.PropTypes.bool,
         onStateSave: React.PropTypes.func,
         onStateLoad: React.PropTypes.func,
-        currentstate: React.PropTypes.object,
+        currentState: React.PropTypes.object,
         active: React.PropTypes.bool,
         onClose: React.PropTypes.func,
         onCloseToolBar: React.PropTypes.func
@@ -52,10 +53,10 @@ const LocalMaps = React.createClass({
         return null;
     },
     saveMap(name) {
-        this.props.onStateSave(name, this.props.currentstate);
+        this.props.onStateSave(name, this.props.currentState);
     },
     close() {
-        if (this.props.currentstate.controls && this.props.currentstate.controls.toolbar && this.props.currentstate.controls.toolbar.active === "LocalMaps") {
+        if (this.props.currentState.controls && this.props.currentState.controls.toolbar && this.props.currentState.controls.toolbar.active === "LocalMaps") {
             this.props.onCloseToolBar();
         } else {
             this.props.onClose();
@@ -64,6 +65,7 @@ const LocalMaps = React.createClass({
 });
 
 const LocalMapsPlugin = connect(selector, {
+    toggleControl: toggleControl.bind(null, 'LocalMaps', null),
     onStateSave: saveMapState,
     onStateLoad: loadMapState,
     onClose: toggleControl.bind(null, 'LocalMaps', null),
@@ -72,6 +74,7 @@ const LocalMapsPlugin = connect(selector, {
 
 module.exports = {
     LocalMapsPlugin: assign(LocalMapsPlugin, {
+        /*
         Toolbar: {
             name: 'LocalMaps',
             position: 9,
@@ -84,10 +87,11 @@ module.exports = {
             hide: false,
             priority: 2
         },
+        */
         BurgerMenu: {
             name: 'LocalMaps',
             position: 6,
-            text: <Message msgId="localmaps.title"/>,
+            text: "LocalMaps",//<Message msgId="localmaps.title"/>,
             icon: <Glyphicon glyph="hdd"/>,
             action: toggleControl.bind(null, 'LocalMaps', null),
             priority: 2,

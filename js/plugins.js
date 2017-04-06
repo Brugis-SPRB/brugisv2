@@ -26,7 +26,6 @@ module.exports = {
         ZoomInPlugin: require('../MapStore2/web/client/plugins/ZoomIn'),
         ZoomOutPlugin: require('../MapStore2/web/client/plugins/ZoomOut'),
         ZoomAllPlugin: require('../MapStore2/web/client/plugins/ZoomAll'),
-        HomePlugin: require('../MapStore2/web/client/plugins/Home'),
         MetadataExplorerPlugin: require('../MapStore2/web/client/plugins/MetadataExplorer'),
         OmniBarPlugin: require('../MapStore2/web/client/plugins/OmniBar'),
         BurgerMenuPlugin: require('../MapStore2/web/client/plugins/BurgerMenu'),

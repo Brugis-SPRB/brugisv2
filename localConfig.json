@@ -12,7 +12,6 @@
                   "zoomControl":false
                }
             },
-            { "name" : "Home", "hide" : true},
             {
                 "name" : "BrugisTree",
                  "hide" : true,
@@ -65,45 +64,30 @@
                }
             },
             {
-               "name":"Identify",
-               "cfg":{
-                  "panelClassName":"modal-dialog info-panel modal-content",
-                  "headerClassName":"modal-header",
-                  "bodyClassName":"modal-body info-wrap",
-                  "asPanel":false,
-                  "headerGlyph":"",
-                  "glyph":"map-marker",
-                  "className":"square-button",
-                  "closeGlyph":"1-close",
-                  "wrapRevGeocode":false,
-                  "enableRevGeocode":true,
-                  "viewerOptions":{
-                     "headerOptions":{
-                        "useButtons":true
-                     },
-                     "containerProps":{
-                        "continuous":false
-                     },
-                     "collapsible":false
+               "name": "Identify",
+               "showIn": ["IdentifyBar", "Settings"],
+               "cfg": {
+                 "panelClassName": "modal-dialog info-panel modal-content",
+                 "headerClassName": "modal-header",
+                 "bodyClassName": "modal-body info-wrap",
+                 "asPanel": false,
+                 "headerGlyph": "",
+                 "glyph": "map-marker",
+                 "className": "square-button",
+                 "closeGlyph": "1-close",
+                 "wrapRevGeocode": false,
+                 "enableRevGeocode": true,
+                 "viewerOptions": {
+                  "container": "{context.ReactSwipe}",
+                  "header": "{context.SwipeHeader}",
+                  "headerOptions": {
+                    "useButtons": true
                   },
-                  "excludeOptions":[
-                     "links",
-                     "allowedSRS",
-                     "title",
-                     "type",
-                     "visibility",
-                     "params",
-                     "legend",
-                     "statistics",
-                     "columnDefs",
-                     "advancedFilter",
-                     "boundingBox",
-                     "capabilities",
-                     "describeCoverage",
-                     "describeLayer",
-                     "loading",
-                     "origin"
-                  ]
+                  "containerProps": {
+                    "continuous": false
+                  },
+                  "collapsible": false
+                }
                }
             },
             {
@@ -115,6 +99,10 @@
                   "bearingGlyph":"1-bearing",
                   "useButtonGroup":false
                },
+               "hideFrom":[
+                  "DrawerMenu"
+               ],
+               "showIn": ["Toolbar"],
                "override":{
                    "DrawerMenu":{
                       "glyph":"1-stilo",
@@ -178,16 +166,25 @@
                      "wms":"http://www.mybrugis.irisnet.be/geoserver/wms"
                   }
                }
-            },
-            {
-               "name":"Toolbar",
-               "id":"NavigationBar",
-               "stateSelector":"toolbar",
-               "cfg":{
-                  "buttonStyle":"primary",
-                  "id":"navigationBar"
-               }
-            },
+            },{
+             "name": "Toolbar",
+             "id": "NavigationBar",
+             "stateSelector": "toolbar",
+             "cfg": {
+               "buttonStyle": "primary",
+               "id": "navigationBar"
+             }
+           }, {
+             "name": "Toolbar",
+             "id": "IdentifyBar",
+             "stateSelector": "identify",
+             "cfg": {
+               "buttonStyle": "primary",
+               "pressedButtonStyle": "success",
+               "id": "identifyBar"
+             },
+             "isDefault": false
+           },
             {
                "name":"ZoomAll",
                "hide":true,
@@ -228,13 +225,16 @@
                }
            },
             {
-               "name":"BurgerMenu"
+               "name":"BurgerMenu",
+               "id": "BurgerMenu"
             }
             ,
              {
-                "name":"LocalMaps"
-             }
-             ,
+                "name":"LocalMaps",
+                "showIn":[
+                   "BurgerMenu"
+                ]
+             },
              {
                 "name":"DrawerMenu",
                 "cfg":{

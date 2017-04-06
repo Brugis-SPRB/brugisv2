@@ -31,7 +31,7 @@ module.exports = {
                 },
                 drawer: {
                     enabled: false,
-                    menu: "4"
+                    menu: "3"
                 }
             }
         },
