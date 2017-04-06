@@ -107,3 +107,12 @@ html, body, #container, .fill {
   top:1em; /* (line-height/2) */
   bottom:0;
 }
+
+
+/**
+ * Override TOC spacing .toc-group-children
+ */
+
+ #mapstore-drawermenu #mapstore-layers .toc-group-children {
+     margin-left: 5px;
+ }

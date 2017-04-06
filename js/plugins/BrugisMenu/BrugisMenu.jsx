@@ -9,17 +9,17 @@ const {toggleControl, setControlProperty} = require('../../../MapStore2/web/clie
 
 const {changeMapStyle} = require('../../../MapStore2/web/client/actions/map');
 
-const {Button, Glyphicon, Panel} = require('react-bootstrap');
+const {Panel} = require('react-bootstrap');
 
 const Section = require('./Section');
 
 const {partialRight} = require('lodash');
 
 const Menu = connect((state) => ({
-    show: state.controls.drawer && state.controls.drawer.enabled,
+    show: true, // state.controls.drawer && state.controls.drawer.enabled,
     activeKey: state.controls.drawer && state.controls.drawer.menu
 }), {
-    onToggle: toggleControl.bind(null, 'drawer', null),
+    onToggle: toggleControl.bind(null, 'brugismenu', null),
     onChoose: partialRight(setControlProperty.bind(null, 'drawer', 'menu'), true),
     changeMapStyle: changeMapStyle
 })(require('./Menu'));
@@ -45,7 +45,7 @@ const DrawerMenu = React.createClass({
     },
     getDefaultProps() {
         return {
-            id: "mapstore-drawermenu",
+            id: "brugismenu",
             items: [],
             toggleMenu: () => {},
             glyph: "menu-hamburger",
@@ -79,7 +79,6 @@ const DrawerMenu = React.createClass({
     render() {
         return (
             <div id={this.props.id}>
-                <Button id="drawer-menu-button" style={this.props.menuButtonStyle} bsStyle={this.props.buttonStyle} key="menu-button" className={this.props.buttonClassName} onClick={this.props.toggleMenu}><Glyphicon glyph={this.props.glyph}/></Button>
                 <Menu single={this.props.singleSection} {...this.props.menuOptions} title={<Message msgId="menu" show={true}/>} alignment="left">
                     {this.renderItems()}
                 </Menu>
@@ -89,10 +88,10 @@ const DrawerMenu = React.createClass({
 });
 
 module.exports = {
-    DrawerMenuPlugin: connect((state) => ({
-        active: state.controls && state.controls.drawer && state.controls.drawer.active
+    BrugisMenuPlugin: connect((state) => ({
+        active: state.controls && state.controls.brugismenu && state.controls.brugismenu.active
     }), {
-        toggleMenu: toggleControl.bind(null, 'drawer', null)
+        toggleMenu: toggleControl.bind(null, 'brugismenu', null)
     })(DrawerMenu),
     reducers: {}
 };

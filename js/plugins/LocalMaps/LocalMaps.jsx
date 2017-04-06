@@ -88,7 +88,7 @@ module.exports = {
             name: 'LocalMaps',
             position: 6,
             text: <Message msgId="localmaps.title"/>,
-            icon: <Glyphicon glyph="folder-open"/>,
+            icon: <Glyphicon glyph="hdd"/>,
             action: toggleControl.bind(null, 'LocalMaps', null),
             priority: 2,
             doNotHide: true

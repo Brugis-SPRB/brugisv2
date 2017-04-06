@@ -163,20 +163,7 @@
                }
             },
             { "name" : "ScaleBox" },
-            {
-               "name":"DrawerMenu",
-               "cfg":{
-                  "glyph":"1-stilo",
-                  "buttonStyle":"primary",
-                  "buttonClassName":"square-button",
-                  "singleSection":true,
-                  "menuOptions" : {
-                      "show" : true,
-                      "overlapMap" : false,
-                      "width" : 300
-                  }
-               }
-            },
+
             {
                "name":"MetadataExplorer",
                "cfg":{
@@ -246,6 +233,21 @@
             ,
              {
                 "name":"LocalMaps"
+             }
+             ,
+             {
+                "name":"DrawerMenu",
+                "cfg":{
+                   "glyph":"1-stilo",
+                   "buttonStyle":"primary",
+                   "buttonClassName":"square-button",
+                   "singleSection":true,
+                   "menuOptions" : {
+                       "show" : true,
+                       "overlapMap" : false,
+                       "width" : 300
+                   }
+                }
              }
          ]
 	}

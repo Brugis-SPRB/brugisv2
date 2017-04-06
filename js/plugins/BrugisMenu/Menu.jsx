@@ -1,10 +1,4 @@
-/**
- * Copyright 2015, GeoSolutions Sas.
- * All rights reserved.
- *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree.
- */
+
 var React = require('react');
 var {Glyphicon, Button} = require('react-bootstrap');
 var Sidebar = require('react-sidebar').default;
@@ -25,17 +19,19 @@ var Menu = React.createClass({
     },
     getDefaultProps() {
         return {
-            docked: false, // false,
+            docked: true, // false,
             single: false, // false,
             width: 300,
-            overlapMap: true // true
+            overlapMap: false // true
         };
     },
     componentDidMount() {
+
         if (!this.props.overlapMap && this.props.show) {
             let style = {left: this.props.width, width: `calc(100% - ${this.props.width}px)`};
-            this.props.changeMapStyle(style, "drawerMenu");
+            this.props.changeMapStyle(style, "brugisMenu");
         }
+
     },
     componentDidUpdate(prevProps) {
         if (!this.props.overlapMap && prevProps.show !== this.props.show) {
@@ -84,6 +80,7 @@ var Menu = React.createClass({
     },
     render() {
         return (
+            /*
             <Sidebar styles={{
                     sidebar: {
                         zIndex: 1022,
@@ -100,7 +97,26 @@ var Menu = React.createClass({
                 }} sidebarClassName="nav-menu" onSetOpen={() => {
                     this.props.onToggle();
                 }} open={this.props.show} docked={this.props.docked} sidebar={this.renderContent()}>
-                <div></div>
+                <div>BrugisMenu</div>
+            </Sidebar>
+            */
+            <Sidebar styles={{
+                    sidebar: {
+                        zIndex: 1022,
+                        width: this.props.width
+                    },
+                    overlay: {
+                        zIndex: 1021
+                    },
+                     root: {
+                         right: '0',
+                         width: '300px',
+                         overflow: 'hidden'
+                     }
+                }} sidebarClassName="nav-menu" onSetOpen={() => {
+                    this.props.onToggle();
+                }} open={this.props.show} docked={this.props.docked} sidebar={this.renderContent()}>
+                <div>BrugisMenu</div>
             </Sidebar>
         );
     }
