@@ -13,7 +13,6 @@ module.exports = {
         IdentifyPlugin: require('../MapStore2/web/client/plugins/Identify'),
         TOCPlugin: require('../MapStore2/web/client/plugins/TOC'),
         BackgroundSwitcherPlugin: require('../MapStore2/web/client/plugins/BackgroundSwitcher'),
-        MeasurePlugin: require('../MapStore2/web/client/plugins/Measure'),
         MeasureResultsPlugin: require('../MapStore2/web/client/plugins/MeasureResults'),
         MapPlugin: require('../MapStore2/web/client/plugins/Map'),
         ToolbarPlugin: require('../MapStore2/web/client/plugins/Toolbar'),
@@ -34,7 +33,9 @@ module.exports = {
         RulesManagerPlugin: require('../MapStore2/web/client/plugins/manager/RulesManager'),
         ManagerMenuPlugin: require('../MapStore2/web/client/plugins/manager/ManagerMenu'),
         BrugisTreePlugin: require('./plugins/BrugisTree/BrugisTree'),
-        LocalMapsPlugin: require('./plugins/LocalMaps/LocalMaps')
+        LocalMapsPlugin: require('./plugins/LocalMaps/LocalMaps'),
+        MeasureAreaPlugin: require('./plugins/MeasureArea/MeasureArea'),
+        MeasureLengthPlugin: require('./plugins/MeasureLength/MeasureLength')
     },
     requires: {
 
