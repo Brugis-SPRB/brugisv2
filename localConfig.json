@@ -94,7 +94,7 @@
                "name":"MeasureResults",
                "cfg":{
                   "closeGlyph":"1-close",
-                  "withPanelAsContainer":true
+                  "withPanelAsContainer":false
                }
             },
             {

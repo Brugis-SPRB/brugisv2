@@ -22,7 +22,8 @@ const MeasureArea = React.createClass({
             })
         }),
         active: React.PropTypes.bool,
-        areaMeasureEnabled: React.PropTypes.bool
+        areaMeasureEnabled: React.PropTypes.bool,
+        bsStyle: React.PropTypes.string
     },
 
     getDefaultProps() {
@@ -34,7 +35,8 @@ const MeasureArea = React.createClass({
             active: false,
             uom: {
                 area: {unit: 'sqm', label: 'm²'}
-            }
+            },
+            bsStyle: "primary"
         };
     },
     onAreaClick: function() {
@@ -49,6 +51,7 @@ const MeasureArea = React.createClass({
                 className={this.props.className}
                 tooltip={this.props.tooltip}
                 tooltipPlace="left"
+                bsStyle={this.props.bsStyle}
                 >
                 <img src={areaRuleIcon}></img>
                 {this.props.help}

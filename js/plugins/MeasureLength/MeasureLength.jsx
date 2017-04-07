@@ -22,7 +22,8 @@ const MeasureLength = React.createClass({
             })
         }),
         active: React.PropTypes.bool,
-        lengthMeasureEnabled: React.PropTypes.bool
+        lengthMeasureEnabled: React.PropTypes.bool,
+        bsStyle: React.PropTypes.string
     },
 
     getDefaultProps() {
@@ -34,7 +35,8 @@ const MeasureLength = React.createClass({
             active: false,
             uom: {
                 length: {unit: 'm', label: 'm'}
-            }
+            },
+            bsStyle: "primary"
         };
     },
     onLineClick: function() {
@@ -48,6 +50,7 @@ const MeasureLength = React.createClass({
                 onClick={() => this.onLineClick()}
                 className={this.props.className}
                 tooltip={this.props.tooltip}
+                bsStyle={this.props.bsStyle}
                 tooltipPlace="left"
                 >
                 <img src={lineRuleIcon}></img>
