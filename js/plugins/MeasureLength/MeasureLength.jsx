@@ -3,7 +3,7 @@ const {connect} = require('react-redux');
 
 const assign = require('object-assign');
 const {changeMeasurement} = require('../../../MapStore2/web/client/actions/measurement');
-const {Button, Glyphicon, Tooltip, OverlayTrigger} = require('react-bootstrap');
+const {Button} = require('react-bootstrap');
 
 const lineRuleIcon = require('./img/line-ruler.png');
 
@@ -23,7 +23,9 @@ const MeasureLength = React.createClass({
         }),
         active: React.PropTypes.bool,
         lengthMeasureEnabled: React.PropTypes.bool,
-        bsStyle: React.PropTypes.string
+        bsStyle: React.PropTypes.string,
+        toggleMeasure: React.PropTypes.func,
+        tooltip: React.PropTypes.string
     },
 
     getDefaultProps() {
@@ -36,7 +38,8 @@ const MeasureLength = React.createClass({
             uom: {
                 length: {unit: 'm', label: 'm'}
             },
-            bsStyle: "primary"
+            bsStyle: "primary",
+            tooltip: "MeasureLength"
         };
     },
     onLineClick: function() {
@@ -45,7 +48,7 @@ const MeasureLength = React.createClass({
         });
     },
     render() {
-        return(
+        return (
             <Button
                 onClick={() => this.onLineClick()}
                 className={this.props.className}
@@ -54,7 +57,6 @@ const MeasureLength = React.createClass({
                 tooltipPlace="left"
                 >
                 <img src={lineRuleIcon}></img>
-                {this.props.help}
             </Button>
         );
     }

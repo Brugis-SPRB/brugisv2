@@ -6,7 +6,6 @@ const SaveAndLoad = require('./SaveAndLoad');
 const {connect} = require('react-redux');
 const {Glyphicon} = require('react-bootstrap');
 const {Modal, Button} = require('react-bootstrap');
-const Message = require("../../../MapStore2/web/client/components/I18N/Message");
 const {toggleControl, setControlProperty} = require("../../../MapStore2/web/client/actions/controls");
 
 const selector = createSelector([
@@ -91,7 +90,7 @@ module.exports = {
         BurgerMenu: {
             name: 'LocalMaps',
             position: 6,
-            text: "LocalMaps",//<Message msgId="localmaps.title"/>,
+            text: "LocalMaps", // <Message msgId="localmaps.title"/>,
             icon: <Glyphicon glyph="hdd"/>,
             action: toggleControl.bind(null, 'LocalMaps', null),
             priority: 2,

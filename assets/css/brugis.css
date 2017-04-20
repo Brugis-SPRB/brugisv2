@@ -116,3 +116,13 @@ html, body, #container, .fill {
  #mapstore-drawermenu #mapstore-layers .toc-group-children {
      margin-left: 5px;
  }
+
+#mapstore-navbar-container {
+    right: 5px;
+    top: 5px;
+}
+
+#drawer-menu-button {
+    top: 5px;
+    left: 5px;
+}
