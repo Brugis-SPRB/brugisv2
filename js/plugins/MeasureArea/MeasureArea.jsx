@@ -3,7 +3,7 @@ const {connect} = require('react-redux');
 
 const assign = require('object-assign');
 const {changeMeasurement} = require('../../../MapStore2/web/client/actions/measurement');
-const {Button} = require('react-bootstrap');
+const {Button, Tooltip, OverlayTrigger} = require('react-bootstrap');
 
 const areaRuleIcon = require('./img/area-ruler.png');
 
@@ -25,7 +25,8 @@ const MeasureArea = React.createClass({
         areaMeasureEnabled: React.PropTypes.bool,
         bsStyle: React.PropTypes.string,
         toggleMeasure: React.PropTypes.func,
-        tooltip: React.PropTypes.string
+        tooltip: React.PropTypes.element,
+        tooltipPlace: React.PropTypes.string
     },
 
     getDefaultProps() {
@@ -35,9 +36,11 @@ const MeasureArea = React.createClass({
             text: "MeasureArea",
             toggleMeasure: () => {},
             active: false,
+            tooltip: "measureComponent.MeasureArea",
             uom: {
                 area: {unit: 'sqm', label: 'm²'}
             },
+            tooltipPlace: "left",
             bsStyle: "primary"
         };
     },
@@ -47,7 +50,7 @@ const MeasureArea = React.createClass({
         });
     },
     render() {
-        return (
+        return this.addTooltip(
             <Button
                 onClick={() => this.onAreaClick()}
                 className={this.props.className}
@@ -57,6 +60,17 @@ const MeasureArea = React.createClass({
                 >
                 <img src={areaRuleIcon}></img>
             </Button>
+        );
+    },
+    addTooltip(btn) {
+        if (!this.props.tooltip) {
+            return btn;
+        }
+        let tooltip = <Tooltip id="locate-tooltip">{this.props.tooltip}</Tooltip>;
+        return (
+            <OverlayTrigger placement={this.props.tooltipPlace} key={"overlay-trigger." + this.props.id} overlay={tooltip}>
+                {btn}
+            </OverlayTrigger>
         );
     }
 });
@@ -74,7 +88,7 @@ module.exports = {
     MeasureAreaPlugin: assign(MeasureAreaPlugin, {
         Toolbar: {
             name: "MeasureArea",
-            tooltip: "MeasureArea",
+            tooltip: "measureComponent.MeasureArea",
             tool: true,
             priority: 1
         }

@@ -3,7 +3,7 @@ const {connect} = require('react-redux');
 
 const assign = require('object-assign');
 const {changeMeasurement} = require('../../../MapStore2/web/client/actions/measurement');
-const {Button} = require('react-bootstrap');
+const {Button, Tooltip, OverlayTrigger} = require('react-bootstrap');
 
 const lineRuleIcon = require('./img/line-ruler.png');
 
@@ -25,7 +25,8 @@ const MeasureLength = React.createClass({
         lengthMeasureEnabled: React.PropTypes.bool,
         bsStyle: React.PropTypes.string,
         toggleMeasure: React.PropTypes.func,
-        tooltip: React.PropTypes.string
+        tooltip: React.PropTypes.element,
+        tooltipPlace: React.PropTypes.string
     },
 
     getDefaultProps() {
@@ -39,7 +40,8 @@ const MeasureLength = React.createClass({
                 length: {unit: 'm', label: 'm'}
             },
             bsStyle: "primary",
-            tooltip: "MeasureLength"
+            tooltip: "measureComponent.MeasureLength",
+            tooltipPlace: "left"
         };
     },
     onLineClick: function() {
@@ -48,7 +50,7 @@ const MeasureLength = React.createClass({
         });
     },
     render() {
-        return (
+        return this.addTooltip(
             <Button
                 onClick={() => this.onLineClick()}
                 className={this.props.className}
@@ -58,6 +60,17 @@ const MeasureLength = React.createClass({
                 >
                 <img src={lineRuleIcon}></img>
             </Button>
+        );
+    },
+    addTooltip(btn) {
+        if (!this.props.tooltip) {
+            return btn;
+        }
+        let tooltip = <Tooltip id="locate-tooltip">{this.props.tooltip}</Tooltip>;
+        return (
+            <OverlayTrigger placement={this.props.tooltipPlace} key={"overlay-trigger." + this.props.id} overlay={tooltip}>
+                {btn}
+            </OverlayTrigger>
         );
     }
 });
@@ -75,7 +88,7 @@ module.exports = {
     MeasureLengthPlugin: assign(MeasureLengthPlugin, {
         Toolbar: {
             name: "MeasureLength",
-            tooltip: "MeasureLength",
+            tooltip: "measureComponent.MeasureLength",
             tool: true,
             priority: 1
         }

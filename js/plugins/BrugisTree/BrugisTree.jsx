@@ -102,7 +102,7 @@ module.exports = {
             panel: true,
             tooltip: "brugistree",
             wrap: true,
-            title: 'BrugisTree',
+            title: 'Layers',
             icon: <img src={layersIcon}/>,
             hide: true
         },
@@ -110,8 +110,8 @@ module.exports = {
             name: 'brugistree',
             position: 1,
             icon: <Glyphicon glyph="glyphicon-th-list"/>,
-            title: 'brugistree',
-            priority: 1
+            priority: 1,
+            title: 'Layers'
         }
     }),
     reducers: {
