@@ -4,6 +4,7 @@
 	"printUrl": "http://mbr102.irisnet.be/print/print/dep/info.json",
 	"bingApiKey": "AhuXBu7ipR1gNbBfXhtUAyCZ6rkC5PkWpxs2MnMRZ1ZupxQfivjLCch22ozKSCAn",
 	"translationsPath": "./js/translations",
+    "themePrefix": "brugis",
 	"plugins": {
 		"desktop": [
             {

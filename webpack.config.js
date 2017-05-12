@@ -12,7 +12,7 @@ module.exports = {
     entry: assign({
         'webpack-dev-server': 'webpack-dev-server/client?http://0.0.0.0:8081', // WebpackDevServer host and port
         'webpack': 'webpack/hot/only-dev-server', // "only" prevents reload on syntax errors
-        '__PROJECTNAME__': path.join(__dirname, "js", "app")
+        'brugis': path.join(__dirname, "js", "app")
     }, themeEntries),
     output: {
         path: path.join(__dirname, "dist"),
@@ -28,7 +28,7 @@ module.exports = {
             options: {
                 postcss: {
                     plugins: [
-                      require('postcss-prefix-selector')({prefix: '.__PROJECTNAME__', exclude: ['.ms2', '.__PROJECTNAME__', '[data-ms2-container]']})
+                      require('postcss-prefix-selector')({prefix: '.brugis', exclude: ['.ms2', '.brugis', '[data-ms2-container]']})
                     ]
                 },
                 context: __dirname
@@ -45,6 +45,9 @@ module.exports = {
         extractThemesPlugin
     ],
     resolve: {
+        alias: {
+          'react': path.join(__dirname, 'node_modules', 'react')
+        },
       extensions: [".js", ".jsx"]
     },
     module: {
