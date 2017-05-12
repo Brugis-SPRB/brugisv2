@@ -1,7 +1,7 @@
 {
 	"proxyUrl": "/brugis/proxy/?url=",
 	"geoStoreUrl": "/brugis/rest/geostore",
-	"printUrl": "http://www.mybrugis.irisnet.be/geoserver/pdf/info.json",
+	"printUrl": "http://mbr102.irisnet.be/print/print/dep/info.json",
 	"bingApiKey": "AhuXBu7ipR1gNbBfXhtUAyCZ6rkC5PkWpxs2MnMRZ1ZupxQfivjLCch22ozKSCAn",
 	"translationsPath": "./js/translations",
 	"plugins": {
@@ -231,27 +231,7 @@
              }, {
                  "name":"MeasureLength"
              }, {
-                 "name": "Print",
-                 "cfg": {
-                   "useFixedScales": false,
-                   "syncMapPreview": true,
-                   "mapPreviewOptions": {
-                     "enableScalebox": false,
-                     "enableRefresh": false
-                   },
-                   "closeGlyph": "1-close",
-                   "submitConfig": {
-                     "buttonConfig": {
-                       "bsSize": "small",
-                       "bsStyle": "primary"
-                     },
-                     "glyph": ""
-                   },
-                   "previewOptions": {
-                     "buttonStyle": "primary"
-                   },
-                   "withPanelAsContainer": false
-                 }
+                 "name": "Print"
              }
          ]
 	}

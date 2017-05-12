@@ -20,7 +20,8 @@ const appConfig = {
     appStore,
     pluginsDef,
     initialActions: [],
-    appComponent: StandardRouter
+    appComponent: StandardRouter,
+    printingEnabled: true
 };
 
 var lb72Projection = new ol.proj.Projection({

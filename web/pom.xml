@@ -208,6 +208,25 @@
                         </resources>
                     </configuration>
                 </execution>
+                <execution>
+                    <id>translations2</id>
+                    <phase>process-classes</phase>
+                    <goals>
+                        <goal>copy-resources</goal>
+                    </goals>
+                    <configuration>
+                        <outputDirectory>${basedir}/target/brugis/js</outputDirectory>
+                        <encoding>UTF-8</encoding>
+                        <resources>
+                            <resource>
+                                <directory>${basedir}/../js</directory>
+                                <includes>
+                                    <include>translations/*</include>
+                                </includes>
+                            </resource>
+                        </resources>
+                    </configuration>
+                </execution>
             </executions>
         </plugin>
 
