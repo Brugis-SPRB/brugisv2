@@ -16,7 +16,7 @@ webpackConfig.plugins = [
         options: {
             postcss: {
                 plugins: [
-                  require('postcss-prefix-selector')({prefix: '.__PROJECTNAME__', exclude: ['.__PROJECTNAME__', '.ms2', '[data-ms2-container]']})
+                  require('postcss-prefix-selector')({prefix: '.brugis', exclude: ['.brugis', '.ms2', '[data-ms2-container]']})
                 ]
             },
             context: __dirname
@@ -47,6 +47,6 @@ webpackConfig.devtool = undefined;
 
 // this is a workaround for this issue https://github.com/webpack/file-loader/issues/3
 // use `__webpack_public_path__` in the index.html when fixed
-webpackConfig.output.publicPath = "/__PROJECTNAME__/dist/";
+webpackConfig.output.publicPath = "/brugis/dist/";
 
 module.exports = webpackConfig;

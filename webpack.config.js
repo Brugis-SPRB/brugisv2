@@ -131,8 +131,11 @@ module.exports = {
             '/mapstore/rest/geostore': {
                 target: "http://dev.mapstore2.geo-solutions.it"
             },
-            '/mapstore/proxy': {
-                target: "http://dev.mapstore2.geo-solutions.it"
+            '/brugis/proxy': {
+                target: "http://svappmavw115:8080"
+            },
+            '/print': {
+                target: "http://svappmavw115:8080"
             }
         }
     },

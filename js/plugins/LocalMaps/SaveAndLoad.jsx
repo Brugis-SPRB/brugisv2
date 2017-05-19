@@ -73,7 +73,7 @@ const SaveButton = React.createClass({
     },
     buttonStyle: function(disabled) {
         return {
-            "color": disabled ? "white" : "inherit"
+            "color": disabled ? "grey" : "inherit"
         };
     },
     inputStyle: function() {
