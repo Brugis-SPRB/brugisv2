@@ -233,6 +233,39 @@
                  "name":"MeasureLength"
              }, {
                  "name": "Print"
+             }, {
+                 "name": "Tutorial",
+                 "cfg": {
+                     "rawSteps" : [
+                         {
+                             "translationHTML": "drawerMenu",
+                             "selector": "#drawer-menu-button"
+                         },
+                         {
+                             "translation": "searchBar",
+                             "selector": "#map-search-bar"
+                         },
+                         {
+                             "translation": "burgerMenu",
+                             "selector": "#mapstore-burger-menu"
+                         },
+                         {
+                             "translation": "zoomInButton",
+                             "selector": "#zoomin-btn",
+                             "position": "top"
+                         },
+                         {
+                             "translation": "zoomOutButton",
+                             "selector": "#zoomout-btn",
+                             "position": "top"
+                         },
+                         {
+                             "translation": "identifyButton",
+                             "selector": "#identifyBar-container",
+                             "position": "top"
+                         }
+                     ]
+                 }
              }
          ]
 	}

@@ -24,6 +24,7 @@
         "about_p6": "MapStore2 is made by:",
         "enable": "Enable",
         "layers": "Layers",
+        "warning": "Warning",
         "layerProperties": {
             "windowTitle": "Layer Properties",
             "title": "Title",
@@ -40,7 +41,8 @@
             "deleteLayer":"Delete Layer",
             "deleteLayerMessage": "Do you really want to delete this Layer?",
             "confirmDelete": "Are you sure?",
-            "featureTypeError": "Cannot load layer attributes"
+            "featureTypeError": "Cannot load layer attributes",
+            "elevation": "Elevation"
         },
         "background": "Background",
         "language": "Language",
@@ -57,6 +59,7 @@
         "save": "Save",
 		"saveAs": "Save As...",
         "opacity": "Opacity",
+        "elevation": "Elevation",
         "close": "Close",
         "cancel": "Cancel",
         "confirm": "Confirm",
@@ -69,10 +72,11 @@
         "permissions": "Permissions",
         "home":{
             "open": "Open",
-            "description": "MapStore 2 has been developed to create, save and share in a simple and intuitive way maps and mashups created selecting contents coming from well-known sources like Google Maps and OpenStreetMap or from services provided by organizations using open protocols like OGC WMS, WFS, WMTS or TMS and so on.<br/>Visit the <a href=\"http://geosolutions-it.github.io/MapStore2/\">home page</a> for more details.",
+            "description": "MapStore 2 has been developed to create, save and share in a simple and intuitive way maps and mashups created selecting contents coming from well-known sources like Google Maps and OpenStreetMap or from services provided by organizations using open protocols like OGC WMS, WFS, WMTS or TMS and so on.<br/>Visit the <a href=\"/mapstore/docs/\">home page</a> for more details.",
             "Applications": "Applications",
             "Examples": "Examples",
             "LinkedinGroup": "Mapstore Linkedin Group",
+            "scrollTop": "Scroll to the top of the page",
             "ml": {
                 "title": "Keep in touch and stay up-to-date with the mailing lists",
                 "subscribe_users": "Subscribe Users Mailing List",
@@ -112,6 +116,9 @@
                 "plugins":{
                     "html":"<h3>Plugins</h3><p>Build your own application</p>"
                 },
+                "api":{
+                    "html":"<h3>API</h3><p>Use APIs to include a MapStore2 map in your application</p>"
+                },
                 "rasterstyler":{
                     "html":"<h3>Raster Styler</h3><p>Style your raster layer</p>"
                 }
@@ -123,6 +130,7 @@
             "deleteMapMessage": "Do you really want to delete this map?",
             "editMapMetadata":"Edit Map Properties",
             "mapTypes_combo": "Select Map Viewer: ",
+            "theme_combo": "Select Theme:",
             "maps_title": "Maps",
             "locales_combo": "Language:"
         },
@@ -174,7 +182,11 @@
             "editLayerProperties": "Edit layer properties",
             "searchFeatures": "Search on this layer...",
             "removeLayer": "Remove layer",
-            "loadingerror": "The layer has not been loaded correctly"
+            "loadingerror": "The layer has not been loaded correctly",
+            "measure": "Measure",
+            "backgroundSwitcher": "Backgrounds",
+            "layers": "Layers",
+            "drawerButton": "Layers"
         },
         "print":{
             "paneltitle": "Print",
@@ -215,6 +227,7 @@
         },
         "getFeatureInfoTitle": "Feature Info",
         "identifyTitle": "Feature Info",
+        "identifyNoQueryableLayers": "No active queryable layer",
         "identifyRevGeocodeHeader": "Coordinates",
         "identifyRevGeocodeModalTitle": "Address",
         "identifyRevGeocodeSubmitText": "More Info",
@@ -352,6 +365,11 @@
             "zoomOutTooltip": "Decrease Zoom",
             "zoomAllTooltip": "Zoom To Max Extent"
         },
+        "fullscreen": {
+            "tooltipActivate": "Switch to Full Screen",
+            "tooltipDeactivate": "Exit full screen",
+            "viewLargerMap": "View Larger Map"
+        },
         "helptexts": {
             "scaleBox": "This is the helptext for the ScaleBox",
             "zoomToMaxExtentButton": "This is the helptext for the ZoomToMaxExtentButton",
@@ -377,22 +395,27 @@
             "styler": "Add rule and generate a new styled layer"
         },
         "queryform": {
+            "title": "Advanced Search",
             "query": "Search",
             "reset": "Reset",
             "query_request_exception": "Request Error",
             "config": {
                 "load_config_exception": "Error Loading Configuration"
             },
+            "comboField": {
+                "default_placeholder": "Select..."
+            },
             "form": {
                 "header": "Find in the dataset",
                 "dataset_header": "Dataset"
             },
+            "emptyfilter": "No filter set. Searching could timeout if pagination is not supported by the server.",
             "attributefilter":{
                 "add_condition": " Add Condition",
                 "add_group": " Add Group",
                 "group_label_a": "Match",
                 "group_label_b": "of the following conditions:",
-                "combo_placeholder": "Select",
+                "combo_placeholder": "Attribute",
                 "text_placeholder": "Type text to search",
                 "attribute_filter_header": "Attribute Filter",
                 "groupField": {
@@ -409,8 +432,9 @@
                 }
             },
             "spatialfilter": {
-                "selection_method": "Selection Method",
+                "filterType": "Filter Type",
                 "geometric_operation": "Geometric Operation",
+                "combo_placeholder": "Select...",
                 "spatial_filter_header": "Spatial Filter",
                 "draw_start_label": "Draw the region of interest on the map",
                 "dwithin_label": "meters",
@@ -514,6 +538,11 @@
             "socialIntro": "In your favourite social network",
             "directLinkTitle": "Via a direct link",
             "embeddedLinkTitle": "Via the embedded code",
+            "forceDrawer": "Show TOC",
+            "apiLinkTitle": "Using APIs",
+            "social": "Social",
+            "direct": "Link",
+            "code": "Embed",
             "QRCodeLinkTitle": "qr code",
             "msgCopiedUrl":"Copied",
             "msgToCopyUrl":"Click to copy"
@@ -557,6 +586,8 @@
             "catalogUrlPlaceholder": "Enter catalog URL...",
             "textSearchPlaceholder": "text to search...",
             "search": "Search",
+            "reset": "Clear",
+            "options": "Options",
             "srs_not_allowed": "The map coordinate system is not supported by this service"
         },
         "uploader": {
@@ -564,7 +595,7 @@
             "type": "Type",
             "lastModified": "Last Modified",
             "filesize": "Size",
-            "beforeUpload": " Doing pre-upload operations... ",
+            "beforeUpload": "Doing pre-upload operations... ",
             "uploadingFiles": "Uploading Files...",
             "dropfile": "drop files here to upload",
             "dropfileImport": "drop files here to add them to this process"
@@ -768,6 +799,69 @@
             "selectedRulesDelete": "Delete selected rules ?",
             "deleteButton": "Delete",
             "cancelButton": "Cancel"
+        },
+        "tutorial": {
+            "title": "Tutorial",
+            "back": "Back",
+            "next": "Next",
+            "close": "Close",
+            "skip": "Skip",
+            "last": "Finish",
+            "start": "Start",
+            "checkbox": "don't show this message again",
+            "error": "Error: target not found",
+            "intro": {
+                "title": "Welcome on MapStore2",
+                "text": "framework to build web mapping applications using standard mapping libraries, such as OpenLayers 3 and Leaflet."
+            },
+            "drawerMenu": {
+                "title": "Main menu",
+                "text": "You can find information and tools to manage layer"
+            },
+            "searchBar": {
+                "title": "Search Bar",
+                "text": "Write the address of a place to find. e.g. '1st avenue, new york'. You can even insert coordinates in this format: 43.87,10.20"
+            },
+            "home": {
+                "title": "Home",
+                "text": "Go to homepage"
+            },
+            "searchButton": {
+                "title": "Search",
+                "text": "Click to open the search bar, then write the address of a place to find. e.g. '1st avenue, new york'. You can even insert coordinates in this format: 43.87,10.20"
+            },
+            "burgerMenu": {
+                "title": "Option Menu",
+                "text": "You can find options, settings and help"
+            },
+            "zoomInButton": {
+                "title": "Zoom In",
+                "text": "Click to enlarge the map"
+            },
+            "zoomOutButton": {
+                "title": "Zoom Out",
+                "text": "Click to reduce the map"
+            },
+            "fullscreen": {
+                "title": "Full Screen",
+                "text": "Click to go full screen"
+            },
+            "identifyButton": {
+                "title": "Info",
+                "text": "Press the button to activate the tool, then click on the map to retrieve information from layers"
+            },
+            "mapType": {
+                "title": "Library",
+                "text": "You can choose Leaflet or OpenLayers to render your maps"
+            },
+            "mapsGrid": {
+                "title": "Maps",
+                "text": "Here some examples of MapStore2. Click on an image to try the demo."
+            },
+            "examples": {
+                "title": "Custom Application",
+                "text": "You can use components and plugins of MapStore2 to build custom applications"
+            }
         }
     }
 }

@@ -35,7 +35,8 @@ module.exports = {
         BrugisTreePlugin: require('./plugins/BrugisTree/BrugisTree'),
         LocalMapsPlugin: require('./plugins/LocalMaps/LocalMaps'),
         MeasureAreaPlugin: require('./plugins/MeasureArea/MeasureArea'),
-        MeasureLengthPlugin: require('./plugins/MeasureLength/MeasureLength')
+        MeasureLengthPlugin: require('./plugins/MeasureLength/MeasureLength'),
+        TutorialPlugin: require('../MapStore2/web/client/plugins/Tutorial')
     },
     requires: {
 

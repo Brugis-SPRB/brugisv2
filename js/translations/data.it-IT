@@ -2,7 +2,7 @@
     "locale": "it-IT",
     "messages": {
         "Legend": "Legend",
-        "Layers": "Layers",    
+        "Layers": "Layers",
 
 
         "Language": "Lingua",
@@ -24,6 +24,7 @@
         "about_p6": "MapStore2 è sviluppato da:",
         "enable": "Abilita",
         "layers": "Livelli",
+        "warning": "Attenzione",
         "layerProperties": {
             "windowTitle": "Proprietà del livello",
             "title": "Titolo",
@@ -40,7 +41,8 @@
             "deleteLayer":"Elimina Livello",
             "deleteLayerMessage": "Sei sicuro di voler eliminare questo livello?",
             "confirmDelete": "Sei sicuro?",
-            "featureTypeError": "Impossibile caricare gli attributi del layer"
+            "featureTypeError": "Impossibile caricare gli attributi del layer",
+            "elevation": "Elevazione"
         },
         "background": "Sfondo",
         "language": "Lingua",
@@ -57,6 +59,7 @@
         "save": "Salva",
         "saveAs": "Salva con nome",
         "opacity": "Opacità",
+        "elevation": "Elevazione",
         "close": "Chiudi",
         "cancel": "Annulla",
         "confirm": "Conferma",
@@ -69,10 +72,11 @@
         "permissions": "Permessi",
         "home":{
             "open": "Apri",
-            "description": "MapStore è sviluppato per creare, salvare e condividere in modo semplice ed intuitivo mappe e mashup creati selezionando contenuti da server come Google Maps, OpenStreetMap, MapQuest o da server specifici forniti dalla propria organizzazione o da terzi. <br/> Visita la <a href=\"http://geosolutions-it.github.io/MapStore2/\">home page</a> per maggiori dettagli.",
+            "description": "MapStore è sviluppato per creare, salvare e condividere in modo semplice ed intuitivo mappe e mashup creati selezionando contenuti da server come Google Maps, OpenStreetMap, MapQuest o da server specifici forniti dalla propria organizzazione o da terzi. <br/> Visita la <a href=\"/mapstore/docs/\">home page</a> per maggiori dettagli.",
             "Applications": "Applicazioni",
             "Examples": "Esempi",
             "LinkedinGroup": "Gruppo Linkedin Mapstore",
+            "scrollTop": "Torna all'inizio della pagina",
             "ml": {
                 "title": "Resta in contatto e tieniti aggiornato con le mailing list",
                 "subscribe_users": "Sottoscrivi la mailing list degli utenti",
@@ -112,6 +116,9 @@
                 "plugins":{
                     "html":"<h3>Plugins</h3><p>Costruisci la tua applicazione</p>"
                 },
+                "api":{
+                    "html":"<h3>API</h3><p>Usa le API per includere una mappa MapStore2 nella tua applicazione</p>"
+                },
                 "rasterstyler":{
                     "html":"<h3>Raster Styler</h3><p>Crea stile per dati raster</p>"
                 }
@@ -123,6 +130,7 @@
             "deleteMapMessage": "Vuoi eliminare questa mappa?",
             "editMapMetadata":"Modifica Proprietà",
             "mapTypes_combo": "Seleziona il visualizzatore di mappa:",
+            "theme_combo": "Seleziona Tema:",
             "maps_title": "Mappe",
             "locales_combo": "Lingua:"
         },
@@ -174,7 +182,11 @@
             "editLayerProperties": "Modifica proprietà dal livello",
             "searchFeatures": "Effettua una ricerca su questo livello...",
             "removeLayer": "Rimuovi livello",
-            "loadingerror": "Il livello non è stato caricato correttamente"
+            "loadingerror": "Il livello non è stato caricato correttamente",
+            "measure": "Misure",
+            "backgroundSwitcher": "Sfondi",
+            "layers": "Livelli",
+            "drawerButton": "Livelli"
         },
         "print":{
             "paneltitle": "Stampa",
@@ -215,6 +227,7 @@
         },
         "getFeatureInfoTitle": "Informazioni Sulle Feature",
         "identifyTitle": "Informazioni Sulle Feature",
+        "identifyNoQueryableLayers": "Nessun livello interrogabile attivo",
         "identifyRevGeocodeHeader": "Coordinate",
         "identifyRevGeocodeModalTitle": "Indirizzo",
         "identifyRevGeocodeSubmitText": "Più informazioni",
@@ -352,6 +365,11 @@
             "zoomOutTooltip": "Diminuisci Zoom",
             "zoomAllTooltip": "Zoom Alla Massima Estensione"
         },
+        "fullscreen": {
+            "tooltipActivate":  "Passa a schermo intero",
+            "tooltipDeactivate": "Esci da schermo intero",
+            "viewLargerMap": "Visualizza mappa più grande"
+        },
         "helptexts": {
             "scaleBox": "Questo è il testo di aiuto per ScaleBox",
             "zoomToMaxExtentButton": "Questo è il testo di aiuto per ZoomToMaxExtentButton",
@@ -377,22 +395,27 @@
             "styler": "Crea lo style per il layer selezionato"
         },
         "queryform": {
+            "title": "Ricerca Avanzata",
             "query": "Ricerca",
             "reset": "Reimposta",
             "query_request_exception": "Errore nella richiesta",
             "config": {
                 "load_config_exception": "Errore Caricamento Configurazione"
             },
+            "comboField": {
+                "default_placeholder": "Seleziona..."
+            },
             "form": {
                 "header": "Cerca nel dataset",
                 "dataset_header": "Dataset"
             },
+            "emptyfilter": "Nessun filtro selezionato. La ricerca potrebbe andare in timeout se il server non supporta la paginazione.",
             "attributefilter":{
                 "add_condition": " Aggiungi Condizione",
                 "add_group": " Aggiungi Gruppo",
                 "group_label_a": "Soddisfa",
                 "group_label_b": "seguenti condizioni:",
-                "combo_placeholder": "Seleziona",
+                "combo_placeholder": "Attributo",
                 "text_placeholder": "Digita il testo da cercare",
                 "attribute_filter_header": "Filtro Attributi",
                 "groupField": {
@@ -409,8 +432,9 @@
                 }
             },
             "spatialfilter": {
-                "selection_method": "Metodo di selezione",
+                "filterType": "Tipo di filtro",
                 "geometric_operation": "Operazione Geometrica",
+                "combo_placeholder": "Seleziona...",
                 "spatial_filter_header": "Filtro Spaziale",
                 "draw_start_label": "Disegna sulla mappa l'area di interesse",
                 "dwithin_label": "metri",
@@ -513,7 +537,12 @@
             "titlePanel": "Condividi la mappa",
             "socialIntro": "Sul tuo social preferito",
             "directLinkTitle": "Con un Link diretto",
+            "social": "Social",
+            "direct": "Link",
+            "code": "Embed",
             "embeddedLinkTitle": "Con il codice embedded",
+            "forceDrawer": "Mostra l'indice dei livelli",
+            "apiLinkTitle": "Usando le API",
             "QRCodeLinkTitle": "Usando il QR Code",
             "msgCopiedUrl":"Copiato",
             "msgToCopyUrl":"Clicca per copiare"
@@ -557,6 +586,8 @@
             "catalogUrlPlaceholder": "URL del catalogo...",
             "textSearchPlaceholder": "testo da cercare...",
             "search": "Cerca",
+            "reset": "Reset",
+            "options": "Opzioni",
             "srs_not_allowed": "Il sistema di coordinate della mappa non è supportato da questo servizio"
         },
         "uploader": {
@@ -564,7 +595,7 @@
             "type": "Type",
             "lastModified": "Last Modified",
             "filesize": "Size",
-            "beforeUpload": " Doing pre-upload operations... ",
+            "beforeUpload": "Doing pre-upload operations... ",
             "uploadingFiles": "Uploading Files...",
             "dropfile": "drop files here to upload",
             "dropfileImport": "drop here files to add it to this process"
@@ -768,6 +799,69 @@
                 "selectedRulesDelete": "Vuoi eliminare le regole selezionate?",
                 "deleteButton": "Elimina",
                 "cancelButton": "Annulla"
+            },
+            "tutorial": {
+                "title": "Tutorial",
+                "back": "Indietro",
+                "next": "Avanti",
+                "close": "Chiudi",
+                "skip": "Salta",
+                "last": "Fine",
+                "start": "Inizia",
+                "checkbox": "non mostrare più questo messaggio",
+                "error": "Errore: oggetto non trovato",
+                "intro": {
+                    "title": "Benvenuto su MapStore2",
+                    "text": "framework per costruire applicazioni di web mapping usando librerie standard di mappatura, come OpenLayers 3 e Leaflet."
+                },
+                "drawerMenu": {
+                    "title": "Menu principale",
+                    "text": "Puoi trovare informazioni e strumenti per controllare i layer"
+                },
+                "searchBar": {
+                    "title": "Barra di ricerca",
+                    "text": "Scrivi un indirizzo di un luogo per trovarlo. esempio:  '1st avenue, new york'. Puoi anche digitare le coordinate in questo formato: 43.87,10.20"
+                },
+                "home": {
+                    "title": "Home",
+                    "text": "Vai alla homepage"
+                },
+                "searchButton": {
+                    "title": "Ricerca",
+                    "text": "Premi il pulsante per aprire la barra di ricerca, poi scrivi un indirizzo di un luogo per trovarlo. esempio:  '1st avenue, new york'. Puoi anche digitare le coordinate in questo formato: 43.87,10.20"
+                },
+                "burgerMenu": {
+                    "title": "Menu delle opzioni",
+                    "text": "Puoi trovare opzioni, impostazioni e aiuti"
+                },
+                "zoomInButton": {
+                    "title": "Zoom In",
+                    "text": "Premi per allargare la mappa"
+                },
+                "zoomOutButton": {
+                    "title": "Zoom Out",
+                    "text": "Premi per ridurre la mappa"
+                },
+                "fullscreen": {
+                    "title": "Schermo Intero",
+                    "text": "Premi per passare a schermo intero"
+                },
+                "identifyButton": {
+                    "title": "Info",
+                    "text": "Premi il pulsante per attivare lo strumento, poi fai click sulla mappa per ottenere informazioni dal layer"
+                },
+                "mapType": {
+                    "title": "Libreria",
+                    "text": "Puoi scegliere tra Leaflet o OpenLayers per visualizzare le mappe"
+                },
+                "mapsGrid": {
+                    "title": "Mappe",
+                    "text": "Qui alcuni esempi di MapStore2. Fai click su un'immagine per provare la demo"
+                },
+                "examples": {
+                    "title": "Applicazioni personalizzate",
+                    "text": "Puoi utilizzare componenti e plugins di MapStore2 per costruire applicazioni personalizzate"
+                }
             }
     }
 }
