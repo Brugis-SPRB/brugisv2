@@ -22,7 +22,7 @@ const appConfig = {
     initialActions: [],
     appComponent: StandardRouter,
     printingEnabled: true,
-    themeCfg: {theme: "default"}
+    themeCfg: {theme: "brugis"}
 };
 
 var lb72Projection = new ol.proj.Projection({

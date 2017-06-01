@@ -3,7 +3,7 @@ module.exports = [{
     }, {
         id: "console"
     }, {
-        id: "staline"
+        id: "brugis"
     }, {
         id: "wasabi"
     }, {
