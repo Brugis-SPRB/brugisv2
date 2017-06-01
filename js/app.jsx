@@ -21,7 +21,8 @@ const appConfig = {
     pluginsDef,
     initialActions: [],
     appComponent: StandardRouter,
-    printingEnabled: true
+    printingEnabled: true,
+    themeCfg: {theme: "default"}
 };
 
 var lb72Projection = new ol.proj.Projection({
