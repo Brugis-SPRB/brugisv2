@@ -223,7 +223,7 @@
                    "singleSection":true,
                    "menuOptions" : {
                        "show" : true,
-                       "overlapMap" : false,
+                       "overlapMap" : true,
                        "width" : 300
                    }
                 }
