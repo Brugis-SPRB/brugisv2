@@ -60,22 +60,11 @@ const BrugisTreeNode = React.createClass({
       };
   },
   labelStyle: function(item, disabled) {
-      /*
-      var computedStyle = {
-          "backgroundColor": "white"
-      };
-      if (item.checked && disabled) {
-          computedStyle = {
-              "backgroundColor": "lightgray"
-          };
-      }
-      return computedStyle;
-      */
       var labelDynamicClass = "brugistreelabel";
-       if (item.checked && disabled) {
-           labelDynamicClass += " checked";
-       }
-       return labelDynamicClass;
+      if (item.checked && disabled) {
+          labelDynamicClass += " checked";
+      }
+      return labelDynamicClass;
   },
 
   toggle: function(path) {
