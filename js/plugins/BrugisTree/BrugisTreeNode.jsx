@@ -38,11 +38,15 @@ const BrugisTreeNode = React.createClass({
       var item = this.props.item;
       var disabled = item.childNodes === null || item.childNodes.length === 0;
       var checked = item.checked ? true : false;
+      var labelDynamicClass = "brugistreelabel";
+      if (item.checked && disabled) {
+          labelDynamicClass += "checked";
+      }
 
       return (<li className="tree">
                 <div>
                {this.renderTreeGlyph(item, disabled, checked)}
-                <label onClick={this.toggleLayer.bind(this, item, disabled)} style={this.labelStyle(item, disabled)}>{item.title}</label>
+                <label onClick={this.toggleLayer.bind(this, item, disabled)} className={labelDynamicClass}>{item.title}</label>
                 </div>
           {(item.checked && item.childNodes) ? item.childNodes.map(this.renderChild, this) : false }
       </li>);
@@ -56,6 +60,7 @@ const BrugisTreeNode = React.createClass({
       };
   },
   labelStyle: function(item, disabled) {
+      /*
       var computedStyle = {
           "backgroundColor": "white"
       };
@@ -65,6 +70,12 @@ const BrugisTreeNode = React.createClass({
           };
       }
       return computedStyle;
+      */
+      var labelDynamicClass = "brugistreelabel";
+       if (item.checked && disabled) {
+           labelDynamicClass += " checked";
+       }
+       return labelDynamicClass;
   },
 
   toggle: function(path) {

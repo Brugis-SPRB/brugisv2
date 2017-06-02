@@ -52,8 +52,17 @@
 }
 
 .tree li:last-child:before {
-  background:white; /* same with body background */
+  background: @ms2-color-background; /* same with body background */
   height:auto;
   top:1em; /* (line-height/2) */
   bottom:0;
+}
+
+.brugistreelabel {
+    margin-left: 3px;
+    background-color: @ms2-color-background;
+}
+
+.brugistreelabelchecked {
+    background-color: @ms2-color-primary-light;
 }

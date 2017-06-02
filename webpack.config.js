@@ -6,8 +6,6 @@ var NoEmitOnErrorsPlugin = require("webpack/lib/NoEmitOnErrorsPlugin");
 var CopyWebpackPlugin = require('copy-webpack-plugin');
 
 const assign = require('object-assign');
-//const themeEntries = require('./MapStore2/themes.js').themeEntries;
-//const extractThemesPlugin = require('./MapStore2/themes.js').extractThemesPlugin;
 const themeEntries = require('./themes.js').themeEntries;
 const extractThemesPlugin = require('./themes.js').extractThemesPlugin;
 
