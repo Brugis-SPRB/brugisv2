@@ -33,7 +33,8 @@ module.exports = {
                     enabled: false,
                     menu: "3"
                 }
-            }
+            },
+            mapInfo: { infoFormat: 'application/json' }
         },
         mobile: {
             mapInfo: {enabled: true, infoFormat: 'text/html' },
