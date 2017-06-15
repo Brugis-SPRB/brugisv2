@@ -143,7 +143,6 @@ const Identify = React.createClass({
             } else {
                 this.props.showMarker();
             }
-
         }
 
         if (newProps.enabled && !this.props.enabled) {
