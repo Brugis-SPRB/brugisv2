@@ -10,7 +10,6 @@ module.exports = {
     plugins: {
         MousePositionPlugin: require('../MapStore2/web/client/plugins/MousePosition'),
         PrintPlugin: require('../MapStore2/web/client/plugins/Print'),
-        IdentifyPlugin: require('../MapStore2/web/client/plugins/Identify'),
         TOCPlugin: require('../MapStore2/web/client/plugins/TOC'),
         BackgroundSwitcherPlugin: require('../MapStore2/web/client/plugins/BackgroundSwitcher'),
         MeasureResultsPlugin: require('../MapStore2/web/client/plugins/MeasureResults'),
@@ -36,6 +35,7 @@ module.exports = {
         LocalMapsPlugin: require('./plugins/LocalMaps/LocalMaps'),
         MeasureAreaPlugin: require('./plugins/MeasureArea/MeasureArea'),
         MeasureLengthPlugin: require('./plugins/MeasureLength/MeasureLength'),
+        IdentifyPlugin: require('./plugins/BrugisInfo/IdentifyPlugin'),
         TutorialPlugin: require('../MapStore2/web/client/plugins/Tutorial')
     },
     requires: {
