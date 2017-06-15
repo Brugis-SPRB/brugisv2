@@ -7,6 +7,7 @@
  */
 
 const React = require('react');
+const {Panel} = require('react-bootstrap');
 
 var PropertiesViewer = React.createClass({
     propTypes: {
@@ -80,10 +81,9 @@ var PropertiesViewer = React.createClass({
     },
     render() {
         return (
-            <div style={this.props.componentStyle}>
-                {this.renderHeader()}
+            <Panel header={this.renderHeader()} style={this.props.componentStyle}>
                 {this.renderBody()}
-            </div>
+            </Panel>
         );
     },
     alwaysExcluded: ["exclude", "titleStyle", "listStyle", "componentStyle", "title"],
