@@ -17,7 +17,7 @@ const Draggable = require('react-draggable');
 const MapInfoUtils = require('../../../MapStore2/web/client/utils/MapInfoUtils');
 const Spinner = require('../../../MapStore2/web/client/components/misc/spinners/BasicSpinner/BasicSpinner');
 const Message = require('../../../MapStore2/web/client/components/I18N/Message');
-const DefaultViewer = require('../../../MapStore2/web/client/components/data/identify/DefaultViewer');
+const DefaultViewer = require('./BrugisViewer');
 const GeocodeViewer = require('../../../MapStore2/web/client/components/data/identify/GeocodeViewer');
 const Dialog = require('../../../MapStore2/web/client/components/misc/Dialog');
 
@@ -96,7 +96,7 @@ const Identify = React.createClass({
             queryableLayersFilter: MapInfoUtils.defaultQueryableFilter,
             style: {
                 position: "absolute",
-                maxWidth: "500px",
+                maxWidth: "700px",
                 top: "56px",
                 left: "45px",
                 zIndex: 1023,
@@ -170,28 +170,6 @@ const Identify = React.createClass({
         const Viewer = this.props.viewer;
         return (<Viewer format={this.props.format} missingResponses={missingResponses} responses={this.props.responses} {...this.props.viewerOptions}/>);
     },
-    renderReverseGeocode(latlng) {
-        if (this.props.enableRevGeocode) {
-            let reverseGeocodeData = this.props.reverseGeocodeData;
-            const Viewer = (<GeocodeViewer
-                latlng={latlng}
-                showRevGeocode={this.props.showRevGeocode}
-                showModalReverse={this.props.showModalReverse}
-                identifyRevGeocodeModalTitle={<Message msgId="identifyRevGeocodeModalTitle" />}
-                revGeocodeDisplayName={reverseGeocodeData.error ? <Message msgId="identifyRevGeocodeError" /> : this.props.reverseGeocodeData.display_name}
-                hideRevGeocode={this.props.hideRevGeocode}
-                identifyRevGeocodeSubmitText={<Message msgId="identifyRevGeocodeSubmitText" />}
-                identifyRevGeocodeCloseText={<Message msgId="identifyRevGeocodeCloseText" />}
-                modalOptions={{bsClass: 'mapstore-identify-modal modal'}} />);
-            return this.props.wrapRevGeocode ? (
-                <Panel
-                    header={<span><Glyphicon glyph="globe" />&nbsp;<Message msgId="identifyRevGeocodeHeader" /></span>}>
-                    {Viewer}
-                </Panel>
-            ) : (<div id="mapstore-identify-revgeocoder">{Viewer}</div>);
-        }
-        return null;
-    },
     renderContent() {
         let missingResponses = this.props.requests.length - this.props.responses.length;
         let latlng = this.props.point.latlng;
@@ -205,7 +183,6 @@ const Identify = React.createClass({
                 <div className={this.props.headerClassName ? this.props.headerClassName : "panel-heading"}>
                     {this.renderHeader(missingResponses)}
                 </div>
-                {this.renderReverseGeocode(latlng)}
                 {this.renderResults(missingResponses)}
             </Panel>
         ) : (
@@ -217,7 +194,6 @@ const Identify = React.createClass({
                 >
                 {this.renderHeader(missingResponses)}
                 <div role="body">
-                    {this.renderReverseGeocode(latlng)}
                     {this.renderResults(missingResponses)}
                 </div>
             </Dialog>
