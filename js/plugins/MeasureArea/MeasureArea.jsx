@@ -5,7 +5,7 @@ const assign = require('object-assign');
 const {changeMeasurement} = require('../../../MapStore2/web/client/actions/measurement');
 const {Button, Tooltip, OverlayTrigger} = require('react-bootstrap');
 
-const areaRuleIcon = require('./img/area-ruler.png');
+const areaRuleIcon = require('./img/area-ruler.svg');
 
 const MeasureArea = React.createClass({
 
@@ -58,7 +58,7 @@ const MeasureArea = React.createClass({
                 tooltipPlace="left"
                 bsStyle={this.props.bsStyle}
                 >
-                <img src={areaRuleIcon}></img>
+                <img src={areaRuleIcon} height="47" width="38"></img>
             </Button>
         );
     },

@@ -5,7 +5,7 @@ const assign = require('object-assign');
 const {changeMeasurement} = require('../../../MapStore2/web/client/actions/measurement');
 const {Button, Tooltip, OverlayTrigger} = require('react-bootstrap');
 
-const lineRuleIcon = require('./img/line-ruler.png');
+const lineRuleIcon = require('./img/line-ruler.svg');
 
 const MeasureLength = React.createClass({
 
@@ -58,7 +58,7 @@ const MeasureLength = React.createClass({
                 bsStyle={this.props.bsStyle}
                 tooltipPlace="left"
                 >
-                <img src={lineRuleIcon}></img>
+                <img src={lineRuleIcon} height="47" width="38"></img>
             </Button>
         );
     },
