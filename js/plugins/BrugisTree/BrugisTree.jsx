@@ -42,7 +42,7 @@ const BrugisTree = React.createClass({
             );
         }
         return (
-            <ul className="tree" key="brutree01">
+            <ul className="tree firstTree" key="brutree01">
                 {
                     this.props.treenodes.map((node) => {
                         return <BrugisTreeNode item={node} toggle={this.toggle} toggleLayer={this.toggleLayer} key={node.id} layers={this.props.layers}/>;
