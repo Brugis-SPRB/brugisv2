@@ -15,7 +15,7 @@ var PropertiesViewer = React.createClass({
         exclude: React.PropTypes.array,
         titleStyle: React.PropTypes.object,
         listStyle: React.PropTypes.object,
-        componentStyle: React.PropTypes.object
+        panelStyle: React.PropTypes.object,
     },
     getDefaultProps() {
         return {
@@ -30,11 +30,11 @@ var PropertiesViewer = React.createClass({
                 textOverflow: "ellipsis"
             },
             listStyle: {
-                margin: "0px 0px 4px 0px"
-            },
-            componentStyle: {
-                padding: "0px 0px 2px 0px",
-                margin: "2px 0px 0px 0px"
+              maxHeight: "500px",
+              position: "relative",
+              marginBottom: 0,
+              marginRight: "5px",
+              marginLeft: "5px",
             }
         };
     },
@@ -43,11 +43,11 @@ var PropertiesViewer = React.createClass({
             .filter(this.toExlude)
             .map((key) => {
                 return (
-                    <tr>
-                        <td><b>{key}</b></td>
-                        <td>{this.props[key]}</td>
+                  <dl>
+                        <dt>{key}</dt>
+                        <dd>{this.props[key]}</dd>
+                </dl>
 
-                    </tr>
                 );
             });
     },
@@ -56,9 +56,7 @@ var PropertiesViewer = React.createClass({
             return null;
         }
         return (
-            <div key={this.props.title} style={this.props.titleStyle}>
-                {this.props.title}
-            </div>
+          <span><span>{this.props.title}</span></span>
         );
     },
     renderBody() {
@@ -67,21 +65,20 @@ var PropertiesViewer = React.createClass({
             return null;
         }
         return (
-            <div style={{
-                padding: "4px",
-                margin: 0,
-                borderRadius: "4px",
-                boxShadow: "0px 2px 1px rgb(240,240,240)"
-            }}>
-                <table>
-                {items}
-                </table>
-            </div>
+
+              <div>
+                    {items}
+              </div>
+
         );
     },
     render() {
         return (
-            <Panel header={this.renderHeader()} style={this.props.componentStyle}>
+            <Panel header={this.renderHeader()}
+                    style={this.props.listStyle}
+                    eventKey={this.props.key}
+                    key={this.props.title}
+                    collapsible={this.props.collapsible}>
                 {this.renderBody()}
             </Panel>
         );
