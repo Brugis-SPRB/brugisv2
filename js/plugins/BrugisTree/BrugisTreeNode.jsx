@@ -47,7 +47,7 @@ const BrugisTreeNode = React.createClass({
       return (<li className="tree">
                 <div className="treenodediv">
                {this.renderTreeGlyph(item, disabled, checked)}
-                <label onClick={this.toggleLayer.bind(this, item, disabled)} className={labelDynamicClass}>{item.title}</label>
+                <label className="treenodelabel" onClick={this.toggleLayer.bind(this, item, disabled)} className={labelDynamicClass}>{item.title}</label>
                 </div>
           {(item.checked && item.childNodes) ? item.childNodes.map(this.renderChild, this) : false }
       </li>);
