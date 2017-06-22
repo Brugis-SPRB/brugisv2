@@ -20,7 +20,6 @@ const BrugisTreeNode = React.createClass({
   renderTreeGlyph: function(item, disabled, checked) {
       var close = <i className="glyphicon glyphicon-folder-close" onClick={this.toggleLayer.bind(this, item, disabled)}></i>;
       var open = <i className="glyphicon glyphicon-folder-open" onClick={this.toggleLayer.bind(this, item, disabled)}></i>;
-      //var layer = <i className="glyphicon glyphicon-th-large" onClick={this.toggleLayer.bind(this, item, disabled)}></i>;
       var layer = <i className="glyphicon glyphicon-file" onClick={this.toggleLayer.bind(this, item, disabled)}></i>;
       var glyph = null;
 

@@ -8,7 +8,7 @@
 
 var React = require('react');
 var PropertiesViewer = require('./PropertiesViewer');
-const {Panel, Accordion} = require('react-bootstrap');
+const {Accordion} = require('react-bootstrap');
 
 var JSONViewer = React.createClass({
     propTypes: {
@@ -25,7 +25,7 @@ var JSONViewer = React.createClass({
                 {(this.props.response.features || []).map((feature, i) => {
                     return (
                             <RowViewer key={i} title={feature.id} exclude={["bbox"]} {...feature.properties}/>
-                    )
+                    );
                 })}
                 </Accordion>
             </div>

@@ -18,7 +18,6 @@ const MapInfoUtils = require('../../../MapStore2/web/client/utils/MapInfoUtils')
 const Spinner = require('../../../MapStore2/web/client/components/misc/spinners/BasicSpinner/BasicSpinner');
 const Message = require('../../../MapStore2/web/client/components/I18N/Message');
 const DefaultViewer = require('./BrugisViewer');
-const GeocodeViewer = require('../../../MapStore2/web/client/components/data/identify/GeocodeViewer');
 const Dialog = require('../../../MapStore2/web/client/components/misc/Dialog');
 
 const Identify = React.createClass({
@@ -172,7 +171,6 @@ const Identify = React.createClass({
     },
     renderContent() {
         let missingResponses = this.props.requests.length - this.props.responses.length;
-        let latlng = this.props.point.latlng;
         return this.props.asPanel ? (
             <Panel
                 defaultExpanded={true}
