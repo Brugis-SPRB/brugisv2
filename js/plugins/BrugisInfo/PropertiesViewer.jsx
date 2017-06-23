@@ -16,6 +16,10 @@ var PropertiesViewer = React.createClass({
         titleStyle: React.PropTypes.object,
         listStyle: React.PropTypes.object,
         panelStyle: React.PropTypes.object,
+        properties: React.PropTypes.array,
+        customRenderers: React.PropTypes.array,
+        collapsible: React.PropTypes.bool,
+        key: React.PropTypes.string
     },
     getDefaultProps() {
         return {
@@ -34,21 +38,31 @@ var PropertiesViewer = React.createClass({
               position: "relative",
               marginBottom: 0,
               marginRight: "5px",
-              marginLeft: "5px",
+              marginLeft: "5px"
             }
         };
     },
     getBodyItems() {
-        return Object.keys(this.props)
+        return Object.keys(this.props.properties)
             .filter(this.toExlude)
             .map((key) => {
                 return (
                   <dl>
                       <dt>{key}</dt>
-                      <dd>{this.props[key]}</dd>
+                      {this.renderValue(key)}
                   </dl>
                 );
             });
+    },
+    renderValue(key) {
+        if (this.props.customRenderers && this.props.customRenderers[key]) {
+            return (
+              <dd>
+                {this.props.customRenderers[key](this.props.properties[key])}
+              </dd>
+            );
+        }
+        return (<dd>{this.props.properties[key]}</dd>);
     },
     renderHeader() {
         if (!this.props.title) {
@@ -82,7 +96,7 @@ var PropertiesViewer = React.createClass({
             </Panel>
         );
     },
-    alwaysExcluded: ["exclude", "titleStyle", "listStyle", "componentStyle", "title","bsStyle","headerRoletab","panelRoletabpanel","collapsible","expanded","onSelect","headerRole","panelRole"],
+    alwaysExcluded: ["exclude", "titleStyle", "listStyle", "componentStyle", "title", "bsStyle", "headerRoletab", "panelRoletabpanel", "collapsible", "expanded", "onSelect", "headerRole", "panelRole"],
     toExlude(propName) {
         return this.alwaysExcluded
             .concat(this.props.exclude)
