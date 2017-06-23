@@ -44,10 +44,9 @@ var PropertiesViewer = React.createClass({
             .map((key) => {
                 return (
                   <dl>
-                        <dt>{key}</dt>
-                        <dd>{this.props[key]}</dd>
-                </dl>
-
+                      <dt>{key}</dt>
+                      <dd>{this.props[key]}</dd>
+                  </dl>
                 );
             });
     },
@@ -83,7 +82,7 @@ var PropertiesViewer = React.createClass({
             </Panel>
         );
     },
-    alwaysExcluded: ["exclude", "titleStyle", "listStyle", "componentStyle", "title"],
+    alwaysExcluded: ["exclude", "titleStyle", "listStyle", "componentStyle", "title","bsStyle","headerRoletab","panelRoletabpanel","collapsible","expanded","onSelect","headerRole","panelRole"],
     toExlude(propName) {
         return this.alwaysExcluded
             .concat(this.props.exclude)

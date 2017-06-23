@@ -8,7 +8,7 @@ const Message = require('../../../MapStore2/web/client/components/I18N/Message')
 const {Alert, Panel, Accordion} = require('react-bootstrap');
 
 const DefaultHeader = require('../../../MapStore2/web/client/components/data/identify/DefaultHeader');
-const ViewerPage = require('../../../MapStore2/web/client/components/data/identify/viewers/ViewerPage');
+const ViewerPage = require('./ViewerPage');
 
 const mapInfoViewers = {
     [FeatureInfoUtils.INFO_FORMATS.JSON]: require('./JSONBruGISViewer'),
@@ -100,7 +100,7 @@ const DefaultViewer = React.createClass({
             );
         }
         return responses.map((res, i) => {
-            const {response, layerMetadata, format} = res;
+            const {response, layerMetadata, format, queryParams} = res;
             const PageHeader = this.props.header;
             return (
                 <Panel
@@ -116,7 +116,7 @@ const DefaultViewer = React.createClass({
                         onPrevious={() => this.previous()}/></span>
                     }
                     style={this.props.style}>
-                    <ViewerPage response={response} format={(format && FeatureInfoUtils.INFO_FORMATS[format]) || this.props.format} viewers={this.props.viewers} />
+                    <ViewerPage response={response} layers={queryParams.layers} format={(format && FeatureInfoUtils.INFO_FORMATS[format]) || this.props.format} viewers={this.props.viewers} />
                 </Panel>
             );
         });
