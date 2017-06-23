@@ -13,9 +13,6 @@
   margin-top:8px;
 }
 
-.tree .treenodediv {
-  overflow: hidden;
-}
 
 .tree ul {
   margin:0 0 0 0em; /* indentation */
@@ -50,8 +47,8 @@
   line-height:2em; /* default list item's `line-height` */
   font-weight:bold;
   position:relative;
-  //white-space: nowrap;
-  overflow: hidden;
+  white-space: nowrap;
+  //overflow: overlay;
 }
 
 .tree li:before {
@@ -76,6 +73,7 @@
 .brugistreelabel {
     margin-left: 6px;
     background-color: @ms2-color-background;
+    margin-bottom: 0px;
 }
 
 .brugistreelabelchecked {
