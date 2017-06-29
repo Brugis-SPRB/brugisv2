@@ -61,7 +61,8 @@ const Identify = React.createClass({
         headerGlyph: React.PropTypes.string,
         closeGlyph: React.PropTypes.string,
         allowMultiselection: React.PropTypes.bool,
-        warning: React.PropTypes.string
+        warning: React.PropTypes.string,
+        locale: React.PropTypes.string
     },
     getDefaultProps() {
         return {
@@ -119,7 +120,8 @@ const Identify = React.createClass({
             headerGlyph: "",
             closeGlyph: "1-close",
             className: "square-button",
-            allowMultiselection: false
+            allowMultiselection: false,
+            locale: "FR"
         };
     },
     componentWillReceiveProps(newProps) {
@@ -167,7 +169,7 @@ const Identify = React.createClass({
     },
     renderResults(missingResponses) {
         const Viewer = this.props.viewer;
-        return (<Viewer format={this.props.format} missingResponses={missingResponses} responses={this.props.responses} {...this.props.viewerOptions}/>);
+        return (<Viewer format={this.props.format} locale={this.props.locale} missingResponses={missingResponses} responses={this.props.responses} {...this.props.viewerOptions}/>);
     },
     renderContent() {
         let missingResponses = this.props.requests.length - this.props.responses.length;

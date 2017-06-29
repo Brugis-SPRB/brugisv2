@@ -13,7 +13,8 @@ module.exports = React.createClass({
         format: React.PropTypes.string,
         viewers: React.PropTypes.object,
         layers: React.PropTypes.oneOfType([React.PropTypes.string, React.PropTypes.object]),
-        response: React.PropTypes.oneOfType([React.PropTypes.string, React.PropTypes.object, React.PropTypes.node])
+        response: React.PropTypes.oneOfType([React.PropTypes.string, React.PropTypes.object, React.PropTypes.node]),
+        locale: React.PropTypes.string
     },
 
     onTouchStart(event) {
@@ -56,7 +57,7 @@ module.exports = React.createClass({
     renderPage(response) {
         const Viewer = this.props.viewers[this.props.format];
         if (Viewer) {
-            return <Viewer response={response} layers={this.props.layers} />;
+            return <Viewer response={response} layers={this.props.layers} locale={this.props.locale} />;
         }
         return null;
     },

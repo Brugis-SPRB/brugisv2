@@ -29,7 +29,8 @@ const DefaultViewer = React.createClass({
         validator: React.PropTypes.func,
         viewers: React.PropTypes.object,
         style: React.PropTypes.object,
-        containerProps: React.PropTypes.object
+        containerProps: React.PropTypes.object,
+        locale: React.PropTypes.string
     },
     getInitialState() {
         return {
@@ -52,7 +53,8 @@ const DefaultViewer = React.createClass({
                 position: "relative",
                 marginBottom: 0
             },
-            containerProps: {}
+            containerProps: {},
+            locale: "FR"
         };
     },
     componentWillReceiveProps(nextProps) {
@@ -87,7 +89,7 @@ const DefaultViewer = React.createClass({
     renderPage(response) {
         const Viewer = this.props.viewers[this.props.format];
         if (Viewer) {
-            return <Viewer response={response} />;
+            return <Viewer response={response} locale={this.props.locale}/>;
         }
         return null;
     },
@@ -116,7 +118,7 @@ const DefaultViewer = React.createClass({
                         onPrevious={() => this.previous()}/></span>
                     }
                     style={this.props.style}>
-                    <ViewerPage response={response} layers={queryParams.layers} format={(format && FeatureInfoUtils.INFO_FORMATS[format]) || this.props.format} viewers={this.props.viewers} />
+                    <ViewerPage response={response} locale={this.props.locale} layers={queryParams.layers} format={(format && FeatureInfoUtils.INFO_FORMATS[format]) || this.props.format} viewers={this.props.viewers} />
                 </Panel>
             );
         });

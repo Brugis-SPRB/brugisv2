@@ -20,7 +20,8 @@ var JSONViewer = React.createClass({
     propTypes: {
         response: React.PropTypes.object,
         rowViewer: React.PropTypes.object,
-        layers: React.PropTypes.oneOfType([React.PropTypes.string, React.PropTypes.object])
+        layers: React.PropTypes.oneOfType([React.PropTypes.string, React.PropTypes.object]),
+        locale: React.PropTypes.string
     },
     shouldComponentUpdate(nextProps) {
         return nextProps.response !== this.props.response;
@@ -28,18 +29,18 @@ var JSONViewer = React.createClass({
     render() {
         const RowViewer = this.props.rowViewer || PropertiesViewer;
 
-
         return (<div style={{maxHeight: "250px"}}>
                 <Accordion>
                 {(this.props.response.features || []).map((feature, i) => {
                     var displayTitle = feature.id;
                     var customRenderers = [];
-                    if (GFI_DICT.FR && GFI_DICT.FR[this.props.layers]) {
-                        if (GFI_DICT.FR[this.props.layers].title) {
-                            displayTitle = this.parseTitle(GFI_DICT.FR[this.props.layers].title, feature.properties);
+                    var curLocale = this.translateLocale(this.props.locale);
+                    if (GFI_DICT[curLocale] && GFI_DICT[curLocale][this.props.layers]) {
+                        if (GFI_DICT[curLocale][this.props.layers].title) {
+                            displayTitle = this.parseTitle(GFI_DICT[curLocale][this.props.layers].title, feature.properties);
                         }
-                        if (GFI_DICT.FR[this.props.layers].attributes) {
-                            feature.properties = this.customiseFeatureProperties(customRenderers, feature.properties, GFI_DICT.FR[this.props.layers].attributes);
+                        if (GFI_DICT[curLocale][this.props.layers].attributes) {
+                            feature.properties = this.customiseFeatureProperties(customRenderers, feature.properties, GFI_DICT[curLocale][this.props.layers].attributes);
                         }
                     }
                     return (
@@ -49,6 +50,24 @@ var JSONViewer = React.createClass({
                 </Accordion>
             </div>
         );
+    },
+    translateLocale(locale) {
+        var gfiLocale = "FR";
+        switch (locale.toLowerCase()) {
+            case locale.indexOf("fr") > 0:
+              gfiLocale = "FR";
+              break;
+            case locale.indexOf("en") > 0:
+              gfiLocale = "EN";
+              break;
+            case locale.indexOf("nl") > 0:
+              gfiLocale = "NL";
+              break;
+            default:
+              gfiLocale = "EN";
+              break;
+        }
+        return gfiLocale;
     },
     parseTitle(titleExp, properties) {
         var customTitle = titleExp;
