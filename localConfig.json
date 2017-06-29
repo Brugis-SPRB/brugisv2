@@ -217,7 +217,7 @@
              {
                 "name":"DrawerMenu",
                 "cfg":{
-                   "glyph":"1-stilo",
+                   "glyph":"globe",
                    "buttonStyle":"primary",
                    "buttonClassName":"square-button",
                    "singleSection":true,
