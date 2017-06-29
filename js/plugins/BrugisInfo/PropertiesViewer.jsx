@@ -16,10 +16,9 @@ var PropertiesViewer = React.createClass({
         titleStyle: React.PropTypes.object,
         listStyle: React.PropTypes.object,
         panelStyle: React.PropTypes.object,
-        properties: React.PropTypes.array,
+        properties: React.PropTypes.object,
         customRenderers: React.PropTypes.array,
-        collapsible: React.PropTypes.bool,
-        key: React.PropTypes.string
+        collapsible: React.PropTypes.bool
     },
     getDefaultProps() {
         return {
@@ -47,7 +46,7 @@ var PropertiesViewer = React.createClass({
             .filter(this.toExlude)
             .map((key) => {
                 return (
-                  <dl>
+                  <dl key={key}>
                       <dt>{key}</dt>
                       {this.renderValue(key)}
                   </dl>
@@ -89,7 +88,6 @@ var PropertiesViewer = React.createClass({
         return (
             <Panel header={this.renderHeader()}
                     style={this.props.listStyle}
-                    eventKey={this.props.key}
                     key={this.props.title}
                     collapsible={this.props.collapsible}>
                 {this.renderBody()}
