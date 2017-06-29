@@ -11,7 +11,7 @@ module.exports = {
         MousePositionPlugin: require('../MapStore2/web/client/plugins/MousePosition'),
         PrintPlugin: require('../MapStore2/web/client/plugins/Print'),
         TOCPlugin: require('../MapStore2/web/client/plugins/TOC'),
-        BackgroundSwitcherPlugin: require('../MapStore2/web/client/plugins/BackgroundSwitcher'),
+        BackgroundSelectorPlugin: require('../MapStore2/web/client/plugins/BackgroundSelector'),
         MeasureResultsPlugin: require('../MapStore2/web/client/plugins/MeasureResults'),
         MapPlugin: require('../MapStore2/web/client/plugins/Map'),
         ToolbarPlugin: require('../MapStore2/web/client/plugins/Toolbar'),

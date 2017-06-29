@@ -25,6 +25,12 @@
                    }
                 }
             },
+						{
+								"name": "BackgroundSelector",
+								"cfg": {
+										"bottom": 40
+								}
+						},
             {
                "name":"TOC",
                "cfg":{
@@ -40,25 +46,6 @@
                   "DrawerMenu":{
                      "glyph":"1-layer",
                      "title":"Legend",
-                     "buttonConfig":{
-                        "buttonClassName":"square-button no-border"
-                     }
-                  }
-               }
-            },
-            {
-               "name":"BackgroundSwitcher",
-               "cfg":{
-                  "fluid":true,
-                  "columnProperties":{
-                     "xs":12,
-                     "sm":12,
-                     "md":12
-                  }
-               },
-               "override":{
-                  "DrawerMenu":{
-                     "glyph":"1-map",
                      "buttonConfig":{
                         "buttonClassName":"square-button no-border"
                      }

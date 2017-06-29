@@ -27,7 +27,7 @@
             "visibility": true,
         	"format": "image/png8",
             "origin" : [140000.0,160000.0],
-            "thumbURL" : "assets/img/urbis_color.png",
+            "thumbURL" : "assets/img/urbis_color.PNG",
             "tiled" : true
         },{
 
@@ -39,7 +39,7 @@
             "visibility": false,
             "tiled" : true,
             "origin" : [140000.0,160000.0],
-            "thumbURL" : "assets/img/urbis_color.png",
+            "thumbURL" : "assets/img/urbis_color.PNG",
         	"format": "image/png8"
         },{
 
@@ -51,7 +51,7 @@
             "visibility": false,
             "origin" : [140000.0,160000.0],
             "tiled" : true,
-            "thumbURL" : "assets/img/urbis_gray.png",
+            "thumbURL" : "assets/img/urbis_gray.PNG",
         	"format": "image/png8"
         },{
 
@@ -64,7 +64,7 @@
             "visibility": false,
             "origin" : [140000.0,160000.0],
             "tiled" : true,
-            "thumbURL" : "assets/img/urbis_gray.png",
+            "thumbURL" : "assets/img/urbis_gray.PNG",
         	"format": "image/png8"
         }]
   }

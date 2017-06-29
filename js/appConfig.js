@@ -31,7 +31,7 @@ module.exports = {
                 },
                 drawer: {
                     enabled: false,
-                    menu: "3"
+                    menu: "2"
                 }
             },
             mapInfo: { infoFormat: 'application/json' }
