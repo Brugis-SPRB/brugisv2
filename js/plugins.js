@@ -27,16 +27,13 @@ module.exports = {
         MetadataExplorerPlugin: require('../MapStore2/web/client/plugins/MetadataExplorer'),
         OmniBarPlugin: require('../MapStore2/web/client/plugins/OmniBar'),
         BurgerMenuPlugin: require('../MapStore2/web/client/plugins/BurgerMenu'),
-        ManagerPlugin: require('../MapStore2/web/client/plugins/manager/Manager'),
-        UserManagerPlugin: require('../MapStore2/web/client/plugins/manager/UserManager'),
-        RulesManagerPlugin: require('../MapStore2/web/client/plugins/manager/RulesManager'),
-        ManagerMenuPlugin: require('../MapStore2/web/client/plugins/manager/ManagerMenu'),
         BrugisTreePlugin: require('./plugins/BrugisTree/BrugisTree'),
         LocalMapsPlugin: require('./plugins/LocalMaps/LocalMaps'),
         MeasureAreaPlugin: require('./plugins/MeasureArea/MeasureArea'),
         MeasureLengthPlugin: require('./plugins/MeasureLength/MeasureLength'),
         IdentifyPlugin: require('./plugins/BrugisInfo/IdentifyPlugin'),
-        TutorialPlugin: require('../MapStore2/web/client/plugins/Tutorial')
+        TutorialPlugin: require('../MapStore2/web/client/plugins/Tutorial'),
+        BrugisSurveyPlugin: require('./plugins/BrugisSurvey/SurveyPlugin')
     },
     requires: {
 
