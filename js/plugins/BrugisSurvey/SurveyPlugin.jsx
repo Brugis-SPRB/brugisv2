@@ -11,11 +11,11 @@ const {Panel} = require('react-bootstrap');
 const Dialog = require('../../../MapStore2/web/client/components/misc/Dialog');
 const Message = require('../../../MapStore2/web/client/plugins/locale/Message');
 
-
 const {
     loadBrugisSurveys,
     brugisSurveyDrawSurfaceToggle,
-    brugisSelectParcelToggle
+    brugisSelectParcelToggle,
+    brugisSurveyDeleteDrawings
 } = require('./actions');
 
 const {
@@ -45,6 +45,7 @@ const BrugisSurvey = React.createClass({
       onBrugisSurveyDrawSurfaceToggle: React.PropTypes.func,
       onBrugisSelectParcelToggle: React.PropTypes.func,
       onLoadBrugisSurveyWFSIntersectQuery: React.PropTypes.func,
+      onBrugisSurveyDeleteDrawings: React.PropTypes.func,
       drawSurfaceActive: React.PropTypes.bool,
       spatialField: React.PropTypes.object,
       point: React.PropTypes.object,
@@ -78,6 +79,7 @@ const BrugisSurvey = React.createClass({
           onBrugisSurveyDrawSurfaceToggle: () => {},
           onBrugisSelectParcelToggle: () => {},
           onLoadBrugisSurveyWFSIntersectQuery: () => {},
+          onBrugisSurveyDeleteDrawings: () => {},
           drawSurfaceActive: false,
           spatialField: {},
           point: {},
@@ -94,6 +96,7 @@ const BrugisSurvey = React.createClass({
               onBrugisSurveyDrawSurfaceToggle={this.props.onBrugisSurveyDrawSurfaceToggle}
               onBrugisSelectParcelToggle={this.props.onBrugisSelectParcelToggle}
               onLoadBrugisSurveyWFSIntersectQuery={this.props.onLoadBrugisSurveyWFSIntersectQuery}
+              onBrugisSurveyDeleteDrawings={this.props.onBrugisSurveyDeleteDrawings}
               drawSurfaceActive={this.props.drawSurfaceActive}
               spatialField={this.props.spatialField}
               point={this.props.point}
@@ -147,7 +150,8 @@ const BrugisSurveyPlugin = connect((state) => ({
     onEndDrawing: endDrawing,
     onBrugisSurveyDrawSurfaceToggle: brugisSurveyDrawSurfaceToggle,
     onBrugisSelectParcelToggle: brugisSelectParcelToggle,
-    onLoadBrugisSurveyWFSIntersectQuery: getFeatureInfo
+    onLoadBrugisSurveyWFSIntersectQuery: getFeatureInfo,
+    onBrugisSurveyDeleteDrawings: brugisSurveyDeleteDrawings
 })(BrugisSurvey);
 
 module.exports = {

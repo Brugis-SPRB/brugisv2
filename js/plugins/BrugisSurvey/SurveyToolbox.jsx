@@ -15,6 +15,7 @@ var SurveyToolBox = React.createClass({
         onBrugisSurveyDrawSurfaceToggle: React.PropTypes.func,
         onBrugisSelectParcelToggle: React.PropTypes.func,
         onLoadBrugisSurveyWFSIntersectQuery: React.PropTypes.func,
+        onBrugisSurveyDeleteDrawings: React.PropTypes.func,
         spatialField: React.PropTypes.object,
         point: React.PropTypes.object,
         parcel: React.PropTypes.object,
@@ -32,6 +33,7 @@ var SurveyToolBox = React.createClass({
             onBrugisSurveyDrawSurfaceToggle: () => {},
             onBrugisSelectParcelToggle: () => {},
             onLoadBrugisSurveyWFSIntersectQuery: () => {},
+            onBrugisSurveyDeleteDrawings: () => {},
             spatialField: {},
             point: {},
             parcel: {},
@@ -59,7 +61,7 @@ var SurveyToolBox = React.createClass({
                <ButtonGroup>
                     <Button bsSize={this.props.bsSize} bsStyle="primary" onClick={this.drawSurface} active={this.props.drawSurfaceActive}>Dessiner une surface</Button>
                     <Button bsSize={this.props.bsSize} bsStyle="success" onClick={this.selectParcel}>Sélectionner une parcelle</Button>
-                    <Button bsSize={this.props.bsSize} bsStyle="warning">Supprimer le dessin</Button>
+                    <Button bsSize={this.props.bsSize} bsStyle="warning" onClick={this.deleteDrawing}>Supprimer le dessin</Button>
                </ButtonGroup>
           </ButtonToolbar>
         );
@@ -73,6 +75,10 @@ var SurveyToolBox = React.createClass({
     },
     selectParcel() {
         this.props.onBrugisSelectParcelToggle();
+    },
+    deleteDrawing() {
+        this.props.onChangeDrawingStatus("clean", null, 'BrugisSurvey');
+        this.props.onBrugisSurveyDeleteDrawings();
     },
     changeDrawingStatus(status, method, owner, features) {
         this.props.onChangeDrawingStatus(

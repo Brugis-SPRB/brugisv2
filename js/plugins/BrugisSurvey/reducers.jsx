@@ -3,7 +3,8 @@ const {
   BRUGIS_SURVEY_LOADED,
   BRUGIS_SURVEY_LOAD_ERROR,
   BRUGIS_SURVEY_DRAW_SURFACE_TOGGLE,
-  BRUGIS_SURVEY_SELECT_PARCEL_TOGGLE
+  BRUGIS_SURVEY_SELECT_PARCEL_TOGGLE,
+  BRUGIS_SURVEY_DELETE_DRAWINGS
 } = require('./actions');
 
 const {
@@ -98,6 +99,9 @@ function brugisSurvey(state = initialState, action) {
                 }
             }
             return state;
+        }
+        case BRUGIS_SURVEY_DELETE_DRAWINGS: {
+            return assign({}, state, {newSurveyEnabled: true, spatialField: assign({}, state.spatialField, {geometries: []})});
         }
         default:
             return state;
