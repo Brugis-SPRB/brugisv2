@@ -11,15 +11,21 @@ const {Panel} = require('react-bootstrap');
 const Dialog = require('../../../MapStore2/web/client/components/misc/Dialog');
 const Message = require('../../../MapStore2/web/client/plugins/locale/Message');
 
+
 const {
     loadBrugisSurveys,
-    brugisSurveyDrawSurfaceToggle
+    brugisSurveyDrawSurfaceToggle,
+    brugisSelectParcelToggle
 } = require('./actions');
 
 const {
     changeDrawingStatus,
     endDrawing
 } = require('../../../MapStore2/web/client/actions/draw');
+
+const {
+    getFeatureInfo
+} = require('../../../MapStore2/web/client/actions/mapInfo');
 
 const BrugisSurvey = React.createClass({
   propTypes: {
@@ -37,8 +43,13 @@ const BrugisSurvey = React.createClass({
       onChangeDrawingStatus: React.PropTypes.func,
       onEndDrawing: React.PropTypes.func,
       onBrugisSurveyDrawSurfaceToggle: React.PropTypes.func,
+      onBrugisSelectParcelToggle: React.PropTypes.func,
+      onLoadBrugisSurveyWFSIntersectQuery: React.PropTypes.func,
       drawSurfaceActive: React.PropTypes.bool,
-      spatialField: React.PropTypes.object
+      spatialField: React.PropTypes.object,
+      point: React.PropTypes.object,
+      parcel: React.PropTypes.object,
+      map: React.PropTypes.object
   },
   getDefaultProps() {
       return {
@@ -65,8 +76,13 @@ const BrugisSurvey = React.createClass({
           onChangeDrawingStatus: () => {},
           onEndDrawing: () => {},
           onBrugisSurveyDrawSurfaceToggle: () => {},
+          onBrugisSelectParcelToggle: () => {},
+          onLoadBrugisSurveyWFSIntersectQuery: () => {},
           drawSurfaceActive: false,
-          spatialField: {}
+          spatialField: {},
+          point: {},
+          parcel: {},
+          map: {}
       };
   },
   render() {
@@ -76,8 +92,13 @@ const BrugisSurvey = React.createClass({
               onChangeDrawingStatus={this.props.onChangeDrawingStatus}
               onEndDrawing={this.props.onEndDrawing}
               onBrugisSurveyDrawSurfaceToggle={this.props.onBrugisSurveyDrawSurfaceToggle}
+              onBrugisSelectParcelToggle={this.props.onBrugisSelectParcelToggle}
+              onLoadBrugisSurveyWFSIntersectQuery={this.props.onLoadBrugisSurveyWFSIntersectQuery}
               drawSurfaceActive={this.props.drawSurfaceActive}
               spatialField={this.props.spatialField}
+              point={this.props.point}
+              parcel={this.props.parcel}
+              map={this.props.map}
             />
             <SurveyForm evtKey={1} />
             <SurveyGrid evtKey={2} />
@@ -111,17 +132,22 @@ const BrugisSurvey = React.createClass({
 });
 
 const BrugisSurveyPlugin = connect((state) => ({
+    map: (state.map && state.map.present) || (state.map) || (state.config && state.config.map) || null,
     surveys: state && state.surveys,
     visible: state.controls && state.controls.brugissurvey && state.controls.brugissurvey.enabled || false,
     toolbarActive: state.controls && state.controls.toolbar && state.controls.toolbar.active === 'BrugisSurvey' || false,
     drawSurfaceActive: state.brugisSurvey && state.brugisSurvey.active_tool === 'DRAW_POLY' || false,
-    spatialField: state.brugisSurvey && state.brugisSurvey.spatialField
+    spatialField: state.brugisSurvey && state.brugisSurvey.spatialField,
+    point: state.brugisSurvey && state.brugisSurvey.clickPoint || {},
+    parcel: state.brugisSurvey && state.brugisSurvey.clickParcel || {}
 }), {
     loadSurveys: loadBrugisSurveys,
     toggleControl: toggleControl.bind(null, 'brugissurvey', null),
     onChangeDrawingStatus: changeDrawingStatus,
     onEndDrawing: endDrawing,
-    onBrugisSurveyDrawSurfaceToggle: brugisSurveyDrawSurfaceToggle
+    onBrugisSurveyDrawSurfaceToggle: brugisSurveyDrawSurfaceToggle,
+    onBrugisSelectParcelToggle: brugisSelectParcelToggle,
+    onLoadBrugisSurveyWFSIntersectQuery: getFeatureInfo
 })(BrugisSurvey);
 
 module.exports = {
