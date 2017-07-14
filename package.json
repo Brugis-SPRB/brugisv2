@@ -81,6 +81,8 @@
     "@turf/polygon-to-linestring": "4.1.0",
     "@turf/helpers": "4.1.0",
     "@turf/union": "4.1.0",
+    "wellknown": "0.5.0",
+    "qs": "6.5.0",
     "ag-grid": "3.3.3",
     "ag-grid-react": "3.3.1",
     "axios": "0.11.1",

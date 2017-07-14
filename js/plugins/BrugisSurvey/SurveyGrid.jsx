@@ -1,5 +1,7 @@
 var React = require('react');
+var {IntlMixin, FormattedDate} = require('react-intl');
 var {Panel, Table} = require('react-bootstrap');
+
 
 var SurveyGrid = React.createClass({
     propTypes: {
@@ -7,6 +9,7 @@ var SurveyGrid = React.createClass({
         surveys: React.PropTypes.array,
         evtKey: React.PropTypes.number
     },
+    mixins: [IntlMixin],
     getDefaultProps() {
         return {
             title: "SurveyGrid",
@@ -23,7 +26,6 @@ var SurveyGrid = React.createClass({
                 <th>Dossier</th>
                 <th>Adresse</th>
                 <th>Statut</th>
-                <th>Type</th>
                 <th>Créé le</th>
                 <th>Disponible jusqu'au</th>
                 <th>Docx</th>
@@ -31,20 +33,38 @@ var SurveyGrid = React.createClass({
               </tr>
             </thead>
             <tbody>
-              <tr>
-                <td>ggg</td>
-                <td>zz</td>
-                <td>gdddgg</td>
-                <td>gdddgg</td>
-                <td>gdpgg</td>
-                <td>gdg</td>
-                <td>ggdg</td>
-                <td>gd</td>
-              </tr>
+              { this.props.surveys.map( (survey) => {
+                  return (
+                    <tr key={survey.startdate}>
+                      <td>{survey.docref}</td>
+                      <td>{survey.adress}</td>
+                      <td>{this.renderState()}</td>
+                      <td>
+                        <FormattedDate
+                          value={new Date(survey.startdate)}
+                          day="numeric"
+                          month="long"
+                          year="numeric" />
+                      </td>
+                      <td>
+                        <FormattedDate
+                          value={new Date(survey.enddate)}
+                          day="numeric"
+                          month="long"
+                          year="numeric" />
+                      </td>
+                      <td><a href={survey.docPathFR}>Docx</a></td>
+                      <td><a href={survey.pdfPathFR}>Pdf</a></td>
+                    </tr>
+                  );
+              }) }
             </tbody>
           </Table>
         </Panel>
         );
+    },
+    renderState(state) {
+        return ({state});
     }
 });
 

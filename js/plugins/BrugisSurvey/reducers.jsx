@@ -4,7 +4,9 @@ const {
   BRUGIS_SURVEY_LOAD_ERROR,
   BRUGIS_SURVEY_DRAW_SURFACE_TOGGLE,
   BRUGIS_SURVEY_SELECT_PARCEL_TOGGLE,
-  BRUGIS_SURVEY_DELETE_DRAWINGS
+  BRUGIS_SURVEY_DELETE_DRAWINGS,
+  BRUGIS_SURVEY_TYPE_LOADED,
+  BRUGIS_SURVEY_CREATE_DONE
 } = require('./actions');
 
 const {
@@ -16,7 +18,6 @@ const {CLICK_ON_MAP} = require('../../../MapStore2/web/client/actions/map');
 
 const {LOAD_FEATURE_INFO} = require('../../../MapStore2/web/client/actions/mapInfo');
 
-
 const assign = require('object-assign');
 
 const initialState = {
@@ -24,6 +25,7 @@ const initialState = {
     clickPoint: null,
     clickParcel: null,
     newSurveyEnabled: false,
+    types: [],
     spatialField: {
         method: null,
         attribute: "the_geom",
@@ -42,8 +44,11 @@ function brugisSurvey(state = initialState, action) {
     switch (action.type) {
         case BRUGIS_SURVEY_LOAD_START:
             return state;
-        case BRUGIS_SURVEY_LOADED:
-            return state;
+        case BRUGIS_SURVEY_LOADED: {
+            return assign({}, state, {
+                surveys: action.info
+            });
+        }
         case BRUGIS_SURVEY_LOAD_ERROR:
             return state;
         case BRUGIS_SURVEY_DRAW_SURFACE_TOGGLE:
@@ -102,6 +107,14 @@ function brugisSurvey(state = initialState, action) {
         }
         case BRUGIS_SURVEY_DELETE_DRAWINGS: {
             return assign({}, state, {newSurveyEnabled: true, spatialField: assign({}, state.spatialField, {geometries: []})});
+        }
+        case BRUGIS_SURVEY_TYPE_LOADED: {
+            return assign({}, state, {types: action.info});
+        }
+        case BRUGIS_SURVEY_CREATE_DONE: {
+            return assign({}, state, {
+              user: action.info.user
+            });
         }
         default:
             return state;

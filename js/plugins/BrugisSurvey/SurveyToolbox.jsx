@@ -49,19 +49,18 @@ var SurveyToolBox = React.createClass({
              );
             this.props.onLoadBrugisSurveyWFSIntersectQuery(url, request, metadata);
         }
+        let initialLayer = [];
+        initialLayer = initialLayer.concat(newProps.spatialField.geometries);
         if (this.needsDisplayParcelRefresh(newProps)) {
-            let initialLayer = [];
-            initialLayer = initialLayer.concat(newProps.spatialField.geometries);
-
-            this.changeDrawingStatus("replace", null, 'BrugisSurvey', initialLayer);
+            this.props.onChangeDrawingStatus("replace", 'Polygon', 'BrugisSurvey', initialLayer);
         }
     },
     render() {
         return (<ButtonToolbar>
                <ButtonGroup>
                     <Button bsSize={this.props.bsSize} bsStyle="primary" onClick={this.drawSurface} active={this.props.drawSurfaceActive}>Dessiner une surface</Button>
-                    <Button bsSize={this.props.bsSize} bsStyle="success" onClick={this.selectParcel}>Sélectionner une parcelle</Button>
-                    <Button bsSize={this.props.bsSize} bsStyle="warning" onClick={this.deleteDrawing}>Supprimer le dessin</Button>
+                    <Button bsSize={this.props.bsSize} bsStyle="primary" onClick={this.selectParcel} active={this.props.selectParcelActive}>Sélectionner une parcelle</Button>
+                    <Button bsSize={this.props.bsSize} bsStyle="primary" onClick={this.deleteDrawing}>Supprimer le dessin</Button>
                </ButtonGroup>
           </ButtonToolbar>
         );
@@ -71,7 +70,15 @@ var SurveyToolBox = React.createClass({
         if (this.props.spatialField && this.props.spatialField.geometries && this.props.spatialField.geometries.length > 0) {
             initalLayer = initalLayer.concat(this.props.spatialField.geometries);
         }
-        this.changeDrawingStatus("start", 'Polygon', 'BrugisSurvey', initalLayer);
+        this.props.onBrugisSurveyDrawSurfaceToggle();
+        let options = {
+          stopAfterDrawing: false
+        };
+        if (!this.props.drawSurfaceActive) {
+            this.props.onChangeDrawingStatus("start", 'Polygon', 'BrugisSurvey', initalLayer, options);
+        } else {
+            this.props.onChangeDrawingStatus("stop", 'Polygon', 'BrugisSurvey', initalLayer);
+        }
     },
     selectParcel() {
         this.props.onBrugisSelectParcelToggle();
@@ -79,13 +86,6 @@ var SurveyToolBox = React.createClass({
     deleteDrawing() {
         this.props.onChangeDrawingStatus("clean", null, 'BrugisSurvey');
         this.props.onBrugisSurveyDeleteDrawings();
-    },
-    changeDrawingStatus(status, method, owner, features) {
-        this.props.onChangeDrawingStatus(
-            status,
-            method !== undefined ? method : 'Polygon',
-            owner,
-            features);
     },
     needsSelectParcelRefresh(props) {
         if (props.point && props.point.pixel) {
@@ -98,7 +98,7 @@ var SurveyToolBox = React.createClass({
     },
     needsDisplayParcelRefresh(props) {
         if (props.spatialField && props.spatialField.geometries && props.spatialField.geometries.length > 0) {
-            if (!this.props.spatialField && !this.props.spatialField.geometries || this.props.spatialField.geometries.length < props.spatialField.geometries.length) {
+            if (!this.props.spatialField && !this.props.spatialField.geometries || (this.props.spatialField.geometries.length < props.spatialField.geometries.length && !this.props.drawSurfaceActive)) {
                 return true;
             }
         }
