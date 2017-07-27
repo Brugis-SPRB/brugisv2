@@ -53,8 +53,8 @@ var SurveyForm = React.createClass({
                   Type d'urbanalyse :
                 </Col>
                 <Col sm={8}>
-                  <FormControl componentClass="select" onChange={this.handleTypeChange}>
-                    <option disabled selected > -- select an option -- </option>
+                  <FormControl componentClass="select" onChange={this.handleTypeChange} defaultValue={-1}>
+                    <option disabled value={-1}> -- select an option -- </option>
                     {this.props.types.map((item) =>
                       <option value={item.id} key={item.id}>{item.title}</option>
                     )}

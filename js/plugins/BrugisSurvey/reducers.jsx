@@ -6,6 +6,7 @@ const {
   BRUGIS_SURVEY_SELECT_PARCEL_TOGGLE,
   BRUGIS_SURVEY_DELETE_DRAWINGS,
   BRUGIS_SURVEY_TYPE_LOADED,
+  BRUGIS_SURVEY_CREATE_START,
   BRUGIS_SURVEY_CREATE_DONE
 } = require('./actions');
 
@@ -17,6 +18,8 @@ const {
 const {CLICK_ON_MAP} = require('../../../MapStore2/web/client/actions/map');
 
 const {LOAD_FEATURE_INFO} = require('../../../MapStore2/web/client/actions/mapInfo');
+
+const {MAP_CONFIG_LOADED} = require('../../../MapStore2/web/client/actions/config');
 
 const assign = require('object-assign');
 
@@ -46,7 +49,7 @@ function brugisSurvey(state = initialState, action) {
             return state;
         case BRUGIS_SURVEY_LOADED: {
             return assign({}, state, {
-                surveys: action.info
+                surveys: action.info.records
             });
         }
         case BRUGIS_SURVEY_LOAD_ERROR:
@@ -111,9 +114,19 @@ function brugisSurvey(state = initialState, action) {
         case BRUGIS_SURVEY_TYPE_LOADED: {
             return assign({}, state, {types: action.info});
         }
+        case BRUGIS_SURVEY_CREATE_START: {
+            return assign({}, state, { active_tool: ""});
+        }
         case BRUGIS_SURVEY_CREATE_DONE: {
+            localStorage.setItem('currentUser', action.info.user);
             return assign({}, state, {
-              user: action.info.user
+                user: action.info.user
+            });
+        }
+        case MAP_CONFIG_LOADED: {
+            return assign({}, state, {
+                webreperagehost: action.config.survey && action.config.survey.host || "",
+                geoserver: action.config.survey && action.config.survey.geoserver || ""
             });
         }
         default:

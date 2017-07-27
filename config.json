@@ -1,6 +1,10 @@
 
 {
    "version" : 2,
+   "survey": {
+     "host": "http://10.1.2.125:8080/WebReperage",
+     "geoserver": "http://svappmavw115:8080/geoserver/ows"
+   },
   "map": {
     "projection": "EPSG:31370",
     "units": "m",

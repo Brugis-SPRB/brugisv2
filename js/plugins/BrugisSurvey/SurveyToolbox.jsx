@@ -19,7 +19,8 @@ var SurveyToolBox = React.createClass({
         spatialField: React.PropTypes.object,
         point: React.PropTypes.object,
         parcel: React.PropTypes.object,
-        map: React.PropTypes.object
+        map: React.PropTypes.object,
+        geoserver: React.PropTypes.string
     },
     getDefaultProps() {
         return {
@@ -37,7 +38,8 @@ var SurveyToolBox = React.createClass({
             spatialField: {},
             point: {},
             parcel: {},
-            map: {}
+            map: {},
+            geoserver: {}
         };
     },
     componentWillReceiveProps(newProps) {
@@ -45,7 +47,7 @@ var SurveyToolBox = React.createClass({
             const {url, request, metadata} = this.buildRequest(
               "BDU:Parcelle_2016",
                newProps,
-               "http://svappmavw115:8080/geoserver/ows"
+               this.props.geoserver
              );
             this.props.onLoadBrugisSurveyWFSIntersectQuery(url, request, metadata);
         }
@@ -98,7 +100,7 @@ var SurveyToolBox = React.createClass({
     },
     needsDisplayParcelRefresh(props) {
         if (props.spatialField && props.spatialField.geometries && props.spatialField.geometries.length > 0) {
-            if (!this.props.spatialField && !this.props.spatialField.geometries || (this.props.spatialField.geometries.length < props.spatialField.geometries.length && !this.props.drawSurfaceActive)) {
+            if (!this.props.spatialField || !this.props.spatialField.geometries || (this.props.spatialField.geometries.length < props.spatialField.geometries.length && !this.props.drawSurfaceActive)) {
                 return true;
             }
         }

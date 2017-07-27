@@ -1,22 +1,40 @@
 var React = require('react');
-var {IntlMixin, FormattedDate} = require('react-intl');
+var {FormattedDate} = require('react-intl');
 var {Panel, Table} = require('react-bootstrap');
-
+var SurveyUtils = require('./utils.js');
 
 var SurveyGrid = React.createClass({
     propTypes: {
         title: React.PropTypes.string,
         surveys: React.PropTypes.array,
-        evtKey: React.PropTypes.number
+        evtKey: React.PropTypes.number,
+        user: React.PropTypes.string,
+        locale: React.PropTypes.string,
+        webreperagehost: React.PropTypes.string
     },
-    mixins: [IntlMixin],
     getDefaultProps() {
         return {
             title: "SurveyGrid",
             surveys: [],
             open: true,
-            evtKey: 1
+            evtKey: 1,
+            user: "",
+            locale: "fr-FR",
+            webreperagehost: ""
         };
+    },
+    onDocxClick(survey) {
+        if (survey.state === "DONE") {
+            window.open(this.props.webreperagehost + "/res/reperage/" + survey.id + ".docx?lang=" + SurveyUtils.getOldBrugisLocale(this.props.locale) + "&user=" + this.props.user);
+        }
+    },
+    onPdfClick(survey) {
+        if (survey.state === "DONE") {
+            window.open(this.props.webreperagehost + "/res/reperage/" + survey.id + ".pdf?lang=" + SurveyUtils.getOldBrugisLocale(this.props.locale) + "&user=" + this.props.user);
+        }
+    },
+    renderState(state) {
+        return (<span>{state}</span>);
     },
     render() {
         return (<Panel header="Liste des reperages" eventKey={this.props.evtKey} collapsible defaultExpanded={true}>
@@ -38,7 +56,7 @@ var SurveyGrid = React.createClass({
                     <tr key={survey.startdate}>
                       <td>{survey.docref}</td>
                       <td>{survey.adress}</td>
-                      <td>{this.renderState()}</td>
+                      <td>{this.renderState(survey.state)}</td>
                       <td>
                         <FormattedDate
                           value={new Date(survey.startdate)}
@@ -53,8 +71,12 @@ var SurveyGrid = React.createClass({
                           month="long"
                           year="numeric" />
                       </td>
-                      <td><a href={survey.docPathFR}>Docx</a></td>
-                      <td><a href={survey.pdfPathFR}>Pdf</a></td>
+                      <td>
+                        <button onClick={() => this.onDocxClick(survey)}>Docx</button>
+                      </td>
+                      <td>
+                        <button onClick={() => this.onPdfClick(survey)}>Pdf</button>
+                      </td>
                     </tr>
                   );
               }) }
@@ -62,9 +84,6 @@ var SurveyGrid = React.createClass({
           </Table>
         </Panel>
         );
-    },
-    renderState(state) {
-        return ({state});
     }
 });
 

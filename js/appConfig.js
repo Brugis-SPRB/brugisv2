@@ -34,6 +34,9 @@ module.exports = {
                     menu: "2"
                 }
             },
+            brugisSurvey: {
+                user: localStorage.getItem('currentUser')
+            },
             mapInfo: { infoFormat: 'application/json' }
         },
         mobile: {

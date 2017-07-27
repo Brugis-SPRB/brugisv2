@@ -63,7 +63,10 @@ const BrugisSurvey = React.createClass({
       parcel: React.PropTypes.object,
       map: React.PropTypes.object,
       types: React.PropTypes.array,
-      user: React.PropTypes.string
+      user: React.PropTypes.string,
+      locale: React.PropTypes.string,
+      webreperagehost: React.PropTypes.string,
+      geoserver: React.PropTypes.string
   },
   getDefaultProps() {
       return {
@@ -103,14 +106,15 @@ const BrugisSurvey = React.createClass({
           parcel: {},
           map: {},
           types: [],
-          user: ""
+          user: "",
+          locale: "fr-FR",
+          webreperagehost: "",
+          geoserver: ""
       };
   },
   componentWillMount() {
       if (this.props.types && this.props.types.length === 0) {
-          this.props.onLoadBrugisSurveyTypes("http://10.1.2.125:8080/WebReperage/resources/ReperagesType");
-      } else {
-          // console.log("AlreadyLoaded");
+          this.props.onLoadBrugisSurveyTypes(this.props.webreperagehost + "/resources/ReperagesType");
       }
   },
   componentDidMount() {
@@ -127,7 +131,7 @@ const BrugisSurvey = React.createClass({
           }
           let surveyAreaWKT = stringify(surveyAreaJson);
           this.props.onPostNewSurvey(
-            "http://10.1.2.125:8080/WebReperage/res/reperage",
+            this.props.webreperagehost + "/res/reperage",
             qs.stringify({
               geom: surveyAreaWKT,
               adr: infos.adr,
@@ -161,11 +165,15 @@ const BrugisSurvey = React.createClass({
                 point={this.props.point}
                 parcel={this.props.parcel}
                 map={this.props.map}
+                geoserver={this.props.geoserver}
               />
             </SurveyForm>
             <SurveyGrid
               evtKey={2}
               surveys={this.props.surveys}
+              user={this.props.user}
+              locale={this.props.locale}
+              webreperagehost={this.props.webreperagehost}
             />
           </Panel>
       );
@@ -194,10 +202,10 @@ const BrugisSurvey = React.createClass({
   loadSurveyTime() {
       setTimeout(() => {
           if (this.props.user) {
-              this.props.loadSurveys("http://10.1.2.125:8080/WebReperage/res/reperage/user?user=" + this.props.user);
+              this.props.loadSurveys(this.props.webreperagehost + "/res/reperage/userextjs?sort=startdate&dir=DESC&user=" + this.props.user);
           }
           this.loadSurveyTime();
-      }, 5000);
+      }, 10000);
   },
   buildTurfGeom(mapstoreGeom) {
       switch (mapstoreGeom.type) {
@@ -222,7 +230,10 @@ const BrugisSurveyPlugin = connect((state) => ({
     point: state.brugisSurvey && state.brugisSurvey.clickPoint || {},
     parcel: state.brugisSurvey && state.brugisSurvey.clickParcel || {},
     types: state.brugisSurvey && state.brugisSurvey.types || [],
-    user: state.brugisSurvey && state.brugisSurvey.user || ""
+    user: state.brugisSurvey && state.brugisSurvey.user || "",
+    locale: state.locale && state.locale.current || "fr-FR",
+    webreperagehost: state.brugisSurvey && state.brugisSurvey.webreperagehost || "",
+    geoserver: state.brugisSurvey && state.brugisSurvey.geoserver || ""
 }), {
     loadSurveys: loadBrugisSurveys,
     toggleControl: toggleControl.bind(null, 'brugissurvey', null),
