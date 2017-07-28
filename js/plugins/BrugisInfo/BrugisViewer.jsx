@@ -5,10 +5,11 @@ const FeatureInfoUtils = require('../../../MapStore2/web/client/utils/FeatureInf
 const HTML = require('../../../MapStore2/web/client/components/I18N/HTML');
 const Message = require('../../../MapStore2/web/client/components/I18N/Message');
 
-const {Alert, Panel, Accordion} = require('react-bootstrap');
+const {Alert, Panel, Accordion, Tabs, Tab} = require('react-bootstrap');
 
 const DefaultHeader = require('../../../MapStore2/web/client/components/data/identify/DefaultHeader');
 const ViewerPage = require('./ViewerPage');
+const BrugisStreetView = require('./BrugisStreetView');
 
 const mapInfoViewers = {
     [FeatureInfoUtils.INFO_FORMATS.JSON]: require('./JSONBruGISViewer'),
@@ -30,11 +31,13 @@ const DefaultViewer = React.createClass({
         viewers: React.PropTypes.object,
         style: React.PropTypes.object,
         containerProps: React.PropTypes.object,
-        locale: React.PropTypes.string
+        locale: React.PropTypes.string,
+        point: React.PropTypes.object
     },
     getInitialState() {
         return {
-            index: 0
+            index: 0,
+            tabkey: 1
         };
     },
     getDefaultProps() {
@@ -54,7 +57,8 @@ const DefaultViewer = React.createClass({
                 marginBottom: 0
             },
             containerProps: {},
-            locale: "FR"
+            locale: "FR",
+            point: {}
         };
     },
     componentWillReceiveProps(nextProps) {
@@ -141,7 +145,12 @@ const DefaultViewer = React.createClass({
                     key={"swiper"}
                     className="swipeable-view"
                     >
-                    {this.renderPages(validResponses)}
+                    <Tabs defaultActiveKey={1} id="uncontrolled-tab-example">
+                      <Tab eventKey={1} title="Info">{this.renderPages(validResponses)}</Tab>
+                      <Tab eventKey={2} title="StreeView">
+                        <BrugisStreetView lat={this.props.point.latlng.lat} lng={this.props.point.latlng.lng}/>
+                      </Tab>
+                    </Tabs>
                 </Container>
                 {this.renderAdditionalInfo()}
             </div>
