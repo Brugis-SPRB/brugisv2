@@ -18,8 +18,10 @@ const {changeMousePointer} = require('../../../MapStore2/web/client/actions/map'
 const {changeMapInfoFormat} = require('../../../MapStore2/web/client/actions/mapInfo');
 
 const Message = require('../../../MapStore2/web/client/plugins/locale/Message');
-
+/*
 const {Glyphicon} = require('react-bootstrap');
+*/
+const Gfiicon = require('./img/interro-01.svg');
 
 const assign = require('object-assign');
 
@@ -109,7 +111,7 @@ module.exports = {
             name: 'info',
             position: 6,
             tooltip: "info.tooltip",
-            icon: <Glyphicon glyph="map-marker"/>,
+            icon: <img src={Gfiicon} height="47" width="38"></img>,
             help: <Message msgId="helptexts.infoButton"/>,
             toggle: true
         },
