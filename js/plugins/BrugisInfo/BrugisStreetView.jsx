@@ -9,7 +9,8 @@ const BrugisStreetView = React.createClass({
     pitch: React.PropTypes.number,
     zoom: React.PropTypes.number,
     tabkey: React.PropTypes.number,
-    google_map_api_key: React.PropTypes.string
+    google_map_api_key: React.PropTypes.string,
+    googleMaps: React.PropTypes.object
   },
   getDefaultProps() {
       return {
@@ -19,16 +20,9 @@ const BrugisStreetView = React.createClass({
           pitch: 0,
           zoom: 1,
           tabkey: 0,
-          google_map_api_key: "AIzaSyBOj4l8-OrXmpVXEpeLH-dIfjCxhGkWxh0"
+          google_map_api_key: "AIzaSyBOj4l8-OrXmpVXEpeLH-dIfjCxhGkWxh0",
+          googleMaps: {}
       };
-  },
-  componentDidMount() {
-      var infos = {
-        position: {lat: this.props.lat, lng: this.props.lng},
-          pov: {heading: 100, pitch: 0},
-          zoom: 1
-      };
-      // this.initialize(ReactDOM.findDOMNode(this), infos, false);
   },
   componentWillReceiveProps(newProps) {
       if (this.needStreetViewRefresh(newProps)) {
@@ -41,7 +35,6 @@ const BrugisStreetView = React.createClass({
       }
   },
   render() {
-
       return (<div ref={ (ctn) => {this.ctn = ctn; }} style={{
 				height: '450px',
 				backgroundColor: '#eeeeee'
@@ -67,7 +60,7 @@ const BrugisStreetView = React.createClass({
   }
 });
 
-function mapScriptsToProps(props) {
+function mapScriptsToProps() {
     const googleMapsApiKey = "AIzaSyBOj4l8-OrXmpVXEpeLH-dIfjCxhGkWxh0";
     return {
         googleMaps: {

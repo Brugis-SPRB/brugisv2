@@ -4,6 +4,7 @@ var LoaderOptionsPlugin = require("webpack/lib/LoaderOptionsPlugin");
 var NormalModuleReplacementPlugin = require("webpack/lib/NormalModuleReplacementPlugin");
 var NoEmitOnErrorsPlugin = require("webpack/lib/NoEmitOnErrorsPlugin");
 var CopyWebpackPlugin = require('copy-webpack-plugin');
+var CommonsChunkPlugin = require('webpack/lib/optimize/CommonsChunkPlugin');
 
 const assign = require('object-assign');
 const themeEntries = require('./themes.js').themeEntries;
@@ -37,6 +38,10 @@ module.exports = {
         }),
         new DefinePlugin({
             "__DEVTOOLS__": true
+        }),
+        new CommonsChunkPlugin({
+          children: true, // necessary for splitting children chunks
+          async: true // necessary for async loading chunks
         }),
         new NormalModuleReplacementPlugin(/leaflet$/, path.join(__dirname, "MapStore2", "web", "client", "libs", "leaflet")),
         new NormalModuleReplacementPlugin(/openlayers$/, path.join(__dirname, "MapStore2", "web", "client", "libs", "openlayers")),

@@ -75,6 +75,7 @@
   },
   "//": "replace react-sortable-items with official on npm when 0.0.10 with remove_deprecated PR in included",
   "dependencies": {
+    "react-async-loader": "0.1.2",
     "@carnesen/redux-add-action-listener-enhancer": "0.0.1",
     "@turf/inside": "4.1.0",
     "@turf/line-intersect": "4.1.0",
