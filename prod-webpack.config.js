@@ -6,6 +6,7 @@ var DefinePlugin = require("webpack/lib/DefinePlugin");
 var NormalModuleReplacementPlugin = require("webpack/lib/NormalModuleReplacementPlugin");
 const extractThemesPlugin = require('./themes.js').extractThemesPlugin;
 var CopyWebpackPlugin = require('copy-webpack-plugin');
+var CommonsChunkPlugin = require('webpack/lib/optimize/CommonsChunkPlugin');
 
 webpackConfig.plugins = [
     new CopyWebpackPlugin([
@@ -24,6 +25,10 @@ webpackConfig.plugins = [
     }),
     new DefinePlugin({
         "__DEVTOOLS__": false
+    }),
+    new CommonsChunkPlugin({
+      children: true, // necessary for splitting children chunks
+      async: true // necessary for async loading chunks
     }),
     new DefinePlugin({
       'process.env': {
