@@ -61,7 +61,6 @@
                  "bodyClassName": "modal-body info-wrap",
                  "asPanel": false,
                  "headerGlyph": "",
-                 "glyph": "map-marker",
                  "className": "square-button",
                  "closeGlyph": "1-close",
                  "wrapRevGeocode": false,
