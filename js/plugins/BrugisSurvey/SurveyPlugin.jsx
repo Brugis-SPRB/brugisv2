@@ -1,7 +1,10 @@
 const React = require('react');
 const assign = require('object-assign');
 const {connect} = require('react-redux');
+/*
 const layersIcon = require('../../../MapStore2/web/client/plugins/toolbar/assets/img/layers.png');
+*/
+const Urbanalyseicon = require('./img/interro-01.svg');
 
 const union = require("@turf/union");
 const {polygon, multiPolygon} = require("@turf/helpers");
@@ -253,7 +256,7 @@ module.exports = {
             name: 'BrugisSurvey',
             tooltip: "BrugisSurvey",
             title: 'BrugisSurvey',
-            icon: <img src={layersIcon}/>,
+            icon: <img src={Urbanalyseicon} height="45" width="38"></img>,
             panel: true,
             exclusive: true,
             priority: 1
