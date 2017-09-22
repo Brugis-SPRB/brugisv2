@@ -111,7 +111,7 @@ module.exports = {
             name: 'info',
             position: 6,
             tooltip: "info.tooltip",
-            icon: <img src={Gfiicon} height="47" width="38"></img>,
+            icon: <img src={Gfiicon} height="45" width="38"></img>,
             help: <Message msgId="helptexts.infoButton"/>,
             toggle: true
         },
