@@ -104,9 +104,10 @@
             {
                "name":"Locate",
                "cfg":{
-                  "glyph":"1-position-1",
+								  "icon":"/assets/img/chaton.svg",
                   "btnConfig":{
-                     "className":"square-button"
+										"icon":"/assets/img/chaton.svg",
+										"className":"square-button"
                   }
                },
                "override":{
