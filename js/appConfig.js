@@ -37,7 +37,8 @@ module.exports = {
             brugisSurvey: {
                 user: localStorage.getItem('currentUser')
             },
-            mapInfo: { infoFormat: 'application/json' }
+            mapInfo: { infoFormat: 'application/json' },
+            catalog: { format: 'wms' }
         },
         mobile: {
             mapInfo: {enabled: true, infoFormat: 'text/html' },
