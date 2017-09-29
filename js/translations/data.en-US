@@ -824,7 +824,7 @@
             },
             "home": {
                 "title": "Home",
-                "text": "Go to homepage"
+                "text": "Click to go to homepage"
             },
             "searchButton": {
                 "title": "Search",
@@ -843,8 +843,8 @@
                 "text": "Click to reduce the map"
             },
             "fullscreen": {
-                "title": "Full Screen",
-                "text": "Click to go full screen"
+                "title": "Basculer en plein écran",
+                "text": "Basculer en plein écran"
             },
             "identifyButton": {
                 "title": "Info",
@@ -861,6 +861,33 @@
             "examples": {
                 "title": "Custom Application",
                 "text": "You can use components and plugins of MapStore2 to build custom applications"
+            },
+            "introCesium": {
+                "title": "3D map instructions",
+                "text": "Click on next button to start the tutorial"
+            },
+            "cesium": {
+                "title": "Interactions with the Map",
+                "pan": "Pan view",
+                "zoom": "Zoom view",
+                "tilt": "Tilt view",
+                "rotate": "Rotate view",
+                "oneDrag": "One finger drag",
+                "twoPinch": "Two finger pinch",
+                "twoDragSame": "Two finger drag, same direction",
+                "twoDragOpposite": "Two finger drag, opposite direction",
+                "leftClick": "Left click + drag",
+                "rightClick": "Right click + drag, or Mouse wheel scroll",
+                "middleClick": "Middle click + drag, or CTRL + Left/Right click + drag"
+
+            },
+            "cesiumCompass": {
+                "title": "Compass",
+                "text": "You can use the compass to orbit around the globe. Drag to rotate the map"
+            },
+            "cesiumNavigation": {
+                "title": "Navigation",
+                "text": "Here you can find the zoom in and zoom out buttons"
             }
         }
     }

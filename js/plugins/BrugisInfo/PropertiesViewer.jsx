@@ -7,18 +7,19 @@
  */
 
 const React = require('react');
+const PropTypes = require('prop-types');
 const {Panel} = require('react-bootstrap');
 
 var PropertiesViewer = React.createClass({
     propTypes: {
-        title: React.PropTypes.string,
-        exclude: React.PropTypes.array,
-        titleStyle: React.PropTypes.object,
-        listStyle: React.PropTypes.object,
-        panelStyle: React.PropTypes.object,
-        properties: React.PropTypes.object,
-        customRenderers: React.PropTypes.array,
-        collapsible: React.PropTypes.bool
+        title: PropTypes.string,
+        exclude: PropTypes.array,
+        titleStyle: PropTypes.object,
+        listStyle: PropTypes.object,
+        panelStyle: PropTypes.object,
+        properties: PropTypes.object,
+        customRenderers: PropTypes.array,
+        collapsible: PropTypes.bool
     },
     getDefaultProps() {
         return {

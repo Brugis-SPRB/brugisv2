@@ -7,6 +7,7 @@
  */
 
 var React = require('react');
+const PropTypes = require('prop-types');
 var PropertiesViewer = require('./PropertiesViewer');
 const {Accordion} = require('react-bootstrap');
 
@@ -18,10 +19,10 @@ const GFI_DICT = {
 
 var JSONViewer = React.createClass({
     propTypes: {
-        response: React.PropTypes.object,
-        rowViewer: React.PropTypes.object,
-        layers: React.PropTypes.oneOfType([React.PropTypes.string, React.PropTypes.object]),
-        locale: React.PropTypes.string
+        response: PropTypes.object,
+        rowViewer: PropTypes.object,
+        layers: PropTypes.oneOfType([PropTypes.string, PropTypes.object]),
+        locale: PropTypes.string
     },
     shouldComponentUpdate(nextProps) {
         return nextProps.response !== this.props.response;

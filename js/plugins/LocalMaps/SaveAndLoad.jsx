@@ -6,13 +6,14 @@
  * LICENSE file in the root directory of this source tree.
  */
 const React = require('react');
+const PropTypes = require('prop-types');
 const {Button, Form, FormGroup, FormControl, InputGroup} = require('react-bootstrap');
 
 
 const SaveButton = React.createClass({
     propTypes: {
-        onSave: React.PropTypes.func,
-        onLoad: React.PropTypes.func
+        onSave: PropTypes.func,
+        onLoad: PropTypes.func
     },
     getDefaultProps() {
         return {

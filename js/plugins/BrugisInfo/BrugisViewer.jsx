@@ -4,7 +4,7 @@ const MapInfoUtils = require('../../../MapStore2/web/client/utils/MapInfoUtils')
 const FeatureInfoUtils = require('../../../MapStore2/web/client/utils/FeatureInfoUtils');
 const HTML = require('../../../MapStore2/web/client/components/I18N/HTML');
 const Message = require('../../../MapStore2/web/client/components/I18N/Message');
-
+const PropTypes = require('prop-types');
 const {Alert, Panel, Accordion, Tabs, Tab} = require('react-bootstrap');
 
 const DefaultHeader = require('../../../MapStore2/web/client/components/data/identify/DefaultHeader');
@@ -19,20 +19,20 @@ const mapInfoViewers = {
 
 const DefaultViewer = React.createClass({
     propTypes: {
-        format: React.PropTypes.string,
-        collapsible: React.PropTypes.bool,
-        requests: React.PropTypes.array,
-        responses: React.PropTypes.array,
-        missingResponses: React.PropTypes.number,
-        container: React.PropTypes.oneOfType([React.PropTypes.object, React.PropTypes.func]),
-        header: React.PropTypes.oneOfType([React.PropTypes.object, React.PropTypes.func]),
-        headerOptions: React.PropTypes.object,
-        validator: React.PropTypes.func,
-        viewers: React.PropTypes.object,
-        style: React.PropTypes.object,
-        containerProps: React.PropTypes.object,
-        locale: React.PropTypes.string,
-        point: React.PropTypes.object
+        format: PropTypes.string,
+        collapsible: PropTypes.bool,
+        requests: PropTypes.array,
+        responses: PropTypes.array,
+        missingResponses: PropTypes.number,
+        container: PropTypes.oneOfType([PropTypes.object, PropTypes.func]),
+        header: PropTypes.oneOfType([PropTypes.object, PropTypes.func]),
+        headerOptions: PropTypes.object,
+        validator: PropTypes.func,
+        viewers: PropTypes.object,
+        style: PropTypes.object,
+        containerProps: PropTypes.object,
+        locale: PropTypes.string,
+        point: PropTypes.object
     },
     getInitialState() {
         return {

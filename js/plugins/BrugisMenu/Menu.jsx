@@ -1,21 +1,22 @@
 
 var React = require('react');
+const PropTypes = require('prop-types');
 var {Glyphicon, Button} = require('react-bootstrap');
 var Sidebar = require('react-sidebar').default;
 
 var Menu = React.createClass({
     propTypes: {
-        title: React.PropTypes.node,
-        alignment: React.PropTypes.string,
-        activeKey: React.PropTypes.string,
-        docked: React.PropTypes.bool,
-        show: React.PropTypes.bool,
-        onToggle: React.PropTypes.func,
-        onChoose: React.PropTypes.func,
-        single: React.PropTypes.bool,
-        width: React.PropTypes.number,
-        overlapMap: React.PropTypes.bool,
-        changeMapStyle: React.PropTypes.func
+        title: PropTypes.node,
+        alignment: PropTypes.string,
+        activeKey: PropTypes.string,
+        docked: PropTypes.bool,
+        show: PropTypes.bool,
+        onToggle: PropTypes.func,
+        onChoose: PropTypes.func,
+        single: PropTypes.bool,
+        width: PropTypes.number,
+        overlapMap: PropTypes.bool,
+        changeMapStyle: PropTypes.func
     },
     getDefaultProps() {
         return {

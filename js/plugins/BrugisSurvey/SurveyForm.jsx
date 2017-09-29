@@ -1,14 +1,15 @@
 var React = require('react');
+const PropTypes = require('prop-types');
 var {Col, Button, Panel, FormGroup, ControlLabel, FormControl, Form} = require('react-bootstrap');
 
 var SurveyForm = React.createClass({
     propTypes: {
-        title: React.PropTypes.string,
-        bsSize: React.PropTypes.string,
-        evtKey: React.PropTypes.number,
-        panelClassName: React.PropTypes.string,
-        types: React.PropTypes.array,
-        onPostNewSurvey: React.PropTypes.func
+        title: PropTypes.string,
+        bsSize: PropTypes.string,
+        evtKey: PropTypes.number,
+        panelClassName: PropTypes.string,
+        types: PropTypes.array,
+        onPostNewSurvey: PropTypes.func
     },
     getDefaultProps() {
         return {

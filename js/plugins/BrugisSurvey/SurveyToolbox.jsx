@@ -1,26 +1,27 @@
 var React = require('react');
+const PropTypes = require('prop-types');
 var {Button, ButtonGroup, ButtonToolbar} = require('react-bootstrap');
 const MapUtils = require('../../../MapStore2/web/client/utils/MapUtils');
 const CoordinatesUtils = require('../../../MapStore2/web/client/utils/CoordinatesUtils');
 
 var SurveyToolBox = React.createClass({
     propTypes: {
-        loadSurveyTypes: React.PropTypes.func,
-        submitNewSurvey: React.PropTypes.func,
-        bsSize: React.PropTypes.string,
-        onChangeDrawingStatus: React.PropTypes.func,
-        onEndDrawing: React.PropTypes.func,
-        drawSurfaceActive: React.PropTypes.bool,
-        selectParcelActive: React.PropTypes.bool,
-        onBrugisSurveyDrawSurfaceToggle: React.PropTypes.func,
-        onBrugisSelectParcelToggle: React.PropTypes.func,
-        onLoadBrugisSurveyWFSIntersectQuery: React.PropTypes.func,
-        onBrugisSurveyDeleteDrawings: React.PropTypes.func,
-        spatialField: React.PropTypes.object,
-        point: React.PropTypes.object,
-        parcel: React.PropTypes.object,
-        map: React.PropTypes.object,
-        geoserver: React.PropTypes.string
+        loadSurveyTypes: PropTypes.func,
+        submitNewSurvey: PropTypes.func,
+        bsSize: PropTypes.string,
+        onChangeDrawingStatus: PropTypes.func,
+        onEndDrawing: PropTypes.func,
+        drawSurfaceActive: PropTypes.bool,
+        selectParcelActive: PropTypes.bool,
+        onBrugisSurveyDrawSurfaceToggle: PropTypes.func,
+        onBrugisSelectParcelToggle: PropTypes.func,
+        onLoadBrugisSurveyWFSIntersectQuery: PropTypes.func,
+        onBrugisSurveyDeleteDrawings: PropTypes.func,
+        spatialField: PropTypes.object,
+        point: PropTypes.object,
+        parcel: PropTypes.object,
+        map: PropTypes.object,
+        geoserver: PropTypes.string
     },
     getDefaultProps() {
         return {

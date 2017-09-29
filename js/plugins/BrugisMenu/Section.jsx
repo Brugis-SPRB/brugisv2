@@ -6,19 +6,19 @@
  * LICENSE file in the root directory of this source tree.
  */
 var React = require('react');
-
+const PropTypes = require('prop-types');
 var {Glyphicon, Modal} = require('react-bootstrap');
 const assign = require('object-assign');
 
 var Section = React.createClass({
     propTypes: {
-        key: React.PropTypes.string,
-        eventKey: React.PropTypes.string,
-        headerClassName: React.PropTypes.string,
-        open: React.PropTypes.bool,
-        onHeaderClick: React.PropTypes.func,
-        renderInModal: React.PropTypes.bool,
-        header: React.PropTypes.node
+        key: PropTypes.string,
+        eventKey: PropTypes.string,
+        headerClassName: PropTypes.string,
+        open: PropTypes.bool,
+        onHeaderClick: PropTypes.func,
+        renderInModal: PropTypes.bool,
+        header: PropTypes.node
     },
     getDefaultProps() {
         return {

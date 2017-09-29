@@ -1,5 +1,6 @@
 
 var React = require('react');
+const PropTypes = require('prop-types');
 var UrbisResult = require('./UrbisResult');
 const mapUtils = require('../../../MapStore2/web/client/utils/MapUtils');
 const CoordinatesUtils = require('../../../MapStore2/web/client/utils/CoordinatesUtils');
@@ -8,12 +9,12 @@ const ol = require('openlayers');
 
 let ResultList = React.createClass({
     propTypes: {
-        results: React.PropTypes.object,
-        mapConfig: React.PropTypes.object,
-        onItemClick: React.PropTypes.func,
-        addMarker: React.PropTypes.func,
-        afterItemClick: React.PropTypes.func,
-        notFoundMessage: React.PropTypes.oneOfType([React.PropTypes.object, React.PropTypes.string])
+        results: PropTypes.object,
+        mapConfig: PropTypes.object,
+        onItemClick: PropTypes.func,
+        addMarker: PropTypes.func,
+        afterItemClick: PropTypes.func,
+        notFoundMessage: PropTypes.oneOfType([PropTypes.object, PropTypes.string])
     },
     getDefaultProps() {
         return {

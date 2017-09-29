@@ -1,4 +1,5 @@
 const React = require('react');
+const PropTypes = require('prop-types');
 const {connect} = require('react-redux');
 
 const assign = require('object-assign');
@@ -10,23 +11,23 @@ const lineRuleIcon = require('./img/line-ruler.svg');
 const MeasureLength = React.createClass({
 
     propTypes: {
-        id: React.PropTypes.string,
-        style: React.PropTypes.object,
-        text: React.PropTypes.string,
-        btnSize: React.PropTypes.oneOf(['large', 'small', 'xsmall']),
-        className: React.PropTypes.string,
-        uom: React.PropTypes.shape({
-            area: React.PropTypes.shape({
-                unit: React.PropTypes.string.isRequired,
-                label: React.PropTypes.string.isRequired
+        id: PropTypes.string,
+        style: PropTypes.object,
+        text: PropTypes.string,
+        btnSize: PropTypes.oneOf(['large', 'small', 'xsmall']),
+        className: PropTypes.string,
+        uom: PropTypes.shape({
+            area: PropTypes.shape({
+                unit: PropTypes.string.isRequired,
+                label: PropTypes.string.isRequired
             })
         }),
-        active: React.PropTypes.bool,
-        lengthMeasureEnabled: React.PropTypes.bool,
-        bsStyle: React.PropTypes.string,
-        toggleMeasure: React.PropTypes.func,
-        tooltip: React.PropTypes.element,
-        tooltipPlace: React.PropTypes.string
+        active: PropTypes.bool,
+        lengthMeasureEnabled: PropTypes.bool,
+        bsStyle: PropTypes.string,
+        toggleMeasure: PropTypes.func,
+        tooltip: PropTypes.element,
+        tooltipPlace: PropTypes.string
     },
 
     getDefaultProps() {
