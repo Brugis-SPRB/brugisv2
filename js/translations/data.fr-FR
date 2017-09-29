@@ -220,7 +220,7 @@
             "tooltip": "Selection du fond de plan"
         },
         "info":{
-            "tooltip": "Interroger les objects sur la carte"
+            "tooltip": "Interroger les objets sur la carte"
         },
         "expandtoolbar": {
             "tooltip": "Agrandir / Réduire"

@@ -106,7 +106,6 @@
                "cfg":{
 								  "icon":"/assets/img/chaton.svg",
                   "btnConfig":{
-										"icon":"/assets/img/chaton.svg",
 										"className":"square-button"
                   }
                },

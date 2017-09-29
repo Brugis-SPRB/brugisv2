@@ -70,6 +70,19 @@
             "tiled" : true,
             "thumbURL" : "assets/img/urbis_gray.PNG",
         	"format": "image/png8"
+        },{
+
+        	"type": "wms",
+            "url":["http://svappmavw019:8080/geoserver/wms"],
+        	"title": "Aquarelle",
+        	"name": "BCR:Aquarelle",
+            "group": "background",
+            "thumbURL" : "",
+            "visibility": false,
+            "origin" : [140000.0,160000.0],
+            "tiled" : true,
+            "thumbURL" : "assets/img/urbis_gray.PNG",
+        	"format": "image/png8"
         }]
   }
 }
