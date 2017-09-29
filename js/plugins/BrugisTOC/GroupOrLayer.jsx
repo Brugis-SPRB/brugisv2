@@ -7,6 +7,7 @@
  */
 
 var React = require('react');
+const PropTypes = require('prop-types');
 var Node = require('../../../MapStore2/web/client/components/TOC/Node');
 var VisibilityCheck = require('../../../MapStore2/web/client/components/TOC/fragments/VisibilityCheck');
 var Title = require('../../../MapStore2/web/client/components/TOC/fragments/Title');
@@ -23,28 +24,28 @@ const Message = require('../../../MapStore2/web/client/plugins/locale/Message');
 
 var GroupOrLayer = React.createClass({
     propTypes: {
-        node: React.PropTypes.object,
-        settings: React.PropTypes.object,
-        groupPropertiesChangeHandler: React.PropTypes.func,
-        groupVisibilityCheckbox: React.PropTypes.bool,
-        propertiesChangeHandler: React.PropTypes.func,
-        onSort: React.PropTypes.func,
-        onToggle: React.PropTypes.func,
-        onToggleGroup: React.PropTypes.func,
-        onSettings: React.PropTypes.func,
-        style: React.PropTypes.object,
-        sortableStyle: React.PropTypes.object,
-        hideSettings: React.PropTypes.func,
-        updateSettings: React.PropTypes.func,
-        updateNode: React.PropTypes.func,
-        activateLegendTool: React.PropTypes.bool,
-        activateSettingsTool: React.PropTypes.bool,
-        opacityText: React.PropTypes.oneOfType([React.PropTypes.string, React.PropTypes.element]),
-        saveText: React.PropTypes.oneOfType([React.PropTypes.string, React.PropTypes.element]),
-        closeText: React.PropTypes.oneOfType([React.PropTypes.string, React.PropTypes.element]),
-        modalOptions: React.PropTypes.object,
-        settingsOptions: React.PropTypes.object,
-        visibilityCheckType: React.PropTypes.string
+        node: PropTypes.object,
+        settings: PropTypes.object,
+        groupPropertiesChangeHandler: PropTypes.func,
+        groupVisibilityCheckbox: PropTypes.bool,
+        propertiesChangeHandler: PropTypes.func,
+        onSort: PropTypes.func,
+        onToggle: PropTypes.func,
+        onToggleGroup: PropTypes.func,
+        onSettings: PropTypes.func,
+        style: PropTypes.object,
+        sortableStyle: PropTypes.object,
+        hideSettings: PropTypes.func,
+        updateSettings: PropTypes.func,
+        updateNode: PropTypes.func,
+        activateLegendTool: PropTypes.bool,
+        activateSettingsTool: PropTypes.bool,
+        opacityText: PropTypes.oneOfType([PropTypes.string, PropTypes.element]),
+        saveText: PropTypes.oneOfType([PropTypes.string, PropTypes.element]),
+        closeText: PropTypes.oneOfType([PropTypes.string, PropTypes.element]),
+        modalOptions: PropTypes.object,
+        settingsOptions: PropTypes.object,
+        visibilityCheckType: PropTypes.string
     },
     getDefaultProps() {
         return {

@@ -1,4 +1,5 @@
 const React = require('react');
+const PropTypes = require('prop-types');
 const assign = require('object-assign');
 const {createSelector} = require('reselect');
 var {saveMapState, loadMapState} = require('./actions');
@@ -19,13 +20,13 @@ const selector = createSelector([
 const LocalMaps = React.createClass({
 
     propTypes: {
-        expanded: React.PropTypes.bool,
-        onStateSave: React.PropTypes.func,
-        onStateLoad: React.PropTypes.func,
-        currentState: React.PropTypes.object,
-        active: React.PropTypes.bool,
-        onClose: React.PropTypes.func,
-        onCloseToolBar: React.PropTypes.func
+        expanded: PropTypes.bool,
+        onStateSave: PropTypes.func,
+        onStateLoad: PropTypes.func,
+        currentState: PropTypes.object,
+        active: PropTypes.bool,
+        onClose: PropTypes.func,
+        onCloseToolBar: PropTypes.func
     },
 
     getDefaultProps() {

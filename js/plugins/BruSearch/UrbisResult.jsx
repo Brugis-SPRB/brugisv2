@@ -1,11 +1,11 @@
 
 var React = require('react');
-
+const PropTypes = require('prop-types');
 
 let UrbisResult = React.createClass({
     propTypes: {
-        item: React.PropTypes.object,
-        onItemClick: React.PropTypes.func
+        item: PropTypes.object,
+        onItemClick: PropTypes.func
     },
     onClick() {
         let item = this.props.item;

@@ -7,14 +7,15 @@
  */
 
 const React = require('react');
+const PropTypes = require('prop-types');
 
 module.exports = React.createClass({
     propTypes: {
-        format: React.PropTypes.string,
-        viewers: React.PropTypes.object,
-        layers: React.PropTypes.oneOfType([React.PropTypes.string, React.PropTypes.object]),
-        response: React.PropTypes.oneOfType([React.PropTypes.string, React.PropTypes.object, React.PropTypes.node]),
-        locale: React.PropTypes.string
+        format: PropTypes.string,
+        viewers: PropTypes.object,
+        layers: PropTypes.oneOfType([PropTypes.string, PropTypes.object]),
+        response: PropTypes.oneOfType([PropTypes.string, PropTypes.object, PropTypes.node]),
+        locale: PropTypes.string
     },
 
     onTouchStart(event) {

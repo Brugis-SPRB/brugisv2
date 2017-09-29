@@ -1,6 +1,7 @@
 
 
 const React = require('react');
+const PropTypes = require('prop-types');
 const {connect} = require('react-redux');
 
 const Message = require('../../../MapStore2/web/client/plugins/locale/Message');
@@ -28,20 +29,20 @@ require('./drawer.css');
 
 const DrawerMenu = React.createClass({
     propTypes: {
-        items: React.PropTypes.array,
-        active: React.PropTypes.string,
-        toggleMenu: React.PropTypes.func,
-        id: React.PropTypes.string,
-        glyph: React.PropTypes.string,
-        buttonStyle: React.PropTypes.string,
-        menuOptions: React.PropTypes.object,
-        singleSection: React.PropTypes.bool,
-        buttonClassName: React.PropTypes.string,
-        menuButtonStyle: React.PropTypes.object
+        items: PropTypes.array,
+        active: PropTypes.string,
+        toggleMenu: PropTypes.func,
+        id: PropTypes.string,
+        glyph: PropTypes.string,
+        buttonStyle: PropTypes.string,
+        menuOptions: PropTypes.object,
+        singleSection: PropTypes.bool,
+        buttonClassName: PropTypes.string,
+        menuButtonStyle: PropTypes.object
     },
     contextTypes: {
-        messages: React.PropTypes.object,
-        router: React.PropTypes.object
+        messages: PropTypes.object,
+        router: PropTypes.object
     },
     getDefaultProps() {
         return {

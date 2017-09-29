@@ -1,4 +1,5 @@
 const React = require('react');
+const PropTypes = require('prop-types');
 const assign = require('object-assign');
 const {connect} = require('react-redux');
 const layersIcon = require('../../../MapStore2/web/client/plugins/toolbar/assets/img/layers.png');
@@ -10,13 +11,13 @@ const BrugisTreeNode = require('./BrugisTreeNode');
 const BrugisTree = React.createClass({
 
     propTypes: {
-        expanded: React.PropTypes.bool,
-        loadTreeData: React.PropTypes.func,
-        onLayerAdd: React.PropTypes.func,
-        onLayerRemove: React.PropTypes.func,
-        onLayerToggle: React.PropTypes.func,
-        treenodes: React.PropTypes.array,
-        layers: React.PropTypes.array
+        expanded: PropTypes.bool,
+        loadTreeData: PropTypes.func,
+        onLayerAdd: PropTypes.func,
+        onLayerRemove: PropTypes.func,
+        onLayerToggle: PropTypes.func,
+        treenodes: PropTypes.array,
+        layers: PropTypes.array
     },
     getDefaultProps() {
         return {

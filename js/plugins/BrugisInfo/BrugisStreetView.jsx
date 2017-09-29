@@ -1,29 +1,30 @@
 const React = require('react');
 const asyncLoading = require('react-async-loader');
+const PropTypes = require('prop-types');
 
-const BrugisStreetView = React.createClass({
-  propTypes: {
-    lat: React.PropTypes.number,
-    lng: React.PropTypes.number,
-    heading: React.PropTypes.number,
-    pitch: React.PropTypes.number,
-    zoom: React.PropTypes.number,
-    tabkey: React.PropTypes.number,
-    google_map_api_key: React.PropTypes.string,
-    googleMaps: React.PropTypes.object
-  },
-  getDefaultProps() {
-      return {
-          lat: 46.9171876,
-          lng: 17.8951832,
-          heading: 100,
-          pitch: 0,
-          zoom: 1,
-          tabkey: 0,
-          google_map_api_key: "AIzaSyBOj4l8-OrXmpVXEpeLH-dIfjCxhGkWxh0",
-          googleMaps: {}
-      };
-  },
+class BrugisStreetView extends React.Component {
+  static propTypes = {
+    lat: PropTypes.number,
+    lng: PropTypes.number,
+    heading: PropTypes.number,
+    pitch: PropTypes.number,
+    zoom: PropTypes.number,
+    tabkey: PropTypes.number,
+    google_map_api_key: PropTypes.string,
+    googleMaps: PropTypes.object
+  };
+
+  static defaultProps = {
+    lat: 46.9171876,
+    lng: 17.8951832,
+    heading: 100,
+    pitch: 0,
+    zoom: 1,
+    tabkey: 0,
+    google_map_api_key: "AIzaSyBOj4l8-OrXmpVXEpeLH-dIfjCxhGkWxh0",
+    googleMaps: {}
+  };
+
   componentWillReceiveProps(newProps) {
       if (this.needStreetViewRefresh(newProps)) {
           let infos = {
@@ -33,14 +34,16 @@ const BrugisStreetView = React.createClass({
           };
           this.initialize(this.ctn, infos, true);
       }
-  },
+  }
+
   render() {
       return (<div ref={ (ctn) => {this.ctn = ctn; }} style={{
 				height: '450px',
 				backgroundColor: '#eeeeee'
 			}}>
       </div>);
-  },
+  }
+
   initialize(canvas, infos, update) {
       if (this.props.googleMaps && typeof (this.streetView) === "undefined" || update === true) {
           this.streetView = new this.props.googleMaps.StreetViewPanorama(
@@ -48,7 +51,8 @@ const BrugisStreetView = React.createClass({
             infos
           );
       }
-  },
+  }
+
   needStreetViewRefresh(newProps) {
       if (this.props.lat !== newProps.lat || this.props.lng !== newProps.lng) {
           return true;
@@ -58,7 +62,7 @@ const BrugisStreetView = React.createClass({
       }
       return false;
   }
-});
+}
 
 function mapScriptsToProps() {
     const googleMapsApiKey = "AIzaSyBOj4l8-OrXmpVXEpeLH-dIfjCxhGkWxh0";

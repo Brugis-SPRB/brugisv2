@@ -1,16 +1,17 @@
 var React = require('react');
+const PropTypes = require('prop-types');
 var {FormattedDate} = require('react-intl');
 var {Panel, Table} = require('react-bootstrap');
 var SurveyUtils = require('./utils.js');
 
 var SurveyGrid = React.createClass({
     propTypes: {
-        title: React.PropTypes.string,
-        surveys: React.PropTypes.array,
-        evtKey: React.PropTypes.number,
-        user: React.PropTypes.string,
-        locale: React.PropTypes.string,
-        webreperagehost: React.PropTypes.string
+        title: PropTypes.string,
+        surveys: PropTypes.array,
+        evtKey: PropTypes.number,
+        user: PropTypes.string,
+        locale: PropTypes.string,
+        webreperagehost: PropTypes.string
     },
     getDefaultProps() {
         return {

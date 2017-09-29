@@ -1,12 +1,6 @@
-/**
- * Copyright 2016, GeoSolutions Sas.
- * All rights reserved.
- *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree.
- */
 
 const React = require('react');
+const PropTypes = require('prop-types');
 const {connect} = require('react-redux');
 const {createSelector} = require('reselect');
 
@@ -58,8 +52,8 @@ const SearchPlugin = connect((state) => ({
     enabled: state.controls && state.controls.search && state.controls.search.enabled || false
 }))(React.createClass({
     propTypes: {
-        withToggle: React.PropTypes.oneOfType([React.PropTypes.bool, React.PropTypes.array]),
-        enabled: React.PropTypes.bool
+        withToggle: PropTypes.oneOfType([PropTypes.bool, PropTypes.array]),
+        enabled: PropTypes.bool
     },
     getDefaultProps() {
         return {

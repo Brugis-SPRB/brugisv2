@@ -1,12 +1,12 @@
 const React = require('react');
-
+const PropTypes = require('prop-types');
 const BrugisTreeNode = React.createClass({
 
   propTypes: {
-      toggle: React.PropTypes.func,
-      toggleLayer: React.PropTypes.func,
-      layers: React.PropTypes.array,
-      item: React.PropTypes.object
+      toggle: PropTypes.func,
+      toggleLayer: PropTypes.func,
+      layers: PropTypes.array,
+      item: PropTypes.object
   },
 
   renderChild: function(item) {

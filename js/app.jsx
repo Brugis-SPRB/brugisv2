@@ -13,7 +13,9 @@ const StandardRouter = connect((state) => ({
     pages
 }))(require('../MapStore2/web/client/components/app/StandardRouter'));
 
-const appStore = require('./stores/store').bind(null, initialState, {});
+const appStore = require('./stores/store').bind(null, initialState, {
+  maptype: require('../MapStore2/web/client/reducers/maptype')
+});
 
 const appConfig = {
     storeOpts,
