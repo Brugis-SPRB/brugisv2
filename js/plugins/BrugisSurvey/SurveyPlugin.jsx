@@ -2,9 +2,7 @@ const React = require('react');
 const PropTypes = require('prop-types');
 const assign = require('object-assign');
 const {connect} = require('react-redux');
-/*
-const layersIcon = require('../../../MapStore2/web/client/plugins/toolbar/assets/img/layers.png');
-*/
+
 //const Urbanalyseicon = require('./img/interro-01.svg');
 const Urbanalyseicon = require('./img/couches-04.svg');
 
@@ -71,7 +69,8 @@ const BrugisSurvey = React.createClass({
       user: PropTypes.string,
       locale: PropTypes.string,
       webreperagehost: PropTypes.string,
-      geoserver: PropTypes.string
+      geoserver: PropTypes.string,
+      buttonClassName: PropTypes.string
   },
   getDefaultProps() {
       return {
@@ -92,7 +91,7 @@ const BrugisSurvey = React.createClass({
               backgroundColor: "white"
           },
           panelClassName: "toolbar-panel",
-          visible: false,
+          visible: true,
           toggleControl: () => {},
           id: "brugis_survey",
           onChangeDrawingStatus: () => {},
@@ -114,7 +113,8 @@ const BrugisSurvey = React.createClass({
           user: "",
           locale: "fr-FR",
           webreperagehost: "",
-          geoserver: ""
+          geoserver: "",
+          buttonClassName: "survey-button"
       };
   },
   componentWillMount() {

@@ -236,8 +236,8 @@
 								     "presetList": {
 									     "default_tutorial": [
 									      {
-									       "title": "Welcome",
-									       "text": "my intro text",
+									       "title": "Bienvenue dans BruGIS!",
+									       "text": "BruGIS est le webgis de Bruxelles Urbanisme et Patrimoine. Suivez le tutoriel pour vous familiariser avec cette nouvelle version.",
 									       "selector": "#intro-tutorial"
 									      },
 												{"translationHTML": "drawerMenu", "selector": "#drawer-menu-button"},
@@ -245,6 +245,7 @@
 	 											 {"translation": "burgerMenu", "selector": "#mapstore-burger-menu"},
 	 											 {"translation": "zoomInButton", "selector": "#zoomin-btn", "position": "top"},
 	 											 {"translation": "zoomOutButton", "selector": "#zoomout-btn", "position": "top"},
+												 {"translation": "BrugisSurvey", "selector": "#survey-button", "position": "top"},
 	 											 {"translation": "identifyButton", "selector": "#identifyBar-container", "position": "top"}
 									     ]
 									    }
