@@ -45,5 +45,10 @@ module.exports = {
             mapInfo: {enabled: true, infoFormat: 'text/html' },
             mousePosition: {enabled: true, crs: "EPSG:4326", showCenter: true}
         }
+    },
+    storeOpts: {
+        persist: {
+            whitelist: []
+        }
     }
 };

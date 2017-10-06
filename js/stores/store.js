@@ -64,7 +64,6 @@ module.exports = (initialState = {defaultState: {}, mobile: {}}, appReducers = {
         if (action && action.type === CHANGE_BROWSER_PROPERTIES && newState.browser.mobile) {
             newState = assign(newState, mobileOverride);
         }
-
         return newState;
     };
     let store;
