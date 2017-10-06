@@ -216,7 +216,7 @@
             },
             "layoutWarning": "Mise en page impossible"
         },
-        "backgroundSwither":{
+        "BackgroundSelector":{
             "tooltip": "Selection du fond de plan"
         },
         "info":{
@@ -829,7 +829,7 @@
             },
             "searchButton": {
                 "title": "Recherche d'adresse",
-                "text": ""
+                "text": "Tapez l'adresse recherchée, par ex. Rue du progrès 80"
             },
             "burgerMenu": {
                 "title": "Menu Options",
@@ -849,15 +849,19 @@
             },
             "brugisSurvey": {
                 "title": "Urbanalyse",
-                "text": "Sélectionnez une zone ou dessinez-la et obtenez un rapport urbanistique complet pour celle-ci"
+                "text": "Sélectionnez ou dessinez une zone et obtenez un rapport urbanistique complet pour celle-ci"
             },
             "identifyButton": {
                 "title": "Info",
                 "text": "Cliquez le bouton pour activer l'outil, cliquez ensuite dans la carte pour obtenir plus d'information"
             },
+            "BackgroundSelector": {
+                "title": "Fonds de plan",
+                "text" : "choisissez votre fond de plan ici"
+            },
             "mapType": {
-                "title": "Library",
-                "text": "You can choose Leaflet or OpenLayers to render your maps"
+                "title": "Librairie",
+                "text": "Choisissez Leaflet ou OpenLayers pour afficher vos cartes"
             },
             "mapsGrid": {
                 "title": "Maps",

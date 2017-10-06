@@ -216,7 +216,7 @@
             },
             "layoutWarning": "Not allowed layout"
         },
-        "backgroundSwither":{
+        "BackgroundSelector":{
             "tooltip": "Select Background"
         },
         "info":{
@@ -846,13 +846,17 @@
                 "title": "Basculer en plein écran",
                 "text": "Basculer en plein écran"
             },
-            "brugisSurvey": {
+            "BrugisSurvey": {
                 "title": "Urbanalysis",
                 "text": "Select a parcel or draw an area and get a complete urban report for that area"
             },
             "identifyButton": {
                 "title": "Info",
                 "text": "Press the button to activate the tool, then click on the map to retrieve information from layers"
+            },
+            "BackgroundSelector": {
+                "title": "Background selector",
+                "text" : "Select the background here"
             },
             "mapType": {
                 "title": "Library",

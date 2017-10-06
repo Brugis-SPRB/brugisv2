@@ -246,7 +246,8 @@
 	 											 {"translation": "zoomInButton", "selector": "#zoomin-btn", "position": "top"},
 	 											 {"translation": "zoomOutButton", "selector": "#zoomout-btn", "position": "top"},
 												 {"translation": "BrugisSurvey", "selector": "#survey-button", "position": "top"},
-	 											 {"translation": "identifyButton", "selector": "#identifyBar-container", "position": "top"}
+	 											 {"translation": "identifyButton", "selector": "#identifyBar-container", "position": "top"},
+												 {"translation": "BackgroundSelector", "selector": "#background-preview-button", "position" : "top"}
 									     ]
 									    }
 
