@@ -6,19 +6,28 @@ const ol = require('openlayers');
 
 const StandardApp = require('../MapStore2/web/client/components/app/StandardApp');
 
-const {pages, pluginsDef, initialState, storeOpts} = require('./appConfig');
+const {pages, pluginsDef, initialState, storeOpts, appEpics = {}} = require('./appConfig');
 
 const StandardRouter = connect((state) => ({
     locale: state.locale || {},
     pages
 }))(require('../MapStore2/web/client/components/app/StandardRouter'));
 
+/*
 const appStore = require('./stores/store').bind(null, initialState, {
-  maptype: require('../MapStore2/web/client/reducers/maptype')
-});
+  maptype: require('../MapStore2/web/client/reducers/maptype'),
+  maps: require('../MapStore2/web/client/reducers/maps')
+}, appEpics);
+*/
+
+const appStore = require('../MapStore2/web/client/stores/StandardStore').bind(null, initialState, {
+  maptype: require('../MapStore2/web/client/reducers/maptype'),
+  maps: require('../MapStore2/web/client/reducers/maps')
+}, appEpics);
 
 const appConfig = {
     storeOpts,
+    appEpics,
     appStore,
     pluginsDef,
     initialActions: [],

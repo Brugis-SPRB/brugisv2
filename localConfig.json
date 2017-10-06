@@ -233,43 +233,22 @@
              }, {
                  "name": "Tutorial" ,
                  "cfg": {
-									   "steps" : [
-											 {"translationHTML": "drawerMenu", "selector": "#drawer-menu-button"},
-											 {"translation": "searchBar", "selector": "#map-search-bar"},
-											 {"translation": "burgerMenu", "selector": "#mapstore-burger-menu"},
-											 {"translation": "zoomInButton", "selector": "#zoomin-btn", "position": "top"},
-											 {"translation": "zoomOutButton", "selector": "#zoomout-btn", "position": "top"},
-											 {"translation": "identifyButton", "selector": "#identifyBar-container", "position": "top"}
-										 ],
-                     "rawSteps" : [
-                         {
-                             "translationHTML": "drawerMenu",
-                             "selector": "#drawer-menu-button"
-                         },
-                         {
-                             "translation": "searchBar",
-                             "selector": "#map-search-bar"
-                         },
-                         {
-                             "translation": "burgerMenu",
-                             "selector": "#mapstore-burger-menu"
-                         },
-                         {
-                             "translation": "zoomInButton",
-                             "selector": "#zoomin-btn",
-                             "position": "top"
-                         },
-                         {
-                             "translation": "zoomOutButton",
-                             "selector": "#zoomout-btn",
-                             "position": "top"
-                         },
-                         {
-                             "translation": "identifyButton",
-                             "selector": "#identifyBar-container",
-                             "position": "top"
-                         }
-                     ]
+								     "presetList": {
+									     "default_tutorial": [
+									      {
+									       "title": "Welcome",
+									       "text": "my intro text",
+									       "selector": "#intro-tutorial"
+									      },
+												{"translationHTML": "drawerMenu", "selector": "#drawer-menu-button"},
+	 											 {"translation": "searchBar", "selector": "#map-search-bar"},
+	 											 {"translation": "burgerMenu", "selector": "#mapstore-burger-menu"},
+	 											 {"translation": "zoomInButton", "selector": "#zoomin-btn", "position": "top"},
+	 											 {"translation": "zoomOutButton", "selector": "#zoomout-btn", "position": "top"},
+	 											 {"translation": "identifyButton", "selector": "#identifyBar-container", "position": "top"}
+									     ]
+									    }
+
                  }
              }
          ]

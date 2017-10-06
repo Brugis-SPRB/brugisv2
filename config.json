@@ -3,7 +3,7 @@
    "version" : 2,
    "survey": {
      "host": "http://10.1.2.125:8080/WebReperage",
-     "geoserver": "http://svappmavw115:8080/geoserver/ows"
+     "geoserver": "http://www.mybrugis.irisnet.be/geoserver/ows"
    },
   "map": {
     "projection": "EPSG:31370",
@@ -24,7 +24,7 @@
     "layers": [{
 
         	"type": "wms",
-            "url":["http://svappmavw019:8080/geoserver/URBIS/wms"],
+            "url":["http://www.mybrugis.irisnet.be/geoserver/URBIS/wms"],
         	"title": "UrbisFR",
         	"name": "URBIS:urbisFR",
              "group": "background",
@@ -36,7 +36,7 @@
         },{
 
         	"type": "wms",
-            "url":["http://svappmavw019:8080/geoserver/URBIS/wms"],
+            "url":["http://www.mybrugis.irisnet.be/geoserver/URBIS/wms"],
         	"title": "UrbisNL",
         	"name": "URBIS:urbisNL",
              "group": "background",
@@ -48,7 +48,7 @@
         },{
 
         	"type": "wms",
-            "url":["http://svappmavw019:8080/geoserver/URBIS/wms"],
+            "url":["http://www.mybrugis.irisnet.be/geoserver/URBIS/wms"],
         	"title": "UrbisNL Gray",
         	"name": "URBIS:urbisNLGray",
              "group": "background",
@@ -60,7 +60,7 @@
         },{
 
         	"type": "wms",
-            "url":["http://svappmavw019:8080/geoserver/URBIS/wms"],
+            "url":["http://www.mybrugis.irisnet.be/geoserver/URBIS/wms"],
         	"title": "UrbisFR Gray",
         	"name": "URBIS:urbisFRGray",
             "group": "background",
@@ -73,7 +73,7 @@
         },{
 
         	"type": "wms",
-            "url":["http://svappmavw115:8080/geoserver/wms"],
+            "url":["http://www.mybrugis.irisnet.be/geoserver/wms"],
         	"title": "Aquarelle",
         	"name": "BCR:Aquarelle",
             "group": "background",
