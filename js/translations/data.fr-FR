@@ -217,7 +217,7 @@
             "layoutWarning": "Mise en page impossible"
         },
         "BackgroundSelector":{
-            "tooltip": "Selection du fond de plan"
+            "tooltip": "Sélection du fond de plan"
         },
         "info":{
             "tooltip": "Interroger les objets sur la carte"
