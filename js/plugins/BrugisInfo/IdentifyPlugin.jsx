@@ -20,7 +20,7 @@ const Message = require('../../../MapStore2/web/client/plugins/locale/Message');
 /*
 const {Glyphicon} = require('react-bootstrap');
 */
-const Gfiicon = require('./img/interro-01.svg');
+const Gfiicon = require('./img/info-phil-2.svg');
 
 const assign = require('object-assign');
 

@@ -216,18 +216,18 @@
             },
             "layoutWarning": "Mise en page impossible"
         },
-        "backgroundSwither":{
-            "tooltip": "Selection du fond de plan"
+        "BackgroundSelector":{
+            "tooltip": "Sélection du fond de plan"
         },
         "info":{
-            "tooltip": "Interroger les objects sur la carte"
+            "tooltip": "Interroger les objets sur la carte"
         },
         "expandtoolbar": {
             "tooltip": "Agrandir / Réduire"
         },
         "getFeatureInfoTitle": "Informations de l'objet",
         "identifyTitle": "Informations de l'objet",
-        "identifyNoQueryableLayers": "Aucune couche active requise",
+        "identifyNoQueryableLayers": "Aucune couche active rencontrée",
         "identifyRevGeocodeHeader": "Coordonnées",
         "identifyRevGeocodeModalTitle": "Adresse",
         "identifyRevGeocodeSubmitText": "Plus d'Informations",
@@ -802,58 +802,66 @@
             "cancelButton": "Annuler"
         },
         "tutorial": {
-            "title": "Tutorial",
-            "back": "Back",
-            "next": "Next",
-            "close": "Close",
-            "skip": "Skip",
-            "last": "Finish",
-            "start": "Start",
-            "checkbox": "don't show this message again",
-            "error": "Error: target not found",
+            "title": "Tutoriel",
+            "back": "Retour",
+            "next": "Suivant",
+            "close": "Fermer",
+            "skip": "Passer",
+            "last": "Terminer",
+            "start": "Commencer",
+            "checkbox": "Ne plus me montrer ce message",
+            "error": "Erreur: ressource non trouvée",
             "intro": {
-                "title": "Welcome on MapStore2",
+                "title": "Bienvenue dans BruGIS",
                 "text": "framework to build web mapping applications using standard mapping libraries, such as OpenLayers 3 and Leaflet."
             },
             "drawerMenu": {
-                "title": "Main menu",
-                "text": "You can find information and tools to manage layer"
+                "title": "Menu Principal",
+                "text": "Le catalogue des données ainsi que la légende de la carte se trouvent ici"
             },
             "searchBar": {
-                "title": "Search Bar",
-                "text": "Write the address of a place to find. e.g. '1st avenue, new york'. You can even insert coordinates in this format: 43.87,10.20"
+                "title": "Recherche d'adresse",
+                "text": "Tapez l'adresse recherchée, par ex. Rue du progrès 80"
             },
             "home": {
                 "title": "Home",
                 "text": "Click to go to homepage"
             },
             "searchButton": {
-                "title": "Search",
-                "text": "Click to open the search bar, then write the address of a place to find. e.g. '1st avenue, new york'. You can even insert coordinates in this format: 43.87,10.20"
+                "title": "Recherche d'adresse",
+                "text": "Tapez l'adresse recherchée, par ex. Rue du progrès 80"
             },
             "burgerMenu": {
-                "title": "Option Menu",
-                "text": "You can find options, settings and help"
+                "title": "Menu Options",
+                "text": "Les outils d'ajout de catalogue externe, de sauvegarde de carte, de choix linguistique et de paramétrage de BruGIS se trouvent ici"
             },
             "zoomInButton": {
                 "title": "Zoom In",
-                "text": "Click to enlarge the map"
+                "text": "Cliquez pour aggrandir la carte"
             },
             "zoomOutButton": {
                 "title": "Zoom Out",
-                "text": "Click to reduce the map"
+                "text": "Cliquez pour diminuer la carte"
             },
             "fullscreen": {
                 "title": "Basculer en plein écran",
-                "text": "Basculer en plein écran"
+                "text": "Basculez en plein écran"
+            },
+            "brugisSurvey": {
+                "title": "Urbanalyse",
+                "text": "Sélectionnez ou dessinez une zone et obtenez un rapport urbanistique complet pour celle-ci"
             },
             "identifyButton": {
                 "title": "Info",
-                "text": "Press the button to activate the tool, then click on the map to retrieve information from layers"
+                "text": "Cliquez le bouton pour activer l'outil, cliquez ensuite dans la carte pour obtenir plus d'information"
+            },
+            "BackgroundSelector": {
+                "title": "Fonds de plan",
+                "text" : "choisissez votre fond de plan ici"
             },
             "mapType": {
-                "title": "Library",
-                "text": "You can choose Leaflet or OpenLayers to render your maps"
+                "title": "Librairie",
+                "text": "Choisissez Leaflet ou OpenLayers pour afficher vos cartes"
             },
             "mapsGrid": {
                 "title": "Maps",
