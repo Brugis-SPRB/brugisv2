@@ -91,7 +91,7 @@ const BrugisSurvey = React.createClass({
               backgroundColor: "white"
           },
           panelClassName: "toolbar-panel",
-          visible: true,
+          visible: false,
           toggleControl: () => {},
           id: "brugis_survey",
           onChangeDrawingStatus: () => {},
