@@ -28,6 +28,7 @@
 						{
 								"name": "BackgroundSelector",
 								"cfg": {
+									  "id": "superbroleke",
 										"bottom": 40
 								}
 						},
@@ -227,6 +228,7 @@
 	                 "bodyClassName": "modal-body info-wrap",
 	                 "asPanel": false,
 	                 "headerGlyph": "",
+									 "id": "brugisSurvey-btn",
 	                 "className": "square-button",
 	                 "closeGlyph": "1-close"
 	               }
@@ -245,9 +247,10 @@
 	 											 {"translation": "burgerMenu", "selector": "#mapstore-burger-menu"},
 	 											 {"translation": "zoomInButton", "selector": "#zoomin-btn", "position": "top"},
 	 											 {"translation": "zoomOutButton", "selector": "#zoomout-btn", "position": "top"},
-												 {"translation": "BrugisSurvey", "selector": "#survey-button", "position": "top"},
 	 											 {"translation": "identifyButton", "selector": "#identifyBar-container", "position": "top"},
-												 {"translation": "BackgroundSelector", "selector": "#background-preview-button", "position" : "top"}
+												 {"translation": "brugisSurvey", "selector": "#brugisSurvey-btn", "position": "top"},
+												 {"translation": "BackgroundSelector", "selector": ".background-plugin-position", "position": "top"}
+
 									     ]
 									    }
 

@@ -3,13 +3,7 @@ var {LOCAL_MAPS_SAVE} = require('./actions');
 const LOCAL_MAPS_PREFIX = 'mapstore.localmaps.';
 
 const save = (name, newstate) => {
-    let savedstate = assign({}, newstate, {
-        map: assign({}, newstate.map, {mapStateSource: null})
-    });
-    savedstate.map.present.mapStateSource = null;
-    localStorage.setItem(LOCAL_MAPS_PREFIX + name, JSON.stringify({
-        state: savedstate
-    }));
+    localStorage.setItem(LOCAL_MAPS_PREFIX + name, newstate);
 };
 
 function localMaps(state = null, action) {

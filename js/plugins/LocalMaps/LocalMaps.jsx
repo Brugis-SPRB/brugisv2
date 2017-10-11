@@ -8,32 +8,38 @@ const {connect} = require('react-redux');
 const {Glyphicon} = require('react-bootstrap');
 const {Modal, Button} = require('react-bootstrap');
 const {toggleControl, setControlProperty} = require("../../../MapStore2/web/client/actions/controls");
+const {mapSelector} = require('../../../MapStore2/web/client/selectors/map');
+const {layersSelector} = require('../../../MapStore2/web/client/selectors/layers');
+const stateSelector = state => state;
+const LayersUtils = require('../../../MapStore2/web/client/utils/LayersUtils');
 
-const selector = createSelector([
-    (state) => (state.controls && state.controls.LocalMaps && state.controls.LocalMaps.enabled) || (state.controls.toolbar && state.controls.toolbar.active === "LocalMaps"),
-    (state) => state
-], (enabled, currentState) => ({
-    active: enabled,
-    currentState: currentState
+const selector = createSelector(mapSelector, stateSelector, layersSelector, (map, state, layers) => ({
+    active: (state.controls && state.controls.LocalMaps && state.controls.LocalMaps.enabled) || (state.controls.toolbar && state.controls.toolbar.active === "LocalMaps"),
+    toolbarActive: state.controls.toolbar && state.controls.toolbar.active === "LocalMaps",
+    currentZoomLvl: map && map.zoom,
+    map,
+    mapId: map && map.mapId,
+    layers
 }));
 
-const LocalMaps = React.createClass({
-
-    propTypes: {
+class LocalMaps extends React.Component {
+    static propTypes = {
         expanded: PropTypes.bool,
         onStateSave: PropTypes.func,
         onStateLoad: PropTypes.func,
-        currentState: PropTypes.object,
+        mapId: PropTypes.string,
+        map: PropTypes.object,
+        layers: PropTypes.array,
         active: PropTypes.bool,
+        toolbarActive: PropTypes.bool,
         onClose: PropTypes.func,
         onCloseToolBar: PropTypes.func
-    },
+    };
 
-    getDefaultProps() {
-        return {
-            active: false
-        };
-    },
+    static defaultProps = {
+      active: false
+    };
+
     render() {
         if (this.props.active) {
             return (
@@ -51,18 +57,38 @@ const LocalMaps = React.createClass({
             );
         }
         return null;
-    },
-    saveMap(name) {
-        this.props.onStateSave(name, this.props.currentState);
-    },
-    close() {
-        if (this.props.currentState.controls && this.props.currentState.controls.toolbar && this.props.currentState.controls.toolbar.active === "LocalMaps") {
+    }
+
+    saveMap = (name) => {
+        let map = {
+            center: this.props.map.center,
+            maxExtent: this.props.map.maxExtent,
+            projection: this.props.map.projection,
+            units: this.props.map.units,
+            zoom: this.props.map.zoom
+        };
+        let layers = this.props.layers.map((layer) => {
+            return LayersUtils.saveLayer(layer);
+        });
+        // Groups are ignored, as they already are defined in the layers
+        let resultingmap = {
+            version: 2,
+            // layers are defined inside the map object
+            map: assign({}, map, {layers})
+        };
+
+        this.props.onStateSave(name, JSON.stringify(resultingmap));
+        this.props.onClose();
+    };
+
+    close = () => {
+        if (this.props.toolbarActive) {
             this.props.onCloseToolBar();
         } else {
             this.props.onClose();
         }
-    }
-});
+    };
+}
 
 const LocalMapsPlugin = connect(selector, {
     toggleControl: toggleControl.bind(null, 'LocalMaps', null),

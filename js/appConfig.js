@@ -27,7 +27,7 @@ module.exports = {
             controls: {
                 toolbar: {
                     active: null,
-                    expanded: false
+                    expanded: true
                 },
                 drawer: {
                     enabled: false,
@@ -44,6 +44,11 @@ module.exports = {
         mobile: {
             mapInfo: {enabled: true, infoFormat: 'text/html' },
             mousePosition: {enabled: true, crs: "EPSG:4326", showCenter: true}
+        }
+    },
+    storeOpts: {
+        persist: {
+            whitelist: []
         }
     }
 };
