@@ -28,6 +28,7 @@
 						{
 								"name": "BackgroundSelector",
 								"cfg": {
+									  "id": "superbroleke",
 										"bottom": 40
 								}
 						},
@@ -247,7 +248,9 @@
 	 											 {"translation": "zoomInButton", "selector": "#zoomin-btn", "position": "top"},
 	 											 {"translation": "zoomOutButton", "selector": "#zoomout-btn", "position": "top"},
 	 											 {"translation": "identifyButton", "selector": "#identifyBar-container", "position": "top"},
-												 {"translation": "brugisSurvey", "selector": "#brugisSurvey-btn", "position": "top"}
+												 {"translation": "brugisSurvey", "selector": "#brugisSurvey-btn", "position": "top"},
+												 {"translation": "BackgroundSelector", "selector": ".background-plugin-position", "position": "top"}
+
 									     ]
 									    }
 
