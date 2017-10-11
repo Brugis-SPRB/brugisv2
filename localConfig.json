@@ -227,6 +227,7 @@
 	                 "bodyClassName": "modal-body info-wrap",
 	                 "asPanel": false,
 	                 "headerGlyph": "",
+									 "id": "brugisSurvey-btn",
 	                 "className": "square-button",
 	                 "closeGlyph": "1-close"
 	               }
@@ -245,7 +246,8 @@
 	 											 {"translation": "burgerMenu", "selector": "#mapstore-burger-menu"},
 	 											 {"translation": "zoomInButton", "selector": "#zoomin-btn", "position": "top"},
 	 											 {"translation": "zoomOutButton", "selector": "#zoomout-btn", "position": "top"},
-	 											 {"translation": "identifyButton", "selector": "#identifyBar-container", "position": "top"}
+	 											 {"translation": "identifyButton", "selector": "#identifyBar-container", "position": "top"},
+												 {"translation": "brugisSurvey", "selector": "#brugisSurvey-btn", "position": "top"}
 									     ]
 									    }
 
