@@ -143,6 +143,9 @@
     </Exception>
     <UserDefinedSymbolization RemoteWFS="1" SupportSLD="1" UserLayer="1" UserStyle="1" />
     <Layer>
+        <Title>All</Title>
+        <Name>All</Name>
+    <Layer>
       <Title>Bruxelles Développement urbain</Title>
       <Abstract>A compliant implementation of WMS plus most of the SLD extension (dynamic styling). Can also generate PDF, SVG, KML, GeoRSS</Abstract>
       <SRS>EPSG:WGS84(DD)</SRS>
@@ -4215,6 +4218,7 @@
 				</Layer>
 			</Layer>
       </Layer>
+    </Layer>
     </Layer>
   </Capability>
 </WMT_MS_Capabilities>

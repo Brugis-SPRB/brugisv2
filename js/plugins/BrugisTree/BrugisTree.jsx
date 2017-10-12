@@ -17,19 +17,21 @@ const BrugisTree = React.createClass({
         onLayerRemove: PropTypes.func,
         onLayerToggle: PropTypes.func,
         treenodes: PropTypes.array,
-        layers: PropTypes.array
+        layers: PropTypes.array,
+        currentLocale: PropTypes.string
     },
     getDefaultProps() {
         return {
             expanded: true,
             loadTreeData: () => {},
             treenodes: [],
-            layers: []
+            layers: [],
+            currentLocale: "fr-FR"
         };
     },
     componentWillMount() {
         if (!this.props.treenodes) {
-            this.props.loadTreeData();
+            this.props.loadTreeData(this.props.currentLocale);
         } else {
             // console.log("AlreadyLoaded");
         }
@@ -86,7 +88,8 @@ const BrugisTree = React.createClass({
 
 const BrugisTreePlugin = connect((state) => ({
     treenodes: state && state.brugisTree && state.brugisTree.treenodes,
-    layers: state && state.layers && state.layers.flat
+    layers: state && state.layers && state.layers.flat,
+    currentLocale: state && state.locale && state.locale.current
 }), {
     loadTreeData: loadBrugisTreeConfig,
     onLayerAdd: addLayer,

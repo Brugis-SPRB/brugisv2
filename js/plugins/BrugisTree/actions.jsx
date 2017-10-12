@@ -1,6 +1,8 @@
 const axios = require('axios');
 
-let localXmlTree = 'wmsaatl.xml';
+const localXmlTreeFr = 'wmsaatl_fr.xml';
+const localXmlTreeNl = 'wmsaatl_nl.xml';
+const localXmlTreeEn = 'wmsaatl_en.xml';
 
 const BRUGIS_TREE_LOAD_START = 'BRUGIS_TREE_LOAD_START';
 const BRUGIS_TREE_LOADED = 'BRUGIS_TREE_LOADED';
@@ -31,10 +33,28 @@ function brugisTreeNodeToggle(node) {
     };
 }
 
-function loadBrugisTreeConfig() {
+function getXmlName(currentLocale) {
+    switch (currentLocale) {
+        case "fr-FR":
+          return localXmlTreeFr;
+        case "fr-BE":
+          return localXmlTreeFr;
+        case "en-US":
+          return localXmlTreeEn;
+        case "nl-BE":
+          return localXmlTreeNl;
+        case "nl-NL":
+          return localXmlTreeNl;
+        default:
+          return localXmlTreeEn;
+    }
+}
+
+function loadBrugisTreeConfig(currentLocale) {
+    var localXml = getXmlName(currentLocale);
     return (dispatch) => {
         dispatch(brugisTreeLoadStart());
-        return axios.get(localXmlTree).then((response) => {
+        return axios.get(localXml).then((response) => {
             if (typeof response.data === 'object') {
                 dispatch(brugisTreeLoaded(response.data));
             } else {
