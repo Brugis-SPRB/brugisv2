@@ -57,6 +57,7 @@ const MeasureLength = React.createClass({
                 className={this.props.className}
                 tooltip={this.props.tooltip}
                 bsStyle={this.props.bsStyle}
+                id={this.props.id}
                 tooltipPlace="left"
                 >
                 <img src={lineRuleIcon} height="47" width="38"></img>

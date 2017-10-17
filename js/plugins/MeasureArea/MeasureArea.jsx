@@ -57,6 +57,7 @@ const MeasureArea = React.createClass({
                 className={this.props.className}
                 tooltip={this.props.tooltip}
                 bsStyle={this.props.bsStyle}
+                id={this.props.id}
                 >
                 <img src={areaRuleIcon} height="47" width="38"></img>
             </Button>

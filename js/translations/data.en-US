@@ -846,6 +846,14 @@
                 "title": "Basculer en plein écran",
                 "text": "Basculer en plein écran"
             },
+            "measureAreaBrugisButton": {
+                "title": "Measure of area",
+                "text": "Use this tool to measure areas"
+            },
+            "measureLengthBrugisButton": {
+                "title": "Measure of Length",
+                "text": "Use this tool to measure lengths"
+            },
             "BrugisSurvey": {
                 "title": "Urbanalysis",
                 "text": "Select a parcel or draw an area and get a complete urban report for that area"

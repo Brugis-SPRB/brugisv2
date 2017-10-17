@@ -847,6 +847,14 @@
                 "title": "Basculer en plein écran",
                 "text": "Basculez en plein écran"
             },
+            "measureAreaBrugisButton": {
+                "title": "Mesure de surface",
+                "text": "Utilisez cet outil pour mesurer des surfaces"
+            },
+            "measureLengthBrugisButton": {
+                "title": "Mesure de longueur",
+                "text": "Utilisez cet outil pour mesurer des distances"
+            },
             "brugisSurvey": {
                 "title": "Urbanalyse",
                 "text": "Sélectionnez ou dessinez une zone et obtenez un rapport urbanistique complet pour celle-ci"
@@ -857,7 +865,7 @@
             },
             "BackgroundSelector": {
                 "title": "Fonds de plan",
-                "text" : "choisissez votre fond de plan ici"
+                "text" : "Choisissez votre fond de plan ici"
             },
             "mapType": {
                 "title": "Librairie",

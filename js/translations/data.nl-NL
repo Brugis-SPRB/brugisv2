@@ -842,6 +842,14 @@
                 "title": "Zoom Out",
                 "text": "Click to reduce the map"
             },
+            "measureAreaBrugisButton": {
+                "title": "Mesure de surface",
+                "text": "Utilisez cet outil pour mesurer des surfaces"
+            },
+            "measureLengthBrugisButton": {
+                "title": "Mesure de longueur",
+                "text": "Utilisez cet outil pour mesurer des distances"
+            },
             "fullscreen": {
                 "title": "Basculer en plein écran",
                 "text": "Basculer en plein écran"
