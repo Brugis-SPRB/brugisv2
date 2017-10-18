@@ -753,7 +753,7 @@
             "minlabel": "Dénominateur d'échelle minimum",
             "maxlabel": "Dénominateur d'échelle maximum",
             "maxerror": "La valeur max doit être plus grande que la valeur min",
-            "minerror": "La vleur min doit être plus petite que la valeur max",
+            "minerror": "La valeur min doit être plus petite que la valeur max",
             "none": "Aucun"
         },
         "markNameSelector": {
