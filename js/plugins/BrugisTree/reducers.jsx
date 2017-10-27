@@ -69,7 +69,7 @@ function toggleNode(nodes, node) {
                 "wmsserver": curNode.wmsserver,
                 "id": curNode.id
             };
-            if (curNode.name === node.name) {
+            if (curNode.id === node.id) {
                 if (curNode.checked) {
                     newNode.checked = false;
                 } else {
