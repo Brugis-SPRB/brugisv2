@@ -65,7 +65,7 @@ function loadBrugisTreeConfig(currentLocale) {
                         dispatch(brugisTreeLoaded(json));
                     });
                 } catch(e) {
-                    dispatch(brugisTreeLoadError('Configuration file broken (' + localXmlTree + '): ' + e.message));
+                    dispatch(brugisTreeLoadError('Configuration file broken (' + localXml + '): ' + e.message));
                 }
             }
         }).catch((e) => {
@@ -80,5 +80,7 @@ module.exports = {
     BRUGIS_TREE_LOAD_ERROR,
     BRUGIS_TREE_NODE_TOGGLE,
     loadBrugisTreeConfig,
-    brugisTreeNodeToggle
+    brugisTreeNodeToggle,
+    brugisTreeLoaded,
+    brugisTreeLoadError
 };
