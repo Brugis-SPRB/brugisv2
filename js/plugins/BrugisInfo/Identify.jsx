@@ -175,7 +175,7 @@ const Identify = React.createClass({
         let missingResponses = this.props.requests.length - this.props.responses.length;
         return this.props.asPanel ? (
             <Panel
-                defaultExpanded={true}
+                defaultExpanded="true"
                 collapsible={this.props.collapsible}
                 id="mapstore-getfeatureinfo"
                 style={this.props.style}
@@ -208,7 +208,7 @@ const Identify = React.createClass({
                 ) : this.renderContent();
         }
         if (this.props.warning) {
-            return (<Modal show={true} bsSize="small" onHide={() => {
+            return (<Modal show="true" bsSize="small" onHide={() => {
                 this.props.clearWarning();
             }}>
                 <Modal.Header className="dialog-error-header-side" closeButton>

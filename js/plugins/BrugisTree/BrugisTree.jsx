@@ -7,6 +7,7 @@ const {loadBrugisTreeConfig, brugisTreeNodeToggle} = require('./actions');
 const {addLayer, removeLayer} = require('../../../MapStore2/web/client/actions/layers');
 const {Glyphicon} = require('react-bootstrap');
 const BrugisTreeNode = require('./BrugisTreeNode');
+const {reloadTreeEpic} = require('./epics');
 
 const BrugisTree = React.createClass({
 
@@ -26,14 +27,12 @@ const BrugisTree = React.createClass({
             loadTreeData: () => {},
             treenodes: [],
             layers: [],
-            currentLocale: "fr-FR"
+            currentLocale: 'fr-BE'
         };
     },
     componentWillMount() {
-        if (!this.props.treenodes) {
-            this.props.loadTreeData(this.props.currentLocale);
-        } else {
-            // console.log("AlreadyLoaded");
+        if (!this.props.treenodes || this.props.treenodes.length < 1) {
+          //  this.props.loadTreeData(this.props.currentLocale);
         }
     },
     render() {
@@ -120,5 +119,6 @@ module.exports = {
     }),
     reducers: {
         brugisTree: require('./reducers')
-    }
+    },
+    epics: { reloadTreeEpic }
 };

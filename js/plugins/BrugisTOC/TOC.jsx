@@ -81,13 +81,13 @@ const LayerTree = React.createClass({
                                   propertiesChangeHandler={this.props.groupPropertiesChangeHandler}
                                   onToggle={this.props.onToggleGroup}
                                   style={this.props.groupStyle}
-                                  groupVisibilityCheckbox={true}
+                                  groupVisibilityCheckbox="true"
                                   visibilityCheckType={this.props.visibilityCheckType}
                                   >
 
                                   <GroupOrLayer
                                           onSort={this.props.onSort}
-                                          groupVisibilityCheckbox={true}
+                                          groupVisibilityCheckbox="true"
                                           groupPropertiesChangeHandler={this.props.groupPropertiesChangeHandler}
                                           settingsOptions={this.props.settingsOptions}
                                           onToggle={this.props.onToggleLayer}
