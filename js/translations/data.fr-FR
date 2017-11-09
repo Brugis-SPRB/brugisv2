@@ -24,6 +24,14 @@
         "enable": "Activer",
         "layers": "Couches",
         "warning": "Attention",
+        "version": {
+            "label": "Version"
+        },
+        "autorefresh": {
+            "of": "of",
+            "updating": "Updating...",
+            "layers": "layers"
+        },
         "layerProperties": {
             "windowTitle": "Propriétés de la couche",
             "title": "Titre",
@@ -32,6 +40,9 @@
             "general": "Général",
             "display": "Affichage",
             "style": "Style",
+            "transparent": "Transparent",
+            "singleTile": "Single Tile",
+            "cached": "Utiliser les options de cache",
             "styleCustom": "Utilisez un style nommé \"{value} \"",
             "styleListLoadError": "Une erreur s'est produite lors du chargement de la liste de styles",
             "stylesRefreshList": "Actualiser la liste des styles",
@@ -42,6 +53,30 @@
             "confirmDelete": "Êtes-vous sûr?",
             "featureTypeError": "Impossible de charger les attributs de calque",
             "elevation": "élévation"
+        },
+        "notification": {
+            "update": "Update",
+            "warning": "Warning",
+            "success": "Success",
+            "backgroundLayerNotSupported": "L'arrière-plan précédemment sélectionné est pas pris en charge pour ce type de carte. Le premier disponible est ensuite utilisée.",
+            "noBackgroundLayerSupported": "Il n'y a pas de couches de fond supportées pour ce type de carte.",
+            "updateOldMap": "This is an old map, thus not all the functionalities can be enabled. Click on update button in order to update the map or simply dismiss this notification if you don't want to update it.",
+            "warningSaveUpdatedMap": "Some layers haven't been updated correctly",
+            "saveUpdatedMap": "All the layers have been successfully updated"
+        },
+        "dock": {
+            "row": "{rowsSelected} ligne sélectionné",
+            "rows": "{rowsSelected} lignes sélectionné"
+        },
+        "globeswitcher": {
+            "tooltipDeactivate": "Sortie en mode 3D",
+            "tooltipActivate": "Entrez le mode 3D"
+        },
+        "cookie":{
+            "info": "This website uses cookies to improve your experience. We'll assume you're ok with this, but you can opt-out if you wish.",
+            "moreDetailsButton": "More Details",
+            "leave": "Leave",
+            "accept": "Accept"
         },
         "enable": "Activer",
         "background": "Fond de plan",
@@ -124,6 +159,11 @@
                 }
             }
         },
+        "cookiesPolicyNotification": {
+            "title": "Ce site utilise des cookies",
+            "message": "En continuant d'utiliser notre site Web, vous acceptez notre utilisation de cookies.",
+            "confirm": "Je suis d'accord"
+        },
         "manager": {
             "openInANewTab":"Ouvrir la carte",
             "deleteMap":"Supprimer la carte",
@@ -180,13 +220,24 @@
             "displayLegendAndTools": "Afficher la légende et les outils",
             "zoomToLayerExtent": "Zoomer sur l'étendue du calque",
             "editLayerProperties": "Modifier les propriétés de la couche",
+            "browseData": "Ouvrir la table d'attribut",
             "searchFeatures": "Recherche sur ce calque ...",
             "removeLayer": "Supprimer la couche",
             "loadingerror": "La couche n'a pas été chargée correctement",
             "measure": "Mesurer",
             "backgroundSwitcher": "Fond de plan",
             "layers": "Couches",
-            "drawerButton": "Couches"
+            "drawerButton": "Couches",
+            "refreshTitle": "Mise à jour des couches",
+            "refreshConfirm": "Mettre à jour",
+            "refreshMessage": "Rechargez la configuration des couches WMS à partir du(s) serveur(s)",
+            "refreshError": "Erreur lors de la mise à jour des couches: ",
+            "refreshOptions": {
+                "bbox": "Mettre à jour BBOX",
+                "search": "Mettre à jour les options de recherche",
+                "title": "Mettre à jour le titre",
+                "dimensions": "Mettre à jour les dimensions"
+            }
         },
         "print":{
             "paneltitle": "Impression",
@@ -260,7 +311,32 @@
             "bearingLabel": "Direction"
         },
         "search":{
-            "placeholder": "Recherche par toponyme ou coordonnées..."
+            "placeholder": "Recherche par toponyme ou coordonnées...",
+            "searchservicesbutton": "Configurer les services de recherche",
+            "configpaneltitle": "Créer / modifier un service de recherche",
+            "serviceslistlabel": "Services disponibles",
+            "overriedservice": "Services par défaut excédentaires",
+            "addbtn": "Ajouter",
+            "nextbtn": "Prochain",
+            "prevbtn": "Arrière",
+            "savebtn": "Mettre à jour",
+            "cancelbtn": "Annuler",
+            "confirmremove": "Effacer?",
+            "cancelconfirm": "Êtes-vous sûr?",
+            "s_name": "Prénom",
+            "s_title": "Titre",
+            "s_description": "La description",
+            "s_priority": "Priorité",
+            "s_url": "Url de service",
+            "s_layer": "Layer",
+            "s_attributes": "Les attributs",
+            "s_sort": "Trier par",
+            "s_max_features": "Fonctionnalités Max",
+            "s_wfs_props_label" : "WFS accessoires du service",
+            "s_wfs_opt_props_label" : "Supports optionnels",
+            "s_result_props_label": "Propriétés d'affichage des résultats",
+            "s_priority_info": "Utilisé pour trier les résultats de recherche, des valeurs plus élevées en premier. Les résultats Nominatim ont priorité = 5",
+            "serviceslistempty": "Aucun service personnalisé n'a été défini"
         },
         "drawLocal": {
             "draw": {
@@ -419,6 +495,7 @@
                 "combo_placeholder": "Attribut",
                 "text_placeholder": "Entrer le texte à rechercher",
                 "attribute_filter_header": "Filtre sur attribut",
+                "tooltipTextField": "utilise <b>*</b> pour tout caractère</br>utilise <b>.</b> pour un seul caractère</br>utilise <b>!</b> pour les caractères spéciaux (* et .)</br>",
                 "groupField": {
                     "any": "certain",
                     "all": "tous",
@@ -430,6 +507,11 @@
                 },
                 "datefield": {
                     "wrong_date_range": "La date de début doit être antérieure à la date de fin"
+                },
+                "autocomplete": {
+                    "emptyList": "Aucun résultat",
+                    "emptyFilter": "Le filtre n'a donné aucun résultat",
+                    "open": "Ouvrir le menu"
                 }
             },
             "spatialfilter": {
@@ -451,17 +533,18 @@
                 },
                 "methods": {
                     "zone": "Zone",
-                    "box": "Cadre d'objet",
+                    "viewport": "Viewport",
+                    "box": "Rectangle",
                     "buffer": "Zone tampon",
                     "circle": "Cercle",
                     "poly": "Polygone"
                 },
                 "operations": {
-                    "intersects": "INTERSECTS",
-                    "bbox": "BBOX",
-                    "contains": "CONTAINS",
-                    "dwithin": "DWITHIN",
-                    "within": "WITHIN"
+                    "intersects": "intersecte",
+                    "bbox": "Cadre d'objet",
+                    "contains": "Est contenu",
+                    "dwithin": "Distance de",
+                    "within": "Contient"
                 }
             }
         },
@@ -476,8 +559,11 @@
             "retypePwd": "Confirmer le mot de passe",
             "passwordMinlenght": "Votre mot de passe doit être d'au moins {minSize} caractères",
             "passwordCheckFail": "Les deux mots de passe ne correspondent pas!",
+            "passwordInvalid": "Mot de passe incorrect",
             "username": "Nom d'utilisateur",
             "password": "Mot de passe",
+            "passwordChanged": "Mot de passe changé",
+            "passwordError": "Erreur de changement de mot de passe",
             "signIn":"S'authentifier",
             "loginFail":"Erreur d'authentification",
             "loginFailedStatusMessages": {
@@ -521,6 +607,7 @@
           "newGroup": "Nouveau groupe",
           "manageGroups": "Gérer les groupes",
           "description": "Description:",
+          "noDescriptionAvailable": "(Pas de description)",
           "groupName": "Nom de groupe",
           "groupDescription": "Description",
           "saveGroup": "Sauver",
@@ -723,17 +810,58 @@
             "single": "simple bande"
         },
         "featuregrid": {
+            "columns": "Des colonnes",
             "header": "Rechercher la liste des résultats",
             "tools": "Panneau d'outils",
             "export": "Exporter",
             "selectall": "Tout sélectionner",
             "deselectall": "Tout désélectionner",
             "backtosearch": "Retour à la recherche",
+            "resultInfo": "{total, plural, =0 {aucun objet} =1 {{total} de {total}} other {{start}-{end} de {total}}}",
+            "pageInfo": "{totalPages, plural, =0 {No pages} =1 {Page {totalPages} de {totalPages}} other {Page {page} de {totalPages}}}",
             "pagination": {
                 "page": "Page",
                 "of":   "de",
                 "to":   "à",
                 "more": "plus"
+                },
+                "noFeaturesAvailable": "Aucune fonctionnalité disponible",
+                "errorSaving": "Une erreur s'est produite lors de l'enregistrement de l'opération",
+                "yesButton": "Oui",
+                "noButton": "Non",
+                "deleteButton": "Effacer",
+                "clear": "Etes-vous sûr de vouloir annuler toutes les modifications apportées?",
+                "featureClose":"Vraiment, vous voulez fermer la grille?",
+                "delete": "Valider pour supprimer les éléments?",
+                "missingGeometry": "Missing geometry",
+                "toolbar": {
+                    "editMode": "Mode édition",
+                    "advancedFilter": "Recherche Avancée",
+                    "quitEditMode": "Quitter le mode d'édition",
+                    "addNewFeatures": "Ajouter un nouvel élément",
+                    "editFeature": "Élément d'édition",
+                    "drawGeom": "Élément de dessin",
+                    "stopDrawGeom": "Annuler la création de la géométrie",
+                    "addGeom": "Ajouter un élément à la géométrie existante",
+                    "drawFeature": "Élément de dessin",
+                    "deleteSelectedFeatures": "Supprimer les fonctionnalités sélectionnées",
+                    "saveChanges": "Sauvegarder les modifications",
+                    "saving": "sauvetage...",
+                    "cancelChanges": "Annuler les modifications",
+                    "deleteGeometry": "Supprimer la géométrie",
+                    "downloadGridData": "Télécharger les données",
+                    "hideShowColumns": "Masquer / afficher les colonnes",
+                    "zoomAll": "Zoom sur la page"
+                }
+            },
+            "wfsdownload": {
+                "title": "Exporter des données",
+                "format": "Format de fichier",
+                "export": "Exportations",
+                "downloadonlycurrentpage": "Télécharger uniquement la page actuelle",
+                "error": {
+                    "title": "Erreur lors de l'exportation",
+                    "invalidOutputFormat": "Le format d'exportation sélectionné n'est pas disponible"
             }
         },
         "vectorstyler": {

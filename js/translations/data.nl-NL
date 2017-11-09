@@ -24,6 +24,14 @@
         "enable": "Activeren",
         "layers": "Lagen",
         "warning": "Opgepast",
+        "version": {
+            "label": "Versie"
+        },
+        "autorefresh": {
+            "of": "van",
+            "updating": "Wordt bijgewerkt...",
+            "layers": "lagen"
+        },
         "layerProperties": {
             "windowTitle": "Eigenschappen van de laag",
             "title": "Titel",
@@ -32,6 +40,9 @@
             "general": "Algemeen",
             "display": "Weergave",
             "style": "Stijl",
+            "transparent": "Transparant",
+            "singleTile": "Single Tile",
+            "cached": "Gebruik cache-opties",
             "styleCustom": "Gebruik een stijl genaamd \"{value} \"",
             "styleListLoadError": "Er is een fout opgetreden bij het laden van de lijst met stijlen",
             "stylesRefreshList": "Vernieuw de lijst met stijlen",
@@ -42,6 +53,30 @@
             "confirmDelete": "Bent u zeker?",
             "featureTypeError": "De atributen van de laag kunnen niet geladen worden",
             "elevation": "hoogte"
+        },
+        "notification": {
+            "update": "Bijwerken",
+            "warning": "Waarschuwing",
+            "success": "Geslaagd",
+            "backgroundLayerNotSupported": "De eerder geselecteerde achtergrond wordt niet ondersteund voor dit type kaart. De eerst beschikbare wordt vervolgens gebruikt.",
+            "noBackgroundLayerSupported": "Er is geen achtergrondlaag ondersteund voor dit type kaart.",
+            "updateOldMap": "Dit is een oude kaart, dus niet alle functionaliteiten kunnen worden ingeschakeld. Klik op de knop Bijwerken om de kaart bij te werken of sluit deze melding als u deze niet wilt bijwerken.",
+            "warningSaveUpdatedMap": "Sommige lagen zijn niet correct bijgewerkt",
+            "saveUpdatedMap": "Alle lagen zijn succesvol bijgewerkt"
+        },
+        "dock": {
+            "row": "{rowsSelected} geselecteerde lijn",
+            "rows": "{rowsSelected} geselecteerde lijnen"
+        },
+        "globeswitcher": {
+            "tooltipDeactivate": "Verlaat de 3D-modus",
+            "tooltipActivate": "Ga naar de 3D-modus"
+        },
+        "cookie":{
+            "info": "Deze website maakt gebruik van cookies om uw ervaring te verbeteren. We gaan ervan uit dat je hiermee akkoord gaat, maar je kunt er van afzien als je dat wilt.",
+            "moreDetailsButton": "Meer details",
+            "leave": "Verlaten",
+            "accept": "Aanvaarden"
         },
         "enable": "Activeren",
         "background": "Achtergrondkaart",
@@ -124,6 +159,11 @@
                 }
             }
         },
+        "cookiesPolicyNotification": {
+            "title": "Deze site maakt gebruik van cookies",
+            "message": "Door onze website te blijven gebruiken, gaat u akkoord met ons gebruik van cookies.",
+            "confirm": "akkoord"
+        },
         "manager": {
             "openInANewTab":"Kaart openen",
             "deleteMap":"Kaart verwijderen",
@@ -180,13 +220,24 @@
             "displayLegendAndTools": "Toon de legende en de tools",
             "zoomToLayerExtent": "Zoom op de laag",
             "editLayerProperties": "Wijzig de eigenschappen van de laag",
+            "browseData": "Open de attributentabel",
             "searchFeatures": "Zoek op deze laag ...",
             "removeLayer": "De laag verwijderen",
             "loadingerror": "De laag is niet correct geladen",
             "measure": "Meten",
             "backgroundSwitcher": "achtergrond kaart",
             "layers": "Lagen",
-            "drawerButton": "Lagen"
+            "drawerButton": "Lagen",
+            "refreshTitle": "Lagen bijwerken",
+            "refreshConfirm": "Bijwerken",
+            "refreshMessage": "Laad de configuratie van de WMS-lagen opnieuw vanaf de server(s)",
+            "refreshError": "Fout bij het bijwerken van de lagen: ",
+            "refreshOptions": {
+                "bbox": "BBOX bijwerken",
+                "search": "De zoekopties bijwerken",
+                "title": "De titet bijwerken",
+                "dimensions": "De dimensies bijwerken"
+            }
         },
         "print":{
             "paneltitle": "Afdrukken",
@@ -260,7 +311,32 @@
             "bearingLabel": "Richting"
         },
         "search":{
-            "placeholder": "Zoek op toponiem of coördinaten..."
+            "placeholder": "Zoeken op plaatsnaam of coördinaten...",
+            "searchservicesbutton": "Opzoekservices configureren",
+            "configpaneltitle": "Een opzoekservice aanmaken/wijzigen",
+            "serviceslistlabel": "Beschikbare services",
+            "overriedservice": "Overtollige standaardservices",
+            "addbtn": "Bijvoegen",
+            "nextbtn": "Volgende",
+            "prevbtn": "Vorige",
+            "savebtn": "Bijwerken",
+            "cancelbtn": "Annuleren",
+            "confirmremove": "Verwijderen?",
+            "cancelconfirm": "Bent u zeker?",
+            "s_name": "Voornaam",
+            "s_title": "Titel",
+            "s_description": "De beschrijving",
+            "s_priority": "Prioriteit",
+            "s_url": "Service-URL",
+            "s_layer": "Laag",
+            "s_attributes": "De attributen",
+            "s_sort": "Sorteer op",
+            "s_max_features": "Max functies",
+            "s_wfs_props_label" : "WFS-serviceaccessoires",
+            "s_wfs_opt_props_label" : "Optionele supports",
+            "s_result_props_label": "Eigenschappen van de weergave van de resultaten",
+            "s_priority_info": "Gebruik eerst eerst hogere waarden om de zoekresultaten te sorteren. Nominatim-resultaten hebben prioriteit = 5",
+            "serviceslistempty": "Er is geen aangepaste service gedefinieerd"
         },
         "drawLocal": {
             "draw": {
@@ -418,6 +494,7 @@
                 "combo_placeholder": "Attribuut",
                 "text_placeholder": "Voer de te zoeken tekst in",
                 "attribute_filter_header": "Filter op attribuut",
+                "tooltipTextField": "utilise <b>*</b> voor om het even welk karakter</br>gebruik <b>.</b> voor een enkel karakter</br>gebruik <b>!</b> voor de speciale karakters (* en .)</br>",
                 "groupField": {
                     "any": "sommige",
                     "all": "alle",
@@ -429,6 +506,11 @@
                 },
                 "datefield": {
                     "wrong_date_range": "De startdatum moet vóór de einddatum zijn"
+                },
+                "autocomplete": {
+                    "emptyList": "Geen enkel resultaat",
+                    "emptyFilter": "De filter heeft geen resultaten opgeleverd",
+                    "open": "Open het menu"
                 }
             },
             "spatialfilter": {
@@ -450,17 +532,18 @@
                 },
                 "methods": {
                     "zone": "Zone",
-                    "box": "Object frame",
+                    "viewport": "Viewport",
+                    "box": "rechthoek",
                     "buffer": "Bufferzone",
                     "circle": "Cirkel",
                     "poly": "Veelhoek"
                 },
                 "operations": {
-                    "intersects": "INTERSECTS",
-                    "bbox": "BBOX",
-                    "contains": "CONTAINS",
-                    "dwithin": "DWITHIN",
-                    "within": "WITHIN"
+                  "intersects": "doorsnede",
+                  "bbox": "Objectkader",
+                  "contains": "Omvat",
+                  "dwithin": "Afstand vanaf",
+                  "within": "Bevat"
                 }
             }
         },
@@ -475,8 +558,11 @@
             "retypePwd": "Bevestig het paswoord",
             "passwordMinlenght": "Uw wachtwoord moet minstens {minSize} tekens bevatten",
             "passwordCheckFail": "De twee wachtwoorden komen niet overeen!",
+            "passwordInvalid": "Verkeerd wachtwoord",
             "username": "Gebruikersnaam",
             "password": "Paswoord",
+            "passwordChanged": "Wachtwoord gewijzigd",
+            "passwordError": "Fout bij het wijzigen van het wachtwoord",
             "signIn":"Certificeer",
             "loginFail":"Verificatiefout",
             "loginFailedStatusMessages": {
@@ -520,6 +606,7 @@
           "newGroup": "Nieuwe groep",
           "manageGroups": "Beheer van de groepen",
           "description": "Beschrijving:",
+          "noDescriptionAvailable": "(Geen beschrijving)",
           "groupName": "Naam van de groep",
           "groupDescription": "Beschrijving",
           "saveGroup": "Opslaan",
@@ -722,17 +809,58 @@
             "single": "enkele band"
         },
         "featuregrid": {
+            "columns": "Kolommen",
             "header": "Zoek de resultatenlijst",
             "tools": "Gereedschapspaneel",
             "export": "Exporteren",
             "selectall": "Selecteer alles",
             "deselectall": "Deselecteer alles",
             "backtosearch": "Terug naar zoeken",
+            "resultInfo": "{total, plural, =0 {geen enkel object} =1 {{total} van {total}} other {{start}-{end} van {total}}}",
+            "pageInfo": "{totalPages, plural, =0 {No pages} =1 {Page {totalPages} van {totalPages}} other {Page {page} van {totalPages}}}",
             "pagination": {
                 "page": "Bladzijde",
                 "of":   "van",
                 "to":   "tot",
                 "more": "meer"
+                },
+                "noFeaturesAvailable": "Geen enkele functionaliteit beschikbaar",
+                "errorSaving": "Er is een fout opgetreden tijdens het opslaan van de bewerking",
+                "yesButton": "Ja",
+                "noButton": "Neen",
+                "deleteButton": "Verwijderen",
+                "clear": "Weet je zeker dat je alle wijzigingen wilt annuleren?",
+                "featureClose":"Wilt u echt het rooster sluiten?",
+                "delete": "Valideren om de elementen te verwijderen?",
+                "missingGeometry": "Ontbrekende geometrie",
+                "toolbar": {
+                    "editMode": "Bewerkingsmodus",
+                    "advancedFilter": "Geavanceerd zoeken",
+                    "quitEditMode": "Verlaat de bewerkingsmodus",
+                    "addNewFeatures": "Voeg een nieuw element toe",
+                    "editFeature": "Bewerk element",
+                    "drawGeom": "Teken element",
+                    "stopDrawGeom": "Annuleer de creatie van de geometrie",
+                    "addGeom": "Voeg een element toe aan de bestaande geometrie",
+                    "drawFeature": "Tekenelement",
+                    "deleteSelectedFeatures": "Verwijder geselecteerde functies",
+                    "saveChanges": "De wijzigingen opslaan",
+                    "saving": "wordt opgeslagen...",
+                    "cancelChanges": "De wijzigingen annuleren",
+                    "deleteGeometry": "De geometrie verwijderen",
+                    "downloadGridData": "De gegevens downloaden",
+                    "hideShowColumns": "De kolommen verbergen/tonen",
+                    "zoomAll": "Zoom in op de pagina"
+            }
+        },
+        "wfsdownload": {
+            "title": "De gegevens exporteren",
+            "format": "Bestandsformaat",
+            "export": "Export",
+            "downloadonlycurrentpage": "Enkel de huidige pagina downloaden",
+            "error": {
+                "title": "Fout tijdens exporteren",
+                "invalidOutputFormat": "Het geselecteerde exportformaat is niet beschikbaar"
             }
         },
         "vectorstyler": {
