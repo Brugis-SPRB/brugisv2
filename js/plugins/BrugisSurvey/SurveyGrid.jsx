@@ -38,7 +38,7 @@ var SurveyGrid = React.createClass({
         return (<span>{state}</span>);
     },
     render() {
-        return (<Panel header="Liste des reperages" eventKey={this.props.evtKey} collapsible defaultExpanded={true}>
+        return (<Panel header="Liste des reperages" eventKey={this.props.evtKey} collapsible defaultExpanded="true">
           <Table responsive striped bordered condensed hover>
             <thead>
               <tr>

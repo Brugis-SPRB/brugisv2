@@ -60,7 +60,7 @@ const DrawerMenu = React.createClass({
         return this.props.items.map((tool, index) => {
             const Plugin = tool.panel || tool.plugin;
             const plugin = (<Plugin
-                isPanel={true}
+                isPanel="true"
                 {...tool.cfg}
                 items={tool.items || []}
                 groupStyle={{style: {
@@ -80,7 +80,7 @@ const DrawerMenu = React.createClass({
     render() {
         return (
             <div id={this.props.id}>
-                <Menu single={this.props.singleSection} {...this.props.menuOptions} title={<Message msgId="menu" show={true}/>} alignment="left">
+                <Menu single={this.props.singleSection} {...this.props.menuOptions} title={<Message msgId="menu" show="true"/>} alignment="left">
                     {this.renderItems()}
                 </Menu>
             </div>

@@ -3,7 +3,6 @@ const PropTypes = require('prop-types');
 const assign = require('object-assign');
 const {connect} = require('react-redux');
 
-//const Urbanalyseicon = require('./img/interro-01.svg');
 const Urbanalyseicon = require('./img/couches-04.svg');
 
 const union = require("@turf/union");
