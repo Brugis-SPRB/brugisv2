@@ -54,16 +54,16 @@ var JSONViewer = React.createClass({
     },
     translateLocale(locale) {
         var gfiLocale = "FR";
-        if (locale.indexOf("fr")>=0) {
-          gfiLocale = "FR";
+        if (locale.indexOf("fr") >= 0) {
+            gfiLocale = "FR";
         } else {
-          if(locale.indexOf("nl") >= 0) {
-            gfiLocale = "NL";
-          } else {
-            if(locale.indexOf("en") >=0) {
-              gfiLocale = "EN";
+            if (locale.indexOf("nl") >= 0) {
+                gfiLocale = "NL";
+            } else {
+                if (locale.indexOf("en") >= 0) {
+                    gfiLocale = "EN";
+                }
             }
-          }
         }
         return gfiLocale;
     },
@@ -89,21 +89,21 @@ var JSONViewer = React.createClass({
                     return (<a href={attrib} target="_blank">{attrib}</a>);
                 };
             }
-            if(attribute.type && attribute.type === "date") {
+            if (attribute.type && attribute.type === "date") {
                 customRenderers[attribute.name] = function(attrib) {
                     return (<span>{attrib}</span>);
                 };
             }
-            if(attribute.type && attribute.type === "picture") {
+            if (attribute.type && attribute.type === "picture") {
                 customRenderers[attribute.name] = function(attrib) {
                     return (<a href={attrib} target="_blank"><img src={attrib} height="150"/></a>);
                 };
             }
-            if(attribute.type && attribute.type === "eval") {
+            if (attribute.type && attribute.type === "eval") {
                 customRenderers[attribute.name] = function(attrib) {
-                    var attrib = attrib.replace(/\[%(.*?)%\]/g, "");
-                    attrib = eval(attrib);
-                    return (<span>{attrib}</span>);
+                    var newattrib = attrib.replace(/\[%(.*?)%\]/g, "");
+                    newattrib = eval(newattrib); // VERY BAD :p
+                    return (<span>{newattrib}</span>);
                 };
             }
             newProperties[attribute.name] = attribute.label;
