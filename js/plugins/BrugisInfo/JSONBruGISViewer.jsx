@@ -54,19 +54,16 @@ var JSONViewer = React.createClass({
     },
     translateLocale(locale) {
         var gfiLocale = "FR";
-        switch (locale.toLowerCase()) {
-            case locale.indexOf("fr") > 0:
-              gfiLocale = "FR";
-              break;
-            case locale.indexOf("en") > 0:
+        if (locale.indexOf("fr")>=0) {
+          gfiLocale = "FR";
+        } else {
+          if(locale.indexOf("nl") >= 0) {
+            gfiLocale = "NL";
+          } else {
+            if(locale.indexOf("en") >=0) {
               gfiLocale = "EN";
-              break;
-            case locale.indexOf("nl") > 0:
-              gfiLocale = "NL";
-              break;
-            default:
-              gfiLocale = "EN";
-              break;
+            }
+          }
         }
         return gfiLocale;
     },
@@ -92,7 +89,23 @@ var JSONViewer = React.createClass({
                     return (<a href={attrib} target="_blank">{attrib}</a>);
                 };
             }
-
+            if(attribute.type && attribute.type === "date") {
+                customRenderers[attribute.name] = function(attrib) {
+                    return (<span>{attrib}</span>);
+                };
+            }
+            if(attribute.type && attribute.type === "picture") {
+                customRenderers[attribute.name] = function(attrib) {
+                    return (<a href={attrib} target="_blank"><img src={attrib} height="150"/></a>);
+                };
+            }
+            if(attribute.type && attribute.type === "eval") {
+                customRenderers[attribute.name] = function(attrib) {
+                    var attrib = attrib.replace(/\[%(.*?)%\]/g, "");
+                    attrib = eval(attrib);
+                    return (<span>{attrib}</span>);
+                };
+            }
             newProperties[attribute.name] = attribute.label;
         });
         return newProperties;
