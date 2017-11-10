@@ -99,12 +99,12 @@
     "no-caller": 2,                  // http://eslint.org/docs/rules/no-caller
     "no-else-return": 2,             // http://eslint.org/docs/rules/no-else-return
     "no-eq-null": 2,                 // http://eslint.org/docs/rules/no-eq-null
-    "no-eval": 2,                    // http://eslint.org/docs/rules/no-eval
+    "no-eval": 1,                    // http://eslint.org/docs/rules/no-eval
     "no-extend-native": 2,           // http://eslint.org/docs/rules/no-extend-native
     "no-extra-bind": 2,              // http://eslint.org/docs/rules/no-extra-bind
     "no-fallthrough": 2,             // http://eslint.org/docs/rules/no-fallthrough
     "no-floating-decimal": 2,        // http://eslint.org/docs/rules/no-floating-decimal
-    "no-implied-eval": 2,            // http://eslint.org/docs/rules/no-implied-eval
+    "no-implied-eval": 1,            // http://eslint.org/docs/rules/no-implied-eval
     "no-lone-blocks": 2,             // http://eslint.org/docs/rules/no-lone-blocks
     "no-loop-func": 2,               // http://eslint.org/docs/rules/no-loop-func
     "no-multi-str": 2,               // http://eslint.org/docs/rules/no-multi-str
