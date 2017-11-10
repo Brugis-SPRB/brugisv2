@@ -1,9 +1,6 @@
 {
     "locale": "nl-NL",
     "messages": {
-        "Legend": "Legende",
-        "Layers": "Lagen",
-
         "Language": "Taal",
         "msgId0": "{name} heeft op {takenDate, date, long} {numPhotos, plural, =0 {geen foto's} =1 {een foto} other {# foto's}} genomen.",
         "htmlTest": "{name} {surname}",
@@ -969,14 +966,6 @@
             "zoomOutButton": {
                 "title": "Zoom Out",
                 "text": "Click to reduce the map"
-            },
-            "measureAreaBrugisButton": {
-                "title": "Mesure de surface",
-                "text": "Utilisez cet outil pour mesurer des surfaces"
-            },
-            "measureLengthBrugisButton": {
-                "title": "Mesure de longueur",
-                "text": "Utilisez cet outil pour mesurer des distances"
             },
             "fullscreen": {
                 "title": "Basculer en plein écran",

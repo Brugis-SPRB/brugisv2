@@ -1,3 +1,4 @@
+
 <?xml version='1.0' encoding='utf8'?>
 <WMT_MS_Capabilities xmlns:ns0="http://www.w3.org/1999/xlink" updateSequence="11608" version="1.1.1">
   <Service>
@@ -148,7 +149,6 @@
      <Layer>
       <Title>Brussels urban Development</Title>
       <Abstract>A compliant implementation of WMS plus most of the SLD extension (dynamic styling). Can also generate PDF, SVG, KML, GeoRSS</Abstract>
-
       <SRS>EPSG:WGS84(DD)</SRS>
       <SRS>EPSG:4326</SRS>
       <SRS>EPSG:31370</SRS>
@@ -1437,6 +1437,10 @@
 		  <Layer noSubsets="0" opaque="0" queryable="1">
 		  <Name>Patrimoine Archéologique</Name>
 		  <Title>Archeological heritage</Title>
+        <Layer noSubsets="0" opaque="0" queryable="1">
+  		  <Name>Archeological atlas</Name>
+  		  <Title>Archeological atlas</Title>
+
 			  <Layer queryable="1">
 				<Name>BDU_DMS_ARCH:Anciens_cimetieres</Name>
 				<Title>Former graveyards</Title>
@@ -1695,6 +1699,191 @@
 				  </LegendURL>
 				</Style>
 			  </Layer>
+      </Layer>
+        <Layer noSubsets="0" opaque="0" queryable="1">
+          <Name>Archeological and historical inventory of Brussels region</Name>
+          <Title>Archeological and historical inventory of Brussels region</Title>
+          <Layer noSubsets="0" opaque="0" queryable="1">
+            <Name>Brussels-Pentagone: Breweries</Name>
+            <Title>Brussels-Pentagone: Breweries</Title>
+            <Layer noSubsets="0" opaque="0" queryable="1">
+              <Name>BDU_DMS_ARCH:Brasseries_localisées_sans_plan</Name>
+              <Title>Breweries localized without plan</Title>
+              <Abstract/>
+              <KeywordList>
+                <Keyword>features</Keyword>
+                <Keyword>A40_ARCHEO_BREW_LOC_NOPLAN</Keyword>
+              </KeywordList>
+              <SRS>EPSG:31370</SRS>
+              <LatLonBoundingBox maxx="4.362330137643484" maxy="50.855418260166424" minx="4.339669998363509" miny="50.83716825492604"/>
+              <BoundingBox SRS="EPSG:31370" maxx="165088.0" maxy="185088.0" minx="140000.0" miny="160000.0"/>
+              <Style>
+                <Name>archeologie_brasseries_sans_plan</Name>
+                <Title>Brasseries sans plan</Title>
+                <LegendURL height="20" width="20">
+                  <Format>image/png</Format>
+                  <OnlineResource ns0:href="http://www.mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=BDU_DMS_ARCH%3ABrasseries_localis%C3%A9es_sans_plan" ns0:type="simple"/>
+                </LegendURL>
+              </Style>
+              <Style>
+                <Name>archeologie_brasseries_sans_plan</Name>
+                <Title>Brasseries sans plan</Title>
+                <LegendURL height="20" width="20">
+                  <Format>image/png</Format>
+                  <OnlineResource ns0:href="http://www.mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=BDU_DMS_ARCH%3ABrasseries_localis%C3%A9es_sans_plan&amp;style=archeologie_brasseries_sans_plan" ns0:type="simple"/>
+                </LegendURL>
+              </Style>
+            </Layer>
+            <Layer noSubsets="0" opaque="0" queryable="1">
+              <Name>BDU_DMS_ARCH:Brasseries_localisées_avec_plan</Name>
+              <Title>Breweries localized with plan</Title>
+              <Abstract/>
+              <KeywordList>
+                <Keyword>features</Keyword>
+                <Keyword>A40_ARCHEO_BREW_LOC_PLAN</Keyword>
+              </KeywordList>
+              <SRS>EPSG:31370</SRS>
+              <LatLonBoundingBox maxx="4.358639097029018" maxy="50.85489692867019" minx="4.338378083032743" miny="50.83768488526128"/>
+              <BoundingBox SRS="EPSG:31370" maxx="165088.0" maxy="185088.0" minx="140000.0" miny="160000.0"/>
+              <Style>
+                <Name>archeologie_brasseries_avec_plan</Name>
+                <Title>Brasseries avec plan</Title>
+                <LegendURL height="20" width="20">
+                  <Format>image/png</Format>
+                  <OnlineResource ns0:href="http://www.mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=BDU_DMS_ARCH%3ABrasseries_localis%C3%A9es_avec_plan" ns0:type="simple"/>
+                </LegendURL>
+              </Style>
+            </Layer>
+          </Layer>
+          <Layer noSubsets="0" opaque="0" queryable="1">
+            <Name>Brussels-Pentagone: Covenants</Name>
+            <Title>Brussels-Pentagone: Covenants</Title>
+            <Layer noSubsets="0" opaque="0" queryable="1">
+              <Name>BDU_DMS_ARCH:Couvents_du_16ème_siècle</Name>
+              <Title>16th Century Convents</Title>
+              <Abstract/>
+              <KeywordList>
+                <Keyword>features</Keyword>
+                <Keyword>A40_ARCHEO_COVT_16TH</Keyword>
+              </KeywordList>
+              <SRS>EPSG:31370</SRS>
+              <LatLonBoundingBox maxx="4.35968056861847" maxy="50.85317919074197" minx="4.3406666571577075" miny="50.8341938895085"/>
+              <BoundingBox SRS="EPSG:31370" maxx="165088.0" maxy="185088.0" minx="140000.0" miny="160000.0"/>
+              <Style>
+                <Name>archeologie_couvents_16eme</Name>
+                <Title>Couvents du 16Ã¨me siÃ¨cle</Title>
+                <LegendURL height="20" width="20">
+                  <Format>image/png</Format>
+                  <OnlineResource ns0:href="http://www.mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=BDU_DMS_ARCH%3ACouvents_du_16%C3%A8me_si%C3%A8cle" ns0:type="simple"/>
+                </LegendURL>
+              </Style>
+            </Layer>
+            <Layer noSubsets="0" opaque="0" queryable="1">
+              <Name>BDU_DMS_ARCH:Couvents_du_17ème_siècle</Name>
+              <Title>17th century convents</Title>
+              <Abstract/>
+              <KeywordList>
+                <Keyword>features</Keyword>
+                <Keyword>A40_ARCHEO_COVT_17TH</Keyword>
+              </KeywordList>
+              <SRS>EPSG:31370</SRS>
+              <LatLonBoundingBox maxx="4.364972982799745" maxy="50.85317940426446" minx="4.3406666571577075" miny="50.8341938895085"/>
+              <BoundingBox SRS="EPSG:31370" maxx="165088.0" maxy="185088.0" minx="140000.0" miny="160000.0"/>
+              <Style>
+                <Name>archeologie_couvents_17eme</Name>
+                <Title>Couvents du 17Ã¨me siÃ¨cle</Title>
+                <LegendURL height="20" width="20">
+                  <Format>image/png</Format>
+                  <OnlineResource ns0:href="http://www.mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=BDU_DMS_ARCH%3ACouvents_du_17%C3%A8me_si%C3%A8cle" ns0:type="simple"/>
+                </LegendURL>
+              </Style>
+            </Layer>
+            <Layer noSubsets="0" opaque="0" queryable="1">
+              <Name>BDU_DMS_ARCH:Couvents_vestiges_conservés</Name>
+              <Title>Convents, existing remains</Title>
+              <Abstract/>
+              <KeywordList>
+                <Keyword>features</Keyword>
+                <Keyword>A40_ARCHEO_COVT_REMAINS</Keyword>
+              </KeywordList>
+              <SRS>EPSG:31370</SRS>
+              <LatLonBoundingBox maxx="4.359650518429081" maxy="50.85293658659732" minx="4.3448815111071175" miny="50.82474698971067"/>
+              <BoundingBox SRS="EPSG:31370" maxx="165088.0" maxy="185088.0" minx="140000.0" miny="160000.0"/>
+              <Style>
+                <Name>archeologie_couvents_vestiges_conservés</Name>
+                <Title>Couvents vestiges conservÃ©s</Title>
+                <LegendURL height="20" width="20">
+                  <Format>image/png</Format>
+                  <OnlineResource ns0:href="http://www.mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=BDU_DMS_ARCH%3ACouvents_vestiges_conserv%C3%A9s" ns0:type="simple"/>
+                </LegendURL>
+              </Style>
+            </Layer>
+            <Layer noSubsets="0" opaque="0" queryable="1">
+              <Name>BDU_DMS_ARCH:Couvents_du_18ème_siècle</Name>
+              <Title>18th century convents</Title>
+              <Abstract/>
+              <KeywordList>
+                <Keyword>features</Keyword>
+                <Keyword>A40_ARCHEO_COVT_18TH</Keyword>
+              </KeywordList>
+              <SRS>EPSG:31370</SRS>
+              <LatLonBoundingBox maxx="4.366078299393206" maxy="50.85586866762693" minx="4.3375525884996415" miny="50.83367736425172"/>
+              <BoundingBox SRS="EPSG:31370" maxx="165088.0" maxy="185088.0" minx="140000.0" miny="160000.0"/>
+              <Style>
+                <Name>archeologie_couvents_18eme</Name>
+                <Title>Couvents du 18Ã¨me siÃ¨cle</Title>
+                <LegendURL height="140" width="92">
+                  <Format>image/png</Format>
+                  <OnlineResource ns0:href="http://www.mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=BDU_DMS_ARCH%3ACouvents_du_18%C3%A8me_si%C3%A8cle" ns0:type="simple"/>
+                </LegendURL>
+              </Style>
+            </Layer>
+          </Layer>
+          <Layer noSubsets="0" opaque="0" queryable="1">
+            <Name>Brussels-Pentagone: Refuges</Name>
+            <Title>Brussels-Pentagone: Refuges</Title>
+            <Layer noSubsets="0" opaque="0" queryable="1">
+              <Name>BDU_DMS_ARCH:Refuges_localisés_sans_plan</Name>
+              <Title>Refuges localized without plan</Title>
+              <Abstract/>
+              <KeywordList>
+                <Keyword>features</Keyword>
+                <Keyword>A40_ARCHEO_REF_LOC_NOPLAN</Keyword>
+              </KeywordList>
+              <SRS>EPSG:31370</SRS>
+              <LatLonBoundingBox maxx="4.354597248888428" maxy="50.8452856836057" minx="4.343951928349922" miny="50.83459916620649"/>
+              <BoundingBox SRS="EPSG:31370" maxx="165088.0" maxy="185088.0" minx="140000.0" miny="160000.0"/>
+              <Style>
+                <Name>archeologie_refuge_sans_plan</Name>
+                <Title>Refuge sans plan</Title>
+                <LegendURL height="20" width="20">
+                  <Format>image/png</Format>
+                  <OnlineResource ns0:href="http://www.mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=BDU_DMS_ARCH%3ARefuges_localis%C3%A9s_sans_plan" ns0:type="simple"/>
+                </LegendURL>
+              </Style>
+            </Layer>
+            <Layer noSubsets="0" opaque="0" queryable="1">
+              <Name>BDU_DMS_ARCH:Refuges_localisés_avec_plan</Name>
+              <Title>Refuges localized with plan</Title>
+              <Abstract/>
+              <KeywordList>
+                <Keyword>features</Keyword>
+                <Keyword>A40_ARCHEO_REF_LOC_PLAN</Keyword>
+              </KeywordList>
+              <SRS>EPSG:31370</SRS>
+              <LatLonBoundingBox maxx="4.360511315528215" maxy="50.85472774866749" minx="4.34277377239966" miny="50.83870878709509"/>
+              <BoundingBox SRS="EPSG:31370" maxx="165088.0" maxy="185088.0" minx="140000.0" miny="160000.0"/>
+              <Style>
+                <Name>archeologie_refuge_avec_plan</Name>
+                <Title>Refuges localisÃ©s avec plan</Title>
+                <LegendURL height="20" width="20">
+                  <Format>image/png</Format>
+                  <OnlineResource ns0:href="http://www.mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=BDU_DMS_ARCH%3ARefuges_localis%C3%A9s_avec_plan" ns0:type="simple"/>
+                </LegendURL>
+              </Style>
+            </Layer>
+          </Layer>
+        </Layer>
 		  </Layer>
 		  <Layer noSubsets="0" opaque="0" queryable="1">
 		  <Name>Patrimoine Naturel</Name>
@@ -1967,7 +2156,7 @@
 			  <Abstract />
 			  <LegendURL height="20" width="20">
 				<Format>image/png</Format>
-				<OnlineResource ns0:href="http://mybrugis.irisnetlab.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Zones_de_developpement_2015" ns0:type="simple" />
+				<OnlineResource ns0:href="http://www.mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Zones_de_developpement_2015" ns0:type="simple" />
 			  </LegendURL>
 			</Style>
 		  </Layer>
@@ -3542,7 +3731,6 @@
 				  <BoundingBox CRS="EPSG:900913" maxx="677475" maxy="6.72891e+06" minx="264676" miny="6.54758e+06" />
 				</Layer>
 			</Layer>
-
     </Layer>
     </Layer>
   </Layer>
