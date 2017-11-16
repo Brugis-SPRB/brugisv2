@@ -41,9 +41,9 @@ const reloadTreeEpic = (action$) =>
 
 const autoSwitchMenuEpic = (action$) =>
     action$.ofType(SET_CONTROL_PROPERTY)
-      .filter( (action) => action.toggle === true && action.value === "2"  && action.control === "drawer" && action.property === "menu")
-      .switchMap( (action) => {
-          return Rx.Observable.of(setControlProperty('drawer', 'menu', "2" , false));
+      .filter( (action) => action.toggle === true && action.value === "2" && action.control === "drawer" && action.property === "menu")
+      .switchMap( () => {
+          return Rx.Observable.of(setControlProperty('drawer', 'menu', "2", false));
       });
 
 
