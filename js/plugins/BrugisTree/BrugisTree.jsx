@@ -7,7 +7,7 @@ const {loadBrugisTreeConfig, brugisTreeNodeToggle} = require('./actions');
 const {addLayer, removeLayer} = require('../../../MapStore2/web/client/actions/layers');
 const {Glyphicon} = require('react-bootstrap');
 const BrugisTreeNode = require('./BrugisTreeNode');
-const {reloadTreeEpic} = require('./epics');
+const {reloadTreeEpic, autoSwitchMenuEpic} = require('./epics');
 
 const BrugisTree = React.createClass({
 
@@ -84,7 +84,6 @@ const BrugisTree = React.createClass({
     }
 });
 
-
 const BrugisTreePlugin = connect((state) => ({
     treenodes: state && state.brugisTree && state.brugisTree.treenodes,
     layers: state && state.layers && state.layers.flat,
@@ -111,7 +110,7 @@ module.exports = {
         },
         DrawerMenu: {
             name: 'brugistree',
-            position: 1,
+            position: 2,
             icon: <Glyphicon glyph="glyphicon-th-list"/>,
             priority: 1,
             title: 'Layers'
@@ -120,5 +119,5 @@ module.exports = {
     reducers: {
         brugisTree: require('./reducers')
     },
-    epics: { reloadTreeEpic }
+    epics: { reloadTreeEpic, autoSwitchMenuEpic }
 };

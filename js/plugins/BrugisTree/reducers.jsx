@@ -138,6 +138,7 @@ function brugisTree(state = null, action) {
             return assign({}, state, {
                 treenodes: updatedtreenodes
             });
+
         default:
             return state;
     }

@@ -3,6 +3,7 @@ const axios = require('axios');
 var {CHANGE_LOCALE} = require('../../../MapStore2/web/client/actions/locale');
 var {brugisTreeLoaded, brugisTreeLoadError} = require('./actions');
 const {unmarshaller} = require('../../../MapStore2/web/client/utils/ogc/WMS');
+var {SET_CONTROL_PROPERTY, setControlProperty} = require('../../../MapStore2/web/client/actions/controls');
 
 const localXmlTreeFr = 'wmsaatl_fr.xml';
 const localXmlTreeNl = 'wmsaatl_nl.xml';
@@ -37,6 +38,16 @@ const reloadTreeEpic = (action$) =>
           .catch((e) => { return Rx.Observable.of(brugisTreeLoadError(e)); });
     });
 
+
+const autoSwitchMenuEpic = (action$) =>
+    action$.ofType(SET_CONTROL_PROPERTY)
+      .filter( (action) => action.toggle === true && action.value === "2"  && action.control === "drawer" && action.property === "menu")
+      .switchMap( (action) => {
+          return Rx.Observable.of(setControlProperty('drawer', 'menu', "2" , false));
+      });
+
+
 module.exports = {
-    reloadTreeEpic
+    reloadTreeEpic,
+    autoSwitchMenuEpic
 };
