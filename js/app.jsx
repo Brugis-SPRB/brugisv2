@@ -7,6 +7,22 @@ const ol = require('openlayers');
 
 require('rxjs/Rx');
 
+LocaleUtils.setSupportedLocales({
+
+    "en": {
+        code: "en-US",
+        description: "English"
+    },
+    "fr": {
+        code: "fr-FR",
+        description: "Français"
+    } /*,
+    "nl": {
+        code: "nl-NL",
+        description: "Nederlands"
+    }*/
+});
+
 const startApp = () => {
     const StandardApp = require('../MapStore2/web/client/components/app/StandardApp');
     const {pages, pluginsDef, initialState, storeOpts, appEpics = {}} = require('./appConfig');
