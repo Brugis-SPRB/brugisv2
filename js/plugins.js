@@ -33,8 +33,7 @@ module.exports = {
         MeasureLengthPlugin: require('./plugins/MeasureLength/MeasureLength'),
         IdentifyPlugin: require('./plugins/BrugisInfo/IdentifyPlugin'),
         TutorialPlugin: require('../MapStore2/web/client/plugins/Tutorial'),
-        BrugisSurveyPlugin: require('./plugins/BrugisSurvey/SurveyPlugin'),
-        utorialPlugin: require('../MapStore2/web/client/plugins/FullScreen'),
+        BrugisSurveyPlugin: require('./plugins/BrugisSurvey/SurveyPlugin')
     },
     requires: {
 
