@@ -312,7 +312,18 @@
 	                  "collapsible": false
                   }
                }
-            },
+            },{
+								"name": "StreetView",
+								"showIn": ["StreetViewBar"] ,
+								"cfg": {
+									"panelClassName": "modal-dialog info-panel modal-content",
+                  "headerClassName": "modal-header",
+                  "bodyClassName": "modal-body info-wrap",
+                  "asPanel": false,
+									"className": "square-button",
+                  "closeGlyph": "1-close"
+								}
+						},
             {
                "name":"MeasureResults",
                "cfg":{
@@ -382,6 +393,16 @@
                "buttonStyle": "primary",
                "pressedButtonStyle": "success",
                "id": "identifyBar"
+             },
+             "isDefault": false
+           }, {
+             "name": "Toolbar",
+             "id": "StreetViewBar",
+             "stateSelector": "streetview",
+             "cfg": {
+               "buttonStyle": "primary",
+               "pressedButtonStyle": "success",
+               "id": "StreetViewBar"
              },
              "isDefault": false
            },
