@@ -17,9 +17,7 @@ const {changeMousePointer} = require('../../../MapStore2/web/client/actions/map'
 const {changeMapInfoFormat} = require('../../../MapStore2/web/client/actions/mapInfo');
 
 const Message = require('../../../MapStore2/web/client/plugins/locale/Message');
-/*
-const {Glyphicon} = require('react-bootstrap');
-*/
+
 const Gfiicon = require('./img/info-phil-2.svg');
 
 const assign = require('object-assign');

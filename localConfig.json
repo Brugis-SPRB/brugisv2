@@ -467,6 +467,13 @@
 	                 "closeGlyph": "1-close"
 	               }
              }, {
+                 "name": "FullScreen",
+                 "override": {
+                     "Toolbar": {
+                         "alwaysVisible": false
+                     }
+                 }
+             }, {
                  "name": "Tutorial" ,
                  "cfg": {
 								     "presetList": {
