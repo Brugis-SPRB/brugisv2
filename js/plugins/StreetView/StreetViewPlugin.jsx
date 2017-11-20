@@ -25,11 +25,12 @@ const StreetViewPlugin = connect(selector, {
 module.exports = {
     StreetViewPlugin: assign(StreetViewPlugin, {
         Toolbar: {
+          id: "streetview",
           name: 'streetView',
           position: 7,
-          tooltip: "info.tooltip",
+          tooltip: "streetview.tooltip",
           icon: <img src={streetviewIcon} height="45" width="38"></img>,
-          help: <Message msgId="helptexts.surveyButton"/>,
+          help: <Message msgId="helptexts.streetviewButton"/>,
           toggle: true
         }
     }),

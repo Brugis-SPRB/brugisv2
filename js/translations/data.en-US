@@ -222,6 +222,9 @@
         "info":{
             "tooltip": "Query objects on map"
         },
+        "streetview":{
+            "tooltip": "Get a Google streetview on map"
+        },
         "expandtoolbar": {
             "tooltip": "Expand / Collapse"
         },
@@ -861,6 +864,10 @@
             "identifyButton": {
                 "title": "Info",
                 "text": "Press the button to activate the tool, then click on the map to retrieve information from layers"
+            },
+            "streetViewButton": {
+                "title": "Google Streetview",
+                "text": "Press the button to activate the tool, then click on the map to obtain a google Streetview image"
             },
             "BackgroundSelector": {
                 "title": "Background selector",

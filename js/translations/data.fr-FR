@@ -273,6 +273,9 @@
         "info":{
             "tooltip": "Interroger les objets sur la carte"
         },
+        "streetview":{
+            "tooltip": "Obtenez Google streetview sur la carte"
+        },
         "expandtoolbar": {
             "tooltip": "Agrandir / Réduire"
         },
@@ -460,6 +463,7 @@
             "backgroundSwitcher": "This is the helptext for the BackgroundSwitcher",
             "layerSwitcher": "This is the helptext for the LayerSwitcher",
             "infoButton": "This is the helptext for the InfoButton",
+            "streetviewButton": "This is the helptext for the streetviewButton",
             "locateBtn": "This is the helptext for the LocateBtn",
             "snapshot": "This is the helptext for the Snapshot",
             "print": "This is the helptext for Print",
@@ -990,6 +994,10 @@
             "identifyButton": {
                 "title": "Info",
                 "text": "Cliquez le bouton pour activer l'outil, cliquez ensuite dans la carte pour obtenir plus d'information"
+            },
+            "streetViewButton": {
+                "title": "Google Streetview",
+                "text": "Cliquez le bouton pour activer l'outil, cliquez ensuite dans la carte pour obtenir une vue Streetview"
             },
             "BackgroundSelector": {
                 "title": "Fonds de plan",
