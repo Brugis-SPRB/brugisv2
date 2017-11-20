@@ -846,8 +846,8 @@
                 "text": "Click to reduce the map"
             },
             "fullscreen": {
-                "title": "Basculer en plein écran",
-                "text": "Basculer en plein écran"
+                "title": "Full Screen",
+                "text": "Click to go full screen"
             },
             "measureAreaBrugisButton": {
                 "title": "Measure of area",

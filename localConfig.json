@@ -511,6 +511,7 @@
 	 											 {"translation": "zoomOutButton", "selector": "#zoomout-btn", "position": "top"},
 												 {"translation": "measureAreaBrugisButton", "selector": "#brugis-area", "position": "top"},
 												 {"translation": "measureLengthBrugisButton", "selector": "#brugis-length", "position": "top"},
+												 {"translation": "fullscreen", "selector": "#fullscreen-btn", "position": "top"},
 	 											 {"translation": "identifyButton", "selector": "#identifyBar-container", "position": "top"},
 												 {"translation": "streetViewButton", "selector": "#StreetViewBar-container", "position": "top"},
 												 {"translation": "brugisSurvey", "selector": "#brugisSurvey-btn", "position": "top"},
