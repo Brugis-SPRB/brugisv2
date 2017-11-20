@@ -1,11 +1,7 @@
 const React = require('react');
-const PropTypes = require('prop-types');
 const assign = require('object-assign');
-const Draggable = require('react-draggable');
-const {Panel, Modal} = require('react-bootstrap');
-const Dialog = require('../../../MapStore2/web/client/components/misc/Dialog');
 const Message = require('../../../MapStore2/web/client/components/I18N/Message');
-const streetviewIcon = require('./imgs/interro-01.svg');
+const streetviewIcon = require('./imgs/littleman-02.svg');
 const {connect} = require('react-redux');
 const {createSelector} = require('reselect');
 const {showStreetView, hideStreetView} = require('./actions');
@@ -38,6 +34,6 @@ module.exports = {
         }
     }),
     reducers: {
-      streetView : require('./reducers')
+      streetView: require('./reducers')
     }
 };

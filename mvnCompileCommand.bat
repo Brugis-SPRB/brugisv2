@@ -1,0 +1,1 @@
+C:\apache-maven-3.5.2\bin\mvn --batch-mode clean install

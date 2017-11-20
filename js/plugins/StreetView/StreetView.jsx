@@ -1,7 +1,7 @@
 const React = require('react');
 const PropTypes = require('prop-types');
 const Draggable = require('react-draggable');
-const {Panel, Modal} = require('react-bootstrap');
+const Panel = require('react-bootstrap');
 const Dialog = require('../../../MapStore2/web/client/components/misc/Dialog');
 const asyncLoading = require('react-async-loader');
 
@@ -13,9 +13,14 @@ const StreetView = React.createClass({
         text: PropTypes.string,
         btnSize: PropTypes.oneOf(['large', 'small', 'xsmall']),
         className: PropTypes.string,
+        panelClassName: PropTypes.string,
+        headerClassName: PropTypes.string,
+        bodyClassName: PropTypes.string,
+        collapsible: PropTypes.bool,
         enabled: PropTypes.bool,
         draggable: PropTypes.bool,
         bsStyle: PropTypes.string,
+        asPanel: PropTypes.bool,
         tooltip: PropTypes.element,
         tooltipPlace: PropTypes.string,
         lat: PropTypes.number,
@@ -70,51 +75,51 @@ const StreetView = React.createClass({
     renderContent() {
 
 
-          return this.props.asPanel ? (
-              <Panel
-                  defaultExpanded="true"
-                  collapsible={this.props.collapsible}
-                  id="mapstore-streetview"
-                  style={this.props.style}
-                  className={this.props.panelClassName}>
-                  <div className={this.props.headerClassName ? this.props.headerClassName : "panel-heading"}>
+        return this.props.asPanel ? (
+            <Panel
+                defaultExpanded="true"
+                collapsible={this.props.collapsible}
+                id="mapstore-streetview"
+                style={this.props.style}
+                className={this.props.panelClassName}>
+                <div className={this.props.headerClassName ? this.props.headerClassName : "panel-heading"}>
 
-                  </div>
+                </div>
+                <div ref={ (ctn) => {this.ctn = ctn; }} style={{
+                    height: '450px',
+                    backgroundColor: '#eeeeee'
+                  }}>
+                </div>
+            </Panel>
+        ) : (
+            <Dialog id="mapstore-streetview"
+                style={this.props.style}
+                className={this.props.panelClassName}
+                headerClassName={this.props.headerClassName}
+                bodyClassName={this.props.bodyClassName}
+                >
+
+                <div role="body">
                   <div ref={ (ctn) => {this.ctn = ctn; }} style={{
-            				height: '450px',
-            				backgroundColor: '#eeeeee'
-            			}}>
+                      height: '450px',
+                      backgroundColor: '#eeeeee'
+                    }}>
                   </div>
-              </Panel>
-          ) : (
-              <Dialog id="mapstore-streetview"
-                  style={this.props.style}
-                  className={this.props.panelClassName}
-                  headerClassName={this.props.headerClassName}
-                  bodyClassName={this.props.bodyClassName}
-                  >
-
-                  <div role="body">
-                    <div ref={ (ctn) => {this.ctn = ctn; }} style={{
-              				height: '450px',
-              				backgroundColor: '#eeeeee'
-              			}}>
-                    </div>
-                  </div>
-              </Dialog>
-          );
+                </div>
+            </Dialog>
+        );
 
     },
 
     render() {
-      if (this.props.enabled) {
-          return this.props.draggable ? (
+        if (this.props.enabled) {
+            return this.props.draggable ? (
                   <Draggable>
                       {this.renderContent()}
                   </Draggable>
               ) : this.renderContent();
-      }
-      return null;
+        }
+        return null;
     },
 
     initialize(canvas, infos, update) {
