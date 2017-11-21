@@ -8,15 +8,14 @@ const ol = require('openlayers');
 require('rxjs/Rx');
 
 LocaleUtils.setSupportedLocales({
-
-    "en": {
-        code: "en-US",
-        description: "English"
-    },
     "fr": {
         code: "fr-FR",
         description: "Français"
-    } /*,
+    },
+    "en": {
+        code: "en-US",
+        description: "English"
+    }/*,
     "nl": {
         code: "nl-NL",
         description: "Nederlands"
