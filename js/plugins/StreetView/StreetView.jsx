@@ -63,6 +63,7 @@ const StreetView = React.createClass({
         };
     },
     componentWillReceiveProps(newProps) {
+      if(newProps.enabled) {
         if (this.needStreetViewRefresh(newProps)) {
             let infos = {
                 position: {lat: newProps.lat, lng: newProps.lng},
@@ -71,6 +72,7 @@ const StreetView = React.createClass({
             };
             this.initialize(this.ctn, infos, true);
         }
+      }
     },
     renderContent() {
 
