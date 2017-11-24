@@ -137,7 +137,6 @@ const Identify = React.createClass({
                 } else {
                     this.props.localRequest(layer, request, metadata);
                 }
-
             });
             if (queryableLayers.length === 0) {
                 this.props.noQueryableLayers();

@@ -1,9 +1,10 @@
 const React = require('react');
 const PropTypes = require('prop-types');
 const Draggable = require('react-draggable');
-const Panel = require('react-bootstrap');
-const Dialog = require('../../../MapStore2/web/client/components/misc/Dialog');
+const {Panel, Glyphicon} = require('react-bootstrap');
 const asyncLoading = require('react-async-loader');
+const Dialog = require('../../../MapStore2/web/client/components/misc/Dialog');
+const Message = require('../../../MapStore2/web/client/components/I18N/Message');
 
 const StreetView = React.createClass({
 
@@ -30,7 +31,8 @@ const StreetView = React.createClass({
         zoom: PropTypes.number,
         tabkey: PropTypes.number,
         google_map_api_key: PropTypes.string,
-        googleMaps: PropTypes.object
+        googleMaps: PropTypes.object,
+        toggleControl: PropTypes.func
     },
 
     getDefaultProps() {
@@ -59,7 +61,8 @@ const StreetView = React.createClass({
             zoom: 1,
             tabkey: 0,
             google_map_api_key: "AIzaSyBOj4l8-OrXmpVXEpeLH-dIfjCxhGkWxh0",
-            googleMaps: {}
+            googleMaps: {},
+            toggleControl: () => {}
         };
     },
     componentWillReceiveProps(newProps) {
@@ -74,6 +77,14 @@ const StreetView = React.createClass({
         }
       }
     },
+    renderHeader(missing) {
+        return (
+            <span role="header">
+                {this.props.headerGlyph ? <Glyphicon glyph={this.props.headerGlyph} /> : null}&nbsp;<Message msgId="identifyTitle" />
+                <button onClick={this.props.toggleControl} className="close">{this.props.closeGlyph ? <Glyphicon glyph={this.props.closeGlyph}/> : <span>×</span>}</button>
+            </span>
+        );
+    },
     renderContent() {
 
         return this.props.asPanel ? (
@@ -83,13 +94,15 @@ const StreetView = React.createClass({
                 id="mapstore-streetview"
                 style={this.props.style}
                 className={this.props.panelClassName}>
-                <div className={this.props.headerClassName ? this.props.headerClassName : "panel-heading"}>
-
+                <div role="header" >
+                    {this.renderHeader()}
                 </div>
-                <div ref={ (ctn) => {this.ctn = ctn; }} style={{
-                    height: '450px',
-                    backgroundColor: '#eeeeee'
-                  }}>
+                <div role="body">
+                  <div ref={ (ctn) => {this.ctn = ctn; }} style={{
+                      height: '450px',
+                      backgroundColor: '#eeeeee'
+                    }}>
+                  </div>
                 </div>
             </Panel>
         ) : (
@@ -99,7 +112,9 @@ const StreetView = React.createClass({
                 headerClassName={this.props.headerClassName}
                 bodyClassName={this.props.bodyClassName}
                 >
-
+                <div role="header" >
+                  {this.renderHeader()}
+                </div>
                 <div role="body">
                   <div ref={ (ctn) => {this.ctn = ctn; }} style={{
                       height: '450px',

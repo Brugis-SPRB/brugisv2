@@ -1,10 +1,10 @@
 const React = require('react');
 const assign = require('object-assign');
 const Message = require('../../../MapStore2/web/client/components/I18N/Message');
+const {toggleControl} = require('../../../MapStore2/web/client/actions/controls');
 const streetviewIcon = require('./imgs/littleman-02.svg');
 const {connect} = require('react-redux');
 const {createSelector} = require('reselect');
-const {showStreetView, hideStreetView} = require('./actions');
 const StreetView = require('./StreetView');
 
 const selector = createSelector([
@@ -18,8 +18,7 @@ const selector = createSelector([
 }));
 
 const StreetViewPlugin = connect(selector, {
-    showStreetView: showStreetView,
-    hideStreetView: hideStreetView
+    toggleControl: toggleControl.bind(null, 'streetView', null)
 })(StreetView);
 
 module.exports = {

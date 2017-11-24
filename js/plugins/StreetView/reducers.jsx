@@ -5,11 +5,11 @@ function streetView(state = null, action) {
     switch (action.type) {
         case CLICK_ON_MAP: {
             return assign({}, state, {
-            clickPoint: action.point
-        });
+                clickPoint: action.point
+            });
         }
         default:
-        return state;
+          return state;
     }
 }
 
