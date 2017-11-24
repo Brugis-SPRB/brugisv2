@@ -74,7 +74,6 @@ const StreetView = React.createClass({
     },
     renderContent() {
 
-
         return this.props.asPanel ? (
             <Panel
                 defaultExpanded="true"

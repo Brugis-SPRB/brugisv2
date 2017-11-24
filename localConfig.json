@@ -9,10 +9,27 @@
 		"mobile":[
 			{
 				 "name":"Map",
-				 "cfg":{
-						"zoomControl":false
+				 "cfg": {
+					 "zoomControl":false,
+					 "mapOptions": {
+						 "openlayers": {
+							 "attribution": {
+								 "container": "#mapstore-map-footer-container"
+							 }
+						 },
+						 "leaflet": {
+							 "attribution": {
+								 "container": "#mapstore-map-footer-container"
+							 }
+						 }
+					 },
+					 "toolsOptions": {
+						 "scalebar": {
+							 "container" : "#mapstore-map-footer-container"
+						 }
+					 }
 				 }
-			},
+			},"MapFooter",
 			{
 					"name" : "BrugisTree",
 					 "hide" : true,
@@ -29,7 +46,10 @@
 					"name": "BackgroundSelector",
 					"cfg": {
 							"id": "superbroleke",
-							"bottom": 40
+							"bottom": 40,
+							"style": {
+									"bottom": 10
+							}
 					}
 			},
 			{
@@ -243,10 +263,27 @@
 		"desktop": [
             {
                "name":"Map",
-               "cfg":{
-                  "zoomControl":false
-               }
-            },
+							 "cfg": {
+								 "zoomControl":false,
+								 "mapOptions": {
+									 "openlayers": {
+										 "attribution": {
+											 "container": "#mapstore-map-footer-container"
+										 }
+									 },
+									 "leaflet": {
+										 "attribution": {
+											 "container": "#mapstore-map-footer-container"
+										 }
+									 }
+								 },
+								 "toolsOptions": {
+									 "scalebar": {
+										 "container" : "#mapstore-map-footer-container"
+									 }
+								 }
+							 }
+						},"MapFooter",
             {
                 "name" : "BrugisTree",
                  "hide" : true,
@@ -262,8 +299,7 @@
 						{
 								"name": "BackgroundSelector",
 								"cfg": {
-									  "id": "superbroleke",
-										"bottom": 40
+									  "id": "superbroleke"
 								}
 						},
             {

@@ -55,7 +55,7 @@ const MeasureArea = React.createClass({
             <Button
                 onClick={() => this.onAreaClick()}
                 className={this.props.className}
-                tooltip={this.props.tooltip}
+                
                 bsStyle={this.props.bsStyle}
                 id={this.props.id}
                 >

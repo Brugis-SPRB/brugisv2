@@ -25,14 +25,26 @@
         "enable": "Enable",
         "layers": "Layers",
         "warning": "Warning",
+        "version": {
+            "label": "Version"
+        },
+        "autorefresh": {
+            "of": "of",
+            "updating": "Updating...",
+            "layers": "layers"
+        },
         "layerProperties": {
             "windowTitle": "Layer Properties",
             "title": "Title",
             "name": "Name",
             "group": "Group",
             "general": "General",
+            "description": "Description",
             "display": "Display",
             "style": "Style",
+            "transparent": "Transparent",
+            "singleTile": "Single Tile",
+            "cached": "Use cache options",
             "styleCustom": "Use style named \"{value}\"",
             "styleListLoadError": "There was an error loading the styles list",
             "stylesRefreshList": "Refresh Styles List",
@@ -42,12 +54,43 @@
             "deleteLayerMessage": "Do you really want to delete this Layer?",
             "confirmDelete": "Are you sure?",
             "featureTypeError": "Cannot load layer attributes",
-            "elevation": "Elevation"
+            "elevation": "Elevation",
+            "titleTranslations": "Title translations",
+            "groupProperties": "Group properties",
+            "featureInfo": "Feature Info",
+            "featureInfoFormatLbl": "Identify response format"
+        },
+        "notification": {
+            "update": "Update",
+            "warning": "Warning",
+            "success": "Success",
+            "backgroundLayerNotSupported": "The previously selected background is not supported for this type of map. The first one available is then used.",
+            "noBackgroundLayerSupported": "There are no supported background layers for this type of map.",
+            "updateOldMap": "This is an old map, thus not all the functionalities can be enabled. Click on update button in order to update the map or simply dismiss this notification if you don't want to update it.",
+            "warningSaveUpdatedMap": "Some layers haven't been updated correctly",
+            "saveUpdatedMap": "All the layers have been successfully updated"
+        },
+        "dock": {
+            "row": "{rowsSelected} row selected",
+            "rows": "{rowsSelected} rows selected"
+        },
+        "globeswitcher": {
+            "tooltipDeactivate": "Exit 3D Mode",
+            "tooltipActivate": "Enter 3D Mode"
+        },
+        "cookie":{
+            "info": "This website uses cookies to improve your experience. We'll assume you're ok with this, but you can opt-out if you wish.",
+            "moreDetailsButton": "More Details",
+            "leave": "Leave",
+            "accept": "Accept"
         },
         "background": "Background",
         "language": "Language",
         "mousePositionCoordinates": "Coordinates indicator",
-        "showMousePositionCoordinates": "Show Coordinates",
+        "mouseCoordinates": "Coordinates:",
+        "mousePositionCRS": "CRS:",
+        "mapScale": "Scale:",
+        "showMousePositionCoordinates": "Show/Hide Coordinates",
         "menu": "Menu",
         "options": "Options",
         "settings": "Settings",
@@ -55,9 +98,10 @@
         "gohome": "Go home",
         "back": "Back to the Importer",
         "printbutton": "Print",
+        "annotationsbutton": "Annotations",
         "noresultfound": "No Result found",
         "save": "Save",
-		"saveAs": "Save As...",
+        "saveAs": "Save As...",
         "opacity": "Opacity",
         "elevation": "Elevation",
         "close": "Close",
@@ -108,7 +152,7 @@
                     "html":"<h3>Query Builder</h3><p>Custom examples</p>"
                 },
                 "featuregrid":{
-                    "html":"<h3>Feature Grid</h3><p>Custom examples</p>"
+                    "html":"<h3>Feature Editor</h3><p>Custom examples</p>"
                 },
                 "print":{
                     "html":"<h3>Printing</h3><p>Custom examples</p>"
@@ -123,6 +167,11 @@
                     "html":"<h3>Raster Styler</h3><p>Style your raster layer</p>"
                 }
             }
+        },
+        "cookiesPolicyNotification": {
+            "title": "This website uses cookies",
+            "message": "By continuing to use our website you are accepting our use of cookies.",
+            "confirm": "I Agree"
         },
         "manager": {
             "openInANewTab":"Open map",
@@ -179,15 +228,44 @@
             "toggleLayerVisibility": "Toggle layer visibility",
             "displayLegendAndTools": "Display legend and tools",
             "zoomToLayerExtent": "Zoom to layer extent",
+
+            "addLayer": "Add Layer",
+            "toolZoomToLayerTooltip": "Zoom to selected layer extent",
+            "toolZoomToLayersTooltip": "Zoom to selected layers extent",
+            "toolLayerSettingsTooltip": "Selected layer settings",
+            "toolGroupSettingsTooltip": "Selected group settings",
+            "toolTrashLayerTooltip": "Remove selected layer",
+            "toolTrashLayersTooltip": "Remove selected layers",
+            "toolFeaturesGridTooltip": "Open Attribute Table",
+            "noFilteredResults": "No results",
+            "filterPlaceholder": "Filter layers",
+            "clearFilter": "Clear filter",
+            "toolReloadLayerTooltip": "Force reload of selected layer",
+            "toolReloadLayersTooltip": "Force reload of selected layers",
+            "statusIconOpen": "Close group",
+            "statusIconClose": "Open group",
+            "grabLayerIcon": "Grab and sort layer",
+            "grabGroupIcon": "Grab and sort group",
+            "toggleLayerVisibilityWarning": "Toggle layer visibility, Warning: layer didn't load correctly",
+
             "editLayerProperties": "Edit layer properties",
-            "searchFeatures": "Search on this layer...",
+            "browseData": "Open Attribute Table",
             "removeLayer": "Remove layer",
-            "loadingerror": "The layer has not been loaded correctly",
+            "loadingerror": "The layer has not been loaded correctly or not available",
             "measure": "Measure",
             "backgroundSwitcher": "Backgrounds",
             "layers": "Layers",
-            "drawerButton": "Layers"
-        },
+            "drawerButton": "Layers",
+            "refreshTitle": "Update layers",
+            "refreshConfirm": "Update",
+            "refreshMessage": "Reload WMS layers configuration from the server(s)",
+            "refreshError": "Error updating layers: ",
+            "refreshOptions": {
+                "bbox": "Update BBOX",
+                "search": "Update search options",
+                "title": "Update title",
+                "dimensions": "Update dimensions"
+            }        },
         "print":{
             "paneltitle": "Print",
             "layout": "Layout",
@@ -216,7 +294,7 @@
             },
             "layoutWarning": "Not allowed layout"
         },
-        "BackgroundSelector":{
+        "backgroundSwither":{
             "tooltip": "Select Background"
         },
         "info":{
@@ -263,7 +341,32 @@
             "bearingLabel": "Bearing"
         },
         "search":{
-            "placeholder": "Search by location name or coordinates ..."
+            "placeholder": "Search by location name or coordinates ...",
+            "searchservicesbutton": "Configure search services",
+            "configpaneltitle": "Create/edit a search service",
+            "serviceslistlabel": "Available services",
+            "overriedservice": "Override default services",
+            "addbtn": "Add",
+            "nextbtn": "Next",
+            "prevbtn": "Back",
+            "savebtn": "Save/Update",
+            "cancelbtn": "Cancel",
+            "confirmremove": "Delete?",
+            "cancelconfirm": "Are you sure?",
+            "s_name": "Name",
+            "s_title": "Title",
+            "s_description": "Description",
+            "s_priority": "Priority",
+            "s_url": "Service url",
+            "s_layer": "Layer",
+            "s_attributes": "Attributes",
+            "s_sort": "Sort by",
+            "s_max_features": "Max features",
+            "s_wfs_props_label" : "WFS service props",
+            "s_wfs_opt_props_label" : "Optional props",
+            "s_result_props_label": "Result display properties",
+            "s_priority_info": "Used to sort search results, higher values first. Nominatim results have priority = 5",
+            "serviceslistempty": "No custom services defined"
         },
         "drawLocal": {
             "draw": {
@@ -379,7 +482,7 @@
             "zoomIn": "This is the helptext for the ZoomIn",
             "zoomOut": "This is the helptext for the ZoomOut",
             "searchBar": "Write the address of a place to find. e.g.  '1st avenue, new york'. You can even insert coordinates in this format: 43.87,10.20",
-            "metadataExplorer": "This is the helptext for the MetadataExplorer",
+            "metadataexplorer": "This is the helptext for the MetadataExplorer",
             "settingsPanel": "This is the helptext for the SettingsPanel",
             "gohome": "This is the helptext for Home",
             "measureComponent": "This is the helptext for the MeasureComponent",
@@ -421,6 +524,7 @@
                 "combo_placeholder": "Attribute",
                 "text_placeholder": "Type text to search",
                 "attribute_filter_header": "Attribute Filter",
+                "tooltipTextField": "use <b>*</b> for any number of any char</br>use <b>.</b> for a single char</br>use <b>!</b> to escape the above two (* and .)</br>",
                 "groupField": {
                     "any": "any",
                     "all": "all",
@@ -432,6 +536,11 @@
                 },
                 "datefield": {
                     "wrong_date_range": "Start date must be earlier than end date"
+                },
+                "autocomplete": {
+                    "emptyList": "No results",
+                    "emptyFilter": "The filter returned no results",
+                    "open": "Open combobox"
                 }
             },
             "spatialfilter": {
@@ -453,17 +562,18 @@
                 },
                 "methods": {
                     "zone": "Zone",
-                    "box": "BoundingBox",
+                    "viewport": "Viewport",
+                    "box": "Rectangle",
                     "buffer": "Buffer",
                     "circle": "Circle",
                     "poly": "Polygon"
                 },
                 "operations": {
-                    "intersects": "INTERSECTS",
-                    "bbox": "BBOX",
-                    "contains": "CONTAINS",
-                    "dwithin": "DWITHIN",
-                    "within": "WITHIN"
+                    "intersects": "Intersects",
+                    "bbox": "BoundingBox",
+                    "contains": "Is contained",
+                    "dwithin": "Distance from",
+                    "within": "Contains"
                 }
             }
         },
@@ -478,13 +588,39 @@
             "retypePwd": "Retype Password",
             "passwordMinlenght": "Your password must be at least {minSize} character",
             "passwordCheckFail": "Passwords do not match!",
+            "passwordInvalid": "Invalid password",
             "username": "Username",
             "password": "Password",
+            "passwordChanged": "Password changed",
+            "passwordError": "Error changing password",
             "signIn":"Sign-in",
             "loginFail":"Login Fail",
             "loginFailedStatusMessages": {
                 "usernamePwdInsert": "Please insert username and password",
                 "usernamePwdIncorrect":"Username or password incorrect"
+            }
+        },
+        "annotations": {
+            "edit": "Edit",
+            "remove": "Delete",
+            "save": "Save",
+            "cancel": "Cancel",
+            "back": "Back",
+            "addMarker": "Add a new point on the map",
+            "styleGeometry": "Choose a different style for points",
+            "deleteGeometry": "Remove existing points",
+            "removeannotation": "Do you want to remove the annotation?",
+            "removegeometry": "Do you want to remove all annotation points?",
+            "confirm": "Confirm",
+            "mandatory": "Mandatory field",
+            "emptygeometry": "Geometry cannot be empty",
+            "add": "New",
+            "filter": "Filter annotations...",
+            "undo": "Are you sure you want to abandon the annotation editing session?",
+            "title": "Annotations",
+            "field": {
+                "title": "Title",
+                "description": "Description"
             }
         },
         "users": {
@@ -523,6 +659,7 @@
           "newGroup": "New Group",
           "manageGroups": "Manage Groups",
           "description": "Description:",
+          "noDescriptionAvailable": "(No description)",
           "groupName": "Group Name",
           "groupDescription": "Description",
           "saveGroup": "Save",
@@ -540,15 +677,16 @@
             "titlePanel": "Share the map",
             "socialIntro": "In your favourite social network",
             "directLinkTitle": "Via a direct link",
-            "embeddedLinkTitle": "Via the embedded code",
-            "forceDrawer": "Show TOC",
-            "apiLinkTitle": "Using APIs",
             "social": "Social",
             "direct": "Link",
             "code": "Embed",
+            "embeddedLinkTitle": "Via the embedded code",
+            "forceDrawer": "Show TOC",
+            "apiLinkTitle": "Using APIs",
             "QRCodeLinkTitle": "qr code",
-            "msgCopiedUrl":"Copied",
-            "msgToCopyUrl":"Click to copy"
+            "msgCopiedUrl": "Copied",
+            "msgToCopyUrl": "Click to copy",
+            "sharedTitle": "Check out my new map: "
         },
         "snapshot": {
             "title": "Snapshot Preview",
@@ -568,13 +706,20 @@
             "placeholder": "Drop your files here or click to select the shapefiles to import. (shapefiles must be contained in zip archives)",
             "defaultStyle": "Default style",
             "zoom": "Zoom on the shapefiles",
-            "error": {"select": "Select one or more zip files"},
+            "error": {
+                "select": "Select one or more zip files",
+                "shapeFileParsingError": "Cannot load the shapefile. The file could be damaged or not well formed",
+                "genericLoadError": "Cannot load the shapefile on map"
+            },
             "add": "Add",
             "cancel": "Cancel",
             "success": " correctly imported"
         },
         "catalog": {
             "title": "Catalog",
+            "autoload": "Search on service selection",
+            "clearValueText": "Clear selection",
+            "noResultsText": "",
             "tooltip": "Browse Catalog",
             "addToMap": "Add To Map",
             "getWMSLink": "Get WMS Link",
@@ -589,9 +734,25 @@
             "catalogUrlPlaceholder": "Enter catalog URL...",
             "textSearchPlaceholder": "text to search...",
             "search": "Search",
+            "delete": "Delete",
             "reset": "Clear",
             "options": "Options",
-            "srs_not_allowed": "The map coordinate system is not supported by this service"
+            "srs_not_allowed": "The map coordinate system is not supported by this service",
+            "add": "Add",
+            "service": "Service",
+            "servicePlaceholder": "type a service",
+            "url": "Url",
+            "urlPlaceholder": "type a URL",
+            "type": "Type",
+            "serviceTitle": "Title",
+            "serviceTitlePlaceholder": "type a title",
+            "notification": {
+                "warningAddCatalogService": "Insert a valid url and title",
+                "addCatalogService": "Service added correctly",
+                "duplicatedServiceTitle": "A service with that title already exists. Please, change title",
+                "serviceDeletedCorrectly": "The service was deleted correctly",
+                "errorServiceUrl": "Service not available. Please, check the provided url"
+            }
         },
         "uploader": {
             "filename": "File Name",
@@ -725,17 +886,74 @@
             "single": "Single Band"
         },
         "featuregrid": {
+            "columns": "Columns",
             "header": "Search results list",
             "tools": "Tool Panel",
             "export": "Export",
             "selectall": "Select All",
             "deselectall": "Clear Selection",
             "backtosearch": "Back to search",
+            "resultInfo": "{total, plural, =0 {No items} =1 {{total} Item of {total}} other {{start}-{end} of {total}}}",
+            "pageInfo": "{totalPages, plural, =0 {No pages} =1 {Page {totalPages} of {totalPages}} other {Page {page} of {totalPages}}}",
             "pagination": {
                 "page": "Page",
                 "of":   "of",
                 "to":   "to",
                 "more": "more"
+            },
+            "noFeaturesAvailable": "No Features Available",
+            "errorSaving": "An error occured with saving operation",
+            "notSupportedGeometryTitle": "Geometry type not supported ",
+            "notSupportedGeometry": "Current layer geometry type is not supported by editing but you can still edit attributes",
+            "yesButton": "Yes",
+            "noButton": "No",
+            "deleteButton": "Delete",
+            "clear": "Are you sure to cancel all changes you have done?",
+            "featureClose": "Are you sure to close the feature grid?",
+            "delete": "Do you confirm to delete {count} features?",
+            "missingGeometry": "Missing geometry",
+            "filter": {
+                "placeholders": {
+                    "default": "Search...",
+                    "string": "Type text to filter...",
+                    "number": "Type number or expression..."
+                },
+                "tooltips": {
+                    "editMode": "Quick search is not available in edit mode",
+                    "default": "Search...",
+                    "string": "Type text to filter...",
+                    "number": "Type a number or an expression. Examples: 10, > 2, < 10"
+                }
+            },
+            "toolbar": {
+                "editMode": "Edit mode",
+                "advancedFilter": "Advanced Search",
+                "quitEditMode": "Quit edit mode",
+                "addNewFeatures": "Add New feature",
+                "editFeature": "Edit feature",
+                "drawGeom": "Draw feature",
+                "stopDrawGeom": "Cancel geometry cration",
+                "addGeom": "Add a shape to the existing geometry",
+                "deleteSelectedFeatures": "Delete selected features",
+                "saveChanges": "Save changes",
+                "saving": "Saving...",
+                "cancelChanges": "Cancel changes",
+                "deleteGeometry": "Delete geometry",
+                "downloadGridData": "Download grid data",
+                "hideShowColumns": "Hide/show columns",
+                "zoomAll": "Zoom to page extent",
+                "syncOnMap": "Sync map with fitler"
+            }
+        },
+        "wfsdownload": {
+            "title": "Export Data",
+            "format": "File Format",
+            "srs":  "Spatial Reference System",
+            "export": "Export",
+            "downloadonlycurrentpage": "Download only current page",
+            "error": {
+                "title": "Error during export",
+                "invalidOutputFormat": "The selected export format is not available"
             }
         },
         "vectorstyler": {
