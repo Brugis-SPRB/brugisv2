@@ -15,11 +15,11 @@ LocaleUtils.setSupportedLocales({
     "en": {
         code: "en-US",
         description: "English"
-    }/*,
+    },
     "nl": {
         code: "nl-NL",
         description: "Nederlands"
-    }*/
+    }
 });
 
 const startApp = () => {
