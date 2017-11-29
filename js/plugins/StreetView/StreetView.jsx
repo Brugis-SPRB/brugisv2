@@ -30,6 +30,8 @@ const StreetView = React.createClass({
         pitch: PropTypes.number,
         zoom: PropTypes.number,
         tabkey: PropTypes.number,
+        headerGlyph: PropTypes.string,
+        closeGlyph: PropTypes.string,
         google_map_api_key: PropTypes.string,
         googleMaps: PropTypes.object,
         toggleControl: PropTypes.func
@@ -66,18 +68,18 @@ const StreetView = React.createClass({
         };
     },
     componentWillReceiveProps(newProps) {
-      if(newProps.enabled) {
-        if (this.needStreetViewRefresh(newProps)) {
-            let infos = {
-                position: {lat: newProps.lat, lng: newProps.lng},
-                pov: {heading: 0, pitch: 0},
-                zoom: 1
-            };
-            this.initialize(this.ctn, infos, true);
+        if (newProps.enabled) {
+            if (this.needStreetViewRefresh(newProps)) {
+                let infos = {
+                    position: {lat: newProps.lat, lng: newProps.lng},
+                    pov: {heading: 0, pitch: 0},
+                    zoom: 1
+                };
+                this.initialize(this.ctn, infos, true);
+            }
         }
-      }
     },
-    renderHeader(missing) {
+    renderHeader() {
         return (
             <span role="header">
                 {this.props.headerGlyph ? <Glyphicon glyph={this.props.headerGlyph} /> : null}&nbsp;<Message msgId="identifyTitle" />
