@@ -157,7 +157,7 @@
           <Name>PRAS</Name>
           <Title>PRAS</Title>
           <Layer noSubsets="0" opaque="0" queryable="1">
-            <Name>Affectation du sol</Name>
+            <Name>BDU:Affectation du sol</Name>
             <Title>Affectation du sol</Title>
             <Layer noSubsets="0" opaque="0" queryable="1">
               <Name>Affectation_du_sol</Name>

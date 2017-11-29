@@ -157,7 +157,7 @@
           <Name>GBP</Name>
           <Title>GBP</Title>
           <Layer noSubsets="0" opaque="0" queryable="1">
-            <Name>Bodembestemming</Name>
+            <Name>BSO:Bodembestemming</Name>
             <Title>Bodembestemming</Title>
             <Layer noSubsets="0" opaque="0" queryable="1">
               <Name>Volledige_bodembestemming</Name>

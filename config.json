@@ -22,7 +22,7 @@
     },
 
     "layers": [{
-
+      
         	"type": "wms",
             "url":["http://www.mybrugis.irisnet.be/geoserver/URBIS/wms"],
         	"title": "UrbisFR",
