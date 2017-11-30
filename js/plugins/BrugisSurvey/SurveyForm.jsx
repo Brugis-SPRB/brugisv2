@@ -30,7 +30,7 @@ var SurveyForm = React.createClass({
         };
     },
     render() {
-        return (<Panel header="Nouveau Reperage" eventKey={this.props.evtKey} className={this.props.panelClassName} collapsible defaultExpanded="true">
+        return (<Panel header="Nouveau Reperage" eventKey={this.props.evtKey} className={this.props.panelClassName} collapsible defaultExpanded={true}>
             {this.props.children}
             <Form horizontal onSubmit={this.handleSubmit}>
               <FormGroup controlId="RefDoc" bsSize={this.props.bsSize}>

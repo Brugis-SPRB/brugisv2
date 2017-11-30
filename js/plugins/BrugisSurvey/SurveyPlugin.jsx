@@ -18,6 +18,8 @@ const {Panel} = require('react-bootstrap');
 const Dialog = require('../../../MapStore2/web/client/components/misc/Dialog');
 const Message = require('../../../MapStore2/web/client/plugins/locale/Message');
 
+const {addremoveparcelsonactivativeEpic} = require('./epics');
+
 const {
     loadBrugisSurveys,
     brugisSurveyDrawSurfaceToggle,
@@ -265,5 +267,8 @@ module.exports = {
     }),
     reducers: {
         brugisSurvey: require('./reducers')
+    },
+    epics:{
+      addremoveparcelsonactivativeEpic
     }
 };
