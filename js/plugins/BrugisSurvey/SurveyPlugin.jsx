@@ -267,7 +267,7 @@ module.exports = {
     reducers: {
         brugisSurvey: require('./reducers')
     },
-    epics:{
+    epics: {
       addremoveparcelsonactivativeEpic
     }
 };
