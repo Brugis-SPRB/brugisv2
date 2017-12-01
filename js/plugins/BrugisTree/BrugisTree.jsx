@@ -10,7 +10,6 @@ const BrugisTreeNode = require('./BrugisTreeNode');
 const {reloadTreeEpic, autoSwitchMenuEpic} = require('./epics');
 
 const BrugisTree = React.createClass({
-
     propTypes: {
         expanded: PropTypes.bool,
         loadTreeData: PropTypes.func,
@@ -110,7 +109,7 @@ module.exports = {
         },
         DrawerMenu: {
             name: 'brugistree',
-            position: 2,
+            position: 1,
             icon: <Glyphicon glyph="glyphicon-th-list"/>,
             priority: 1,
             title: 'Layers'

@@ -153,7 +153,6 @@ const BrugisSurvey = React.createClass({
   render() {
       const surveyPanel = (
           <Panel role="body">
-
             <SurveyForm
               evtKey={1}
               types={this.props.types}
