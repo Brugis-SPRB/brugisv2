@@ -31,7 +31,7 @@ module.exports = {
                 },
                 drawer: {
                     enabled: false,
-                    menu: "2"
+                    menu: "1"
                 }
             },
             brugisSurvey: {

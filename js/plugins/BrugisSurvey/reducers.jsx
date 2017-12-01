@@ -103,7 +103,10 @@ function brugisSurvey(state = initialState, action) {
         case LOAD_FEATURE_INFO: {
             if (state.active_tool && state.active_tool === "SELECT_PARCEL") {
                 if (action.data && action.data.features && action.data.features[0] && action.data.features[0].geometry) {
-                    return assign({}, state, {newSurveyEnabled: true, spatialField: assign({}, state.spatialField, {geometries: state.spatialField.geometries.concat(action.data.features[0].geometry)})});
+                    if (state.spatialField) {
+                        return assign({}, state, {newSurveyEnabled: true, spatialField: assign({}, state.spatialField, {geometries: state.spatialField.geometries.concat(action.data.features[0].geometry)})});
+                    }
+                    return assign({}, state, {newSurveyEnabled: true, spatialField: assign({}, state.spatialField, {geometries: [action.data.features[0].geometry]})});
                 }
             }
             return state;

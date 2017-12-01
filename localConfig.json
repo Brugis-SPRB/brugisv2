@@ -60,7 +60,8 @@
 							 "includeCloseButton":false,
 							 "closeGlyph":"1-close",
 							 "asModal":false,
-							 "buttonSize":"small"
+							 "buttonSize":"small",
+							 "position": 2
 						}
 				 },
 				 "override":{
@@ -69,7 +70,8 @@
 							 "title":"Legend",
 							 "buttonConfig":{
 									"buttonClassName":"square-button no-border"
-							 }
+							 },
+							 "position": 2
 						}
 				 }
 			},
@@ -302,27 +304,29 @@
 									  "id": "superbroleke"
 								}
 						},
-            {
-               "name":"TOC",
-               "cfg":{
-                  "visibilityCheckType":"glyph",
-                  "settingsOptions":{
-                     "includeCloseButton":false,
-                     "closeGlyph":"1-close",
-                     "asModal":false,
-                     "buttonSize":"small"
-                  }
-               },
-               "override":{
-                  "DrawerMenu":{
-                     "glyph":"1-layer",
-                     "title":"Legend",
-                     "buttonConfig":{
-                        "buttonClassName":"square-button no-border"
-                     }
-                  }
-               }
-            },
+						{
+							 "name":"TOC",
+							 "cfg":{
+									"visibilityCheckType":"glyph",
+									"settingsOptions":{
+										 "includeCloseButton":false,
+										 "closeGlyph":"1-close",
+										 "asModal":false,
+										 "buttonSize":"small",
+										 "position": 2
+									}
+							 },
+							 "override":{
+									"DrawerMenu":{
+										 "glyph":"1-layer",
+										 "title":"Legend",
+										 "buttonConfig":{
+												"buttonClassName":"square-button no-border"
+										 },
+										 "position": 2
+									}
+							 }
+						},
             {
                "name": "Identify",
                "showIn": ["IdentifyBar", "Settings"],
