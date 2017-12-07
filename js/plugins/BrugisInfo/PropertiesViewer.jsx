@@ -121,13 +121,17 @@ var PropertiesViewer = React.createClass({
             </div>
       );
     },
+    onFeaturePanelSelected() {
+      
+    },
     render() {
 
         return (
             <Panel header={this.renderHeader()}
                     style={this.props.listStyle}
                     key={this.props.title}
-                    collapsible={this.props.collapsible}>
+                    collapsible={this.props.collapsible}
+                    onSelect={this.onFeaturePanelSelected}>
                 {this.renderMetrics()}
                 {this.renderBody()}
             </Panel>

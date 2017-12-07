@@ -22,7 +22,9 @@ var JSONViewer = React.createClass({
         response: PropTypes.object,
         rowViewer: PropTypes.object,
         layers: PropTypes.oneOfType([PropTypes.string, PropTypes.object]),
-        locale: PropTypes.string
+        locale: PropTypes.string,
+        onChangeDrawingStatus: PropTypes.func,
+        onEndDrawing: PropTypes.func
     },
     shouldComponentUpdate(nextProps) {
         return nextProps.response !== this.props.response;

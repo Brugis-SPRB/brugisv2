@@ -31,7 +31,9 @@ const DefaultViewer = React.createClass({
         style: PropTypes.object,
         containerProps: PropTypes.object,
         locale: PropTypes.string,
-        point: PropTypes.object
+        point: PropTypes.object,
+        onChangeDrawingStatus: PropTypes.func,
+        onEndDrawing: PropTypes.func
     },
     getInitialState() {
         return {
@@ -57,7 +59,9 @@ const DefaultViewer = React.createClass({
             },
             containerProps: {},
             locale: "FR",
-            point: {}
+            point: {},
+            onChangeDrawingStatus: () => {},
+            onEndDrawing: () => {}
         };
     },
     componentWillReceiveProps(nextProps) {

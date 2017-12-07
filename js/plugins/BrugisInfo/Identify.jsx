@@ -62,7 +62,9 @@ const Identify = React.createClass({
         closeGlyph: PropTypes.string,
         allowMultiselection: PropTypes.bool,
         warning: PropTypes.string,
-        locale: PropTypes.string
+        locale: PropTypes.string,
+        onChangeDrawingStatus: PropTypes.func,
+        onEndDrawing: PropTypes.func
     },
     getDefaultProps() {
         return {
@@ -121,7 +123,9 @@ const Identify = React.createClass({
             closeGlyph: "1-close",
             className: "square-button",
             allowMultiselection: false,
-            locale: "FR"
+            locale: "FR",
+            onChangeDrawingStatus: () => {},
+            onEndDrawing: () => {}
         };
     },
     componentWillReceiveProps(newProps) {

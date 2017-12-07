@@ -22,6 +22,12 @@ const assign = require('object-assign');
 
 require('../../../MapStore2/web/client/plugins/identify/identify.css');
 
+const {
+    changeDrawingStatus,
+    endDrawing
+} = require('../../../MapStore2/web/client/actions/draw');
+
+
 const selector = createSelector([
     (state) => (state.mapInfo && state.mapInfo.enabled) || (state.controls && state.controls.info && state.controls.info.enabled) || false,
     (state) => state.mapInfo && state.mapInfo.responses || [],
@@ -91,7 +97,9 @@ const IdentifyPlugin = connect(selector, {
     clearWarning,
     hideMarker: hideMapinfoMarker,
     showRevGeocode: showMapinfoRevGeocode,
-    hideRevGeocode: hideMapinfoRevGeocode
+    hideRevGeocode: hideMapinfoRevGeocode,
+    onChangeDrawingStatus: changeDrawingStatus,
+    onEndDrawing: endDrawing
 })(require('./Identify'));
 // configuration UI
 const FeatureInfoFormatSelector = connect((state) => ({
