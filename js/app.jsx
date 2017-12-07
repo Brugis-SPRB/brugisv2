@@ -57,7 +57,19 @@ const startApp = () => {
        units: "m"
     });
 
+    var lb08Projection = new ol.proj.Projection({
+        code: 'EPSG:3812',
+        // extent: [140000.0,160000.0,165088.0,185088.0],
+         extent: [
+           640000, 661000,
+           658000, 679000
+       ],
+       units: "m"
+    });
+
+
     ol.proj.addProjection(lb72Projection);
+    ol.proj.addProjection(lb08Projection);
 
     ReactDOM.render(
         <StandardApp {...appConfig}/>,
