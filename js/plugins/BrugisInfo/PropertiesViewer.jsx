@@ -10,6 +10,7 @@ const React = require('react');
 const PropTypes = require('prop-types');
 const {Panel} = require('react-bootstrap');
 
+
 var PropertiesViewer = React.createClass({
     propTypes: {
         title: PropTypes.string,
@@ -18,6 +19,7 @@ var PropertiesViewer = React.createClass({
         listStyle: PropTypes.object,
         panelStyle: PropTypes.object,
         properties: PropTypes.object,
+        geometry: PropTypes.object,
         customRenderers: PropTypes.array,
         collapsible: PropTypes.bool
     },
@@ -78,19 +80,55 @@ var PropertiesViewer = React.createClass({
             return null;
         }
         return (
-
               <div>
                     {items}
               </div>
-
         );
     },
+    renderArea(feature) {
+       if (feature.getGeometry() && feature.getGeometry().getArea() > 0.0) {
+         var areaText = feature.getGeometry().getArea().toFixed(0);
+         if (areaText > 100000) {
+            areaText = (areaText / 10000).toFixed(0) + " hectares";
+         } else {
+            areaText = areaText + " m2";
+         }
+         return (<dl>
+           <dt>Area</dt>
+           <dd>{areaText}</dd>
+         </dl>);
+       }
+       return null;
+    },
+    renderCentroid(feature) {
+      if(feature.getGeometry() && feature.getGeometry().getExtent()) {
+          var extent = feature.getGeometry().getExtent();
+          var center = ol.extent.getCenter(extent);
+
+          return (<dl>
+                <dt>Centroid</dt>
+                <dd>{"X/Y: " + center[0].toFixed(2) + " m / " + center[1].toFixed(2) + " m"}</dd>
+              </dl>);
+      }
+      return null;
+    },
+    renderMetrics() {
+      var feature = (new ol.format.GeoJSON()).readFeature(this.props.geometry);
+      return (
+            <div>
+                  {this.renderArea(feature)}
+                  {this.renderCentroid(feature)}
+            </div>
+      );
+    },
     render() {
+
         return (
             <Panel header={this.renderHeader()}
                     style={this.props.listStyle}
                     key={this.props.title}
                     collapsible={this.props.collapsible}>
+                {this.renderMetrics()}
                 {this.renderBody()}
             </Panel>
         );
