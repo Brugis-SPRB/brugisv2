@@ -36,7 +36,8 @@ module.exports = {
         BrugisSurveyPlugin: require('./plugins/BrugisSurvey/SurveyPlugin'),
         FullScreenPlugin: require('../MapStore2/web/client/plugins/FullScreen'),
         StreetViewPlugin: require('./plugins/StreetView/StreetViewPlugin'),
-        MapFooterPlugin: require('../MapStore2/web/client/plugins/MapFooter')
+        MapFooterPlugin: require('../MapStore2/web/client/plugins/MapFooter'),
+        WFSDownloadPlugin: require('../MapStore2/web/client/plugins/WFSDownload')
     },
     requires: {
 
