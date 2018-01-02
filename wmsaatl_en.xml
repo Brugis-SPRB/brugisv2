@@ -2124,7 +2124,7 @@
           <Title>Housing</Title>
           <Layer noSubsets="0" opaque="0" queryable="1">
             <Name>BDU:Quartiers_a_loyers_majores_destines_aux_ais</Name>
-            <Title>Area with loyers increased rents intended for AIS</Title>
+            <Title>Area with increased rents intended for AIS</Title>
             <Abstract/>
             <KeywordList>
               <Keyword>A70_QUARTIERS_AIS</Keyword>
