@@ -2,6 +2,7 @@
 const React = require('react');
 const PropTypes = require('prop-types');
 const {Panel} = require('react-bootstrap');
+const ol = require('openlayers');
 
 class PropertiesViewer extends React.Component {
 
@@ -106,11 +107,10 @@ class PropertiesViewer extends React.Component {
     }
 
     renderCentroid(feature) {
-      if(feature.getGeometry() && feature.getGeometry().getExtent()) {
-          var extent = feature.getGeometry().getExtent();
-          var center = ol.extent.getCenter(extent);
-
-          return (<dl>
+        var extent = feature.getGeometry().getExtent();
+        var center = ol.extent.getCenter(extent);
+        if (feature.getGeometry() && feature.getGeometry().getExtent()) {
+            return (<dl>
                 <dt>Centroid</dt>
                 <dd>{"X/Y: " + center[0].toFixed(2) + " m / " + center[1].toFixed(2) + " m"}</dd>
               </dl>);
@@ -119,8 +119,8 @@ class PropertiesViewer extends React.Component {
     }
 
     renderMetrics() {
-      var feature = (new ol.format.GeoJSON()).readFeature(this.props.geometry);
-      return (
+        var feature = (new ol.format.GeoJSON()).readFeature(this.props.geometry);
+        return (
             <div>
                   {this.renderArea(feature)}
                   {this.renderCentroid(feature)}
