@@ -47,7 +47,15 @@ var JSONViewer = React.createClass({
                         }
                     }
                     return (
-                            <RowViewer key={i} title={displayTitle} exclude={["bbox"]} properties={feature.properties} geometry={feature.geometry} customRenderers={customRenderers}/>
+                            <RowViewer
+                              key={i}
+                              title={displayTitle}
+                              exclude={["bbox"]}
+                              properties={feature.properties}
+                              geometry={feature.geometry}
+                              onChangeDrawingStatus={this.props.onChangeDrawingStatus}
+                              onEndDrawing={this.props.onEndDrawing}
+                              customRenderers={customRenderers} />
                     );
                 })}
                 </Accordion>

@@ -172,7 +172,14 @@ const Identify = React.createClass({
     },
     renderResults(missingResponses) {
         const Viewer = this.props.viewer;
-        return (<Viewer format={this.props.format} point={this.props.point} locale={this.props.locale} missingResponses={missingResponses} responses={this.props.responses} {...this.props.viewerOptions}/>);
+        return (<Viewer
+          format={this.props.format}
+          point={this.props.point}
+          locale={this.props.locale}
+          missingResponses={missingResponses}
+          responses={this.props.responses}
+          onChangeDrawingStatus={this.props.onChangeDrawingStatus}
+          {...this.props.viewerOptions}/>);
     },
     renderContent() {
         let missingResponses = this.props.requests.length - this.props.responses.length;
