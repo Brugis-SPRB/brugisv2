@@ -22,7 +22,9 @@ var JSONViewer = React.createClass({
         response: PropTypes.object,
         rowViewer: PropTypes.object,
         layers: PropTypes.oneOfType([PropTypes.string, PropTypes.object]),
-        locale: PropTypes.string
+        locale: PropTypes.string,
+        onChangeDrawingStatus: PropTypes.func,
+        onEndDrawing: PropTypes.func
     },
     shouldComponentUpdate(nextProps) {
         return nextProps.response !== this.props.response;
@@ -45,7 +47,15 @@ var JSONViewer = React.createClass({
                         }
                     }
                     return (
-                            <RowViewer key={i} title={displayTitle} exclude={["bbox"]} properties={feature.properties} geometry={feature.geometry} customRenderers={customRenderers}/>
+                            <RowViewer
+                              key={i}
+                              title={displayTitle}
+                              exclude={["bbox"]}
+                              properties={feature.properties}
+                              geometry={feature.geometry}
+                              onChangeDrawingStatus={this.props.onChangeDrawingStatus}
+                              onEndDrawing={this.props.onEndDrawing}
+                              customRenderers={customRenderers} />
                     );
                 })}
                 </Accordion>

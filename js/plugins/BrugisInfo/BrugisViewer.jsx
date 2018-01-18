@@ -31,7 +31,9 @@ const DefaultViewer = React.createClass({
         style: PropTypes.object,
         containerProps: PropTypes.object,
         locale: PropTypes.string,
-        point: PropTypes.object
+        point: PropTypes.object,
+        onChangeDrawingStatus: PropTypes.func,
+        onEndDrawing: PropTypes.func
     },
     getInitialState() {
         return {
@@ -57,7 +59,9 @@ const DefaultViewer = React.createClass({
             },
             containerProps: {},
             locale: "FR",
-            point: {}
+            point: {},
+            onChangeDrawingStatus: () => {},
+            onEndDrawing: () => {}
         };
     },
     componentWillReceiveProps(nextProps) {
@@ -92,7 +96,7 @@ const DefaultViewer = React.createClass({
     renderPage(response) {
         const Viewer = this.props.viewers[this.props.format];
         if (Viewer) {
-            return <Viewer response={response} locale={this.props.locale}/>;
+            return <Viewer response={response} locale={this.props.locale} onChangeDrawingStatus={this.props.onChangeDrawingStatus}/>;
         }
         return null;
     },
@@ -121,7 +125,13 @@ const DefaultViewer = React.createClass({
                         onPrevious={() => this.previous()}/></span>
                     }
                     style={this.props.style}>
-                    <ViewerPage response={response} locale={this.props.locale} layers={queryParams.layers} format={(format && FeatureInfoUtils.INFO_FORMATS[format]) || this.props.format} viewers={this.props.viewers} />
+                    <ViewerPage
+                      response={response}
+                      locale={this.props.locale}
+                      layers={queryParams.layers}
+                      format={(format && FeatureInfoUtils.INFO_FORMATS[format]) || this.props.format} viewers={this.props.viewers}
+                      onChangeDrawingStatus={this.props.onChangeDrawingStatus}
+                       />
                 </Panel>
             );
         });
