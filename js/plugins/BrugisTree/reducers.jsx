@@ -27,6 +27,20 @@ function inspectKeywords(layer) {
     return wmsserver;
 }
 
+function inspectKeywordsSingleTile(layer) {
+    var singleTile = false;
+    if (layer && layer.keywordList && layer.keywordList.keyword) {
+        layer.keywordList.keyword.forEach(function(keyword) {
+            if (keyword.value == 'SINGLETILE') {
+                singleTile = true;
+                return true;
+            }
+        });
+    }
+    return singleTile;
+}
+
+
 function guidGenerator() {
     var s4 = function() {
         return (((1 + Math.random()) * 0X10000) | 0).toString(16).substr(1);
@@ -47,6 +61,7 @@ function wmsWalker(layers) {
                 "path": true,
                 "checked": false,
                 "wmsserver": inspectKeywords(curLayer),
+                "singleTile": inspectKeywordsSingleTile(curLayer),
                 "id": guidGenerator(),
                 "childNodes": wmsWalker(curLayer.layer)
             });
@@ -67,6 +82,7 @@ function toggleNode(nodes, node) {
                 "title": curNode.title,
                 "path": curNode.path,
                 "wmsserver": curNode.wmsserver,
+                "singleTile": curNode.singleTile,
                 "id": curNode.id
             };
             if (curNode.id === node.id) {
@@ -97,6 +113,7 @@ function syncNodeWithLayer(nodes, node) {
                 "title": curNode.title,
                 "path": curNode.path,
                 "wmsserver": curNode.wmsserver,
+                "singleTile": curNode.singleTile,
                 "id": curNode.id
             };
             if (node === curNode.id) {

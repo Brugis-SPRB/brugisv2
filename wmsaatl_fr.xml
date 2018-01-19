@@ -177,6 +177,7 @@
                 <KeywordList>
                   <Keyword>A10_AF_GALCOMM</Keyword>
                   <Keyword>features</Keyword>
+                  <Keyword>SINGLETILE</Keyword>
                 </KeywordList>
                 <SRS>EPSG:31370</SRS>
                 <LatLonBoundingBox maxx="4.46355095398464" maxy="50.8946976555756" minx="4.279589616898083" miny="50.81459298156196" />
