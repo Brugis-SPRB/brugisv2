@@ -10,9 +10,12 @@ const React = require('react');
 const {connect} = require('react-redux');
 const {loadMapConfig} = require('../../MapStore2/web/client/actions/config');
 
-const MapViewer = connect(() => ({}), {
-    loadMapConfig: loadMapConfig.bind(null, "config.json", false)
-})(require('../../MapStore2/web/client/containers/MapViewer'));
+const MapViewer = connect((state) => ({
+    locale: state.locale.current
+}), {
+    //loadMapConfig: loadMapConfig.bind(null, "config.json", false)
+    loadMapConfig: loadMapConfig.bind(null)
+})(require('../components/MapViewer'));
 
 const Main = (props) => <MapViewer plugins={props.plugins} params={{mapType: "openlayers"}}/>;
 
