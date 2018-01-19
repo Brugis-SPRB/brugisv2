@@ -77,7 +77,7 @@ const BrugisTree = React.createClass({
             group: "brugis",
             origin: [140000.0, 160000.0],
             tileSize: 256,
-            tiled: true,
+            singleTile: item.singleTile,
             id: item.id
         });
     }

@@ -1886,6 +1886,7 @@
                 <Keyword>features</Keyword>
                 <Keyword>arbres</Keyword>
                 <Keyword>Vue jointe entre tables trees et Dic_statuts</Keyword>
+                <Keyword>SINGLETILE</Keyword>
               </KeywordList>
               <SRS>EPSG:31370</SRS>
               <LatLonBoundingBox maxx="4.479916592688879" maxy="50.9136537389242" minx="4.24247021276358" miny="50.763393168788134" />
