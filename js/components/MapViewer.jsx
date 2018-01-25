@@ -10,13 +10,11 @@ const urlQuery = url.parse(window.location.href, true).query;
 const ConfigUtils = require('../../MapStore2/web/client/utils/ConfigUtils');
 const PluginsUtils = require('../../MapStore2/web/client/utils/PluginsUtils');
 
-
-
 const PluginsContainer = connect((state) => ({
-    pluginsConfig: state.plugins || ConfigUtils.getConfigProp('plugins') || null,
-    mode: urlQuery.mode || state.mode || (state.browser && state.browser.mobile ? 'mobile' : 'desktop'),
-    pluginsState: state && state.controls || {},
-    monitoredState: PluginsUtils.getMonitoredState(state, ConfigUtils.getConfigProp('monitorState'))
+  pluginsConfig: state.plugins || ConfigUtils.getConfigProp('plugins') || null,
+  mode: urlQuery.mode || state.mode || (state.browser && state.browser.mobile ? 'mobile' : 'desktop'),
+  pluginsState: state && state.controls || {},
+  monitoredState: PluginsUtils.getMonitoredState(state, ConfigUtils.getConfigProp('monitorState'))
 }))(require('../../MapStore2/web/client/components/plugins/PluginsContainer'));
 
 class MapViewer extends React.Component {
@@ -34,8 +32,8 @@ class MapViewer extends React.Component {
     };
 
     componentWillMount() {
-      let simplifiedLocale = this.props.locale.slice(0,2)
-      this.props.loadMapConfig("config-" +simplifiedLocale+".json", false);
+        let simplifiedLocale = this.props.locale.slice(0, 2);
+        this.props.loadMapConfig("config-" + simplifiedLocale + ".json", false);
     }
 
     render() {

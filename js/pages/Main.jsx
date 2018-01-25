@@ -13,7 +13,6 @@ const {loadMapConfig} = require('../../MapStore2/web/client/actions/config');
 const MapViewer = connect((state) => ({
     locale: state.locale.current
 }), {
-    //loadMapConfig: loadMapConfig.bind(null, "config.json", false)
     loadMapConfig: loadMapConfig.bind(null)
 })(require('../components/MapViewer'));
 
