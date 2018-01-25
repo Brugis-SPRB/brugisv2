@@ -6,11 +6,6 @@ const ol = require('openlayers');
 
 class PropertiesViewer extends React.Component {
 
-    constructor(props) {
-      super(props);
-      this.state = { open: false };
-    }
-
     static propTypes = {
         title: PropTypes.string,
         exclude: PropTypes.array,
@@ -44,6 +39,23 @@ class PropertiesViewer extends React.Component {
             marginLeft: "5px"
         }
     };
+
+    constructor(props) {
+        super(props);
+        this.state = { open: false };
+    }
+
+    onFeaturePanelSelected() {
+        this.setState({
+           open: !this.state.open
+        });
+        if (!this.state.open) {
+            // TODO Styling
+            this.props.onChangeDrawingStatus("create", undefined, 'BrugisInfo', [this.props.geometry]);
+        } else {
+            this.props.onChangeDrawingStatus('clean', null, "BrugisInfo", []);
+        }
+    }
 
     getBodyItems() {
         return Object.keys(this.props.properties)
@@ -91,19 +103,19 @@ class PropertiesViewer extends React.Component {
     }
 
     renderArea(feature) {
-       if (feature.getGeometry() && feature.getGeometry().getArea && feature.getGeometry().getArea() > 0.0) {
-         var areaText = feature.getGeometry().getArea().toFixed(0);
-         if (areaText > 100000) {
-            areaText = (areaText / 10000).toFixed(0) + " hectares";
-         } else {
-            areaText = areaText + " m2";
-         }
-         return (<dl>
-           <dt>Area</dt>
-           <dd>{areaText}</dd>
-         </dl>);
-       }
-       return null;
+        if (feature.getGeometry() && feature.getGeometry().getArea && feature.getGeometry().getArea() > 0.0) {
+            let areaText = feature.getGeometry().getArea().toFixed(0);
+            if (areaText > 100000) {
+                areaText = (areaText / 10000).toFixed(0) + " hectares";
+            } else {
+                areaText = areaText + " m2";
+            }
+            return (<dl>
+              <dt>Area</dt>
+              <dd>{areaText}</dd>
+            </dl>);
+        }
+        return null;
     }
 
     renderCentroid(feature) {
@@ -114,8 +126,8 @@ class PropertiesViewer extends React.Component {
                 <dt>Centroid</dt>
                 <dd>{"X/Y: " + center[0].toFixed(2) + " m / " + center[1].toFixed(2) + " m"}</dd>
               </dl>);
-      }
-      return null;
+        }
+        return null;
     }
 
     renderMetrics() {
@@ -126,19 +138,6 @@ class PropertiesViewer extends React.Component {
                   {this.renderCentroid(feature)}
             </div>
       );
-    }
-
-    onFeaturePanelSelected() {
-        this.setState({
-           open: !this.state.open
-        });
-        if(!this.state.open){
-          //TODO Styling
-          this.props.onChangeDrawingStatus("create", undefined, 'BrugisInfo', [this.props.geometry]);
-        } else {
-          this.props.onChangeDrawingStatus('clean', null, "BrugisInfo", []);
-        }
-
     }
 
     render() {
@@ -161,6 +160,6 @@ class PropertiesViewer extends React.Component {
             .concat(this.props.exclude)
             .indexOf(propName) === -1;
     }
-};
+}
 
 module.exports = PropertiesViewer;

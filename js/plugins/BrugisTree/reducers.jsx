@@ -31,7 +31,7 @@ function inspectKeywordsSingleTile(layer) {
     var singleTile = false;
     if (layer && layer.keywordList && layer.keywordList.keyword) {
         layer.keywordList.keyword.forEach(function(keyword) {
-            if (keyword.value == 'SINGLETILE') {
+            if (keyword.value === 'SINGLETILE') {
                 singleTile = true;
                 return true;
             }
