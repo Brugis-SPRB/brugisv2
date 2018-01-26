@@ -20,8 +20,8 @@ const Message = require('../../../MapStore2/web/client/components/I18N/Message')
 const DefaultViewer = require('./BrugisViewer');
 const Dialog = require('../../../MapStore2/web/client/components/misc/Dialog');
 
-const Identify = React.createClass({
-    propTypes: {
+class Identify extends React.Component {
+    static propTypes = {
         enabled: PropTypes.bool,
         draggable: PropTypes.bool,
         collapsible: PropTypes.bool,
@@ -64,10 +64,11 @@ const Identify = React.createClass({
         warning: PropTypes.string,
         locale: PropTypes.string,
         onChangeDrawingStatus: PropTypes.func,
-        onEndDrawing: PropTypes.func
-    },
-    getDefaultProps() {
-        return {
+        onEndDrawing: PropTypes.func,
+        onGeometryChanged: PropTypes.func,
+    };
+
+    static defaultProps = {
             enabled: false,
             draggable: true,
             collapsible: false,
@@ -126,8 +127,13 @@ const Identify = React.createClass({
             locale: "FR",
             onChangeDrawingStatus: () => {},
             onEndDrawing: () => {}
-        };
-    },
+    };
+
+    constructor(props) {
+        super(props);
+                
+    }
+
     componentWillReceiveProps(newProps) {
         if (this.needsRefresh(newProps)) {
             if (!newProps.point.modifiers || newProps.point.modifiers.ctrl !== true || !newProps.allowMultiselection) {
@@ -156,11 +162,13 @@ const Identify = React.createClass({
             this.props.hideMarker();
             this.props.purgeResults();
         }
-    },
+    }
+
     onModalHiding() {
         this.props.hideMarker();
         this.props.purgeResults();
-    },
+    }
+
     renderHeader(missing) {
         return (
             <span role="header">
@@ -169,7 +177,8 @@ const Identify = React.createClass({
                 <button onClick={this.onModalHiding} className="close">{this.props.closeGlyph ? <Glyphicon glyph={this.props.closeGlyph}/> : <span>×</span>}</button>
             </span>
         );
-    },
+    }
+
     renderResults(missingResponses) {
         const Viewer = this.props.viewer;
         return (<Viewer
@@ -179,8 +188,10 @@ const Identify = React.createClass({
           missingResponses={missingResponses}
           responses={this.props.responses}
           onChangeDrawingStatus={this.props.onChangeDrawingStatus}
+          onGeometryChanged={this.props.onGeometryChanged}
           {...this.props.viewerOptions}/>);
-    },
+    }
+
     renderContent() {
         let missingResponses = this.props.requests.length - this.props.responses.length;
         return this.props.asPanel ? (
@@ -208,7 +219,8 @@ const Identify = React.createClass({
                 </div>
             </Dialog>
         );
-    },
+    }
+
     render() {
         if (this.props.enabled && this.props.requests.length !== 0) {
             return this.props.draggable ? (
@@ -232,7 +244,8 @@ const Identify = React.createClass({
             </Modal>);
         }
         return null;
-    },
+    }
+
     needsRefresh(props) {
         if (props.enabled && props.point && props.point.pixel) {
             if (!this.props.point.pixel || this.props.point.pixel.x !== props.point.pixel.x ||
@@ -244,7 +257,8 @@ const Identify = React.createClass({
             }
         }
         return false;
-    },
+    }
+
    filterRequestParams(layer) {
         let includeOpt = this.props.includeOptions || [];
         let excludeList = this.props.excludeParams || [];
@@ -263,6 +277,6 @@ const Identify = React.createClass({
         }, {});
         return options;
     }
-});
+};
 
 module.exports = Identify;

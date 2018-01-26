@@ -24,7 +24,8 @@ require('../../../MapStore2/web/client/plugins/identify/identify.css');
 
 const {
     changeDrawingStatus,
-    endDrawing
+    endDrawing,
+    geometryChanged
 } = require('../../../MapStore2/web/client/actions/draw');
 
 
@@ -99,6 +100,7 @@ const IdentifyPlugin = connect(selector, {
     showRevGeocode: showMapinfoRevGeocode,
     hideRevGeocode: hideMapinfoRevGeocode,
     onChangeDrawingStatus: changeDrawingStatus,
+    onGeometryChanged: geometryChanged,
     onEndDrawing: endDrawing
 })(require('./Identify'));
 // configuration UI

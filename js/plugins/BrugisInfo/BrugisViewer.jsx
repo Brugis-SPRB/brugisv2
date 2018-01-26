@@ -33,7 +33,8 @@ const DefaultViewer = React.createClass({
         locale: PropTypes.string,
         point: PropTypes.object,
         onChangeDrawingStatus: PropTypes.func,
-        onEndDrawing: PropTypes.func
+        onEndDrawing: PropTypes.func,
+        onGeometryChanged: PropTypes.func
     },
     getInitialState() {
         return {
@@ -131,6 +132,7 @@ const DefaultViewer = React.createClass({
                       layers={queryParams.layers}
                       format={(format && FeatureInfoUtils.INFO_FORMATS[format]) || this.props.format} viewers={this.props.viewers}
                       onChangeDrawingStatus={this.props.onChangeDrawingStatus}
+                      onGeometryChanged={this.props.onGeometryChanged}
                        />
                 </Panel>
             );

@@ -10,6 +10,7 @@ module.exports = React.createClass({
         layers: PropTypes.oneOfType([PropTypes.string, PropTypes.object]),
         response: PropTypes.oneOfType([PropTypes.string, PropTypes.object, PropTypes.node]),
         onChangeDrawingStatus: PropTypes.func,
+        onGeometryChanged: PropTypes.func,
         locale: PropTypes.string
     },
 
@@ -53,7 +54,12 @@ module.exports = React.createClass({
     renderPage(response) {
         const Viewer = this.props.viewers[this.props.format];
         if (Viewer) {
-            return <Viewer response={response} layers={this.props.layers} locale={this.props.locale} onChangeDrawingStatus={this.props.onChangeDrawingStatus} />;
+            return <Viewer
+              response={response}
+              layers={this.props.layers}
+              locale={this.props.locale}
+              onChangeDrawingStatus={this.props.onChangeDrawingStatus}
+              onGeometryChanged={this.props.onGeometryChanged} />;
         }
         return null;
     },

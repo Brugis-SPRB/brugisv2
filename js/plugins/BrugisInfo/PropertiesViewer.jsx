@@ -17,6 +17,7 @@ class PropertiesViewer extends React.Component {
         customRenderers: PropTypes.array,
         collapsible: PropTypes.bool,
         onChangeDrawingStatus: PropTypes.func,
+        onGeometryChanged: PropTypes.func,
         onEndDrawing: PropTypes.func
     };
 
@@ -50,10 +51,9 @@ class PropertiesViewer extends React.Component {
            open: !this.state.open
         });
         if (!this.state.open) {
-            // TODO Styling
-            this.props.onChangeDrawingStatus("create", undefined, 'BrugisInfo', [this.props.geometry]);
+            this.props.onChangeDrawingStatus("replace", undefined, 'BrugisInfo', [this.props.geometry], {editEnabled:false});
         } else {
-            this.props.onChangeDrawingStatus('clean', null, "BrugisInfo", []);
+            this.props.onChangeDrawingStatus('stop', null, "BrugisInfo", []);
         }
     }
 

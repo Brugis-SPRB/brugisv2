@@ -24,7 +24,8 @@ var JSONViewer = React.createClass({
         layers: PropTypes.oneOfType([PropTypes.string, PropTypes.object]),
         locale: PropTypes.string,
         onChangeDrawingStatus: PropTypes.func,
-        onEndDrawing: PropTypes.func
+        onEndDrawing: PropTypes.func,
+        onGeometryChanged: PropTypes.func
     },
     shouldComponentUpdate(nextProps) {
         return nextProps.response !== this.props.response;
@@ -54,6 +55,7 @@ var JSONViewer = React.createClass({
                               properties={feature.properties}
                               geometry={feature.geometry}
                               onChangeDrawingStatus={this.props.onChangeDrawingStatus}
+                              onGeometryChanged={this.props.onGeometryChanged}
                               onEndDrawing={this.props.onEndDrawing}
                               customRenderers={customRenderers} />
                     );

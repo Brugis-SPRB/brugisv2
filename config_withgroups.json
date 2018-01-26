@@ -19,48 +19,48 @@
 
     "layers": [{
         	"type": "wms",
-            "url":["http://svappmavw019:8080/geoserver/URBIS/wms"],
+          "url":["http://svappmavw019:8080/geoserver/URBIS/wms"],
         	"title": "UrbisFR",
         	"name": "URBIS:urbisFR",
-             "group": "background",
-            "visibility": true,
+          "group": "background",
+          "visibility": true,
         	"format": "image/png8",
-            "tiled" : true
+          "tiled" : true
         },{
-        	"type": "wms",
-            "url":["http://svappmavw019:8080/geoserver/URBIS/wms"],
-        	"title": "UrbisNL",
-        	"name": "URBIS:urbisNL",
-             "group": "background",
-            "visibility": false,
-            "tiled" : true,
+          "type": "wms",
+          "url":["http://svappmavw019:8080/geoserver/URBIS/wms"],
+          "title": "UrbisNL",
+          "name": "URBIS:urbisNL",
+          "group": "background",
+          "visibility": false,
+          "tiled" : true,
+        	"format": "image/png8"
+        },{
+          "type": "wms",
+          "url":["http://svappmavw019:8080/geoserver/URBIS/wms"],
+          "title": "UrbisNL Gray",
+          "name": "URBIS:urbisNLGray",
+          "group": "background",
+          "visibility": false,
+          "tiled" : true,
         	"format": "image/png8"
         },{
         	"type": "wms",
-            "url":["http://svappmavw019:8080/geoserver/URBIS/wms"],
-        	"title": "UrbisNL Gray",
-        	"name": "URBIS:urbisNLGray",
-             "group": "background",
-            "visibility": false,
-            "tiled" : true,
-        	"format": "image/png8"
-        },{
-        	"type": "wms",
-            "url":["http://svappmavw019:8080/geoserver/URBIS/wms"],
+          "url":["http://svappmavw019:8080/geoserver/URBIS/wms"],
         	"title": "UrbisFR Gray",
         	"name": "URBIS:urbisFRGray",
-             "group": "background",
-            "visibility": false,
-            "tiled" : true,
+          "group": "background",
+          "visibility": false,
+          "tiled" : true,
         	"format": "image/png8"
         },{
             "type": "vectortile",
             "url":" http://svappmavw019:8080/geoserver/gwc/service/tms/1.0.0/",
-        	"title": "Troll",
-        	"name": "test:lc",
-             "group": "BDU PRAS",
+            "title": "Troll",
+            "name": "test:lc",
+            "group": "BDU PRAS",
             "visibility": false,
-        	"format": "application/x-protobuf"
+            "format": "application/x-protobuf"
         },{
         	"type": "wms",
             "url":["http://svappmavw019:8080/geoserver/wms"],
