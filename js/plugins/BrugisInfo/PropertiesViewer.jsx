@@ -51,7 +51,7 @@ class PropertiesViewer extends React.Component {
            open: !this.state.open
         });
         if (!this.state.open) {
-            this.props.onChangeDrawingStatus("replace", undefined, 'BrugisInfo', [this.props.geometry], {editEnabled:false});
+            this.props.onChangeDrawingStatus("replace", undefined, 'BrugisInfo', [this.props.geometry], {editEnabled: false});
         } else {
             this.props.onChangeDrawingStatus('stop', null, "BrugisInfo", []);
         }

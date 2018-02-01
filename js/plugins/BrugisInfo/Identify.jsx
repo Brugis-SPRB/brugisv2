@@ -65,7 +65,7 @@ class Identify extends React.Component {
         locale: PropTypes.string,
         onChangeDrawingStatus: PropTypes.func,
         onEndDrawing: PropTypes.func,
-        onGeometryChanged: PropTypes.func,
+        onGeometryChanged: PropTypes.func
     };
 
     static defaultProps = {
@@ -131,7 +131,6 @@ class Identify extends React.Component {
 
     constructor(props) {
         super(props);
-                
     }
 
     componentWillReceiveProps(newProps) {
@@ -277,6 +276,6 @@ class Identify extends React.Component {
         }, {});
         return options;
     }
-};
+}
 
 module.exports = Identify;

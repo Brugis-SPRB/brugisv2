@@ -54,12 +54,12 @@ module.exports = React.createClass({
     renderPage(response) {
         const Viewer = this.props.viewers[this.props.format];
         if (Viewer) {
-            return <Viewer
+            return (<Viewer
               response={response}
               layers={this.props.layers}
               locale={this.props.locale}
               onChangeDrawingStatus={this.props.onChangeDrawingStatus}
-              onGeometryChanged={this.props.onGeometryChanged} />;
+              onGeometryChanged={this.props.onGeometryChanged} />);
         }
         return null;
     },

@@ -90,8 +90,8 @@ var JSONViewer = React.createClass({
     },
     customiseFeatureProperties(customRenderers, properties, attributes) {
         var newProperties = {};
-        attributes.forEach((attribute_source) => {
-            let attribute = Object.assign({}, attribute_source);
+        attributes.forEach((attributeSource) => {
+            let attribute = Object.assign({}, attributeSource);
             Object.keys(properties).forEach((key) => {
                 var pattern = "\[%" + key + "%\]";
                 attribute.label = attribute.label.replace(pattern, properties[key]);
