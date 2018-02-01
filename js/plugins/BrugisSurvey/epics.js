@@ -1,5 +1,5 @@
 const Rx = require('rxjs');
-var {SET_CONTROL_PROPERTY} = require('../../../MapStore2/web/client/actions/controls');
+var {SET_CONTROL_PROPERTY, setControlProperty, TOGGLE_CONTROL} = require('../../../MapStore2/web/client/actions/controls');
 const {addLayer, removeLayer} = require('../../../MapStore2/web/client/actions/layers');
 const PARCEL_LAYER_ID = "SURVEY_PARCEL";
 
@@ -25,6 +25,16 @@ const addremoveparcelsonactivativeEpic = (action$, store) =>
           return Rx.Observable.of(removeLayer(PARCEL_LAYER_ID));
       });
 
+const closebrugissurveyEpic = (action$, store) =>
+  action$.ofType(TOGGLE_CONTROL)
+    .filter((action) =>  action.control === "brugissurvey" )
+    .switchMap(() => {
+          let state = store.getState();
+          if(state.controls && state.controls.toolbar && state.controls.toolbar.active === "BrugisSurvey" || false) {
+              return Rx.Observable.of(setControlProperty("toolbar", "active", "BrugisSurvey", true));
+          }
+    });
 module.exports = {
-    addremoveparcelsonactivativeEpic
+    addremoveparcelsonactivativeEpic,
+    closebrugissurveyEpic
 };

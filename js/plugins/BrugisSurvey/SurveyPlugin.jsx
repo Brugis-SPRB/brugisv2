@@ -9,16 +9,16 @@ const union = require("@turf/union");
 const {polygon, multiPolygon} = require("@turf/helpers");
 const {stringify} = require("wellknown");
 const qs = require('qs');
-
+const {Glyphicon} = require('react-bootstrap');
 const SurveyForm = require('./SurveyForm');
 const SurveyToolBox = require('./SurveyToolbox');
 const SurveyGrid = require('./SurveyGrid');
 const {toggleControl} = require('../../../MapStore2/web/client/actions/controls');
-const {Panel} = require('react-bootstrap');
+const {Panel, Button} = require('react-bootstrap');
 const Dialog = require('../../../MapStore2/web/client/components/misc/Dialog');
 const Message = require('../../../MapStore2/web/client/plugins/locale/Message');
 
-const {addremoveparcelsonactivativeEpic} = require('./epics');
+const {addremoveparcelsonactivativeEpic, closebrugissurveyEpic} = require('./epics');
 
 const {
     loadBrugisSurveys,
@@ -151,6 +151,7 @@ const BrugisSurvey = React.createClass({
       }
   },
   render() {
+
       const surveyPanel = (
           <Panel role="body">
             <SurveyForm
@@ -183,7 +184,7 @@ const BrugisSurvey = React.createClass({
           </Panel>
       );
       if (this.props.wrap) {
-          if (this.props.visible || this.props.toolbarActive) {
+          if (this.props.toolbarActive) {
               if (this.props.wrapWithPanel) {
                   return (<Panel id={this.props.id}
                                  header={<span><span className="settings-panel-title"><Message msgId="settings"/></span><span className="settings-panel-close panel-close" onClick={this.props.toggleControl}></span></span>}
@@ -194,7 +195,7 @@ const BrugisSurvey = React.createClass({
               }
               return (<Dialog id={this.props.id} style={this.props.panelStyle} className={this.props.panelClassName}>
                   <span role="header">
-                      <span className="settings-panel-title"><Message msgId="Urbanalyse"/></span>
+                      <span className="settings-panel-title"><Message msgId="Urbanalyse"/><button onClick={this.props.toggleControl} className="close">{this.props.closeGlyph ? <Glyphicon glyph={this.props.closeGlyph}/> : <span>×</span>}</button></span>
                   </span>
                   {surveyPanel}
               </Dialog>);
@@ -260,6 +261,7 @@ module.exports = {
             title: 'BrugisSurvey',
             icon: <img src={Urbanalyseicon} height="47" width="38"></img>,
             panel: true,
+            //tool: true,
             exclusive: true,
             priority: 1
         }
@@ -268,6 +270,7 @@ module.exports = {
         brugisSurvey: require('./reducers')
     },
     epics: {
-      addremoveparcelsonactivativeEpic
+      addremoveparcelsonactivativeEpic,
+      closebrugissurveyEpic
     }
 };
