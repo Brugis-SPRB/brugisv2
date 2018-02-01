@@ -160,7 +160,7 @@
             <Name>BDU:Affectation du sol</Name>
             <Title>Affectation du sol</Title>
             <Layer noSubsets="0" opaque="0" queryable="1">
-              <Name>Affectation_du_sol</Name>
+              <Name>BDU:Affectation_du_sol</Name>
               <Title>Affectation complète</Title>
               <Abstract>Layer-Group type layer: Affectation_du_sol</Abstract>
               <SRS>EPSG:31370</SRS>
@@ -177,7 +177,6 @@
                 <KeywordList>
                   <Keyword>A10_AF_GALCOMM</Keyword>
                   <Keyword>features</Keyword>
-                  <Keyword>SINGLETILE</Keyword>
                 </KeywordList>
                 <SRS>EPSG:31370</SRS>
                 <LatLonBoundingBox maxx="4.46355095398464" maxy="50.8946976555756" minx="4.279589616898083" miny="50.81459298156196" />
@@ -2487,6 +2486,7 @@
                 <Keyword>features</Keyword>
                 <Keyword>arbres</Keyword>
                 <Keyword>Vue jointee entre tables trees et Dic_statuts</Keyword>
+                <Keyword>SINGLETILE</Keyword>
               </KeywordList>
               <SRS>EPSG:31370</SRS>
               <LatLonBoundingBox maxx="4.479916592688879" maxy="50.9136537389242" minx="4.24247021276358" miny="50.763393168788134" />

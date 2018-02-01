@@ -160,7 +160,7 @@
             <Name>BSO:Bodembestemming</Name>
             <Title>Bodembestemming</Title>
             <Layer noSubsets="0" opaque="0" queryable="1">
-              <Name>Volledige_bodembestemming</Name>
+              <Name>BSO:Volledige_bodembestemming</Name>
               <Title>Volledige bodembestemming</Title>
               <Abstract>Layer-Group type layer: Volledige_bodembestemming</Abstract>
               <SRS>EPSG:31370</SRS>
@@ -2294,6 +2294,7 @@
               <KeywordList>
                 <Keyword>features</Keyword>
                 <Keyword>bomen</Keyword>
+                <Keyword>SINGLETILE</Keyword>
               </KeywordList>
               <SRS>EPSG:31370</SRS>
               <LatLonBoundingBox maxx="4.479916592688879" maxy="50.91365373892416" minx="4.24247021276358" miny="50.763393168788134" />
