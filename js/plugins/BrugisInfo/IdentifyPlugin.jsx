@@ -30,7 +30,7 @@ const {
 
 
 const selector = createSelector([
-    (state) => (state.mapInfo && state.mapInfo.enabled) || (state.controls && state.controls.info && state.controls.info.enabled) || false,
+    (state) => (state.mapInfo && state.mapInfo.enabled) || (state.controls && state.controls.identify && state.controls.identify.active === "info") || false,
     (state) => state.mapInfo && state.mapInfo.responses || [],
     (state) => state.mapInfo && state.mapInfo.requests || [],
     (state) => state.mapInfo && state.mapInfo.infoFormat,
@@ -118,7 +118,8 @@ module.exports = {
             tooltip: "info.tooltip",
             icon: <img src={Gfiicon} height="45" width="38"></img>,
             help: <Message msgId="helptexts.infoButton"/>,
-            toggle: true
+            //toggle: true
+            exclusive: true
         },
         Settings: {
             tool: <FeatureInfoFormatSelector
