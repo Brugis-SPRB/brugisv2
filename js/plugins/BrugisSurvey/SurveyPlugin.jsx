@@ -14,7 +14,7 @@ const SurveyForm = require('./SurveyForm');
 const SurveyToolBox = require('./SurveyToolbox');
 const SurveyGrid = require('./SurveyGrid');
 const {toggleControl} = require('../../../MapStore2/web/client/actions/controls');
-const {Panel, Button} = require('react-bootstrap');
+const {Panel} = require('react-bootstrap');
 const Dialog = require('../../../MapStore2/web/client/components/misc/Dialog');
 const Message = require('../../../MapStore2/web/client/plugins/locale/Message');
 
@@ -261,7 +261,7 @@ module.exports = {
             title: 'BrugisSurvey',
             icon: <img src={Urbanalyseicon} height="47" width="38"></img>,
             panel: true,
-            //tool: true,
+            // tool: true,
             exclusive: true,
             priority: 1
         }

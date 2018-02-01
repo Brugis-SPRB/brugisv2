@@ -30,7 +30,7 @@ module.exports = {
           tooltip: "streetview.tooltip",
           icon: <img src={streetviewIcon} height="45" width="38"></img>,
           help: <Message msgId="helptexts.streetviewButton"/>,
-          //toggle: true
+          // toggle: true
           exclusive: true
         }
     }),

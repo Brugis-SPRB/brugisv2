@@ -26,14 +26,14 @@ const addremoveparcelsonactivativeEpic = (action$, store) =>
       });
 
 const closebrugissurveyEpic = (action$, store) =>
-  action$.ofType(TOGGLE_CONTROL)
-    .filter((action) =>  action.control === "brugissurvey" )
-    .switchMap(() => {
+    action$.ofType(TOGGLE_CONTROL)
+      .filter( (action) => action.control === "brugissurvey" )
+      .switchMap(() => {
           let state = store.getState();
-          if(state.controls && state.controls.toolbar && state.controls.toolbar.active === "BrugisSurvey" || false) {
+          if (state.controls && state.controls.toolbar && state.controls.toolbar.active === "BrugisSurvey" || false) {
               return Rx.Observable.of(setControlProperty("toolbar", "active", "BrugisSurvey", true));
           }
-    });
+      });
 module.exports = {
     addremoveparcelsonactivativeEpic,
     closebrugissurveyEpic

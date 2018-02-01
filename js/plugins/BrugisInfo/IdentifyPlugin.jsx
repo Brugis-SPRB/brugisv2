@@ -118,7 +118,7 @@ module.exports = {
             tooltip: "info.tooltip",
             icon: <img src={Gfiicon} height="45" width="38"></img>,
             help: <Message msgId="helptexts.infoButton"/>,
-            //toggle: true
+            // toggle: true
             exclusive: true
         },
         Settings: {

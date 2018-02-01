@@ -80,8 +80,8 @@ const MeasureAreaPlugin = connect((state) => {
     return {
         measurement: state.measurement || {},
         areaMeasureEnabled: state.measurement && state.measurement.areaMeasureEnabled || false
-        //bsStyle: state.controls[tool.toggleControl || tool.name] && state.controls[tool.toggleControl || tool.name][tool.toggleProperty || "enabled"] ? _this.props.activeStyle : _this.props.toolStyle,
-        //active: state.controls[tool.toggleControl || tool.name] && state.controls[tool.toggleControl || tool.name][tool.toggleProperty || "enabled"] || false
+        // bsStyle: state.controls[tool.toggleControl || tool.name] && state.controls[tool.toggleControl || tool.name][tool.toggleProperty || "enabled"] ? _this.props.activeStyle : _this.props.toolStyle,
+        // active: state.controls[tool.toggleControl || tool.name] && state.controls[tool.toggleControl || tool.name][tool.toggleProperty || "enabled"] || false
     };
 }, {
     toggleMeasure: changeMeasurement

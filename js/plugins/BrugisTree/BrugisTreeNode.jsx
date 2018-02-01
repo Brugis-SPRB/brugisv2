@@ -31,11 +31,11 @@ const BrugisTreeNode = React.createClass({
               glyph = open;
           }
       } else {
-        if(!checked) {
-          glyph = layer;
-        } else {
-          glyph = layeractive;
-        }
+          if (!checked) {
+              glyph = layer;
+          } else {
+              glyph = layeractive;
+          }
       }
 
       return (glyph);
