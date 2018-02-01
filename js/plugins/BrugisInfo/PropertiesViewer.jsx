@@ -147,7 +147,7 @@ class PropertiesViewer extends React.Component {
                     key={this.props.title}
                     collapsible={this.props.collapsible}
                     onSelect={this.onFeaturePanelSelected.bind(this)}>
-                {this.renderMetrics()}
+                {this.props.geometry ? this.renderMetrics() : ""}
                 {this.renderBody()}
             </Panel>
         );
