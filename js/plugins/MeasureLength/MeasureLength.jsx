@@ -92,7 +92,8 @@ module.exports = {
             name: "MeasureLength",
             tooltip: "measureComponent.MeasureLength",
             tool: true,
-            priority: 1
+            priority: 1,
+            position: 8
         }
     }),
     reducers: {

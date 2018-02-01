@@ -93,7 +93,8 @@ module.exports = {
             name: "MeasureArea",
             tooltip: "measureComponent.MeasureArea",
             tool: true,
-            priority: 1
+            priority: 1,
+            position: 9
         }
     }),
     reducers: {
