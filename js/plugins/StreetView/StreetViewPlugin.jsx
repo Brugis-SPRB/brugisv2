@@ -1,14 +1,14 @@
 const React = require('react');
 const assign = require('object-assign');
 const Message = require('../../../MapStore2/web/client/components/I18N/Message');
-const {toggleControl} = require('../../../MapStore2/web/client/actions/controls');
+const {setControlProperty} = require('../../../MapStore2/web/client/actions/controls');
 const streetviewIcon = require('./imgs/littleman-02.svg');
 const {connect} = require('react-redux');
 const {createSelector} = require('reselect');
 const StreetView = require('./StreetView');
 
 const selector = createSelector([
-    (state) => (state.streetView && state.streetView.enabled) || (state.controls && state.controls.streetView && state.controls.streetView.enabled) || false,
+    (state) => state.controls && state.controls.streetview && state.controls.streetview.active === "streetView" || false,
     (state) => state.streetView && state.streetView.clickPoint && state.streetView.clickPoint.latlng && state.streetView.clickPoint.latlng.lat,
     (state) => state.streetView && state.streetView.clickPoint && state.streetView.clickPoint.latlng && state.streetView.clickPoint.latlng.lng,
     (state) => state.streetView && state.streetView.warning,
@@ -18,7 +18,7 @@ const selector = createSelector([
 }));
 
 const StreetViewPlugin = connect(selector, {
-    toggleControl: toggleControl.bind(null, 'streetView', null)
+    toggleControl: setControlProperty.bind(null, 'streetview', 'active', "streetView", true)
 })(StreetView);
 
 module.exports = {
@@ -30,7 +30,8 @@ module.exports = {
           tooltip: "streetview.tooltip",
           icon: <img src={streetviewIcon} height="45" width="38"></img>,
           help: <Message msgId="helptexts.streetviewButton"/>,
-          toggle: true
+          //toggle: true
+          exclusive: true
         }
     }),
     reducers: {

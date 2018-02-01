@@ -58,6 +58,7 @@ const MeasureLength = React.createClass({
                 tooltip={this.props.tooltip}
                 bsStyle={this.props.bsStyle}
                 id={this.props.id}
+                active={this.props.lengthMeasureEnabled}
                 >
                 <img src={lineRuleIcon} height="47" width="38"></img>
             </Button>
@@ -79,7 +80,7 @@ const MeasureLength = React.createClass({
 const MeasureLengthPlugin = connect((state) => {
     return {
         measurement: state.measurement || {},
-        lengthMeasureEnabled: state.measurement && state.measurement.lengthMeasureEnabled || false
+        lengthMeasureEnabled: state.measurement && state.measurement.lineMeasureEnabled || false
     };
 }, {
     toggleMeasure: changeMeasurement

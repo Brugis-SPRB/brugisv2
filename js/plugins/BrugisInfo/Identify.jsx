@@ -173,7 +173,7 @@ class Identify extends React.Component {
             <span role="header">
                 { (missing !== 0 ) ? <Spinner value={missing} sSize="sp-small" /> : null }
                 {this.props.headerGlyph ? <Glyphicon glyph={this.props.headerGlyph} /> : null}&nbsp;<Message msgId="identifyTitle" />
-                <button onClick={this.onModalHiding} className="close">{this.props.closeGlyph ? <Glyphicon glyph={this.props.closeGlyph}/> : <span>×</span>}</button>
+                <button onClick={this.onModalHiding.bind(this)} className="close">{this.props.closeGlyph ? <Glyphicon glyph={this.props.closeGlyph}/> : <span>×</span>}</button>
             </span>
         );
     }

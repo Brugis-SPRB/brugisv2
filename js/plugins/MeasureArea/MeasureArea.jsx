@@ -57,6 +57,7 @@ const MeasureArea = React.createClass({
                 className={this.props.className}
                 bsStyle={this.props.bsStyle}
                 id={this.props.id}
+                active={this.props.areaMeasureEnabled}
                 >
                 <img src={areaRuleIcon} height="47" width="38"></img>
             </Button>
@@ -79,6 +80,8 @@ const MeasureAreaPlugin = connect((state) => {
     return {
         measurement: state.measurement || {},
         areaMeasureEnabled: state.measurement && state.measurement.areaMeasureEnabled || false
+        //bsStyle: state.controls[tool.toggleControl || tool.name] && state.controls[tool.toggleControl || tool.name][tool.toggleProperty || "enabled"] ? _this.props.activeStyle : _this.props.toolStyle,
+        //active: state.controls[tool.toggleControl || tool.name] && state.controls[tool.toggleControl || tool.name][tool.toggleProperty || "enabled"] || false
     };
 }, {
     toggleMeasure: changeMeasurement
