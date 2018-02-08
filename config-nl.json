@@ -28,7 +28,7 @@
         	"title": "UrbisNL",
         	"name": "URBIS:urbisNL",
              "group": "background",
-            "visibility": false,
+            "visibility": true,
             "tiled" : true,
             "origin" : [140000.0,160000.0],
             "thumbURL" : "assets/img/urbis_color.PNG",
