@@ -107,7 +107,7 @@ class StandardApp extends React.Component {
         this.store.dispatch(changeBrowserProperties(ConfigUtils.getBrowserProperties()));
         this.store.dispatch(localConfigLoaded(config));
         this.addProjDefinitions(config);
-        if(!this.store.getState().locale){
+        if (!this.store.getState().locale) {
             const locale = LocaleUtils.getUserLocale();
             this.store.dispatch(loadLocale(null, locale));
         }
