@@ -23,7 +23,7 @@ LocaleUtils.setSupportedLocales({
 });
 
 const startApp = () => {
-    const StandardApp = require('../MapStore2/web/client/components/app/StandardApp');
+    const StandardApp = require('./components/StandardApp');
     const {pages, pluginsDef, initialState, storeOpts, appEpics = {}} = require('./appConfig');
 
     const StandardRouter = connect((state) => ({

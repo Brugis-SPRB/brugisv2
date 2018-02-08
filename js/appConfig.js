@@ -48,7 +48,7 @@ module.exports = {
     },
     storeOpts: {
         persist: {
-            whitelist: []
+            whitelist: ["locale"]
         }
     }
 };
