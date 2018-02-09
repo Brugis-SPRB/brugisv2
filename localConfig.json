@@ -314,7 +314,17 @@
 										 "asModal":false,
 										 "buttonSize":"small",
 										 "position": 2
-									}
+									},
+									"layerOptions": {
+								    "legendOptions": {
+								      "legendContainerStyle": {
+								       "overflowX": "auto"
+								      },
+								      "legendStyle": {
+								        "maxWidth": "250%"
+								      }
+								     }
+								  }
 							 },
 							 "override":{
 									"DrawerMenu":{

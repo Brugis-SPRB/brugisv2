@@ -77,6 +77,7 @@
   },
   "//": "replace react-sortable-items with official on npm when 0.0.10 with remove_deprecated PR in included",
   "dependencies": {
+    "react-resizable": "1.4.5",
     "@carnesen/redux-add-action-listener-enhancer": "0.0.1",
     "@turf/bbox": "4.1.0",
     "@turf/helpers": "4.1.0",

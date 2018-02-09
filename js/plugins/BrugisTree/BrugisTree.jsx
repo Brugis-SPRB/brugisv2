@@ -31,7 +31,7 @@ const BrugisTree = React.createClass({
     },
     componentWillMount() {
         if (!this.props.treenodes || this.props.treenodes.length < 1) {
-          //  this.props.loadTreeData(this.props.currentLocale);
+            this.props.loadTreeData(this.props.currentLocale);
         }
     },
     render() {
