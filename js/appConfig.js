@@ -39,7 +39,57 @@ module.exports = {
             },
             mapInfo: { infoFormat: 'application/json' },
             catalog: { format: 'wms' },
-            maptype: { mapType: 'openlayers' }
+            maptype: { mapType: 'openlayers' },
+            "catalog": {
+              "default": {
+                "newService": {
+                    "url": "",
+                    "type": "wms",
+                    "title": "",
+                    "isNew": true,
+                    "autoload": false
+                },
+                "selectedService": "Brugis WMS Service",
+                "services": {
+                  "Brugis WMS Service": {
+                    "url": "http://www.mybrugis.irisnet.be/geoserver/ows",
+                    "type": "wms",
+                    "title": "Brugis WMS Service",
+                    "autoload": true
+                  },
+                  "Bruxelles Mobilité" : {
+                    "url": "http://data-mobility.brussels/geoserver/bm_inspire_fr/ows",
+                    "type": "wms",
+                    "title": "Bruxelles Mobilité",
+                    "autoload": false
+                  },
+                  "Bruxelles environnement" : {
+                    "url": "http://wms.ibgebim.be/ibgewms",
+                    "type": "wms",
+                    "title": "Bruxelles environnement",
+                    "autoload": false
+                  },
+                  'AGIV WMS - Basiskaart': {
+                    "url": "http://geoservices.informatievlaanderen.be/raadpleegdiensten/GRB-basiskaart/wms",
+                    "type": "wms",
+                    "title": "AGIV WMS - Basiskaart",
+                    "autoload": false
+                  },
+                  'Stib mivb': {
+                    "url": "http://gis.irisnet.be/geoserver/stib_mivb/wms?",
+                    "type": "wms",
+                    "title": "Stib mivb",
+                    "autoload": false
+                  },
+                  'IBSA WMS': {
+                    "url": "http://gis.irisnet.be/geoserver/ibsa_bisa/wms?",
+                    "type": "wms",
+                    "title": "IBSA WMS",
+                    "autoload": false
+                  }
+                }
+              }
+            }
         },
         mobile: {
             mapInfo: {enabled: true, infoFormat: 'text/html' },

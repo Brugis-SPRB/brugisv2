@@ -20,9 +20,7 @@
             "DPI" : 90.71428571428571
         }
     },
-
     "layers": [{
-
         	"type": "wms",
             "url":["http://www.mybrugis.irisnet.be/geoserver/URBIS/wms"],
         	"title": "UrbisFR",
@@ -34,7 +32,6 @@
             "thumbURL" : "assets/img/urbis_color.PNG",
             "tiled" : true
         },{
-
         	"type": "wms",
             "url":["http://www.mybrugis.irisnet.be/geoserver/URBIS/wms"],
         	"title": "UrbisNL",

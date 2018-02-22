@@ -166,6 +166,7 @@ class Identify extends React.Component {
     onModalHiding() {
         this.props.hideMarker();
         this.props.purgeResults();
+        this.props.onChangeDrawingStatus('stop', null, "BrugisInfo", []);
     }
 
     renderHeader(missing) {
