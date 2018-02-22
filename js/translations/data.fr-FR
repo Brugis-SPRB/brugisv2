@@ -2,6 +2,8 @@
 {
     "locale": "fr-FR",
     "messages": {
+        "Area": "Surface",
+        "Centroid" : "Centroïde",
         "Legend": "Légende",
         "Layers": "Couches",
         "Language": "Langue",

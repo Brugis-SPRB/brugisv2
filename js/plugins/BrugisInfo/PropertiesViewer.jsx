@@ -3,6 +3,7 @@ const React = require('react');
 const PropTypes = require('prop-types');
 const {Panel} = require('react-bootstrap');
 const ol = require('openlayers');
+const Message = require('../../../MapStore2/web/client/components/I18N/Message');
 
 class PropertiesViewer extends React.Component {
 
@@ -111,7 +112,7 @@ class PropertiesViewer extends React.Component {
                 areaText = areaText + " m2";
             }
             return (<dl>
-              <dt>Area</dt>
+              <dt><Message msgId="Area"/></dt>
               <dd>{areaText}</dd>
             </dl>);
         }
@@ -123,7 +124,7 @@ class PropertiesViewer extends React.Component {
         var center = ol.extent.getCenter(extent);
         if (feature.getGeometry() && feature.getGeometry().getExtent()) {
             return (<dl>
-                <dt>Centroid</dt>
+                <dt><Message msgId="Centroid"/></dt>
                 <dd>{"X/Y: " + center[0].toFixed(2) + " m / " + center[1].toFixed(2) + " m"}</dd>
               </dl>);
         }
