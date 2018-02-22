@@ -96,7 +96,7 @@ class PropertiesViewer extends React.Component {
             return null;
         }
         return (
-              <div>
+              <div style={{"padding": "5px"}}>
                     {items}
               </div>
         );
@@ -133,7 +133,7 @@ class PropertiesViewer extends React.Component {
     renderMetrics() {
         var feature = (new ol.format.GeoJSON()).readFeature(this.props.geometry);
         return (
-            <div>
+            <div style={{"padding": "5px"}}>
                   {this.renderArea(feature)}
                   {this.renderCentroid(feature)}
             </div>
