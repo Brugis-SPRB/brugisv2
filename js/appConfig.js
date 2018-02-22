@@ -38,7 +38,6 @@ module.exports = {
                 user: localStorage.getItem('currentUser')
             },
             mapInfo: { infoFormat: 'application/json' },
-            catalog: { format: 'wms' },
             maptype: { mapType: 'openlayers' },
             "catalog": {
               "default": {
