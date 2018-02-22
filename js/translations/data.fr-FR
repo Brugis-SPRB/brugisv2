@@ -1060,7 +1060,7 @@
             },
             "zoomInButton": {
                 "title": "Zoom In",
-                "text": "Cliquez pour aggrandir la carte"
+                "text": "Cliquez pour agrandir la carte"
             },
             "zoomOutButton": {
                 "title": "Zoom Out",

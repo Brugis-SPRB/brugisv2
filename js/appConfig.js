@@ -56,13 +56,13 @@ module.exports = {
                     "title": "Brugis WMS Service",
                     "autoload": true
                   },
-                  "Bruxelles Mobilité" : {
+                  "Bruxelles Mobilité": {
                     "url": "http://data-mobility.brussels/geoserver/bm_inspire_fr/ows",
                     "type": "wms",
                     "title": "Bruxelles Mobilité",
                     "autoload": false
                   },
-                  "Bruxelles environnement" : {
+                  "Bruxelles environnement": {
                     "url": "http://wms.ibgebim.be/ibgewms",
                     "type": "wms",
                     "title": "Bruxelles environnement",

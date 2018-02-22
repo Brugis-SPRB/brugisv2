@@ -80,11 +80,6 @@ const gfiFr = {
 				"type": "string"
 			},
 			{
-				"name": "Lien CMS",
-				"label": "http://arbres-inventaire.irisnet.be/manager/index.php?table=36&id=[%id%]",
-				"type": "link"
-			},
-			{
 				"name": "Fiche de l'arbre",
 				"label": "http://arbres-inventaire.irisnet.be/arbre/[%results_fr%]/[%id%]/",
 				"type": "link"
@@ -113,6 +108,11 @@ const gfiFr = {
 				"name": "statut",
 				"label": "[%Legendefr%]",
 				"type": "string"
+			},
+			{
+				"name": "Lien CMS",
+				"label": "http://arbres-inventaire.irisnet.be/manager/index.php?table=36&id=[%id%]",
+				"type": "link"
 			}
 		]
 	},
