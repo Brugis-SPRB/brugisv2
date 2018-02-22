@@ -19,6 +19,7 @@ const {changeMapInfoFormat} = require('../../../MapStore2/web/client/actions/map
 const Message = require('../../../MapStore2/web/client/plugins/locale/Message');
 const Gfiicon = require('./img/info-phil-2.svg');
 const assign = require('object-assign');
+const {purgeHightlight} = require('./epics');
 
 require('../../../MapStore2/web/client/plugins/identify/identify.css');
 
@@ -129,5 +130,8 @@ module.exports = {
             position: 3
         }
     }),
-    reducers: {mapInfo: require('../../../MapStore2/web/client/reducers/mapInfo')}
+    reducers: {mapInfo: require('../../../MapStore2/web/client/reducers/mapInfo')},
+    epics: {
+      purgeHightlight
+    }
 };
