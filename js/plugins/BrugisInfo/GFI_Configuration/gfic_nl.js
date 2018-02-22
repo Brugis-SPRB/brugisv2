@@ -122,11 +122,6 @@ const gfiNl = {
 				"type": "string"
 			},
 			{
-				"name": "CMS link",
-				"label": "http://bomen-inventaris.irisnet.be/manager/index.php?table=36&id=[%id%]",
-				"type": "link"
-			},
-			{
 				"name": "Boomfiche",
 				"label": "http://bomen-inventaris.irisnet.be/arbre/[%results_nl%]/[%id%]/",
 				"type": "link"
@@ -155,6 +150,11 @@ const gfiNl = {
 				"name": "Toestand",
 				"label": "[%Legendenl%]",
 				"type": "string"
+			},
+			{
+				"name": "CMS link",
+				"label": "http://bomen-inventaris.irisnet.be/manager/index.php?table=36&id=[%id%]",
+				"type": "link"
 			}
 		]
 	},
