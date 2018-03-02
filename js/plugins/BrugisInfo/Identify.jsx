@@ -114,7 +114,8 @@ class Identify extends React.Component {
                 "buffer",
                 "cql_filter",
                 "filter",
-                "propertyName"
+                "propertyName",
+                "info_format"
             ],
             panelClassName: "modal-dialog info-panel modal-content",
             headerClassName: "modal-header",

@@ -54,15 +54,19 @@ function wmsWalker(layers) {
         tmpNodes = [];
     } else {
         layers.forEach(function(curLayer) {
+            var wmsServer = inspectKeywords(curLayer);
+            var singleTile = inspectKeywordsSingleTile(curLayer);
+            var infoFormat = wmsServer === "http://wms.ibgebim.be/ibgewms" ? "TEXT" : "JSON";
             tmpNodes.push({
                 "expanded": true,
                 "name": curLayer.name,
                 "title": curLayer.title,
                 "path": true,
                 "checked": false,
-                "wmsserver": inspectKeywords(curLayer),
+                "wmsserver": wmsServer,
                 "singleTile": inspectKeywordsSingleTile(curLayer),
                 "id": guidGenerator(),
+                "infoFormat" : infoFormat,
                 "childNodes": wmsWalker(curLayer.layer)
             });
         });
@@ -83,6 +87,7 @@ function toggleNode(nodes, node) {
                 "path": curNode.path,
                 "wmsserver": curNode.wmsserver,
                 "singleTile": curNode.singleTile,
+                "infoFormat" : curNode.infoFormat,
                 "id": curNode.id
             };
             if (curNode.id === node.id) {
@@ -114,6 +119,7 @@ function syncNodeWithLayer(nodes, node) {
                 "path": curNode.path,
                 "wmsserver": curNode.wmsserver,
                 "singleTile": curNode.singleTile,
+                "infoFormat" : curNode.infoFormat,
                 "id": curNode.id
             };
             if (node === curNode.id) {

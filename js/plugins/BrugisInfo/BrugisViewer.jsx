@@ -111,6 +111,10 @@ const DefaultViewer = React.createClass({
         }
         return responses.map((res, i) => {
             const {response, layerMetadata, format, queryParams} = res;
+            let infoFormat;
+            if (queryParams && queryParams.hasOwnProperty('info_format')) {
+                infoFormat = queryParams.info_format;
+            }
             const PageHeader = this.props.header;
             return (
                 <Panel
@@ -130,7 +134,7 @@ const DefaultViewer = React.createClass({
                       response={response}
                       locale={this.props.locale}
                       layers={queryParams.layers}
-                      format={(format && FeatureInfoUtils.INFO_FORMATS[format]) || this.props.format} viewers={this.props.viewers}
+                      format={infoFormat || (format && FeatureInfoUtils.INFO_FORMATS[format]) || this.props.format} viewers={this.props.viewers}
                       onChangeDrawingStatus={this.props.onChangeDrawingStatus}
                       onGeometryChanged={this.props.onGeometryChanged}
                        />

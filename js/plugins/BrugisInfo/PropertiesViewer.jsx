@@ -87,7 +87,7 @@ class PropertiesViewer extends React.Component {
             return null;
         }
         return (
-          <span><span>{this.props.title}</span></span>
+          <span><span className="propertiesTitle">{this.props.title}</span></span>
         );
     }
 
