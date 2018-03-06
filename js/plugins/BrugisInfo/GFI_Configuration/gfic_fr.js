@@ -2861,7 +2861,7 @@ const gfiFr = {
 				"type": "string"
 			},
 			{
-				"name": "Dates d'implentation",
+				"name": "Dates d'implantation",
 				"label": "[%LOCAT_HERE%]",
 				"type": "string"
 			},
@@ -2891,7 +2891,7 @@ const gfiFr = {
 				"type": "string"
 			},
 			{
-				"name": "Dates d'implentation",
+				"name": "Dates d'implantation",
 				"label": "[%LOCAT_HERE%]",
 				"type": "string"
 			},
@@ -3001,7 +3001,7 @@ const gfiFr = {
 				"type": "string"
 			},
 			{
-				"name": "Dates d'implentation",
+				"name": "Dates d'implantation",
 				"label": "[%LOCAT_HERE%]",
 				"type": "string"
 			},
@@ -3041,7 +3041,7 @@ const gfiFr = {
 				"type": "string"
 			},
 			{
-				"name": "Dates d'implentation",
+				"name": "Dates d'implantation",
 				"label": "[%LOCAT_HERE%]",
 				"type": "string"
 			},
@@ -3081,7 +3081,7 @@ const gfiFr = {
 				"type": "string"
 			},
 			{
-				"name": "Dates d'implentation",
+				"name": "Dates d'implantation",
 				"label": "[%LOCAT_HERE%]",
 				"type": "string"
 			},
