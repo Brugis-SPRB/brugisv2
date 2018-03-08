@@ -27,7 +27,7 @@ var SurveyToolBox = React.createClass({
         return {
             loadSurveyTypes: () => {},
             submitNewSurvey: () => {},
-            bsSize: "small",
+            bsSize: "large",
             onChangeDrawingStatus: () => {},
             onEndDrawing: () => {},
             drawSurfaceActive: false,
@@ -59,13 +59,18 @@ var SurveyToolBox = React.createClass({
         }
     },
     render() {
-        return (<ButtonToolbar>
-               <ButtonGroup>
+        return (
+          <span>
+                <ButtonGroup>
                     <Button bsSize={this.props.bsSize} bsStyle="primary" onClick={this.drawSurface} active={this.props.drawSurfaceActive}>Dessiner une surface</Button>
+                </ButtonGroup>
+                <ButtonGroup>
                     <Button bsSize={this.props.bsSize} bsStyle="primary" onClick={this.selectParcel} active={this.props.selectParcelActive}>Sélectionner une parcelle</Button>
+                </ButtonGroup>
+                <ButtonGroup>
                     <Button bsSize={this.props.bsSize} bsStyle="primary" onClick={this.deleteDrawing}>Supprimer le dessin</Button>
-               </ButtonGroup>
-          </ButtonToolbar>
+                </ButtonGroup>
+          </span>
         );
     },
     drawSurface() {

@@ -138,7 +138,7 @@ module.exports = {
                 target: "http://dev.mapstore2.geo-solutions.it"
             },
             '/brugis/proxy': {
-                target: "http://svappmavw115:8080"
+                target: ["http://svappmavw115:8080"]
             },
             '/print': {
                 target: "http://svappmavw115:8080"

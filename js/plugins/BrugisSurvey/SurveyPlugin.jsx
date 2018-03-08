@@ -153,7 +153,7 @@ const BrugisSurvey = React.createClass({
   render() {
 
       const surveyPanel = (
-          <Panel role="body">
+        <div>
             <SurveyForm
               evtKey={1}
               types={this.props.types}
@@ -172,6 +172,7 @@ const BrugisSurvey = React.createClass({
                 parcel={this.props.parcel}
                 map={this.props.map}
                 geoserver={this.props.geoserver}
+                bsSize={"xsmall"}
               />
             </SurveyForm>
             <SurveyGrid
@@ -181,7 +182,7 @@ const BrugisSurvey = React.createClass({
               locale={this.props.locale}
               webreperagehost={this.props.webreperagehost}
             />
-          </Panel>
+        </div>
       );
       if (this.props.wrap) {
           if (this.props.toolbarActive) {
@@ -197,7 +198,9 @@ const BrugisSurvey = React.createClass({
                   <span role="header">
                       <span className="settings-panel-title"><Message msgId="Urbanalyse"/><button onClick={this.props.toggleControl} className="close">{this.props.closeGlyph ? <Glyphicon glyph={this.props.closeGlyph}/> : <span>×</span>}</button></span>
                   </span>
+                  <span role="body">
                   {surveyPanel}
+                  </span>
               </Dialog>);
           }
       } else {
