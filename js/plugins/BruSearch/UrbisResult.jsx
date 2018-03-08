@@ -19,7 +19,7 @@ let UrbisResult = React.createClass({
         return (
             <div className="search-result NominatimResult" onClick={this.onClick}>
                 <div className="icon"></div>
-                {item.address.number} {item.address.street.name} {item.address.street.postCode} {item.address.street.municipality} 
+                {item.address.number} {item.address.street.name} {item.address.street.postCode} {item.address.street.municipality}
             </div>
         );
     }
