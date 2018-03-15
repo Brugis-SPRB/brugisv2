@@ -1,5 +1,9 @@
 {
 	"proxyUrl": "/brugis/proxy/?url=",
+	"proxyUrl": {
+		"url": "/brugis/proxy/?url=",
+		"useCORS": ["http://10.1.2.125:8080", "http://mbr227.irisnet.be"]
+	},
 	"geoStoreUrl": "/brugis/rest/geostore",
 	"printUrl": "/print/print/dep/info.json",
 	"bingApiKey": "AhuXBu7ipR1gNbBfXhtUAyCZ6rkC5PkWpxs2MnMRZ1ZupxQfivjLCch22ozKSCAn",

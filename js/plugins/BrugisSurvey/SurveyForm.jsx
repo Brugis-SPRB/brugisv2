@@ -9,7 +9,7 @@ class SurveyForm extends React.Component {
 
       this.state = {
         refdoc: "",
-        adress: "",
+        adr: "",
         type: "",
         isSendDisabled: true
       };
@@ -40,7 +40,7 @@ class SurveyForm extends React.Component {
       newObj[e.target.id] = e.target.value;
       this.setState(newObj);
 
-      if(this.state.refdoc === "" || this.state.adress === "" || this.state.type === ""){
+      if(this.state.refdoc === "" || this.state.adr === "" || this.state.type === ""){
           this.setState({ "isSendDisabled" : true});
       } else {
           this.setState({ "isSendDisabled" : false});
@@ -50,7 +50,7 @@ class SurveyForm extends React.Component {
     render() {
         const { isSendDisabled } = this.state;
         return (<Panel header="Nouveau Reperage" eventKey={this.props.evtKey} className={this.props.panelClassName} collapsible defaultExpanded>
-            <Form horizontal onSubmit={this.handleSubmit}>
+            <Form horizontal onSubmit={this.handleSubmit.bind(this)}>
              <br />
               <Row className="show-grid">
                 <Col sm={12}>
@@ -76,12 +76,12 @@ class SurveyForm extends React.Component {
                         <FormControl type="text" placeholder="Enter ref.dossier" value={this.state.refdoc} onChange={this.handleChange}/>
                       </Col>
                     </FormGroup>
-                    <FormGroup controlId="adress" bsSize={this.props.bsSize}>
+                    <FormGroup controlId="adr" bsSize={this.props.bsSize}>
                       <Col componentClass={ControlLabel} sm={2}>
                         Adresse
                       </Col>
                       <Col sm={10}>
-                        <FormControl type="text" placeholder="Enter adress" value={this.state.adress} onChange={this.handleChange} />
+                        <FormControl type="text" placeholder="Enter adress" value={this.state.adr} onChange={this.handleChange} />
                       </Col>
                     </FormGroup>
                     <FormGroup controlId="type" bsSize={this.props.bsSize}>

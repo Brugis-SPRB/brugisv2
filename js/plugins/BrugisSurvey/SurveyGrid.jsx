@@ -1,7 +1,7 @@
 var React = require('react');
 const PropTypes = require('prop-types');
 var {FormattedDate} = require('react-intl');
-var {Panel, Table} = require('react-bootstrap');
+var {Panel, Table, Label} = require('react-bootstrap');
 var SurveyUtils = require('./utils.js');
 var BrugisPagination = require('./Pagination');
 
@@ -13,7 +13,8 @@ class SurveyGrid extends React.Component {
         evtKey: PropTypes.number,
         user: PropTypes.string,
         locale: PropTypes.string,
-        webreperagehost: PropTypes.string
+        webreperagehost: PropTypes.string,
+        surveyUpdate: PropTypes.number
     };
 
     static defaultProps = {
@@ -56,11 +57,38 @@ class SurveyGrid extends React.Component {
     }
 
     renderState(state) {
-        return (<span>{state}</span>);
+       var style = "default";
+        switch(state) {
+          case 'NEW':
+            style="primary";
+            break;
+          case 'PENDING':
+            style="warning";
+            break;
+          case 'DONE':
+            style="success";
+            break;
+          case 'FAILED':
+            style="danger";
+          default:
+            style="default";
+            break;
+        }
+        return (<Label bsStyle={style}>{state}</Label>);
+    }
+
+    renderIfDone(survey, button) {
+        if(survey.state !== "DONE") {
+            return "-";
+        } else {
+            return button;
+        }
     }
 
     render() {
-        return (<Panel header="Liste des reperages" eventKey={this.props.evtKey} collapsible defaultExpanded="true">
+
+        const headerMessage = "Liste des reperages (" + new Date(this.props.surveyUpdate) + ")";
+        return (<Panel header={headerMessage} eventKey={this.props.evtKey} collapsible defaultExpanded="true">
           <Table responsive striped bordered condensed hover>
             <thead>
               <tr>
@@ -74,7 +102,7 @@ class SurveyGrid extends React.Component {
               </tr>
             </thead>
             <tbody>
-                       {this.state.pageOfItems.map(survey =>
+                {this.state.pageOfItems.map(survey =>
                          <tr key={survey.startdate}>
                            <td>{survey.docref}</td>
                            <td>{survey.adress}</td>
@@ -94,16 +122,17 @@ class SurveyGrid extends React.Component {
                                year="numeric" />
                            </td>
                            <td>
-                             <button onClick={() => this.onDocxClick(survey)}>Docx</button>
+                              {this.renderIfDone(survey, <button onClick={() => this.onDocxClick(survey)}>Docx</button>)}
                            </td>
                            <td>
-                             <button onClick={() => this.onPdfClick(survey)}>Pdf</button>
+                              {this.renderIfDone(survey,  <button onClick={() => this.onPdfClick(survey)}>Pdf</button>)}
                            </td>
                          </tr>
-                       )}
-                <BrugisPagination items={this.props.surveys} onChangePage={this.onChangePage} />
+                )}
+
             </tbody>
           </Table>
+          <BrugisPagination items={this.props.surveys} onChangePage={this.onChangePage} surveyUpdate={this.props.surveyUpdate}/>
         </Panel>
         );
     }

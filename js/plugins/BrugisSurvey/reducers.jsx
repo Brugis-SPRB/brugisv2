@@ -49,7 +49,8 @@ function brugisSurvey(state = initialState, action) {
             return state;
         case BRUGIS_SURVEY_LOADED: {
             return assign({}, state, {
-                surveys: action.info.records
+                surveys: action.info.records,
+                updateDate: Math.floor(Date.now() / 1000)
             });
         }
         case BRUGIS_SURVEY_LOAD_ERROR:

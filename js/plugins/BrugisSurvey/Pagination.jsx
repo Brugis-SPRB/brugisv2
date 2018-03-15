@@ -1,12 +1,13 @@
 import React, { PropTypes } from 'react';
-var {Pagination} = require('react-bootstrap');
+var {ButtonGroup, Button} = require('react-bootstrap');
 
 class BrugisPagination extends React.Component {
 
     static propTypes = {
         items: PropTypes.array.isRequired,
         onChangePage: PropTypes.func.isRequired,
-        initialPage: PropTypes.number
+        initialPage: PropTypes.number,
+        surveyUpdate: PropTypes.number
     };
 
     static defaultProps = {
@@ -20,6 +21,13 @@ class BrugisPagination extends React.Component {
 
     componentWillMount() {
         this.setPage(this.props.initialPage);
+    }
+
+    componentWillReceiveProps(newProps) {
+      //this.setPage(this.state.pager.currentPage);
+      if( this.props.surveyUpdate < newProps.surveyUpdate ) {
+        this.setPage(this.state.pager.currentPage);
+      }
     }
 
     setPage(page) {
@@ -48,7 +56,7 @@ class BrugisPagination extends React.Component {
         currentPage = currentPage || 1;
 
         // default page size is 10
-        pageSize = pageSize || 10;
+        pageSize = pageSize || 5;
 
         // calculate total pages
         var totalPages = Math.ceil(totalItems / pageSize);
@@ -97,6 +105,17 @@ class BrugisPagination extends React.Component {
         var pager = this.state.pager;
 
         return (
+          <ButtonGroup block>
+            <Button disabled={pager.currentPage === 1 ? true : false} onClick={() => this.setPage(1)}>First</Button>
+            <Button disabled={pager.currentPage === 1 ? true : false} onClick={() => this.setPage(pager.currentPage - 1)}>Prev</Button>
+            {pager.pages.map((page, index) =>
+                <Button active={pager.currentPage === page ? true : false} onClick={() => this.setPage(page)} >{index + 1}</Button>
+            )}
+            <Button disabled={pager.currentPage === pager.totalPages ? true : false} onClick={() => this.setPage(pager.currentPage + 1)}>Next</Button>
+            <Button disabled={pager.currentPage === pager.totalPages ? true : false} onClick={() => this.setPage(pager.totalPages)}>Last</Button>
+          </ButtonGroup>
+
+          /*
             <Pagination bsSize="large">
                 <Pagination.First disabled={pager.currentPage === 1 ? true : false} onClick={() => this.setPage(1)} />
                 <Pagination.Prev disabled={pager.currentPage === 1 ? true : false} onClick={() => this.setPage(pager.currentPage - 1)} />
@@ -108,6 +127,7 @@ class BrugisPagination extends React.Component {
                 <Pagination.Next disabled={pager.currentPage === pager.totalPages ? true : false} onClick={() => this.setPage(pager.currentPage + 1)} />
                 <Pagination.Last disabled={pager.currentPage === pager.totalPages ? true : false} onClick={() => this.setPage(pager.totalPages)} />
             </Pagination>
+            */
         );
     }
 }
