@@ -1,7 +1,8 @@
 var React = require('react');
 const PropTypes = require('prop-types');
 var {FormattedDate} = require('react-intl');
-var {Panel, Table, Label} = require('react-bootstrap');
+const Message = require('../../../MapStore2/web/client/components/I18N/Message');
+var {Panel, Table, Label, Button, Glyphicon} = require('react-bootstrap');
 var SurveyUtils = require('./utils.js');
 var BrugisPagination = require('./Pagination');
 
@@ -56,9 +57,9 @@ class SurveyGrid extends React.Component {
         }
     }
 
-    renderState(state) {
+    renderState(survey) {
        var style = "default";
-        switch(state) {
+        switch(survey.state) {
           case 'NEW':
             style="primary";
             break;
@@ -70,11 +71,18 @@ class SurveyGrid extends React.Component {
             break;
           case 'FAILED':
             style="danger";
+            break;
           default:
             style="default";
-            break;
         }
-        return (<Label bsStyle={style}>{state}</Label>);
+        var renewButton = (<Button bsSize="xsmall" onClick={() => this.props.onRestartSurvey(survey)}>
+          <Glyphicon glyph="repeat" />
+        </Button>);
+        var label = (<Label bsStyle={style}>{survey.state}</Label>);
+        if (survey.state === 'FAILED') {
+            label =  (<span><Label bsStyle={style}>{survey.state}</Label>{renewButton}</span>);
+        }
+        return label;
     }
 
     renderIfDone(survey, button) {
@@ -86,8 +94,7 @@ class SurveyGrid extends React.Component {
     }
 
     render() {
-
-        const headerMessage = "Liste des reperages (" + new Date(this.props.surveyUpdate) + ")";
+        const headerMessage = (<Message msgId={"Survey List"} />);
         return (<Panel header={headerMessage} eventKey={this.props.evtKey} collapsible defaultExpanded="true">
           <Table responsive striped bordered condensed hover>
             <thead>
@@ -106,7 +113,7 @@ class SurveyGrid extends React.Component {
                          <tr key={survey.startdate}>
                            <td>{survey.docref}</td>
                            <td>{survey.adress}</td>
-                           <td>{this.renderState(survey.state)}</td>
+                           <td>{this.renderState(survey)}</td>
                            <td>
                              <FormattedDate
                                value={new Date(survey.startdate)}
@@ -129,7 +136,6 @@ class SurveyGrid extends React.Component {
                            </td>
                          </tr>
                 )}
-
             </tbody>
           </Table>
           <BrugisPagination items={this.props.surveys} onChangePage={this.onChangePage} surveyUpdate={this.props.surveyUpdate}/>

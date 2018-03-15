@@ -127,6 +127,14 @@ function postNewSurvey(url, payload) {
     };
 }
 
+function postRestartSurvey(url) {
+    return (dispatch) => {
+        return axios.get(url).catch((e) => {
+            dispatch(brugisSurveyCreateError(e));
+        });
+    };
+}
+
 module.exports = {
     BRUGIS_SURVEY_LOAD_START,
     BRUGIS_SURVEY_LOADED,
@@ -142,5 +150,6 @@ module.exports = {
     brugisSelectParcelToggle,
     brugisSurveyDeleteDrawings,
     postNewSurvey,
-    loadBrugisSurveyTypes
+    loadBrugisSurveyTypes,
+    postRestartSurvey
 };

@@ -40,10 +40,14 @@ class SurveyForm extends React.Component {
       newObj[e.target.id] = e.target.value;
       this.setState(newObj);
 
+
+    }
+
+    isSendDisabled() {
       if(this.state.refdoc === "" || this.state.adr === "" || this.state.type === ""){
-          this.setState({ "isSendDisabled" : true});
+          return true;
       } else {
-          this.setState({ "isSendDisabled" : false});
+          return false;
       }
     }
 
@@ -100,7 +104,7 @@ class SurveyForm extends React.Component {
                     <Row>
                       <Col smOffset={10}>
                         <ButtonGroup block>
-                            <Button type="submit" bsSize={this.props.bsSize} bsStyle="primary" disabled={isSendDisabled}>
+                            <Button type="submit" bsSize={this.props.bsSize} bsStyle="primary" disabled={this.isSendDisabled()}>
                               Envoyer
                             </Button>
                         </ButtonGroup>

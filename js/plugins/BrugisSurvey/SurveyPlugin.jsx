@@ -26,7 +26,8 @@ const {
     brugisSelectParcelToggle,
     brugisSurveyDeleteDrawings,
     loadBrugisSurveyTypes,
-    postNewSurvey
+    postNewSurvey,
+    postRestartSurvey
 } = require('./actions');
 
 const {
@@ -72,7 +73,8 @@ const BrugisSurvey = React.createClass({
       webreperagehost: PropTypes.string,
       geoserver: PropTypes.string,
       buttonClassName: PropTypes.string,
-      surveyUpdate: PropTypes.number
+      surveyUpdate: PropTypes.number,
+      onPostRestartSurvey: PropTypes.func
   },
   getDefaultProps() {
       return {
@@ -116,17 +118,20 @@ const BrugisSurvey = React.createClass({
           locale: "fr-FR",
           webreperagehost: "",
           geoserver: "",
-          buttonClassName: "survey-button"
+          buttonClassName: "survey-button",
+          onPostRestartSurvey: () => {}
       };
   },
-  componentWillMount() {
-      if (this.props.types && this.props.types.length === 0) {
-          this.props.onLoadBrugisSurveyTypes(this.props.webreperagehost + "/resources/ReperagesType");
-      }
-  },
+
   componentDidMount() {
-      this.loadSurveyTime();
+    this.props.onLoadBrugisSurveyTypes(this.props.webreperagehost + "/resources/ReperagesType");
+    this.interval = setInterval(this.loadSurveyTime.bind(this), 3000);
   },
+
+  componentWillUnmount() {
+      clearInterval(this.interval);
+  },
+
   onPostNewSurveyForm(infos) {
       if (this.props.spatialField && this.props.spatialField.geometries && this.props.spatialField.geometries.length > 0) {
           let surveyAreaJson = this.buildTurfGeom(this.props.spatialField.geometries[0]);
@@ -149,10 +154,19 @@ const BrugisSurvey = React.createClass({
           );
           this.props.onChangeDrawingStatus("clean", null, 'BrugisSurvey');
           this.props.onBrugisSurveyDeleteDrawings();
+      } else {
+         alert("Please Draw a geometry first");
       }
   },
-  render() {
 
+  onRestartSurvey(survey) {
+    if(survey && survey.id){
+      this.props.onPostRestartSurvey(this.props.webreperagehost + "/resources/WorkItems/restarting-" + survey.id);
+      this.loadSurveyTime();
+    }
+  },
+
+  render() {
       const surveyPanel = (
         <div>
             <SurveyForm
@@ -183,6 +197,7 @@ const BrugisSurvey = React.createClass({
               user={this.props.user}
               locale={this.props.locale}
               webreperagehost={this.props.webreperagehost}
+              onRestartSurvey={this.onRestartSurvey}
             />
         </div>
       );
@@ -211,12 +226,11 @@ const BrugisSurvey = React.createClass({
       return null;
   },
   loadSurveyTime() {
-      setTimeout(() => {
+
           if (this.props.user) {
               this.props.loadSurveys(this.props.webreperagehost + "/res/reperage/userextjs?sort=startdate&dir=DESC&user=" + this.props.user);
           }
-          this.loadSurveyTime();
-      }, 10000);
+
   },
   buildTurfGeom(mapstoreGeom) {
       switch (mapstoreGeom.type) {
@@ -256,7 +270,8 @@ const BrugisSurveyPlugin = connect((state) => ({
     onLoadBrugisSurveyWFSIntersectQuery: getFeatureInfo,
     onBrugisSurveyDeleteDrawings: brugisSurveyDeleteDrawings,
     onLoadBrugisSurveyTypes: loadBrugisSurveyTypes,
-    onPostNewSurvey: postNewSurvey
+    onPostNewSurvey: postNewSurvey,
+    onPostRestartSurvey: postRestartSurvey
 })(BrugisSurvey);
 
 module.exports = {
