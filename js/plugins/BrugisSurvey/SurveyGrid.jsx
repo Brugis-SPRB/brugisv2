@@ -15,7 +15,8 @@ class SurveyGrid extends React.Component {
         user: PropTypes.string,
         locale: PropTypes.string,
         webreperagehost: PropTypes.string,
-        surveyUpdate: PropTypes.number
+        surveyUpdate: PropTypes.number,
+        onRestartSurvey: PropTypes.func
     };
 
     static defaultProps = {

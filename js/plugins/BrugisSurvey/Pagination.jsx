@@ -30,19 +30,21 @@ class BrugisPagination extends React.Component {
         }
     }
 
-    getPager(totalItems, currentPage, pageSize) {
+    getPager(totalItems, currentPageParam, pageSizeParam) {
         var totalPages;
         var startPage;
         var endPage;
         var startIndex;
         var endIndex;
         var pages;
+        var currentPage;
+        var pageSize;
 
         // default to first page
-        currentPage = currentPage || 1;
+        currentPage = currentPageParam || 1;
 
         // default page size is 10
-        pageSize = pageSize || 5;
+        pageSize = pageSizeParam || 5;
 
         // calculate total pages
         totalPages = Math.ceil(totalItems / pageSize);
@@ -69,7 +71,8 @@ class BrugisPagination extends React.Component {
         // calculate start and end item indexes
         startIndex = (currentPage - 1) * pageSize;
         endIndex = Math.min(startIndex + pageSize - 1, totalItems - 1);
-        pages = _.range(startPage, endPage + 1);
+        // pages = _.range(startPage, endPage + 1);
+        pages = Array.from(new Array(endPage + 1), (x, i) => i + startPage);
 
         // create an array of pages to ng-repeat in the pager control
 
