@@ -29,20 +29,19 @@ class SurveyGrid extends React.Component {
     };
 
     constructor() {
-         super();
+        super();
+        this.state = {
+            exampleItems: [],
+            pageOfItems: []
+        };
 
-         this.state = {
-             exampleItems: [],
-             pageOfItems: []
-         };
+        // bind function in constructor instead of render (https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-no-bind.md)
+        this.onChangePage = this.onChangePage.bind(this);
+    }
 
-         // bind function in constructor instead of render (https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-no-bind.md)
-         this.onChangePage = this.onChangePage.bind(this);
-     }
-
-     onChangePage(pageOfItems) {
-          // update state with new page of items
-          this.setState({ pageOfItems: pageOfItems });
+    onChangePage(pageOfItems) {
+        // update state with new page of items
+        this.setState({ pageOfItems: pageOfItems });
     }
 
     onDocxClick(survey) {
@@ -58,39 +57,39 @@ class SurveyGrid extends React.Component {
     }
 
     renderState(survey) {
-       var style = "default";
-        switch(survey.state) {
-          case 'NEW':
-            style="primary";
-            break;
-          case 'PENDING':
-            style="warning";
-            break;
-          case 'DONE':
-            style="success";
-            break;
-          case 'FAILED':
-            style="danger";
-            break;
-          default:
-            style="default";
-        }
+        var style = "default";
         var renewButton = (<Button bsSize="xsmall" onClick={() => this.props.onRestartSurvey(survey)}>
           <Glyphicon glyph="repeat" />
         </Button>);
         var label = (<Label bsStyle={style}>{survey.state}</Label>);
+        switch (survey.state) {
+            case 'NEW':
+                style = "primary";
+                break;
+            case 'PENDING':
+                style = "warning";
+                break;
+            case 'DONE':
+                style = "success";
+                break;
+            case 'FAILED':
+                style = "danger";
+                break;
+            default:
+                style = "default";
+        }
+
         if (survey.state === 'FAILED') {
-            label =  (<span><Label bsStyle={style}>{survey.state}</Label>{renewButton}</span>);
+            label = (<span><Label bsStyle={style}>{survey.state}</Label>{renewButton}</span>);
         }
         return label;
     }
 
     renderIfDone(survey, button) {
-        if(survey.state !== "DONE") {
+        if (survey.state !== "DONE") {
             return "-";
-        } else {
-            return button;
         }
+        return button;
     }
 
     render() {
@@ -132,7 +131,7 @@ class SurveyGrid extends React.Component {
                               {this.renderIfDone(survey, <button onClick={() => this.onDocxClick(survey)}>Docx</button>)}
                            </td>
                            <td>
-                              {this.renderIfDone(survey,  <button onClick={() => this.onPdfClick(survey)}>Pdf</button>)}
+                              {this.renderIfDone(survey, <button onClick={() => this.onPdfClick(survey)}>Pdf</button>)}
                            </td>
                          </tr>
                 )}
@@ -142,6 +141,6 @@ class SurveyGrid extends React.Component {
         </Panel>
         );
     }
-};
+}
 
 module.exports = SurveyGrid;

@@ -1,6 +1,6 @@
 var React = require('react');
 const PropTypes = require('prop-types');
-var {Button, ButtonGroup, ButtonToolbar} = require('react-bootstrap');
+var {Button, ButtonGroup} = require('react-bootstrap');
 const MapUtils = require('../../../MapStore2/web/client/utils/MapUtils');
 const CoordinatesUtils = require('../../../MapStore2/web/client/utils/CoordinatesUtils');
 

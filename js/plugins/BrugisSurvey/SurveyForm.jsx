@@ -1,20 +1,8 @@
 var React = require('react');
 const PropTypes = require('prop-types');
-var {Col, Button, Panel, FormGroup, ControlLabel, FormControl, Form, Grid, Row, ButtonGroup, ButtonToolbar} = require('react-bootstrap');
+var {Col, Button, Panel, FormGroup, ControlLabel, FormControl, Form, Row, ButtonGroup, ButtonToolbar} = require('react-bootstrap');
 
 class SurveyForm extends React.Component {
-    constructor(props, context) {
-      super(props, context);
-      this.handleChange = this.handleChange.bind(this);
-
-      this.state = {
-        refdoc: "",
-        adr: "",
-        type: "",
-        isSendDisabled: true
-      };
-    }
-
     static propTypes = {
         title: PropTypes.string,
         bsSize: PropTypes.string,
@@ -23,6 +11,20 @@ class SurveyForm extends React.Component {
         types: PropTypes.array,
         onPostNewSurvey: PropTypes.func
     };
+
+    static defaultProps = {
+    };
+
+    constructor(props, context) {
+        super(props, context);
+        this.handleChange = this.handleChange.bind(this);
+        this.state = {
+            refdoc: "",
+            adr: "",
+            type: "",
+            isSendDisabled: true
+        };
+    }
 
     static defaultProps = {
         title: "SurveyForm",
@@ -34,25 +36,7 @@ class SurveyForm extends React.Component {
         types: []
     };
 
-
-    handleChange(e) {
-      var newObj = {};
-      newObj[e.target.id] = e.target.value;
-      this.setState(newObj);
-
-
-    }
-
-    isSendDisabled() {
-      if(this.state.refdoc === "" || this.state.adr === "" || this.state.type === ""){
-          return true;
-      } else {
-          return false;
-      }
-    }
-
     render() {
-        const { isSendDisabled } = this.state;
         return (<Panel header="Nouveau Reperage" eventKey={this.props.evtKey} className={this.props.panelClassName} collapsible defaultExpanded>
             <Form horizontal onSubmit={this.handleSubmit.bind(this)}>
              <br />
@@ -117,10 +101,16 @@ class SurveyForm extends React.Component {
         );
     }
 
+    handleChange(e) {
+        var newObj = {};
+        newObj[e.target.id] = e.target.value;
+        this.setState(newObj);
+    }
+
     handleSubmit(event) {
         this.props.onPostNewSurvey(this.state);
         event.preventDefault();
     }
-};
+}
 
 module.exports = SurveyForm;

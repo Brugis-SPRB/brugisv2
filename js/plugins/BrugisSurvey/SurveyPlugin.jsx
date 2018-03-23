@@ -124,8 +124,8 @@ const BrugisSurvey = React.createClass({
   },
 
   componentDidMount() {
-    this.props.onLoadBrugisSurveyTypes(this.props.webreperagehost + "/resources/ReperagesType");
-    this.interval = setInterval(this.loadSurveyTime.bind(this), 3000);
+      this.props.onLoadBrugisSurveyTypes(this.props.webreperagehost + "/resources/ReperagesType");
+      this.interval = setInterval(this.loadSurveyTime.bind(this), 3000);
   },
 
   componentWillUnmount() {
@@ -155,15 +155,15 @@ const BrugisSurvey = React.createClass({
           this.props.onChangeDrawingStatus("clean", null, 'BrugisSurvey');
           this.props.onBrugisSurveyDeleteDrawings();
       } else {
-         alert("Please Draw a geometry first");
+          alert("Please Draw a geometry first");
       }
   },
 
   onRestartSurvey(survey) {
-    if(survey && survey.id){
-      this.props.onPostRestartSurvey(this.props.webreperagehost + "/resources/WorkItems/restarting-" + survey.id);
-      this.loadSurveyTime();
-    }
+      if (survey && survey.id) {
+          this.props.onPostRestartSurvey(this.props.webreperagehost + "/resources/WorkItems/restarting-" + survey.id);
+          this.loadSurveyTime();
+      }
   },
 
   render() {
@@ -226,11 +226,9 @@ const BrugisSurvey = React.createClass({
       return null;
   },
   loadSurveyTime() {
-
-          if (this.props.user) {
-              this.props.loadSurveys(this.props.webreperagehost + "/res/reperage/userextjs?sort=startdate&dir=DESC&user=" + this.props.user);
-          }
-
+      if (this.props.user) {
+          this.props.loadSurveys(this.props.webreperagehost + "/res/reperage/userextjs?sort=startdate&dir=DESC&user=" + this.props.user);
+      }
   },
   buildTurfGeom(mapstoreGeom) {
       switch (mapstoreGeom.type) {
