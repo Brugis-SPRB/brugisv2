@@ -5,7 +5,7 @@ const assign = require('object-assign');
 
 const {TEXT_SEARCH_RESULTS_LOADED} = require("../../../MapStore2/web/client/actions/search");
 
-const DEFAULT_URL = '//geoservices.irisnet.be/localization//Rest/Localize/getaddresses';
+const DEFAULT_URL = 'https://geoservices.irisnet.be/localization/Rest/Localize/getaddresses';
 const DEFAUTL_REVERSE_URL = '//nominatim.openstreetmap.org/reverse';
 const defaultOptions = {
     language: '',
