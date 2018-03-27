@@ -38,10 +38,10 @@
         <DCPType>
           <HTTP>
             <Get>
-              <OnlineResource ns0:href="http://www.mybrugis.irisnet.be/geoserver/wms?SERVICE=WMS&amp;" ns0:type="simple" />
+              <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?SERVICE=WMS&amp;" ns0:type="simple" />
             </Get>
             <Post>
-              <OnlineResource ns0:href="http://www.mybrugis.irisnet.be/geoserver/wms?SERVICE=WMS&amp;" ns0:type="simple" />
+              <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?SERVICE=WMS&amp;" ns0:type="simple" />
             </Post>
           </HTTP>
         </DCPType>
@@ -82,7 +82,7 @@
         <DCPType>
           <HTTP>
             <Get>
-              <OnlineResource ns0:href="http://www.mybrugis.irisnet.be/geoserver/ows?SERVICE=WMS&amp;" ns0:type="simple" />
+              <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/ows?SERVICE=WMS&amp;" ns0:type="simple" />
             </Get>
           </HTTP>
         </DCPType>
@@ -96,10 +96,10 @@
         <DCPType>
           <HTTP>
             <Get>
-              <OnlineResource ns0:href="http://www.mybrugis.irisnet.be/geoserver/wms?SERVICE=WMS&amp;" ns0:type="simple" />
+              <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?SERVICE=WMS&amp;" ns0:type="simple" />
             </Get>
             <Post>
-              <OnlineResource ns0:href="http://www.mybrugis.irisnet.be/geoserver/wms?SERVICE=WMS&amp;" ns0:type="simple" />
+              <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?SERVICE=WMS&amp;" ns0:type="simple" />
             </Post>
           </HTTP>
         </DCPType>
@@ -109,7 +109,7 @@
         <DCPType>
           <HTTP>
             <Get>
-              <OnlineResource ns0:href="http://www.mybrugis.irisnet.be/geoserver/wms?SERVICE=WMS&amp;" ns0:type="simple" />
+              <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?SERVICE=WMS&amp;" ns0:type="simple" />
             </Get>
           </HTTP>
         </DCPType>
@@ -121,7 +121,7 @@
         <DCPType>
           <HTTP>
             <Get>
-              <OnlineResource ns0:href="http://www.mybrugis.irisnet.be/geoserver/wms?SERVICE=WMS&amp;" ns0:type="simple" />
+              <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?SERVICE=WMS&amp;" ns0:type="simple" />
             </Get>
           </HTTP>
         </DCPType>
@@ -131,7 +131,7 @@
         <DCPType>
           <HTTP>
             <Get>
-              <OnlineResource ns0:href="http://www.mybrugis.irisnet.be/geoserver/wms?SERVICE=WMS&amp;" ns0:type="simple" />
+              <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?SERVICE=WMS&amp;" ns0:type="simple" />
             </Get>
           </HTTP>
         </DCPType>
@@ -179,7 +179,7 @@
                   <Abstract />
                   <LegendURL height="20" width="20">
                     <Format>image/png</Format>
-                    <OnlineResource ns0:href="http://www.mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Galeries_commercantes" ns0:type="simple" />
+                    <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Galeries_commercantes" ns0:type="simple" />
                   </LegendURL>
                 </Style>
                 <Style>
@@ -188,7 +188,7 @@
                   <Abstract />
                   <LegendURL height="20" width="20">
                     <Format>image/png</Format>
-                    <OnlineResource ns0:href="http://www.mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Galeries_commercantes&amp;style=Winkelgalerijen" ns0:type="simple" />
+                    <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Galeries_commercantes&amp;style=Winkelgalerijen" ns0:type="simple" />
                   </LegendURL>
                 </Style>
               </Layer>
@@ -209,7 +209,7 @@
                   <Abstract />
                   <LegendURL height="20" width="20">
                     <Format>image/png</Format>
-                    <OnlineResource ns0:href="http://www.mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Parking_de_transit" ns0:type="simple" />
+                    <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Parking_de_transit" ns0:type="simple" />
                   </LegendURL>
                 </Style>
                 <Style>
@@ -218,7 +218,7 @@
                   <Abstract />
                   <LegendURL height="20" width="20">
                     <Format>image/png</Format>
-                    <OnlineResource ns0:href="http://www.mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Parking_de_transit&amp;style=Transitparkeerplaats" ns0:type="simple" />
+                    <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Parking_de_transit&amp;style=Transitparkeerplaats" ns0:type="simple" />
                   </LegendURL>
                 </Style>
               </Layer>
@@ -239,7 +239,7 @@
                   <Abstract />
                   <LegendURL height="20" width="20">
                     <Format>image/png</Format>
-                    <OnlineResource ns0:href="http://www.mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Points_de_variation_de_mixite" ns0:type="simple" />
+                    <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Points_de_variation_de_mixite" ns0:type="simple" />
                   </LegendURL>
                 </Style>
                 <Style>
@@ -248,7 +248,7 @@
                   <Abstract />
                   <LegendURL height="20" width="20">
                     <Format>image/png</Format>
-                    <OnlineResource ns0:href="http://www.mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Points_de_variation_de_mixite&amp;style=Punten+van+wisselend+gemengd+ruimten" ns0:type="simple" />
+                    <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Points_de_variation_de_mixite&amp;style=Punten+van+wisselend+gemengd+ruimten" ns0:type="simple" />
                   </LegendURL>
                 </Style>
               </Layer>
@@ -269,7 +269,7 @@
                   <Abstract>Espaces structurants</Abstract>
                   <LegendURL height="20" width="20">
                     <Format>image/png</Format>
-                    <OnlineResource ns0:href="http://www.mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Espaces_structurants" ns0:type="simple" />
+                    <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Espaces_structurants" ns0:type="simple" />
                   </LegendURL>
                 </Style>
                 <Style>
@@ -278,7 +278,7 @@
                   <Abstract>Structurerende ruimten</Abstract>
                   <LegendURL height="20" width="20">
                     <Format>image/png</Format>
-                    <OnlineResource ns0:href="http://www.mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Espaces_structurants&amp;style=Structurerende+ruimten" ns0:type="simple" />
+                    <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Espaces_structurants&amp;style=Structurerende+ruimten" ns0:type="simple" />
                   </LegendURL>
                 </Style>
               </Layer>
@@ -299,7 +299,7 @@
                   <Abstract />
                   <LegendURL height="20" width="20">
                     <Format>image/png</Format>
-                    <OnlineResource ns0:href="http://www.mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Liseres_de_noyau_commercial" ns0:type="simple" />
+                    <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Liseres_de_noyau_commercial" ns0:type="simple" />
                   </LegendURL>
                 </Style>
                 <Style>
@@ -308,7 +308,7 @@
                   <Abstract />
                   <LegendURL height="20" width="20">
                     <Format>image/png</Format>
-                    <OnlineResource ns0:href="http://www.mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Liseres_de_noyau_commercial&amp;style=Linten+voor+handelskern" ns0:type="simple" />
+                    <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Liseres_de_noyau_commercial&amp;style=Linten+voor+handelskern" ns0:type="simple" />
                   </LegendURL>
                 </Style>
               </Layer>
@@ -329,7 +329,7 @@
                   <Abstract />
                   <LegendURL height="20" width="20">
                     <Format>image/png</Format>
-                    <OnlineResource ns0:href="http://www.mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Zichee" ns0:type="simple" />
+                    <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Zichee" ns0:type="simple" />
                   </LegendURL>
                 </Style>
                 <Style>
@@ -338,7 +338,7 @@
                   <Abstract />
                   <LegendURL height="20" width="20">
                     <Format>image/png</Format>
-                    <OnlineResource ns0:href="http://www.mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Zichee&amp;style=GCHEWS" ns0:type="simple" />
+                    <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Zichee&amp;style=GCHEWS" ns0:type="simple" />
                   </LegendURL>
                 </Style>
               </Layer>
@@ -359,7 +359,7 @@
                   <Abstract />
                   <LegendURL height="20" width="20">
                     <Format>image/png</Format>
-                    <OnlineResource ns0:href="http://www.mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Zones_d_interet_regional_a_amenagement_differe" ns0:type="simple" />
+                    <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Zones_d_interet_regional_a_amenagement_differe" ns0:type="simple" />
                   </LegendURL>
                 </Style>
                 <Style>
@@ -368,7 +368,7 @@
                   <Abstract />
                   <LegendURL height="20" width="20">
                     <Format>image/png</Format>
-                    <OnlineResource ns0:href="http://www.mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Zones_d_interet_regional_a_amenagement_differe&amp;style=Gebieden+van+gewestelijk+belang+met+uitgestelde+aanleg" ns0:type="simple" />
+                    <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Zones_d_interet_regional_a_amenagement_differe&amp;style=Gebieden+van+gewestelijk+belang+met+uitgestelde+aanleg" ns0:type="simple" />
                   </LegendURL>
                 </Style>
               </Layer>
@@ -389,7 +389,7 @@
                   <Abstract />
                   <LegendURL height="20" width="20">
                     <Format>image/png</Format>
-                    <OnlineResource ns0:href="http://www.mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Affectations" ns0:type="simple" />
+                    <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Affectations" ns0:type="simple" />
                   </LegendURL>
                 </Style>
                 <Style>
@@ -398,7 +398,7 @@
                   <Abstract />
                   <LegendURL height="20" width="20">
                     <Format>image/png</Format>
-                    <OnlineResource ns0:href="http://www.mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Affectations&amp;style=Affectations_agr" ns0:type="simple" />
+                    <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Affectations&amp;style=Affectations_agr" ns0:type="simple" />
                   </LegendURL>
                 </Style>
                 <Style>
@@ -407,7 +407,7 @@
                   <Abstract />
                   <LegendURL height="20" width="20">
                     <Format>image/png</Format>
-                    <OnlineResource ns0:href="http://www.mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Affectations&amp;style=Affectations_full" ns0:type="simple" />
+                    <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Affectations&amp;style=Affectations_full" ns0:type="simple" />
                   </LegendURL>
                 </Style>
                 <Style>
@@ -416,7 +416,7 @@
                   <Abstract />
                   <LegendURL height="20" width="20">
                     <Format>image/png</Format>
-                    <OnlineResource ns0:href="http://www.mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Affectations&amp;style=Affectations_fonderie" ns0:type="simple" />
+                    <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Affectations&amp;style=Affectations_fonderie" ns0:type="simple" />
                   </LegendURL>
                 </Style>
                 <Style>
@@ -425,7 +425,7 @@
                   <Abstract />
                   <LegendURL height="20" width="20">
                     <Format>image/png</Format>
-                    <OnlineResource ns0:href="http://www.mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Affectations&amp;style=Bestemmingen_full" ns0:type="simple" />
+                    <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Affectations&amp;style=Bestemmingen_full" ns0:type="simple" />
                   </LegendURL>
                 </Style>
               </Layer>
@@ -451,7 +451,7 @@
                 <Abstract />
                 <LegendURL height="20" width="20">
                   <Format>image/png</Format>
-                  <OnlineResource ns0:href="http://www.mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Maille" ns0:type="simple" />
+                  <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Maille" ns0:type="simple" />
                 </LegendURL>
               </Style>
               <Style>
@@ -460,7 +460,7 @@
                 <Abstract />
                 <LegendURL height="20" width="20">
                   <Format>image/png</Format>
-                  <OnlineResource ns0:href="http://www.mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Maille&amp;style=Maas" ns0:type="simple" />
+                  <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Maille&amp;style=Maas" ns0:type="simple" />
                 </LegendURL>
               </Style>
             </Layer>
@@ -485,7 +485,7 @@
                 <Abstract />
                 <LegendURL height="20" width="20">
                   <Format>image/png</Format>
-                  <OnlineResource ns0:href="http://www.mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Autoroutes" ns0:type="simple" />
+                  <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Autoroutes" ns0:type="simple" />
                 </LegendURL>
               </Style>
               <Style>
@@ -494,7 +494,7 @@
                 <Abstract />
                 <LegendURL height="20" width="20">
                   <Format>image/png</Format>
-                  <OnlineResource ns0:href="http://www.mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Autoroutes&amp;style=Autosnelweg" ns0:type="simple" />
+                  <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Autoroutes&amp;style=Autosnelweg" ns0:type="simple" />
                 </LegendURL>
               </Style>
             </Layer>
@@ -515,7 +515,7 @@
                 <Abstract />
                 <LegendURL height="20" width="20">
                   <Format>image/png</Format>
-                  <OnlineResource ns0:href="http://www.mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Itineraires_cyclables" ns0:type="simple" />
+                  <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Itineraires_cyclables" ns0:type="simple" />
                 </LegendURL>
               </Style>
               <Style>
@@ -524,7 +524,7 @@
                 <Abstract />
                 <LegendURL height="20" width="20">
                   <Format>image/png</Format>
-                  <OnlineResource ns0:href="http://www.mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Itineraires_cyclables&amp;style=Fietsroute" ns0:type="simple" />
+                  <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Itineraires_cyclables&amp;style=Fietsroute" ns0:type="simple" />
                 </LegendURL>
               </Style>
             </Layer>
@@ -545,7 +545,7 @@
                 <Abstract />
                 <LegendURL height="20" width="20">
                   <Format>image/png</Format>
-                  <OnlineResource ns0:href="http://www.mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Voiries_metropolitaines" ns0:type="simple" />
+                  <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Voiries_metropolitaines" ns0:type="simple" />
                 </LegendURL>
               </Style>
               <Style>
@@ -554,7 +554,7 @@
                 <Abstract />
                 <LegendURL height="20" width="20">
                   <Format>image/png</Format>
-                  <OnlineResource ns0:href="http://www.mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Voiries_metropolitaines&amp;style=Grootstedelijke+weg" ns0:type="simple" />
+                  <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Voiries_metropolitaines&amp;style=Grootstedelijke+weg" ns0:type="simple" />
                 </LegendURL>
               </Style>
             </Layer>
@@ -575,7 +575,7 @@
                 <Abstract />
                 <LegendURL height="20" width="20">
                   <Format>image/png</Format>
-                  <OnlineResource ns0:href="http://www.mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Voiries_metropolitaines_en_tunnel" ns0:type="simple" />
+                  <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Voiries_metropolitaines_en_tunnel" ns0:type="simple" />
                 </LegendURL>
               </Style>
               <Style>
@@ -584,7 +584,7 @@
                 <Abstract />
                 <LegendURL height="20" width="20">
                   <Format>image/png</Format>
-                  <OnlineResource ns0:href="http://www.mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Voiries_metropolitaines_en_tunnel&amp;style=Grootstedelijke+weg+in+tunnel" ns0:type="simple" />
+                  <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Voiries_metropolitaines_en_tunnel&amp;style=Grootstedelijke+weg+in+tunnel" ns0:type="simple" />
                 </LegendURL>
               </Style>
             </Layer>
@@ -605,7 +605,7 @@
                 <Abstract />
                 <LegendURL height="20" width="20">
                   <Format>image/png</Format>
-                  <OnlineResource ns0:href="http://www.mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Voiries_principales" ns0:type="simple" />
+                  <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Voiries_principales" ns0:type="simple" />
                 </LegendURL>
               </Style>
               <Style>
@@ -614,7 +614,7 @@
                 <Abstract />
                 <LegendURL height="20" width="20">
                   <Format>image/png</Format>
-                  <OnlineResource ns0:href="http://www.mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Voiries_principales&amp;style=Hoofdweg" ns0:type="simple" />
+                  <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Voiries_principales&amp;style=Hoofdweg" ns0:type="simple" />
                 </LegendURL>
               </Style>
             </Layer>
@@ -635,7 +635,7 @@
                 <Abstract />
                 <LegendURL height="20" width="20">
                   <Format>image/png</Format>
-                  <OnlineResource ns0:href="http://www.mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Zone_du_Bois_de_la_Cambre" ns0:type="simple" />
+                  <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Zone_du_Bois_de_la_Cambre" ns0:type="simple" />
                 </LegendURL>
               </Style>
               <Style>
@@ -644,7 +644,7 @@
                 <Abstract />
                 <LegendURL height="20" width="20">
                   <Format>image/png</Format>
-                  <OnlineResource ns0:href="http://www.mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Zone_du_Bois_de_la_Cambre&amp;style=Terkamerenbos+gebied" ns0:type="simple" />
+                  <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Zone_du_Bois_de_la_Cambre&amp;style=Terkamerenbos+gebied" ns0:type="simple" />
                 </LegendURL>
               </Style>
             </Layer>
@@ -669,7 +669,7 @@
                 <Abstract />
                 <LegendURL height="20" width="20">
                   <Format>image/png</Format>
-                  <OnlineResource ns0:href="http://www.mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Gares_ou_points_d_arret" ns0:type="simple" />
+                  <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Gares_ou_points_d_arret" ns0:type="simple" />
                 </LegendURL>
               </Style>
               <Style>
@@ -678,7 +678,7 @@
                 <Abstract />
                 <LegendURL height="20" width="20">
                   <Format>image/png</Format>
-                  <OnlineResource ns0:href="http://www.mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Gares_ou_points_d_arret&amp;style=Station+of+halte" ns0:type="simple" />
+                  <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Gares_ou_points_d_arret&amp;style=Station+of+halte" ns0:type="simple" />
                 </LegendURL>
               </Style>
             </Layer>
@@ -699,7 +699,7 @@
                 <Abstract />
                 <LegendURL height="20" width="20">
                   <Format>image/png</Format>
-                  <OnlineResource ns0:href="http://www.mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Gares_a_creer" ns0:type="simple" />
+                  <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Gares_a_creer" ns0:type="simple" />
                 </LegendURL>
               </Style>
               <Style>
@@ -708,7 +708,7 @@
                 <Abstract />
                 <LegendURL height="20" width="20">
                   <Format>image/png</Format>
-                  <OnlineResource ns0:href="http://www.mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Gares_a_creer&amp;style=Aan+te+leggen+station+of+halte" ns0:type="simple" />
+                  <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Gares_a_creer&amp;style=Aan+te+leggen+station+of+halte" ns0:type="simple" />
                 </LegendURL>
               </Style>
             </Layer>
@@ -729,7 +729,7 @@
                 <Abstract />
                 <LegendURL height="20" width="20">
                   <Format>image/png</Format>
-                  <OnlineResource ns0:href="http://www.mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Stations" ns0:type="simple" />
+                  <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Stations" ns0:type="simple" />
                 </LegendURL>
               </Style>
               <Style>
@@ -738,7 +738,7 @@
                 <Abstract />
                 <LegendURL height="20" width="20">
                   <Format>image/png</Format>
-                  <OnlineResource ns0:href="http://www.mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Stations&amp;style=Station" ns0:type="simple" />
+                  <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Stations&amp;style=Station" ns0:type="simple" />
                 </LegendURL>
               </Style>
             </Layer>
@@ -759,7 +759,7 @@
                 <Abstract />
                 <LegendURL height="20" width="20">
                   <Format>image/png</Format>
-                  <OnlineResource ns0:href="http://www.mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Stations_a_creer" ns0:type="simple" />
+                  <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Stations_a_creer" ns0:type="simple" />
                 </LegendURL>
               </Style>
               <Style>
@@ -768,7 +768,7 @@
                 <Abstract />
                 <LegendURL height="20" width="20">
                   <Format>image/png</Format>
-                  <OnlineResource ns0:href="http://www.mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Stations_a_creer&amp;style=Aan+te+leggen+station" ns0:type="simple" />
+                  <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Stations_a_creer&amp;style=Aan+te+leggen+station" ns0:type="simple" />
                 </LegendURL>
               </Style>
             </Layer>
@@ -789,7 +789,7 @@
                 <Abstract />
                 <LegendURL height="20" width="20">
                   <Format>image/png</Format>
-                  <OnlineResource ns0:href="http://www.mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Itineraires_en_site_independant" ns0:type="simple" />
+                  <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Itineraires_en_site_independant" ns0:type="simple" />
                 </LegendURL>
               </Style>
               <Style>
@@ -798,7 +798,7 @@
                 <Abstract />
                 <LegendURL height="20" width="20">
                   <Format>image/png</Format>
-                  <OnlineResource ns0:href="http://www.mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Itineraires_en_site_independant&amp;style=Lijn+in+onafhankelijke+baan" ns0:type="simple" />
+                  <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Itineraires_en_site_independant&amp;style=Lijn+in+onafhankelijke+baan" ns0:type="simple" />
                 </LegendURL>
               </Style>
             </Layer>
@@ -819,7 +819,7 @@
                 <Abstract />
                 <LegendURL height="20" width="20">
                   <Format>image/png</Format>
-                  <OnlineResource ns0:href="http://www.mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Itineraires_en_site_independant_a_creer" ns0:type="simple" />
+                  <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Itineraires_en_site_independant_a_creer" ns0:type="simple" />
                 </LegendURL>
               </Style>
               <Style>
@@ -828,7 +828,7 @@
                 <Abstract />
                 <LegendURL height="20" width="20">
                   <Format>image/png</Format>
-                  <OnlineResource ns0:href="http://www.mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Itineraires_en_site_independant_a_creer&amp;style=Aan+te+leggen+lijn+in+onafhankelijke+baan" ns0:type="simple" />
+                  <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Itineraires_en_site_independant_a_creer&amp;style=Aan+te+leggen+lijn+in+onafhankelijke+baan" ns0:type="simple" />
                 </LegendURL>
               </Style>
             </Layer>
@@ -849,7 +849,7 @@
                 <Abstract />
                 <LegendURL height="20" width="20">
                   <Format>image/png</Format>
-                  <OnlineResource ns0:href="http://www.mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Lignes_de_chemin_de_fer" ns0:type="simple" />
+                  <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Lignes_de_chemin_de_fer" ns0:type="simple" />
                 </LegendURL>
               </Style>
               <Style>
@@ -858,7 +858,7 @@
                 <Abstract />
                 <LegendURL height="20" width="20">
                   <Format>image/png</Format>
-                  <OnlineResource ns0:href="http://www.mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Lignes_de_chemin_de_fer&amp;style=Spoorlijn" ns0:type="simple" />
+                  <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Lignes_de_chemin_de_fer&amp;style=Spoorlijn" ns0:type="simple" />
                 </LegendURL>
               </Style>
             </Layer>
@@ -879,7 +879,7 @@
                 <Abstract />
                 <LegendURL height="20" width="20">
                   <Format>image/png</Format>
-                  <OnlineResource ns0:href="http://www.mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Zone_a_reserver_pour_infrastructure_souterraine" ns0:type="simple" />
+                  <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Zone_a_reserver_pour_infrastructure_souterraine" ns0:type="simple" />
                 </LegendURL>
               </Style>
               <Style>
@@ -888,7 +888,7 @@
                 <Abstract />
                 <LegendURL height="20" width="20">
                   <Format>image/png</Format>
-                  <OnlineResource ns0:href="http://www.mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Zone_a_reserver_pour_infrastructure_souterraine&amp;style=Voor+te+behouden+gebied+voor+ondergrondse+infrastructuur" ns0:type="simple" />
+                  <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Zone_a_reserver_pour_infrastructure_souterraine&amp;style=Voor+te+behouden+gebied+voor+ondergrondse+infrastructuur" ns0:type="simple" />
                 </LegendURL>
               </Style>
             </Layer>
@@ -909,7 +909,7 @@
                 <Abstract />
                 <LegendURL height="20" width="20">
                   <Format>image/png</Format>
-                  <OnlineResource ns0:href="http://www.mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=URBAN_II" ns0:type="simple" />
+                  <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=URBAN_II" ns0:type="simple" />
                 </LegendURL>
               </Style>
               <Style>
@@ -918,7 +918,7 @@
                 <Abstract />
                 <LegendURL height="20" width="20">
                   <Format>image/png</Format>
-                  <OnlineResource ns0:href="http://www.mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=URBAN_II&amp;style=URBAN_II" ns0:type="simple" />
+                  <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=URBAN_II&amp;style=URBAN_II" ns0:type="simple" />
                 </LegendURL>
               </Style>
             </Layer>
@@ -939,7 +939,7 @@
                 <Abstract />
                 <LegendURL height="20" width="20">
                   <Format>image/png</Format>
-                  <OnlineResource ns0:href="http://www.mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Zone_d_etude_du_projet_gare_et_de_la_ZIRAD" ns0:type="simple" />
+                  <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Zone_d_etude_du_projet_gare_et_de_la_ZIRAD" ns0:type="simple" />
                 </LegendURL>
               </Style>
               <Style>
@@ -948,7 +948,7 @@
                 <Abstract />
                 <LegendURL height="20" width="20">
                   <Format>image/png</Format>
-                  <OnlineResource ns0:href="http://www.mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Zone_d_etude_du_projet_gare_et_de_la_ZIRAD&amp;style=Gebied+voor+studies+van+het+projekt+van+het+station+en+van+het+GGBUA" ns0:type="simple" />
+                  <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Zone_d_etude_du_projet_gare_et_de_la_ZIRAD&amp;style=Gebied+voor+studies+van+het+projekt+van+het+station+en+van+het+GGBUA" ns0:type="simple" />
                 </LegendURL>
               </Style>
             </Layer>
@@ -977,7 +977,7 @@
                 <Abstract />
                 <LegendURL height="20" width="20">
                   <Format>image/png</Format>
-                  <OnlineResource ns0:href="http://www.mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Espaces_verts" ns0:type="simple" />
+                  <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Espaces_verts" ns0:type="simple" />
                 </LegendURL>
               </Style>
               <Style>
@@ -986,7 +986,7 @@
                 <Abstract />
                 <LegendURL height="20" width="20">
                   <Format>image/png</Format>
-                  <OnlineResource ns0:href="http://www.mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Espaces_verts&amp;style=Groengebieden" ns0:type="simple" />
+                  <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Espaces_verts&amp;style=Groengebieden" ns0:type="simple" />
                 </LegendURL>
               </Style>
             </Layer>
@@ -1007,7 +1007,7 @@
                 <Abstract>Biens classes ou en sauvegarde</Abstract>
                 <LegendURL height="20" width="20">
                   <Format>image/png</Format>
-                  <OnlineResource ns0:href="http://www.mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Biens_classes_ou_en_sauvegarde" ns0:type="simple" />
+                  <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Biens_classes_ou_en_sauvegarde" ns0:type="simple" />
                 </LegendURL>
               </Style>
               <Style>
@@ -1016,7 +1016,7 @@
                 <Abstract>Goed dat beschermd is of ingeschreven op de bewaarlijst</Abstract>
                 <LegendURL height="20" width="20">
                   <Format>image/png</Format>
-                  <OnlineResource ns0:href="http://www.mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Biens_classes_ou_en_sauvegarde&amp;style=Goed+dat+beschermd+is+of+ingeschreven+op+de+bewaarlijst" ns0:type="simple" />
+                  <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Biens_classes_ou_en_sauvegarde&amp;style=Goed+dat+beschermd+is+of+ingeschreven+op+de+bewaarlijst" ns0:type="simple" />
                 </LegendURL>
               </Style>
             </Layer>
@@ -1037,7 +1037,7 @@
                 <Abstract />
                 <LegendURL height="20" width="20">
                   <Format>image/png</Format>
-                  <OnlineResource ns0:href="http://www.mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Publicite" ns0:type="simple" />
+                  <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Publicite" ns0:type="simple" />
                 </LegendURL>
               </Style>
               <Style>
@@ -1046,7 +1046,7 @@
                 <Abstract />
                 <LegendURL height="20" width="20">
                   <Format>image/png</Format>
-                  <OnlineResource ns0:href="http://www.mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Publicite&amp;style=Reclame" ns0:type="simple" />
+                  <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Publicite&amp;style=Reclame" ns0:type="simple" />
                 </LegendURL>
               </Style>
             </Layer>
@@ -1071,7 +1071,7 @@
                 <Abstract />
                 <LegendURL height="20" width="20">
                   <Format>image/png</Format>
-                  <OnlineResource ns0:href="http://www.mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Galeries_commercantes" ns0:type="simple" />
+                  <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Galeries_commercantes" ns0:type="simple" />
                 </LegendURL>
               </Style>
               <Style>
@@ -1080,7 +1080,7 @@
                 <Abstract />
                 <LegendURL height="20" width="20">
                   <Format>image/png</Format>
-                  <OnlineResource ns0:href="http://www.mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Galeries_commercantes&amp;style=Winkelgalerijen" ns0:type="simple" />
+                  <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Galeries_commercantes&amp;style=Winkelgalerijen" ns0:type="simple" />
                 </LegendURL>
               </Style>
             </Layer>
@@ -1101,7 +1101,7 @@
                 <Abstract />
                 <LegendURL height="20" width="20">
                   <Format>image/png</Format>
-                  <OnlineResource ns0:href="http://www.mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Liseres_de_noyau_commercial" ns0:type="simple" />
+                  <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Liseres_de_noyau_commercial" ns0:type="simple" />
                 </LegendURL>
               </Style>
               <Style>
@@ -1110,7 +1110,7 @@
                 <Abstract />
                 <LegendURL height="20" width="20">
                   <Format>image/png</Format>
-                  <OnlineResource ns0:href="http://www.mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Liseres_de_noyau_commercial&amp;style=Linten+voor+handelskern" ns0:type="simple" />
+                  <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Liseres_de_noyau_commercial&amp;style=Linten+voor+handelskern" ns0:type="simple" />
                 </LegendURL>
               </Style>
             </Layer>
@@ -1131,7 +1131,7 @@
                 <Abstract />
                 <LegendURL height="20" width="20">
                   <Format>image/png</Format>
-                  <OnlineResource ns0:href="http://www.mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Espaces_verts" ns0:type="simple" />
+                  <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Espaces_verts" ns0:type="simple" />
                 </LegendURL>
               </Style>
               <Style>
@@ -1140,7 +1140,7 @@
                 <Abstract />
                 <LegendURL height="20" width="20">
                   <Format>image/png</Format>
-                  <OnlineResource ns0:href="http://www.mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Espaces_verts&amp;style=Groengebieden" ns0:type="simple" />
+                  <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Espaces_verts&amp;style=Groengebieden" ns0:type="simple" />
                 </LegendURL>
               </Style>
             </Layer>
@@ -1161,7 +1161,7 @@
                 <Abstract>Biens classes ou en sauvegarde</Abstract>
                 <LegendURL height="20" width="20">
                   <Format>image/png</Format>
-                  <OnlineResource ns0:href="http://www.mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Biens_classes_ou_en_sauvegarde" ns0:type="simple" />
+                  <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Biens_classes_ou_en_sauvegarde" ns0:type="simple" />
                 </LegendURL>
               </Style>
               <Style>
@@ -1170,7 +1170,7 @@
                 <Abstract>Goed dat beschermd is of ingeschreven op de bewaarlijst</Abstract>
                 <LegendURL height="20" width="20">
                   <Format>image/png</Format>
-                  <OnlineResource ns0:href="http://www.mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Biens_classes_ou_en_sauvegarde&amp;style=Goed+dat+beschermd+is+of+ingeschreven+op+de+bewaarlijst" ns0:type="simple" />
+                  <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Biens_classes_ou_en_sauvegarde&amp;style=Goed+dat+beschermd+is+of+ingeschreven+op+de+bewaarlijst" ns0:type="simple" />
                 </LegendURL>
               </Style>
             </Layer>
@@ -1191,7 +1191,7 @@
                 <Abstract />
                 <LegendURL height="20" width="20">
                   <Format>image/png</Format>
-                  <OnlineResource ns0:href="http://www.mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Enseignes" ns0:type="simple" />
+                  <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Enseignes" ns0:type="simple" />
                 </LegendURL>
               </Style>
               <Style>
@@ -1200,7 +1200,7 @@
                 <Abstract />
                 <LegendURL height="20" width="20">
                   <Format>image/png</Format>
-                  <OnlineResource ns0:href="http://www.mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Enseignes&amp;style=Uithangborden" ns0:type="simple" />
+                  <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Enseignes&amp;style=Uithangborden" ns0:type="simple" />
                 </LegendURL>
               </Style>
             </Layer>
@@ -1225,7 +1225,7 @@
                 <Abstract />
                 <LegendURL height="20" width="20">
                   <Format>image/png</Format>
-                  <OnlineResource ns0:href="http://www.mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Espaces_verts" ns0:type="simple" />
+                  <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Espaces_verts" ns0:type="simple" />
                 </LegendURL>
               </Style>
               <Style>
@@ -1234,7 +1234,7 @@
                 <Abstract />
                 <LegendURL height="20" width="20">
                   <Format>image/png</Format>
-                  <OnlineResource ns0:href="http://www.mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Espaces_verts&amp;style=Groengebieden" ns0:type="simple" />
+                  <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Espaces_verts&amp;style=Groengebieden" ns0:type="simple" />
                 </LegendURL>
               </Style>
             </Layer>
@@ -1254,7 +1254,7 @@
                 <Title>Accessibilite</Title>
                 <LegendURL height="60" width="62">
                   <Format>image/png</Format>
-                  <OnlineResource ns0:href="http://www.mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=BDU%3AAccessibilite_lineaire" ns0:type="simple"/>
+                  <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=BDU%3AAccessibilite_lineaire" ns0:type="simple"/>
                 </LegendURL>
               </Style>
             </Layer>
@@ -1274,7 +1274,7 @@
                 <Title>gold square point style</Title>
                 <LegendURL height="100" width="100">
                   <Format>image/png</Format>
-                  <OnlineResource ns0:href="http://www.mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=BDU%3AAccessibilite_ponctuelle" ns0:type="simple"/>
+                  <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=BDU%3AAccessibilite_ponctuelle" ns0:type="simple"/>
                 </LegendURL>
               </Style>
             </Layer>
@@ -1303,7 +1303,7 @@
                 <Abstract />
                 <LegendURL height="20" width="20">
                   <Format>image/png</Format>
-                  <OnlineResource ns0:href="http://www.mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Patrimoine" ns0:type="simple" />
+                  <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Patrimoine" ns0:type="simple" />
                 </LegendURL>
               </Style>
               <Style>
@@ -1312,7 +1312,7 @@
                 <Abstract />
                 <LegendURL height="20" width="20">
                   <Format>image/png</Format>
-                  <OnlineResource ns0:href="http://www.mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Patrimoine&amp;style=Patrimonium" ns0:type="simple" />
+                  <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Patrimoine&amp;style=Patrimonium" ns0:type="simple" />
                 </LegendURL>
               </Style>
               <Style>
@@ -1321,7 +1321,7 @@
                 <Abstract />
                 <LegendURL height="20" width="20">
                   <Format>image/png</Format>
-                  <OnlineResource ns0:href="http://www.mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Patrimoine&amp;style=Patrimoine_proposal" ns0:type="simple" />
+                  <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Patrimoine&amp;style=Patrimoine_proposal" ns0:type="simple" />
                 </LegendURL>
               </Style>
               <Style>
@@ -1330,7 +1330,7 @@
                 <Abstract />
                 <LegendURL height="20" width="20">
                   <Format>image/png</Format>
-                  <OnlineResource ns0:href="http://www.mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Patrimoine&amp;style=Patrimoine_for_trees" ns0:type="simple" />
+                  <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Patrimoine&amp;style=Patrimoine_for_trees" ns0:type="simple" />
                 </LegendURL>
               </Style>
             </Layer>
@@ -1351,7 +1351,7 @@
                 <Abstract />
                 <LegendURL height="20" width="20">
                   <Format>image/png</Format>
-                  <OnlineResource ns0:href="http://www.mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Inventaire" ns0:type="simple" />
+                  <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Inventaire" ns0:type="simple" />
                 </LegendURL>
               </Style>
               <Style>
@@ -1360,7 +1360,7 @@
                 <Abstract />
                 <LegendURL height="20" width="20">
                   <Format>image/png</Format>
-                  <OnlineResource ns0:href="http://www.mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Inventaire&amp;style=Inventaris" ns0:type="simple" />
+                  <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Inventaire&amp;style=Inventaris" ns0:type="simple" />
                 </LegendURL>
               </Style>
             </Layer>
@@ -1381,7 +1381,7 @@
                 <Abstract />
                 <LegendURL height="20" width="20">
                   <Format>image/png</Format>
-                  <OnlineResource ns0:href="http://www.mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Zones_de_protection" ns0:type="simple" />
+                  <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Zones_de_protection" ns0:type="simple" />
                 </LegendURL>
               </Style>
               <Style>
@@ -1390,7 +1390,7 @@
                 <Abstract />
                 <LegendURL height="20" width="20">
                   <Format>image/png</Format>
-                  <OnlineResource ns0:href="http://www.mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Zones_de_protection&amp;style=Vrijwaaringzonen" ns0:type="simple" />
+                  <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Zones_de_protection&amp;style=Vrijwaaringzonen" ns0:type="simple" />
                 </LegendURL>
               </Style>
             </Layer>
@@ -1411,7 +1411,7 @@
                 <Abstract>Zones de protection UNESCO</Abstract>
                 <LegendURL height="20" width="20">
                   <Format>image/png</Format>
-                  <OnlineResource ns0:href="http://www.mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Zones_de_protection_UNESCO" ns0:type="simple" />
+                  <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Zones_de_protection_UNESCO" ns0:type="simple" />
                 </LegendURL>
               </Style>
               <Style>
@@ -1420,7 +1420,7 @@
                 <Abstract>vrijwaaringzone UNESCO</Abstract>
                 <LegendURL height="20" width="20">
                   <Format>image/png</Format>
-                  <OnlineResource ns0:href="http://www.mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Zones_de_protection_UNESCO&amp;style=vrijwaaringzone+UNESCO" ns0:type="simple" />
+                  <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Zones_de_protection_UNESCO&amp;style=vrijwaaringzone+UNESCO" ns0:type="simple" />
                 </LegendURL>
               </Style>
             </Layer>
@@ -1448,7 +1448,7 @@
                   <Abstract />
                   <LegendURL height="20" width="20">
                     <Format>image/png</Format>
-                    <OnlineResource ns0:href="http://www.mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Anciens_cimetieres" ns0:type="simple" />
+                    <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Anciens_cimetieres" ns0:type="simple" />
                   </LegendURL>
                 </Style>
                 <Style>
@@ -1457,7 +1457,7 @@
                   <Abstract />
                   <LegendURL height="20" width="20">
                     <Format>image/png</Format>
-                    <OnlineResource ns0:href="http://www.mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Oude_begraafplaatsen" ns0:type="simple" />
+                    <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Oude_begraafplaatsen" ns0:type="simple" />
                   </LegendURL>
                 </Style>
               </Layer>
@@ -1478,7 +1478,7 @@
                   <Abstract />
                   <LegendURL height="20" width="20">
                     <Format>image/png</Format>
-                    <OnlineResource ns0:href="http://www.mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Decouvertes_isolees" ns0:type="simple" />
+                    <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Decouvertes_isolees" ns0:type="simple" />
                   </LegendURL>
                 </Style>
                 <Style>
@@ -1487,7 +1487,7 @@
                   <Abstract />
                   <LegendURL height="20" width="20">
                     <Format>image/png</Format>
-                    <OnlineResource ns0:href="http://www.mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Losse_vondsten" ns0:type="simple" />
+                    <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Losse_vondsten" ns0:type="simple" />
                   </LegendURL>
                 </Style>
               </Layer>
@@ -1508,7 +1508,7 @@
                   <Abstract />
                   <LegendURL height="20" width="20">
                     <Format>image/png</Format>
-                    <OnlineResource ns0:href="http://www.mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Reseau_hydrographique_ancien" ns0:type="simple" />
+                    <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Reseau_hydrographique_ancien" ns0:type="simple" />
                   </LegendURL>
                 </Style>
                 <Style>
@@ -1517,7 +1517,7 @@
                   <Abstract />
                   <LegendURL height="20" width="20">
                     <Format>image/png</Format>
-                    <OnlineResource ns0:href="http://www.mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Oud_waternetwerk" ns0:type="simple" />
+                    <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Oud_waternetwerk" ns0:type="simple" />
                   </LegendURL>
                 </Style>
               </Layer>
@@ -1538,7 +1538,7 @@
                   <Abstract />
                   <LegendURL height="20" width="20">
                     <Format>image/png</Format>
-                    <OnlineResource ns0:href="http://www.mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Sites_localises_avec_plan" ns0:type="simple" />
+                    <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Sites_localises_avec_plan" ns0:type="simple" />
                   </LegendURL>
                 </Style>
                 <Style>
@@ -1547,7 +1547,7 @@
                   <Abstract />
                   <LegendURL height="20" width="20">
                     <Format>image/png</Format>
-                    <OnlineResource ns0:href="http://www.mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Gelokaliseerde_sites_met_plan" ns0:type="simple" />
+                    <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Gelokaliseerde_sites_met_plan" ns0:type="simple" />
                   </LegendURL>
                 </Style>
               </Layer>
@@ -1568,7 +1568,7 @@
                   <Abstract />
                   <LegendURL height="20" width="20">
                     <Format>image/png</Format>
-                    <OnlineResource ns0:href="http://www.mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Sites_localises_sans_plan" ns0:type="simple" />
+                    <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Sites_localises_sans_plan" ns0:type="simple" />
                   </LegendURL>
                 </Style>
                 <Style>
@@ -1577,7 +1577,7 @@
                   <Abstract />
                   <LegendURL height="20" width="20">
                     <Format>image/png</Format>
-                    <OnlineResource ns0:href="http://www.mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Gelokaliseerde_sites_zonder_plan" ns0:type="simple" />
+                    <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Gelokaliseerde_sites_zonder_plan" ns0:type="simple" />
                   </LegendURL>
                 </Style>
               </Layer>
@@ -1598,7 +1598,7 @@
                   <Abstract />
                   <LegendURL height="20" width="20">
                     <Format>image/png</Format>
-                    <OnlineResource ns0:href="http://www.mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Sites_non_localises" ns0:type="simple" />
+                    <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Sites_non_localises" ns0:type="simple" />
                   </LegendURL>
                 </Style>
                 <Style>
@@ -1607,7 +1607,7 @@
                   <Abstract />
                   <LegendURL height="20" width="20">
                     <Format>image/png</Format>
-                    <OnlineResource ns0:href="http://www.mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Niet_gelokaliseerde_sites" ns0:type="simple" />
+                    <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Niet_gelokaliseerde_sites" ns0:type="simple" />
                   </LegendURL>
                 </Style>
               </Layer>
@@ -1628,7 +1628,7 @@
                   <Abstract />
                   <LegendURL height="20" width="20">
                     <Format>image/png</Format>
-                    <OnlineResource ns0:href="http://www.mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Sites_potentiels" ns0:type="simple" />
+                    <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Sites_potentiels" ns0:type="simple" />
                   </LegendURL>
                 </Style>
                 <Style>
@@ -1637,7 +1637,7 @@
                   <Abstract />
                   <LegendURL height="20" width="20">
                     <Format>image/png</Format>
-                    <OnlineResource ns0:href="http://www.mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Potentiele_sites" ns0:type="simple" />
+                    <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Potentiele_sites" ns0:type="simple" />
                   </LegendURL>
                 </Style>
                 <Style>
@@ -1646,7 +1646,7 @@
                   <Abstract />
                   <LegendURL height="20" width="20">
                     <Format>image/png</Format>
-                    <OnlineResource ns0:href="http://www.mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Sites_potentiels&amp;style=Sites_potentiels_1993b54d" ns0:type="simple" />
+                    <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Sites_potentiels&amp;style=Sites_potentiels_1993b54d" ns0:type="simple" />
                   </LegendURL>
                 </Style>
               </Layer>
@@ -1667,7 +1667,7 @@
                   <Abstract />
                   <LegendURL height="20" width="20">
                     <Format>image/png</Format>
-                    <OnlineResource ns0:href="http://www.mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Zones_d_extension_du_site" ns0:type="simple" />
+                    <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Zones_d_extension_du_site" ns0:type="simple" />
                   </LegendURL>
                 </Style>
                 <Style>
@@ -1676,7 +1676,7 @@
                   <Abstract />
                   <LegendURL height="20" width="20">
                     <Format>image/png</Format>
-                    <OnlineResource ns0:href="http://www.mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Uitbreidingszones_van_sites" ns0:type="simple" />
+                    <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Uitbreidingszones_van_sites" ns0:type="simple" />
                   </LegendURL>
                 </Style>
                 <Style>
@@ -1685,7 +1685,7 @@
                   <Abstract />
                   <LegendURL height="20" width="20">
                     <Format>image/png</Format>
-                    <OnlineResource ns0:href="http://www.mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Zones_d_extension_du_site&amp;style=Zones_d_extension_du_site_137402f2" ns0:type="simple" />
+                    <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Zones_d_extension_du_site&amp;style=Zones_d_extension_du_site_137402f2" ns0:type="simple" />
                   </LegendURL>
                 </Style>
               </Layer>
@@ -1712,7 +1712,7 @@
                     <Title>Brasseries sans plan</Title>
                     <LegendURL height="20" width="20">
                       <Format>image/png</Format>
-                      <OnlineResource ns0:href="http://www.mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=BDU_DMS_ARCH%3ABrasseries_localis%C3%A9es_sans_plan" ns0:type="simple"/>
+                      <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=BDU_DMS_ARCH%3ABrasseries_localis%C3%A9es_sans_plan" ns0:type="simple"/>
                     </LegendURL>
                   </Style>
                   <Style>
@@ -1720,7 +1720,7 @@
                     <Title>Brasseries sans plan</Title>
                     <LegendURL height="20" width="20">
                       <Format>image/png</Format>
-                      <OnlineResource ns0:href="http://www.mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=BDU_DMS_ARCH%3ABrasseries_localis%C3%A9es_sans_plan&amp;style=archeologie_brasseries_sans_plan" ns0:type="simple"/>
+                      <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=BDU_DMS_ARCH%3ABrasseries_localis%C3%A9es_sans_plan&amp;style=archeologie_brasseries_sans_plan" ns0:type="simple"/>
                     </LegendURL>
                   </Style>
                 </Layer>
@@ -1740,7 +1740,7 @@
                     <Title>Brasseries avec plan</Title>
                     <LegendURL height="20" width="20">
                       <Format>image/png</Format>
-                      <OnlineResource ns0:href="http://www.mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=BDU_DMS_ARCH%3ABrasseries_localis%C3%A9es_avec_plan" ns0:type="simple"/>
+                      <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=BDU_DMS_ARCH%3ABrasseries_localis%C3%A9es_avec_plan" ns0:type="simple"/>
                     </LegendURL>
                   </Style>
                 </Layer>
@@ -1764,7 +1764,7 @@
                     <Title>Couvents du 16Ã¨me siÃ¨cle</Title>
                     <LegendURL height="20" width="20">
                       <Format>image/png</Format>
-                      <OnlineResource ns0:href="http://www.mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=BDU_DMS_ARCH%3ACouvents_du_16%C3%A8me_si%C3%A8cle" ns0:type="simple"/>
+                      <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=BDU_DMS_ARCH%3ACouvents_du_16%C3%A8me_si%C3%A8cle" ns0:type="simple"/>
                     </LegendURL>
                   </Style>
                 </Layer>
@@ -1784,7 +1784,7 @@
                     <Title>Couvents du 17Ã¨me siÃ¨cle</Title>
                     <LegendURL height="20" width="20">
                       <Format>image/png</Format>
-                      <OnlineResource ns0:href="http://www.mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=BDU_DMS_ARCH%3ACouvents_du_17%C3%A8me_si%C3%A8cle" ns0:type="simple"/>
+                      <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=BDU_DMS_ARCH%3ACouvents_du_17%C3%A8me_si%C3%A8cle" ns0:type="simple"/>
                     </LegendURL>
                   </Style>
                 </Layer>
@@ -1804,7 +1804,7 @@
                     <Title>Couvents vestiges conservÃ©s</Title>
                     <LegendURL height="20" width="20">
                       <Format>image/png</Format>
-                      <OnlineResource ns0:href="http://www.mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=BDU_DMS_ARCH%3ACouvents_vestiges_conserv%C3%A9s" ns0:type="simple"/>
+                      <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=BDU_DMS_ARCH%3ACouvents_vestiges_conserv%C3%A9s" ns0:type="simple"/>
                     </LegendURL>
                   </Style>
                 </Layer>
@@ -1824,7 +1824,7 @@
                     <Title>Couvents du 18Ã¨me siÃ¨cle</Title>
                     <LegendURL height="140" width="92">
                       <Format>image/png</Format>
-                      <OnlineResource ns0:href="http://www.mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=BDU_DMS_ARCH%3ACouvents_du_18%C3%A8me_si%C3%A8cle" ns0:type="simple"/>
+                      <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=BDU_DMS_ARCH%3ACouvents_du_18%C3%A8me_si%C3%A8cle" ns0:type="simple"/>
                     </LegendURL>
                   </Style>
                 </Layer>
@@ -1848,7 +1848,7 @@
                     <Title>Refuge sans plan</Title>
                     <LegendURL height="20" width="20">
                       <Format>image/png</Format>
-                      <OnlineResource ns0:href="http://www.mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=BDU_DMS_ARCH%3ARefuges_localis%C3%A9s_sans_plan" ns0:type="simple"/>
+                      <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=BDU_DMS_ARCH%3ARefuges_localis%C3%A9s_sans_plan" ns0:type="simple"/>
                     </LegendURL>
                   </Style>
                 </Layer>
@@ -1868,7 +1868,7 @@
                     <Title>Refuges localisÃ©s avec plan</Title>
                     <LegendURL height="20" width="20">
                       <Format>image/png</Format>
-                      <OnlineResource ns0:href="http://www.mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=BDU_DMS_ARCH%3ARefuges_localis%C3%A9s_avec_plan" ns0:type="simple"/>
+                      <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=BDU_DMS_ARCH%3ARefuges_localis%C3%A9s_avec_plan" ns0:type="simple"/>
                     </LegendURL>
                   </Style>
                 </Layer>
@@ -1897,7 +1897,7 @@
                 <Abstract />
                 <LegendURL height="20" width="20">
                   <Format>image/png</Format>
-                  <OnlineResource ns0:href="http://www.mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Arbres_Remarquables" ns0:type="simple" />
+                  <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Arbres_Remarquables" ns0:type="simple" />
                 </LegendURL>
               </Style>
               <Style>
@@ -1906,7 +1906,7 @@
                 <Abstract />
                 <LegendURL height="20" width="20">
                   <Format>image/png</Format>
-                  <OnlineResource ns0:href="http://www.mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Arbres_Remarquables&amp;style=arbres_remarquables_simplifi%E9s" ns0:type="simple" />
+                  <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Arbres_Remarquables&amp;style=arbres_remarquables_simplifi%E9s" ns0:type="simple" />
                 </LegendURL>
               </Style>
               <Style>
@@ -1915,7 +1915,7 @@
                 <Abstract />
                 <LegendURL height="20" width="20">
                   <Format>image/png</Format>
-                  <OnlineResource ns0:href="http://www.mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Arbres_Remarquables&amp;style=arbres_remarquables_rarete" ns0:type="simple" />
+                  <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Arbres_Remarquables&amp;style=arbres_remarquables_rarete" ns0:type="simple" />
                 </LegendURL>
               </Style>
               <Style>
@@ -1924,7 +1924,7 @@
                 <Abstract />
                 <LegendURL height="20" width="20">
                   <Format>image/png</Format>
-                  <OnlineResource ns0:href="http://www.mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Arbres_Remarquables&amp;style=Arbres_Remarquables_57bd0668" ns0:type="simple" />
+                  <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Arbres_Remarquables&amp;style=Arbres_Remarquables_57bd0668" ns0:type="simple" />
                 </LegendURL>
               </Style>
             </Layer>
@@ -1945,7 +1945,7 @@
                 <Abstract />
                 <LegendURL height="20" width="20">
                   <Format>image/png</Format>
-                  <OnlineResource ns0:href="http://www.mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Arbres_remarquables_100_biggest" ns0:type="simple" />
+                  <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Arbres_remarquables_100_biggest" ns0:type="simple" />
                 </LegendURL>
               </Style>
             </Layer>
@@ -1966,7 +1966,7 @@
                 <Abstract />
                 <LegendURL height="20" width="20">
                   <Format>image/png</Format>
-                  <OnlineResource ns0:href="http://www.mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Arbres_remarquables_rarete" ns0:type="simple" />
+                  <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Arbres_remarquables_rarete" ns0:type="simple" />
                 </LegendURL>
               </Style>
               <Style>
@@ -1975,7 +1975,7 @@
                 <Abstract />
                 <LegendURL height="20" width="20">
                   <Format>image/png</Format>
-                  <OnlineResource ns0:href="http://www.mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Arbres_remarquables_rarete&amp;style=Arbres_Remarquables_57bd0668" ns0:type="simple" />
+                  <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Arbres_remarquables_rarete&amp;style=Arbres_Remarquables_57bd0668" ns0:type="simple" />
                 </LegendURL>
               </Style>
             </Layer>
@@ -2001,7 +2001,7 @@
               <Abstract />
               <LegendURL height="20" width="20">
                 <Format>image/png</Format>
-                <OnlineResource ns0:href="http://www.mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=PPAS" ns0:type="simple" />
+                <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=PPAS" ns0:type="simple" />
               </LegendURL>
             </Style>
           </Layer>
@@ -2022,7 +2022,7 @@
               <Abstract />
               <LegendURL height="20" width="20">
                 <Format>image/png</Format>
-                <OnlineResource ns0:href="http://www.mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Lotissements" ns0:type="simple" />
+                <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Lotissements" ns0:type="simple" />
               </LegendURL>
             </Style>
           </Layer>
@@ -2047,7 +2047,7 @@
               <Abstract />
               <LegendURL height="20" width="20">
                 <Format>image/png</Format>
-                <OnlineResource ns0:href="http://www.mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Contrats_de_quartier" ns0:type="simple" />
+                <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Contrats_de_quartier" ns0:type="simple" />
               </LegendURL>
             </Style>
             <Style>
@@ -2056,7 +2056,7 @@
               <Abstract />
               <LegendURL height="20" width="20">
                 <Format>image/png</Format>
-                <OnlineResource ns0:href="http://www.mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Contrats_de_quartier&amp;style=Wijkcontract" ns0:type="simple" />
+                <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Contrats_de_quartier&amp;style=Wijkcontract" ns0:type="simple" />
               </LegendURL>
             </Style>
             <Style>
@@ -2065,7 +2065,7 @@
               <Abstract />
               <LegendURL height="20" width="20">
                 <Format>image/png</Format>
-                <OnlineResource ns0:href="http://www.mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Contrats_de_quartier&amp;style=Contrats_de_quartier_actifs" ns0:type="simple" />
+                <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Contrats_de_quartier&amp;style=Contrats_de_quartier_actifs" ns0:type="simple" />
               </LegendURL>
             </Style>
           </Layer>
@@ -2085,7 +2085,7 @@
               <Title>Style_ZRU2016</Title>
               <LegendURL height="20" width="20">
                 <Format>image/png</Format>
-                <OnlineResource ns0:href="http://www.mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=PER%3AZone_de_revitalisation_urbaine" ns0:type="simple"/>
+                <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=PER%3AZone_de_revitalisation_urbaine" ns0:type="simple"/>
               </LegendURL>
             </Style>
           </Layer>
@@ -2106,7 +2106,7 @@
               <Abstract />
               <LegendURL height="20" width="20">
                 <Format>image/png</Format>
-                <OnlineResource ns0:href="http://www.mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=EDRLR" ns0:type="simple" />
+                <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=EDRLR" ns0:type="simple" />
               </LegendURL>
             </Style>
             <Style>
@@ -2115,7 +2115,7 @@
               <Abstract />
               <LegendURL height="20" width="20">
                 <Format>image/png</Format>
-                <OnlineResource ns0:href="http://www.mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=EDRLR&amp;style=EDRLR" ns0:type="simple" />
+                <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=EDRLR&amp;style=EDRLR" ns0:type="simple" />
               </LegendURL>
             </Style>
           </Layer>
@@ -2139,7 +2139,7 @@
               <Title>Quartiers a loyers majores destines aux AIS</Title>
               <LegendURL height="40" width="100">
                 <Format>image/png</Format>
-                <OnlineResource ns0:href="http://www.mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=BDU%3AQuartiers_a_loyers_majores_destines_aux_ais" ns0:type="simple"/>
+                <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=BDU%3AQuartiers_a_loyers_majores_destines_aux_ais" ns0:type="simple"/>
               </LegendURL>
             </Style>
           </Layer>
@@ -2171,7 +2171,7 @@
             <Abstract />
             <LegendURL height="20" width="20">
               <Format>image/png</Format>
-              <OnlineResource ns0:href="http://www.mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Zones_de_developpement_2015" ns0:type="simple" />
+              <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Zones_de_developpement_2015" ns0:type="simple" />
             </LegendURL>
           </Style>
         </Layer>
@@ -2975,7 +2975,7 @@
               <Abstract />
               <LegendURL height="20" width="20">
                 <Format>image/png</Format>
-                <OnlineResource ns0:href="http://www.mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=FEDER_project" ns0:type="simple" />
+                <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=FEDER_project" ns0:type="simple" />
               </LegendURL>
             </Style>
             <Style>
@@ -2984,7 +2984,7 @@
               <Abstract />
               <LegendURL height="20" width="20">
                 <Format>image/png</Format>
-                <OnlineResource ns0:href="http://www.mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=projet_FEDER&amp;style=projet_FEDER" ns0:type="simple" />
+                <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=projet_FEDER&amp;style=projet_FEDER" ns0:type="simple" />
               </LegendURL>
             </Style>
           </Layer>
@@ -3005,7 +3005,7 @@
               <Abstract />
               <LegendURL height="20" width="20">
                 <Format>image/png</Format>
-                <OnlineResource ns0:href="http://www.mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Zone_d_intervention_prioritaire" ns0:type="simple" />
+                <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Zone_d_intervention_prioritaire" ns0:type="simple" />
               </LegendURL>
             </Style>
             <Style>
@@ -3014,7 +3014,7 @@
               <Abstract />
               <LegendURL height="20" width="20">
                 <Format>image/png</Format>
-                <OnlineResource ns0:href="http://www.mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Prioritaire_interventieGebieden" ns0:type="simple" />
+                <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Prioritaire_interventieGebieden" ns0:type="simple" />
               </LegendURL>
             </Style>
           </Layer>
@@ -3039,7 +3039,7 @@
               <Abstract />
               <LegendURL height="20" width="20">
                 <Format>image/png</Format>
-                <OnlineResource ns0:href="http://www.mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=URBAN_II" ns0:type="simple" />
+                <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=URBAN_II" ns0:type="simple" />
               </LegendURL>
             </Style>
           </Layer>
@@ -3060,7 +3060,7 @@
               <Abstract />
               <LegendURL height="20" width="20">
                 <Format>image/png</Format>
-                <OnlineResource ns0:href="http://www.mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Objectif_2" ns0:type="simple" />
+                <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Objectif_2" ns0:type="simple" />
               </LegendURL>
             </Style>
           </Layer>
@@ -3091,7 +3091,7 @@
             <Abstract />
             <LegendURL height="20" width="20">
               <Format>image/png</Format>
-              <OnlineResource ns0:href="http://www.mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Limite_regionale" ns0:type="simple" />
+              <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Limite_regionale" ns0:type="simple" />
             </LegendURL>
           </Style>
           <Style>
@@ -3100,7 +3100,7 @@
             <Abstract />
             <LegendURL height="20" width="20">
               <Format>image/png</Format>
-              <OnlineResource ns0:href="http://www.mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Limite_regionale&amp;style=Gewestgrens" ns0:type="simple" />
+              <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Limite_regionale&amp;style=Gewestgrens" ns0:type="simple" />
             </LegendURL>
           </Style>
           <Style>
@@ -3109,7 +3109,7 @@
             <Abstract />
             <LegendURL height="20" width="20">
               <Format>image/png</Format>
-              <OnlineResource ns0:href="http://www.mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Limite_regionale&amp;style=Limite+r%E9gionale" ns0:type="simple" />
+              <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Limite_regionale&amp;style=Limite+r%E9gionale" ns0:type="simple" />
             </LegendURL>
           </Style>
         </Layer>
@@ -3130,7 +3130,7 @@
             <Abstract />
             <LegendURL height="20" width="20">
               <Format>image/png</Format>
-              <OnlineResource ns0:href="http://www.mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Limites_communales" ns0:type="simple" />
+              <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Limites_communales" ns0:type="simple" />
             </LegendURL>
           </Style>
           <Style>
@@ -3139,7 +3139,7 @@
             <Abstract />
             <LegendURL height="20" width="20">
               <Format>image/png</Format>
-              <OnlineResource ns0:href="http://www.mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Limites_communales&amp;style=labels+communaux" ns0:type="simple" />
+              <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Limites_communales&amp;style=labels+communaux" ns0:type="simple" />
             </LegendURL>
           </Style>
         </Layer>
@@ -3166,7 +3166,7 @@
                 <Abstract />
                 <LegendURL height="20" width="20">
                   <Format>image/png</Format>
-                  <OnlineResource ns0:href="http://www.mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Batiment_2017" ns0:type="simple" />
+                  <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Batiment_2017" ns0:type="simple" />
                 </LegendURL>
               </Style>
               <Style>
@@ -3175,7 +3175,7 @@
                 <Abstract />
                 <LegendURL height="20" width="20">
                   <Format>image/png</Format>
-                  <OnlineResource ns0:href="http://www.mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Batiment_2017&amp;style=Gebouw" ns0:type="simple" />
+                  <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Batiment_2017&amp;style=Gebouw" ns0:type="simple" />
                 </LegendURL>
               </Style>
               <ScaleHint max="5000.0" min="0.0" />
@@ -3197,7 +3197,7 @@
                 <Abstract />
                 <LegendURL height="20" width="20">
                   <Format>image/png</Format>
-                  <OnlineResource ns0:href="http://www.mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Parcelle_2017" ns0:type="simple" />
+                  <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Parcelle_2017" ns0:type="simple" />
                 </LegendURL>
               </Style>
               <Style>
@@ -3206,7 +3206,7 @@
                 <Abstract />
                 <LegendURL height="20" width="20">
                   <Format>image/png</Format>
-                  <OnlineResource ns0:href="http://www.mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Parcelle_2017&amp;style=Kadaster" ns0:type="simple" />
+                  <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Parcelle_2017&amp;style=Kadaster" ns0:type="simple" />
                 </LegendURL>
               </Style>
               <ScaleHint max="5000.0" min="0.0" />
@@ -3232,7 +3232,7 @@
                 <Abstract />
                 <LegendURL height="20" width="20">
                   <Format>image/png</Format>
-                  <OnlineResource ns0:href="http://www.mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Batiment_2016" ns0:type="simple" />
+                  <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Batiment_2016" ns0:type="simple" />
                 </LegendURL>
               </Style>
               <Style>
@@ -3241,7 +3241,7 @@
                 <Abstract />
                 <LegendURL height="20" width="20">
                   <Format>image/png</Format>
-                  <OnlineResource ns0:href="http://www.mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Batiment_2016&amp;style=Gebouw" ns0:type="simple" />
+                  <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Batiment_2016&amp;style=Gebouw" ns0:type="simple" />
                 </LegendURL>
               </Style>
               <ScaleHint max="5000.0" min="0.0" />
@@ -3263,7 +3263,7 @@
                 <Abstract />
                 <LegendURL height="20" width="20">
                   <Format>image/png</Format>
-                  <OnlineResource ns0:href="http://www.mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Parcelle_2016" ns0:type="simple" />
+                  <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Parcelle_2016" ns0:type="simple" />
                 </LegendURL>
               </Style>
               <Style>
@@ -3272,7 +3272,7 @@
                 <Abstract />
                 <LegendURL height="20" width="20">
                   <Format>image/png</Format>
-                  <OnlineResource ns0:href="http://www.mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Parcelle_2016&amp;style=Kadaster" ns0:type="simple" />
+                  <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Parcelle_2016&amp;style=Kadaster" ns0:type="simple" />
                 </LegendURL>
               </Style>
               <ScaleHint max="5000.0" min="0.0" />
@@ -3298,7 +3298,7 @@
                 <Abstract />
                 <LegendURL height="20" width="20">
                   <Format>image/png</Format>
-                  <OnlineResource ns0:href="http://www.mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Batiment_2015" ns0:type="simple" />
+                  <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Batiment_2015" ns0:type="simple" />
                 </LegendURL>
               </Style>
               <Style>
@@ -3307,7 +3307,7 @@
                 <Abstract />
                 <LegendURL height="20" width="20">
                   <Format>image/png</Format>
-                  <OnlineResource ns0:href="http://www.mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Batiment_2015&amp;style=Gebouw" ns0:type="simple" />
+                  <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Batiment_2015&amp;style=Gebouw" ns0:type="simple" />
                 </LegendURL>
               </Style>
               <ScaleHint max="5000.0" min="0.0" />
@@ -3329,7 +3329,7 @@
                 <Abstract />
                 <LegendURL height="20" width="20">
                   <Format>image/png</Format>
-                  <OnlineResource ns0:href="http://www.mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Parcelle_2015" ns0:type="simple" />
+                  <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Parcelle_2015" ns0:type="simple" />
                 </LegendURL>
               </Style>
               <Style>
@@ -3338,7 +3338,7 @@
                 <Abstract />
                 <LegendURL height="20" width="20">
                   <Format>image/png</Format>
-                  <OnlineResource ns0:href="http://www.mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Parcelle_2015&amp;style=Kadaster" ns0:type="simple" />
+                  <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Parcelle_2015&amp;style=Kadaster" ns0:type="simple" />
                 </LegendURL>
               </Style>
               <ScaleHint max="5000.0" min="0.0" />

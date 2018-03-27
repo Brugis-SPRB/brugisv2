@@ -28,10 +28,10 @@ const EnvUtils = {
                 url = "http://mybrugis.irisnetlab.be/geoserver/ows";
                 break;
             case PRD:
-                url = "http://www.mybrugis.irisnet.be/geoserver/ows";
+                url = "https://mybrugis.irisnet.be/geoserver/ows";
                 break;
             default:
-                url = "http://www.mybrugis.irisnet.be/geoserver/ows";
+                url = "https://mybrugis.irisnet.be/geoserver/ows";
                 break;
         }
         return url;
