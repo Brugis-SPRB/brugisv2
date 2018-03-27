@@ -155,7 +155,7 @@
 						"closeGlyph":"1-close",
 						"initialCatalogURL":{
 							 "csw":"http://geobru.irisnet.be/geonetwork/srv/fr/csw",
-							 "wms":"http://www.mybrugis.irisnet.be/geoserver/wms"
+							 "wms":"https://mybrugis.irisnet.be/geoserver/wms"
 						}
 				 }
 			},{
@@ -436,7 +436,7 @@
                   "closeGlyph":"1-close",
                   "initialCatalogURL":{
                      "csw":"http://geobru.irisnet.be/geonetwork/srv/fr/csw",
-                     "wms":"http://www.mybrugis.irisnet.be/geoserver/wms"
+                     "wms":"https://mybrugis.irisnet.be/geoserver/wms"
                   }
                }
             },{

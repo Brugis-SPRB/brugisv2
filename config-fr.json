@@ -2,8 +2,8 @@
 {
    "version" : 2,
    "survey": {
-     "host": "http://10.1.2.125:8080/WebReperage",
-     "geoserver": "http://www.mybrugis.irisnet.be/geoserver/ows"
+     "host": "http://mbr227.irisnet.be/WebReperage",
+     "geoserver": "https://mybrugis.irisnet.be/geoserver/ows"
    },
   "map": {
     "projection": "EPSG:31370",
@@ -24,7 +24,7 @@
     "layers": [{
 
         	"type": "wms",
-            "url":["http://www.mybrugis.irisnet.be/geoserver/URBIS/wms"],
+            "url":["https://mybrugis.irisnet.be/geoserver/URBIS/wms"],
         	"title": "UrbisFR",
         	"name": "URBIS:urbisFR",
              "group": "background",
@@ -36,7 +36,7 @@
         },{
 
         	"type": "wms",
-            "url":["http://www.mybrugis.irisnet.be/geoserver/URBIS/wms"],
+            "url":["https://mybrugis.irisnet.be/geoserver/URBIS/wms"],
         	"title": "UrbisFR Gray",
         	"name": "URBIS:urbisFRGray",
             "group": "background",
@@ -49,7 +49,7 @@
         },{
 
         	"type": "wms",
-            "url":["http://www.mybrugis.irisnet.be/geoserver/wms"],
+            "url":["https://mybrugis.irisnet.be/geoserver/wms"],
         	"title": "Aquarelle",
         	"name": "BCR:Aquarelle",
             "group": "background",
