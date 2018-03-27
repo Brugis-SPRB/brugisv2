@@ -88,7 +88,7 @@ class SurveyForm extends React.Component {
                     <Row>
                       <Col smOffset={10}>
                         <ButtonGroup block>
-                            <Button type="submit" bsSize={this.props.bsSize} bsStyle="primary" disabled={this.isSendDisabled()}>
+                            <Button type="submit" bsSize={this.props.bsSize} bsStyle="primary" disabled={this.state.isSendDisabled}>
                               Envoyer
                             </Button>
                         </ButtonGroup>
