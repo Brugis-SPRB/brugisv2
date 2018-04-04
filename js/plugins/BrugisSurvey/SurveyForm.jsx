@@ -21,8 +21,7 @@ class SurveyForm extends React.Component {
         this.state = {
             refdoc: "",
             adr: "",
-            type: "",
-            isSendDisabled: true
+            type: ""
         };
     }
 
@@ -88,7 +87,7 @@ class SurveyForm extends React.Component {
                     <Row>
                       <Col smOffset={10}>
                         <ButtonGroup block>
-                            <Button type="submit" bsSize={this.props.bsSize} bsStyle="primary" disabled={this.state.isSendDisabled}>
+                            <Button type="submit" bsSize={this.props.bsSize} bsStyle="primary" disabled={this.isSendDisabled()}>
                               Envoyer
                             </Button>
                         </ButtonGroup>
@@ -106,7 +105,15 @@ class SurveyForm extends React.Component {
         newObj[e.target.id] = e.target.value;
         this.setState(newObj);
     }
-
+    isSendDisabled() {
+        var isDisabled = false;
+        if (this.state.refdoc === "" || this.state.adr === "" || this.state.type === "") {
+            isDisabled = true;
+        } else {
+            isDisabled = false;
+        }
+        return isDisabled;
+    }
     handleSubmit(event) {
         this.props.onPostNewSurvey(this.state);
         event.preventDefault();
