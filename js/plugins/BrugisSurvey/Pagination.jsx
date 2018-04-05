@@ -1,5 +1,6 @@
 import React, { PropTypes } from 'react';
 var {ButtonGroup, Button} = require('react-bootstrap');
+var _ = require('lodash');
 
 class BrugisPagination extends React.Component {
 
@@ -71,9 +72,7 @@ class BrugisPagination extends React.Component {
         // calculate start and end item indexes
         startIndex = (currentPage - 1) * pageSize;
         endIndex = Math.min(startIndex + pageSize - 1, totalItems - 1);
-        // pages = _.range(startPage, endPage + 1);
-        pages = Array.from(new Array(endPage + 1), (x, i) => i + startPage);
-
+        pages = _.range(startPage, endPage + 1);
         // create an array of pages to ng-repeat in the pager control
 
         // return object with all pager properties required by the view
