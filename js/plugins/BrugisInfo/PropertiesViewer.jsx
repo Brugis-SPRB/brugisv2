@@ -34,7 +34,6 @@ class PropertiesViewer extends React.Component {
             textOverflow: "ellipsis"
         },
         listStyle: {
-            maxHeight: "500px",
             position: "relative",
             marginBottom: 0,
             marginRight: "5px",
