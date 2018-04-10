@@ -28,8 +28,7 @@ const {createSelector} = require('reselect');
 const assign = require('object-assign');
 
 const {head} = require('lodash');
-
-const {scalesSelector} = require('../../../MapStore2/web/client/selectors/map');
+const {scalesSelector} = require('./selector');
 const {currentLocaleSelector} = require('../../../MapStore2/web/client/selectors/locale');
 
 require('../../../MapStore2/web/client/plugins/print/print.css');
@@ -326,7 +325,7 @@ class Print extends React.Component {
             if (this.props.useFixedScales) {
                 const mapZoom = this.props.getZoomForExtent(bbox, mapSize, this.props.minZoom, this.props.maxZoom);
                 const scales = PrintUtils.getPrintScales(this.props.capabilities);
-                const scaleZoom = PrintUtils.getNearestZoom(newMap.zoom, scales);
+                const scaleZoom = PrintUtils.getNearestZoom(newMap.zoom, scales, this.props.scales);
 
                 this.props.configurePrintMap(newMap.center, mapZoom, scaleZoom, scales[scaleZoom],
                     this.filterLayers(newPrintSpec), newMap.projection, this.props.currentLocale);

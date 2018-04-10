@@ -536,7 +536,10 @@
              }, {
                  "name":"MeasureLength"
              }, {
-                 "name": "Print"
+                 "name": "Print",
+								 "cfg":{
+									 "useFixedScales": false
+								 }
              }, {
                  "name": "BrugisSurvey",
 								 "cfg": {
