@@ -1334,6 +1334,388 @@
                 </LegendURL>
               </Style>
             </Layer>
+            <Layer noSubsets="0" opaque="0" queryable="1">
+              <Name>Patrimoine détaillé</Name>
+              <Title>Detailed heritage</Title>
+              <Layer noSubsets="0" opaque="0" queryable="1">
+                <Name>BDU:MONUMENT_CLASSEMENT_ARRETE_DEFINITIF</Name>
+                <Title>Registered monument (final decree)</Title>
+                <Abstract />
+                <KeywordList>
+                  <Keyword>VM_A40_PROT_CLASVGD</Keyword>
+                  <Keyword>features</Keyword>
+                </KeywordList>
+                <SRS>EPSG:31370</SRS>
+                <LatLonBoundingBox maxx="4.481395499187374" maxy="50.913596114462294" minx="4.2424703657955884" miny="50.76341280985816" />
+                <BoundingBox SRS="EPSG:31370" maxx="157995.282999992" maxy="178169.335842065" minx="141192.712000009" miny="161470.180842083" />
+                <Style>
+                  <Name>Patrimoine - Monument Classement Arrêté définitif</Name>
+                  <Title>Monument Classement Arrêté définitif</Title>
+                  <Abstract />
+                  <LegendURL height="20" width="20">
+                    <Format>image/png</Format>
+                    <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=MONUMENT_CLASSEMEMENT_ARRETE_DEFINITIF" ns0:type="simple" />
+                  </LegendURL>
+                </Style>
+              </Layer>
+              <Layer noSubsets="0" opaque="0" queryable="1">
+                <Name>BDU:MONUMENT_CLASSEMENT_OUVERTURE_DE_PROCEDURE</Name>
+                <Title>Registered monument (decree in progress)</Title>
+                <Abstract />
+                <KeywordList>
+                  <Keyword>VM_A40_PROT_CLASVGD</Keyword>
+                  <Keyword>features</Keyword>
+                </KeywordList>
+                <SRS>EPSG:31370</SRS>
+                <LatLonBoundingBox maxx="4.481395499187374" maxy="50.913596114462294" minx="4.2424703657955884" miny="50.76341280985816" />
+                <BoundingBox SRS="EPSG:31370" maxx="157995.282999992" maxy="178169.335842065" minx="141192.712000009" miny="161470.180842083" />
+                <Style>
+                  <Name>Patrimoine - Monument Classement Ouverture de procédure</Name>
+                  <Title>Monument Classement Ouverture de procédure</Title>
+                  <Abstract />
+                  <LegendURL height="20" width="20">
+                    <Format>image/png</Format>
+                    <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=MONUMENT_CLASSEMENT_OUVERTURE_DE_PROCEDURE" ns0:type="simple" />
+                  </LegendURL>
+                </Style>
+              </Layer>
+              <Layer noSubsets="0" opaque="0" queryable="1">
+                <Name>BDU:MONUMENT_SAUVEGARDE_ARRETE_DEFINITIF</Name>
+                <Title>Protected monument (final decree)</Title>
+                <Abstract />
+                <KeywordList>
+                  <Keyword>VM_A40_PROT_CLASVGD</Keyword>
+                  <Keyword>features</Keyword>
+                </KeywordList>
+                <SRS>EPSG:31370</SRS>
+                <LatLonBoundingBox maxx="4.481395499187374" maxy="50.913596114462294" minx="4.2424703657955884" miny="50.76341280985816" />
+                <BoundingBox SRS="EPSG:31370" maxx="157995.282999992" maxy="178169.335842065" minx="141192.712000009" miny="161470.180842083" />
+                <Style>
+                  <Name>Patrimoine - Monument Sauvegarde Arrêté définitif</Name>
+                  <Title>Monument Sauvegarde Arrêté définitif</Title>
+                  <Abstract />
+                  <LegendURL height="20" width="20">
+                    <Format>image/png</Format>
+                    <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=MONUMENT_SAUVEGARDE_ARRETE_DEFINITIF" ns0:type="simple" />
+                  </LegendURL>
+                </Style>
+              </Layer>
+              <Layer noSubsets="0" opaque="0" queryable="1">
+                <Name>BDU:MONUMENT_SAUVEGARDE_OUVERTURE_DE_PROCEDURE</Name>
+                <Title>Protected monument (decree in progress)</Title>
+                <Abstract />
+                <KeywordList>
+                  <Keyword>VM_A40_PROT_CLASVGD</Keyword>
+                  <Keyword>features</Keyword>
+                </KeywordList>
+                <SRS>EPSG:31370</SRS>
+                <LatLonBoundingBox maxx="4.481395499187374" maxy="50.913596114462294" minx="4.2424703657955884" miny="50.76341280985816" />
+                <BoundingBox SRS="EPSG:31370" maxx="157995.282999992" maxy="178169.335842065" minx="141192.712000009" miny="161470.180842083" />
+                <Style>
+                  <Name>Patrimoine - Monument Sauvegarde Ouverture de procédure</Name>
+                  <Title>Monument Sauvegarde Ouverture de procédure</Title>
+                  <Abstract />
+                  <LegendURL height="20" width="20">
+                    <Format>image/png</Format>
+                    <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=MONUMENT_SAUVEGARDE_OUVERTURE_DE_PROCEDURE" ns0:type="simple" />
+                  </LegendURL>
+                </Style>
+              </Layer>
+              <Layer noSubsets="0" opaque="0" queryable="1">
+                <Name>BDU:ENSEMBLE_CLASSEMENT_ARRETE_DEFINITIF</Name>
+                <Title>Registered complex (final decree)</Title>
+                <Abstract />
+                <KeywordList>
+                  <Keyword>VM_A40_PROT_CLASVGD</Keyword>
+                  <Keyword>features</Keyword>
+                </KeywordList>
+                <SRS>EPSG:31370</SRS>
+                <LatLonBoundingBox maxx="4.481395499187374" maxy="50.913596114462294" minx="4.2424703657955884" miny="50.76341280985816" />
+                <BoundingBox SRS="EPSG:31370" maxx="157995.282999992" maxy="178169.335842065" minx="141192.712000009" miny="161470.180842083" />
+                <Style>
+                  <Name>Patrimoine - Ensemble Classement Arrêté définitif</Name>
+                  <Title>Ensemble Classement Arrêté définitif</Title>
+                  <Abstract />
+                  <LegendURL height="20" width="20">
+                    <Format>image/png</Format>
+                    <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=ENSEMBLE_CLASSEMENT_ARRETE_DEFINITIF" ns0:type="simple" />
+                  </LegendURL>
+                </Style>
+              </Layer>
+              <Layer noSubsets="0" opaque="0" queryable="1">
+                <Name>BDU:ENSEMBLE_CLASSEMENT_OUVERTURE_DE_PROCEDURE</Name>
+                <Title>Registered complex (decree in progress)</Title>
+                <Abstract />
+                <KeywordList>
+                  <Keyword>VM_A40_PROT_CLASVGD</Keyword>
+                  <Keyword>features</Keyword>
+                </KeywordList>
+                <SRS>EPSG:31370</SRS>
+                <LatLonBoundingBox maxx="4.481395499187374" maxy="50.913596114462294" minx="4.2424703657955884" miny="50.76341280985816" />
+                <BoundingBox SRS="EPSG:31370" maxx="157995.282999992" maxy="178169.335842065" minx="141192.712000009" miny="161470.180842083" />
+                <Style>
+                  <Name>Patrimoine - Ensemble Classement Ouverture de procédure</Name>
+                  <Title>Ensemble Classement Ouverture de procédure</Title>
+                  <Abstract />
+                  <LegendURL height="20" width="20">
+                    <Format>image/png</Format>
+                    <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=ENSEMBLE_CLASSEMENT_OUVERTURE_DE_PROCEDURE" ns0:type="simple" />
+                  </LegendURL>
+                </Style>
+              </Layer>
+              <Layer noSubsets="0" opaque="0" queryable="1">
+                <Name>BDU:ENSEMBLE_SAUVEGARDE_ARRETE_DEFINITIF</Name>
+                <Title>Protected complex (final decree)</Title>
+                <Abstract />
+                <KeywordList>
+                  <Keyword>VM_A40_PROT_CLASVGD</Keyword>
+                  <Keyword>features</Keyword>
+                </KeywordList>
+                <SRS>EPSG:31370</SRS>
+                <LatLonBoundingBox maxx="4.481395499187374" maxy="50.913596114462294" minx="4.2424703657955884" miny="50.76341280985816" />
+                <BoundingBox SRS="EPSG:31370" maxx="157995.282999992" maxy="178169.335842065" minx="141192.712000009" miny="161470.180842083" />
+                <Style>
+                  <Name>Patrimoine - Ensemble Sauvegarde Arrêté définitif</Name>
+                  <Title>Ensemble Sauvegarde Arrêté définitif</Title>
+                  <Abstract />
+                  <LegendURL height="20" width="20">
+                    <Format>image/png</Format>
+                    <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=ENSEMBLE_SAUVEGARDE_ARRETE_DEFINITIF" ns0:type="simple" />
+                  </LegendURL>
+                </Style>
+              </Layer>
+              <Layer noSubsets="0" opaque="0" queryable="1">
+                <Name>BDU:ENSEMBLE_SAUVEGARDE_OUVERTURE_DE_PROCEDURE</Name>
+                <Title>Protected complex (decree in progress)</Title>
+                <Abstract />
+                <KeywordList>
+                  <Keyword>VM_A40_PROT_CLASVGD</Keyword>
+                  <Keyword>features</Keyword>
+                </KeywordList>
+                <SRS>EPSG:31370</SRS>
+                <LatLonBoundingBox maxx="4.481395499187374" maxy="50.913596114462294" minx="4.2424703657955884" miny="50.76341280985816" />
+                <BoundingBox SRS="EPSG:31370" maxx="157995.282999992" maxy="178169.335842065" minx="141192.712000009" miny="161470.180842083" />
+                <Style>
+                  <Name>Patrimoine - Ensemble Sauvegarde Ouverture de procédure</Name>
+                  <Title>Ensemble Sauvegarde Ouverture de procédure</Title>
+                  <Abstract />
+                  <LegendURL height="20" width="20">
+                    <Format>image/png</Format>
+                    <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=ENSEMBLE_SAUVEGARDE_OUVERTURE_DE_PROCEDURE" ns0:type="simple" />
+                  </LegendURL>
+                </Style>
+              </Layer>
+              <Layer noSubsets="0" opaque="0" queryable="1">
+                <Name>BDU:SITE_CLASSEMENT_ARRETE_DEFINITIF</Name>
+                <Title>Registered site (final decree)</Title>
+                <Abstract />
+                <KeywordList>
+                  <Keyword>VM_A40_PROT_CLASVGD</Keyword>
+                  <Keyword>features</Keyword>
+                </KeywordList>
+                <SRS>EPSG:31370</SRS>
+                <LatLonBoundingBox maxx="4.481395499187374" maxy="50.913596114462294" minx="4.2424703657955884" miny="50.76341280985816" />
+                <BoundingBox SRS="EPSG:31370" maxx="157995.282999992" maxy="178169.335842065" minx="141192.712000009" miny="161470.180842083" />
+                <Style>
+                  <Name>Patrimoine - Site Classement Arrêté définitif</Name>
+                  <Title>Site Classement Arrêté définitif</Title>
+                  <Abstract />
+                  <LegendURL height="20" width="20">
+                    <Format>image/png</Format>
+                    <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=SITE_CLASSEMENT_ARRETE_DEFINITIF" ns0:type="simple" />
+                  </LegendURL>
+                </Style>
+              </Layer>
+              <Layer noSubsets="0" opaque="0" queryable="1">
+                <Name>BDU:SITE_CLASSEMENT_OUVERTURE_DE_PROCEDURE</Name>
+                <Title>Registered site (decree in progress)</Title>
+                <Abstract />
+                <KeywordList>
+                  <Keyword>VM_A40_PROT_CLASVGD</Keyword>
+                  <Keyword>features</Keyword>
+                </KeywordList>
+                <SRS>EPSG:31370</SRS>
+                <LatLonBoundingBox maxx="4.481395499187374" maxy="50.913596114462294" minx="4.2424703657955884" miny="50.76341280985816" />
+                <BoundingBox SRS="EPSG:31370" maxx="157995.282999992" maxy="178169.335842065" minx="141192.712000009" miny="161470.180842083" />
+                <Style>
+                  <Name>Patrimoine - Site Classement Ouverture de procédure</Name>
+                  <Title>Site Classement Ouverture de procédure</Title>
+                  <Abstract />
+                  <LegendURL height="20" width="20">
+                    <Format>image/png</Format>
+                    <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=SITE_CLASSEMENT_OUVERTURE_DE_PROCEDURE" ns0:type="simple" />
+                  </LegendURL>
+                </Style>
+              </Layer>
+              <Layer noSubsets="0" opaque="0" queryable="1">
+                <Name>BDU:SITE_SAUVEGARDE_ARRETE_DEFINITIF</Name>
+                <Title>Protected site (final decree)</Title>
+                <Abstract />
+                <KeywordList>
+                  <Keyword>VM_A40_PROT_CLASVGD</Keyword>
+                  <Keyword>features</Keyword>
+                </KeywordList>
+                <SRS>EPSG:31370</SRS>
+                <LatLonBoundingBox maxx="4.481395499187374" maxy="50.913596114462294" minx="4.2424703657955884" miny="50.76341280985816" />
+                <BoundingBox SRS="EPSG:31370" maxx="157995.282999992" maxy="178169.335842065" minx="141192.712000009" miny="161470.180842083" />
+                <Style>
+                  <Name>Patrimoine - Site Sauvegarde Arrêté définitif</Name>
+                  <Title>Site Sauvegarde Arrêté définitif</Title>
+                  <Abstract />
+                  <LegendURL height="20" width="20">
+                    <Format>image/png</Format>
+                    <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=SITE_SAUVEGARDE_ARRETE_DEFINITIF" ns0:type="simple" />
+                  </LegendURL>
+                </Style>
+              </Layer>
+              <Layer noSubsets="0" opaque="0" queryable="1">
+                <Name>BDU:SITE_SAUVEGARDE_OUVERTURE_DE_PROCEDURE</Name>
+                <Title>Protected site (decree in progress)</Title>
+                <Abstract />
+                <KeywordList>
+                  <Keyword>VM_A40_PROT_CLASVGD</Keyword>
+                  <Keyword>features</Keyword>
+                </KeywordList>
+                <SRS>EPSG:31370</SRS>
+                <LatLonBoundingBox maxx="4.481395499187374" maxy="50.913596114462294" minx="4.2424703657955884" miny="50.76341280985816" />
+                <BoundingBox SRS="EPSG:31370" maxx="157995.282999992" maxy="178169.335842065" minx="141192.712000009" miny="161470.180842083" />
+                <Style>
+                  <Name>Patrimoine - Site Sauvegarde Ouverture de procédure</Name>
+                  <Title>Site Sauvegarde Ouverture de procédure</Title>
+                  <Abstract />
+                  <LegendURL height="20" width="20">
+                    <Format>image/png</Format>
+                    <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=SITE_SAUVEGARDE_OUVERTURE_DE_PROCEDURE" ns0:type="simple" />
+                  </LegendURL>
+                </Style>
+              </Layer>
+              <Layer noSubsets="0" opaque="0" queryable="1">
+                <Name>BDU:SITE_ARCHEOLOGIQUE_CLASSEMENT_ARRETE_DEFINITIF</Name>
+                <Title>Registered archaeological site (final decree)</Title>
+                <Abstract />
+                <KeywordList>
+                  <Keyword>VM_A40_PROT_CLASVGD</Keyword>
+                  <Keyword>features</Keyword>
+                </KeywordList>
+                <SRS>EPSG:31370</SRS>
+                <LatLonBoundingBox maxx="4.481395499187374" maxy="50.913596114462294" minx="4.2424703657955884" miny="50.76341280985816" />
+                <BoundingBox SRS="EPSG:31370" maxx="157995.282999992" maxy="178169.335842065" minx="141192.712000009" miny="161470.180842083" />
+                <Style>
+                  <Name>Patrimoine - Site Archéologique Classement Arrêté définitif</Name>
+                  <Title>Site Archéologique Classement Arrêté définitif</Title>
+                  <Abstract />
+                  <LegendURL height="20" width="20">
+                    <Format>image/png</Format>
+                    <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=SITE_ARCHEOLOGIQUE_CLASSEMENT_ARRETE_DEFINITIF" ns0:type="simple" />
+                  </LegendURL>
+                </Style>
+              </Layer>
+              <Layer noSubsets="0" opaque="0" queryable="1">
+                <Name>BDU:SITE_ARCHEOLOGIQUE_CLASSEMENT_OUVERTURE_DE_PROCEDURE</Name>
+                <Title>Registered archaeological site (decree in progress)</Title>
+                <Abstract />
+                <KeywordList>
+                  <Keyword>VM_A40_PROT_CLASVGD</Keyword>
+                  <Keyword>features</Keyword>
+                </KeywordList>
+                <SRS>EPSG:31370</SRS>
+                <LatLonBoundingBox maxx="4.481395499187374" maxy="50.913596114462294" minx="4.2424703657955884" miny="50.76341280985816" />
+                <BoundingBox SRS="EPSG:31370" maxx="157995.282999992" maxy="178169.335842065" minx="141192.712000009" miny="161470.180842083" />
+                <Style>
+                  <Name>Patrimoine - Site Archéologique Classement Ouverture de procédure</Name>
+                  <Title>Site Archéologique Classement Ouverture de procédure</Title>
+                  <Abstract />
+                  <LegendURL height="20" width="20">
+                    <Format>image/png</Format>
+                    <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=SITE_ARCHEOLOGIQUE_CLASSEMENT_OUVERTURE_DE_PROCEDURE" ns0:type="simple" />
+                  </LegendURL>
+                </Style>
+              </Layer>
+              <Layer noSubsets="0" opaque="0" queryable="1">
+                <Name>BDU:SITE_ARCHEOLOGIQUE_SAUVEGARDE_ARRETE_DEFINITIF</Name>
+                <Title>Protected archaeological site (final decree)</Title>
+                <Abstract />
+                <KeywordList>
+                  <Keyword>VM_A40_PROT_CLASVGD</Keyword>
+                  <Keyword>features</Keyword>
+                </KeywordList>
+                <SRS>EPSG:31370</SRS>
+                <LatLonBoundingBox maxx="4.478169709989028" maxy="50.90437454523197" minx="4.248607806424558" miny="50.763399482792785" />
+                <BoundingBox SRS="EPSG:31370" maxx="157769.962" maxy="177143.49721064" minx="141622.696" miny="161467.996842084" />
+                <Style>
+                  <Name>Patrimoine - Site Archéologique Sauvegarde Arrêté définitif</Name>
+                  <Title>Site Archéologique Sauvegarde Arrêté définitif</Title>
+                  <Abstract />
+                  <LegendURL height="20" width="20">
+                    <Format>image/png</Format>
+                    <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=SITE_ARCHEOLOGIQUE_SAUVEGARDE_ARRETE_DEFINITIF" ns0:type="simple" />
+                  </LegendURL>
+                </Style>
+              </Layer>
+              <Layer noSubsets="0" opaque="0" queryable="1">
+                <Name>BDU:SITE_ARCHEOLOGIQUE_SAUVEGARDE_OUVERTURE_DE_PROCEDURE</Name>
+                <Title>Protected archaeological site (decree in progress)</Title>
+                <Abstract />
+                <KeywordList>
+                  <Keyword>VM_A40_PROT_CLASVGD</Keyword>
+                  <Keyword>features</Keyword>
+                </KeywordList>
+                <SRS>EPSG:31370</SRS>
+                <LatLonBoundingBox maxx="4.481395499187374" maxy="50.913596114462294" minx="4.2424703657955884" miny="50.76341280985816" />
+                <BoundingBox SRS="EPSG:31370" maxx="157995.282999992" maxy="178169.335842065" minx="141192.712000009" miny="161470.180842083" />
+                <Style>
+                  <Name>Patrimoine - Site Archéologique Sauvegarde Ouverture de procédure</Name>
+                  <Title>Site Archéologique Sauvegarde Ouverture de procédure</Title>
+                  <Abstract />
+                  <LegendURL height="20" width="20">
+                    <Format>image/png</Format>
+                    <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=SITE_ARCHEOLOGIQUE_SAUVEGARDE_OUVERTURE_DE_PROCEDURE" ns0:type="simple" />
+                  </LegendURL>
+                </Style>
+              </Layer>
+              <Layer noSubsets="0" opaque="0" queryable="1">
+                <Name>BDU_DMS_PROT:Prises_actes</Name>
+                <Title>Acknowledgements</Title>
+                <Abstract />
+                <KeywordList>
+                  <Keyword>A40_PROT_PRISEACT</Keyword>
+                  <Keyword>features</Keyword>
+                </KeywordList>
+                <SRS>EPSG:31370</SRS>
+                <LatLonBoundingBox maxx="4.479916592688879" maxy="50.9136537389242" minx="4.24247021276358" miny="50.763393168788134" />
+                <BoundingBox SRS="EPSG:31370" maxx="165088.0" maxy="185088.0" minx="140000.0" miny="160000.0" />
+                <Style>
+                  <Name>Prises_d_actes</Name>
+                  <Title>Prises d actes</Title>
+                  <Abstract />
+                  <LegendURL height="40" width="65">
+                    <Format>image/png</Format>
+                    <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Prises_actes" ns0:type="simple" />
+                  </LegendURL>
+                </Style>
+              </Layer>
+              <Layer noSubsets="0" opaque="0" queryable="1">
+                <Name>BDU_DMS_PROT:Arretes_de_non_classement</Name>
+                <Title>Non registration decree</Title>
+                <Abstract />
+                <KeywordList>
+                  <Keyword>A40_PROT_ARRNONCL</Keyword>
+                  <Keyword>features</Keyword>
+                </KeywordList>
+                <SRS>EPSG:31370</SRS>
+                <LatLonBoundingBox maxx="4.479916592688879" maxy="50.91365373892416" minx="4.24247021276358" miny="50.763393168788134" />
+                <BoundingBox SRS="EPSG:31370" maxx="165088.0" maxy="185088.0" minx="140000.0" miny="160000.0" />
+                <Style>
+                  <Name>Arretes_de_non_classement</Name>
+                  <Title>Non Registration decree</Title>
+                  <Abstract />
+                  <LegendURL height="40" width="65">
+                    <Format>image/png</Format>
+                    <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Arretes_de_non_classement" ns0:type="simple" />
+                  </LegendURL>
+                </Style>
+              </Layer>
+            </Layer>
             <Layer queryable="0">
               <Name>BDU:Inventaire</Name>
               <Title>Inventory</Title>
