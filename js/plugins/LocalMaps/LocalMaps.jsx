@@ -66,10 +66,10 @@ class LocalMaps extends React.Component {
             projection: this.props.map.projection,
             units: this.props.map.units,
             zoom: this.props.map.zoom,
-            mapOptions : {
-                "view" : {
-                    "resolutions" : [49.0, 42.0, 28.0, 21.0, 14.0, 7.0, 5.6, 3.5, 2.8, 2.1, 1.4, 0.7, 0.56, 0.28, 0.14, 0.07, 0.056, 0.035, 0.028, 0.014],
-                    "DPI" : 90.71428571428571
+            mapOptions: {
+                "view": {
+                    "resolutions": [49.0, 42.0, 28.0, 21.0, 14.0, 7.0, 5.6, 3.5, 2.8, 2.1, 1.4, 0.7, 0.56, 0.28, 0.14, 0.07, 0.056, 0.035, 0.028, 0.014],
+                    "DPI": 90.71428571428571
                 }
             }
         };
