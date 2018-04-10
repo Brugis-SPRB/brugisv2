@@ -9,7 +9,7 @@
 module.exports = {
     plugins: {
         MousePositionPlugin: require('../MapStore2/web/client/plugins/MousePosition'),
-        PrintPlugin: require('../MapStore2/web/client/plugins/Print'),
+        PrintPlugin: require('./plugins/BrugisPrint/Print'),
         TOCPlugin: require('../MapStore2/web/client/plugins/TOC'),
         BackgroundSelectorPlugin: require('../MapStore2/web/client/plugins/BackgroundSelector'),
         MeasureResultsPlugin: require('../MapStore2/web/client/plugins/MeasureResults'),
