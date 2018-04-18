@@ -5,6 +5,12 @@ const {connect} = require('react-redux');
 const LocaleUtils = require('../MapStore2/web/client/utils/LocaleUtils');
 const ol = require('openlayers');
 
+require('./proj/31370.js');
+require('./proj/3812.js');
+require('./proj/3035.js');
+
+const {createSelector} = require('reselect');
+
 require('rxjs/Rx');
 
 LocaleUtils.setSupportedLocales({
@@ -26,10 +32,15 @@ const startApp = () => {
     const StandardApp = require('./components/StandardApp');
     const {pages, pluginsDef, initialState, storeOpts, appEpics = {}} = require('./appConfig');
 
-    const StandardRouter = connect((state) => ({
-        locale: state.locale || {},
+    const routerSelector = createSelector(state => state.locale, (locale) => ({
+        locale: locale || {},
+        version: "no-version",
+        themeCfg: {
+            theme: "brugis"
+        },
         pages
-    }))(require('../MapStore2/web/client/components/app/StandardRouter'));
+    }));
+    const StandardRouter = connect(routerSelector)(require('../MapStore2/web/client/components/app/StandardRouter'));
 
     const appStore = require('./stores/store').bind(null, initialState, {
       maptype: require('../MapStore2/web/client/reducers/maptype'),
