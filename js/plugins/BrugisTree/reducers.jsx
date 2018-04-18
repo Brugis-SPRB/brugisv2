@@ -10,7 +10,7 @@ const SOURCES_DICT = {
     'AGIV WMS - Historische kaarten': "http://geoservices.informatievlaanderen.be/raadpleegdiensten/histcart/wms",
     'CIRB WMS - Geoserver': "http://geoservices-urbis.irisnet.be/geoserver/ows",
     'STIB WMS - Geoserver': "http://gis.irisnet.be/geoserver/stib_mivb/wms",
-    'Bruxelles Mobilité WMS - Geoserver': "http://data-mobility.irisnet.be/geoserver/ows",
+    'Bruxelles Mobilité WMS - Geoserver': "http://data-mobility.irisnet.be/geoserver/bm_inspire_en/ows",
     'IBGE WMS - Mapserver': "http://wms.ibgebim.be/ibgewms",
     'default': EnvUtils.getBrugisGeoserverUrl()
 };
