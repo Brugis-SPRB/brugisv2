@@ -51,10 +51,10 @@
             "stylesRefreshList": "Actualiser la liste des styles",
             "format": "Format",
             "delete": "Effacer",
-            "deleteLayer":"Supprimer le calque",
+            "deleteLayer":"Supprimer la couche",
             "deleteLayerMessage": "Voulez-vous vraiment supprimer cette couche?",
             "confirmDelete": "Êtes-vous sûr?",
-            "featureTypeError": "Impossible de charger les attributs de calque",
+            "featureTypeError": "Impossible de charger les attributs de la couche",
             "elevation": "élévation",
             "titleTranslations": "Traductions du titre",
             "groupProperties": "Propriétés du groupe",
@@ -227,7 +227,7 @@
             }
         },
         "toc": {
-            "toggleLayerVisibility": "Activer / désactiver la visibilité du calque",
+            "toggleLayerVisibility": "Activer / désactiver la visibilité de la couche",
             "displayLegendAndTools": "Afficher la légende et les outils",
             "zoomToLayerExtent": "Zoomer sur l'étendue du calque",
             "addLayer": "Ajouter la couche",
