@@ -277,7 +277,7 @@ module.exports = {
         Toolbar: {
             name: 'BrugisSurvey',
             tooltip: "brugisSurvey.tooltip",
-            title: 'BrugisSurvey',
+            // title: 'BrugisSurvey',
             icon: <img src={Urbanalyseicon} height="47" width="38"></img>,
             panel: true,
             // tool: true,
