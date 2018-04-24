@@ -303,6 +303,9 @@
         "streetview":{
             "tooltip": "Get a Google streetview on map"
         },
+        "brugisSurvey":{
+            "tooltip": "Urbanalysis tool"
+        },
         "expandtoolbar": {
             "tooltip": "Expand / Collapse"
         },
