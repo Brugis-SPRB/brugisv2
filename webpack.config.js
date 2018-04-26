@@ -14,7 +14,7 @@ module.exports = {
     entry: assign({
         'webpack-dev-server': 'webpack-dev-server/client?http://0.0.0.0:8081', // WebpackDevServer host and port
         'webpack': 'webpack/hot/only-dev-server', // "only" prevents reload on syntax errors
-        'brugis': path.join(__dirname, "js", "app")
+        'brugis': ['babel-polyfill', path.join(__dirname, "js", "app")] //babel polyfill for ie11
     }, themeEntries),
     output: {
         path: path.join(__dirname, "dist"),
