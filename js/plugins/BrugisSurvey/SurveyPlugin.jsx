@@ -276,7 +276,7 @@ module.exports = {
     BrugisSurveyPlugin: assign(BrugisSurveyPlugin, {
         Toolbar: {
             name: 'BrugisSurvey',
-            tooltip: "BrugisSurvey",
+            tooltip: "survey.tooltip",
             title: 'BrugisSurvey',
             icon: <img src={Urbanalyseicon} height="47" width="38"></img>,
             panel: true,

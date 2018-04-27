@@ -278,6 +278,9 @@
         "streetview":{
             "tooltip": "Google streetview op de kaart"
         },
+        "survey":{
+            "tooltip": "Urbanalyse"
+        },
         "expandtoolbar": {
             "tooltip": "Vergroten / Verkleinen"
         },

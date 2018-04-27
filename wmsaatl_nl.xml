@@ -146,7 +146,7 @@
       <Title>All</Title>
       <Name>All</Name>
       <Layer>
-        <Title>Brussel Stedelijke Ontwikkeling</Title>
+        <Title>Brussel Stebenbouw en Erfgoed</Title>
         <Abstract>A compliant implementation of WMS plus most of the SLD extension (dynamic styling). Can also generate PDF, SVG, KML, GeoRSS</Abstract>
         <SRS>EPSG:WGS84(DD)</SRS>
         <SRS>EPSG:4326</SRS>
