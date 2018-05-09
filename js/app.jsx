@@ -4,6 +4,7 @@ const ReactDOM = require('react-dom');
 const {connect} = require('react-redux');
 const LocaleUtils = require('../MapStore2/web/client/utils/LocaleUtils');
 const ol = require('openlayers');
+const proj4 = require('proj4').default;
 
 require('./proj/31370.js');
 require('./proj/3812.js');
@@ -58,7 +59,7 @@ const startApp = () => {
         printingEnabled: true,
         themeCfg: {theme: "brugis"}
     };
-
+    /*
     var lb72Projection = new ol.proj.Projection({
         code: 'EPSG:31370',
         // extent: [140000.0,160000.0,165088.0,185088.0],
@@ -82,6 +83,12 @@ const startApp = () => {
 
     ol.proj.addProjection(lb72Projection);
     ol.proj.addProjection(lb08Projection);
+    */
+
+
+    ol.proj.setProj4(proj4);
+    ol.proj.get('EPSG:31370').setExtent([0, 0,300000, 300000]);
+    ol.proj.get('EPSG:3812').setExtent([640000, 661000, 658000, 679000]);
 
     ReactDOM.render(
         <StandardApp {...appConfig}/>,

@@ -213,7 +213,7 @@ class extends React.Component {
         ;
     }
 });
-const {searchEpic, searchItemSelected} = require('./epic');
+const {searchEpic, searchItemSelected} = require('../../../MapStore2/web/client/epics/search');
 
 module.exports = {
     SearchPlugin: assign(SearchPlugin, {

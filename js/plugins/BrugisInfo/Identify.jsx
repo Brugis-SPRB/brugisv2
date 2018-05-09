@@ -129,7 +129,7 @@ class Identify extends React.Component {
             onChangeDrawingStatus: () => {},
             onEndDrawing: () => {}
     };
-
+/*
     constructor(props) {
         super(props);
     }
@@ -169,6 +169,56 @@ class Identify extends React.Component {
         this.props.purgeResults();
         this.props.onChangeDrawingStatus("clean", null, 'BrugisInfo');
     }
+*/
+    componentDidMount() {
+        if (this.props.enabled) {
+            this.props.changeMousePointer('pointer');
+        }
+    }
+    componentWillReceiveProps(newProps) {
+        if (this.needsRefresh(newProps)) {
+
+            if (!newProps.point.modifiers || newProps.point.modifiers.ctrl !== true || !newProps.allowMultiselection) {
+                this.props.purgeResults();
+            }
+            
+            const queryableLayers = newProps.layers
+                .filter(newProps.queryableLayersFilter)
+                .filter(newProps.layer ? l => l.id === newProps.layer : () => true);
+            queryableLayers.forEach((layer) => {
+                const {url, request, metadata} = this.props.buildRequest(layer, newProps);
+                if (url) {
+                    this.props.sendRequest(url, request, metadata, this.filterRequestParams(layer));
+                } else {
+                    this.props.localRequest(layer, request, metadata);
+                }
+
+            });
+            if (queryableLayers.length === 0) {
+                this.props.noQueryableLayers();
+            } else {
+                if (!newProps.layer) {
+                    this.props.showMarker();
+                } else {
+                    this.props.hideMarker();
+                }
+            }
+
+        }
+
+        if (newProps.enabled && !this.props.enabled) {
+            this.props.changeMousePointer('pointer');
+        } else if (!newProps.enabled && this.props.enabled) {
+            this.props.changeMousePointer('auto');
+            this.props.hideMarker();
+            this.props.purgeResults();
+        }
+    }
+
+    onModalHiding = () => {
+        this.props.hideMarker();
+        this.props.purgeResults();
+    };
 
     renderHeader(missing) {
         return (
@@ -247,18 +297,20 @@ class Identify extends React.Component {
         return null;
     }
 
-    needsRefresh(props) {
+    needsRefresh = (props) => {
         if (props.enabled && props.point && props.point.pixel) {
-            if (!this.props.point.pixel || this.props.point.pixel.x !== props.point.pixel.x ||
-                    this.props.point.pixel.y !== props.point.pixel.y ) {
+            if (!this.props.point || !this.props.point.pixel ||
+                this.props.point.pixel.x !== props.point.pixel.x ||
+                this.props.point.pixel.y !== props.point.pixel.y ) {
                 return true;
             }
-            if (!this.props.point.pixel || props.point.pixel && this.props.format !== props.format) {
+            if (!this.props.point || !this.props.point.pixel || props.point.pixel && this.props.format !== props.format) {
                 return true;
             }
         }
         return false;
-    }
+    };
+
 
    filterRequestParams(layer) {
         let includeOpt = this.props.includeOptions || [];

@@ -36,8 +36,8 @@ class ResultList extends React.Component {
         let wgs84center = CoordinatesUtils.reproject([item.point.x, item.point.y],'EPSG:31370', 'EPSG:4326');
 
         var newCenter = {
-            'x': wgs84center[0],
-            'y': wgs84center[1],
+            'x': wgs84center.x,
+            'y': wgs84center.y,
             'center' : wgs84center,
             'crs': 'EPSG:4326',
             'bbox': CoordinatesUtils.reprojectBbox(bbox, "EPSG:31370", "EPSG:4326")
@@ -45,7 +45,7 @@ class ResultList extends React.Component {
 
         this.props.onItemClick(newCenter, this.props.mapConfig);
 
-        this.props.addMarker({lat: item.point.y, lng: item.point.x});
+        this.props.addMarker({lat: wgs84center.y, lng: wgs84center.x});
         this.props.afterItemClick();
     };
 

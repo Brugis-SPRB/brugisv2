@@ -12,7 +12,7 @@ const {createSelector} = require('reselect');
 const {mapSelector} = require('../../../MapStore2/web/client/selectors/map');
 const {layersSelector} = require('../../../MapStore2/web/client/selectors/layers');
 
-const {getFeatureInfo, getVectorInfo, purgeMapInfoResults, showMapinfoMarker, hideMapinfoMarker, showMapinfoRevGeocode, hideMapinfoRevGeocode, noQueryableLayers, clearWarning} = require('../../../MapStore2/web/client/actions/mapInfo');
+const {getFeatureInfo, getVectorInfo, purgeMapInfoResults, showMapinfoMarker, hideMapinfoMarker, showMapinfoRevGeocode, hideMapinfoRevGeocode, noQueryableLayers, clearWarning, toggleMapInfoState} = require('../../../MapStore2/web/client/actions/mapInfo');
 const {changeMousePointer} = require('../../../MapStore2/web/client/actions/map');
 const {changeMapInfoFormat} = require('../../../MapStore2/web/client/actions/mapInfo');
 
@@ -111,6 +111,9 @@ const FeatureInfoFormatSelector = connect((state) => ({
     onInfoFormatChange: changeMapInfoFormat
 })(require("../../../MapStore2/web/client/components/misc/FeatureInfoFormatSelector"));
 
+
+const {closeFeatureGridFromIdentifyEpic, changeMapPointer, onMapClick} = require('../../../MapStore2/web/client/epics/identify');
+
 module.exports = {
     IdentifyPlugin: assign(IdentifyPlugin, {
         Toolbar: {
@@ -119,8 +122,12 @@ module.exports = {
             tooltip: "info.tooltip",
             icon: <img src={Gfiicon} height="45" width="38"></img>,
             help: <Message msgId="helptexts.infoButton"/>,
-            // toggle: true
-            exclusive: true
+
+            action: toggleMapInfoState,
+            selector: (state) => ({
+                bsStyle: state.mapInfo && state.mapInfo.enabled ? "success" : "primary",
+                active: !!(state.mapInfo && state.mapInfo.enabled)
+            })
         },
         Settings: {
             tool: <FeatureInfoFormatSelector
@@ -132,6 +139,9 @@ module.exports = {
     }),
     reducers: {mapInfo: require('../../../MapStore2/web/client/reducers/mapInfo')},
     epics: {
-      purgeHightlight
+      purgeHightlight,
+      closeFeatureGridFromIdentifyEpic,
+      changeMapPointer,
+      onMapClick
     }
 };
