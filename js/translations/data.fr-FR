@@ -305,11 +305,7 @@
         "streetview":{
             "tooltip": "Obtenez Google streetview sur la carte"
         },
-<<<<<<< HEAD
-        "survey":{
-=======
         "brugisSurvey":{
->>>>>>> master
             "tooltip": "Outil d'urbanalyse"
         },
         "expandtoolbar": {

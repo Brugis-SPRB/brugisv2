@@ -278,13 +278,8 @@
         "streetview":{
             "tooltip": "Google streetview op de kaart"
         },
-<<<<<<< HEAD
-        "survey":{
-            "tooltip": "Urbanalyse"
-=======
         "brugisSurvey":{
             "tooltip": "Urbanalysis gereedschap"
->>>>>>> master
         },
         "expandtoolbar": {
             "tooltip": "Vergroten / Verkleinen"
