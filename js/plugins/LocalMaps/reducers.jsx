@@ -6,6 +6,10 @@ const save = (name, newstate) => {
     localStorage.setItem(LOCAL_MAPS_PREFIX + name, newstate);
 };
 
+const del = (name) => {
+    localStorage.removeItem(LOCAL_MAPS_PREFIX + name);
+};
+
 function localMaps(state = null, action) {
     switch (action.type) {
         case LOCAL_MAPS_SAVE:
@@ -14,9 +18,8 @@ function localMaps(state = null, action) {
                 localMap: true
             });
         case LOCAL_MAPS_DEL:
-            return assign({}, state, {
-                localMap: true
-            });
+            del(action.name);
+            return state;
         default:
             return state;
     }

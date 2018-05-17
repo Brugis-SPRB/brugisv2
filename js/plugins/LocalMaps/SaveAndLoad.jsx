@@ -108,6 +108,7 @@ const SaveButton = React.createClass({
     },
     del() {
         this.props.onDel(this.state.delname);
+        this.setState({key: Math.random()});
     }
 });
 

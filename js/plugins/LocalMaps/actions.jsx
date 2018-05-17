@@ -15,10 +15,11 @@ const loadMapState = (name) => {
                 dispatch(configureMap(obj, name));
             }
         } else {
-            dispatch(configureError("State not found in localStorage"));
+              dispatch(configureError("State not found in localStorage"));
         }
     };
 };
+
 
 function saveMapState(name, currentstate) {
     return {
@@ -29,17 +30,9 @@ function saveMapState(name, currentstate) {
 }
 
 const delMapState = (name) => {
-    return (dispatch) => {
-        const deleted = localStorage.removeItem(LOCAL_MAPS_PREFIX + name);
-        if (deleted) {
-            return {
-                type: LOCAL_MAPS_del,
-                name,
-                currentstate
-            };
-        } else {
-            dispatch(configureError("State not found in localStorage"));
-        }
+    return {
+        type: LOCAL_MAPS_DEL,
+        name
     };
 };
 
