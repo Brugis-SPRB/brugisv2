@@ -18,7 +18,7 @@ const selector = createSelector(mapSelector, stateSelector, layersSelector, (map
     toolbarActive: state.controls.toolbar && state.controls.toolbar.active === "LocalMaps",
     currentZoomLvl: map && map.zoom,
     map,
-    mapId: map && map.mapId,
+    mapId: map && map.mapId && map.mapId || "tagada",
     layers
 }));
 

@@ -7,6 +7,8 @@ const purgeHightlight = (action$) =>
       .switchMap(() => {
           return Rx.Observable.of(changeDrawingStatus("clean", null, 'BrugisInfo'));
       });
+
+
 module.exports = {
     purgeHightlight
 };
