@@ -2,6 +2,7 @@
 
 const LOCAL_MAPS_SAVE = 'LOCAL_MAPS_SAVE';
 const LOCAL_MAPS_LOAD = 'LOCAL_MAPS_LOAD';
+const LOCAL_MAPS_DEL = 'LOCAL_MAPS_DEL';
 const {configureMap, configureError} = require('../../../MapStore2/web/client/actions/config');
 const LOCAL_MAPS_PREFIX = 'mapstore.localmaps.';
 
@@ -27,9 +28,26 @@ function saveMapState(name, currentstate) {
     };
 }
 
+const delMapState = (name) => {
+    return (dispatch) => {
+        const deleted = localStorage.removeItem(LOCAL_MAPS_PREFIX + name);
+        if (deleted) {
+            return {
+                type: LOCAL_MAPS_del,
+                name,
+                currentstate
+            };
+        } else {
+            dispatch(configureError("State not found in localStorage"));
+        }
+    };
+};
+
 module.exports = {
     LOCAL_MAPS_SAVE,
     LOCAL_MAPS_LOAD,
+    LOCAL_MAPS_DEL,
     saveMapState,
-    loadMapState
+    loadMapState,
+    delMapState
 };

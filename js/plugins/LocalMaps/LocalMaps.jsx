@@ -2,7 +2,7 @@ const React = require('react');
 const PropTypes = require('prop-types');
 const assign = require('object-assign');
 const {createSelector} = require('reselect');
-var {saveMapState, loadMapState} = require('./actions');
+var {saveMapState, loadMapState, delMapState} = require('./actions');
 const SaveAndLoad = require('./SaveAndLoad');
 const {connect} = require('react-redux');
 const {Glyphicon} = require('react-bootstrap');
@@ -27,6 +27,7 @@ class LocalMaps extends React.Component {
         expanded: PropTypes.bool,
         onStateSave: PropTypes.func,
         onStateLoad: PropTypes.func,
+        onStateDel: PropTypes.func,
         mapId: PropTypes.string,
         map: PropTypes.object,
         layers: PropTypes.array,
@@ -48,7 +49,7 @@ class LocalMaps extends React.Component {
                     <Modal.Title id="contained-modal-title-sm">Save or load Maps</Modal.Title>
                   </Modal.Header>
                   <Modal.Body>
-                    <SaveAndLoad onSave={this.saveMap} onLoad={this.props.onStateLoad}/>
+                    <SaveAndLoad onSave={this.saveMap} onLoad={this.props.onStateLoad} onDel={this.props.onStateDel}/>
                   </Modal.Body>
                   <Modal.Footer>
                     <Button onClick={this.close}>Close</Button>
@@ -100,6 +101,7 @@ const LocalMapsPlugin = connect(selector, {
     toggleControl: toggleControl.bind(null, 'LocalMaps', null),
     onStateSave: saveMapState,
     onStateLoad: loadMapState,
+    onStateDel: delMapState,
     onClose: toggleControl.bind(null, 'LocalMaps', null),
     onCloseToolBar: setControlProperty.bind(null, 'toolbar', 'active', null)
 })(LocalMaps);

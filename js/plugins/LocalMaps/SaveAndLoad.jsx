@@ -13,18 +13,21 @@ const {Button, Form, FormGroup, FormControl, InputGroup} = require('react-bootst
 const SaveButton = React.createClass({
     propTypes: {
         onSave: PropTypes.func,
-        onLoad: PropTypes.func
+        onLoad: PropTypes.func,
+        onDel: PropTypes.func
     },
     getDefaultProps() {
         return {
             onSave: () => {},
-            onLoad: () => {}
+            onLoad: () => {},
+            onDel: () => {}
         };
     },
     getInitialState() {
         return {
             savename: '',
-            loadname: ''
+            loadname: '',
+            delname: ''
         };
     },
     onChangeSaveName(e) {
@@ -32,6 +35,9 @@ const SaveButton = React.createClass({
     },
     onChangeLoadName(e) {
         this.setState({loadname: e.target.options[e.target.selectedIndex].value});
+    },
+    onChangeDelName(e) {
+        this.setState({delname: e.target.options[e.target.selectedIndex].value});
     },
     renderSaved() {
         return [<option key="---" value="">---</option>, ...Object.keys(localStorage).filter((key) => key.indexOf('mapstore.localmaps.') === 0)
@@ -68,6 +74,18 @@ const SaveButton = React.createClass({
                         </Button>
                       </InputGroup.Button>
                   </InputGroup>
+                  <InputGroup>
+                      <FormControl componentClass="select" placeholder="Map Name" onChange={this.onChangeDelName}>
+                          {this.renderSaved()}
+                      </FormControl>
+                      <InputGroup.Button>
+                        <Button onClick={this.del}
+                            style={this.buttonStyle(this.state.delname === '')}
+                            disabled={this.state.delname === ''}>
+                            del
+                        </Button>
+                      </InputGroup.Button>
+                  </InputGroup>
                 </FormGroup>
              </Form>
             </div>);
@@ -87,6 +105,9 @@ const SaveButton = React.createClass({
     },
     save() {
         this.props.onSave(this.state.savename);
+    },
+    del() {
+        this.props.onDel(this.state.delname);
     }
 });
 
