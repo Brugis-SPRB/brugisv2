@@ -59,32 +59,6 @@ const startApp = () => {
         printingEnabled: true,
         themeCfg: {theme: "brugis"}
     };
-    /*
-    var lb72Projection = new ol.proj.Projection({
-        code: 'EPSG:31370',
-        // extent: [140000.0,160000.0,165088.0,185088.0],
-         extent: [
-           0, 0,
-           300000, 300000
-       ],
-       units: "m"
-    });
-
-    var lb08Projection = new ol.proj.Projection({
-        code: 'EPSG:3812',
-        // extent: [140000.0,160000.0,165088.0,185088.0],
-         extent: [
-           640000, 661000,
-           658000, 679000
-       ],
-       units: "m"
-    });
-
-
-    ol.proj.addProjection(lb72Projection);
-    ol.proj.addProjection(lb08Projection);
-    */
-
 
     ol.proj.setProj4(proj4);
     ol.proj.get('EPSG:31370').setExtent([0, 0,300000, 300000]);
