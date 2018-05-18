@@ -12,7 +12,7 @@ const loadMapState = (name) => {
         if (loaded) {
             const obj = JSON.parse(loaded);
             if (obj) {
-                dispatch(configureMap(obj, name));
+                dispatch(configureMap(obj, 0));
             }
         } else {
               dispatch(configureError("State not found in localStorage"));
