@@ -340,10 +340,6 @@
 										 "position": 2
 									}
 							 }
-						}, {
-                "name": "TOCItemsSettings"
-            }, {
-								"name" : "details"
 						},
             {
                "name": "Identify",
