@@ -289,7 +289,7 @@
 									 }
 								 }
 							 }
-						},"MapFooter",
+						},"MapFooter","BestEffort",
             {
                 "name" : "BrugisTree",
                  "hide" : true,
