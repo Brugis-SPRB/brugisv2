@@ -49,7 +49,7 @@ class LocalMaps extends React.Component {
                     <Modal.Title id="contained-modal-title-sm">Save or load Maps</Modal.Title>
                   </Modal.Header>
                   <Modal.Body>
-                    <SaveAndLoad onSave={this.saveMap} onLoad={this.props.onStateLoad} onDel={this.props.onStateDel}/>
+                    <SaveAndLoad onSave={this.saveMap} onLoad={this.props.onStateLoad} onDel={this.props.onStateDel} onImport={this.props.onStateSave}/>
                   </Modal.Body>
                   <Modal.Footer>
                     <Button onClick={this.close}>Close</Button>

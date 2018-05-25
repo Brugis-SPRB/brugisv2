@@ -1,5 +1,4 @@
 
-
 const LOCAL_MAPS_SAVE = 'LOCAL_MAPS_SAVE';
 const LOCAL_MAPS_LOAD = 'LOCAL_MAPS_LOAD';
 const LOCAL_MAPS_DEL = 'LOCAL_MAPS_DEL';
@@ -19,7 +18,6 @@ const loadMapState = (name) => {
         }
     };
 };
-
 
 function saveMapState(name, currentstate) {
     return {
