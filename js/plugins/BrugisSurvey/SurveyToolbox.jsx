@@ -89,6 +89,13 @@ var SurveyToolBox = React.createClass({
         }
     },
     selectParcel() {
+        /* Let stop drawing tool  before activating select parcel*/
+        let initalLayer = [];
+        if (this.props.spatialField && this.props.spatialField.geometries && this.props.spatialField.geometries.length > 0) {
+            initalLayer = initalLayer.concat(this.props.spatialField.geometries);
+        }
+        this.props.onChangeDrawingStatus("stop", 'Polygon', 'BrugisSurvey', initalLayer);
+
         this.props.onBrugisSelectParcelToggle();
     },
     deleteDrawing() {
