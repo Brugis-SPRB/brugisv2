@@ -14,7 +14,7 @@ const loadMapState = (name) => {
                 dispatch(configureMap(obj, 0));
             }
         } else {
-              dispatch(configureError("State not found in localStorage"));
+            dispatch(configureError("State not found in localStorage"));
         }
     };
 };

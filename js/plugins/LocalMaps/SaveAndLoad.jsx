@@ -1,13 +1,13 @@
 
 const React = require('react');
 const PropTypes = require('prop-types');
-const {Button, Form, FormGroup, FormControl, InputGroup, ControlLabel, Label} = require('react-bootstrap');
+const {Button, Form, FormGroup, FormControl, InputGroup, ControlLabel} = require('react-bootstrap');
 const FileSaver = require('file-saver');
 const LOCAL_MAPS_PREFIX = 'mapstore.localmaps.';
 const Message = require('../../../MapStore2/web/client/plugins/locale/Message');
 
 class SaveButton extends React.Component {
-  
+
     static propTypes = {
         onSave: PropTypes.func,
         onLoad: PropTypes.func,
@@ -23,11 +23,11 @@ class SaveButton extends React.Component {
     }
 
     constructor(props) {
-      super(props);
-      this.state = {
-        savename: '',
-        loadname: ''
-      };
+        super(props);
+        this.state = {
+          savename: '',
+          loadname: ''
+        };
     }
 
     onChangeSaveName(e) {
@@ -128,20 +128,20 @@ class SaveButton extends React.Component {
     }
 
     exportMap() {
-      const loaded = localStorage.getItem(LOCAL_MAPS_PREFIX + this.state.loadname);
-      var blob = new Blob([loaded], {type: "application/json;charset=utf-8"});
-      FileSaver.saveAs(blob, this.state.loadname +".brugis");
+        const loaded = localStorage.getItem(LOCAL_MAPS_PREFIX + this.state.loadname);
+        var blob = new Blob([loaded], {type: "application/json;charset=utf-8"});
+        FileSaver.saveAs(blob, this.state.loadname + ".brugis");
     }
 
     importMap(event) {
-      var fr = new FileReader();
-      var filename = event.target.files[0].name;
-      fr.onload = (e) => {
-        this.props.onImport(filename, e.target.result);
-        this.setState({key: Math.random()});
-      };
-      fr.readAsText(event.target.files[0]);
+        var fr = new FileReader();
+        var filename = event.target.files[0].name;
+        fr.onload = (e) => {
+            this.props.onImport(filename, e.target.result);
+            this.setState({key: Math.random()});
+        };
+        fr.readAsText(event.target.files[0]);
     }
-};
+}
 
 module.exports = SaveButton;

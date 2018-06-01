@@ -181,7 +181,7 @@ class Identify extends React.Component {
             if (!newProps.point.modifiers || newProps.point.modifiers.ctrl !== true || !newProps.allowMultiselection) {
                 this.props.purgeResults();
             }
-            
+
             const queryableLayers = newProps.layers
                 .filter(newProps.queryableLayersFilter)
                 .filter(newProps.layer ? l => l.id === newProps.layer : () => true);
