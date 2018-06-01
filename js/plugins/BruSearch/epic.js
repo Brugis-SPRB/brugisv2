@@ -105,7 +105,7 @@ const searchItemSelected = action$ =>
                 let newZoom = mapUtils.getZoomForExtent(bbox, mapSize, 0, 21, null);
 
                 // center by the max. extent defined in the map's config
-                let newCenter = mapUtils.getCenterForExtent(bbox, "EPSG:4326");
+                // let newCenter = mapUtils.getCenterForExtent(bbox, "EPSG:4326");
                 let actions = [
                     changeMapView(item.center, newZoom, {
                         bounds: {

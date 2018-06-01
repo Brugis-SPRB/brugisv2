@@ -2,11 +2,11 @@
 var React = require('react');
 const PropTypes = require('prop-types');
 var UrbisResult = require('./UrbisResult');
-const mapUtils = require('../../../MapStore2/web/client/utils/MapUtils');
+// const mapUtils = require('../../../MapStore2/web/client/utils/MapUtils');
 const CoordinatesUtils = require('../../../MapStore2/web/client/utils/CoordinatesUtils');
 const I18N = require('../../../MapStore2/web/client/components/I18N/I18N');
-const ol = require('openlayers');
-const proj4js = require('proj4').default;
+// const ol = require('openlayers');
+// const proj4js = require('proj4').default;
 
 
 class ResultList extends React.Component {
@@ -29,16 +29,16 @@ class ResultList extends React.Component {
 
         var bbox = [parseFloat(item.extent.xmin), parseFloat(item.extent.ymin), parseFloat(item.extent.xmax), parseFloat(item.extent.ymax)];
         // zoom by the max. extent defined in the map's config
-        var mapSize = this.props.mapConfig.size;
+        // var mapSize = this.props.mapConfig.size;
 
-        var newZoom = mapUtils.getZoomForExtent(CoordinatesUtils.reprojectBbox(bbox, "EPSG:31370", this.props.mapConfig.projection), mapSize, 0, 21, null);
+        // var newZoom = mapUtils.getZoomForExtent(CoordinatesUtils.reprojectBbox(bbox, "EPSG:31370", this.props.mapConfig.projection), mapSize, 0, 21, null);
 
-        let wgs84center = CoordinatesUtils.reproject([item.point.x, item.point.y],'EPSG:31370', 'EPSG:4326');
+        let wgs84center = CoordinatesUtils.reproject([item.point.x, item.point.y], 'EPSG:31370', 'EPSG:4326');
 
         var newCenter = {
             'x': wgs84center.x,
             'y': wgs84center.y,
-            'center' : wgs84center,
+            'center': wgs84center,
             'crs': 'EPSG:4326',
             'bbox': CoordinatesUtils.reprojectBbox(bbox, "EPSG:31370", "EPSG:4326")
         };
