@@ -58,7 +58,7 @@ class SaveButton extends React.Component {
                           style={this.buttonStyle(this.state.savename === '')}
                           disabled={this.state.savename === ''}
                         >
-                        <Message msgId="Save"/>
+                        <Message msgId="save"/>
                         </Button>
                     </InputGroup.Button>
                   </InputGroup>
@@ -70,22 +70,22 @@ class SaveButton extends React.Component {
                         <Button onClick={this.load.bind(this)}
                             style={this.buttonStyle(this.state.loadname === '')}
                             disabled={this.state.loadname === ''}>
-                            <Message msgId="Load"/>
+                            <Message msgId="load"/>
                         </Button>
                         <Button onClick={this.del.bind(this)}
                             style={this.buttonStyle(this.state.loadname === '')}
                             disabled={this.state.loadname === ''}>
-                            <Message msgId="Del"/>
+                            <Message msgId="delete"/>
                         </Button>
                         <Button onClick={this.exportMap.bind(this)}
                             style={this.buttonStyle(this.state.loadname === '')}
                             disabled={this.state.loadname === ''}>
-                            <Message msgId="Export"/>
+                            <Message msgId="export"/>
                         </Button>
                         <Button
                           title="Import Map"
                         >
-                          <ControlLabel htmlFor="fileUpload" style={{ cursor: "pointer" }}><Message msgId="Import"/>
+                          <ControlLabel htmlFor="fileUpload" style={{ cursor: "pointer" }}><Message msgId="import"/>
                               <FormControl
                                   id="fileUpload"
                                   type="file"
