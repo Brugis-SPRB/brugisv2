@@ -18,7 +18,8 @@ const BrugisTree = React.createClass({
         onLayerToggle: PropTypes.func,
         treenodes: PropTypes.array,
         layers: PropTypes.array,
-        currentLocale: PropTypes.string
+        currentLocale: PropTypes.string,
+        serverMappingUrl: PropTypes.array
     },
     getDefaultProps() {
         return {
@@ -31,7 +32,7 @@ const BrugisTree = React.createClass({
     },
     componentWillMount() {
         if (!this.props.treenodes || this.props.treenodes.length < 1) {
-            this.props.loadTreeData(this.props.currentLocale);
+            this.props.loadTreeData(this.props.currentLocale, this.props.serverMappingUrl);
         }
     },
     render() {

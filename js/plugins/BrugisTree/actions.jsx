@@ -9,10 +9,11 @@ const BRUGIS_TREE_LOADED = 'BRUGIS_TREE_LOADED';
 const BRUGIS_TREE_LOAD_ERROR = 'BRUGIS_TREE_LOAD_ERROR';
 const BRUGIS_TREE_NODE_TOGGLE = 'BRUGIS_TREE_NODE_TOGGLE';
 
-function brugisTreeLoaded(info) {
+function brugisTreeLoaded(info, serverMappingUrl) {
     return {
         type: BRUGIS_TREE_LOADED,
-        info
+        info,
+        serverMappingUrl
     };
 }
 function brugisTreeLoadError(error) {
@@ -50,19 +51,19 @@ function getXmlName(currentLocale) {
     }
 }
 
-function loadBrugisTreeConfig(currentLocale) {
+function loadBrugisTreeConfig(currentLocale, serverMappingUrl) {
     var localXml = getXmlName(currentLocale);
     return (dispatch) => {
         dispatch(brugisTreeLoadStart());
         return axios.get(localXml).then((response) => {
             if (typeof response.data === 'object') {
-                dispatch(brugisTreeLoaded(response.data));
+                dispatch(brugisTreeLoaded(response.data, serverMappingUrl));
             } else {
                 try {
                     require.ensure(['../../../MapStore2/web/client/utils/ogc/WMS'], () => {
                         const {unmarshaller} = require('../../../MapStore2/web/client/utils/ogc/WMS');
                         let json = unmarshaller.unmarshalString(response.data);
-                        dispatch(brugisTreeLoaded(json));
+                        dispatch(brugisTreeLoaded(json, serverMappingUrl));
                     });
                 } catch(e) {
                     dispatch(brugisTreeLoadError('Configuration file broken (' + localXml + '): ' + e.message));
