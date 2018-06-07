@@ -2,6 +2,16 @@
 {
     "locale": "fr-FR",
     "messages": {
+        "best-effort": "Carte indicative - Réalisé par ",
+        "localmaps": {
+            "save_or_load_title": "Mes cartes",
+            "save": "Sauver",
+            "load": "Charger",
+            "delete": "Effacer",
+            "export": "Exporter",
+            "import": "Importer",
+            "close": "Ok"
+        },
         "Area": "Surface",
         "Centroid" : "Centroïde",
         "Legend": "Légende",
@@ -1039,7 +1049,7 @@
             "start": "Commencer",
             "checkbox": "Ne plus me montrer ce message",
             "error": "Erreur: ressource non trouvée",
-            "intro": {
+            "brugisIntro": {
                 "title": "Bienvenue dans BruGIS",
                 "text": "Environnement de développement d'applications cartographiques en ligne utilisant des librairies cartographiques standards, telles qu'OpenLayers 3 et Leaflet."
             },

@@ -1,6 +1,16 @@
 {
     "locale": "en-US",
     "messages": {
+        "best-effort": "Indicative map - Done by ",
+        "localmaps": {
+            "save_or_load_title": "My maps",
+            "save": "Save",
+            "load": "Load",
+            "delete": "Delete",
+            "export": "Export",
+            "import": "Import",
+            "close": "Ok"
+        },
         "Legend": "Legend",
         "Layers": "Layers",
 
@@ -1034,7 +1044,7 @@
             "start": "Start",
             "checkbox": "don't show this message again",
             "error": "Error: target not found",
-            "intro": {
+            "brugisIntro": {
                 "title": "Welcome on MapStore2",
                 "text": "framework to build web mapping applications using standard mapping libraries, such as OpenLayers 3 and Leaflet."
             },

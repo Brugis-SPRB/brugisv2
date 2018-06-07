@@ -1,6 +1,16 @@
 {
     "locale": "nl-NL",
     "messages": {
+        "best-effort": "Indicatieve kaart - Gerealiseerd door ",
+        "localmaps": {
+            "save_or_load_title": "Mijn kaarten",
+            "save": "Opslaan",
+            "load": "Opladen",
+            "delete": "Verwijderen",
+            "export": "Export",
+            "import": "Import",
+            "close": "Voltooid"
+        },
         "Area": "Overvlakte",
         "Centroid" : "Zwaartepunt",
         "Language": "Taal",
@@ -946,7 +956,7 @@
             "start": "Start",
             "checkbox": "laat dit bericht niet meer zien",
             "error": "Fout: doel niet gevonden",
-            "intro": {
+            "brugisIntro": {
                 "title": "Welkom bij MapStore2",
                 "text": "framework om web mapping-applicaties te bouwen met behulp van standaard mapping-bibliotheken, zoals OpenLayers 3 en Leaflet."
             },
