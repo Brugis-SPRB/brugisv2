@@ -12,6 +12,7 @@ const {mapSelector} = require('../../../MapStore2/web/client/selectors/map');
 const {layersSelector} = require('../../../MapStore2/web/client/selectors/layers');
 const stateSelector = state => state;
 const LayersUtils = require('../../../MapStore2/web/client/utils/LayersUtils');
+const Message = require('../../../MapStore2/web/client/plugins/locale/Message');
 
 const selector = createSelector(mapSelector, stateSelector, layersSelector, (map, state, layers) => ({
     active: (state.controls && state.controls.LocalMaps && state.controls.LocalMaps.enabled) || (state.controls.toolbar && state.controls.toolbar.active === "LocalMaps"),
@@ -46,13 +47,17 @@ class LocalMaps extends React.Component {
             return (
                 <Modal show={this.props.active} onHide={this.close} bsSize="small" aria-labelledby="contained-modal-title-sm">
                   <Modal.Header closeButton>
-                    <Modal.Title id="contained-modal-title-sm">Save or load Maps</Modal.Title>
+                    <Modal.Title id="contained-modal-title-sm">
+                      <Message msgId="save_or_load_title"/>
+                    </Modal.Title>
                   </Modal.Header>
                   <Modal.Body>
                     <SaveAndLoad onSave={this.saveMap} onLoad={this.props.onStateLoad} onDel={this.props.onStateDel} onImport={this.props.onStateSave}/>
                   </Modal.Body>
                   <Modal.Footer>
-                    <Button onClick={this.close}>Close</Button>
+                    <Button onClick={this.close}>
+                      <Message msgId="close"/>
+                    </Button>
                   </Modal.Footer>
                 </Modal>
             );
