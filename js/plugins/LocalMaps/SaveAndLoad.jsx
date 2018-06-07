@@ -58,7 +58,7 @@ class SaveButton extends React.Component {
                           style={this.buttonStyle(this.state.savename === '')}
                           disabled={this.state.savename === ''}
                         >
-                        <Message msgId="save"/>
+                        <Message msgId="localmaps.save"/>
                         </Button>
                     </InputGroup.Button>
                   </InputGroup>
@@ -70,22 +70,22 @@ class SaveButton extends React.Component {
                         <Button onClick={this.load.bind(this)}
                             style={this.buttonStyle(this.state.loadname === '')}
                             disabled={this.state.loadname === ''}>
-                            <Message msgId="load"/>
+                            <Message msgId="localmaps.load"/>
                         </Button>
                         <Button onClick={this.del.bind(this)}
                             style={this.buttonStyle(this.state.loadname === '')}
                             disabled={this.state.loadname === ''}>
-                            <Message msgId="delete"/>
+                            <Message msgId="localmaps.delete"/>
                         </Button>
                         <Button onClick={this.exportMap.bind(this)}
                             style={this.buttonStyle(this.state.loadname === '')}
                             disabled={this.state.loadname === ''}>
-                            <Message msgId="export"/>
+                            <Message msgId="localmaps.export"/>
                         </Button>
                         <Button
                           title="Import Map"
                         >
-                          <ControlLabel htmlFor="fileUpload" style={{ cursor: "pointer" }}><Message msgId="import"/>
+                          <ControlLabel htmlFor="fileUpload" style={{ cursor: "pointer" }}><Message msgId="localmaps.import"/>
                               <FormControl
                                   id="fileUpload"
                                   type="file"

@@ -48,7 +48,7 @@ class LocalMaps extends React.Component {
                 <Modal show={this.props.active} onHide={this.close} bsSize="small" aria-labelledby="contained-modal-title-sm">
                   <Modal.Header closeButton>
                     <Modal.Title id="contained-modal-title-sm">
-                      <Message msgId="save_or_load_title"/>
+                      <Message msgId="localmaps.save_or_load_title"/>
                     </Modal.Title>
                   </Modal.Header>
                   <Modal.Body>
@@ -56,7 +56,7 @@ class LocalMaps extends React.Component {
                   </Modal.Body>
                   <Modal.Footer>
                     <Button onClick={this.close}>
-                      <Message msgId="close"/>
+                      <Message msgId="localmaps.close"/>
                     </Button>
                   </Modal.Footer>
                 </Modal>
@@ -130,7 +130,7 @@ module.exports = {
         BurgerMenu: {
             name: 'LocalMaps',
             position: 6,
-            text: "LocalMaps", // <Message msgId="localmaps.title"/>,
+            text: <Message msgId="localmaps.save_or_load_title"/>,
             icon: <Glyphicon glyph="hdd"/>,
             action: toggleControl.bind(null, 'LocalMaps', null),
             priority: 2,
