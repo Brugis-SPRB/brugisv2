@@ -109,7 +109,7 @@ class StandardApp extends React.Component {
         this.addProjDefinitions(config);
 
         const brugisLocale = localStorage.getItem('brugis.persist.locale');
-        if(brugisLocale) {
+        if (brugisLocale) {
             this.store.dispatch(loadLocale(null, brugisLocale));
         } else {
             const locale = LocaleUtils.getUserLocale();

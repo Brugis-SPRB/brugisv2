@@ -34,7 +34,7 @@ LocaleUtils.setSupportedLocales({
 const startApp = () => {
     const StandardApp = require('./components/StandardApp');
     const {pages, pluginsDef, initialState, storeOpts, appEpics = {}} = require('./appConfig');
-    const {versionSelector} = require('../MapStore2/web/client/selectors/version');
+    // const {versionSelector} = require('../MapStore2/web/client/selectors/version');
 
     const routerSelector = createSelector(state => state.locale, (locale) => ({
         locale: locale || {},
@@ -60,7 +60,7 @@ const startApp = () => {
     const appStore = require('./stores/store').bind(null, initialState, {
       maptype: require('../MapStore2/web/client/reducers/maptype'),
       maps: require('../MapStore2/web/client/reducers/maps'),
-      version: require('../MapStore2/web/client/reducers/version'),
+      version: require('../MapStore2/web/client/reducers/version')
     }, {...appEpics, saveLangageEpic});
 
     const appConfig = {

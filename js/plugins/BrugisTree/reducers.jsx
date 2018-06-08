@@ -5,8 +5,8 @@ const assign = require('object-assign');
 const EnvUtils = require('../../utils/EnvUtils');
 const serverMappingUrl = {
 											"IBSA WMS - Geoserver": "http://gis.irisnet.be/geoserver/ibsa_bisa/wms",
-									    "AGIV WMS - Basiskaart": "http://geoservices.informatievlaanderen.be/raadpleegdiensten/GRB-basiskaart/wms",
-									    "AGIV WMS - Historische kaarten": "http://geoservices.informatievlaanderen.be/raadpleegdiensten/histcart/wms",
+											"AGIV WMS - Basiskaart": "http://geoservices.informatievlaanderen.be/raadpleegdiensten/GRB-basiskaart/wms",
+											"AGIV WMS - Historische kaarten": "http://geoservices.informatievlaanderen.be/raadpleegdiensten/histcart/wms",
 											"CIRB WMS - Geoserver": "http://geoservices-urbis.irisnet.be/geoserver/ows",
 											"STIB WMS - Geoserver": "http://gis.irisnet.be/geoserver/stib_mivb/wms",
 											"Bruxelles Mobilité WMS - Geoserver": "http://data-mobility.irisnet.be/geoserver/bm_inspire_en/ows",
@@ -142,7 +142,7 @@ function brugisTree(state = null, action) {
             return state;
         case BRUGIS_TREE_LOADED:
             const capabilities = action.info;
-            //const serverMappingUrl = action.serverMappingUrl;
+            // const serverMappingUrl = action.serverMappingUrl;
             return assign({}, state, {
                 treenodes: wmsWalker(capabilities.value.capability.layer.layer, serverMappingUrl)
             });
