@@ -10,6 +10,7 @@ require('./proj/31370.js');
 require('./proj/3812.js');
 require('./proj/3035.js');
 
+const {loadVersion} = require('../MapStore2/web/client/actions/version');
 
 const {createSelector} = require('reselect');
 
@@ -33,6 +34,7 @@ LocaleUtils.setSupportedLocales({
 const startApp = () => {
     const StandardApp = require('./components/StandardApp');
     const {pages, pluginsDef, initialState, storeOpts, appEpics = {}} = require('./appConfig');
+    // const {versionSelector} = require('../MapStore2/web/client/selectors/version');
 
     const routerSelector = createSelector(state => state.locale, (locale) => ({
         locale: locale || {},
@@ -42,19 +44,31 @@ const startApp = () => {
         },
         pages
     }));
+    /*
+    const StandardRouter = connect((state) => ({
+        locale: state.locale || {},
+        pages,
+        version: versionSelector(state),
+        themeCfg: {
+            theme: "brugis"
+        },
+    }))(require('../MapStore2/web/client/components/app/StandardRouter'));
+    */
     const StandardRouter = connect(routerSelector)(require('../MapStore2/web/client/components/app/StandardRouter'));
+    const {saveLangageEpic} = require('./appEpics');
 
     const appStore = require('./stores/store').bind(null, initialState, {
       maptype: require('../MapStore2/web/client/reducers/maptype'),
-      maps: require('../MapStore2/web/client/reducers/maps')
-    }, appEpics);
+      maps: require('../MapStore2/web/client/reducers/maps'),
+      version: require('../MapStore2/web/client/reducers/version')
+    }, {...appEpics, saveLangageEpic});
 
     const appConfig = {
         storeOpts,
         appEpics,
         appStore,
         pluginsDef,
-        initialActions: [],
+        initialActions: [loadVersion],
         appComponent: StandardRouter,
         printingEnabled: true,
         themeCfg: {theme: "brugis"}

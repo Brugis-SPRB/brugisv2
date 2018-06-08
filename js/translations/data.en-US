@@ -1045,7 +1045,7 @@
             "checkbox": "don't show this message again",
             "error": "Error: target not found",
             "brugisIntro": {
-                "title": "Welcome on MapStore2",
+                "title": "Welcome on BruGIS",
                 "text": "framework to build web mapping applications using standard mapping libraries, such as OpenLayers 3 and Leaflet."
             },
             "drawerMenu": {

@@ -957,7 +957,7 @@
             "checkbox": "laat dit bericht niet meer zien",
             "error": "Fout: doel niet gevonden",
             "brugisIntro": {
-                "title": "Welkom bij MapStore2",
+                "title": "Welkom bij BruGIS",
                 "text": "framework om web mapping-applicaties te bouwen met behulp van standaard mapping-bibliotheken, zoals OpenLayers 3 en Leaflet."
             },
             "drawerMenu": {
