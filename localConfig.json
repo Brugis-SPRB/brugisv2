@@ -84,7 +84,7 @@
 				 }
 			},{
 					"name": "Identify",
-					"showIn": ["Settings"],
+					"showIn": ["Settings","IdentifyBar"],
 					"cfg": {
 							"panelClassName": "mapstore-mobile-identify",
 							"fullscreen": true,

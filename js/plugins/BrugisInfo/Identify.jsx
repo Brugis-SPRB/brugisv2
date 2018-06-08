@@ -93,7 +93,6 @@ class Identify extends React.Component {
                 position: "absolute",
                 maxWidth: "700px",
                 top: "56px",
-                left: "45px",
                 zIndex: 1023,
                 boxShadow: "2px 2px 4px #A7A7A7"
             },
