@@ -18,7 +18,7 @@ const {Panel} = require('react-bootstrap');
 const Dialog = require('../../../MapStore2/web/client/components/misc/Dialog');
 const Message = require('../../../MapStore2/web/client/plugins/locale/Message');
 
-const {addremoveparcelsonactivativeEpic, closebrugissurveyEpic} = require('./epics');
+const {addremoveparcelsonactivativeEpic, closebrugissurveyEpic, reloadWhenNewSurveyIsDone} = require('./epics');
 
 const {
     loadBrugisSurveys,
@@ -245,7 +245,7 @@ const BrugisSurvey = React.createClass({
 const BrugisSurveyPlugin = connect((state) => ({
     map: (state.map && state.map.present) || (state.map) || (state.config && state.config.map) || null,
     surveys: state.brugisSurvey && state.brugisSurvey.surveys || [],
-    surveyUpdate: state.brugisSurvey && state.brugisSurvey.updateDate || Math.floor(Date.now() / 1000),
+    surveyUpdate: state.brugisSurvey && state.brugisSurvey.updateDate || Math.floor(Date.now() / 500),
     visible: state.controls && state.controls.brugissurvey && state.controls.brugissurvey.enabled || false,
     toolbarActive: state.controls && state.controls.toolbar && state.controls.toolbar.active === 'BrugisSurvey' || false,
     drawSurfaceActive: state.brugisSurvey && state.brugisSurvey.active_tool === 'DRAW_POLY' || false,
@@ -290,6 +290,7 @@ module.exports = {
     },
     epics: {
       addremoveparcelsonactivativeEpic,
-      closebrugissurveyEpic
+      closebrugissurveyEpic,
+      reloadWhenNewSurveyIsDone
     }
 };

@@ -1,11 +1,3 @@
-/**
- * Copyright 2016, GeoSolutions Sas.
- * All rights reserved.
- *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree.
- */
-
 const React = require('react');
 const {Panel, Glyphicon, Modal} = require('react-bootstrap');
 const {findIndex} = require('lodash');
@@ -129,47 +121,7 @@ class Identify extends React.Component {
             onChangeDrawingStatus: () => {},
             onEndDrawing: () => {}
     };
-/*
-    constructor(props) {
-        super(props);
-    }
 
-    componentWillReceiveProps(newProps) {
-        if (this.needsRefresh(newProps)) {
-            if (!newProps.point.modifiers || newProps.point.modifiers.ctrl !== true || !newProps.allowMultiselection) {
-                this.props.purgeResults();
-            }
-            const queryableLayers = newProps.layers.filter(newProps.queryableLayersFilter);
-            queryableLayers.forEach((layer) => {
-                const {url, request, metadata} = this.props.buildRequest(layer, newProps);
-                if (url) {
-                    this.props.sendRequest(url, request, metadata, this.filterRequestParams(layer));
-                } else {
-                    this.props.localRequest(layer, request, metadata);
-                }
-            });
-            if (queryableLayers.length === 0) {
-                this.props.noQueryableLayers();
-            } else {
-                this.props.showMarker();
-            }
-        }
-
-        if (newProps.enabled && !this.props.enabled) {
-            this.props.changeMousePointer('pointer');
-        } else if (!newProps.enabled && this.props.enabled) {
-            this.props.changeMousePointer('auto');
-            this.props.hideMarker();
-            this.props.purgeResults();
-        }
-    }
-
-    onModalHiding() {
-        this.props.hideMarker();
-        this.props.purgeResults();
-        this.props.onChangeDrawingStatus("clean", null, 'BrugisInfo');
-    }
-*/
     componentDidMount() {
         if (this.props.enabled) {
             this.props.changeMousePointer('pointer');
@@ -181,7 +133,7 @@ class Identify extends React.Component {
             if (!newProps.point.modifiers || newProps.point.modifiers.ctrl !== true || !newProps.allowMultiselection) {
                 this.props.purgeResults();
             }
-            
+
             const queryableLayers = newProps.layers
                 .filter(newProps.queryableLayersFilter)
                 .filter(newProps.layer ? l => l.id === newProps.layer : () => true);

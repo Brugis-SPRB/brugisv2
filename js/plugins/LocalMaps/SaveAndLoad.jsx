@@ -1,93 +1,147 @@
-/**
- * Copyright 2016, GeoSolutions Sas.
- * All rights reserved.
- *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree.
- */
+
 const React = require('react');
 const PropTypes = require('prop-types');
-const {Button, Form, FormGroup, FormControl, InputGroup} = require('react-bootstrap');
+const {Button, Form, FormGroup, FormControl, InputGroup, ControlLabel} = require('react-bootstrap');
+const FileSaver = require('file-saver');
+const LOCAL_MAPS_PREFIX = 'mapstore.localmaps.';
+const Message = require('../../../MapStore2/web/client/plugins/locale/Message');
 
+class SaveButton extends React.Component {
 
-const SaveButton = React.createClass({
-    propTypes: {
+    static propTypes = {
         onSave: PropTypes.func,
-        onLoad: PropTypes.func
-    },
-    getDefaultProps() {
-        return {
-            onSave: () => {},
-            onLoad: () => {}
+        onLoad: PropTypes.func,
+        onDel: PropTypes.func,
+        onImport: PropTypes.func
+    }
+
+    static defaultProps = {
+        onSave: () => {},
+        onLoad: () => {},
+        onDel: () => {},
+        onImport: () => {}
+    }
+
+    constructor(props) {
+        super(props);
+        this.state = {
+          savename: '',
+          loadname: ''
         };
-    },
-    getInitialState() {
-        return {
-            savename: '',
-            loadname: ''
-        };
-    },
+    }
+
     onChangeSaveName(e) {
         this.setState({savename: e.target.value});
-    },
+    }
+
     onChangeLoadName(e) {
         this.setState({loadname: e.target.options[e.target.selectedIndex].value});
-    },
+    }
+
     renderSaved() {
         return [<option key="---" value="">---</option>, ...Object.keys(localStorage).filter((key) => key.indexOf('mapstore.localmaps.') === 0)
             .map((key) => key.substring('mapstore.localmaps.'.length))
             .map((name) => <option key={name} value={name}>{name}</option>)];
-    },
+    }
+
     render() {
         return (<div className="save">
             <Form>
                 <FormGroup>
                   <InputGroup>
-                    <FormControl type="text" placeholder="Map Name" onChange={this.onChangeSaveName} />
+                    <FormControl type="text" placeholder="Map Name" onChange={this.onChangeSaveName.bind(this)} />
                     <InputGroup.Button>
                         <Button
                           id="input-dropdown-addon"
                           title="Save Map"
-                          onClick={this.save}
+                          onClick={this.save.bind(this)}
                           style={this.buttonStyle(this.state.savename === '')}
                           disabled={this.state.savename === ''}
                         >
-                        Save
+                        <Message msgId="localmaps.save"/>
                         </Button>
                     </InputGroup.Button>
                   </InputGroup>
                   <InputGroup>
-                      <FormControl componentClass="select" placeholder="Map Name" onChange={this.onChangeLoadName}>
+                      <FormControl componentClass="select" placeholder="Map Name" onChange={this.onChangeLoadName.bind(this)}>
                           {this.renderSaved()}
                       </FormControl>
                       <InputGroup.Button>
-                        <Button onClick={this.load}
+                        <Button onClick={this.load.bind(this)}
                             style={this.buttonStyle(this.state.loadname === '')}
                             disabled={this.state.loadname === ''}>
-                            Load
+                            <Message msgId="localmaps.load"/>
+                        </Button>
+                        <Button onClick={this.del.bind(this)}
+                            style={this.buttonStyle(this.state.loadname === '')}
+                            disabled={this.state.loadname === ''}>
+                            <Message msgId="localmaps.delete"/>
+                        </Button>
+                        <Button onClick={this.exportMap.bind(this)}
+                            style={this.buttonStyle(this.state.loadname === '')}
+                            disabled={this.state.loadname === ''}>
+                            <Message msgId="localmaps.export"/>
+                        </Button>
+                        <Button
+                          title="Import Map"
+                        >
+                          <ControlLabel htmlFor="fileUpload" style={{ cursor: "pointer" }}><Message msgId="localmaps.import"/>
+                              <FormControl
+                                  id="fileUpload"
+                                  type="file"
+                                  accept=".brugis"
+                                  onChange={this.importMap.bind(this)}
+                                  style={{ display: "none" }}
+                              />
+                          </ControlLabel>
                         </Button>
                       </InputGroup.Button>
                   </InputGroup>
                 </FormGroup>
              </Form>
             </div>);
-    },
-    buttonStyle: function(disabled) {
+    }
+
+    buttonStyle = (disabled) => {
         return {
             "color": disabled ? "grey" : "inherit"
         };
-    },
-    inputStyle: function() {
+    }
+
+    inputStyle = () => {
         return {
             border: "1px solid"
         };
-    },
+    }
+
     load() {
         this.props.onLoad(this.state.loadname);
-    },
+    }
+
     save() {
         this.props.onSave(this.state.savename);
     }
-});
+
+    del() {
+        this.props.onDel(this.state.loadname);
+        this.setState({key: Math.random()});
+    }
+
+    exportMap() {
+        const loaded = localStorage.getItem(LOCAL_MAPS_PREFIX + this.state.loadname);
+        var blob = new Blob([loaded], {type: "application/json;charset=utf-8"});
+        FileSaver.saveAs(blob, this.state.loadname + ".brugis");
+    }
+
+    importMap(event) {
+        var fr = new FileReader();
+        var filename = event.target.files[0].name;
+        fr.onload = (e) => {
+            this.props.onImport(filename, e.target.result);
+            this.setState({key: Math.random()});
+        };
+        fr.readAsText(event.target.files[0]);
+    }
+}
 
 module.exports = SaveButton;

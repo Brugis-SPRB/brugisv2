@@ -2,7 +2,7 @@ const React = require('react');
 const PropTypes = require('prop-types');
 const assign = require('object-assign');
 const {createSelector} = require('reselect');
-var {saveMapState, loadMapState} = require('./actions');
+var {saveMapState, loadMapState, delMapState} = require('./actions');
 const SaveAndLoad = require('./SaveAndLoad');
 const {connect} = require('react-redux');
 const {Glyphicon} = require('react-bootstrap');
@@ -12,13 +12,14 @@ const {mapSelector} = require('../../../MapStore2/web/client/selectors/map');
 const {layersSelector} = require('../../../MapStore2/web/client/selectors/layers');
 const stateSelector = state => state;
 const LayersUtils = require('../../../MapStore2/web/client/utils/LayersUtils');
+const Message = require('../../../MapStore2/web/client/plugins/locale/Message');
 
 const selector = createSelector(mapSelector, stateSelector, layersSelector, (map, state, layers) => ({
     active: (state.controls && state.controls.LocalMaps && state.controls.LocalMaps.enabled) || (state.controls.toolbar && state.controls.toolbar.active === "LocalMaps"),
     toolbarActive: state.controls.toolbar && state.controls.toolbar.active === "LocalMaps",
     currentZoomLvl: map && map.zoom,
     map,
-    mapId: map && map.mapId,
+    mapId: map && map.mapId && map.mapId || "tagada",
     layers
 }));
 
@@ -27,6 +28,7 @@ class LocalMaps extends React.Component {
         expanded: PropTypes.bool,
         onStateSave: PropTypes.func,
         onStateLoad: PropTypes.func,
+        onStateDel: PropTypes.func,
         mapId: PropTypes.string,
         map: PropTypes.object,
         layers: PropTypes.array,
@@ -45,13 +47,17 @@ class LocalMaps extends React.Component {
             return (
                 <Modal show={this.props.active} onHide={this.close} bsSize="small" aria-labelledby="contained-modal-title-sm">
                   <Modal.Header closeButton>
-                    <Modal.Title id="contained-modal-title-sm">Save or load Maps</Modal.Title>
+                    <Modal.Title id="contained-modal-title-sm">
+                      <Message msgId="localmaps.save_or_load_title"/>
+                    </Modal.Title>
                   </Modal.Header>
                   <Modal.Body>
-                    <SaveAndLoad onSave={this.saveMap} onLoad={this.props.onStateLoad}/>
+                    <SaveAndLoad onSave={this.saveMap} onLoad={this.props.onStateLoad} onDel={this.props.onStateDel} onImport={this.props.onStateSave}/>
                   </Modal.Body>
                   <Modal.Footer>
-                    <Button onClick={this.close}>Close</Button>
+                    <Button onClick={this.close}>
+                      <Message msgId="localmaps.close"/>
+                    </Button>
                   </Modal.Footer>
                 </Modal>
             );
@@ -100,6 +106,7 @@ const LocalMapsPlugin = connect(selector, {
     toggleControl: toggleControl.bind(null, 'LocalMaps', null),
     onStateSave: saveMapState,
     onStateLoad: loadMapState,
+    onStateDel: delMapState,
     onClose: toggleControl.bind(null, 'LocalMaps', null),
     onCloseToolBar: setControlProperty.bind(null, 'toolbar', 'active', null)
 })(LocalMaps);
@@ -123,7 +130,7 @@ module.exports = {
         BurgerMenu: {
             name: 'LocalMaps',
             position: 6,
-            text: "LocalMaps", // <Message msgId="localmaps.title"/>,
+            text: <Message msgId="localmaps.save_or_load_title"/>,
             icon: <Glyphicon glyph="hdd"/>,
             action: toggleControl.bind(null, 'LocalMaps', null),
             priority: 2,

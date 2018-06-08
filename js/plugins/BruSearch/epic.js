@@ -1,10 +1,3 @@
-/*
- * Copyright 2017, GeoSolutions Sas.
- * All rights reserved.
- *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree.
- */
 
 const {TEXT_SEARCH_STARTED,
     TEXT_SEARCH_RESULTS_PURGE,
@@ -104,8 +97,6 @@ const searchItemSelected = action$ =>
                 // zoom by the max. extent defined in the map's config
                 let newZoom = mapUtils.getZoomForExtent(bbox, mapSize, 0, 21, null);
 
-                // center by the max. extent defined in the map's config
-                let newCenter = mapUtils.getCenterForExtent(bbox, "EPSG:4326");
                 let actions = [
                     changeMapView(item.center, newZoom, {
                         bounds: {
