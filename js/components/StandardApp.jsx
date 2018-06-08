@@ -107,10 +107,15 @@ class StandardApp extends React.Component {
         this.store.dispatch(changeBrowserProperties(ConfigUtils.getBrowserProperties()));
         this.store.dispatch(localConfigLoaded(config));
         this.addProjDefinitions(config);
-        if (!this.store.getState().locale) {
+
+        const brugisLocale = localStorage.getItem('brugis.persist.locale');
+        if(brugisLocale) {
+            this.store.dispatch(loadLocale(null, brugisLocale));
+        } else {
             const locale = LocaleUtils.getUserLocale();
             this.store.dispatch(loadLocale(null, locale));
         }
+
         if (this.props.printingEnabled) {
             this.store.dispatch(loadPrintCapabilities(ConfigUtils.getConfigProp('printUrl')));
         }
