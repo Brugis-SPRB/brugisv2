@@ -3,7 +3,7 @@ var {BRUGIS_TREE_LOAD_START, BRUGIS_TREE_LOADED, BRUGIS_TREE_LOAD_ERROR, BRUGIS_
 var {REMOVE_NODE} = require('../../../MapStore2/web/client/actions/layers');
 const assign = require('object-assign');
 const EnvUtils = require('../../utils/EnvUtils');
-const serverMappingUrl = {
+const SERVER_MAPPING_URL = {
 											"IBSA WMS - Geoserver": "http://gis.irisnet.be/geoserver/ibsa_bisa/wms",
 											"AGIV WMS - Basiskaart": "http://geoservices.informatievlaanderen.be/raadpleegdiensten/GRB-basiskaart/wms",
 											"AGIV WMS - Historische kaarten": "http://geoservices.informatievlaanderen.be/raadpleegdiensten/histcart/wms",
@@ -144,7 +144,7 @@ function brugisTree(state = null, action) {
             const capabilities = action.info;
             // const serverMappingUrl = action.serverMappingUrl;
             return assign({}, state, {
-                treenodes: wmsWalker(capabilities.value.capability.layer.layer, serverMappingUrl)
+                treenodes: wmsWalker(capabilities.value.capability.layer.layer, SERVER_MAPPING_URL)
             });
         case BRUGIS_TREE_NODE_TOGGLE:
             let node = action.node;
