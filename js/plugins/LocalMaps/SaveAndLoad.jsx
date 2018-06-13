@@ -1,7 +1,7 @@
 
 const React = require('react');
 const PropTypes = require('prop-types');
-const {Button, Form, FormGroup, FormControl, InputGroup, ControlLabel} = require('react-bootstrap');
+const {Form, FormGroup, FormControl, InputGroup, ControlLabel} = require('react-bootstrap');
 const FileSaver = require('file-saver');
 const LOCAL_MAPS_PREFIX = 'mapstore.localmaps.';
 const Message = require('../../../MapStore2/web/client/plugins/locale/Message');
@@ -50,52 +50,48 @@ class SaveButton extends React.Component {
                 <FormGroup>
                   <InputGroup>
                     <FormControl type="text" placeholder="Map Name" onChange={this.onChangeSaveName.bind(this)} />
-                    <InputGroup.Button>
-                        <Button
-                          id="input-dropdown-addon"
-                          title="Save Map"
-                          onClick={this.save.bind(this)}
-                          style={this.buttonStyle(this.state.savename === '')}
-                          disabled={this.state.savename === ''}
-                        >
-                        <Message msgId="localmaps.save"/>
-                        </Button>
-                    </InputGroup.Button>
+                    <InputGroup.Addon>
+                        <ControlLabel disabled={this.state.savename === ''} style={this.buttonStyle(this.state.savename === '')} onClick={this.save.bind(this)}>
+                            <Message msgId="localmaps.save"/>
+                        </ControlLabel>
+                        &nbsp;&nbsp;
+                        <ControlLabel htmlFor="fileUpload" style={{ cursor: "pointer" }}>
+                            <Message msgId="localmaps.import"/>
+                            <FormControl
+                                id="fileUpload"
+                                type="file"
+                                accept=".brugis"
+                                onChange={this.importMap.bind(this)}
+                                style={{
+                                  width: "0.1px",
+                                  height: "0.1px",
+                                  opacity: 0,
+                                  overflow: "hidden",
+                                  position: "absolute",
+                                  "z-index": -1
+                                 }}
+                            />
+                        </ControlLabel>
+                    </InputGroup.Addon>
                   </InputGroup>
                   <InputGroup>
                       <FormControl componentClass="select" placeholder="Map Name" onChange={this.onChangeLoadName.bind(this)}>
                           {this.renderSaved()}
                       </FormControl>
-                      <InputGroup.Button>
-                        <Button onClick={this.load.bind(this)}
-                            style={this.buttonStyle(this.state.loadname === '')}
-                            disabled={this.state.loadname === ''}>
+
+                      <InputGroup.Addon>
+                        <ControlLabel disabled={this.state.loadname === ''} style={this.buttonStyle(this.state.loadname === '')}onClick={this.load.bind(this)}>
                             <Message msgId="localmaps.load"/>
-                        </Button>
-                        <Button onClick={this.del.bind(this)}
-                            style={this.buttonStyle(this.state.loadname === '')}
-                            disabled={this.state.loadname === ''}>
+                        </ControlLabel>
+                        &nbsp;&nbsp;
+                        <ControlLabel disabled={this.state.loadname === ''} style={this.buttonStyle(this.state.loadname === '')} onClick={this.del.bind(this)}>
                             <Message msgId="localmaps.delete"/>
-                        </Button>
-                        <Button onClick={this.exportMap.bind(this)}
-                            style={this.buttonStyle(this.state.loadname === '')}
-                            disabled={this.state.loadname === ''}>
+                        </ControlLabel>
+                        &nbsp;&nbsp;
+                        <ControlLabel disabled={this.state.loadname === ''} style={this.buttonStyle(this.state.loadname === '')} onClick={this.exportMap.bind(this)}>
                             <Message msgId="localmaps.export"/>
-                        </Button>
-                        <Button
-                          title="Import Map"
-                        >
-                          <ControlLabel htmlFor="fileUpload" style={{ cursor: "pointer" }}><Message msgId="localmaps.import"/>
-                              <FormControl
-                                  id="fileUpload"
-                                  type="file"
-                                  accept=".brugis"
-                                  onChange={this.importMap.bind(this)}
-                                  style={{ display: "none" }}
-                              />
-                          </ControlLabel>
-                        </Button>
-                      </InputGroup.Button>
+                        </ControlLabel>
+                      </InputGroup.Addon>
                   </InputGroup>
                 </FormGroup>
              </Form>
@@ -104,7 +100,8 @@ class SaveButton extends React.Component {
 
     buttonStyle = (disabled) => {
         return {
-            "color": disabled ? "grey" : "inherit"
+            "color": disabled ? "grey" : "inherit",
+            "cursor": "pointer"
         };
     }
 
