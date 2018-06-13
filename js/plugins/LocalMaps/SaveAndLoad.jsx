@@ -1,7 +1,7 @@
 
 const React = require('react');
 const PropTypes = require('prop-types');
-const {Button, Form, FormGroup, FormControl, InputGroup, ControlLabel, Col} = require('react-bootstrap');
+const {Form, FormGroup, FormControl, InputGroup, ControlLabel} = require('react-bootstrap');
 const FileSaver = require('file-saver');
 const LOCAL_MAPS_PREFIX = 'mapstore.localmaps.';
 const Message = require('../../../MapStore2/web/client/plugins/locale/Message');
@@ -68,7 +68,7 @@ class SaveButton extends React.Component {
                                   opacity: 0,
                                   overflow: "hidden",
                                   position: "absolute",
-                                  "z-index": -1,
+                                  "z-index": -1
                                  }}
                             />
                         </ControlLabel>
