@@ -7,7 +7,7 @@ const {
     changeDrawingStatus
 } = require('../../../MapStore2/web/client/actions/draw');
 
-const {loadBrugisSurveys, BRUGIS_SURVEY_CREATE_DONE} = require('./actions');
+const {loadBrugisSurveys, BRUGIS_SURVEY_CREATE_DONE, brugisSurveyDeleteDrawings} = require('./actions');
 
 
 const addremoveparcelsonactivativeEpic = (action$, store) =>
@@ -31,7 +31,8 @@ const addremoveparcelsonactivativeEpic = (action$, store) =>
           }
           return Rx.Observable.of(
             removeLayer(PARCEL_LAYER_ID),
-            changeDrawingStatus("clean", null, 'BrugisSurvey')
+            changeDrawingStatus("clean", null, 'BrugisSurvey'),
+            brugisSurveyDeleteDrawings()
           );
       });
 
