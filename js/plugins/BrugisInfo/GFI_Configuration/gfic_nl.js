@@ -540,6 +540,11 @@ const gfiNl = {
 				"name": "Referentie DML",
 				"label": "[%NUMMER_DOSSIER%]/[%CODE_DOSSIER%]",
 				"type": "string"
+			},
+			{
+				"name": "Omschrijving",
+				"label": "[%NOTA_NL%]",
+				"type": "string"
 			}
 		]
 	},
@@ -599,6 +604,11 @@ const gfiNl = {
 			{
 				"name": "Referentie DML",
 				"label": "[%NUMMER_DOSSIER%]/[%CODE_DOSSIER%]",
+				"type": "string"
+			},
+			{
+				"name": "Omschrijving",
+				"label": "[%NOTA_NL%]",
 				"type": "string"
 			}
 		]
@@ -660,6 +670,11 @@ const gfiNl = {
 				"name": "Referentie DML",
 				"label": "[%NUMMER_DOSSIER%]/[%CODE_DOSSIER%]",
 				"type": "string"
+			},
+			{
+				"name": "Omschrijving",
+				"label": "[%NOTA_NL%]",
+				"type": "string"
 			}
 		]
 	},
@@ -719,6 +734,11 @@ const gfiNl = {
 			{
 				"name": "Referentie DML",
 				"label": "[%NUMMER_DOSSIER%]/[%CODE_DOSSIER%]",
+				"type": "string"
+			},
+			{
+				"name": "Omschrijving",
+				"label": "[%NOTA_NL%]",
 				"type": "string"
 			}
 		]
@@ -780,6 +800,11 @@ const gfiNl = {
 				"name": "Referentie DML",
 				"label": "[%NUMMER_DOSSIER%]/[%CODE_DOSSIER%]",
 				"type": "string"
+			},
+			{
+				"name": "Omschrijving",
+				"label": "[%NOTA_NL%]",
+				"type": "string"
 			}
 		]
 	},
@@ -839,6 +864,11 @@ const gfiNl = {
 			{
 				"name": "Referentie DML",
 				"label": "[%NUMMER_DOSSIER%]/[%CODE_DOSSIER%]",
+				"type": "string"
+			},
+			{
+				"name": "Omschrijving",
+				"label": "[%NOTA_NL%]",
 				"type": "string"
 			}
 		]
@@ -900,6 +930,11 @@ const gfiNl = {
 				"name": "Referentie DML",
 				"label": "[%NUMMER_DOSSIER%]/[%CODE_DOSSIER%]",
 				"type": "string"
+			},
+			{
+				"name": "Omschrijving",
+				"label": "[%NOTA_NL%]",
+				"type": "string"
 			}
 		]
 	},
@@ -959,6 +994,11 @@ const gfiNl = {
 			{
 				"name": "Referentie DML",
 				"label": "[%NUMMER_DOSSIER%]/[%CODE_DOSSIER%]",
+				"type": "string"
+			},
+			{
+				"name": "Omschrijving",
+				"label": "[%NOTA_NL%]",
 				"type": "string"
 			}
 		]
@@ -1020,6 +1060,11 @@ const gfiNl = {
 				"name": "Referentie DML",
 				"label": "[%NUMMER_DOSSIER%]/[%CODE_DOSSIER%]",
 				"type": "string"
+			},
+			{
+				"name": "Omschrijving",
+				"label": "[%NOTA_NL%]",
+				"type": "string"
 			}
 		]
 	},
@@ -1079,6 +1124,11 @@ const gfiNl = {
 			{
 				"name": "Referentie DML",
 				"label": "[%NUMMER_DOSSIER%]/[%CODE_DOSSIER%]",
+				"type": "string"
+			},
+			{
+				"name": "Omschrijving",
+				"label": "[%NOTA_NL%]",
 				"type": "string"
 			}
 		]
@@ -1140,6 +1190,11 @@ const gfiNl = {
 				"name": "Referentie DML",
 				"label": "[%NUMMER_DOSSIER%]/[%CODE_DOSSIER%]",
 				"type": "string"
+			},
+			{
+				"name": "Omschrijving",
+				"label": "[%NOTA_NL%]",
+				"type": "string"
 			}
 		]
 	},
@@ -1199,6 +1254,11 @@ const gfiNl = {
 			{
 				"name": "Referentie DML",
 				"label": "[%NUMMER_DOSSIER%]/[%CODE_DOSSIER%]",
+				"type": "string"
+			},
+			{
+				"name": "Omschrijving",
+				"label": "[%NOTA_NL%]",
 				"type": "string"
 			}
 		]
@@ -1260,6 +1320,11 @@ const gfiNl = {
 				"name": "Referentie DML",
 				"label": "[%NUMMER_DOSSIER%]/[%CODE_DOSSIER%]",
 				"type": "string"
+			},
+			{
+				"name": "Omschrijving",
+				"label": "[%NOTA_NL%]",
+				"type": "string"
 			}
 		]
 	},
@@ -1319,6 +1384,11 @@ const gfiNl = {
 			{
 				"name": "Referentie DML",
 				"label": "[%NUMMER_DOSSIER%]/[%CODE_DOSSIER%]",
+				"type": "string"
+			},
+			{
+				"name": "Omschrijving",
+				"label": "[%NOTA_NL%]",
 				"type": "string"
 			}
 		]
@@ -1380,6 +1450,11 @@ const gfiNl = {
 				"name": "Referentie DML",
 				"label": "[%NUMMER_DOSSIER%]/[%CODE_DOSSIER%]",
 				"type": "string"
+			},
+			{
+				"name": "Omschrijving",
+				"label": "[%NOTA_NL%]",
+				"type": "string"
 			}
 		]
 	},
@@ -1439,6 +1514,11 @@ const gfiNl = {
 			{
 				"name": "Referentie DML",
 				"label": "[%NUMMER_DOSSIER%]/[%CODE_DOSSIER%]",
+				"type": "string"
+			},
+			{
+				"name": "Omschrijving",
+				"label": "[%NOTA_NL%]",
 				"type": "string"
 			}
 		]
@@ -1500,6 +1580,11 @@ const gfiNl = {
 				"name": "Referentie DML",
 				"label": "[%NUMMER_DOSSIER%]/[%CODE_DOSSIER%]",
 				"type": "string"
+			},
+			{
+				"name": "Omschrijving",
+				"label": "[%NOTA_NL%]",
+				"type": "string"
 			}
 		]
 	},
@@ -1560,319 +1645,10 @@ const gfiNl = {
 				"name": "Referentie DML",
 				"label": "[%NUMMER_DOSSIER%]/[%CODE_DOSSIER%]",
 				"type": "string"
-			}
-		]
-	},
-	"TAX:Observaties": {
-		"actiontype": "GRID",
-		"attributes": [{
-				"name": "C_OBSERV",
-				"label": "[%C_OBSERV%]",
-				"type": "string"
 			},
 			{
-				"name": "DATE_REAL",
-				"label": "[%DATE_REAL%]",
-				"type": "date"
-			},
-			{
-				"name": "LIEN_HTTP",
-				"label": "[%LIEN_HTTP%]",
-				"type": "file"
-			},
-			{
-				"name": "ORIG_OBS",
-				"label": "[%ORIG_OBS%]",
-				"type": "string"
-			},
-			{
-				"name": "PARCELLE",
-				"label": "[%PARCELLE%]",
-				"type": "string"
-			}
-		]
-	},
-	"BSO:Perceel_2013": {
-		"actiontype": "GRID",
-		"title": "Perceel 2013: [%CAPAKEY%]",
-		"attributes": [{
-				"name": "APNC_MAPC",
-				"label": "[%APNC_MAPC%]",
-				"type": "string"
-			},
-			{
-				"name": "APNC_CADC",
-				"label": "[%APNC_CADC%]",
-				"type": "string"
-			},
-			{
-				"name": "CAPAKEY",
-				"label": "[%CAPAKEY%]",
-				"type": "string"
-			},
-			{
-				"name": "SHNC_FILE",
-				"label": "[%SHNC_FILE%]",
-				"type": "string"
-			},
-			{
-				"name": "SHEET",
-				"label": "[%SHEET%]",
-				"type": "string"
-			},
-			{
-				"name": "CDNC",
-				"label": "[%CDNC%]",
-				"type": "string"
-			},
-			{
-				"name": "CD5C",
-				"label": "[%CD5C%]",
-				"type": "string"
-			},
-			{
-				"name": "CSNC",
-				"label": "[%CSNC%]",
-				"type": "string"
-			},
-			{
-				"name": "MUNC",
-				"label": "[%MUNC%]",
-				"type": "string"
-			},
-			{
-				"name": "SHNC",
-				"label": "[%SHNC%]",
-				"type": "string"
-			},
-			{
-				"name": "APNC_CAD",
-				"label": "[%APNC_CAD%]",
-				"type": "string"
-			},
-			{
-				"name": "APNC_MAP",
-				"label": "[%APNC_MAP%]",
-				"type": "string"
-			},
-			{
-				"name": "RAD_NUM",
-				"label": "[%RAD_NUM%]",
-				"type": "string"
-			},
-			{
-				"name": "EXP_ALPHA",
-				"label": "[%EXP_ALPHA%]",
-				"type": "string"
-			},
-			{
-				"name": "EXP_NUM",
-				"label": "[%EXP_NUM%]",
-				"type": "string"
-			},
-			{
-				"name": "CAPATY",
-				"label": "[%CAPATY%]",
-				"type": "string"
-			},
-			{
-				"name": "ID",
-				"label": "[%ID%]",
-				"type": "string"
-			},
-			{
-				"name": "SHAPE_AREA_IN_DB",
-				"label": "[%SHAPE_AREA%]",
-				"type": "string"
-			}
-		]
-	},
-	"BSO:Perceel_2012": {
-		"actiontype": "GRID",
-		"title": "Perceel 2012: [%CAPAKEY%]",
-		"attributes": [{
-				"name": "APNC_MAPC",
-				"label": "[%APNC_MAPC%]",
-				"type": "string"
-			},
-			{
-				"name": "APNC_CADC",
-				"label": "[%APNC_CADC%]",
-				"type": "string"
-			},
-			{
-				"name": "CAPAKEY",
-				"label": "[%CAPAKEY%]",
-				"type": "string"
-			},
-			{
-				"name": "SHNC_FILE",
-				"label": "[%SHNC_FILE%]",
-				"type": "string"
-			},
-			{
-				"name": "SHEET",
-				"label": "[%SHEET%]",
-				"type": "string"
-			},
-			{
-				"name": "CDNC",
-				"label": "[%CDNC%]",
-				"type": "string"
-			},
-			{
-				"name": "CD5C",
-				"label": "[%CD5C%]",
-				"type": "string"
-			},
-			{
-				"name": "CSNC",
-				"label": "[%CSNC%]",
-				"type": "string"
-			},
-			{
-				"name": "MUNC",
-				"label": "[%MUNC%]",
-				"type": "string"
-			},
-			{
-				"name": "SHNC",
-				"label": "[%SHNC%]",
-				"type": "string"
-			},
-			{
-				"name": "APNC_CAD",
-				"label": "[%APNC_CAD%]",
-				"type": "string"
-			},
-			{
-				"name": "APNC_MAP",
-				"label": "[%APNC_MAP%]",
-				"type": "string"
-			},
-			{
-				"name": "RAD_NUM",
-				"label": "[%RAD_NUM%]",
-				"type": "string"
-			},
-			{
-				"name": "EXP_ALPHA",
-				"label": "[%EXP_ALPHA%]",
-				"type": "string"
-			},
-			{
-				"name": "EXP_NUM",
-				"label": "[%EXP_NUM%]",
-				"type": "string"
-			},
-			{
-				"name": "CAPATY",
-				"label": "[%CAPATY%]",
-				"type": "string"
-			},
-			{
-				"name": "ID",
-				"label": "[%ID%]",
-				"type": "string"
-			},
-			{
-				"name": "SHAPE_AREA_IN_DB",
-				"label": "[%SHAPE_AREA%]",
-				"type": "string"
-			}
-		]
-	},
-	"BSO:Perceel_2014": {
-		"actiontype": "GRID",
-		"title": "Perceel 2014: [%CAPAKEY%]",
-		"attributes": [{
-				"name": "APNC_MAPC",
-				"label": "[%APNC_MAPC%]",
-				"type": "string"
-			},
-			{
-				"name": "APNC_CADC",
-				"label": "[%APNC_CADC%]",
-				"type": "string"
-			},
-			{
-				"name": "CAPAKEY",
-				"label": "[%CAPAKEY%]",
-				"type": "string"
-			},
-			{
-				"name": "SHNC_FILE",
-				"label": "[%SHNC_FILE%]",
-				"type": "string"
-			},
-			{
-				"name": "SHEET",
-				"label": "[%SHEET%]",
-				"type": "string"
-			},
-			{
-				"name": "CDNC",
-				"label": "[%CDNC%]",
-				"type": "string"
-			},
-			{
-				"name": "CD5C",
-				"label": "[%CD5C%]",
-				"type": "string"
-			},
-			{
-				"name": "CSNC",
-				"label": "[%CSNC%]",
-				"type": "string"
-			},
-			{
-				"name": "MUNC",
-				"label": "[%MUNC%]",
-				"type": "string"
-			},
-			{
-				"name": "SHNC",
-				"label": "[%SHNC%]",
-				"type": "string"
-			},
-			{
-				"name": "APNC_CAD",
-				"label": "[%APNC_CAD%]",
-				"type": "string"
-			},
-			{
-				"name": "APNC_MAP",
-				"label": "[%APNC_MAP%]",
-				"type": "string"
-			},
-			{
-				"name": "RAD_NUM",
-				"label": "[%RAD_NUM%]",
-				"type": "string"
-			},
-			{
-				"name": "EXP_ALPHA",
-				"label": "[%EXP_ALPHA%]",
-				"type": "string"
-			},
-			{
-				"name": "EXP_NUM",
-				"label": "[%EXP_NUM%]",
-				"type": "string"
-			},
-			{
-				"name": "CAPATY",
-				"label": "[%CAPATY%]",
-				"type": "string"
-			},
-			{
-				"name": "ID",
-				"label": "[%ID%]",
-				"type": "string"
-			},
-			{
-				"name": "SHAPE_AREA_IN_DB",
-				"label": "[%SHAPE_AREA%]",
+				"name": "Omschrijving",
+				"label": "[%NOTA_NL%]",
 				"type": "string"
 			}
 		]
@@ -1938,246 +1714,6 @@ const gfiNl = {
 			{
 				"name": "Referentie DML",
 				"label": "[%NUMMER_DOSSIER%]/[%CODE_DOSSIER%]",
-				"type": "string"
-			}
-		]
-	},
-	"DEP_BP:BXLPROJECTS_PMNR": {
-		"actiontype": "GRID",
-		"title": "Projet [%PROJECT_ID%]",
-		"attributes": [{
-				"name": "Category",
-				"label": "[%PROJECTCATEGORYDESC%]",
-				"type": "string"
-			},
-			{
-				"name": "Project Type",
-				"label": "[%PROJECTTYPE%]",
-				"type": "string"
-			},
-			{
-				"name": "Street Name F",
-				"label": "[%STREETNAME_F%]",
-				"type": "string"
-			},
-			{
-				"name": "Street Name N",
-				"label": "[%STREETNAME_N%]",
-				"type": "string"
-			},
-			{
-				"name": "Street Number",
-				"label": "[%STREETNUMBER%]",
-				"type": "string"
-			},
-			{
-				"name": "Street Box",
-				"label": "[%STREETBOX%]",
-				"type": "string"
-			},
-			{
-				"name": "Postal Code",
-				"label": "[%POSTALCODE%]",
-				"type": "string"
-			},
-			{
-				"name": "Project Title F",
-				"label": "[%PROJECTTITLE_F%]",
-				"type": "string"
-			},
-			{
-				"name": "Description F",
-				"label": "[%DESCRIPTION_F%]",
-				"type": "string"
-			},
-			{
-				"name": "Project Title N",
-				"label": "[%PROJECTTITLE_N%]",
-				"type": "string"
-			},
-			{
-				"name": "Description N",
-				"label": "[%DESCRIPTION_N%]",
-				"type": "string"
-			},
-			{
-				"name": "Weblink",
-				"label": "[%WEBLINK%]",
-				"type": "string"
-			},
-			{
-				"name": "Project Status F",
-				"label": "[%REMARKS_F%]",
-				"type": "string"
-			},
-			{
-				"name": "Project Status N",
-				"label": "[%REMARKS_N%]",
-				"type": "string"
-			},
-			{
-				"name": "Project Owner F",
-				"label": "[%PROJECTOWNER_F%]",
-				"type": "string"
-			},
-			{
-				"name": "Project Owner N",
-				"label": "[%PROJECTOWNER_N%]",
-				"type": "string"
-			},
-			{
-				"name": "Project Contact",
-				"label": "[%PROJECTCONTACT%]",
-				"type": "string"
-			},
-			{
-				"name": "Contact Phone",
-				"label": "[%CONTACTPHONE%]",
-				"type": "string"
-			},
-			{
-				"name": "Contact Mail",
-				"label": "[%CONTACTMAIL%]",
-				"type": "string"
-			},
-			{
-				"name": "Public/Private/Mix",
-				"label": "[%PUBLICPRIVATEMIXDESC%]",
-				"type": "string"
-			},
-			{
-				"name": "Source",
-				"label": "[%SOURCE%]",
-				"type": "string"
-			},
-			{
-				"name": "File Manager",
-				"label": "[%FILEMANAGER%]",
-				"type": "string"
-			},
-			{
-				"name": "Permit Number",
-				"label": "[%PERMITNUMBER%]",
-				"type": "string"
-			}
-		]
-	},
-	"DEP_BP:BXLPROJECTS_ALL": {
-		"actiontype": "GRID",
-		"title": "Projet [%PROJECT_ID%]",
-		"attributes": [{
-				"name": "Category",
-				"label": "[%PROJECTCATEGORYDESC%]",
-				"type": "string"
-			},
-			{
-				"name": "Project Type",
-				"label": "[%PROJECTTYPE%]",
-				"type": "string"
-			},
-			{
-				"name": "Street Name F",
-				"label": "[%STREETNAME_F%]",
-				"type": "string"
-			},
-			{
-				"name": "Street Name N",
-				"label": "[%STREETNAME_N%]",
-				"type": "string"
-			},
-			{
-				"name": "Street Number",
-				"label": "[%STREETNUMBER%]",
-				"type": "string"
-			},
-			{
-				"name": "Street Box",
-				"label": "[%STREETBOX%]",
-				"type": "string"
-			},
-			{
-				"name": "Postal Code",
-				"label": "[%POSTALCODE%]",
-				"type": "string"
-			},
-			{
-				"name": "Project Title F",
-				"label": "[%PROJECTTITLE_F%]",
-				"type": "string"
-			},
-			{
-				"name": "Description F",
-				"label": "[%DESCRIPTION_F%]",
-				"type": "string"
-			},
-			{
-				"name": "Project Title N",
-				"label": "[%PROJECTTITLE_N%]",
-				"type": "string"
-			},
-			{
-				"name": "Description N",
-				"label": "[%DESCRIPTION_N%]",
-				"type": "string"
-			},
-			{
-				"name": "Weblink",
-				"label": "[%WEBLINK%]",
-				"type": "string"
-			},
-			{
-				"name": "Project Status F",
-				"label": "[%REMARKS_F%]",
-				"type": "string"
-			},
-			{
-				"name": "Project Status N",
-				"label": "[%REMARKS_N%]",
-				"type": "string"
-			},
-			{
-				"name": "Project Owner F",
-				"label": "[%PROJECTOWNER_F%]",
-				"type": "string"
-			},
-			{
-				"name": "Project Owner N",
-				"label": "[%PROJECTOWNER_N%]",
-				"type": "string"
-			},
-			{
-				"name": "Project Contact",
-				"label": "[%PROJECTCONTACT%]",
-				"type": "string"
-			},
-			{
-				"name": "Contact Phone",
-				"label": "[%CONTACTPHONE%]",
-				"type": "string"
-			},
-			{
-				"name": "Contact Mail",
-				"label": "[%CONTACTMAIL%]",
-				"type": "string"
-			},
-			{
-				"name": "Public/Private/Mix",
-				"label": "[%PUBLICPRIVATEMIXDESC%]",
-				"type": "string"
-			},
-			{
-				"name": "Source",
-				"label": "[%SOURCE%]",
-				"type": "string"
-			},
-			{
-				"name": "File Manager",
-				"label": "[%FILEMANAGER%]",
-				"type": "string"
-			},
-			{
-				"name": "Permit Number",
-				"label": "[%PERMITNUMBER%]",
 				"type": "string"
 			}
 		]
