@@ -593,7 +593,7 @@ const gfiEn = {
 			}
 		]
 	},
-	"AED:Zones_de_preemption": {
+	"BDU_DRU:Zones_de_preemption": {
 		"actiontype": "GRID",
 		"title": "Zone de préemption: [%NOM_FR%]",
 		"attributes": [{
@@ -777,6 +777,6 @@ const gfiEn = {
 				"type": "string"
 			}
 		]
-	},
+	}
 };
 module.exports = gfiEn;

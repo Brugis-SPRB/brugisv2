@@ -68,7 +68,7 @@ const gfiNl = {
 			"type": "string"
 		}]
 	},
-	"BUV:Voorkooprecht": {
+	"BSO_DSV:Voorkooprecht": {
 		"actiontype": "GRID",
 		"title": "Voorkooprecht: [%NOM_NL%]",
 		"attributes": [{
