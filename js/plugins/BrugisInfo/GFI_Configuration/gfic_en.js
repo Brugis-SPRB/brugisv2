@@ -777,6 +777,6 @@ const gfiEn = {
 				"type": "string"
 			}
 		]
-	},
+	}
 };
 module.exports = gfiEn;
