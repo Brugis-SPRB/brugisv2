@@ -282,7 +282,7 @@
 									 }
 								 }
 							 }
-						},"MapFooter","BestEffort",
+						},"MapFooter","BestEffort","SearchServicesConfig",
             {
                 "name" : "BrugisTree",
 								"cfg" : {

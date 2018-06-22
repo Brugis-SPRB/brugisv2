@@ -22,7 +22,7 @@ const EnvUtils = {
         var url = "/";
         switch (env) {
             case DEV:
-                url = "http://svappmavw115:8080/geoserver/ows";
+                url = "//svappmavw115:8080/geoserver/ows";
                 break;
             case STA:
                 url = "http://mybrugis.irisnetlab.be/geoserver/ows";
