@@ -417,6 +417,11 @@ const gfiFr = {
 				"name": "Référence DMS",
 				"label": "[%NUMMER_DOSSIER%]/[%CODE_DOSSIER%]",
 				"type": "string"
+			},
+			{
+				"name": "Description",
+				"label": "[%NOTA_FR%]",
+				"type": "string"
 			}
 		]
 	},
@@ -476,6 +481,11 @@ const gfiFr = {
 			{
 				"name": "Référence DMS",
 				"label": "[%NUMMER_DOSSIER%]/[%CODE_DOSSIER%]",
+				"type": "string"
+			},
+			{
+				"name": "Description",
+				"label": "[%NOTA_FR%]",
 				"type": "string"
 			}
 		]
@@ -537,6 +547,11 @@ const gfiFr = {
 				"name": "Référence DMS",
 				"label": "[%NUMMER_DOSSIER%]/[%CODE_DOSSIER%]",
 				"type": "string"
+			},
+			{
+				"name": "Description",
+				"label": "[%NOTA_FR%]",
+				"type": "string"
 			}
 		]
 	},
@@ -596,6 +611,11 @@ const gfiFr = {
 			{
 				"name": "Référence DMS",
 				"label": "[%NUMMER_DOSSIER%]/[%CODE_DOSSIER%]",
+				"type": "string"
+			},
+			{
+				"name": "Description",
+				"label": "[%NOTA_FR%]",
 				"type": "string"
 			}
 		]
@@ -657,6 +677,11 @@ const gfiFr = {
 				"name": "Référence DMS",
 				"label": "[%NUMMER_DOSSIER%]/[%CODE_DOSSIER%]",
 				"type": "string"
+			},
+			{
+				"name": "Description",
+				"label": "[%NOTA_FR%]",
+				"type": "string"
 			}
 		]
 	},
@@ -716,6 +741,11 @@ const gfiFr = {
 			{
 				"name": "Référence DMS",
 				"label": "[%NUMMER_DOSSIER%]/[%CODE_DOSSIER%]",
+				"type": "string"
+			},
+			{
+				"name": "Description",
+				"label": "[%NOTA_FR%]",
 				"type": "string"
 			}
 		]
@@ -777,6 +807,11 @@ const gfiFr = {
 				"name": "Référence DMS",
 				"label": "[%NUMMER_DOSSIER%]/[%CODE_DOSSIER%]",
 				"type": "string"
+			},
+			{
+				"name": "Description",
+				"label": "[%NOTA_FR%]",
+				"type": "string"
 			}
 		]
 	},
@@ -836,6 +871,11 @@ const gfiFr = {
 			{
 				"name": "Référence DMS",
 				"label": "[%NUMMER_DOSSIER%]/[%CODE_DOSSIER%]",
+				"type": "string"
+			},
+			{
+				"name": "Description",
+				"label": "[%NOTA_FR%]",
 				"type": "string"
 			}
 		]
@@ -897,6 +937,11 @@ const gfiFr = {
 				"name": "Référence DMS",
 				"label": "[%NUMMER_DOSSIER%]/[%CODE_DOSSIER%]",
 				"type": "string"
+			},
+			{
+				"name": "Description",
+				"label": "[%NOTA_FR%]",
+				"type": "string"
 			}
 		]
 	},
@@ -956,6 +1001,11 @@ const gfiFr = {
 			{
 				"name": "Référence DMS",
 				"label": "[%NUMMER_DOSSIER%]/[%CODE_DOSSIER%]",
+				"type": "string"
+			},
+			{
+				"name": "Description",
+				"label": "[%NOTA_FR%]",
 				"type": "string"
 			}
 		]
@@ -1017,6 +1067,11 @@ const gfiFr = {
 				"name": "Référence DMS",
 				"label": "[%NUMMER_DOSSIER%]/[%CODE_DOSSIER%]",
 				"type": "string"
+			},
+			{
+				"name": "Description",
+				"label": "[%NOTA_FR%]",
+				"type": "string"
 			}
 		]
 	},
@@ -1076,6 +1131,11 @@ const gfiFr = {
 			{
 				"name": "Référence DMS",
 				"label": "[%NUMMER_DOSSIER%]/[%CODE_DOSSIER%]",
+				"type": "string"
+			},
+			{
+				"name": "Description",
+				"label": "[%NOTA_FR%]",
 				"type": "string"
 			}
 		]
@@ -1137,6 +1197,11 @@ const gfiFr = {
 				"name": "Référence DMS",
 				"label": "[%NUMMER_DOSSIER%]/[%CODE_DOSSIER%]",
 				"type": "string"
+			},
+			{
+				"name": "Description",
+				"label": "[%NOTA_FR%]",
+				"type": "string"
 			}
 		]
 	},
@@ -1196,6 +1261,11 @@ const gfiFr = {
 			{
 				"name": "Référence DMS",
 				"label": "[%NUMMER_DOSSIER%]/[%CODE_DOSSIER%]",
+				"type": "string"
+			},
+			{
+				"name": "Description",
+				"label": "[%NOTA_FR%]",
 				"type": "string"
 			}
 		]
@@ -1257,6 +1327,11 @@ const gfiFr = {
 				"name": "Référence DMS",
 				"label": "[%NUMMER_DOSSIER%]/[%CODE_DOSSIER%]",
 				"type": "string"
+			},
+			{
+				"name": "Description",
+				"label": "[%NOTA_FR%]",
+				"type": "string"
 			}
 		]
 	},
@@ -1316,6 +1391,11 @@ const gfiFr = {
 			{
 				"name": "Référence DMS",
 				"label": "[%NUMMER_DOSSIER%]/[%CODE_DOSSIER%]",
+				"type": "string"
+			},
+			{
+				"name": "Description",
+				"label": "[%NOTA_FR%]",
 				"type": "string"
 			}
 		]
@@ -1377,6 +1457,11 @@ const gfiFr = {
 				"name": "Référence DMS",
 				"label": "[%NUMMER_DOSSIER%]/[%CODE_DOSSIER%]",
 				"type": "string"
+			},
+			{
+				"name": "Description",
+				"label": "[%NOTA_FR%]",
+				"type": "string"
 			}
 		]
 	},
@@ -1436,6 +1521,11 @@ const gfiFr = {
 			{
 				"name": "Référence DMS",
 				"label": "[%NUMMER_DOSSIER%]/[%CODE_DOSSIER%]",
+				"type": "string"
+			},
+			{
+				"name": "Description",
+				"label": "[%NOTA_FR%]",
 				"type": "string"
 			}
 		]
@@ -1533,7 +1623,7 @@ const gfiFr = {
 			}
 		]
 	},
-	"AED:Zones_de_preemption": {
+	"BDU_DRU:Zones_de_preemption": {
 		"actiontype": "GRID",
 		"title": "Zone de préemption: [%NOM_FR%]",
 		"attributes": [{
@@ -1629,35 +1719,6 @@ const gfiFr = {
 			{
 				"name": "ID",
 				"label": "[%ID%]",
-				"type": "string"
-			}
-		]
-	},
-	"TAX:Observations": {
-		"actiontype": "GRID",
-		"attributes": [{
-				"name": "C_OBSERV",
-				"label": "[%C_OBSERV%]",
-				"type": "string"
-			},
-			{
-				"name": "DATE_REAL",
-				"label": "[%DATE_REAL%]",
-				"type": "date"
-			},
-			{
-				"name": "LIEN_HTTP",
-				"label": "[%LIEN_HTTP%]",
-				"type": "file"
-			},
-			{
-				"name": "ORIG_OBS",
-				"label": "[%ORIG_OBS%]",
-				"type": "string"
-			},
-			{
-				"name": "PARCELLE",
-				"label": "[%PARCELLE%]",
 				"type": "string"
 			}
 		]
@@ -2034,290 +2095,10 @@ const gfiFr = {
 				"name": "Référence DMS",
 				"label": "[%NUMMER_DOSSIER%]/[%CODE_DOSSIER%]",
 				"type": "string"
-			}
-		]
-	},
-	"BPL:Infrastructures_sportives": {
-		"actiontype": "GRID",
-		"title": "Infrastructure: [%Nom%]",
-		"attributes": [{
-				"name": "Projet",
-				"label": "[%Projet%]",
-				"type": "string"
 			},
 			{
-				"name": "Lieu",
-				"label": "[%Lieu%]",
-				"type": "string"
-			},
-			{
-				"name": "Subsides",
-				"label": "[%Subsides%]",
-				"type": "string"
-			},
-			{
-				"name": "Type",
-				"label": "[%Type%]",
-				"type": "string"
-			},
-			{
-				"name": "Commune",
-				"label": "[%Commune%]",
-				"type": "string"
-			},
-			{
-				"name": "Année",
-				"label": "[%Annee%]",
-				"type": "string"
-			},
-			{
-				"name": "Photo, avant",
-				"label": "[%Photo_A%]",
-				"type": "picture"
-			},
-			{
-				"name": "Photo, après",
-				"label": "[%Photo_P%]",
-				"type": "picture"
-			}
-		]
-	},
-	"DEP_BP:BXLPROJECTS_PMNR": {
-		"actiontype": "GRID",
-		"title": "Projet [%PROJECT_ID%]",
-		"attributes": [{
-				"name": "Category",
-				"label": "[%PROJECTCATEGORYDESC%]",
-				"type": "string"
-			},
-			{
-				"name": "Project Type",
-				"label": "[%PROJECTTYPE%]",
-				"type": "string"
-			},
-			{
-				"name": "Street Name F",
-				"label": "[%STREETNAME_F%]",
-				"type": "string"
-			},
-			{
-				"name": "Street Name N",
-				"label": "[%STREETNAME_N%]",
-				"type": "string"
-			},
-			{
-				"name": "Street Number",
-				"label": "[%STREETNUMBER%]",
-				"type": "string"
-			},
-			{
-				"name": "Street Box",
-				"label": "[%STREETBOX%]",
-				"type": "string"
-			},
-			{
-				"name": "Postal Code",
-				"label": "[%POSTALCODE%]",
-				"type": "string"
-			},
-			{
-				"name": "Project Title F",
-				"label": "[%PROJECTTITLE_F%]",
-				"type": "string"
-			},
-			{
-				"name": "Description F",
-				"label": "[%DESCRIPTION_F%]",
-				"type": "string"
-			},
-			{
-				"name": "Project Title N",
-				"label": "[%PROJECTTITLE_N%]",
-				"type": "string"
-			},
-			{
-				"name": "Description N",
-				"label": "[%DESCRIPTION_N%]",
-				"type": "string"
-			},
-			{
-				"name": "Weblink",
-				"label": "[%WEBLINK%]",
-				"type": "string"
-			},
-			{
-				"name": "Project Status F",
-				"label": "[%REMARKS_F%]",
-				"type": "string"
-			},
-			{
-				"name": "Project Status N",
-				"label": "[%REMARKS_N%]",
-				"type": "string"
-			},
-			{
-				"name": "Project Owner F",
-				"label": "[%PROJECTOWNER_F%]",
-				"type": "string"
-			},
-			{
-				"name": "Project Owner N",
-				"label": "[%PROJECTOWNER_N%]",
-				"type": "string"
-			},
-			{
-				"name": "Project Contact",
-				"label": "[%PROJECTCONTACT%]",
-				"type": "string"
-			},
-			{
-				"name": "Contact Phone",
-				"label": "[%CONTACTPHONE%]",
-				"type": "string"
-			},
-			{
-				"name": "Contact Mail",
-				"label": "[%CONTACTMAIL%]",
-				"type": "string"
-			},
-			{
-				"name": "Public/Private/Mix",
-				"label": "[%PUBLICPRIVATEMIXDESC%]",
-				"type": "string"
-			},
-			{
-				"name": "Source",
-				"label": "[%SOURCE%]",
-				"type": "string"
-			},
-			{
-				"name": "File Manager",
-				"label": "[%FILEMANAGER%]",
-				"type": "string"
-			},
-			{
-				"name": "Permit Number",
-				"label": "[%PERMITNUMBER%]",
-				"type": "string"
-			}
-		]
-	},
-	"DEP_BP:BXLPROJECTS_ALL": {
-		"actiontype": "GRID",
-		"title": "Projet [%PROJECT_ID%]",
-		"attributes": [{
-				"name": "Category",
-				"label": "[%PROJECTCATEGORYDESC%]",
-				"type": "string"
-			},
-			{
-				"name": "Project Type",
-				"label": "[%PROJECTTYPE%]",
-				"type": "string"
-			},
-			{
-				"name": "Street Name F",
-				"label": "[%STREETNAME_F%]",
-				"type": "string"
-			},
-			{
-				"name": "Street Name N",
-				"label": "[%STREETNAME_N%]",
-				"type": "string"
-			},
-			{
-				"name": "Street Number",
-				"label": "[%STREETNUMBER%]",
-				"type": "string"
-			},
-			{
-				"name": "Street Box",
-				"label": "[%STREETBOX%]",
-				"type": "string"
-			},
-			{
-				"name": "Postal Code",
-				"label": "[%POSTALCODE%]",
-				"type": "string"
-			},
-			{
-				"name": "Project Title F",
-				"label": "[%PROJECTTITLE_F%]",
-				"type": "string"
-			},
-			{
-				"name": "Description F",
-				"label": "[%DESCRIPTION_F%]",
-				"type": "string"
-			},
-			{
-				"name": "Project Title N",
-				"label": "[%PROJECTTITLE_N%]",
-				"type": "string"
-			},
-			{
-				"name": "Description N",
-				"label": "[%DESCRIPTION_N%]",
-				"type": "string"
-			},
-			{
-				"name": "Weblink",
-				"label": "[%WEBLINK%]",
-				"type": "string"
-			},
-			{
-				"name": "Project Status F",
-				"label": "[%REMARKS_F%]",
-				"type": "string"
-			},
-			{
-				"name": "Project Status N",
-				"label": "[%REMARKS_N%]",
-				"type": "string"
-			},
-			{
-				"name": "Project Owner F",
-				"label": "[%PROJECTOWNER_F%]",
-				"type": "string"
-			},
-			{
-				"name": "Project Owner N",
-				"label": "[%PROJECTOWNER_N%]",
-				"type": "string"
-			},
-			{
-				"name": "Project Contact",
-				"label": "[%PROJECTCONTACT%]",
-				"type": "string"
-			},
-			{
-				"name": "Contact Phone",
-				"label": "[%CONTACTPHONE%]",
-				"type": "string"
-			},
-			{
-				"name": "Contact Mail",
-				"label": "[%CONTACTMAIL%]",
-				"type": "string"
-			},
-			{
-				"name": "Public/Private/Mix",
-				"label": "[%PUBLICPRIVATEMIXDESC%]",
-				"type": "string"
-			},
-			{
-				"name": "Source",
-				"label": "[%SOURCE%]",
-				"type": "string"
-			},
-			{
-				"name": "File Manager",
-				"label": "[%FILEMANAGER%]",
-				"type": "string"
-			},
-			{
-				"name": "Permit Number",
-				"label": "[%PERMITNUMBER%]",
+				"name": "Description",
+				"label": "[%NOTA_FR%]",
 				"type": "string"
 			}
 		]
@@ -2674,91 +2455,6 @@ const gfiFr = {
 				"name": "Statut",
 				"label": "if ('[%SCENARIO%]'.length > 0 && '[%SCENARIO%]'=='2' ){'Dans une zone majorée'} else {'Hors de zone majorée'}",
 				"type": "eval"
-			}
-		]
-	},
-	"BEE:Hebergements_touristiques": {
-		"actiontype": "GRID",
-		"title": "[%ROOM_TYPE%]: [%NAME%] proposé par [%HOST_NAME%]",
-		"attributes": [{
-				"name": "Nom AirBnB du bien",
-				"label": "[%NAME%]",
-				"type": "string"
-			},
-			{
-				"name": "Lien AirBnB",
-				"label": "https://www.airbnb.com/rooms/[%RBNB_ID%]",
-				"type": "link"
-			},
-			{
-				"name": "Type de bien",
-				"label": "[%ROOM_TYPE%]",
-				"type": "string"
-			},
-			{
-				"name": "Environs / situation",
-				"label": "[%NEIGHBOURHOOD%]",
-				"type": "string"
-			},
-			{
-				"name": "Nombre de nuits minimum",
-				"label": "[%MINIMUM_NIGHTS%]",
-				"type": "string"
-			},
-			{
-				"name": "Prix/nuit",
-				"label": "[%PRICE%]€",
-				"type": "string"
-			},
-			{
-				"name": "Disponibilité",
-				"label": "[%AVAILABILITY_365%]/365",
-				"type": "string"
-			},
-			{
-				"name": "Nom AirBnB de l'hôte",
-				"label": "[%HOST_NAME%]",
-				"type": "string"
-			},
-			{
-				"name": "Nombre de biens listés par l'hôte",
-				"label": "[%CALCULATED_HOST_LISTINGS_COUNT%]",
-				"type": "string"
-			},
-			{
-				"name": "Identifiant AirBnB de l'hôte",
-				"label": "[%HOST_ID%]",
-				"type": "string"
-			},
-			{
-				"name": "Nombre d'évaluations",
-				"label": "[%NUMBER_OF_REVIEWS%]",
-				"type": "string"
-			},
-			{
-				"name": "Date de la dernière évaluation",
-				"label": "[%LAST_REVIEW%]",
-				"type": "string"
-			},
-			{
-				"name": "Nombre d'évaluations par mois",
-				"label": "[%REVIEWS_PER_MONTH%]",
-				"type": "string"
-			},
-			{
-				"name": "Catégorie BEE",
-				"label": "[%CATEGORY%]",
-				"type": "string"
-			},
-			{
-				"name": "Vérifié BEE",
-				"label": "[%CHECKED%]",
-				"type": "string"
-			},
-			{
-				"name": "CAPAKEY",
-				"label": "[%CAPAKEY%]",
-				"type": "string"
 			}
 		]
 	},

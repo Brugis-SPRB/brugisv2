@@ -21,6 +21,42 @@
         }
     },
     "layers": [{
+
+          "type": "wms",
+            "url":["https://mybrugis.irisnet.be/geoserver/URBIS/wms"],
+          "title": "UrbisNL Gray",
+          "name": "URBIS:urbisNLGray",
+             "group": "background",
+            "visibility": false,
+            "origin" : [140000.0,160000.0],
+            "tiled" : true,
+            "thumbURL" : "assets/img/urbis_gray.PNG",
+          "format": "image/png8"
+        },{
+
+          "type": "wms",
+            "url":["https://mybrugis.irisnet.be/geoserver/URBIS/wms"],
+          "title": "UrbisFR Gray",
+          "name": "URBIS:urbisFRGray",
+            "group": "background",
+            "thumbURL" : "",
+            "visibility": false,
+            "origin" : [140000.0,160000.0],
+            "tiled" : true,
+            "thumbURL" : "assets/img/urbis_gray.PNG",
+          "format": "image/png8"
+        },{
+          "type": "wms",
+            "url":["https://mybrugis.irisnet.be/geoserver/URBIS/wms"],
+          "title": "UrbisNL",
+          "name": "URBIS:urbisNL",
+             "group": "background",
+            "visibility": false,
+            "tiled" : true,
+            "origin" : [140000.0,160000.0],
+            "thumbURL" : "assets/img/urbis_color.PNG",
+          "format": "image/png8"
+        },{
         	"type": "wms",
             "url":["https://mybrugis.irisnet.be/geoserver/URBIS/wms"],
         	"title": "UrbisFR",
@@ -31,42 +67,6 @@
             "origin" : [140000.0,160000.0],
             "thumbURL" : "assets/img/urbis_color.PNG",
             "tiled" : true
-        },{
-        	"type": "wms",
-            "url":["https://mybrugis.irisnet.be/geoserver/URBIS/wms"],
-        	"title": "UrbisNL",
-        	"name": "URBIS:urbisNL",
-             "group": "background",
-            "visibility": false,
-            "tiled" : true,
-            "origin" : [140000.0,160000.0],
-            "thumbURL" : "assets/img/urbis_color.PNG",
-        	"format": "image/png8"
-        },{
-
-        	"type": "wms",
-            "url":["https://mybrugis.irisnet.be/geoserver/URBIS/wms"],
-        	"title": "UrbisNL Gray",
-        	"name": "URBIS:urbisNLGray",
-             "group": "background",
-            "visibility": false,
-            "origin" : [140000.0,160000.0],
-            "tiled" : true,
-            "thumbURL" : "assets/img/urbis_gray.PNG",
-        	"format": "image/png8"
-        },{
-
-        	"type": "wms",
-            "url":["https://mybrugis.irisnet.be/geoserver/URBIS/wms"],
-        	"title": "UrbisFR Gray",
-        	"name": "URBIS:urbisFRGray",
-            "group": "background",
-            "thumbURL" : "",
-            "visibility": false,
-            "origin" : [140000.0,160000.0],
-            "tiled" : true,
-            "thumbURL" : "assets/img/urbis_gray.PNG",
-        	"format": "image/png8"
         },{
 
         	"type": "wms",
