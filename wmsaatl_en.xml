@@ -2261,7 +2261,7 @@
             <Name>Patrimoine Naturel</Name>
             <Title>Natural heritage</Title>
             <Layer queryable="1">
-              <Name>BDU_DMS_PROT:Arbres_Remarquables</Name>
+              <Name>BDU_DMS_PROT:Arbres_remarquables</Name>
               <Title>Remarkable trees</Title>
               <Abstract />
               <KeywordList>
