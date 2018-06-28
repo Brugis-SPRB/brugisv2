@@ -245,7 +245,7 @@ const BrugisSurvey = React.createClass({
 const BrugisSurveyPlugin = connect((state) => ({
     map: (state.map && state.map.present) || (state.map) || (state.config && state.config.map) || null,
     surveys: state.brugisSurvey && state.brugisSurvey.surveys || [],
-    surveyUpdate: state.brugisSurvey && state.brugisSurvey.updateDate || Math.floor(Date.now() / 500),
+    surveyUpdate: state.brugisSurvey && state.brugisSurvey.updateDate || 0,
     visible: state.controls && state.controls.brugissurvey && state.controls.brugissurvey.enabled || false,
     toolbarActive: state.controls && state.controls.toolbar && state.controls.toolbar.active === 'BrugisSurvey' || false,
     drawSurfaceActive: state.brugisSurvey && state.brugisSurvey.active_tool === 'DRAW_POLY' || false,
