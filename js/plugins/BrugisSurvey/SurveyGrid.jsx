@@ -40,6 +40,7 @@ class SurveyGrid extends React.Component {
         this.onChangePage = this.onChangePage.bind(this);
     }
 
+
     onChangePage(pageOfItems) {
         // update state with new page of items
         this.setState({ pageOfItems: pageOfItems });

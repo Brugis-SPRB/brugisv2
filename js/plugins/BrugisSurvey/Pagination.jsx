@@ -25,9 +25,8 @@ class BrugisPagination extends React.Component {
     }
 
     componentWillReceiveProps(newProps) {
-        // this.setPage(this.state.pager.currentPage);
         if ( this.props.surveyUpdate < newProps.surveyUpdate ) {
-            this.setPage(this.state.pager.currentPage);
+            this.updatePage(this.state.pager.currentPage);
         }
     }
 
@@ -102,21 +101,24 @@ class BrugisPagination extends React.Component {
             <Button disabled={pager.currentPage === pager.totalPages ? true : false} onClick={() => this.setPage(pager.currentPage + 1)}>Next</Button>
             <Button disabled={pager.currentPage === pager.totalPages ? true : false} onClick={() => this.setPage(pager.totalPages)}>Last</Button>
           </ButtonGroup>
-
-          /*
-            <Pagination bsSize="large">
-                <Pagination.First disabled={pager.currentPage === 1 ? true : false} onClick={() => this.setPage(1)} />
-                <Pagination.Prev disabled={pager.currentPage === 1 ? true : false} onClick={() => this.setPage(pager.currentPage - 1)} />
-
-                {pager.pages.map((page, index) =>
-                    <Pagination.Item active={pager.currentPage === page ? true : false} onClick={() => this.setPage(page)} />
-                )}
-
-                <Pagination.Next disabled={pager.currentPage === pager.totalPages ? true : false} onClick={() => this.setPage(pager.currentPage + 1)} />
-                <Pagination.Last disabled={pager.currentPage === pager.totalPages ? true : false} onClick={() => this.setPage(pager.totalPages)} />
-            </Pagination>
-            */
         );
+    }
+
+    updatePage(page) {
+        var items = this.props.items;
+        var pager = this.state.pager;
+        var pageOfItems = items.slice(pager.startIndex, pager.endIndex + 1);
+
+        // get new pager object for specified page
+        pager = this.getPager(items.length, page);
+
+        // get new page of items from items array
+
+        // update state
+        this.setState({ pager: pager });
+
+        // call change page function in parent component
+        this.props.onChangePage(pageOfItems);
     }
 
     setPage(page) {
