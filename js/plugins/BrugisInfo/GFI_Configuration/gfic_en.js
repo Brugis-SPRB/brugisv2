@@ -82,7 +82,7 @@ const gfiEn = {
 			},
 			{
 				"name": "Fiche de l'arbre",
-				"label": "http://arbres-inventaire.irisnet.be/arbre/[%RESULTS_FR%]/[%ID%]/",
+				"label": "http://arbres-inventaire.irisnet.be/arbre/[%RESULTS_FR%]/[%ID_ARBRE_CMS%]/",
 				"type": "link"
 			},
 			{
@@ -112,7 +112,7 @@ const gfiEn = {
 			},
 			{
 				"name": "Lien CMS",
-				"label": "http://arbres-inventaire.irisnet.be/manager/index.php?table=36&id=[%ID%]",
+				"label": "http://arbres-inventaire.irisnet.be/manager/index.php?table=36&id=[%ID_ARBRE_CMS%]",
 				"type": "link"
 			}
 		]
@@ -136,12 +136,12 @@ const gfiEn = {
 			},
 			{
 				"name": "Lien CMS",
-				"label": "http://arbresinvdev.irisnet.be/manager/index.php?table=36&id=[%ID%]",
+				"label": "http://arbresinvdev.irisnet.be/manager/index.php?table=36&id=[%ID_ARBRE_CMS%]",
 				"type": "link"
 			},
 			{
 				"name": "Fiche de l'arbre",
-				"label": "http://arbresinvdev.irisnet.be/arbre/[%RESULTS_FR%]/[%ID%]/",
+				"label": "http://arbresinvdev.irisnet.be/arbre/[%RESULTS_FR%]/[%ID_ARBRE_CMS%]/",
 				"type": "link"
 			},
 			{
@@ -176,7 +176,7 @@ const gfiEn = {
 		"title": "[%TAX_LA%]: [%RARETE%]",
 		"attributes": [{
 				"name": "Identifiant",
-				"label": "[%ID%]",
+				"label": "[%ID_ARBRE_CMS%]",
 				"type": "string"
 			},
 			{
