@@ -63,145 +63,145 @@ const gfiFr = {
 	},
 	"BDU_DMS_PROT:Arbres_remarquables": {
 		"actiontype": "GRID",
-		"title": "[%tax_fr%]",
+		"title": "[%TAX_FR%]",
 		"attributes": [{
 				"name": "Circonférence",
-				"label": "[%circonference%] cm",
+				"label": "[%CIRCONFERENCE%] cm",
 				"type": "string"
 			},
 			{
 				"name": "Nom",
-				"label": "[%tax_fr%]",
+				"label": "[%TAX_FR%]",
 				"type": "string"
 			},
 			{
 				"name": "Taxon latin",
-				"label": "[%tax_la%]",
+				"label": "[%TAX_LA%]",
 				"type": "string"
 			},
 			{
 				"name": "Fiche de l'arbre",
-				"label": "http://arbres-inventaire.irisnet.be/arbre/[%results_fr%]/[%id%]/",
+				"label": "http://arbres-inventaire.irisnet.be/arbre/[%RESULTS_FR%]/[%ID%]/",
 				"type": "link"
 			},
 			{
 				"name": "Photo",
-				"label": "http://arbres-inventaire.irisnet.be/medias/trees/[%firstimage%]",
+				"label": "http://arbres-inventaire.irisnet.be/medias/trees/[%FIRSTIMAGE%]",
 				"type": "picture"
 			},
 			{
 				"name": "Hauteur",
-				"label": "[%hauteur%] m",
+				"label": "[%HAUTEUR%] m",
 				"type": "string"
 			},
 			{
 				"name": "Diamètre de la cîme",
-				"label": "[%diametre_cime%] m",
+				"label": "[%DIAMETRE_CIME%] m",
 				"type": "string"
 			},
 			{
 				"name": "type d'emplacement",
-				"label": "[%emplacement%]",
+				"label": "[%EMPLACEMENT%]",
 				"type": "string"
 			},
 			{
 				"name": "statut",
-				"label": "[%Legendefr%]",
+				"label": "[%LEGENDEFR%]",
 				"type": "string"
 			},
 			{
 				"name": "Lien CMS",
-				"label": "http://arbres-inventaire.irisnet.be/manager/index.php?table=36&id=[%id%]",
+				"label": "http://arbres-inventaire.irisnet.be/manager/index.php?table=36&id=[%ID%]",
 				"type": "link"
 			}
 		]
 	},
 	"BDU_DMS_PROT:Arbres_remarquables_abattus_ou_disparus": {
 		"actiontype": "GRID",
-		"title": "[%tax_fr%]",
+		"title": "[%TAX_FR%]",
 		"attributes": [{
 				"name": "Circonférence",
-				"label": "[%circonference%] cm",
+				"label": "[%CIRCONFERENCE%] cm",
 				"type": "string"
 			},
 			{
 				"name": "Nom",
-				"label": "[%tax_fr%]",
+				"label": "[%TAX_FR%]",
 				"type": "string"
 			},
 			{
 				"name": "Taxon latin",
-				"label": "[%tax_la%]",
+				"label": "[%TAX_LA%]",
 				"type": "string"
 			},
 			{
-				"name": "Lien CMS",
-				"label": "http://arbres-inventaire.irisnet.be/manager/index.php?table=36&id=[%id%]",
-				"type": "link"
-			},
-			{
 				"name": "Fiche de l'arbre",
-				"label": "http://arbres-inventaire.irisnet.be/arbre/[%results_fr%]/[%id%]/",
+				"label": "http://arbres-inventaire.irisnet.be/arbre/[%RESULTS_FR%]/[%ID%]/",
 				"type": "link"
 			},
 			{
 				"name": "Photo",
-				"label": "http://arbres-inventaire.irisnet.be/medias/trees/[%firstimage%]",
+				"label": "http://arbres-inventaire.irisnet.be/medias/trees/[%FIRSTIMAGE%]",
 				"type": "picture"
 			},
 			{
 				"name": "Hauteur",
-				"label": "[%hauteur%] m",
+				"label": "[%HAUTEUR%] m",
 				"type": "string"
 			},
 			{
 				"name": "Diamètre de la cîme",
-				"label": "[%diametre_cime%] m",
+				"label": "[%DIAMETRE_CIME%] m",
 				"type": "string"
 			},
 			{
 				"name": "type d'emplacement",
-				"label": "[%emplacement%]",
+				"label": "[%EMPLACEMENT%]",
 				"type": "string"
 			},
 			{
 				"name": "statut",
-				"label": "[%Legendefr%]",
+				"label": "[%LEGENDEFR%]",
 				"type": "string"
+			},
+			{
+				"name": "Lien CMS",
+				"label": "http://arbres-inventaire.irisnet.be/manager/index.php?table=36&id=[%ID%]",
+				"type": "link"
 			}
 		]
 	},
 	"BDU_DMS_PROT:Arbres_remarquables_rarete": {
 		"actiontype": "GRID",
-		"title": "[%tax_la%]: [%rarete%]",
+		"title": "[%TAX_LA%]: [%RARETE%]",
 		"attributes": [{
 				"name": "Identifiant",
-				"label": "[%id%]",
+				"label": "[%ID%]",
 				"type": "string"
 			},
 			{
 				"name": "Taxon latin",
-				"label": "[%tax_la%]",
+				"label": "[%TAX_LA%]",
 				"type": "string"
 			},
 			{
 				"name": "rareté",
-				"label": "[%rarete%]",
+				"label": "[%RARETE%]",
 				"type": "string"
 			}
 		]
 	},
 	"BDU_DMS_PROT:Arbres_remarquables_100_biggest": {
 		"actiontype": "GRID",
-		"title": "[%tax_fr%]",
+		"title": "[%TAX_FR%]",
 		"attributes": [{
 				"name": "Circonférence",
-				"label": "[%circonference%] cm",
+				"label": "[%CIRCONFERENCE%] cm",
 				"type": "string"
 			},
 			{
 				"name": "Classement des tailles",
-				"label": "[%ClassementTailles%]",
+				"label": "[%CLASSEMENTTAILLES%]",
 				"type": "string"
 			}
 		]
