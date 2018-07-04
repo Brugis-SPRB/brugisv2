@@ -81,7 +81,7 @@ const gfiFr = {
 			},
 			{
 				"name": "Fiche de l'arbre",
-				"label": "http://arbres-inventaire.irisnet.be/arbre/[%RESULTS_FR%]/[%ID%]/",
+				"label": "http://arbres-inventaire.irisnet.be/arbre/[%RESULTS_FR%]/[%ID_ARBRE_CMS%]/",
 				"type": "link"
 			},
 			{
@@ -111,7 +111,7 @@ const gfiFr = {
 			},
 			{
 				"name": "Lien CMS",
-				"label": "http://arbres-inventaire.irisnet.be/manager/index.php?table=36&id=[%ID%]",
+				"label": "http://arbres-inventaire.irisnet.be/manager/index.php?table=36&id=[%ID_ARBRE_CMS%]",
 				"type": "link"
 			}
 		]
@@ -136,7 +136,7 @@ const gfiFr = {
 			},
 			{
 				"name": "Fiche de l'arbre",
-				"label": "http://arbres-inventaire.irisnet.be/arbre/[%RESULTS_FR%]/[%ID%]/",
+				"label": "http://arbres-inventaire.irisnet.be/arbre/[%RESULTS_FR%]/[%ID_ARBRE_CMS%]/",
 				"type": "link"
 			},
 			{
@@ -166,7 +166,7 @@ const gfiFr = {
 			},
 			{
 				"name": "Lien CMS",
-				"label": "http://arbres-inventaire.irisnet.be/manager/index.php?table=36&id=[%ID%]",
+				"label": "http://arbres-inventaire.irisnet.be/manager/index.php?table=36&id=[%ID_ARBRE_CMS%]",
 				"type": "link"
 			}
 		]
