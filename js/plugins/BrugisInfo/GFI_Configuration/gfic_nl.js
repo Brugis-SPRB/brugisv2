@@ -105,145 +105,145 @@ const gfiNl = {
 	},
 	"BSO_DML_BESC:Opmerkelijke_bomen": {
 		"actiontype": "GRID",
-		"title": "[%tax_nl%]",
+		"title": "[%TAX_NL%]",
 		"attributes": [{
 				"name": "Omtrek",
-				"label": "[%circonference%] cm",
+				"label": "[%CIRCONFERENCE%] cm",
 				"type": "string"
 			},
 			{
 				"name": "Naam",
-				"label": "[%tax_nl%]",
+				"label": "[%TAX_NL%]",
 				"type": "string"
 			},
 			{
 				"name": "Latijnse benaming",
-				"label": "[%tax_la%]",
+				"label": "[%TAX_LA%]",
 				"type": "string"
 			},
 			{
 				"name": "Boomfiche",
-				"label": "http://bomen-inventaris.irisnet.be/arbre/[%results_nl%]/[%id%]/",
+				"label": "http://bomen-inventaris.irisnet.be/arbre/[%RESULTS_NL%]/[%ID%]/",
 				"type": "link"
 			},
 			{
 				"name": "Foto",
-				"label": "http://bomen-inventaris.irisnet.be/medias/trees/[%firstimage%]",
+				"label": "http://bomen-inventaris.irisnet.be/medias/trees/[%FIRSTIMAGE%]",
 				"type": "picture"
 			},
 			{
 				"name": "Hoogte",
-				"label": "[%hauteur%] m",
+				"label": "[%HAUTEUR%] m",
 				"type": "string"
 			},
 			{
 				"name": "Diameter kroon",
-				"label": "[%diametre_cime%] m",
+				"label": "[%DIAMETRE_CIME%] m",
 				"type": "string"
 			},
 			{
 				"name": "Localisatie",
-				"label": "[%emplacement%]",
+				"label": "[%EMPLACEMENT%]",
 				"type": "string"
 			},
 			{
 				"name": "Toestand",
-				"label": "[%Legendenl%]",
+				"label": "[%LEGENDENL%]",
 				"type": "string"
 			},
 			{
 				"name": "CMS link",
-				"label": "http://bomen-inventaris.irisnet.be/manager/index.php?table=36&id=[%id%]",
+				"label": "http://bomen-inventaris.irisnet.be/manager/index.php?table=36&id=[%ID%]",
 				"type": "link"
 			}
 		]
 	},
 	"BSO_DML_BESC:Gevelde_ofverdwenen_bomen": {
 		"actiontype": "GRID",
-		"title": "[%tax_nl%]",
+		"title": "[%TAX_NL%]",
 		"attributes": [{
 				"name": "Omtrek",
-				"label": "[%circonference%] cm",
+				"label": "[%CIRCONFERENCE%] cm",
 				"type": "string"
 			},
 			{
 				"name": "Naam",
-				"label": "[%tax_nl%]",
+				"label": "[%TAX_NL%]",
 				"type": "string"
 			},
 			{
 				"name": "Latijnse benaming",
-				"label": "[%tax_la%]",
+				"label": "[%TAX_LA%]",
 				"type": "string"
 			},
 			{
 				"name": "CMS link",
-				"label": "http://bomen-inventaris.irisnet.be/manager/index.php?table=36&id=[%id%]",
+				"label": "http://bomen-inventaris.irisnet.be/manager/index.php?table=36&id=[%ID%]",
 				"type": "link"
 			},
 			{
 				"name": "Boomfiche",
-				"label": "http://bomen-inventaris.irisnet.be/arbre/[%results_nl%]/[%id%]/",
+				"label": "http://bomen-inventaris.irisnet.be/arbre/[%RESULTS_NL%]/[%ID%]/",
 				"type": "link"
 			},
 			{
 				"name": "Foto",
-				"label": "http://bomen-inventaris.irisnet.be/medias/trees/[%firstimage%]",
+				"label": "http://bomen-inventaris.irisnet.be/medias/trees/[%FIRSTIMAGE%]",
 				"type": "picture"
 			},
 			{
 				"name": "Hoogte",
-				"label": "[%hauteur%] m",
+				"label": "[%HAUTEUR%] m",
 				"type": "string"
 			},
 			{
 				"name": "Diameter kroon",
-				"label": "[%diametre_cime%] m",
+				"label": "[%DIAMETRE_CIME%] m",
 				"type": "string"
 			},
 			{
 				"name": "Localisatie",
-				"label": "[%emplacement%]",
+				"label": "[%EMPLACEMENT%]",
 				"type": "string"
 			},
 			{
 				"name": "Toestand",
-				"label": "[%Legendenl%]",
+				"label": "[%LEGENDENL%]",
 				"type": "string"
 			}
 		]
 	},
 	"BSO_DML_BESC:Opmerkelijke_bomen_zeldzaamheid": {
 		"actiontype": "GRID",
-		"title": "[%tax_la%]: [%rarete%]",
+		"title": "[%TAX_LA%]: [%RARETE%]",
 		"attributes": [{
 				"name": "Id",
-				"label": "[%id%]",
+				"label": "[%ID%]",
 				"type": "string"
 			},
 			{
 				"name": "Latijnse benaming",
-				"label": "[%tax_la%]",
+				"label": "[%TAX_LA%]",
 				"type": "string"
 			},
 			{
 				"name": "Zeldzaamheid",
-				"label": "[%rarete%]",
+				"label": "[%RARETE%]",
 				"type": "string"
 			}
 		]
 	},
 	"BSO_DML_BESC:Opmerkelijke_bomen_100_biggest": {
 		"actiontype": "GRID",
-		"title": "[%tax_nl%]",
+		"title": "[%TAX_NL%]",
 		"attributes": [{
 				"name": "Omtrek",
-				"label": "[%circonference%] cm",
+				"label": "[%CIRCONFERENCE%] cm",
 				"type": "string"
 			},
 			{
 				"name": "Afmetingenindex",
-				"label": "[%ClassementTailles%]",
+				"label": "[%CLASSEMENTTAILLES%]",
 				"type": "string"
 			}
 		]
