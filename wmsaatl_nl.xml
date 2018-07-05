@@ -2376,11 +2376,11 @@
 
         <Layer noSubsets="0" opaque="0" queryable="1">
           <Name>Phototheque Wikimedia</Name>
-          <Title>Photothèque Wikimedia</Title>
+          <Title>Wikimedia fototheek</Title>
 
             <Layer noSubsets="0" opaque="0" queryable="1">
               <Name>BDU_DMS_PROT:Phototheque_Wikimedia_DMS</Name>
-              <Title>Photothèque Wikimedia DMS</Title>
+              <Title>Wikimedia fototheek DML</Title>
               <Abstract/>
               <KeywordList>
                 <Keyword>features</Keyword>
@@ -2399,7 +2399,7 @@
               </Style>
             </Layer>
           </Layer>
-        
+
       </Layer>
       <Layer noSubsets="0" opaque="0" queryable="1">
         <Name>Stedenbouw</Name>
