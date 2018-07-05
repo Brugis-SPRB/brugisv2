@@ -40,12 +40,14 @@ class SurveyGrid extends React.Component {
         this.onChangePage = this.onChangePage.bind(this);
     }
 
+
     onChangePage(pageOfItems) {
         // update state with new page of items
         this.setState({ pageOfItems: pageOfItems });
     }
 
     onDocxClick(survey) {
+        var docxUrl = this.props.webreperagehost + "/res/reperage/" + survey.id + ".docx?lang=" + SurveyUtils.getOldBrugisLocale(this.props.locale) + "&user=" + this.props.user;
         if (survey.state === "DONE") {
             var docxUrl = this.props.webreperagehost + "/res/reperage/" + survey.id + ".docx?lang=" + SurveyUtils.getOldBrugisLocale(this.props.locale) + "&user=" + this.props.user;
             console.log(docxUrl);
@@ -54,6 +56,7 @@ class SurveyGrid extends React.Component {
     }
 
     onPdfClick(survey) {
+        var pdfUrl = this.props.webreperagehost + "/res/reperage/" + survey.id + ".pdf?lang=" + SurveyUtils.getOldBrugisLocale(this.props.locale) + "&user=" + this.props.user;
         if (survey.state === "DONE") {
             var pdfUrl = this.props.webreperagehost + "/res/reperage/" + survey.id + ".pdf?lang=" + SurveyUtils.getOldBrugisLocale(this.props.locale) + "&user=" + this.props.user;
             console.log(pdfUrl)

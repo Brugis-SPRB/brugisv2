@@ -2373,6 +2373,33 @@
             </Style>
           </Layer-->
         </Layer>
+
+        <Layer noSubsets="0" opaque="0" queryable="1">
+          <Name>Phototheque Wikimedia</Name>
+          <Title>Wikimedia fototheek</Title>
+
+            <Layer noSubsets="0" opaque="0" queryable="1">
+              <Name>BDU_DMS_PROT:Phototheque_Wikimedia_DMS</Name>
+              <Title>Wikimedia fototheek DML</Title>
+              <Abstract/>
+              <KeywordList>
+                <Keyword>features</Keyword>
+                <Keyword>PUBA40_PHOTOTHEQUE_WIKIMEDIA_DMS</Keyword>
+              </KeywordList>
+              <SRS>EPSG:31370</SRS>
+              <LatLonBoundingBox maxx="4.4814185885749405" maxy="50.913653774000515" minx="4.242470212763538" miny="50.76335283201384"/>
+              <BoundingBox SRS="EPSG:31370" maxx="165088.0" maxy="185088.0" minx="140000.0" miny="160000.0"/>
+              <Style>
+                <Name>point</Name>
+                <Title>Default Point</Title>
+                <LegendURL height="20" width="20">
+                  <Format>image/png</Format>
+                  <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=BDU_DMS_PROT%3APhototheque_Wikimedia_DMS" ns0:type="simple"/>
+                </LegendURL>
+              </Style>
+            </Layer>
+          </Layer>
+
       </Layer>
       <Layer noSubsets="0" opaque="0" queryable="1">
         <Name>Stedenbouw</Name>
