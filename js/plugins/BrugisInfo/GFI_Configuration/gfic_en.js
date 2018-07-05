@@ -777,6 +777,32 @@ const gfiEn = {
 				"type": "string"
 			}
 		]
+	},
+	"BDU_DMS_PROT:Phototheque_Wikimedia_DMS": {
+		"actiontype": "GRID",
+		"title": "[%NAME%]",
+		"attributes": [{
+				"name": "Name",
+				"label": "[%NAME%]",
+				"type": "string"
+			},{
+					"name": "Picture",
+					"label": "[%IMAGE%]",
+					"type": "picture"
+			},{
+					"name": "Decription",
+					"label": "[%DESCR_FR%]",
+					"type": "string"
+			},{
+					"name": "Credit",
+					"label": "[%CREDIT_FR%]",
+					"type": "string"
+			},{
+					"name": "Source",
+					"label": "[%SOURCE%]",
+					"type": "string"
+			}
+		]
 	}
 };
 module.exports = gfiEn;

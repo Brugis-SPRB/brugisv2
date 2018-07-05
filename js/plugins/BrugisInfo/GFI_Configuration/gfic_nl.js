@@ -2287,6 +2287,32 @@ const gfiNl = {
 				"type": "string"
 			}
 		]
+	},
+	"BDU_DMS_PROT:Phototheque_Wikimedia_DMS": {
+		"actiontype": "GRID",
+		"title": "[%NAME%]",
+		"attributes": [{
+				"name": "Naam",
+				"label": "[%NAME%]",
+				"type": "string"
+			},{
+					"name": "Beeld",
+					"label": "[%IMAGE%]",
+					"type": "picture"
+			},{
+					"name": "Beschrijving",
+					"label": "[%DESCR_NL%]",
+					"type": "string"
+			},{
+					"name": "Credit",
+					"label": "[%CREDIT_NL%]",
+					"type": "string"
+			},{
+					"name": "Bron",
+					"label": "[%SOURCE%]",
+					"type": "string"
+			}
+		]
 	}
 };
 module.exports = gfiNl;
