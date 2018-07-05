@@ -2295,22 +2295,26 @@ const gfiNl = {
 				"name": "Naam",
 				"label": "[%NAME%]",
 				"type": "string"
-			},{
-					"name": "Beeld",
-					"label": "[%IMAGE%]",
-					"type": "picture"
-			},{
-					"name": "Beschrijving",
-					"label": "[%DESCR_NL%]",
-					"type": "string"
-			},{
-					"name": "Credit",
-					"label": "[%CREDIT_NL%]",
-					"type": "string"
-			},{
-					"name": "Bron",
-					"label": "[%SOURCE%]",
-					"type": "string"
+			},
+			{
+				"name": "Beeld",
+				"label": "[%IMAGE%]",
+				"type": "picture"
+			},
+			{
+				"name": "Beschrijving",
+				"label": "[%DESCR_NL%]",
+				"type": "string"
+			},
+			{
+				"name": "Credit",
+				"label": "[%CREDIT_NL%]",
+				"type": "string"
+			},
+			{
+				"name": "Bron",
+				"label": "[%SOURCE%]",
+				"type": "string"
 			}
 		]
 	}

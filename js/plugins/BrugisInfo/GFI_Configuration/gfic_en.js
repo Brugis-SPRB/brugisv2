@@ -785,22 +785,26 @@ const gfiEn = {
 				"name": "Name",
 				"label": "[%NAME%]",
 				"type": "string"
-			},{
-					"name": "Picture",
-					"label": "[%IMAGE%]",
-					"type": "picture"
-			},{
-					"name": "Decription",
-					"label": "[%DESCR_FR%]",
-					"type": "string"
-			},{
-					"name": "Credit",
-					"label": "[%CREDIT_FR%]",
-					"type": "string"
-			},{
-					"name": "Source",
-					"label": "[%SOURCE%]",
-					"type": "string"
+			},
+			{
+				"name": "Picture",
+				"label": "[%IMAGE%]",
+				"type": "picture"
+			},
+			{
+				"name": "Decription",
+				"label": "[%DESCR_FR%]",
+				"type": "string"
+			},
+			{
+				"name": "Credit",
+				"label": "[%CREDIT_FR%]",
+				"type": "string"
+			},
+			{
+				"name": "Source",
+				"label": "[%SOURCE%]",
+				"type": "string"
 			}
 		]
 	}
