@@ -2787,6 +2787,32 @@ const gfiFr = {
 				"type": "string"
 			}
 		]
+	},
+	"BDU_DMS_PROT:Phototheque_Wikimedia_DMS": {
+		"actiontype": "GRID",
+		"title": "[%NAME%]",
+		"attributes": [{
+				"name": "Nom",
+				"label": "[%NAME%]",
+				"type": "string"
+			},{
+					"name": "Image",
+					"label": "[%IMAGE%]",
+					"type": "picture"
+			},{
+					"name": "Description",
+					"label": "[%DESCR_FR%]",
+					"type": "string"
+			},{
+					"name": "Crédit",
+					"label": "[%CREDIT_FR%]",
+					"type": "string"
+			},{
+					"name": "Source",
+					"label": "[%SOURCE%]",
+					"type": "string"
+			}
+		]
 	}
 };
 
