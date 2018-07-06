@@ -14,7 +14,7 @@ const SERVER_MAPPING_URL = {
 										};
 
 function inspectKeywords(layer, serverMappingUrl) {
-    var wmsserver = EnvUtils.getBrugisGeoserverUrl();
+    var wmsserver = window.location.protocol + "//" + EnvUtils.getBrugisGeoserverUrl();
     if (layer && layer.keywordList && layer.keywordList.keyword) {
         layer.keywordList.keyword.forEach(function(keyword) {
             if (keyword.value && serverMappingUrl[keyword.value]) {

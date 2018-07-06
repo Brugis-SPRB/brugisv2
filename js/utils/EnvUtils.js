@@ -22,16 +22,16 @@ const EnvUtils = {
         var url = "/";
         switch (env) {
             case DEV:
-                url = "//svappmavw115:8080/geoserver/ows";
+                url = "svappmavw115:8080/geoserver/ows";
                 break;
             case STA:
-                url = "http://mybrugis.irisnetlab.be/geoserver/ows";
+                url = "mybrugis.irisnetlab.be/geoserver/ows";
                 break;
             case PRD:
-                url = "https://mybrugis.irisnet.be/geoserver/ows";
+                url = "mybrugis.irisnet.be/geoserver/ows";
                 break;
             default:
-                url = "https://mybrugis.irisnet.be/geoserver/ows";
+                url = "mybrugis.irisnet.be/geoserver/ows";
                 break;
         }
         return url;

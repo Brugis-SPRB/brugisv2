@@ -85,6 +85,7 @@
     "@turf/line-intersect": "4.1.0",
     "@turf/polygon-to-linestring": "4.1.0",
     "@turf/union": "4.1.0",
+    "turf-extent": "1.0.4",
     "ag-grid": "3.3.3",
     "ag-grid-react": "3.3.1",
     "axios": "0.11.1",

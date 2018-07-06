@@ -133,17 +133,10 @@ module.exports = {
         ]
     },
     devServer: {
-        proxy: {
-            '/mapstore/rest/geostore': {
-                target: "http://dev.mapstore2.geo-solutions.it"
-            },
-            '/brugis/proxy': {
-                target: "http://svappmavw115:8080" //target: ["http://svappmavw115:8080"]
-            },
-            '/print': {
-                target: "http://svappmavw115:8080"
-            }
-        }
+        proxy: [{
+            context: ['/brugis/proxy', '/print'],
+            target: "http://svappmavw115:8080"
+        }]
     },
 
     devtool: 'eval'

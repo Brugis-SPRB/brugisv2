@@ -2,6 +2,7 @@
 var axios = require('../../../MapStore2/web/client/libs/ajax');
 const urlUtil = require('url');
 const assign = require('object-assign');
+const extent = require('turf-extent');
 
 const {TEXT_SEARCH_RESULTS_LOADED} = require("../../../MapStore2/web/client/actions/search");
 
@@ -54,7 +55,8 @@ const WFSApi = {
 
       var url = urlUtil.format({
           host: EnvUtils.getBrugisGeoserverUrl(),
-          query: params
+          query: params,
+          protocol: window.location.protocol
       });
       return axios.get(url); // TODO the jsonp method returns .promise and .cancel method,the last can be called when user cancel the query
   },
@@ -75,6 +77,39 @@ function searchResultLoaded(results) {
     };
 }
 
+function mapCapaWFStoUrbisResult(wfsResponse) {
+
+  var urbisResults = {
+    error: "false",
+    result: [],
+    status: "success",
+    version: ""
+  };
+  if (wfsResponse.data.totalFeatures > 0) {
+    wfsResponse.data.features.forEach((r) => {
+        var bbox = extent(wfsResponse.data);
+        console.log(wfsResponse.data);
+        let urbisResult = {
+          adNc: "",
+          address: {
+            number : "",
+            street : {
+              name: r.properties.INSPIRE_ID,
+              postCode: "",
+              municipality: "",
+              id: ""
+            }
+          },
+          extent: { xmin: bbox[0], ymin: bbox[1], xmax: bbox[2], ymax: bbox[3]},
+          language: "",
+          point: { x:  (bbox[2] - bbox[0]), y: (bbox[3] - bbox[1])}
+        };
+        urbisResults.result.push(urbisResult);
+    });
+  }
+  return {data: urbisResults};
+}
+
 function textSearch(text) {
 
     return (dispatch) => {
@@ -82,7 +117,8 @@ function textSearch(text) {
       if (text.match(re)) {
         WFSApi.geocode(text).then((response) => {
             console.log(response);
-            dispatch(searchResultLoaded(response));
+
+            dispatch(searchResultLoaded(mapCapaWFStoUrbisResult(response)));
         }).catch((e) => {
             dispatch(searchResultLoaded(e));
         });
