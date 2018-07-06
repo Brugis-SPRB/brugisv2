@@ -2,7 +2,7 @@
 {
    "version" : 2,
    "survey": {
-     "host": "http://svappmavw115:8080/WebReperage",
+     "host": "https://mbr227.irisnet.be/WebReperage",
      "geoserver": "https://mybrugis.irisnet.be/geoserver/ows"
    },
   "map": {
