@@ -3,6 +3,24 @@
     "locale": "fr-FR",
     "messages": {
         "best-effort": "Carte indicative - Réalisé par ",
+        "brugisSurvey": {
+            "title_new": "Nouvelle urbanalyse",
+            "title_list": "Liste de vos urbanalyses",
+            "tooltip": "Outil d'urbanalyse",
+            "file": "Dossier",
+            "address": "Adresse",
+            "status": "Statut",
+            "created": "Créé le",
+            "available": "Disponible jusque",
+            "docx": "Docx",
+            "pdf": "PDF",
+            "draw": "Dessiner une surface",
+            "select": "Sélectionner une parcelle",
+            "suppress": "Supprimer le dessin",
+            "footprint": "Empreinte",
+            "type": "Type",
+            "send": "Envoyer"
+        },
         "localmaps": {
             "save_or_load_title": "Mes cartes",
             "save": "Sauver",
@@ -314,9 +332,6 @@
         },
         "streetview":{
             "tooltip": "Obtenez Google streetview sur la carte"
-        },
-        "brugisSurvey":{
-            "tooltip": "Outil d'urbanalyse"
         },
         "expandtoolbar": {
             "tooltip": "Agrandir / Réduire"

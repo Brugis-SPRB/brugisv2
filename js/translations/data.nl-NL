@@ -2,6 +2,24 @@
     "locale": "nl-NL",
     "messages": {
         "best-effort": "Indicatieve kaart - Gerealiseerd door ",
+        "brugisSurvey": {
+            "title_new": "Create an Urbanalysis",
+            "title_list": "List of your urbanalysis",
+            "tooltip": "Urbanalysis gereedschap",
+            "file": "File",
+            "address": "Address",
+            "status": "Status",
+            "created": "Created",
+            "available": "Available",
+            "docx": "Docx",
+            "pdf": "PDF",
+            "draw": "Draw a surface",
+            "select": "Select a parcel",
+            "suppress": "Delete surface",
+            "footprint": "Footprint",
+            "type": "Type",
+            "send": "Send"
+        },
         "localmaps": {
             "save_or_load_title": "Mijn kaarten",
             "save": "Opslaan",
@@ -287,9 +305,6 @@
         },
         "streetview":{
             "tooltip": "Google streetview op de kaart"
-        },
-        "brugisSurvey":{
-            "tooltip": "Urbanalysis gereedschap"
         },
         "expandtoolbar": {
             "tooltip": "Vergroten / Verkleinen"
@@ -995,6 +1010,10 @@
             "measureLengthBrugisButton": {
                 "title": "Lengte meting",
                 "text": "Gebruik dit hulpmiddel om afstanden te meten"
+            },
+            "BrugisSurvey": {
+                "title": "Urbanalysis",
+                "text": "Select a parcel or draw an area and get a complete urban report for that area"
             },
             "fullscreen": {
                 "title": "Schakel over naar volledig scherm",

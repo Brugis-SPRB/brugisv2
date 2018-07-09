@@ -2,6 +2,24 @@
     "locale": "en-US",
     "messages": {
         "best-effort": "Indicative map - Done by ",
+        "brugisSurvey": {
+            "title_new": "Create an Urbanalysis",
+            "title_list": "List of your urbanalysis",
+            "tooltip": "Urbanalysis tool",
+            "file": "File",
+            "address": "Address",
+            "status": "Status",
+            "created": "Created",
+            "available": "Available",
+            "docx": "Docx",
+            "pdf": "PDF",
+            "draw": "Draw a surface",
+            "select": "Select a parcel",
+            "suppress": "Delete surface",
+            "footprint": "Footprint",
+            "type": "Type",
+            "send": "Send"
+        },
         "localmaps": {
             "save_or_load_title": "My maps",
             "save": "Save",
@@ -312,9 +330,6 @@
         },
         "streetview":{
             "tooltip": "Get a Google streetview on map"
-        },
-        "brugisSurvey":{
-            "tooltip": "Urbanalysis tool"
         },
         "expandtoolbar": {
             "tooltip": "Expand / Collapse"

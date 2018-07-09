@@ -79,60 +79,57 @@ function searchResultLoaded(results) {
 
 function mapCapaWFStoUrbisResult(wfsResponse) {
 
-  var urbisResults = {
-    error: "false",
-    result: [],
-    status: "success",
-    version: ""
-  };
-  if (wfsResponse.data.totalFeatures > 0) {
-    wfsResponse.data.features.forEach((r) => {
-        var bbox = extent(wfsResponse.data);
-        console.log(wfsResponse.data);
-        let urbisResult = {
-          adNc: "",
-          address: {
-            number : "",
-            street : {
-              name: r.properties.INSPIRE_ID,
-              postCode: "",
-              municipality: "",
-              id: ""
-            }
-          },
-          extent: { xmin: bbox[0], ymin: bbox[1], xmax: bbox[2], ymax: bbox[3]},
-          language: "",
-          point: { x:  (bbox[2] - bbox[0]), y: (bbox[3] - bbox[1])}
-        };
-        urbisResults.result.push(urbisResult);
-    });
-  }
-  return {data: urbisResults};
+    var urbisResults = {
+        error: "false",
+        result: [],
+        status: "success",
+        version: ""
+    };
+    if (wfsResponse.data.totalFeatures > 0) {
+        wfsResponse.data.features.forEach((r) => {
+            var bbox = extent(wfsResponse.data);
+            console.log(wfsResponse.data);
+            let urbisResult = {
+                adNc: "",
+                address: {
+                    number: "",
+                    street: {
+                        name: r.properties.INSPIRE_ID,
+                        postCode: "",
+                        municipality: "",
+                        id: ""
+                    }
+                },
+                extent: { xmin: bbox[0], ymin: bbox[1], xmax: bbox[2], ymax: bbox[3]},
+                language: "",
+                point: { x: (bbox[2] - bbox[0]), y: (bbox[3] - bbox[1])}
+            };
+            urbisResults.result.push(urbisResult);
+        });
+    }
+    return {data: urbisResults};
 }
 
 function textSearch(text) {
 
     return (dispatch) => {
-      var re = new RegExp(capakeyRegex);
-      if (text.match(re)) {
-        WFSApi.geocode(text).then((response) => {
-            console.log(response);
-
-            dispatch(searchResultLoaded(mapCapaWFStoUrbisResult(response)));
-        }).catch((e) => {
-            dispatch(searchResultLoaded(e));
-        });
-      } else {
-        Api.geocode(text).then((response) => {
-            dispatch(searchResultLoaded(response));
-        }).catch((e) => {
-            dispatch(searchResultLoaded(e));
-        });
-      }
+        var re = new RegExp(capakeyRegex);
+        if (text.match(re)) {
+            WFSApi.geocode(text).then((response) => {
+                console.log(response);
+                dispatch(searchResultLoaded(mapCapaWFStoUrbisResult(response)));
+            }).catch((e) => {
+                dispatch(searchResultLoaded(e));
+            });
+        } else {
+            Api.geocode(text).then((response) => {
+                dispatch(searchResultLoaded(response));
+            }).catch((e) => {
+                dispatch(searchResultLoaded(e));
+            });
+        }
     };
 }
-
-
 
 module.exports = {
     Api,
