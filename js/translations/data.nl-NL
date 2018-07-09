@@ -3,6 +3,7 @@
     "messages": {
         "best-effort": "Indicatieve kaart - Gerealiseerd door ",
         "brugisSurvey": {
+            "title_panel": "Urbanalysis",
             "title_new": "Create an Urbanalysis",
             "title_list": "List of your urbanalysis",
             "tooltip": "Urbanalysis gereedschap",

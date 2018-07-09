@@ -3,6 +3,7 @@
     "messages": {
         "best-effort": "Indicative map - Done by ",
         "brugisSurvey": {
+            "title_panel": "Urbanalysis",
             "title_new": "Create an Urbanalysis",
             "title_list": "List of your urbanalysis",
             "tooltip": "Urbanalysis tool",

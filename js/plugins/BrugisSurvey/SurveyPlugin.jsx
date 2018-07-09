@@ -213,7 +213,7 @@ const BrugisSurvey = React.createClass({
               }
               return (<Dialog id={this.props.id} style={this.props.panelStyle} className={this.props.panelClassName}>
                   <span role="header">
-                      <span className="settings-panel-title"><Message msgId="Urbanalyse"/><button onClick={this.props.toggleControl} className="close">{this.props.closeGlyph ? <Glyphicon glyph={this.props.closeGlyph}/> : <span>×</span>}</button></span>
+                      <span className="settings-panel-title"><Message msgId="brugisSurvey.title_panel"/><button onClick={this.props.toggleControl} className="close">{this.props.closeGlyph ? <Glyphicon glyph={this.props.closeGlyph}/> : <span>×</span>}</button></span>
                   </span>
                   <span role="body">
                   {surveyPanel}
