@@ -19,7 +19,11 @@
             "suppress": "Delete surface",
             "footprint": "Footprint",
             "type": "Type",
-            "send": "Send"
+            "send": "Send",
+            "first": "First",
+            "prev": "Prev.",
+            "next": "Next",
+            "last": "Last"
         },
         "localmaps": {
             "save_or_load_title": "My maps",
