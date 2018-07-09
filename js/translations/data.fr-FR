@@ -20,7 +20,11 @@
             "suppress": "Supprimer le dessin",
             "footprint": "Empreinte",
             "type": "Type",
-            "send": "Envoyer"
+            "send": "Envoyer",
+            "first": "Début",
+            "prev": "préc.",
+            "next": "suiv.",
+            "last": "fin"
         },
         "localmaps": {
             "save_or_load_title": "Mes cartes",

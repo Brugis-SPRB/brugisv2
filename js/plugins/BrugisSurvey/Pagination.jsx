@@ -1,6 +1,7 @@
 import React, { PropTypes } from 'react';
 var {ButtonGroup, Button} = require('react-bootstrap');
 var _ = require('lodash');
+const Message = require('../../../MapStore2/web/client/plugins/locale/Message');
 
 class BrugisPagination extends React.Component {
 
@@ -93,13 +94,21 @@ class BrugisPagination extends React.Component {
 
         return (
           <ButtonGroup block>
-            <Button disabled={pager.currentPage === 1 ? true : false} onClick={() => this.setPage(1)}>First</Button>
-            <Button disabled={pager.currentPage === 1 ? true : false} onClick={() => this.setPage(pager.currentPage - 1)}>Prev</Button>
+            <Button disabled={pager.currentPage === 1 ? true : false} onClick={() => this.setPage(1)}>
+              <Message msgId="brugisSurvey.first"/>
+            </Button>
+            <Button disabled={pager.currentPage === 1 ? true : false} onClick={() => this.setPage(pager.currentPage - 1)}>
+              <Message msgId="brugisSurvey.prev"/>
+            </Button>
             {pager.pages.map((page, index) =>
                 <Button active={pager.currentPage === page ? true : false} onClick={() => this.setPage(page)} >{index + 1}</Button>
             )}
-            <Button disabled={pager.currentPage === pager.totalPages ? true : false} onClick={() => this.setPage(pager.currentPage + 1)}>Next</Button>
-            <Button disabled={pager.currentPage === pager.totalPages ? true : false} onClick={() => this.setPage(pager.totalPages)}>Last</Button>
+            <Button disabled={pager.currentPage === pager.totalPages ? true : false} onClick={() => this.setPage(pager.currentPage + 1)}>
+              <Message msgId="brugisSurvey.next"/>
+            </Button>
+            <Button disabled={pager.currentPage === pager.totalPages ? true : false} onClick={() => this.setPage(pager.totalPages)}>
+              <Message msgId="brugisSurvey.last"/>
+            </Button>
           </ButtonGroup>
         );
     }
