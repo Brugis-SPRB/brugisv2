@@ -47,7 +47,7 @@ var SurveyToolBox = React.createClass({
     componentWillReceiveProps(newProps) {
         if (this.needsSelectParcelRefresh(newProps)) {
             const {url, request, metadata} = this.buildRequest(
-              "BDU:Parcelle_2016",
+              "BDU:Parcelle_2017",
                newProps,
                this.props.geoserver
              );

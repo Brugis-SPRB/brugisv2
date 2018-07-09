@@ -4,6 +4,7 @@
     "messages": {
         "best-effort": "Carte indicative - Réalisé par ",
         "brugisSurvey": {
+            "title_panel": "Urbanalyse",
             "title_new": "Nouvelle urbanalyse",
             "title_list": "Liste de vos urbanalyses",
             "tooltip": "Outil d'urbanalyse",
