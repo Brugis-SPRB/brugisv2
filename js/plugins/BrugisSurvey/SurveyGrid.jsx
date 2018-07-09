@@ -1,8 +1,7 @@
 var React = require('react');
 const PropTypes = require('prop-types');
 var {FormattedDate} = require('react-intl');
-// const Message = require('../../../MapStore2/web/client/components/I18N/Message');
-const Message2 = require('../../../MapStore2/web/client/plugins/locale/Message');
+const Message = require('../../../MapStore2/web/client/plugins/locale/Message');
 var {Panel, Table, Label, Button, Glyphicon} = require('react-bootstrap');
 var SurveyUtils = require('./utils.js');
 var BrugisPagination = require('./Pagination');
@@ -102,18 +101,18 @@ class SurveyGrid extends React.Component {
     }
 
     render() {
-        const headerMessage = (<Message2 msgId="brugisSurvey.title_list" />);
+        const headerMessage = (<Message msgId="brugisSurvey.title_list" />);
         return (<Panel header={headerMessage} eventKey={this.props.evtKey} collapsible defaultExpanded="true">
           <Table responsive striped bordered condensed hover>
             <thead>
               <tr>
-                <th><Message2 msgId="brugisSurvey.file"/></th>
-                <th><Message2 msgId="brugisSurvey.address"/></th>
-                <th><Message2 msgId="brugisSurvey.status"/></th>
-                <th><Message2 msgId="brugisSurvey.created"/></th>
-                <th><Message2 msgId="brugisSurvey.available"/></th>
-                <th><Message2 msgId="brugisSurvey.docx"/></th>
-                <th><Message2 msgId="brugisSurvey.pdf"/></th>
+                <th><Message msgId="brugisSurvey.file"/></th>
+                <th><Message msgId="brugisSurvey.address"/></th>
+                <th><Message msgId="brugisSurvey.status"/></th>
+                <th><Message msgId="brugisSurvey.created"/></th>
+                <th><Message msgId="brugisSurvey.available"/></th>
+                <th><Message msgId="brugisSurvey.docx"/></th>
+                <th><Message msgId="brugisSurvey.pdf"/></th>
               </tr>
             </thead>
             <tbody>
