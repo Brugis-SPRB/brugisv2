@@ -38,8 +38,8 @@ class SurveyForm extends React.Component {
 
     render() {
         const headerMessage = (<Message msgId="brugisSurvey.title_new" />);
-        const fileEntry = (<Message msgId="brugisSurvey.file_entry" />);
-        const addressEntry = (<Message msgId="brugisSurvey.address_entry" />);
+        // const fileEntry = (<Message msgId="brugisSurvey.file_entry" />);
+        // const addressEntry = (<Message msgId="brugisSurvey.address_entry" />);
         const typeEntryDefault = (<Message msgId="brugisSurvey.type_entry_default" />);
         return (<Panel header={headerMessage} eventKey={this.props.evtKey} className={this.props.panelClassName} collapsible defaultExpanded>
             <Form horizontal onSubmit={this.handleSubmit.bind(this)}>
@@ -65,7 +65,7 @@ class SurveyForm extends React.Component {
                         <Message msgId="brugisSurvey.file"/>
                       </Col>
                       <Col sm={10}>
-                        <FormControl type="text" placeholder={fileEntry} value={this.state.refdoc} onChange={this.handleChange}/>
+                        <FormControl type="text" placeholder="brugisSurvey.file_entry" value={this.state.refdoc} onChange={this.handleChange}/>
                       </Col>
                     </FormGroup>
                     <FormGroup controlId="adr" bsSize={this.props.bsSize}>
@@ -73,7 +73,7 @@ class SurveyForm extends React.Component {
                         <Message msgId="brugisSurvey.address"/>
                       </Col>
                       <Col sm={10}>
-                        <FormControl type="text" placeholder={addressEntry} value={this.state.adr} onChange={this.handleChange} />
+                        <FormControl type="text" placeholder="brugisSurvey.address_entry" value={this.state.adr} onChange={this.handleChange} />
                       </Col>
                     </FormGroup>
                     <FormGroup controlId="type" bsSize={this.props.bsSize}>
