@@ -279,7 +279,7 @@
         },
         "print":{
             "paneltitle": "Afdrukken",
-            "layout": "Mise en page",
+            "layout": "Paginaopmaak",
             "sheetsize": "Papierformaat :",
             "legendoptions": "Opties van de legende",
             "submit": "Afdrukken",
@@ -287,7 +287,7 @@
             "titleplaceholder": "Voer een titel in...",
             "description": "Beschrijving",
             "descriptionplaceholder": "Voer een beschrijving in...",
-            "resolution": "Résolutie:",
+            "resolution": "Resolutie:",
             "defaultBackground": "Gebruik OSM als achtergrond kaart",
             "printtooltip": "Afdrukken",
             "alternatives": {
