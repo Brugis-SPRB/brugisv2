@@ -154,839 +154,6 @@
         <SRS>EPSG:900913</SRS>
         <LatLonBoundingBox maxx="4.49547992326272" maxy="50.9218586969616" minx="4.22527159306639" miny="50.7599660513373" />
         <Layer noSubsets="0" opaque="0" queryable="1">
-          <Name>GBP</Name>
-          <Title>GBP</Title>
-          <Layer noSubsets="0" opaque="0" queryable="1">
-            <Name>BSO:Bodembestemming</Name>
-            <Title>Bodembestemming</Title>
-            <Layer noSubsets="0" opaque="0" queryable="1">
-              <Name>BSO:Volledige_bodembestemming</Name>
-              <Title>Volledige bodembestemming</Title>
-              <Abstract>Layer-Group type layer: Volledige_bodembestemming</Abstract>
-              <SRS>EPSG:31370</SRS>
-              <LatLonBoundingBox maxx="4.481395456619923" maxy="50.91359615183473" minx="4.24247019506189" miny="50.76341298190163"/>
-              <BoundingBox SRS="EPSG:31370" maxx="165088.0" maxy="185088.0" minx="140000.0" miny="160000.0"/>
-            </Layer>
-            <Layer noSubsets="0" opaque="0" queryable="1">
-              <Name>Gedetaileerde bestemmingen</Name>
-              <Title>Gedetaileerde bestemmingen</Title>
-              <Layer queryable="1">
-                <Name>BSO:Winkelgalerijen</Name>
-                <Title>Winkelgalerijen</Title>
-                <Abstract />
-                <KeywordList>
-                  <Keyword>A10_AF_GALCOMM</Keyword>
-                  <Keyword>features</Keyword>
-                </KeywordList>
-                <SRS>EPSG:31370</SRS>
-                <LatLonBoundingBox maxx="4.46355095398464" maxy="50.8946976555756" minx="4.279589616898083" miny="50.81459298156196" />
-                <BoundingBox SRS="EPSG:31370" maxx="156743.083999992" maxy="176067.019842078" minx="143800.675000006" miny="167160.489842088" />
-                <Style>
-                  <Name>Winkelgalerijen</Name>
-                  <Title>Winkelgalerijen</Title>
-                  <Abstract />
-                  <LegendURL height="20" width="20">
-                    <Format>image/png</Format>
-                    <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Winkelgalerijen" ns0:type="simple" />
-                  </LegendURL>
-                </Style>
-                <Style>
-                  <Name>Galeries commercantes</Name>
-                  <Title>Galeries commercantes</Title>
-                  <Abstract />
-                  <LegendURL height="20" width="20">
-                    <Format>image/png</Format>
-                    <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Winkelgalerijen&amp;style=Galeries+commercantes" ns0:type="simple" />
-                  </LegendURL>
-                </Style>
-              </Layer>
-              <Layer queryable="1">
-                <Name>BSO:Transitparkeerplaats</Name>
-                <Title>Transitparkeerplaats</Title>
-                <Abstract />
-                <KeywordList>
-                  <Keyword>A10_AF_PKTRANSIT</Keyword>
-                  <Keyword>features</Keyword>
-                </KeywordList>
-                <SRS>EPSG:31370</SRS>
-                <LatLonBoundingBox maxx="4.45824244046579" maxy="50.898155404440764" minx="4.263586772772797" miny="50.778229672679444" />
-                <BoundingBox SRS="EPSG:31370" maxx="156369.136241047" maxy="176451.676057725" minx="142675.346241063" miny="163116.118057739" />
-                <Style>
-                  <Name>Transitparkeerplaats</Name>
-                  <Title>Transitparkeerplaats</Title>
-                  <Abstract />
-                  <LegendURL height="20" width="20">
-                    <Format>image/png</Format>
-                    <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Transitparkeerplaats" ns0:type="simple" />
-                  </LegendURL>
-                </Style>
-                <Style>
-                  <Name>Parking_de_transit</Name>
-                  <Title>Parking</Title>
-                  <Abstract />
-                  <LegendURL height="20" width="20">
-                    <Format>image/png</Format>
-                    <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Transitparkeerplaats&amp;style=Parking_de_transit" ns0:type="simple" />
-                  </LegendURL>
-                </Style>
-              </Layer>
-              <Layer queryable="1">
-                <Name>BSO:Punten_van_wisselend_gemengd_ruimten</Name>
-                <Title>Punten van wisselend gemengd ruimten</Title>
-                <Abstract />
-                <KeywordList>
-                  <Keyword>features</Keyword>
-                  <Keyword>A10_AF_PTVARMIX</Keyword>
-                </KeywordList>
-                <SRS>EPSG:31370</SRS>
-                <LatLonBoundingBox maxx="4.430289341079423" maxy="50.8897771481321" minx="4.29179766250811" miny="50.76876497765332" />
-                <BoundingBox SRS="EPSG:31370" maxx="154403.462319114" maxy="175519.659299566" minx="144659.005192842" miny="162060.896847107" />
-                <Style>
-                  <Name>Punten van wisselend gemengd ruimten</Name>
-                  <Title>Punten van wisselend gemengd ruimten</Title>
-                  <Abstract />
-                  <LegendURL height="20" width="20">
-                    <Format>image/png</Format>
-                    <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Punten_van_wisselend_gemengd_ruimten" ns0:type="simple" />
-                  </LegendURL>
-                </Style>
-                <Style>
-                  <Name>Points de variation de mixité</Name>
-                  <Title>Points de variation de mixite</Title>
-                  <Abstract />
-                  <LegendURL height="20" width="20">
-                    <Format>image/png</Format>
-                    <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Punten_van_wisselend_gemengd_ruimten&amp;style=Points+de+variation+de+mixit%E9" ns0:type="simple" />
-                  </LegendURL>
-                </Style>
-              </Layer>
-              <Layer queryable="1">
-                <Name>BSO:Linten_voor_handelskern</Name>
-                <Title>Linten voor handelskern</Title>
-                <Abstract />
-                <KeywordList>
-                  <Keyword>features</Keyword>
-                  <Keyword>A10_AF_NOYCOMM</Keyword>
-                </KeywordList>
-                <SRS>EPSG:31370</SRS>
-                <LatLonBoundingBox maxx="4.4658619837100035" maxy="50.90087956084193" minx="4.292366048663395" miny="50.7869460334785" />
-                <BoundingBox SRS="EPSG:31370" maxx="156904.759108068" maxy="176754.768842068" minx="144700.240000006" miny="164085.270436819" />
-                <Style>
-                  <Name>Linten voor handelskern</Name>
-                  <Title>Linten voor handelskern</Title>
-                  <Abstract />
-                  <LegendURL height="20" width="20">
-                    <Format>image/png</Format>
-                    <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Linten_voor_handelskern" ns0:type="simple" />
-                  </LegendURL>
-                </Style>
-                <Style>
-                  <Name>Liserés de noyau commercial</Name>
-                  <Title>Liseres de noyau commercial</Title>
-                  <Abstract />
-                  <LegendURL height="20" width="20">
-                    <Format>image/png</Format>
-                    <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Linten_voor_handelskern&amp;style=Liser%E9s+de+noyau+commercial" ns0:type="simple" />
-                  </LegendURL>
-                </Style>
-              </Layer>
-              <Layer queryable="1">
-                <Name>BSO:GCHEWS</Name>
-                <Title>GCHEWS</Title>
-                <Abstract />
-                <KeywordList>
-                  <Keyword>features</Keyword>
-                  <Keyword>A10_AF_ZICHEE</Keyword>
-                </KeywordList>
-                <SRS>EPSG:31370</SRS>
-                <LatLonBoundingBox maxx="4.477387070217805" maxy="50.901112280478905" minx="4.254513192332806" miny="50.763372966306044" />
-                <BoundingBox SRS="EPSG:31370" maxx="157715.450695506" maxy="176780.588842066" minx="142037.528418829" miny="161464.403842084" />
-                <Style>
-                  <Name>GCHEWS</Name>
-                  <Title>GCHEWS</Title>
-                  <Abstract />
-                  <LegendURL height="20" width="20">
-                    <Format>image/png</Format>
-                    <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=GCHEWS" ns0:type="simple" />
-                  </LegendURL>
-                </Style>
-                <Style>
-                  <Name>Zichee</Name>
-                  <Title>ZICHEE</Title>
-                  <Abstract />
-                  <LegendURL height="20" width="20">
-                    <Format>image/png</Format>
-                    <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=GCHEWS&amp;style=Zichee" ns0:type="simple" />
-                  </LegendURL>
-                </Style>
-              </Layer>
-              <Layer queryable="1">
-                <Name>BSO:Gebieden_van_gewestelijk_belang_met_uitgestelde_aanleg</Name>
-                <Title>Gebieden van gewestelijk belang met uitgestelde aanleg</Title>
-                <Abstract />
-                <KeywordList>
-                  <Keyword>A10_AF_ZIR_AM_DIF</Keyword>
-                  <Keyword>features</Keyword>
-                </KeywordList>
-                <SRS>EPSG:31370</SRS>
-                <LatLonBoundingBox maxx="4.411322877027757" maxy="50.902330056733675" minx="4.382266477549216" miny="50.879862604628926" />
-                <BoundingBox SRS="EPSG:31370" maxx="153068.123999996" maxy="176916.166443644" minx="151024.735999999" miny="174417.656842071" />
-                <Style>
-                  <Name>Gebieden van gewestelijk belang met uitgestelde aanleg</Name>
-                  <Title>Gebieden van gewestelijk belang met uitgestelde aanleg</Title>
-                  <Abstract />
-                  <LegendURL height="20" width="20">
-                    <Format>image/png</Format>
-                    <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Gebieden_van_gewestelijk_belang_met_uitgestelde_aanleg" ns0:type="simple" />
-                  </LegendURL>
-                </Style>
-                <Style>
-                  <Name>Zones d'interet regional a amenagement differe</Name>
-                  <Title>Zones d'interet regional a amenagement differe</Title>
-                  <Abstract />
-                  <LegendURL height="20" width="20">
-                    <Format>image/png</Format>
-                    <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Zones_d_interet_regional_a_amenagement_differe" ns0:type="simple" />
-                  </LegendURL>
-                </Style>
-              </Layer>
-              <Layer queryable="1">
-                <Name>BSO:Bestemmingen</Name>
-                <Title>Bestemmingen</Title>
-                <Abstract />
-                <KeywordList>
-                  <Keyword>features</Keyword>
-                  <Keyword>A10_AF_AFFECT</Keyword>
-                </KeywordList>
-                <SRS>EPSG:31370</SRS>
-                <LatLonBoundingBox maxx="4.481395499187374" maxy="50.913596114462294" minx="4.2424703657955884" miny="50.76341280985816" />
-                <BoundingBox SRS="EPSG:31370" maxx="157995.282999992" maxy="178169.335842065" minx="141192.712000009" miny="161470.180842083" />
-                <Style>
-                  <Name>Bestemmingen_full</Name>
-                  <Title>Bestemmingen</Title>
-                  <Abstract />
-                  <LegendURL height="20" width="20">
-                    <Format>image/png</Format>
-                    <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Bestemmingen" ns0:type="simple" />
-                  </LegendURL>
-                </Style>
-                <Style>
-                  <Name>Affectations_landbouw</Name>
-                  <Title>Affectations_pour_agriculture</Title>
-                  <Abstract />
-                  <LegendURL height="20" width="20">
-                    <Format>image/png</Format>
-                    <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Affectations&amp;style=Affectations_agr" ns0:type="simple" />
-                  </LegendURL>
-                </Style>
-                <Style>
-                  <Name>Affectations_full</Name>
-                  <Title>Affectations</Title>
-                  <Abstract />
-                  <LegendURL height="20" width="20">
-                    <Format>image/png</Format>
-                    <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Bestemmingen&amp;style=Affectations_full" ns0:type="simple" />
-                  </LegendURL>
-                </Style>
-                <Style>
-                  <Name>Affectations_fonderie</Name>
-                  <Title>Affectations</Title>
-                  <Abstract />
-                  <LegendURL height="20" width="20">
-                    <Format>image/png</Format>
-                    <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Affectations&amp;style=Affectations_fonderie" ns0:type="simple" />
-                  </LegendURL>
-                </Style>
-                <Style>
-                  <Name>Bestemmingen_full</Name>
-                  <Title>Bestemmingen</Title>
-                  <Abstract />
-                  <LegendURL height="20" width="20">
-                    <Format>image/png</Format>
-                    <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Affectations&amp;style=Bestemmingen_full" ns0:type="simple" />
-                  </LegendURL>
-                </Style>
-              </Layer>
-              <Layer queryable="1">
-                <Name>BSO:Structurerende_ruimten</Name>
-                <Title>Structurerende ruimten</Title>
-                <Abstract />
-                <KeywordList>
-                  <Keyword>A10_AF_ESPSTRUCT</Keyword>
-                  <Keyword>features</Keyword>
-                </KeywordList>
-                <SRS>EPSG:31370</SRS>
-                <LatLonBoundingBox maxx="4.4812116054235895" maxy="50.91251174469631" minx="4.257783604166066" miny="50.7634070310825" />
-                <BoundingBox SRS="EPSG:31370" maxx="157982.535999992" maxy="178048.697842097" minx="142269.450000008" miny="161468.362730835" />
-                <Style>
-                  <Name>Structurerende ruimten</Name>
-                  <Title>Structurerende ruimten</Title>
-                  <Abstract>Structurerende ruimten</Abstract>
-                  <LegendURL height="20" width="20">
-                    <Format>image/png</Format>
-                    <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Structurerende_ruimten" ns0:type="simple" />
-                  </LegendURL>
-                </Style>
-                <Style>
-                  <Name>Espaces structurants</Name>
-                  <Title>Espaces structurants</Title>
-                  <Abstract>Espaces structurants</Abstract>
-                  <LegendURL height="20" width="20">
-                    <Format>image/png</Format>
-                    <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Structurerende_ruimten&amp;style=Espaces+structurants" ns0:type="simple" />
-                  </LegendURL>
-                </Style>
-              </Layer>
-            </Layer>
-          </Layer>
-          <Layer noSubsets="0" opaque="0" queryable="1">
-            <Name>Burelen</Name>
-            <Title>Burelen</Title>
-            <Layer queryable="1">
-              <Name>BSO:Maas</Name>
-              <Title>Maas</Title>
-              <Abstract />
-              <KeywordList>
-                <Keyword>A10_BU_MAILLE</Keyword>
-                <Keyword>features</Keyword>
-              </KeywordList>
-              <SRS>EPSG:31370</SRS>
-              <LatLonBoundingBox maxx="4.481540382044033" maxy="50.91359611759897" minx="4.2424703657955884" miny="50.76336087637392" />
-              <BoundingBox SRS="EPSG:31370" maxx="158005.471999992" maxy="178169.335842075" minx="141192.712000009" miny="161464.403842094" />
-              <Style>
-                <Name>Maas</Name>
-                <Title>Maas</Title>
-                <Abstract />
-                <LegendURL height="20" width="20">
-                  <Format>image/png</Format>
-                  <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Maas" ns0:type="simple" />
-                </LegendURL>
-              </Style>
-              <Style>
-                <Name>Maille</Name>
-                <Title>Maille</Title>
-                <Abstract />
-                <LegendURL height="20" width="20">
-                  <Format>image/png</Format>
-                  <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Maas&amp;style=Maille" ns0:type="simple" />
-                </LegendURL>
-              </Style>
-            </Layer>
-          </Layer>
-          <Layer noSubsets="0" opaque="0" queryable="1">
-            <Name>Wegen</Name>
-            <Title>Wegen</Title>
-            <Layer queryable="1">
-              <Name>BSO:Autosnelweg</Name>
-              <Title>Autosnelweg</Title>
-              <Abstract />
-              <KeywordList>
-                <Keyword>A10_VR_AUTOROUTE</Keyword>
-                <Keyword>features</Keyword>
-              </KeywordList>
-              <SRS>EPSG:31370</SRS>
-              <LatLonBoundingBox maxx="4.432106177488731" maxy="50.912498071221826" minx="4.270409398065655" miny="50.798260136687205" />
-              <BoundingBox SRS="EPSG:31370" maxx="154529.082999994" maxy="178047.232842077" minx="143157.387" miny="165343.640842091" />
-              <Style>
-                <Name>Autosnelweg</Name>
-                <Title>Autosnelweg</Title>
-                <Abstract />
-                <LegendURL height="20" width="20">
-                  <Format>image/png</Format>
-                  <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Autosnelweg" ns0:type="simple" />
-                </LegendURL>
-              </Style>
-              <Style>
-                <Name>Autoroute</Name>
-                <Title>Autoroute</Title>
-                <Abstract />
-                <LegendURL height="20" width="20">
-                  <Format>image/png</Format>
-                  <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Autosnelweg&amp;style=Autoroute" ns0:type="simple" />
-                </LegendURL>
-              </Style>
-            </Layer>
-            <Layer queryable="1">
-              <Name>BSO:Fietsroute</Name>
-              <Title>Fietsroute</Title>
-              <Abstract />
-              <KeywordList>
-                <Keyword>A10_VR_IC</Keyword>
-                <Keyword>features</Keyword>
-              </KeywordList>
-              <SRS>EPSG:31370</SRS>
-              <LatLonBoundingBox maxx="4.475278753718261" maxy="50.91154938641973" minx="4.2716467633923045" miny="50.7635105013253" />
-              <BoundingBox SRS="EPSG:31370" maxx="157565.45" maxy="177941.65899998" minx="143244.272" miny="161479.249999977" />
-              <Style>
-                <Name>Fietsroute</Name>
-                <Title>Fietsroute</Title>
-                <Abstract />
-                <LegendURL height="20" width="20">
-                  <Format>image/png</Format>
-                  <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Fietsroute" ns0:type="simple" />
-                </LegendURL>
-              </Style>
-              <Style>
-                <Name>Itineraire cyclable</Name>
-                <Title>Itineraire cyclable</Title>
-                <Abstract />
-                <LegendURL height="20" width="20">
-                  <Format>image/png</Format>
-                  <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Fietsroute&amp;style=Itineraire+cyclable" ns0:type="simple" />
-                </LegendURL>
-              </Style>
-            </Layer>
-            <Layer queryable="1">
-              <Name>BSO:Grootstedelijke_weg</Name>
-              <Title>Grootstedelijke weg</Title>
-              <Abstract />
-              <KeywordList>
-                <Keyword>A10_VR_VOIRIEMETROP</Keyword>
-                <Keyword>features</Keyword>
-              </KeywordList>
-              <SRS>EPSG:31370</SRS>
-              <LatLonBoundingBox maxx="4.480624458892712" maxy="50.89344891625972" minx="4.260826498866311" miny="50.783235916240294" />
-              <BoundingBox SRS="EPSG:31370" maxx="157944.487" maxy="175928.10399998" minx="142480.415" miny="163674.043999979" />
-              <Style>
-                <Name>Grootstedelijke weg</Name>
-                <Title>Grootstedelijke weg</Title>
-                <Abstract />
-                <LegendURL height="20" width="20">
-                  <Format>image/png</Format>
-                  <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Grootstedelijke_weg" ns0:type="simple" />
-                </LegendURL>
-              </Style>
-              <Style>
-                <Name>Voirie metropolitaine</Name>
-                <Title>Voirie metropolitaine</Title>
-                <Abstract />
-                <LegendURL height="20" width="20">
-                  <Format>image/png</Format>
-                  <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Grootstedelijke_weg&amp;style=Voirie+metropolitaine" ns0:type="simple" />
-                </LegendURL>
-              </Style>
-            </Layer>
-            <Layer queryable="1">
-              <Name>BSO:Grootstedelijke_weg_in_tunnel</Name>
-              <Title>Grootstedelijke weg in tunnel</Title>
-              <Abstract />
-              <KeywordList>
-                <Keyword>features</Keyword>
-                <Keyword>A10_VR_VOIRIEMETROPT</Keyword>
-              </KeywordList>
-              <SRS>EPSG:31370</SRS>
-              <LatLonBoundingBox maxx="4.396017301075501" maxy="50.86779355355472" minx="4.3143592876818735" miny="50.83939155046384" />
-              <BoundingBox SRS="EPSG:31370" maxx="151992.99" maxy="173074.14999998" minx="146244.736046702" miny="169915.997999979" />
-              <Style>
-                <Name>Grootstedelijke weg in tunnel</Name>
-                <Title>Grootstedelijke weg in tunnel</Title>
-                <Abstract />
-                <LegendURL height="20" width="20">
-                  <Format>image/png</Format>
-                  <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Grootstedelijke_weg_in_tunnel" ns0:type="simple" />
-                </LegendURL>
-              </Style>
-              <Style>
-                <Name>Voirie metropolitaine en tunnel</Name>
-                <Title>Voirie metropolitaine en tunnel</Title>
-                <Abstract />
-                <LegendURL height="20" width="20">
-                  <Format>image/png</Format>
-                  <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Grootstedelijke_weg_in_tunnel&amp;style=Voirie+metropolitaine+en+tunnel" ns0:type="simple" />
-                </LegendURL>
-              </Style>
-            </Layer>
-            <Layer queryable="1">
-              <Name>BSO:Hoofdweg</Name>
-              <Title>Hoofdweg</Title>
-              <Abstract />
-              <KeywordList>
-                <Keyword>A10_VR_VOIRIEPRINC</Keyword>
-                <Keyword>features</Keyword>
-              </KeywordList>
-              <SRS>EPSG:31370</SRS>
-              <LatLonBoundingBox maxx="4.461886077270997" maxy="50.909677040035014" minx="4.2607897770727705" miny="50.76337880741799" />
-              <BoundingBox SRS="EPSG:31370" maxx="156623.825" maxy="177733.36999998" minx="142480.415" miny="161464.40299998" />
-              <Style>
-                <Name>Hoofdweg</Name>
-                <Title>Hoofdweg</Title>
-                <Abstract />
-                <LegendURL height="20" width="20">
-                  <Format>image/png</Format>
-                  <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Hoofdweg" ns0:type="simple" />
-                </LegendURL>
-              </Style>
-              <Style>
-                <Name>Voirie principale</Name>
-                <Title>Voirie principale</Title>
-                <Abstract />
-                <LegendURL height="20" width="20">
-                  <Format>image/png</Format>
-                  <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Hoofdweg&amp;style=Voirie+principale" ns0:type="simple" />
-                </LegendURL>
-              </Style>
-            </Layer>
-            <Layer queryable="1">
-              <Name>BSO:Terkamerenbos_gebied</Name>
-              <Title>Terkamerenbos gebied</Title>
-              <Abstract />
-              <KeywordList>
-                <Keyword>A10_VR_ZETUDE</Keyword>
-                <Keyword>features</Keyword>
-              </KeywordList>
-              <SRS>EPSG:31370</SRS>
-              <LatLonBoundingBox maxx="4.388811151862245" maxy="50.814978525857796" minx="4.366789681682674" miny="50.797654930998846" />
-              <BoundingBox SRS="EPSG:31370" maxx="151487.44" maxy="167198.973999978" minx="149935.513" miny="165272.129999979" />
-              <Style>
-                <Name>Terkamerenbos gebied</Name>
-                <Title>Terkamerenbos gebied</Title>
-                <Abstract />
-                <LegendURL height="20" width="20">
-                  <Format>image/png</Format>
-                  <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Terkamerenbos_gebied" ns0:type="simple" />
-                </LegendURL>
-              </Style>
-              <Style>
-                <Name>Zone du bois de la cambre</Name>
-                <Title>Zone du bois de la cambre</Title>
-                <Abstract />
-                <LegendURL height="20" width="20">
-                  <Format>image/png</Format>
-                  <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Terkamerenbos_gebied&amp;style=Zone+du+bois+de+la+cambre" ns0:type="simple" />
-                </LegendURL>
-              </Style>
-            </Layer>
-          </Layer>
-          <Layer noSubsets="0" opaque="0" queryable="1">
-            <Name>Vervoer</Name>
-            <Title>Vervoer</Title>
-            <Layer queryable="1">
-              <Name>BSO:Station_of_halte</Name>
-              <Title>Station of halte</Title>
-              <Abstract />
-              <KeywordList>
-                <Keyword>features</Keyword>
-                <Keyword>A10_TR_GARE</Keyword>
-              </KeywordList>
-              <SRS>EPSG:31370</SRS>
-              <LatLonBoundingBox maxx="4.419665314371129" maxy="50.890460052561956" minx="4.289395008066184" miny="50.773484564676906" />
-              <BoundingBox SRS="EPSG:31370" maxx="153655.887708691" maxy="175595.649899969" minx="144490.030608691" miny="162586.070499968" />
-              <Style>
-                <Name>Station of halte</Name>
-                <Title>Station of halte</Title>
-                <Abstract />
-                <LegendURL height="20" width="20">
-                  <Format>image/png</Format>
-                  <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Gares_ou_points_d_arret" ns0:type="simple" />
-                </LegendURL>
-              </Style>
-              <Style>
-                <Name>Gare ou point d arret</Name>
-                <Title>Gare ou point d arret</Title>
-                <Abstract />
-                <LegendURL height="20" width="20">
-                  <Format>image/png</Format>
-                  <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Gares_ou_points_d_arret&amp;style=Station+of+halte" ns0:type="simple" />
-                </LegendURL>
-              </Style>
-            </Layer>
-            <Layer queryable="1">
-              <Name>BSO:Aan_te_leggen_station_of_halte</Name>
-              <Title>Aan te leggen station of halte</Title>
-              <Abstract />
-              <KeywordList>
-                <Keyword>features</Keyword>
-                <Keyword>A10_TR_GAREACREER</Keyword>
-              </KeywordList>
-              <SRS>EPSG:31370</SRS>
-              <LatLonBoundingBox maxx="4.397357332185598" maxy="50.87973588082651" minx="4.270340020281764" miny="50.779143017219184" />
-              <BoundingBox SRS="EPSG:31370" maxx="152086.778308662" maxy="174402.671599968" minx="143147.760708662" miny="163217.082099969" />
-              <Style>
-                <Name>Aan te leggen station of halte</Name>
-                <Title>Aan te leggen station of halte</Title>
-                <Abstract />
-                <LegendURL height="20" width="20">
-                  <Format>image/png</Format>
-                  <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Aan_te_leggen_station_of_halte" ns0:type="simple" />
-                </LegendURL>
-              </Style>
-              <Style>
-                <Name>Gare a creer</Name>
-                <Title>Gare a creer</Title>
-                <Abstract />
-                <LegendURL height="20" width="20">
-                  <Format>image/png</Format>
-                  <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Aan_te_leggen_station_of_halte&amp;style=Gare+a+creer" ns0:type="simple" />
-                </LegendURL>
-              </Style>
-            </Layer>
-            <Layer queryable="1">
-              <Name>BSO:Station</Name>
-              <Title>Station</Title>
-              <Abstract />
-              <KeywordList>
-                <Keyword>features</Keyword>
-                <Keyword>A10_TR_STATION</Keyword>
-              </KeywordList>
-              <SRS>EPSG:31370</SRS>
-              <LatLonBoundingBox maxx="4.463534969908586" maxy="50.89644420585833" minx="4.26437255685392" miny="50.81222522001918" />
-              <BoundingBox SRS="EPSG:31370" maxx="156741.707008662" maxy="176261.304999969" minx="142730.362008662" miny="166897.682999969" />
-              <Style>
-                <Name>Station</Name>
-                <Title>Station</Title>
-                <Abstract />
-                <LegendURL height="20" width="20">
-                  <Format>image/png</Format>
-                  <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Stations" ns0:type="simple" />
-                </LegendURL>
-              </Style>
-              <Style>
-                <Name>Station</Name>
-                <Title>Station</Title>
-                <Abstract />
-                <LegendURL height="20" width="20">
-                  <Format>image/png</Format>
-                  <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Stations&amp;style=Station" ns0:type="simple" />
-                </LegendURL>
-              </Style>
-            </Layer>
-            <Layer queryable="1">
-              <Name>BSO:Aan_te_leggen_station</Name>
-              <Title>Aan te leggen station</Title>
-              <Abstract />
-              <KeywordList>
-                <Keyword>A10_TR_STATIONACREER</Keyword>
-                <Keyword>features</Keyword>
-              </KeywordList>
-              <SRS>EPSG:31370</SRS>
-              <LatLonBoundingBox maxx="4.344620195794829" maxy="50.858728164212835" minx="4.310811437087962" miny="50.84466196566984" />
-              <BoundingBox SRS="EPSG:31370" maxx="148374.153" maxy="172065.941999968" minx="145994.224" miny="170502.465999968" />
-              <Style>
-                <Name>Aan te leggen station</Name>
-                <Title>Aan te leggen station</Title>
-                <Abstract />
-                <LegendURL height="20" width="20">
-                  <Format>image/png</Format>
-                  <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Stations_a_creer&amp;style=Aan+te+leggen+station" ns0:type="simple" />
-                </LegendURL>
-              </Style>
-              <Style>
-                <Name>Station a creer</Name>
-                <Title>Station</Title>
-                <Abstract />
-                <LegendURL height="20" width="20">
-                  <Format>image/png</Format>
-                  <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Stations_a_creer" ns0:type="simple" />
-                </LegendURL>
-              </Style>
-            </Layer>
-            <Layer queryable="1">
-              <Name>BSO:Lijn_in_onafhankelijke_baan</Name>
-              <Title>Lijn in onafhankelijke baan</Title>
-              <Abstract />
-              <KeywordList>
-                <Keyword>A10_TR_ITIN</Keyword>
-                <Keyword>features</Keyword>
-              </KeywordList>
-              <SRS>EPSG:31370</SRS>
-              <LatLonBoundingBox maxx="4.463626579061645" maxy="50.896933863225456" minx="4.264723394327624" miny="50.81180057089281" />
-              <BoundingBox SRS="EPSG:31370" maxx="156748.081" maxy="176315.774999968" minx="142755.119" miny="166850.410999968" />
-              <Style>
-                <Name>Lijn in onafhankelijke baan</Name>
-                <Title>Lijn in onafhankelijke baan</Title>
-                <Abstract />
-                <LegendURL height="20" width="20">
-                  <Format>image/png</Format>
-                  <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Lijn_in_onafhankelijke_baan" ns0:type="simple" />
-                </LegendURL>
-              </Style>
-              <Style>
-                <Name>Itineraire en site independant</Name>
-                <Title>Itineraire en site independant</Title>
-                <Abstract />
-                <LegendURL height="20" width="20">
-                  <Format>image/png</Format>
-                  <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Lijn_in_onafhankelijke_baan&amp;style=Itineraire+en+site+independant" ns0:type="simple" />
-                </LegendURL>
-              </Style>
-            </Layer>
-            <Layer queryable="1">
-              <Name>BSO:Aan_te_leggen_lijn_in_onafhankelijke_baan</Name>
-              <Title>Aan te leggen lijn in onafhankelijke baan</Title>
-              <Abstract />
-              <KeywordList>
-                <Keyword>features</Keyword>
-                <Keyword>A10_TR_ITINACREER</Keyword>
-              </KeywordList>
-              <SRS>EPSG:31370</SRS>
-              <LatLonBoundingBox maxx="4.340580830519742" maxy="50.858575518270364" minx="4.311424951102361" miny="50.838685763157635" />
-              <BoundingBox SRS="EPSG:31370" maxx="148089.428" maxy="172049.055302603" minx="146037.407551541" miny="169837.636999968" />
-              <Style>
-                <Name>Aan te leggen lijn in onafhankelijke baan</Name>
-                <Title>Aan te leggen lijn in onafhankelijke baan</Title>
-                <Abstract />
-                <LegendURL height="20" width="20">
-                  <Format>image/png</Format>
-                  <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Aan_te_leggen_lijn_in_onafhankelijke_baan" ns0:type="simple" />
-                </LegendURL>
-              </Style>
-              <Style>
-                <Name>Itineraire en site independant a creer</Name>
-                <Title>Itineraire en site independant a creer</Title>
-                <Abstract />
-                <LegendURL height="20" width="20">
-                  <Format>image/png</Format>
-                  <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Aan_te_leggen_lijn_in_onafhankelijke_baan&amp;style=Itineraire+en+site+independant+a+creer" ns0:type="simple" />
-                </LegendURL>
-              </Style>
-            </Layer>
-            <Layer queryable="1">
-              <Name>BSO:Spoorlijn</Name>
-              <Title>Spoorlijn</Title>
-              <Abstract />
-              <KeywordList>
-                <Keyword>features</Keyword>
-                <Keyword>A10_TR_LCHFER</Keyword>
-              </KeywordList>
-              <SRS>EPSG:31370</SRS>
-              <LatLonBoundingBox maxx="4.429085464126405" maxy="50.90588478452308" minx="4.247085173055106" miny="50.77361604783644" />
-              <BoundingBox SRS="EPSG:31370" maxx="154317.259" maxy="177311.494681855" minx="141515.866" miny="162604.64399998" />
-              <Style>
-                <Name>Spoorlijn</Name>
-                <Title>Spoorlijn</Title>
-                <Abstract />
-                <LegendURL height="20" width="20">
-                  <Format>image/png</Format>
-                  <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Spoorlijn" ns0:type="simple" />
-                </LegendURL>
-              </Style>
-              <Style>
-                <Name>Ligne de chemin de fer</Name>
-                <Title>Ligne de chemin de fer</Title>
-                <Abstract />
-                <LegendURL height="20" width="20">
-                  <Format>image/png</Format>
-                  <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Spoorlijn&amp;style=Ligne+de+chemin+de+fer" ns0:type="simple" />
-                </LegendURL>
-              </Style>
-            </Layer>
-            <Layer queryable="1">
-              <Name>BSO:Voor_te_behouden_gebied_voor_ondergrondse_infrastructuur</Name>
-              <Title>Voor te behouden gebied voor ondergrondse infrastructuur</Title>
-              <Abstract />
-              <KeywordList>
-                <Keyword>features</Keyword>
-                <Keyword>A10_TR_GABARIT</Keyword>
-              </KeywordList>
-              <SRS>EPSG:31370</SRS>
-              <LatLonBoundingBox maxx="4.340659733506372" maxy="50.84085671771286" minx="4.334459382671517" miny="50.836500584969976" />
-              <BoundingBox SRS="EPSG:31370" maxx="148094.899" maxy="170077.998999969" minx="147658.352" miny="169593.59399997" />
-              <Style>
-                <Name>Voor te behouden gebied voor ondergrondse infrastructuur</Name>
-                <Title>Voor te behouden gebied voor ondergrondse infrastructuur</Title>
-                <Abstract />
-                <LegendURL height="20" width="20">
-                  <Format>image/png</Format>
-                  <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Zone_a_reserver_pour_infrastructure_souterraine&amp;style=Voor+te+behouden+gebied+voor+ondergrondse+infrastructuur" ns0:type="simple" />
-                </LegendURL>
-              </Style>
-              <Style>
-                <Name>Zone a reserver aux infrastructures souterraines</Name>
-                <Title>Zone a reserver aux infrastructures souterraines</Title>
-                <Abstract />
-                <LegendURL height="20" width="20">
-                  <Format>image/png</Format>
-                  <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Zone_a_reserver_pour_infrastructure_souterraine" ns0:type="simple" />
-                </LegendURL>
-              </Style>
-            </Layer>
-            <Layer queryable="1">
-              <Name>BSO_DSV:URBAN_II</Name>
-              <Title>URBAN II</Title>
-              <Abstract />
-              <KeywordList>
-                <Keyword>A50_URBAN2</Keyword>
-                <Keyword>features</Keyword>
-              </KeywordList>
-              <SRS>EPSG:31370</SRS>
-              <LatLonBoundingBox maxx="4.343508814096349" maxy="50.84275436265462" minx="4.317442136843221" miny="50.820296529517194" />
-              <BoundingBox SRS="EPSG:31370" maxx="148295.020000002" maxy="170289.026842074" minx="146459.890000004" miny="167791.714842077" />
-              <Style>
-                <Name>URBAN_II</Name>
-                <Title>URBAN II</Title>
-                <Abstract />
-                <LegendURL height="20" width="20">
-                  <Format>image/png</Format>
-                  <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=URBAN_II" ns0:type="simple" />
-                </LegendURL>
-              </Style>
-              <Style>
-                <Name>URBAN_II</Name>
-                <Title>URBAN II</Title>
-                <Abstract />
-                <LegendURL height="20" width="20">
-                  <Format>image/png</Format>
-                  <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=URBAN_II&amp;style=URBAN_II" ns0:type="simple" />
-                </LegendURL>
-              </Style>
-            </Layer>
-            <Layer queryable="1">
-              <Name>BROH:Gebieden_voor_studies_van_het_projekt_van_het_station_en_van_het_GGBUA</Name>
-              <Title>Gebieden voor studies van het projekt van het station en van het GGBUA</Title>
-              <Abstract />
-              <KeywordList>
-                <Keyword>A10_TR_ZONETGV</Keyword>
-                <Keyword>features</Keyword>
-              </KeywordList>
-              <SRS>EPSG:31370</SRS>
-              <LatLonBoundingBox maxx="4.418353532046153" maxy="50.90233070277459" minx="4.37382751256142" miny="50.875346764287485" />
-              <BoundingBox SRS="EPSG:31370" maxx="153562.678" maxy="176916.150352486" minx="150430.88" miny="173915.624999969" />
-              <Style>
-                <Name>Gebied voor studies van het projekt van het station en van het GGBUA</Name>
-                <Title>Gebied voor studies van het projekt van het station en van het GGBUA</Title>
-                <Abstract />
-                <LegendURL height="20" width="20">
-                  <Format>image/png</Format>
-                  <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Gebieden_voor_studies_van_het_projekt_van_het_station_en_van_het_GGBUA" ns0:type="simple" />
-                </LegendURL>
-              </Style>
-              <Style>
-                <Name>Zone d etude du proje gare e de la ZIRAD</Name>
-                <Title>Zone d etude du projet gare et de la ZIRAD</Title>
-                <Abstract />
-                <LegendURL height="20" width="20">
-                  <Format>image/png</Format>
-                  <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Gebieden_voor_studies_van_het_projekt_van_het_station_en_van_het_GGBUA&amp;style=Zone+d+etude+du+proje+gare+e+de+la+ZIRAD" ns0:type="simple" />
-                </LegendURL>
-              </Style>
-            </Layer>
-          </Layer>
-          <Layer noSubsets="0" opaque="0" queryable="1">
-            <Name>Andere Lagen met betrekking tot de GBP</Name>
-            <Title>Andere Lagen met betrekking tot de GBP</Title>
-            <Layer noSubsets="0" opaque="0" queryable="1">
-              <Name>BSO:Erfdienstbaarheidsgebieden_rondom_bossen</Name>
-              <Title>Erfdienstbaarheidsgebieden rondom bossen (60m)</Title>
-              <Abstract/>
-              <KeywordList>
-                <Keyword>features</Keyword>
-                <Keyword>IBGE_ZSPB</Keyword>
-              </KeywordList>
-              <SRS>EPSG:31370</SRS>
-              <LatLonBoundingBox maxx="4.478145036699149" maxy="50.89071327495519" minx="4.291930715097308" miny="50.7628868858783"/>
-              <BoundingBox SRS="EPSG:31370" maxx="165088.0" maxy="185088.0" minx="140000.0" miny="160000.0"/>
-              <Style>
-                <Name>REPERAGE:DU_ZSPB</Name>
-                <Title>Zones de servitude en pourtour de bois - DU</Title>
-                <LegendURL height="20" width="20">
-                  <Format>image/png</Format>
-                  <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=BSO%3AErfdienstbaarheidsgebieden_rondom_bossen" ns0:type="simple"/>
-                </LegendURL>
-              </Style>
-            </Layer>
-          </Layer>
-        </Layer>
-        <Layer noSubsets="0" opaque="0" queryable="1">
           <Name>GSV</Name>
           <Title>GSV</Title>
           <Layer noSubsets="0" opaque="0" queryable="1">
@@ -2405,27 +1572,6 @@
         <Name>Stedenbouw</Name>
         <Title>Stedenbouw</Title>
         <Layer queryable="1">
-          <Name>BSO:BBP</Name>
-          <Title>BBP</Title>
-          <Abstract>VM_A60_PPAS_NL</Abstract>
-          <KeywordList>
-            <Keyword>VM_A60_PPAS_NL</Keyword>
-            <Keyword>features</Keyword>
-          </KeywordList>
-          <SRS>EPSG:31370</SRS>
-          <LatLonBoundingBox maxx="4.467966955492349" maxy="50.904814577400444" minx="4.24249366703288" miny="50.76899415866564" />
-          <BoundingBox SRS="EPSG:31370" maxx="157052.237999992" maxy="177192.507388039" minx="141192.712000009" miny="162091.041842074" />
-          <Style>
-            <Name>BBP_2</Name>
-            <Title>BBP</Title>
-            <Abstract />
-            <LegendURL height="20" width="20">
-              <Format>image/png</Format>
-              <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=BBP" ns0:type="simple" />
-            </LegendURL>
-          </Style>
-        </Layer>
-        <Layer queryable="1">
           <Name>BSO:Verkavelingen</Name>
           <Title>Verkavelingen</Title>
           <Abstract />
@@ -3336,6 +2482,869 @@
           <Format>text/html</Format>
           <OnlineResource ns0:href="http://geonetwork.geobru.irisnetlab.be/geonetwork/srv/eng/csw?Request=GetRecordById#38;Service=CSW&amp;Version=2.0.2&amp;elementSetName=full&amp;outputSchema=http://www.isotc211.org/2005/gmd&amp;id=5d68c6ff-8875-4fdc-85db-aa298d1ca072" ns0:type="simple" />
         </MetadataURL>
+      </Layer>
+    </Layer>
+    <Layer>
+      <Title>perspective.brussels</Title>
+      <Abstract>A compliant implementation of WMS plus most of the SLD extension (dynamic styling). Can also generate PDF, SVG, KML, GeoRSS</Abstract>
+      <SRS>EPSG:WGS84(DD)</SRS>
+      <SRS>EPSG:4326</SRS>
+      <SRS>EPSG:31370</SRS>
+      <SRS>EPSG:900913</SRS>
+      <LatLonBoundingBox maxx="4.49547992326272" maxy="50.9218586969616" minx="4.22527159306639" miny="50.7599660513373" />
+      <Layer noSubsets="0" opaque="0" queryable="1">
+        <Name>GBP</Name>
+        <Title>GBP</Title>
+        <Layer noSubsets="0" opaque="0" queryable="1">
+          <Name>BSO:Bodembestemming</Name>
+          <Title>Bodembestemming</Title>
+          <Layer noSubsets="0" opaque="0" queryable="1">
+            <Name>BSO:Volledige_bodembestemming</Name>
+            <Title>Volledige bodembestemming</Title>
+            <Abstract>Layer-Group type layer: Volledige_bodembestemming</Abstract>
+            <SRS>EPSG:31370</SRS>
+            <LatLonBoundingBox maxx="4.481395456619923" maxy="50.91359615183473" minx="4.24247019506189" miny="50.76341298190163"/>
+            <BoundingBox SRS="EPSG:31370" maxx="165088.0" maxy="185088.0" minx="140000.0" miny="160000.0"/>
+          </Layer>
+          <Layer noSubsets="0" opaque="0" queryable="1">
+            <Name>Gedetaileerde bestemmingen</Name>
+            <Title>Gedetaileerde bestemmingen</Title>
+            <Layer queryable="1">
+              <Name>BSO:Winkelgalerijen</Name>
+              <Title>Winkelgalerijen</Title>
+              <Abstract />
+              <KeywordList>
+                <Keyword>A10_AF_GALCOMM</Keyword>
+                <Keyword>features</Keyword>
+              </KeywordList>
+              <SRS>EPSG:31370</SRS>
+              <LatLonBoundingBox maxx="4.46355095398464" maxy="50.8946976555756" minx="4.279589616898083" miny="50.81459298156196" />
+              <BoundingBox SRS="EPSG:31370" maxx="156743.083999992" maxy="176067.019842078" minx="143800.675000006" miny="167160.489842088" />
+              <Style>
+                <Name>Winkelgalerijen</Name>
+                <Title>Winkelgalerijen</Title>
+                <Abstract />
+                <LegendURL height="20" width="20">
+                  <Format>image/png</Format>
+                  <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Winkelgalerijen" ns0:type="simple" />
+                </LegendURL>
+              </Style>
+              <Style>
+                <Name>Galeries commercantes</Name>
+                <Title>Galeries commercantes</Title>
+                <Abstract />
+                <LegendURL height="20" width="20">
+                  <Format>image/png</Format>
+                  <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Winkelgalerijen&amp;style=Galeries+commercantes" ns0:type="simple" />
+                </LegendURL>
+              </Style>
+            </Layer>
+            <Layer queryable="1">
+              <Name>BSO:Transitparkeerplaats</Name>
+              <Title>Transitparkeerplaats</Title>
+              <Abstract />
+              <KeywordList>
+                <Keyword>A10_AF_PKTRANSIT</Keyword>
+                <Keyword>features</Keyword>
+              </KeywordList>
+              <SRS>EPSG:31370</SRS>
+              <LatLonBoundingBox maxx="4.45824244046579" maxy="50.898155404440764" minx="4.263586772772797" miny="50.778229672679444" />
+              <BoundingBox SRS="EPSG:31370" maxx="156369.136241047" maxy="176451.676057725" minx="142675.346241063" miny="163116.118057739" />
+              <Style>
+                <Name>Transitparkeerplaats</Name>
+                <Title>Transitparkeerplaats</Title>
+                <Abstract />
+                <LegendURL height="20" width="20">
+                  <Format>image/png</Format>
+                  <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Transitparkeerplaats" ns0:type="simple" />
+                </LegendURL>
+              </Style>
+              <Style>
+                <Name>Parking_de_transit</Name>
+                <Title>Parking</Title>
+                <Abstract />
+                <LegendURL height="20" width="20">
+                  <Format>image/png</Format>
+                  <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Transitparkeerplaats&amp;style=Parking_de_transit" ns0:type="simple" />
+                </LegendURL>
+              </Style>
+            </Layer>
+            <Layer queryable="1">
+              <Name>BSO:Punten_van_wisselend_gemengd_ruimten</Name>
+              <Title>Punten van wisselend gemengd ruimten</Title>
+              <Abstract />
+              <KeywordList>
+                <Keyword>features</Keyword>
+                <Keyword>A10_AF_PTVARMIX</Keyword>
+              </KeywordList>
+              <SRS>EPSG:31370</SRS>
+              <LatLonBoundingBox maxx="4.430289341079423" maxy="50.8897771481321" minx="4.29179766250811" miny="50.76876497765332" />
+              <BoundingBox SRS="EPSG:31370" maxx="154403.462319114" maxy="175519.659299566" minx="144659.005192842" miny="162060.896847107" />
+              <Style>
+                <Name>Punten van wisselend gemengd ruimten</Name>
+                <Title>Punten van wisselend gemengd ruimten</Title>
+                <Abstract />
+                <LegendURL height="20" width="20">
+                  <Format>image/png</Format>
+                  <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Punten_van_wisselend_gemengd_ruimten" ns0:type="simple" />
+                </LegendURL>
+              </Style>
+              <Style>
+                <Name>Points de variation de mixité</Name>
+                <Title>Points de variation de mixite</Title>
+                <Abstract />
+                <LegendURL height="20" width="20">
+                  <Format>image/png</Format>
+                  <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Punten_van_wisselend_gemengd_ruimten&amp;style=Points+de+variation+de+mixit%E9" ns0:type="simple" />
+                </LegendURL>
+              </Style>
+            </Layer>
+            <Layer queryable="1">
+              <Name>BSO:Linten_voor_handelskern</Name>
+              <Title>Linten voor handelskern</Title>
+              <Abstract />
+              <KeywordList>
+                <Keyword>features</Keyword>
+                <Keyword>A10_AF_NOYCOMM</Keyword>
+              </KeywordList>
+              <SRS>EPSG:31370</SRS>
+              <LatLonBoundingBox maxx="4.4658619837100035" maxy="50.90087956084193" minx="4.292366048663395" miny="50.7869460334785" />
+              <BoundingBox SRS="EPSG:31370" maxx="156904.759108068" maxy="176754.768842068" minx="144700.240000006" miny="164085.270436819" />
+              <Style>
+                <Name>Linten voor handelskern</Name>
+                <Title>Linten voor handelskern</Title>
+                <Abstract />
+                <LegendURL height="20" width="20">
+                  <Format>image/png</Format>
+                  <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Linten_voor_handelskern" ns0:type="simple" />
+                </LegendURL>
+              </Style>
+              <Style>
+                <Name>Liserés de noyau commercial</Name>
+                <Title>Liseres de noyau commercial</Title>
+                <Abstract />
+                <LegendURL height="20" width="20">
+                  <Format>image/png</Format>
+                  <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Linten_voor_handelskern&amp;style=Liser%E9s+de+noyau+commercial" ns0:type="simple" />
+                </LegendURL>
+              </Style>
+            </Layer>
+            <Layer queryable="1">
+              <Name>BSO:GCHEWS</Name>
+              <Title>GCHEWS</Title>
+              <Abstract />
+              <KeywordList>
+                <Keyword>features</Keyword>
+                <Keyword>A10_AF_ZICHEE</Keyword>
+              </KeywordList>
+              <SRS>EPSG:31370</SRS>
+              <LatLonBoundingBox maxx="4.477387070217805" maxy="50.901112280478905" minx="4.254513192332806" miny="50.763372966306044" />
+              <BoundingBox SRS="EPSG:31370" maxx="157715.450695506" maxy="176780.588842066" minx="142037.528418829" miny="161464.403842084" />
+              <Style>
+                <Name>GCHEWS</Name>
+                <Title>GCHEWS</Title>
+                <Abstract />
+                <LegendURL height="20" width="20">
+                  <Format>image/png</Format>
+                  <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=GCHEWS" ns0:type="simple" />
+                </LegendURL>
+              </Style>
+              <Style>
+                <Name>Zichee</Name>
+                <Title>ZICHEE</Title>
+                <Abstract />
+                <LegendURL height="20" width="20">
+                  <Format>image/png</Format>
+                  <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=GCHEWS&amp;style=Zichee" ns0:type="simple" />
+                </LegendURL>
+              </Style>
+            </Layer>
+            <Layer queryable="1">
+              <Name>BSO:Gebieden_van_gewestelijk_belang_met_uitgestelde_aanleg</Name>
+              <Title>Gebieden van gewestelijk belang met uitgestelde aanleg</Title>
+              <Abstract />
+              <KeywordList>
+                <Keyword>A10_AF_ZIR_AM_DIF</Keyword>
+                <Keyword>features</Keyword>
+              </KeywordList>
+              <SRS>EPSG:31370</SRS>
+              <LatLonBoundingBox maxx="4.411322877027757" maxy="50.902330056733675" minx="4.382266477549216" miny="50.879862604628926" />
+              <BoundingBox SRS="EPSG:31370" maxx="153068.123999996" maxy="176916.166443644" minx="151024.735999999" miny="174417.656842071" />
+              <Style>
+                <Name>Gebieden van gewestelijk belang met uitgestelde aanleg</Name>
+                <Title>Gebieden van gewestelijk belang met uitgestelde aanleg</Title>
+                <Abstract />
+                <LegendURL height="20" width="20">
+                  <Format>image/png</Format>
+                  <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Gebieden_van_gewestelijk_belang_met_uitgestelde_aanleg" ns0:type="simple" />
+                </LegendURL>
+              </Style>
+              <Style>
+                <Name>Zones d'interet regional a amenagement differe</Name>
+                <Title>Zones d'interet regional a amenagement differe</Title>
+                <Abstract />
+                <LegendURL height="20" width="20">
+                  <Format>image/png</Format>
+                  <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Zones_d_interet_regional_a_amenagement_differe" ns0:type="simple" />
+                </LegendURL>
+              </Style>
+            </Layer>
+            <Layer queryable="1">
+              <Name>BSO:Bestemmingen</Name>
+              <Title>Bestemmingen</Title>
+              <Abstract />
+              <KeywordList>
+                <Keyword>features</Keyword>
+                <Keyword>A10_AF_AFFECT</Keyword>
+              </KeywordList>
+              <SRS>EPSG:31370</SRS>
+              <LatLonBoundingBox maxx="4.481395499187374" maxy="50.913596114462294" minx="4.2424703657955884" miny="50.76341280985816" />
+              <BoundingBox SRS="EPSG:31370" maxx="157995.282999992" maxy="178169.335842065" minx="141192.712000009" miny="161470.180842083" />
+              <Style>
+                <Name>Bestemmingen_full</Name>
+                <Title>Bestemmingen</Title>
+                <Abstract />
+                <LegendURL height="20" width="20">
+                  <Format>image/png</Format>
+                  <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Bestemmingen" ns0:type="simple" />
+                </LegendURL>
+              </Style>
+              <Style>
+                <Name>Affectations_landbouw</Name>
+                <Title>Affectations_pour_agriculture</Title>
+                <Abstract />
+                <LegendURL height="20" width="20">
+                  <Format>image/png</Format>
+                  <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Affectations&amp;style=Affectations_agr" ns0:type="simple" />
+                </LegendURL>
+              </Style>
+              <Style>
+                <Name>Affectations_full</Name>
+                <Title>Affectations</Title>
+                <Abstract />
+                <LegendURL height="20" width="20">
+                  <Format>image/png</Format>
+                  <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Bestemmingen&amp;style=Affectations_full" ns0:type="simple" />
+                </LegendURL>
+              </Style>
+              <Style>
+                <Name>Affectations_fonderie</Name>
+                <Title>Affectations</Title>
+                <Abstract />
+                <LegendURL height="20" width="20">
+                  <Format>image/png</Format>
+                  <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Affectations&amp;style=Affectations_fonderie" ns0:type="simple" />
+                </LegendURL>
+              </Style>
+              <Style>
+                <Name>Bestemmingen_full</Name>
+                <Title>Bestemmingen</Title>
+                <Abstract />
+                <LegendURL height="20" width="20">
+                  <Format>image/png</Format>
+                  <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Affectations&amp;style=Bestemmingen_full" ns0:type="simple" />
+                </LegendURL>
+              </Style>
+            </Layer>
+            <Layer queryable="1">
+              <Name>BSO:Structurerende_ruimten</Name>
+              <Title>Structurerende ruimten</Title>
+              <Abstract />
+              <KeywordList>
+                <Keyword>A10_AF_ESPSTRUCT</Keyword>
+                <Keyword>features</Keyword>
+              </KeywordList>
+              <SRS>EPSG:31370</SRS>
+              <LatLonBoundingBox maxx="4.4812116054235895" maxy="50.91251174469631" minx="4.257783604166066" miny="50.7634070310825" />
+              <BoundingBox SRS="EPSG:31370" maxx="157982.535999992" maxy="178048.697842097" minx="142269.450000008" miny="161468.362730835" />
+              <Style>
+                <Name>Structurerende ruimten</Name>
+                <Title>Structurerende ruimten</Title>
+                <Abstract>Structurerende ruimten</Abstract>
+                <LegendURL height="20" width="20">
+                  <Format>image/png</Format>
+                  <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Structurerende_ruimten" ns0:type="simple" />
+                </LegendURL>
+              </Style>
+              <Style>
+                <Name>Espaces structurants</Name>
+                <Title>Espaces structurants</Title>
+                <Abstract>Espaces structurants</Abstract>
+                <LegendURL height="20" width="20">
+                  <Format>image/png</Format>
+                  <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Structurerende_ruimten&amp;style=Espaces+structurants" ns0:type="simple" />
+                </LegendURL>
+              </Style>
+            </Layer>
+          </Layer>
+        </Layer>
+        <Layer noSubsets="0" opaque="0" queryable="1">
+          <Name>Burelen</Name>
+          <Title>Burelen</Title>
+          <Layer queryable="1">
+            <Name>BSO:Maas</Name>
+            <Title>Maas</Title>
+            <Abstract />
+            <KeywordList>
+              <Keyword>A10_BU_MAILLE</Keyword>
+              <Keyword>features</Keyword>
+            </KeywordList>
+            <SRS>EPSG:31370</SRS>
+            <LatLonBoundingBox maxx="4.481540382044033" maxy="50.91359611759897" minx="4.2424703657955884" miny="50.76336087637392" />
+            <BoundingBox SRS="EPSG:31370" maxx="158005.471999992" maxy="178169.335842075" minx="141192.712000009" miny="161464.403842094" />
+            <Style>
+              <Name>Maas</Name>
+              <Title>Maas</Title>
+              <Abstract />
+              <LegendURL height="20" width="20">
+                <Format>image/png</Format>
+                <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Maas" ns0:type="simple" />
+              </LegendURL>
+            </Style>
+            <Style>
+              <Name>Maille</Name>
+              <Title>Maille</Title>
+              <Abstract />
+              <LegendURL height="20" width="20">
+                <Format>image/png</Format>
+                <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Maas&amp;style=Maille" ns0:type="simple" />
+              </LegendURL>
+            </Style>
+          </Layer>
+        </Layer>
+        <Layer noSubsets="0" opaque="0" queryable="1">
+          <Name>Wegen</Name>
+          <Title>Wegen</Title>
+          <Layer queryable="1">
+            <Name>BSO:Autosnelweg</Name>
+            <Title>Autosnelweg</Title>
+            <Abstract />
+            <KeywordList>
+              <Keyword>A10_VR_AUTOROUTE</Keyword>
+              <Keyword>features</Keyword>
+            </KeywordList>
+            <SRS>EPSG:31370</SRS>
+            <LatLonBoundingBox maxx="4.432106177488731" maxy="50.912498071221826" minx="4.270409398065655" miny="50.798260136687205" />
+            <BoundingBox SRS="EPSG:31370" maxx="154529.082999994" maxy="178047.232842077" minx="143157.387" miny="165343.640842091" />
+            <Style>
+              <Name>Autosnelweg</Name>
+              <Title>Autosnelweg</Title>
+              <Abstract />
+              <LegendURL height="20" width="20">
+                <Format>image/png</Format>
+                <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Autosnelweg" ns0:type="simple" />
+              </LegendURL>
+            </Style>
+            <Style>
+              <Name>Autoroute</Name>
+              <Title>Autoroute</Title>
+              <Abstract />
+              <LegendURL height="20" width="20">
+                <Format>image/png</Format>
+                <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Autosnelweg&amp;style=Autoroute" ns0:type="simple" />
+              </LegendURL>
+            </Style>
+          </Layer>
+          <Layer queryable="1">
+            <Name>BSO:Fietsroute</Name>
+            <Title>Fietsroute</Title>
+            <Abstract />
+            <KeywordList>
+              <Keyword>A10_VR_IC</Keyword>
+              <Keyword>features</Keyword>
+            </KeywordList>
+            <SRS>EPSG:31370</SRS>
+            <LatLonBoundingBox maxx="4.475278753718261" maxy="50.91154938641973" minx="4.2716467633923045" miny="50.7635105013253" />
+            <BoundingBox SRS="EPSG:31370" maxx="157565.45" maxy="177941.65899998" minx="143244.272" miny="161479.249999977" />
+            <Style>
+              <Name>Fietsroute</Name>
+              <Title>Fietsroute</Title>
+              <Abstract />
+              <LegendURL height="20" width="20">
+                <Format>image/png</Format>
+                <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Fietsroute" ns0:type="simple" />
+              </LegendURL>
+            </Style>
+            <Style>
+              <Name>Itineraire cyclable</Name>
+              <Title>Itineraire cyclable</Title>
+              <Abstract />
+              <LegendURL height="20" width="20">
+                <Format>image/png</Format>
+                <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Fietsroute&amp;style=Itineraire+cyclable" ns0:type="simple" />
+              </LegendURL>
+            </Style>
+          </Layer>
+          <Layer queryable="1">
+            <Name>BSO:Grootstedelijke_weg</Name>
+            <Title>Grootstedelijke weg</Title>
+            <Abstract />
+            <KeywordList>
+              <Keyword>A10_VR_VOIRIEMETROP</Keyword>
+              <Keyword>features</Keyword>
+            </KeywordList>
+            <SRS>EPSG:31370</SRS>
+            <LatLonBoundingBox maxx="4.480624458892712" maxy="50.89344891625972" minx="4.260826498866311" miny="50.783235916240294" />
+            <BoundingBox SRS="EPSG:31370" maxx="157944.487" maxy="175928.10399998" minx="142480.415" miny="163674.043999979" />
+            <Style>
+              <Name>Grootstedelijke weg</Name>
+              <Title>Grootstedelijke weg</Title>
+              <Abstract />
+              <LegendURL height="20" width="20">
+                <Format>image/png</Format>
+                <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Grootstedelijke_weg" ns0:type="simple" />
+              </LegendURL>
+            </Style>
+            <Style>
+              <Name>Voirie metropolitaine</Name>
+              <Title>Voirie metropolitaine</Title>
+              <Abstract />
+              <LegendURL height="20" width="20">
+                <Format>image/png</Format>
+                <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Grootstedelijke_weg&amp;style=Voirie+metropolitaine" ns0:type="simple" />
+              </LegendURL>
+            </Style>
+          </Layer>
+          <Layer queryable="1">
+            <Name>BSO:Grootstedelijke_weg_in_tunnel</Name>
+            <Title>Grootstedelijke weg in tunnel</Title>
+            <Abstract />
+            <KeywordList>
+              <Keyword>features</Keyword>
+              <Keyword>A10_VR_VOIRIEMETROPT</Keyword>
+            </KeywordList>
+            <SRS>EPSG:31370</SRS>
+            <LatLonBoundingBox maxx="4.396017301075501" maxy="50.86779355355472" minx="4.3143592876818735" miny="50.83939155046384" />
+            <BoundingBox SRS="EPSG:31370" maxx="151992.99" maxy="173074.14999998" minx="146244.736046702" miny="169915.997999979" />
+            <Style>
+              <Name>Grootstedelijke weg in tunnel</Name>
+              <Title>Grootstedelijke weg in tunnel</Title>
+              <Abstract />
+              <LegendURL height="20" width="20">
+                <Format>image/png</Format>
+                <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Grootstedelijke_weg_in_tunnel" ns0:type="simple" />
+              </LegendURL>
+            </Style>
+            <Style>
+              <Name>Voirie metropolitaine en tunnel</Name>
+              <Title>Voirie metropolitaine en tunnel</Title>
+              <Abstract />
+              <LegendURL height="20" width="20">
+                <Format>image/png</Format>
+                <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Grootstedelijke_weg_in_tunnel&amp;style=Voirie+metropolitaine+en+tunnel" ns0:type="simple" />
+              </LegendURL>
+            </Style>
+          </Layer>
+          <Layer queryable="1">
+            <Name>BSO:Hoofdweg</Name>
+            <Title>Hoofdweg</Title>
+            <Abstract />
+            <KeywordList>
+              <Keyword>A10_VR_VOIRIEPRINC</Keyword>
+              <Keyword>features</Keyword>
+            </KeywordList>
+            <SRS>EPSG:31370</SRS>
+            <LatLonBoundingBox maxx="4.461886077270997" maxy="50.909677040035014" minx="4.2607897770727705" miny="50.76337880741799" />
+            <BoundingBox SRS="EPSG:31370" maxx="156623.825" maxy="177733.36999998" minx="142480.415" miny="161464.40299998" />
+            <Style>
+              <Name>Hoofdweg</Name>
+              <Title>Hoofdweg</Title>
+              <Abstract />
+              <LegendURL height="20" width="20">
+                <Format>image/png</Format>
+                <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Hoofdweg" ns0:type="simple" />
+              </LegendURL>
+            </Style>
+            <Style>
+              <Name>Voirie principale</Name>
+              <Title>Voirie principale</Title>
+              <Abstract />
+              <LegendURL height="20" width="20">
+                <Format>image/png</Format>
+                <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Hoofdweg&amp;style=Voirie+principale" ns0:type="simple" />
+              </LegendURL>
+            </Style>
+          </Layer>
+          <Layer queryable="1">
+            <Name>BSO:Terkamerenbos_gebied</Name>
+            <Title>Terkamerenbos gebied</Title>
+            <Abstract />
+            <KeywordList>
+              <Keyword>A10_VR_ZETUDE</Keyword>
+              <Keyword>features</Keyword>
+            </KeywordList>
+            <SRS>EPSG:31370</SRS>
+            <LatLonBoundingBox maxx="4.388811151862245" maxy="50.814978525857796" minx="4.366789681682674" miny="50.797654930998846" />
+            <BoundingBox SRS="EPSG:31370" maxx="151487.44" maxy="167198.973999978" minx="149935.513" miny="165272.129999979" />
+            <Style>
+              <Name>Terkamerenbos gebied</Name>
+              <Title>Terkamerenbos gebied</Title>
+              <Abstract />
+              <LegendURL height="20" width="20">
+                <Format>image/png</Format>
+                <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Terkamerenbos_gebied" ns0:type="simple" />
+              </LegendURL>
+            </Style>
+            <Style>
+              <Name>Zone du bois de la cambre</Name>
+              <Title>Zone du bois de la cambre</Title>
+              <Abstract />
+              <LegendURL height="20" width="20">
+                <Format>image/png</Format>
+                <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Terkamerenbos_gebied&amp;style=Zone+du+bois+de+la+cambre" ns0:type="simple" />
+              </LegendURL>
+            </Style>
+          </Layer>
+        </Layer>
+        <Layer noSubsets="0" opaque="0" queryable="1">
+          <Name>Vervoer</Name>
+          <Title>Vervoer</Title>
+          <Layer queryable="1">
+            <Name>BSO:Station_of_halte</Name>
+            <Title>Station of halte</Title>
+            <Abstract />
+            <KeywordList>
+              <Keyword>features</Keyword>
+              <Keyword>A10_TR_GARE</Keyword>
+            </KeywordList>
+            <SRS>EPSG:31370</SRS>
+            <LatLonBoundingBox maxx="4.419665314371129" maxy="50.890460052561956" minx="4.289395008066184" miny="50.773484564676906" />
+            <BoundingBox SRS="EPSG:31370" maxx="153655.887708691" maxy="175595.649899969" minx="144490.030608691" miny="162586.070499968" />
+            <Style>
+              <Name>Station of halte</Name>
+              <Title>Station of halte</Title>
+              <Abstract />
+              <LegendURL height="20" width="20">
+                <Format>image/png</Format>
+                <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Gares_ou_points_d_arret" ns0:type="simple" />
+              </LegendURL>
+            </Style>
+            <Style>
+              <Name>Gare ou point d arret</Name>
+              <Title>Gare ou point d arret</Title>
+              <Abstract />
+              <LegendURL height="20" width="20">
+                <Format>image/png</Format>
+                <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Gares_ou_points_d_arret&amp;style=Station+of+halte" ns0:type="simple" />
+              </LegendURL>
+            </Style>
+          </Layer>
+          <Layer queryable="1">
+            <Name>BSO:Aan_te_leggen_station_of_halte</Name>
+            <Title>Aan te leggen station of halte</Title>
+            <Abstract />
+            <KeywordList>
+              <Keyword>features</Keyword>
+              <Keyword>A10_TR_GAREACREER</Keyword>
+            </KeywordList>
+            <SRS>EPSG:31370</SRS>
+            <LatLonBoundingBox maxx="4.397357332185598" maxy="50.87973588082651" minx="4.270340020281764" miny="50.779143017219184" />
+            <BoundingBox SRS="EPSG:31370" maxx="152086.778308662" maxy="174402.671599968" minx="143147.760708662" miny="163217.082099969" />
+            <Style>
+              <Name>Aan te leggen station of halte</Name>
+              <Title>Aan te leggen station of halte</Title>
+              <Abstract />
+              <LegendURL height="20" width="20">
+                <Format>image/png</Format>
+                <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Aan_te_leggen_station_of_halte" ns0:type="simple" />
+              </LegendURL>
+            </Style>
+            <Style>
+              <Name>Gare a creer</Name>
+              <Title>Gare a creer</Title>
+              <Abstract />
+              <LegendURL height="20" width="20">
+                <Format>image/png</Format>
+                <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Aan_te_leggen_station_of_halte&amp;style=Gare+a+creer" ns0:type="simple" />
+              </LegendURL>
+            </Style>
+          </Layer>
+          <Layer queryable="1">
+            <Name>BSO:Station</Name>
+            <Title>Station</Title>
+            <Abstract />
+            <KeywordList>
+              <Keyword>features</Keyword>
+              <Keyword>A10_TR_STATION</Keyword>
+            </KeywordList>
+            <SRS>EPSG:31370</SRS>
+            <LatLonBoundingBox maxx="4.463534969908586" maxy="50.89644420585833" minx="4.26437255685392" miny="50.81222522001918" />
+            <BoundingBox SRS="EPSG:31370" maxx="156741.707008662" maxy="176261.304999969" minx="142730.362008662" miny="166897.682999969" />
+            <Style>
+              <Name>Station</Name>
+              <Title>Station</Title>
+              <Abstract />
+              <LegendURL height="20" width="20">
+                <Format>image/png</Format>
+                <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Stations" ns0:type="simple" />
+              </LegendURL>
+            </Style>
+            <Style>
+              <Name>Station</Name>
+              <Title>Station</Title>
+              <Abstract />
+              <LegendURL height="20" width="20">
+                <Format>image/png</Format>
+                <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Stations&amp;style=Station" ns0:type="simple" />
+              </LegendURL>
+            </Style>
+          </Layer>
+          <Layer queryable="1">
+            <Name>BSO:Aan_te_leggen_station</Name>
+            <Title>Aan te leggen station</Title>
+            <Abstract />
+            <KeywordList>
+              <Keyword>A10_TR_STATIONACREER</Keyword>
+              <Keyword>features</Keyword>
+            </KeywordList>
+            <SRS>EPSG:31370</SRS>
+            <LatLonBoundingBox maxx="4.344620195794829" maxy="50.858728164212835" minx="4.310811437087962" miny="50.84466196566984" />
+            <BoundingBox SRS="EPSG:31370" maxx="148374.153" maxy="172065.941999968" minx="145994.224" miny="170502.465999968" />
+            <Style>
+              <Name>Aan te leggen station</Name>
+              <Title>Aan te leggen station</Title>
+              <Abstract />
+              <LegendURL height="20" width="20">
+                <Format>image/png</Format>
+                <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Stations_a_creer&amp;style=Aan+te+leggen+station" ns0:type="simple" />
+              </LegendURL>
+            </Style>
+            <Style>
+              <Name>Station a creer</Name>
+              <Title>Station</Title>
+              <Abstract />
+              <LegendURL height="20" width="20">
+                <Format>image/png</Format>
+                <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Stations_a_creer" ns0:type="simple" />
+              </LegendURL>
+            </Style>
+          </Layer>
+          <Layer queryable="1">
+            <Name>BSO:Lijn_in_onafhankelijke_baan</Name>
+            <Title>Lijn in onafhankelijke baan</Title>
+            <Abstract />
+            <KeywordList>
+              <Keyword>A10_TR_ITIN</Keyword>
+              <Keyword>features</Keyword>
+            </KeywordList>
+            <SRS>EPSG:31370</SRS>
+            <LatLonBoundingBox maxx="4.463626579061645" maxy="50.896933863225456" minx="4.264723394327624" miny="50.81180057089281" />
+            <BoundingBox SRS="EPSG:31370" maxx="156748.081" maxy="176315.774999968" minx="142755.119" miny="166850.410999968" />
+            <Style>
+              <Name>Lijn in onafhankelijke baan</Name>
+              <Title>Lijn in onafhankelijke baan</Title>
+              <Abstract />
+              <LegendURL height="20" width="20">
+                <Format>image/png</Format>
+                <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Lijn_in_onafhankelijke_baan" ns0:type="simple" />
+              </LegendURL>
+            </Style>
+            <Style>
+              <Name>Itineraire en site independant</Name>
+              <Title>Itineraire en site independant</Title>
+              <Abstract />
+              <LegendURL height="20" width="20">
+                <Format>image/png</Format>
+                <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Lijn_in_onafhankelijke_baan&amp;style=Itineraire+en+site+independant" ns0:type="simple" />
+              </LegendURL>
+            </Style>
+          </Layer>
+          <Layer queryable="1">
+            <Name>BSO:Aan_te_leggen_lijn_in_onafhankelijke_baan</Name>
+            <Title>Aan te leggen lijn in onafhankelijke baan</Title>
+            <Abstract />
+            <KeywordList>
+              <Keyword>features</Keyword>
+              <Keyword>A10_TR_ITINACREER</Keyword>
+            </KeywordList>
+            <SRS>EPSG:31370</SRS>
+            <LatLonBoundingBox maxx="4.340580830519742" maxy="50.858575518270364" minx="4.311424951102361" miny="50.838685763157635" />
+            <BoundingBox SRS="EPSG:31370" maxx="148089.428" maxy="172049.055302603" minx="146037.407551541" miny="169837.636999968" />
+            <Style>
+              <Name>Aan te leggen lijn in onafhankelijke baan</Name>
+              <Title>Aan te leggen lijn in onafhankelijke baan</Title>
+              <Abstract />
+              <LegendURL height="20" width="20">
+                <Format>image/png</Format>
+                <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Aan_te_leggen_lijn_in_onafhankelijke_baan" ns0:type="simple" />
+              </LegendURL>
+            </Style>
+            <Style>
+              <Name>Itineraire en site independant a creer</Name>
+              <Title>Itineraire en site independant a creer</Title>
+              <Abstract />
+              <LegendURL height="20" width="20">
+                <Format>image/png</Format>
+                <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Aan_te_leggen_lijn_in_onafhankelijke_baan&amp;style=Itineraire+en+site+independant+a+creer" ns0:type="simple" />
+              </LegendURL>
+            </Style>
+          </Layer>
+          <Layer queryable="1">
+            <Name>BSO:Spoorlijn</Name>
+            <Title>Spoorlijn</Title>
+            <Abstract />
+            <KeywordList>
+              <Keyword>features</Keyword>
+              <Keyword>A10_TR_LCHFER</Keyword>
+            </KeywordList>
+            <SRS>EPSG:31370</SRS>
+            <LatLonBoundingBox maxx="4.429085464126405" maxy="50.90588478452308" minx="4.247085173055106" miny="50.77361604783644" />
+            <BoundingBox SRS="EPSG:31370" maxx="154317.259" maxy="177311.494681855" minx="141515.866" miny="162604.64399998" />
+            <Style>
+              <Name>Spoorlijn</Name>
+              <Title>Spoorlijn</Title>
+              <Abstract />
+              <LegendURL height="20" width="20">
+                <Format>image/png</Format>
+                <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Spoorlijn" ns0:type="simple" />
+              </LegendURL>
+            </Style>
+            <Style>
+              <Name>Ligne de chemin de fer</Name>
+              <Title>Ligne de chemin de fer</Title>
+              <Abstract />
+              <LegendURL height="20" width="20">
+                <Format>image/png</Format>
+                <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Spoorlijn&amp;style=Ligne+de+chemin+de+fer" ns0:type="simple" />
+              </LegendURL>
+            </Style>
+          </Layer>
+          <Layer queryable="1">
+            <Name>BSO:Voor_te_behouden_gebied_voor_ondergrondse_infrastructuur</Name>
+            <Title>Voor te behouden gebied voor ondergrondse infrastructuur</Title>
+            <Abstract />
+            <KeywordList>
+              <Keyword>features</Keyword>
+              <Keyword>A10_TR_GABARIT</Keyword>
+            </KeywordList>
+            <SRS>EPSG:31370</SRS>
+            <LatLonBoundingBox maxx="4.340659733506372" maxy="50.84085671771286" minx="4.334459382671517" miny="50.836500584969976" />
+            <BoundingBox SRS="EPSG:31370" maxx="148094.899" maxy="170077.998999969" minx="147658.352" miny="169593.59399997" />
+            <Style>
+              <Name>Voor te behouden gebied voor ondergrondse infrastructuur</Name>
+              <Title>Voor te behouden gebied voor ondergrondse infrastructuur</Title>
+              <Abstract />
+              <LegendURL height="20" width="20">
+                <Format>image/png</Format>
+                <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Zone_a_reserver_pour_infrastructure_souterraine&amp;style=Voor+te+behouden+gebied+voor+ondergrondse+infrastructuur" ns0:type="simple" />
+              </LegendURL>
+            </Style>
+            <Style>
+              <Name>Zone a reserver aux infrastructures souterraines</Name>
+              <Title>Zone a reserver aux infrastructures souterraines</Title>
+              <Abstract />
+              <LegendURL height="20" width="20">
+                <Format>image/png</Format>
+                <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Zone_a_reserver_pour_infrastructure_souterraine" ns0:type="simple" />
+              </LegendURL>
+            </Style>
+          </Layer>
+          <Layer queryable="1">
+            <Name>BSO_DSV:URBAN_II</Name>
+            <Title>URBAN II</Title>
+            <Abstract />
+            <KeywordList>
+              <Keyword>A50_URBAN2</Keyword>
+              <Keyword>features</Keyword>
+            </KeywordList>
+            <SRS>EPSG:31370</SRS>
+            <LatLonBoundingBox maxx="4.343508814096349" maxy="50.84275436265462" minx="4.317442136843221" miny="50.820296529517194" />
+            <BoundingBox SRS="EPSG:31370" maxx="148295.020000002" maxy="170289.026842074" minx="146459.890000004" miny="167791.714842077" />
+            <Style>
+              <Name>URBAN_II</Name>
+              <Title>URBAN II</Title>
+              <Abstract />
+              <LegendURL height="20" width="20">
+                <Format>image/png</Format>
+                <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=URBAN_II" ns0:type="simple" />
+              </LegendURL>
+            </Style>
+            <Style>
+              <Name>URBAN_II</Name>
+              <Title>URBAN II</Title>
+              <Abstract />
+              <LegendURL height="20" width="20">
+                <Format>image/png</Format>
+                <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=URBAN_II&amp;style=URBAN_II" ns0:type="simple" />
+              </LegendURL>
+            </Style>
+          </Layer>
+          <Layer queryable="1">
+            <Name>BROH:Gebieden_voor_studies_van_het_projekt_van_het_station_en_van_het_GGBUA</Name>
+            <Title>Gebieden voor studies van het projekt van het station en van het GGBUA</Title>
+            <Abstract />
+            <KeywordList>
+              <Keyword>A10_TR_ZONETGV</Keyword>
+              <Keyword>features</Keyword>
+            </KeywordList>
+            <SRS>EPSG:31370</SRS>
+            <LatLonBoundingBox maxx="4.418353532046153" maxy="50.90233070277459" minx="4.37382751256142" miny="50.875346764287485" />
+            <BoundingBox SRS="EPSG:31370" maxx="153562.678" maxy="176916.150352486" minx="150430.88" miny="173915.624999969" />
+            <Style>
+              <Name>Gebied voor studies van het projekt van het station en van het GGBUA</Name>
+              <Title>Gebied voor studies van het projekt van het station en van het GGBUA</Title>
+              <Abstract />
+              <LegendURL height="20" width="20">
+                <Format>image/png</Format>
+                <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Gebieden_voor_studies_van_het_projekt_van_het_station_en_van_het_GGBUA" ns0:type="simple" />
+              </LegendURL>
+            </Style>
+            <Style>
+              <Name>Zone d etude du proje gare e de la ZIRAD</Name>
+              <Title>Zone d etude du projet gare et de la ZIRAD</Title>
+              <Abstract />
+              <LegendURL height="20" width="20">
+                <Format>image/png</Format>
+                <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Gebieden_voor_studies_van_het_projekt_van_het_station_en_van_het_GGBUA&amp;style=Zone+d+etude+du+proje+gare+e+de+la+ZIRAD" ns0:type="simple" />
+              </LegendURL>
+            </Style>
+          </Layer>
+        </Layer>
+        <Layer noSubsets="0" opaque="0" queryable="1">
+          <Name>Andere Lagen met betrekking tot de GBP</Name>
+          <Title>Andere Lagen met betrekking tot de GBP</Title>
+          <Layer noSubsets="0" opaque="0" queryable="1">
+            <Name>BSO:Erfdienstbaarheidsgebieden_rondom_bossen</Name>
+            <Title>Erfdienstbaarheidsgebieden rondom bossen (60m)</Title>
+            <Abstract/>
+            <KeywordList>
+              <Keyword>features</Keyword>
+              <Keyword>IBGE_ZSPB</Keyword>
+            </KeywordList>
+            <SRS>EPSG:31370</SRS>
+            <LatLonBoundingBox maxx="4.478145036699149" maxy="50.89071327495519" minx="4.291930715097308" miny="50.7628868858783"/>
+            <BoundingBox SRS="EPSG:31370" maxx="165088.0" maxy="185088.0" minx="140000.0" miny="160000.0"/>
+            <Style>
+              <Name>REPERAGE:DU_ZSPB</Name>
+              <Title>Zones de servitude en pourtour de bois - DU</Title>
+              <LegendURL height="20" width="20">
+                <Format>image/png</Format>
+                <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=BSO%3AErfdienstbaarheidsgebieden_rondom_bossen" ns0:type="simple"/>
+              </LegendURL>
+            </Style>
+          </Layer>
+        </Layer>
+      </Layer>
+      <Layer queryable="1">
+        <Name>BSO:BBP</Name>
+        <Title>BBP</Title>
+        <Abstract>VM_A60_PPAS_NL</Abstract>
+        <KeywordList>
+          <Keyword>VM_A60_PPAS_NL</Keyword>
+          <Keyword>features</Keyword>
+        </KeywordList>
+        <SRS>EPSG:31370</SRS>
+        <LatLonBoundingBox maxx="4.467966955492349" maxy="50.904814577400444" minx="4.24249366703288" miny="50.76899415866564" />
+        <BoundingBox SRS="EPSG:31370" maxx="157052.237999992" maxy="177192.507388039" minx="141192.712000009" miny="162091.041842074" />
+        <Style>
+          <Name>BBP_2</Name>
+          <Title>BBP</Title>
+          <Abstract />
+          <LegendURL height="20" width="20">
+            <Format>image/png</Format>
+            <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=BBP" ns0:type="simple" />
+          </LegendURL>
+        </Style>
       </Layer>
     </Layer>
     <Layer>
