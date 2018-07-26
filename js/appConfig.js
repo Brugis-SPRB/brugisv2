@@ -44,7 +44,7 @@ module.exports = {
                 "selectedService": "Brugis WMS Service",
                 "services": {
                   "Brugis WMS Service": {
-                    "url": "https://mybrugis.irisnet.be/geoserver/ows",
+                    "url": "https://mybrugis.irisnet.be/geoserver/www/wmsaatl/wmsc_brugis_anon.xml",
                     "type": "wms",
                     "title": "Brugis WMS Service",
                     "autoload": true
