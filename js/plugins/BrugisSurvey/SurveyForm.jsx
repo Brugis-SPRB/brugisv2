@@ -119,9 +119,8 @@ class SurveyForm extends React.Component {
         }
         return isDisabled;
     }
-    handleSubmit(event) {
+    handleSubmit() {
         this.props.onPostNewSurvey(this.state);
-        event.preventDefault();
     }
 }
 

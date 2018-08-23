@@ -1,13 +1,20 @@
 {
+	"proxyUrl": "/brugis/proxy/?url=",
 	"proxyUrl": {
 		"url": "/brugis/proxy/?url=",
-		"useCORS": ["https://mbr227.irisnet.be"]
+		"useCORS": ["http://10.1.2.125:8080", "http://mbr227.irisnet.be", "https://mbr227.irisnet.be"]
 	},
 	"geoStoreUrl": "/brugis/rest/geostore",
 	"printUrl": "https://mbr227.irisnet.be/print/print/dep/info.json?url=https://mbr227.irisnet.be/print/print/dep",
 	"bingApiKey": "AhuXBu7ipR1gNbBfXhtUAyCZ6rkC5PkWpxs2MnMRZ1ZupxQfivjLCch22ozKSCAn",
-	"translationsPath": ["./MapStore2/web/client/translations", "./js/translations"],
-  "themePrefix": "brugis",
+	"translationsPath": "./js/translations",
+    "themePrefix": "brugis",
+
+		"authenticationRules": [ {
+		    "urlPattern": ".*geoserver.*",
+		    "authkeyParamName": "authkey",
+		    "method": "authkey"
+		}],
 	"plugins": {
 		"mobile":[
 			{
@@ -83,7 +90,7 @@
 				 }
 			},{
 					"name": "Identify",
-					"showIn": ["Settings","IdentifyBar"],
+					"showIn": ["Settings"],
 					"cfg": {
 							"panelClassName": "mapstore-mobile-identify",
 							"fullscreen": true,
@@ -284,17 +291,6 @@
 						},"MapFooter","BestEffort",
             {
                 "name" : "BrugisTree",
-								"cfg" : {
-										"serverMappingUrl" : {
-											"IBSA WMS - Geoserver": "http://gis.irisnet.be/geoserver/ibsa_bisa/wms",
-									    "AGIV WMS - Basiskaart": "http://geoservices.informatievlaanderen.be/raadpleegdiensten/GRB-basiskaart/wms",
-									    "AGIV WMS - Historische kaarten": "http://geoservices.informatievlaanderen.be/raadpleegdiensten/histcart/wms",
-											"CIRB WMS - Geoserver": "http://geoservices-urbis.irisnet.be/geoserver/ows",
-											"STIB WMS - Geoserver": "http://gis.irisnet.be/geoserver/stib_mivb/wms",
-											"Bruxelles Mobilité WMS - Geoserver": "http://data-mobility.irisnet.be/geoserver/bm_inspire_en/ows",
-											"IBGE WMS - Mapserver": "http://wms.ibgebim.be/ibgewms"
-										}
-								},
                  "hide" : true,
                  "override":{
                    "DrawerMenu":{
