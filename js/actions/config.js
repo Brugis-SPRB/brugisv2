@@ -17,15 +17,15 @@ function loadMapConfig(configName, mapId) {
             if (typeof response.data === 'object') {
                 const queryObj = url.parse(window.location.href, true).query;
                 if (queryObj.lambx && queryObj.lamby
-                      && parseInt(queryObj.lambx) > 0
-                      && parseInt(queryObj.lamby) > 0
-                      && parseInt(queryObj.lambx) < 300000
-                      && parseInt(queryObj.lamby) < 300000) {
-                        response.data.map.center.x = parseInt(queryObj.lambx);
-                        response.data.map.center.y = parseInt(queryObj.lamby);
-                      }
-                if (queryObj.zoom && parseInt(queryObj.zoom) > 0 && parseInt(queryObj.zoom) < 30) {
-                    response.data.map.zoom = parseInt(queryObj.zoom);
+                      && parseInt(queryObj.lambx, 10) > 0
+                      && parseInt(queryObj.lamby, 10) > 0
+                      && parseInt(queryObj.lambx, 10) < 300000
+                      && parseInt(queryObj.lamby, 10) < 300000) {
+                    response.data.map.center.x = parseInt(queryObj.lambx, 10);
+                    response.data.map.center.y = parseInt(queryObj.lamby, 10);
+                }
+                if (queryObj.zoom && parseInt(queryObj.zoom, 10) > 0 && parseInt(queryObj.zoom, 10) < 30) {
+                    response.data.map.zoom = parseInt(queryObj.zoom, 10);
                 }
                 dispatch(configureMap(response.data, mapId));
             } else {
