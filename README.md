@@ -18,7 +18,7 @@ Start the development application locally:
 
 The application runs at `http://localhost:8081` afterwards.
 
-Read more on the [wiki](http://gitlab.opengeode.be/sprb/brugis/wikis/home).
+Read more on the [wiki](https://github.com/Brugis-SPRB/brugisv2/wiki).
 
 Packaging
 ---------
