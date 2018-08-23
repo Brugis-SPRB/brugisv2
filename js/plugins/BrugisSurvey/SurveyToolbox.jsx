@@ -3,6 +3,7 @@ const PropTypes = require('prop-types');
 var {Button, ButtonGroup} = require('react-bootstrap');
 const MapUtils = require('../../../MapStore2/web/client/utils/MapUtils');
 const CoordinatesUtils = require('../../../MapStore2/web/client/utils/CoordinatesUtils');
+const Message = require('../../../MapStore2/web/client/plugins/locale/Message');
 
 var SurveyToolBox = React.createClass({
     propTypes: {
@@ -46,7 +47,7 @@ var SurveyToolBox = React.createClass({
     componentWillReceiveProps(newProps) {
         if (this.needsSelectParcelRefresh(newProps)) {
             const {url, request, metadata} = this.buildRequest(
-              "BDU:Parcelle_2016",
+              "BDU:Parcelle_2017",
                newProps,
                this.props.geoserver
              );
@@ -62,13 +63,19 @@ var SurveyToolBox = React.createClass({
         return (
           <span>
                 <ButtonGroup>
-                    <Button bsSize={this.props.bsSize} bsStyle="primary" onClick={this.drawSurface} active={this.props.drawSurfaceActive}>Dessiner une surface</Button>
+                    <Button bsSize={this.props.bsSize} bsStyle="primary" onClick={this.drawSurface} active={this.props.drawSurfaceActive}>
+                        <Message msgId="brugisSurvey.draw"/>
+                    </Button>
                 </ButtonGroup>
                 <ButtonGroup>
-                    <Button bsSize={this.props.bsSize} bsStyle="primary" onClick={this.selectParcel} active={this.props.selectParcelActive}>Sélectionner une parcelle</Button>
+                    <Button bsSize={this.props.bsSize} bsStyle="primary" onClick={this.selectParcel} active={this.props.selectParcelActive}>
+                        <Message msgId="brugisSurvey.select"/>
+                    </Button>
                 </ButtonGroup>
                 <ButtonGroup>
-                    <Button bsSize={this.props.bsSize} bsStyle="primary" onClick={this.deleteDrawing}>Supprimer le dessin</Button>
+                    <Button bsSize={this.props.bsSize} bsStyle="primary" onClick={this.deleteDrawing}>
+                        <Message msgId="brugisSurvey.suppress"/>
+                    </Button>
                 </ButtonGroup>
           </span>
         );

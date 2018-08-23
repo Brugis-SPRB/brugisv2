@@ -1,0 +1,603 @@
+{
+	"proxyUrl": "/brugis/proxy/?url=",
+	"proxyUrl": {
+		"url": "/brugis/proxy/?url=",
+		"useCORS": ["http://10.1.2.125:8080", "http://mbr227.irisnet.be", "https://mbr227.irisnet.be"]
+	},
+	"geoStoreUrl": "/brugis/rest/geostore",
+	"printUrl": "https://mbr227.irisnet.be/print/print/dep/info.json?url=https://mbr227.irisnet.be/print/print/dep",
+	"bingApiKey": "AhuXBu7ipR1gNbBfXhtUAyCZ6rkC5PkWpxs2MnMRZ1ZupxQfivjLCch22ozKSCAn",
+	"translationsPath": "./js/translations",
+    "themePrefix": "brugis",
+
+		"authenticationRules": [ {
+		    "urlPattern": ".*geoserver.*",
+		    "authkeyParamName": "authkey",
+		    "method": "authkey"
+		}],
+	"plugins": {
+		"mobile":[
+			{
+				 "name":"Map",
+				 "cfg": {
+					 "zoomControl":false,
+					 "mapOptions": {
+						 "openlayers": {
+							 "attribution": {
+								 "container": "#mapstore-map-footer-container"
+							 }
+						 },
+						 "leaflet": {
+							 "attribution": {
+								 "container": "#mapstore-map-footer-container"
+							 }
+						 }
+					 },
+					 "toolsOptions": {
+						 "scalebar": {
+							 "container" : "#mapstore-map-footer-container"
+						 }
+					 }
+				 }
+			},"MapFooter",
+			{
+					"name" : "BrugisTree",
+					 "hide" : true,
+					 "override":{
+						 "DrawerMenu":{
+								"glyph":"list",
+								"buttonConfig":{
+									 "buttonClassName":"square-button no-border"
+								}
+						 }
+					}
+			},
+			{
+					"name": "BackgroundSelector",
+					"cfg": {
+							"bottom": 25,
+							"dimensions": {
+							"side": 65,
+							"sidePreview": 65,
+							"frame": 3,
+							"margin": 5,
+							"label": false,
+							"vertical": true
+						 }
+					}
+			},
+			{
+				 "name":"TOC",
+				 "cfg":{
+						"visibilityCheckType":"glyph",
+						"settingsOptions":{
+							 "includeCloseButton":false,
+							 "closeGlyph":"1-close",
+							 "asModal":false,
+							 "buttonSize":"small",
+							 "position": 2
+						}
+				 },
+				 "override":{
+						"DrawerMenu":{
+							 "glyph":"1-layer",
+							 "title":"Legend",
+							 "buttonConfig":{
+									"buttonClassName":"square-button no-border"
+							 },
+							 "position": 2
+						}
+				 }
+			},{
+					"name": "Identify",
+					"showIn": ["Settings"],
+					"cfg": {
+							"panelClassName": "mapstore-mobile-identify",
+							"fullscreen": true,
+							"draggable": false,
+							"collapsible": true,
+							"viewerOptions": {
+									"container": "{context.ReactSwipe}",
+									"header": "{context.SwipeHeader}",
+									"collapsible": false
+							},
+							"bodyClass": "mobile-feature-info"
+					}
+			},
+			{
+				 "name":"MeasureResults",
+				 "cfg":{
+						"closeGlyph":"1-close",
+						"withPanelAsContainer":false
+				 }
+			},
+			{
+				 "name":"Settings",
+				 "hideFrom":[
+						"Toolbar",
+						"DrawerMenu"
+				 ],
+				 "cfg":{
+						"wrapWithPanel":false,
+						"closeGlyph":"1-close",
+						"overrideSettings":{
+							 "history":false
+						},
+						"wrap":true
+				 }
+			},
+			{ "name" : "MousePosition" },
+			{
+				 "name":"Locate",
+				 "cfg":{
+						"icon":"/assets/img/chaton.svg",
+						"btnConfig":{
+							"className":"square-button"
+						}
+				 },
+				 "override":{
+						"Toolbar":{
+							 "alwaysVisible":true
+						}
+				 }
+			},
+			{ "name" : "ScaleBox" },
+
+			{
+				 "name":"MetadataExplorer",
+				 "cfg":{
+						"showGetCapLinks":false,
+						"addAuthentication":true,
+						"wrap":true,
+						"searchOnStarup":false,
+						"wrapWithPanel":false,
+						"closeGlyph":"1-close",
+						"initialCatalogURL":{
+							 "csw":"http://geobru.irisnet.be/geonetwork/srv/fr/csw",
+							 "wms":"https://mybrugis.irisnet.be/geoserver/wms"
+						}
+				 }
+			},{
+			 "name": "Toolbar",
+			 "id": "NavigationBar",
+			 "stateSelector": "toolbar",
+			 "cfg": {
+				 "buttonStyle": "primary",
+				 "id": "navigationBar"
+			 }
+		 }, {
+			 "name": "Toolbar",
+			 "id": "IdentifyBar",
+			 "stateSelector": "identify",
+			 "cfg": {
+				 "buttonStyle": "primary",
+				 "pressedButtonStyle": "success",
+				 "id": "identifyBar"
+			 },
+			 "isDefault": false
+		 },
+			{
+				 "name":"ZoomAll",
+				 "hide":true,
+				 "cfg":{
+						"className":"square-button"
+				 }
+			},
+			{
+				 "name":"ZoomIn",
+				 "override":{
+						"Toolbar":{
+							 "alwaysVisible":true
+						}
+				 }
+			},
+			{
+				 "name":"ZoomOut",
+				 "override":{
+						"Toolbar":{
+							 "alwaysVisible":true
+						}
+				 }
+			},
+			{
+				 "name":"Search",
+				 "cfg":{
+						"withToggle":[
+							 "max-width: 768px",
+							 "min-width: 768px"
+						]
+				 }
+			},
+			"OmniBar",
+			{
+				 "name":"Expander",
+				 "cfg":{
+						"className":"square-button"
+				 }
+		 },
+			{
+				 "name":"BurgerMenu",
+				 "id": "BurgerMenu"
+			}
+			,
+			 {
+					"name":"LocalMaps",
+					"showIn":[
+						 "BurgerMenu"
+					]
+			 },
+			 {
+					"name":"DrawerMenu",
+					"cfg":{
+						 "glyph":"globe",
+						 "buttonStyle":"primary",
+						 "buttonClassName":"square-button",
+						 "singleSection":true,
+						 "menuOptions" : {
+								 "show" : true,
+								 "overlapMap" : true,
+								 "width" : 300
+						 }
+					}
+			 }, {
+					 "name": "Tutorial" ,
+					 "cfg": {
+							 "presetList": {
+								 "default_tutorial": [
+									{
+									 "title": "Bienvenue dans BruGIS!",
+									 "text": "BruGIS est le webgis de Bruxelles Urbanisme et Patrimoine. Suivez le tutoriel pour vous familiariser avec cette nouvelle version.",
+									 "selector": "#intro-tutorial"
+									},
+									{"translationHTML": "drawerMenu", "selector": "#drawer-menu-button"},
+									 {"translation": "searchBar", "selector": "#map-search-bar"},
+									 {"translation": "burgerMenu", "selector": "#mapstore-burger-menu"},
+									 {"translation": "zoomInButton", "selector": "#zoomin-btn", "position": "top"},
+									 {"translation": "zoomOutButton", "selector": "#zoomout-btn", "position": "top"},
+									 {"translation": "measureAreaBrugisButton", "selector": "#brugis-area", "position": "top"},
+									 {"translation": "measureLengthBrugisButton", "selector": "#brugis-length", "position": "top"},
+									 {"translation": "identifyButton", "selector": "#identifyBar-container", "position": "top"},
+									 {"translation": "brugisSurvey", "selector": "#brugisSurvey-btn", "position": "top"},
+									 {"translation": "BackgroundSelector", "selector": ".background-plugin-position", "position": "top"}
+								 ]
+								}
+
+					 }
+			 }
+		],
+		"desktop": [
+            {
+               "name":"Map",
+							 "cfg": {
+								 "zoomControl":false,
+								 "mapOptions": {
+									 "openlayers": {
+										 "attribution": {
+											 "container": "#mapstore-map-footer-container"
+										 }
+									 },
+									 "leaflet": {
+										 "attribution": {
+											 "container": "#mapstore-map-footer-container"
+										 }
+									 }
+								 },
+								 "toolsOptions": {
+									 "scalebar": {
+										 "container" : "#mapstore-map-footer-container"
+									 }
+								 }
+							 }
+						},"MapFooter","BestEffort",
+            {
+                "name" : "BrugisTree",
+                 "hide" : true,
+                 "override":{
+                   "DrawerMenu":{
+                      "glyph":"list",
+                      "buttonConfig":{
+                         "buttonClassName":"square-button no-border"
+                      }
+                   }
+                }
+            },
+						{
+								"name": "BackgroundSelector",
+								"cfg": {
+									  "id": "superbroleke"
+								}
+						},
+						{
+							 "name":"TOC",
+							 "cfg":{
+									"visibilityCheckType":"glyph",
+									"settingsOptions":{
+										 "includeCloseButton":false,
+										 "closeGlyph":"1-close",
+										 "asModal":false,
+										 "buttonSize":"small",
+										 "position": 2
+									},
+									"layerOptions": {
+								    "legendOptions": {
+								      "legendContainerStyle": {
+								       "overflowX": "auto"
+								      },
+								      "legendStyle": {
+								        "maxWidth": "250%"
+								      }
+								     }
+								  }
+							 },
+							 "override":{
+									"DrawerMenu":{
+										 "glyph":"1-layer",
+										 "title":"Legend",
+										 "buttonConfig":{
+												"buttonClassName":"square-button no-border"
+										 },
+										 "position": 2
+									}
+							 }
+						},
+            {
+               "name": "Identify",
+               "showIn": ["IdentifyBar", "Settings"],
+               "cfg": {
+                 "panelClassName": "modal-dialog info-panel modal-content",
+                 "headerClassName": "modal-header",
+                 "bodyClassName": "modal-body info-wrap",
+                 "asPanel": false,
+                 "headerGlyph": "",
+                 "className": "square-button",
+                 "closeGlyph": "1-close",
+                 "wrapRevGeocode": false,
+                 "enableRevGeocode": true,
+                 "viewerOptions": {
+	                  "container": "{context.ReactSwipe}",
+	                  "header": "{context.SwipeHeader}",
+	                  "headerOptions": {
+	                    "useButtons": true
+	                  },
+	                  "containerProps": {
+	                    "continuous": false
+	                  },
+	                  "collapsible": false
+                  }
+               }
+            },{
+								"name": "StreetView",
+								"showIn": ["StreetViewBar"] ,
+								"cfg": {
+									"panelClassName": "modal-dialog info-panel modal-content",
+                  "headerClassName": "modal-header",
+                  "bodyClassName": "modal-body info-wrap",
+                  "asPanel": false,
+									"className": "square-button",
+                  "closeGlyph": "1-close"
+								}
+						},
+            {
+               "name":"MeasureResults",
+               "cfg":{
+                  "closeGlyph":"1-close",
+                  "withPanelAsContainer":false
+               }
+            },
+            {
+               "name":"Settings",
+               "hideFrom":[
+                  "Toolbar",
+                  "DrawerMenu"
+               ],
+               "cfg":{
+                  "wrapWithPanel":false,
+                  "closeGlyph":"1-close",
+                  "overrideSettings":{
+                     "history":false
+                  },
+                  "wrap":true
+               }
+            },
+						{ "name" : "MousePosition",
+								 "cfg": {
+										 "editCRS": true,
+										 "showLabels": true,
+										 "showToggle": true,
+										 "filterAllowedCRS": ["EPSG:4326", "EPSG:31370", "EPSG:3812"],
+										 "additionalCRS": {}
+								 }
+						 },
+            {
+               "name":"Locate",
+               "cfg":{
+								  "icon":"/assets/img/chaton.svg",
+                  "btnConfig":{
+										"className":"square-button"
+                  }
+               },
+               "override":{
+                  "Toolbar":{
+                     "alwaysVisible":true
+                  }
+               }
+            },
+            { "name" : "ScaleBox" },
+
+            {
+               "name":"MetadataExplorer",
+               "cfg":{
+                  "showGetCapLinks":false,
+                  "addAuthentication":true,
+                  "wrap":true,
+                  "searchOnStarup":false,
+                  "wrapWithPanel":false,
+                  "closeGlyph":"1-close",
+                  "initialCatalogURL":{
+                     "csw":"http://geobru.irisnet.be/geonetwork/srv/fr/csw",
+                     "wms":"https://mybrugis.irisnet.be/geoserver/wms"
+                  }
+               }
+            },{
+             "name": "Toolbar",
+             "id": "NavigationBar",
+             "stateSelector": "toolbar",
+             "cfg": {
+               "buttonStyle": "primary",
+               "id": "navigationBar"
+             }
+           }, {
+             "name": "Toolbar",
+             "id": "IdentifyBar",
+             "stateSelector": "identify",
+             "cfg": {
+               "buttonStyle": "primary",
+               "pressedButtonStyle": "success",
+               "id": "identifyBar"
+             },
+             "isDefault": false
+           }, {
+             "name": "Toolbar",
+             "id": "StreetViewBar",
+             "stateSelector": "streetview",
+             "cfg": {
+               "buttonStyle": "primary",
+               "pressedButtonStyle": "success",
+               "id": "StreetViewBar"
+             },
+             "isDefault": false
+           },
+            {
+               "name":"ZoomAll",
+               "hide":true,
+               "cfg":{
+                  "className":"square-button"
+               }
+            },
+            {
+               "name":"ZoomIn",
+               "override":{
+                  "Toolbar":{
+                     "alwaysVisible":true
+                  }
+               }
+            },
+            {
+               "name":"ZoomOut",
+               "override":{
+                  "Toolbar":{
+                     "alwaysVisible":true
+                  }
+               }
+            },
+            {
+               "name":"Search",
+               "cfg":{
+                  "withToggle":[
+                     "max-width: 768px",
+                     "min-width: 768px"
+                  ]
+               }
+            },
+            "OmniBar",
+            {
+               "name":"Expander",
+               "cfg":{
+                  "className":"square-button"
+               }
+           },
+            {
+               "name":"BurgerMenu",
+               "id": "BurgerMenu"
+            }
+            ,
+             {
+                "name":"LocalMaps",
+                "showIn":[
+                   "BurgerMenu"
+                ]
+             },
+             {
+                "name":"DrawerMenu",
+                "cfg":{
+                   "glyph":"globe",
+                   "buttonStyle":"primary",
+                   "buttonClassName":"square-button",
+                   "singleSection":true,
+                   "menuOptions" : {
+                       "show" : true,
+                       "overlapMap" : true,
+                       "width" : 300
+                   }
+                }
+             }, {
+                 "name":"MeasureArea"
+             }, {
+                 "name":"MeasureLength"
+             }, {
+                 "name": "Print",
+								 "cfg":{
+									 "useFixedScales": false
+								 }
+             }, {
+                 "name": "BrugisSurvey",
+								 "cfg": {
+	                 "panelClassName": "modal-dialog info-panel modal-content",
+	                 "headerClassName": "modal-header",
+	                 "bodyClassName": "modal-body info-wrap",
+	                 "asPanel": false,
+	                 "headerGlyph": "",
+									 "id": "brugisSurvey-btn",
+	                 "className": "square-button",
+	                 "closeGlyph": "1-close"
+	               }
+             }, {
+                 "name": "FullScreen",
+                 "override": {
+                     "Toolbar": {
+                         "alwaysVisible": false
+                     }
+                 }
+             }, {
+                 "name": "Tutorial" ,
+                 "cfg": {
+								     "presetList": {
+									     "default_tutorial": [
+									      {
+									       "title": "Bienvenue dans BruGIS!",
+									       "translation": "brugisIntro",
+												 "selector": "#intro-tutorial"
+									      },
+												{"translationHTML": "drawerMenu", "selector": "#drawer-menu-button"},
+	 											 {"translation": "searchBar", "selector": "#map-search-bar"},
+	 											 {"translation": "burgerMenu", "selector": "#mapstore-burger-menu"},
+	 											 {"translation": "zoomInButton", "selector": "#zoomin-btn", "position": "top"},
+	 											 {"translation": "zoomOutButton", "selector": "#zoomout-btn", "position": "top"},
+												 {"translation": "measureAreaBrugisButton", "selector": "#brugis-area", "position": "top"},
+												 {"translation": "measureLengthBrugisButton", "selector": "#brugis-length", "position": "top"},
+												 {"translation": "fullscreen", "selector": "#fullscreen-btn", "position": "top"},
+	 											 {"translation": "identifyButton", "selector": "#identifyBar-container", "position": "top"},
+												 {"translation": "streetViewButton", "selector": "#StreetViewBar-container", "position": "top"},
+												 {"translation": "brugisSurvey", "selector": "#brugisSurvey-btn", "position": "top"},
+												 {"translation": "BackgroundSelector", "selector": ".background-plugin-position", "position": "top"}
+									     ]
+									    }
+
+                 }
+             }, {
+							 "name": "WFSDownload",
+								"cfg": {
+								  "formats": [
+								          {"name": "csv", "label": "csv"},
+								          {"name": "shape-zip", "label": "shape-zip"}
+								  ],
+								    "srsList": [
+								          {"name": "native", "label": "Native"},
+								          {"name": "EPSG:4326", "label": "WGS84"}
+								  ],
+								    "defaultSrs": "native"
+								}
+						}
+         ]
+	}
+}

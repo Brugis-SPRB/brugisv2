@@ -1,7 +1,7 @@
 var React = require('react');
 const PropTypes = require('prop-types');
 var {FormattedDate} = require('react-intl');
-const Message = require('../../../MapStore2/web/client/components/I18N/Message');
+const Message = require('../../../MapStore2/web/client/plugins/locale/Message');
 var {Panel, Table, Label, Button, Glyphicon} = require('react-bootstrap');
 var SurveyUtils = require('./utils.js');
 var BrugisPagination = require('./Pagination');
@@ -49,7 +49,7 @@ class SurveyGrid extends React.Component {
     onDocxClick(survey) {
         var docxUrl = this.props.webreperagehost + "/res/reperage/" + survey.id + ".docx?lang=" + SurveyUtils.getOldBrugisLocale(this.props.locale) + "&user=" + this.props.user;
         if (survey.state === "DONE") {
-            var docxUrl = this.props.webreperagehost + "/res/reperage/" + survey.id + ".docx?lang=" + SurveyUtils.getOldBrugisLocale(this.props.locale) + "&user=" + this.props.user;
+            docxUrl = this.props.webreperagehost + "/res/reperage/" + survey.id + ".docx?lang=" + SurveyUtils.getOldBrugisLocale(this.props.locale) + "&user=" + this.props.user;
             console.log(docxUrl);
             window.open(docxUrl);
         }
@@ -58,8 +58,8 @@ class SurveyGrid extends React.Component {
     onPdfClick(survey) {
         var pdfUrl = this.props.webreperagehost + "/res/reperage/" + survey.id + ".pdf?lang=" + SurveyUtils.getOldBrugisLocale(this.props.locale) + "&user=" + this.props.user;
         if (survey.state === "DONE") {
-            var pdfUrl = this.props.webreperagehost + "/res/reperage/" + survey.id + ".pdf?lang=" + SurveyUtils.getOldBrugisLocale(this.props.locale) + "&user=" + this.props.user;
-            console.log(pdfUrl)
+            pdfUrl = this.props.webreperagehost + "/res/reperage/" + survey.id + ".pdf?lang=" + SurveyUtils.getOldBrugisLocale(this.props.locale) + "&user=" + this.props.user;
+            console.log(pdfUrl);
             window.open(pdfUrl);
         }
     }
@@ -101,18 +101,18 @@ class SurveyGrid extends React.Component {
     }
 
     render() {
-        const headerMessage = (<Message msgId={"Survey List"} />);
+        const headerMessage = (<Message msgId="brugisSurvey.title_list" />);
         return (<Panel header={headerMessage} eventKey={this.props.evtKey} collapsible defaultExpanded="true">
           <Table responsive striped bordered condensed hover>
             <thead>
               <tr>
-                <th>Dossier</th>
-                <th>Adresse</th>
-                <th>Statut</th>
-                <th>Créé le</th>
-                <th>Disponible jusqu'au</th>
-                <th>Docx</th>
-                <th>PDF</th>
+                <th><Message msgId="brugisSurvey.file"/></th>
+                <th><Message msgId="brugisSurvey.address"/></th>
+                <th><Message msgId="brugisSurvey.status"/></th>
+                <th><Message msgId="brugisSurvey.created"/></th>
+                <th><Message msgId="brugisSurvey.available"/></th>
+                <th><Message msgId="brugisSurvey.docx"/></th>
+                <th><Message msgId="brugisSurvey.pdf"/></th>
               </tr>
             </thead>
             <tbody>

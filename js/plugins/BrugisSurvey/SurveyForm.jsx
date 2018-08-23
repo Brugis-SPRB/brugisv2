@@ -1,5 +1,6 @@
 var React = require('react');
 const PropTypes = require('prop-types');
+const Message = require('../../../MapStore2/web/client/plugins/locale/Message');
 var {Col, Button, Panel, FormGroup, ControlLabel, FormControl, Form, Row, ButtonGroup, ButtonToolbar} = require('react-bootstrap');
 
 class SurveyForm extends React.Component {
@@ -36,14 +37,18 @@ class SurveyForm extends React.Component {
     };
 
     render() {
-        return (<Panel header="Nouveau Reperage" eventKey={this.props.evtKey} className={this.props.panelClassName} collapsible defaultExpanded>
+        const headerMessage = (<Message msgId="brugisSurvey.title_new" />);
+        // const fileEntry = (<Message msgId="brugisSurvey.file_entry" />);
+        // const addressEntry = (<Message msgId="brugisSurvey.address_entry" />);
+        const typeEntryDefault = (<Message msgId="brugisSurvey.type_entry_default" />);
+        return (<Panel header={headerMessage} eventKey={this.props.evtKey} className={this.props.panelClassName} collapsible defaultExpanded>
             <Form horizontal onSubmit={this.handleSubmit.bind(this)}>
              <br />
               <Row className="show-grid">
                 <Col sm={12}>
                   <FormGroup controlId="empreinte">
                     <Col componentClass={ControlLabel} sm={2}>
-                      Empreinte
+                      <Message msgId="brugisSurvey.footprint"/>
                     </Col>
                     <Col sm={10}>
                       <ButtonToolbar>
@@ -57,27 +62,27 @@ class SurveyForm extends React.Component {
                 <Col sm={12}>
                     <FormGroup controlId="refdoc" bsSize={this.props.bsSize}>
                       <Col componentClass={ControlLabel} sm={2}>
-                        Réf.dossier
+                        <Message msgId="brugisSurvey.file"/>
                       </Col>
                       <Col sm={10}>
-                        <FormControl type="text" placeholder="Enter ref.dossier" value={this.state.refdoc} onChange={this.handleChange}/>
+                        <FormControl type="text" placeholder="..." value={this.state.refdoc} onChange={this.handleChange}/>
                       </Col>
                     </FormGroup>
                     <FormGroup controlId="adr" bsSize={this.props.bsSize}>
                       <Col componentClass={ControlLabel} sm={2}>
-                        Adresse
+                        <Message msgId="brugisSurvey.address"/>
                       </Col>
                       <Col sm={10}>
-                        <FormControl type="text" placeholder="Enter adress" value={this.state.adr} onChange={this.handleChange} />
+                        <FormControl type="text" placeholder="..." value={this.state.adr} onChange={this.handleChange} />
                       </Col>
                     </FormGroup>
                     <FormGroup controlId="type" bsSize={this.props.bsSize}>
                       <Col componentClass={ControlLabel} sm={2}>
-                        Type
+                        <Message msgId="brugisSurvey.type"/>
                       </Col>
                       <Col sm={10}>
                         <FormControl componentClass="select" onChange={this.handleChange} defaultValue={-1}>
-                          <option disabled value={-1}> -- select an option -- </option>
+                          <option disabled value={-1}>{typeEntryDefault}</option>
                           {this.props.types.map((item) =>
                             <option value={item.id} key={item.id}>{item.title}</option>
                           )}
@@ -88,7 +93,7 @@ class SurveyForm extends React.Component {
                       <Col smOffset={10}>
                         <ButtonGroup block>
                             <Button type="submit" bsSize={this.props.bsSize} bsStyle="primary" disabled={this.isSendDisabled()}>
-                              Envoyer
+                              <Message msgId="brugisSurvey.send"/>
                             </Button>
                         </ButtonGroup>
                       </Col>
