@@ -15,12 +15,12 @@ const METERS_PER_UNIT = {
 
 function dpi2dpu(dpi, projection) {
     const units = CoordinatesUtils.getUnits(projection || "EPSG:3857");
-    return METERS_PER_UNIT[units] * mapUtils.dpi2dpm(dpi || DEFAULT_SCREEN_DPI);
+    return METERS_PER_UNIT[units] * mapUtils.dpi2dpm(dpi);
 }
 
 function getScales(resolutions, projection, dpi) {
     var dpu = dpi2dpu(dpi, projection);
-    return resolutions.map(function (resolution) {
+    return resolutions.map(function(resolution) {
         return resolution * dpu;
     });
 }
@@ -46,18 +46,18 @@ function loadMapConfig(configName, mapId) {
                     response.data.map.center.y = parseInt(queryObj.lamby, 10);
                 }
                 if (queryObj.zoom && parseInt(queryObj.zoom, 10) > 0 && parseInt(queryObj.zoom, 10) < 100000) {
-                   var scales = getScales(
+                    let scales = getScales(
                       response.data.map.mapOptions.view.resolutions,
                       response.data.map.projection,
                       response.data.map.mapOptions.view.DPI
-                   );
-                   var zoom = scales.length -1;
-                   for (var zoomLvl in scales) {
-                     if (parseInt(queryObj.zoom, 10) >= Math.round(scales[zoomLvl])) {
-                        zoom = zoomLvl;
-                        break;
-                     }
-                   }
+                    );
+                    let zoom = scales.length - 1;
+                    for (let zoomLvl in scales) {
+                        if (parseInt(queryObj.zoom, 10) >= Math.round(scales[zoomLvl])) {
+                            zoom = zoomLvl;
+                            break;
+                        }
+                    }
                     response.data.map.zoom = zoom;
                 }
                 dispatch(configureMap(response.data, mapId));
