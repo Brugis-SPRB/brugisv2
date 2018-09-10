@@ -10,7 +10,9 @@ const SERVER_MAPPING_URL = {
 											"CIRB WMS - Geoserver": "http://geoservices-urbis.irisnet.be/geoserver/ows",
 											"STIB WMS - Geoserver": "http://gis.irisnet.be/geoserver/stib_mivb/wms",
 											"Bruxelles Mobilité WMS - Geoserver": "http://data-mobility.irisnet.be/geoserver/bm_inspire_en/ows",
-											"IBGE WMS - Mapserver": "http://wms.ibgebim.be/ibgewms"
+											"IBGE WMS - Mapserver": "http://wms.ibgebim.be/ibgewms",
+											"IBGE WMS - Mapserver - Fr": "https://wms.environnement.brussels/be_wms",
+											"IBGE WMS - Mapserver - Nl": "https://wms.environnement.brussels/lb_wms"
 										};
 
 function inspectKeywords(layer, serverMappingUrl) {
@@ -144,7 +146,7 @@ function brugisTree(state = null, action) {
             const capabilities = action.info;
             // const serverMappingUrl = action.serverMappingUrl;
             return assign({}, state, {
-                treenodes: wmsWalker(capabilities.value.capability.layer.layer, SERVER_MAPPING_URL)
+                treenodes: wmsWalker(capabilities.value.capability.layer.layer, serverMappingUrl)
             });
         case BRUGIS_TREE_NODE_TOGGLE:
             let node = action.node;
