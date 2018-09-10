@@ -2570,12 +2570,12 @@
               <Title>parcelle cadastrale contenu dans inventaire sol</Title>
               <KeywordList>
                 <Keyword>inventaire sol</Keyword>
-                <Keyword>IBGE WMS - Mapserver</Keyword>
+                <Keyword>IBGE WMS - Mapserver - Fr</Keyword>
               </KeywordList>
               <SRS>EPSG:31370</SRS>
               <LatLonBoundingBox maxx="4.49186" maxy="50.9208" minx="4.22901" miny="50.7556" />
               <BoundingBox SRS="EPSG:31370" maxx="158835" maxy="179004" minx="140352" miny="160632" />
-              <source>IBGE WMS - Mapserver</source>
+              <source>IBGE WMS - Mapserver - Fr</source>
               <Style>
                 <Name>default</Name>
                 <Title>default</Title>
@@ -2598,7 +2598,7 @@
     				  <Keyword> paysages</Keyword>
     				  <Keyword> écosystèmes</Keyword>
     				  <Keyword>Sites proteges</Keyword>
-    				  <Keyword>IBGE WMS - Mapserver</Keyword>
+    				  <Keyword>IBGE WMS - Mapserver - Fr</Keyword>
     				</KeywordList>
     				<SRS>EPSG:31370</SRS>
 
@@ -2623,7 +2623,7 @@
                     <Keyword>Habitats</Keyword>
                     <Keyword> biotopes</Keyword>
                     <Keyword>biology</Keyword>
-                    <Keyword>IBGE WMS - Mapserver</Keyword>
+                    <Keyword>IBGE WMS - Mapserver - Fr</Keyword>
                   </KeywordList>
                   <SRS>EPSG:31370</SRS>
                   <LatLonBoundingBox maxx="4.54347" maxy="50.9172" minx="4.17949" miny="50.7595" />
@@ -2652,7 +2652,7 @@
                     <Keyword>bruit</Keyword>
                     <Keyword>avion</Keyword>
                     <Keyword> Zones Protégées</Keyword>
-                    <Keyword>IBGE WMS - Mapserver</Keyword>
+                    <Keyword>IBGE WMS - Mapserver - Fr</Keyword>
                   </KeywordList>
                   <SRS>EPSG:31370</SRS>
                   <LatLonBoundingBox maxx="4.53121" maxy="50.9003" minx="4.23438" miny="50.7425" />
@@ -2680,7 +2680,7 @@
                   <KeywordList>
                     <Keyword>zones refuges</Keyword>
                     <Keyword>Forêt de Soignes </Keyword>
-                    <Keyword>IBGE WMS - Mapserver</Keyword>
+                    <Keyword>IBGE WMS - Mapserver - Fr</Keyword>
                   </KeywordList>
                   <SRS>EPSG:31370</SRS>
                   <LatLonBoundingBox maxx="4.53121" maxy="50.9003" minx="4.23438" miny="50.7425" />
@@ -2708,7 +2708,7 @@
                   <KeywordList>
                     <Keyword>Hydrographie </Keyword>
                     <Keyword> water </Keyword>
-                    <Keyword>IBGE WMS - Mapserver</Keyword>
+                    <Keyword>IBGE WMS - Mapserver - Fr</Keyword>
                   </KeywordList>
                   <SRS>EPSG:31370</SRS>
                   <LatLonBoundingBox maxx="4.54347" maxy="50.9172" minx="4.17948" miny="50.7595" />
@@ -2735,7 +2735,7 @@
                   <Abstract>Les sites « SEVESO » (5 en 2006) sont spécifiquement surveillés quant à leur exploitation et au stockage de produits </Abstract>
                   <KeywordList>
                     <Keyword>Seveso</Keyword>
-                    <Keyword>IBGE WMS - Mapserver</Keyword>
+                    <Keyword>IBGE WMS - Mapserver - Fr</Keyword>
                   </KeywordList>
                   <SRS>EPSG:31370</SRS>
                   <LatLonBoundingBox maxx="4.54347" maxy="50.9172" minx="4.17949" miny="50.7595" />
@@ -2763,7 +2763,7 @@
                   <KeywordList>
                     <Keyword>jardins</Keyword>
                     <Keyword> potagers</Keyword>
-                    <Keyword>IBGE WMS - Mapserver</Keyword>
+                    <Keyword>IBGE WMS - Mapserver - Fr</Keyword>
                   </KeywordList>
                   <SRS>EPSG:31370</SRS>
                   <LatLonBoundingBox maxx="4.54347" maxy="50.9172" minx="4.17949" miny="50.7595" />
@@ -2791,7 +2791,7 @@
                   <KeywordList>
                     <Keyword>reserves naturelles</Keyword>
                     <Keyword> reserves forestières</Keyword>
-                    <Keyword>IBGE WMS - Mapserver</Keyword>
+                    <Keyword>IBGE WMS - Mapserver - Fr</Keyword>
                   </KeywordList>
                   <SRS>EPSG:31370</SRS>
                   <LatLonBoundingBox maxx="4.54347" maxy="50.9172" minx="4.17948" miny="50.7595" />
@@ -2824,7 +2824,7 @@
                     <Keyword> urban management </Keyword>
                     <Keyword>urban environment</Keyword>
                     <Keyword> urban stress</Keyword>
-                    <Keyword>IBGE WMS - Mapserver</Keyword>
+                    <Keyword>IBGE WMS - Mapserver - Fr</Keyword>
                   </KeywordList>
                   <SRS>EPSG:31370</SRS>
                   <LatLonBoundingBox maxx="4.54347" maxy="50.9172" minx="4.17948" miny="50.7595" />
@@ -2856,7 +2856,7 @@
                   <KeywordList>
                     <Keyword>eaux de surface</Keyword>
                     <Keyword> plan d'eau  </Keyword>
-                    <Keyword>IBGE WMS - Mapserver</Keyword>
+                    <Keyword>IBGE WMS - Mapserver - Fr</Keyword>
                   </KeywordList>
                   <SRS>EPSG:31370</SRS>
                   <LatLonBoundingBox maxx="4.54347" maxy="50.9172" minx="4.17949" miny="50.7595" />
@@ -2884,7 +2884,7 @@
                   <KeywordList>
                     <Keyword>eaux de surface</Keyword>
                     <Keyword> rivières </Keyword>
-                    <Keyword>IBGE WMS - Mapserver</Keyword>
+                    <Keyword>IBGE WMS - Mapserver - Fr</Keyword>
                   </KeywordList>
                   <SRS>EPSG:31370</SRS>
                   <LatLonBoundingBox maxx="4.54347" maxy="50.9172" minx="4.17949" miny="50.7595" />
@@ -2914,7 +2914,7 @@
                     <Keyword> rivières</Keyword>
                     <Keyword> canalisé</Keyword>
                     <Keyword> vouté </Keyword>
-                    <Keyword>IBGE WMS - Mapserver</Keyword>
+                    <Keyword>IBGE WMS - Mapserver - Fr</Keyword>
                   </KeywordList>
                   <SRS>EPSG:31370</SRS>
                   <LatLonBoundingBox maxx="4.54347" maxy="50.9172" minx="4.17949" miny="50.7595" />
@@ -2949,7 +2949,7 @@
                     <Keyword> Parcours Cyclistes</Keyword>
                     <Keyword> Pietons</Keyword>
                     <Keyword>  Maillage Vert </Keyword>
-                    <Keyword>IBGE WMS - Mapserver</Keyword>
+                    <Keyword>IBGE WMS - Mapserver - Fr</Keyword>
                   </KeywordList>
                   <SRS>EPSG:31370</SRS>
                   <LatLonBoundingBox maxx="4.54347" maxy="50.9172" minx="4.17949" miny="50.7595" />
@@ -2980,7 +2980,7 @@
                     <Keyword> Jardins du fleuriste</Keyword>
                     <Keyword> Musée</Keyword>
                     <Keyword> Square du 21 juillet</Keyword>
-                    <Keyword>IBGE WMS - Mapserver</Keyword>
+                    <Keyword>IBGE WMS - Mapserver - Fr</Keyword>
                   </KeywordList>
                   <SRS>EPSG:31370</SRS>
                   <LatLonBoundingBox maxx="4.54347" maxy="50.9172" minx="4.17949" miny="50.7595" />
@@ -3008,7 +3008,7 @@
                     <Keyword>Cavaliers</Keyword>
                     <Keyword>Cyclistes</Keyword>
                     <Keyword> Pietons</Keyword>
-                    <Keyword>IBGE WMS - Mapserver</Keyword>
+                    <Keyword>IBGE WMS - Mapserver - Fr</Keyword>
                   </KeywordList>
                   <SRS>EPSG:31370</SRS>
                   <LatLonBoundingBox maxx="4.54347" maxy="50.9172" minx="4.17949" miny="50.7595" />

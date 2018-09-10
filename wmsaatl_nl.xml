@@ -1845,12 +1845,12 @@
           <Title>Inventaris van de bodemgesteldheid</Title>
           <KeywordList>
             <Keyword>inventaire sol</Keyword>
-            <Keyword>IBGE WMS - Mapserver</Keyword>
+            <Keyword>IBGE WMS - Mapserver - Nl</Keyword>
           </KeywordList>
           <SRS>EPSG:31370</SRS>
           <LatLonBoundingBox maxx="4.49186" maxy="50.9208" minx="4.22901" miny="50.7556" />
           <BoundingBox SRS="EPSG:31370" maxx="158835" maxy="179004" minx="140352" miny="160632" />
-          <source>IBGE WMS - Mapserver</source>
+          <source>IBGE WMS - Mapserver - Nl</source>
           <Style>
             <Name>default</Name>
             <Title>default</Title>
@@ -1872,7 +1872,7 @@
             <Keyword> paysages</Keyword>
             <Keyword> écosystèmes</Keyword>
             <Keyword>Sites proteges</Keyword>
-            <Keyword>IBGE WMS - Mapserver</Keyword>
+            <Keyword>IBGE WMS - Mapserver - Nl</Keyword>
           </KeywordList>
           <SRS>EPSG:31370</SRS>
           <MetadataURL type="TC211">
@@ -1896,7 +1896,7 @@
             <Keyword>Habitats</Keyword>
             <Keyword> biotopes</Keyword>
             <Keyword>biology</Keyword>
-            <Keyword>IBGE WMS - Mapserver</Keyword>
+            <Keyword>IBGE WMS - Mapserver - Nl</Keyword>
           </KeywordList>
           <SRS>EPSG:31370</SRS>
           <LatLonBoundingBox maxx="4.54347" maxy="50.9172" minx="4.17949" miny="50.7595" />
@@ -1917,7 +1917,7 @@
             <Keyword>geluidshinder</Keyword>
             <Keyword> vliegtuig</Keyword>
             <Keyword> Beschermde Zones</Keyword>
-            <Keyword>IBGE WMS - Mapserver</Keyword>
+            <Keyword>IBGE WMS - Mapserver - Nl</Keyword>
           </KeywordList>
           <SRS>EPSG:31370</SRS>
           <LatLonBoundingBox maxx="4.53121" maxy="50.9003" minx="4.23438" miny="50.7425" />
@@ -1937,7 +1937,7 @@
           <KeywordList>
             <Keyword>zones refuges</Keyword>
             <Keyword>Forêt de Soignes </Keyword>
-            <Keyword>IBGE WMS - Mapserver</Keyword>
+            <Keyword>IBGE WMS - Mapserver - Nl</Keyword>
           </KeywordList>
           <SRS>EPSG:31370</SRS>
           <LatLonBoundingBox maxx="4.53121" maxy="50.9003" minx="4.23438" miny="50.7425" />
@@ -1957,7 +1957,7 @@
           <KeywordList>
             <Keyword>Hydrographie </Keyword>
             <Keyword> water </Keyword>
-            <Keyword>IBGE WMS - Mapserver</Keyword>
+            <Keyword>IBGE WMS - Mapserver - Nl</Keyword>
           </KeywordList>
           <SRS>EPSG:31370</SRS>
           <LatLonBoundingBox maxx="4.54347" maxy="50.9172" minx="4.17948" miny="50.7595" />
@@ -1976,7 +1976,7 @@
           <Abstract>De plaatsen (5 in 2006) worden specifiek in het oog gehouden wat hun gebruik en opslag van producten betreft</Abstract>
           <KeywordList>
             <Keyword>Seveso</Keyword>
-            <Keyword>IBGE WMS - Mapserver</Keyword>
+            <Keyword>IBGE WMS - Mapserver - Nl</Keyword>
           </KeywordList>
           <SRS>EPSG:31370</SRS>
           <LatLonBoundingBox maxx="4.54347" maxy="50.9172" minx="4.17949" miny="50.7595" />
@@ -1993,7 +1993,7 @@
           <Name>bruenvi_kitchen_garden</Name>
           <Title>Kitchen garden</Title>
           <KeywordList>
-            <Keyword>IBGE WMS - Mapserver</Keyword>
+            <Keyword>IBGE WMS - Mapserver - Nl</Keyword>
           </KeywordList>
           <SRS>EPSG:31370</SRS>
           <LatLonBoundingBox maxx="4.54347" maxy="50.9172" minx="4.17949" miny="50.7595" />
@@ -2013,7 +2013,7 @@
           <KeywordList>
             <Keyword>natuurlijke reservaten</Keyword>
             <Keyword> bosreservaten</Keyword>
-            <Keyword>IBGE WMS - Mapserver</Keyword>
+            <Keyword>IBGE WMS - Mapserver - Nl</Keyword>
           </KeywordList>
           <SRS>EPSG:31370</SRS>
           <LatLonBoundingBox maxx="4.54347" maxy="50.9172" minx="4.17948" miny="50.7595" />
@@ -2038,7 +2038,7 @@
             <Keyword> urban management </Keyword>
             <Keyword>urban environment</Keyword>
             <Keyword> urban stress</Keyword>
-            <Keyword>IBGE WMS - Mapserver</Keyword>
+            <Keyword>IBGE WMS - Mapserver - Nl</Keyword>
           </KeywordList>
           <SRS>EPSG:31370</SRS>
           <LatLonBoundingBox maxx="4.54347" maxy="50.9172" minx="4.17948" miny="50.7595" />
@@ -2061,7 +2061,7 @@
           <Abstract>Oppervlaktewater: water stromend of stilstaand op het oppervlak van de aarde en de wateren omvatten meren, rivieren en wateren (vijvers, kunstmatige meren, vijvers, etc..).</Abstract>
           <KeywordList>
             <Keyword>oppervlaktewater </Keyword>
-            <Keyword>IBGE WMS - Mapserver</Keyword>
+            <Keyword>IBGE WMS - Mapserver - Nl</Keyword>
           </KeywordList>
           <SRS>EPSG:31370</SRS>
           <LatLonBoundingBox maxx="4.54347" maxy="50.9172" minx="4.17949" miny="50.7595" />
@@ -2081,7 +2081,7 @@
           <KeywordList>
             <Keyword>wateren van oppervlakte</Keyword>
             <Keyword> rivieren </Keyword>
-            <Keyword>IBGE WMS - Mapserver</Keyword>
+            <Keyword>IBGE WMS - Mapserver - Nl</Keyword>
           </KeywordList>
           <SRS>EPSG:31370</SRS>
           <LatLonBoundingBox maxx="4.54347" maxy="50.9172" minx="4.17949" miny="50.7595" />
@@ -2109,7 +2109,7 @@
           <KeywordList>
             <Keyword>overwelven de rivieren</Keyword>
             <Keyword> gekanaliseerd</Keyword>
-            <Keyword>IBGE WMS - Mapserver</Keyword>
+            <Keyword>IBGE WMS - Mapserver - Nl</Keyword>
           </KeywordList>
           <SRS>EPSG:31370</SRS>
           <LatLonBoundingBox maxx="4.54347" maxy="50.9172" minx="4.17949" miny="50.7595" />
@@ -2138,7 +2138,7 @@
           <Name>bruenvi_greenway</Name>
           <Title>Greenway</Title>
           <KeywordList>
-            <Keyword>IBGE WMS - Mapserver</Keyword>
+            <Keyword>IBGE WMS - Mapserver - Nl</Keyword>
           </KeywordList>
           <SRS>EPSG:31370</SRS>
           <LatLonBoundingBox maxx="4.54347" maxy="50.9172" minx="4.17949" miny="50.7595" />
@@ -2155,7 +2155,7 @@
           <Name>bruenvi_royal_parks_walk</Name>
           <Title>Royal parks walk</Title>
           <KeywordList>
-            <Keyword>IBGE WMS - Mapserver</Keyword>
+            <Keyword>IBGE WMS - Mapserver - Nl</Keyword>
           </KeywordList>
           <SRS>EPSG:31370</SRS>
           <LatLonBoundingBox maxx="4.54347" maxy="50.9172" minx="4.17949" miny="50.7595" />
@@ -2168,7 +2168,7 @@
           <Name>bruenvi_forest_path</Name>
           <Title>Forest path</Title>
           <KeywordList>
-            <Keyword>IBGE WMS - Mapserver</Keyword>
+            <Keyword>IBGE WMS - Mapserver - Nl</Keyword>
           </KeywordList>
           <SRS>EPSG:31370</SRS>
           <LatLonBoundingBox maxx="4.54347" maxy="50.9172" minx="4.17949" miny="50.7595" />
