@@ -146,7 +146,7 @@ function brugisTree(state = null, action) {
             const capabilities = action.info;
             // const serverMappingUrl = action.serverMappingUrl;
             return assign({}, state, {
-                treenodes: wmsWalker(capabilities.value.capability.layer.layer, serverMappingUrl)
+                treenodes: wmsWalker(capabilities.value.capability.layer.layer, SERVER_MAPPING_URL)
             });
         case BRUGIS_TREE_NODE_TOGGLE:
             let node = action.node;
