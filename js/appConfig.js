@@ -56,7 +56,13 @@ module.exports = {
                     "autoload": false
                   },
                   "Bruxelles environnement": {
-                    "url": "http://wms.ibgebim.be/ibgewms",
+                    "url": "https://wms.environnement.brussels/be_wms",
+                    "type": "wms",
+                    "title": "Bruxelles environnement",
+                    "autoload": false
+                  },
+                  "LeefMilieu Brussel": {
+                    "url": "https://wms.environnement.brussels/lb_wms",
                     "type": "wms",
                     "title": "Bruxelles environnement",
                     "autoload": false
