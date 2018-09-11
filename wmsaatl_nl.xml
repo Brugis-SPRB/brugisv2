@@ -537,6 +537,27 @@
               </Style>
             </Layer>
             <Layer noSubsets="0" opaque="0" queryable="1">
+              <Name>BSO_DML_BESC:Inventaris_gebouwen</Name>
+              <Title>Inventaris gebouwen</Title>
+              <Abstract/>
+              <KeywordList>
+                <Keyword>PUBA40_INV_BATI_DMS</Keyword>
+                <Keyword>features</Keyword>
+                <Keyword>SINGLETILE</Keyword>
+              </KeywordList>
+              <SRS>EPSG:31370</SRS>
+              <LatLonBoundingBox maxx="4.4814185885749405" maxy="50.913653774000515" minx="4.242470212763538" miny="50.76335283201384"/>
+              <BoundingBox SRS="EPSG:31370" maxx="165088.0" maxy="185088.0" minx="140000.0" miny="160000.0"/>
+              <Style>
+                <Name>DML_Inventaris_gebouwen</Name>
+                <Title>DML_Inventaris_gebouwen</Title>
+                <LegendURL height="280" width="168">
+                  <Format>image/png</Format>
+                  <OnlineResource ns0:href="http://svappmavw115:8080/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=BSO_DML_BESC%3AInventaris_gebouwen" ns0:type="simple"/>
+                </LegendURL>
+              </Style>
+            </Layer>
+            <Layer noSubsets="0" opaque="0" queryable="1">
               <Name>Gedetaileerd patrimonium</Name>
               <Title>Gedetaileerd patrimonium</Title>
               <Layer noSubsets="0" opaque="0" queryable="1">
