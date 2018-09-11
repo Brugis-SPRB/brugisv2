@@ -1598,27 +1598,26 @@ const gfiFr = {
 			}
 		]
 	},
-	"BDU_DMS_PROT:Inventaire_batiments": {
+	"BDU_DMS_PROT:Inventaire_Irismonument": {
 		"actiontype": "GRID",
-		"title": "Inventaire bâtiments: [%address_results_fr%]",
+		"title": "Inventaire Irismonument: [%ADDRESS_RESULTS_FR%]",
 		"attributes": [{
-				"name": "Adresse",
-				"label": "[%address_results_fr%]",
+				"name": "Nom",
+				"label": "[%NOM_FR%]",
 				"type": "string"
-			},
-			{
-				"name": "PWNC",
-				"label": "[%pwnc%]",
+			},{
+				"name": "Adresse",
+				"label": "[%ADDRESS_RESULTS_FR%]",
 				"type": "string"
 			},
 			{
 				"name": "Lien",
-				"label": "[%url_fr%]",
+				"label": "[%URL_FR%]",
 				"type": "link"
 			},
 			{
 				"name": "Image",
-				"label": "[%firstimage%]",
+				"label": "[%FIRSTIMAGE%]",
 				"type": "picture"
 			}
 		]

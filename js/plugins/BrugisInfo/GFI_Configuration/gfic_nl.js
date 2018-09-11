@@ -248,27 +248,26 @@ const gfiNl = {
 			}
 		]
 	},
-	"BSO_DML_BESC:Inventaris_gebouwen": {
+	"BSO_DML_BESC:Inventaris_Irismonument": {
 		"actiontype": "GRID",
-		"title": "Inventaris gebouwen: [%address_results_nl%]",
+		"title": "Inventaris Irismonument: [%ADDRESS_RESULTS_NL%]",
 		"attributes": [{
-				"name": "Adress",
-				"label": "[%address_results_nl%]",
+				"name": "Naam",
+				"label": "[%NOM_NL%]",
 				"type": "string"
-			},
-			{
-				"name": "PWNC",
-				"label": "[%pwnc%]",
+			},{
+				"name": "Adress",
+				"label": "[%ADDRESS_RESULTS_NL%]",
 				"type": "string"
 			},
 			{
 				"name": "Link",
-				"label": "[%url_nl%]",
+				"label": "[%URL_NL%]",
 				"type": "link"
 			},
 			{
 				"name": "Beeld",
-				"label": "[%firstimage%]",
+				"label": "[%FIRSTIMAGE%]",
 				"type": "picture"
 			}
 		]

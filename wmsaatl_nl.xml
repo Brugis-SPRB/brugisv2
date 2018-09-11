@@ -537,27 +537,6 @@
               </Style>
             </Layer>
             <Layer noSubsets="0" opaque="0" queryable="1">
-              <Name>BSO_DML_BESC:Inventaris_gebouwen</Name>
-              <Title>Inventaris gebouwen</Title>
-              <Abstract/>
-              <KeywordList>
-                <Keyword>PUBA40_INV_BATI_DMS</Keyword>
-                <Keyword>features</Keyword>
-                <Keyword>SINGLETILE</Keyword>
-              </KeywordList>
-              <SRS>EPSG:31370</SRS>
-              <LatLonBoundingBox maxx="4.4814185885749405" maxy="50.913653774000515" minx="4.242470212763538" miny="50.76335283201384"/>
-              <BoundingBox SRS="EPSG:31370" maxx="165088.0" maxy="185088.0" minx="140000.0" miny="160000.0"/>
-              <Style>
-                <Name>DML_Inventaris_gebouwen</Name>
-                <Title>DML_Inventaris_gebouwen</Title>
-                <LegendURL height="280" width="168">
-                  <Format>image/png</Format>
-                  <OnlineResource ns0:href="http://svappmavw115:8080/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=BSO_DML_BESC%3AInventaris_gebouwen" ns0:type="simple"/>
-                </LegendURL>
-              </Style>
-            </Layer>
-            <Layer noSubsets="0" opaque="0" queryable="1">
               <Name>Gedetaileerd patrimonium</Name>
               <Title>Gedetaileerd patrimonium</Title>
               <Layer noSubsets="0" opaque="0" queryable="1">
@@ -939,33 +918,23 @@
                 </Style>
               </Layer>
             </Layer>
-            <Layer queryable="1">
-              <Name>BSO:Inventaris</Name>
-              <Title>Inventaris</Title>
-              <Abstract>A40_INV</Abstract>
+            <Layer noSubsets="0" opaque="0" queryable="1">
+              <Name>BSO_DML_BESC:Wettelijke_inventaris_van_de_landschappen_en_Leopoldswijk</Name>
+              <Title>Wettelijke inventaris van de landschappen en Leopoldswijk</Title>
+              <Abstract/>
               <KeywordList>
-                <Keyword>A40_INV</Keyword>
                 <Keyword>features</Keyword>
+                <Keyword>A40_INV</Keyword>
               </KeywordList>
               <SRS>EPSG:31370</SRS>
-              <LatLonBoundingBox maxx="4.455516087934125" maxy="50.8935564341846" minx="4.282545474988624" miny="50.78495996702337" />
-              <BoundingBox SRS="EPSG:31370" maxx="156177.95" maxy="175940.06" minx="144008.487" miny="163863.428" />
+              <LatLonBoundingBox maxx="4.455516087934125" maxy="50.8935564341846" minx="4.282545474988624" miny="50.78495996702337"/>
+              <BoundingBox SRS="EPSG:31370" maxx="165088.0" maxy="185088.0" minx="140000.0" miny="160000.0"/>
               <Style>
                 <Name>Inventaris</Name>
                 <Title>Inventaris</Title>
-                <Abstract />
-                <LegendURL height="20" width="20">
+                <LegendURL height="40" width="84">
                   <Format>image/png</Format>
-                  <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Inventaris" ns0:type="simple" />
-                </LegendURL>
-              </Style>
-              <Style>
-                <Name>Inventaire</Name>
-                <Title>Inventaire</Title>
-                <Abstract />
-                <LegendURL height="20" width="20">
-                  <Format>image/png</Format>
-                  <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Inventaris&amp;style=Inventaire" ns0:type="simple" />
+                  <OnlineResource ns0:href="http://svappmavw115:8080/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=BSO_DML_BESC%3AWettelijke_inventaris_van_de_landschappen_en_Leopoldswijk" ns0:type="simple"/>
                 </LegendURL>
               </Style>
             </Layer>
@@ -1470,6 +1439,31 @@
                   </Style>
                 </Layer>
               </Layer>
+            </Layer>
+          </Layer>
+          <Layer noSubsets="0" opaque="0" queryable="1">
+            <Name>Bouwkundige Erfgoed</Name>
+            <Title>Bouwkundige Erfgoed</Title>
+            <Layer noSubsets="0" opaque="0" queryable="1">
+              <Name>BSO_DML_BESC:Inventaris_Irismonument</Name>
+              <Title>Inventaris Irismonument</Title>
+              <Abstract/>
+              <KeywordList>
+                <Keyword>PUBA40_INV_BATI_DMS</Keyword>
+                <Keyword>features</Keyword>
+                <Keyword>SINGLETILE</Keyword>
+              </KeywordList>
+              <SRS>EPSG:31370</SRS>
+              <LatLonBoundingBox maxx="4.4814185885749405" maxy="50.913653774000515" minx="4.242470212763538" miny="50.76335283201384"/>
+              <BoundingBox SRS="EPSG:31370" maxx="165088.0" maxy="185088.0" minx="140000.0" miny="160000.0"/>
+              <Style>
+                <Name>DML_Inventaris_gebouwen</Name>
+                <Title>DML_Inventaris_gebouwen</Title>
+                <LegendURL height="280" width="168">
+                  <Format>image/png</Format>
+                  <OnlineResource ns0:href="http://svappmavw115:8080/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=BSO_DML_BESC%3AInventaris_gebouwen" ns0:type="simple"/>
+                </LegendURL>
+              </Style>
             </Layer>
           </Layer>
           <Layer noSubsets="0" opaque="0" queryable="1">
