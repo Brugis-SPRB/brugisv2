@@ -255,7 +255,8 @@ const gfiNl = {
 				"name": "Naam",
 				"label": "[%NOM_NL%]",
 				"type": "string"
-			},{
+			},
+			{
 				"name": "Adress",
 				"label": "[%ADDRESS_RESULTS_NL%]",
 				"type": "string"

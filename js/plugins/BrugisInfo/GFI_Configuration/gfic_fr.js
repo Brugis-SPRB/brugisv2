@@ -1605,7 +1605,8 @@ const gfiFr = {
 				"name": "Nom",
 				"label": "[%NOM_FR%]",
 				"type": "string"
-			},{
+			},
+			{
 				"name": "Adresse",
 				"label": "[%ADDRESS_RESULTS_FR%]",
 				"type": "string"
