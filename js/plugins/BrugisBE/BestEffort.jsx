@@ -19,7 +19,7 @@ class BestEffort extends React.Component {
     render() {
         return (
           <div id={this.props.id} style={this.props.style}>
-              <label><Message msgId="best-effort" /><a href="mailto:brugis@sprb.brussels"><Message msgId="BruGISTeam" /></a></label>
+              <label><Message msgId="best-effort" /><a href="mailto:brugis@urban.brussels"><Message msgId="BruGISTeam" /></a></label>
           </div>
         );
     }
