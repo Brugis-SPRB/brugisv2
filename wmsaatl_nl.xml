@@ -513,8 +513,8 @@
           <Name>Monumenten en Landschappen</Name>
           <Title>Monumenten en Landschappen</Title>
           <Layer noSubsets="0" opaque="0" queryable="1">
-            <Name>Architecturaal Erfgoed</Name>
-            <Title>Architecturaal Erfgoed</Title>
+            <Name>Wettelijk statuut en register</Name>
+            <Title>Wettelijk statuut en register</Title>
             <Layer noSubsets="0" opaque="0" queryable="1">
               <Name>BSO:Patrimonium</Name>
               <Title>Patrimonium</Title>
