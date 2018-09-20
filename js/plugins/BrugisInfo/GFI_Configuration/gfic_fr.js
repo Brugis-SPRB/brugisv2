@@ -176,7 +176,7 @@ const gfiFr = {
 		"title": "[%TAX_LA%]: [%RARETE%]",
 		"attributes": [{
 				"name": "Identifiant",
-				"label": "[%ID%]",
+				"label": "[%ID_ARBRE_CMS%]",
 				"type": "string"
 			},
 			{
