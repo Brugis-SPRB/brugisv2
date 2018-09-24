@@ -1671,26 +1671,6 @@
               </LegendURL>
             </Style>
           </Layer>
-          <Layer noSubsets="0" opaque="0" queryable="1">
-            <Name>PER:Zone_de_revitalisation_urbaine</Name>
-            <Title>Zone de revitalisation urbaine</Title>
-            <Abstract/>
-            <KeywordList>
-              <Keyword>features</Keyword>
-              <Keyword>PER_ZRU</Keyword>
-            </KeywordList>
-            <SRS>EPSG:31370</SRS>
-            <LatLonBoundingBox maxx="4.4814185885749405" maxy="50.913653774000515" minx="4.242470212763538" miny="50.76335283201384"/>
-            <BoundingBox SRS="EPSG:31370" maxx="165088.0" maxy="185088.0" minx="140000.0" miny="160000.0"/>
-            <Style>
-              <Name>Style_ZRU2016</Name>
-              <Title>Style_ZRU2016</Title>
-              <LegendURL height="20" width="20">
-                <Format>image/png</Format>
-                <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=PER%3AZone_de_revitalisation_urbaine" ns0:type="simple"/>
-              </LegendURL>
-            </Style>
-          </Layer>
           <Layer queryable="1">
             <Name>BDU:EDRLR</Name>
             <Title>Area with increased development of housing and renovation (AIDHR)</Title>
@@ -3375,6 +3355,26 @@
             <LegendURL height="20" width="20">
               <Format>image/png</Format>
               <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=PPAS" ns0:type="simple" />
+            </LegendURL>
+          </Style>
+        </Layer>
+        <Layer noSubsets="0" opaque="0" queryable="1">
+          <Name>PER:Zone_de_revitalisation_urbaine</Name>
+          <Title>Zone de revitalisation urbaine</Title>
+          <Abstract/>
+          <KeywordList>
+            <Keyword>features</Keyword>
+            <Keyword>PER_ZRU</Keyword>
+          </KeywordList>
+          <SRS>EPSG:31370</SRS>
+          <LatLonBoundingBox maxx="4.4814185885749405" maxy="50.913653774000515" minx="4.242470212763538" miny="50.76335283201384"/>
+          <BoundingBox SRS="EPSG:31370" maxx="165088.0" maxy="185088.0" minx="140000.0" miny="160000.0"/>
+          <Style>
+            <Name>Style_ZRU2016</Name>
+            <Title>Style_ZRU2016</Title>
+            <LegendURL height="20" width="20">
+              <Format>image/png</Format>
+              <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=PER%3AZone_de_revitalisation_urbaine" ns0:type="simple"/>
             </LegendURL>
           </Style>
         </Layer>
