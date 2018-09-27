@@ -100,6 +100,14 @@ class SurveyGrid extends React.Component {
         return button;
     }
 
+    renderIfNotNull(value, date) {
+        if (value) {
+          return date;
+        } else {
+          return "-";
+        }
+    }
+
     render() {
         const headerMessage = (<Message msgId="brugisSurvey.title_list" />);
         return (<Panel header={headerMessage} eventKey={this.props.evtKey} collapsible defaultExpanded="true">
@@ -129,11 +137,11 @@ class SurveyGrid extends React.Component {
                                year="numeric" />
                            </td>
                            <td>
-                             <FormattedDate
-                               value={new Date(survey.enddate)}
-                               day="numeric"
-                               month="long"
-                               year="numeric" />
+                              {this.renderIfNotNull(survey.enddate, <FormattedDate
+                                value={new Date(survey.enddate)}
+                                day="numeric"
+                                month="long"
+                                year="numeric" />)}
                            </td>
                            <td>
                               {this.renderIfDone(survey, <button onClick={() => this.onDocxClick(survey)}>Docx</button>)}

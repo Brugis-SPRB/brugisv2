@@ -122,6 +122,7 @@ class SurveyForm extends React.Component {
     handleSubmit() {
         this.props.onPostNewSurvey(this.state);
         event.preventDefault();
+        return false;
     }
 }
 
