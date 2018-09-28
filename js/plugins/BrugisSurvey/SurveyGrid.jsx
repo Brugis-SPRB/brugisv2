@@ -102,10 +102,9 @@ class SurveyGrid extends React.Component {
 
     renderIfNotNull(value, date) {
         if (value) {
-          return date;
-        } else {
-          return "-";
+            return date;
         }
+        return "-";
     }
 
     render() {

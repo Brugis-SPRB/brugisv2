@@ -4,9 +4,9 @@ const fs = require('fs')
 const glob = require('glob');
 
 const ENV_CONFIG_GEOSERVER = {
-  'DEV' : 'http://svappmavw115:8080/geoserver/wms',
-  'STA' : 'http://mybrugis.irisnetlab.be/geoserver/wms',
-  'PRD' : 'https://mybrugis.irisnet.be/geoserver/wms'
+  'DEV' : 'http://svappmavw115:8080/geoserver/ows',
+  'STA' : 'http://mybrugis.irisnetlab.be/geoserver/ows',
+  'PRD' : 'https://mybrugis.irisnet.be/geoserver/ows'
 };
 
 const ENV_CONFIG_SURVEY = {
@@ -43,7 +43,7 @@ if(args.length != 1) {
 
 replaceInFile(
   ["./wmsaatl_en.xml", "./wmsaatl_fr.xml", "./wmsaatl_nl.xml"],
-  ENV_CONFIG_GEOSERVER['PRD'] + "?SERVICE=WMS&amp;", ENV_CONFIG_GEOSERVER[args[0]]+ "?SERVICE=WMS&amp;"
+  "https://mybrugis.irisnet.be/geoserver/wms?SERVICE=WMS&amp;", ENV_CONFIG_GEOSERVER[args[0]]+ "?SERVICE=WMS&amp;"
 );
 
 replaceInFile(
