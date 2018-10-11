@@ -29,14 +29,19 @@ var JSONViewer = React.createClass({
                 <Accordion>
                 {(this.props.response.features || []).map((feature, i) => {
                     var displayTitle = feature.id;
+                    var layerName = this.props.layers;
+                    var layerNameFromFeatureId = this.props.layers.split(":")[0].concat(":").concat(feature.id.split(".")[0]);
+                    if (this.props.layers !== layerNameFromFeatureId) {
+                      layerName = layerNameFromFeatureId;
+                    }
                     var customRenderers = [];
                     var curLocale = this.translateLocale(this.props.locale);
-                    if (GFI_DICT[curLocale] && GFI_DICT[curLocale][this.props.layers]) {
-                        if (GFI_DICT[curLocale][this.props.layers].title) {
-                            displayTitle = this.parseTitle(GFI_DICT[curLocale][this.props.layers].title, feature.properties);
+                    if (GFI_DICT[curLocale] && GFI_DICT[curLocale][layerName]) {
+                        if (GFI_DICT[curLocale][layerName].title) {
+                            displayTitle = this.parseTitle(GFI_DICT[curLocale][layerName].title, feature.properties);
                         }
-                        if (GFI_DICT[curLocale][this.props.layers].attributes) {
-                            feature.properties = this.customiseFeatureProperties(customRenderers, feature.properties, GFI_DICT[curLocale][this.props.layers].attributes);
+                        if (GFI_DICT[curLocale][layerName].attributes) {
+                            feature.properties = this.customiseFeatureProperties(customRenderers, feature.properties, GFI_DICT[curLocale][layerName].attributes);
                         }
                     }
                     return (
