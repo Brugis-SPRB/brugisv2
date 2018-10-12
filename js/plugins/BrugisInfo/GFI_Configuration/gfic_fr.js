@@ -32,7 +32,7 @@ const gfiFr = {
 	},
 	"BDU:Maille": {
 		"actiontype": "GRID",
-		"title" : "Maille [%%]",
+		"title": "Maille [%%]",
 		"attributes": [{
 				"name": "Lien",
 				"label": "[%PATH_INTER%]",

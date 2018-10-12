@@ -39,7 +39,7 @@ const gfiNl = {
 	},
 	"BSO:Maas": {
 		"actiontype": "GRID",
-		"title" : "Maas [%%]",
+		"title": "Maas [%%]",
 		"attributes": [{
 				"name": "Lien",
 				"label": "[%PATH_INTER%]",
