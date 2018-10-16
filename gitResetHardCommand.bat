@@ -1,0 +1,1 @@
+D:\SandBox\brugisprod\git reset --hard
