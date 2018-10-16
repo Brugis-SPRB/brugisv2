@@ -1,1 +1,1 @@
-D:\SandBox\brugisprod\git reset --hard
+C:\Progra~1\Git\git.exe reset --hard
