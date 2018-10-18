@@ -1,0 +1,1 @@
+C:\Progra~1\Git\cmd\git.exe reset --hard

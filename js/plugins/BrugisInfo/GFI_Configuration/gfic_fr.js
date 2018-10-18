@@ -31,8 +31,14 @@ const gfiFr = {
 		]
 	},
 	"BDU:Maille": {
-		"actiontype": "REDIRECT",
-		"url": "[%PATH_INTER%]"
+		"actiontype": "GRID",
+		"title": "Maille [%%]",
+		"attributes": [{
+				"name": "Lien",
+				"label": "[%PATH_INTER%]",
+				"type": "link"
+			}
+		]
 	},
 	"BDU:Accessibilite": {
 		"actiontype": "GRID",

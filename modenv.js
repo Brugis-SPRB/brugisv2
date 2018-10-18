@@ -10,8 +10,8 @@ const ENV_CONFIG_GEOSERVER = {
 };
 
 const ENV_CONFIG_SURVEY = {
-  'DEV' : 'http://10.1.2.125/WebReperage',
-  'STA' : 'http://192.168.22.127/WebReperage',
+  'DEV' : 'http://10.1.2.125:8080/WebReperage',
+  'STA' : 'http://mbr127.irisnetlab.be/WebReperage',
   'PRD' : "https://mbr227.irisnet.be/WebReperage"
 }
 
