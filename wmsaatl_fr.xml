@@ -4055,10 +4055,6 @@
           <BoundingBox CRS="CRS:84" maxx="4.4957025695441475" maxy="50.92106316179335" minx="4.225488048106667" miny="50.75017715801838"/>
           <BoundingBox CRS="EPSG:31370" maxx="159000.0" maxy="179000.0" minx="140000.0" miny="160000.0"/>
           <Identifier authority="BE.CIRB">BRU_URBIS_ORTHO_RBC</Identifier>
-          <MetadataURL type="ISO19115:2003">
-            <Format>text/xml</Format>
-            <OnlineResource ns0:href="http://www.geo.irisnet.be/geonetwork/srv/fre/csw?Request=GetRecordById&amp;Service=CSW&amp;Version=2.0.2&amp;elementSetName=full&amp;outputSchema=http://www.isotc211.org/2005/gmd&amp;id=db2e0ac3-a8ac-464b-bfef-514dfa37d4e6" ns0:type="simple" />
-          </MetadataURL>
           <Style>
             <Name>raster</Name>
             <Title>A boring default style</Title>
@@ -4089,10 +4085,6 @@
           <BoundingBox CRS="CRS:84" maxx="4.509924354467884" maxy="50.92106333757176" minx="4.225488048106667" miny="50.75017559103906"/>
           <BoundingBox CRS="EPSG:31370" maxx="160000.0" maxy="179000.0" minx="140000.0" miny="160000.0"/>
           <Identifier authority="BE.CIRB">BRU_URBIS_ORTHO_RBC</Identifier>
-          <MetadataURL type="ISO19115:2003">
-            <Format>text/xml</Format>
-            <OnlineResource ns0:href="http://www.geo.irisnet.be/geonetwork/srv/fre/csw?Request=GetRecordById&amp;Service=CSW&amp;Version=2.0.2&amp;elementSetName=full&amp;outputSchema=http://www.isotc211.org/2005/gmd&amp;id=db2e0ac3-a8ac-464b-bfef-514dfa37d4e6" ns0:type="simple" />
-          </MetadataURL>
           <Style>
             <Name>raster</Name>
             <Title>A boring default style</Title>
