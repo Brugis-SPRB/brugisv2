@@ -4074,6 +4074,7 @@
           <Title>Orthophotoplan 2016</Title>
           <Abstract>Brussels-Capital Region : the orthophotos of the Brussels-Capital are made on the basis of large-scale aerial photographs. This orthophoto covers the whole territory of the region. Orthophotos available from 2016.</Abstract>
           <KeywordList>
+            <Keyword>CIRB WMS - Geoserver</Keyword>
             <Keyword>WCS</Keyword>
             <Keyword>ImagePyramid</Keyword>
             <Keyword>2017Pyramid</Keyword>
