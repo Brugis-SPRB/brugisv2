@@ -38,7 +38,7 @@
         <DCPType>
           <HTTP>
             <Get>
-              <OnlineResource ns0:href="http://mybrugis.irisnetlab.be/geoserver/ows?SERVICE=WMS&amp;" ns0:type="simple" />
+              <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?SERVICE=WMS&amp;" ns0:type="simple" />
             </Get>
             <Post>
               <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?SERVICE=WMS&amp;" ns0:type="simple" />
