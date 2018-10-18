@@ -2,8 +2,8 @@
 {
    "version" : 2,
    "survey": {
-     "host": "https://mbr227.irisnet.be/WebReperage",
-     "geoserver": "https://mybrugis.irisnet.be/geoserver/ows"
+     "host": "http://192.168.22.127/WebReperage",
+     "geoserver": "http://mybrugis.irisnetlab.be/geoserver/ows"
    },
   "map": {
     "projection": "EPSG:31370",

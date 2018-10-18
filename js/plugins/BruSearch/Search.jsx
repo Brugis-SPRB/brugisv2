@@ -206,8 +206,8 @@ class extends React.Component {
         ;
     }
 });
-const {searchEpic, searchItemSelected} = require('../../../MapStore2/web/client/epics/search');
 
+const {searchItemSelected} = require('./search');
 module.exports = {
     SearchPlugin: assign(SearchPlugin, {
         OmniBar: {
@@ -217,7 +217,7 @@ module.exports = {
             priority: 1
         }
     }),
-    epics: {searchEpic, searchItemSelected},
+    epics: {searchItemSelected},
     reducers: {
         search: require('../../../MapStore2/web/client/reducers/search'),
         mapInfo: require('../../../MapStore2/web/client/reducers/mapInfo')
