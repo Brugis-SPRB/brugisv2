@@ -4035,6 +4035,42 @@
       <Layer noSubsets="0" opaque="0" queryable="1">
         <Name>Orthophotoplans</Name>
         <Title>Orthophotoplans</Title>
+        <Layer opaque="0" queryable="1">
+          <Name>Urbis:Ortho2018</Name>
+          <Title>Ortho 2018</Title>
+          <Abstract>
+          Brussels-Capital Region : the orthophotos of the Brussels-Capital are made on the basis of large-scale aerial photographs. This orthophoto covers the whole territory of the region. Orthophotos available from 2016.
+          </Abstract>
+          <KeywordList>
+            <Keyword>CIRB WMS - Geoserver</Keyword>
+            <Keyword>2018Pyramid</Keyword>
+            <Keyword>WCS</Keyword>
+            <Keyword>ImagePyramid</Keyword>
+          </KeywordList>
+          <EX_GeographicBoundingBox>
+            <westBoundLongitude>4.225488048106667</westBoundLongitude>
+            <eastBoundLongitude>4.4957025695441475</eastBoundLongitude>
+            <southBoundLatitude>50.75017715801838</southBoundLatitude>
+            <northBoundLatitude>50.92106316179335</northBoundLatitude>
+          </EX_GeographicBoundingBox>
+          <BoundingBox CRS="EPSG:4326" minx="4.225488048106667" miny="50.75017715801838" maxx="4.4957025695441475" maxy="50.92106316179335"/>
+          <BoundingBox CRS="CRS:84" maxx="4.4957025695441475" maxy="50.92106316179335" minx="4.225488048106667" miny="50.75017715801838"/>
+          <BoundingBox CRS="EPSG:31370" maxx="159000.0" maxy="179000.0" minx="140000.0" miny="160000.0"/>
+          <Identifier authority="BE.CIRB">BRU_URBIS_ORTHO_RBC</Identifier>
+          <MetadataURL type="ISO19115:2003">
+            <Format>text/xml</Format>
+            <OnlineResource xlink:type="simple" xlink:href="http://www.geo.irisnet.be/geonetwork/srv/fre/csw?Request=GetRecordById&Service=CSW&Version=2.0.2&elementSetName=full&outputSchema=http://www.isotc211.org/2005/gmd&id=db2e0ac3-a8ac-464b-bfef-514dfa37d4e6"/>
+          </MetadataURL>
+          <Style>
+            <Name>raster</Name>
+            <Title>A boring default style</Title>
+            <Abstract>A sample style for rasters</Abstract>
+            <LegendURL height="20" width="20">
+            <Format>image/png</Format>
+            <OnlineResource xlink:href="http://geoservices-urbis.irisnet.be/geoserver/ows?service=WMS&request=GetLegendGraphic&format=image%2Fpng&width=20&height=20&layer=Urbis%3AOrtho2018" xlink:type="simple"/>
+            </LegendURL>
+          </Style>
+        </Layer>
         <Layer queryable="0">
           <Name>Urbis:Ortho2017</Name>
           <Title>Ortho 2017</Title>
