@@ -16,8 +16,6 @@ const Rx = require('rxjs');
 
 const {changeMapView} = require('../../../MapStore2/web/client/actions/map');
 
-const assign = require('object-assign');
-
 const searchItemSelected = action$ =>
     action$.ofType(TEXT_SEARCH_ITEM_SELECTED)
     .switchMap(action => {
