@@ -33,7 +33,8 @@ module.exports = {
         StreetViewPlugin: require('./plugins/StreetView/StreetViewPlugin'),
         MapFooterPlugin: require('../MapStore2/web/client/plugins/MapFooter'),
         WFSDownloadPlugin: require('../MapStore2/web/client/plugins/WFSDownload'),
-        BestEffortPlugin: require('./plugins/BrugisBE/BestEffort')
+        BestEffortPlugin: require('./plugins/BrugisBE/BestEffort'),
+        MapSearchPlugin: require('../MapStore2/web/client/plugins/MapSearch')
     },
     requires: {
 

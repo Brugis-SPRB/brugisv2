@@ -207,7 +207,7 @@ class extends React.Component {
     }
 });
 
-const {searchItemSelected} = require('./search');
+const {searchItemSelected} = require('./searchepics');
 module.exports = {
     SearchPlugin: assign(SearchPlugin, {
         OmniBar: {

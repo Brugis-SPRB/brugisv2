@@ -516,7 +516,9 @@
                   ]
                }
             },
-            "OmniBar",
+            {
+							"name": "OmniBar"
+						},
             {
                "name":"Expander",
                "cfg":{
