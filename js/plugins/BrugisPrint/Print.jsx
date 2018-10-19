@@ -110,7 +110,7 @@ class Print extends React.Component {
         mapType: "leaflet",
         minZoom: 1,
         maxZoom: 23,
-        alternatives: [{
+        alternatives: [/*{
             name: "legend",
             component: LegendOption,
             regex: /legend/
@@ -122,7 +122,7 @@ class Print extends React.Component {
             name: "landscape",
             component: LandscapeOption,
             regex: /landscape/
-        }],
+        }*/],
         usePreview: true,
         mapPreviewOptions: {
             enableScalebox: false,
