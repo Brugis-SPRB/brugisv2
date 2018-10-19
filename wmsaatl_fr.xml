@@ -1,4 +1,4 @@
-&amp;&amp;<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <WMT_MS_Capabilities xmlns:ns0="http://www.w3.org/1999/xlink" updateSequence="11608" version="1.1.1">
   <Service>
     <Name>OGC:WMS</Name>
