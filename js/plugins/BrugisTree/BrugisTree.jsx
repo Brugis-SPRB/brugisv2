@@ -80,6 +80,7 @@ const BrugisTree = React.createClass({
             tileSize: 256,
             singleTile: item.singleTile,
             id: item.id,
+            search: true,
             featureInfo: {
               "format": item.infoFormat
             }

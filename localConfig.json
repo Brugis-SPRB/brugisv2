@@ -70,6 +70,7 @@
 							 "buttonSize":"small",
 							 "position": 2
 						}
+
 				 },
 				 "override":{
 						"DrawerMenu":{
@@ -324,9 +325,16 @@
 									  "id": "superbroleke"
 								}
 						},
+						"TOCItemsSettings",
 						{
 							 "name":"TOC",
 							 "cfg":{
+
+		 						"activateMetedataTool": false,
+		 						"activateMapTitle": false,
+		 						"activateSortLayer": false,
+		 						"activateDownloadTool": true,
+								"activateAddLayerButton": true,
 									"visibilityCheckType":"glyph",
 									"settingsOptions":{
 										 "includeCloseButton":false,
@@ -554,6 +562,8 @@
              }, {
                  "name":"MeasureLength"
              }, {
+							 	 "name":"ShapeFile"
+						 }, {
                  "name": "Print",
 								 "cfg":{
 									 "useFixedScales": false

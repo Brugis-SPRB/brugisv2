@@ -76,6 +76,7 @@ const startApp = () => {
 
     ol.proj.setProj4(proj4);
     ol.proj.get('EPSG:31370').setExtent([0, 0, 300000, 300000]);
+    //ol.proj.get('EPSG:31370').setExtent([138000, 160000, 160000, 179000]);
     ol.proj.get('EPSG:3812').setExtent([640000, 661000, 658000, 679000]);
 
     ReactDOM.render(
