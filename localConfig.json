@@ -135,7 +135,7 @@
 			{
 				 "name":"Locate",
 				 "cfg":{
-						"icon":"/assets/img/chaton.svg",
+						"icon":"/assets/img/Geoloc-me.svg",
 						"btnConfig":{
 							"className":"square-button"
 						}
@@ -162,7 +162,7 @@
 							 "wms":"https://mybrugis.irisnet.be/geoserver/wms"
 						}
 				 }
-			},{
+			}, {
 			 "name": "Toolbar",
 			 "id": "NavigationBar",
 			 "stateSelector": "toolbar",
@@ -180,7 +180,7 @@
 				 "id": "identifyBar"
 			 },
 			 "isDefault": false
-		 },
+		  },
 			{
 				 "name":"ZoomAll",
 				 "hide":true,
@@ -219,13 +219,12 @@
 				 "cfg":{
 						"className":"square-button"
 				 }
-		 },
+		  },
 			{
 				 "name":"BurgerMenu",
 				 "id": "BurgerMenu"
-			}
-			,
-			 {
+			},
+			{
 					"name":"LocalMaps",
 					"showIn":[
 						 "BurgerMenu"
@@ -436,7 +435,7 @@
             {
                "name":"Locate",
                "cfg":{
-								  "icon":"/assets/img/chaton.svg",
+								  "icon":"/assets/img/Geoloc-me.svg",
                   "btnConfig":{
 										"className":"square-button"
                   }
