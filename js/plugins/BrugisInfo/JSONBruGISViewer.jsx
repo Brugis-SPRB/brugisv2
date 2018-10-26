@@ -31,13 +31,13 @@ var JSONViewer = React.createClass({
                     var displayTitle = feature.id;
                     var layerName = this.props.layers ? this.props.layers : "Vector";
                     var layerNameFromFeatureId = layerName;
-                    try {
-                      layerNameFromFeatureId = this.props.layers.split(":")[0].concat(":").concat(feature.id.split(".")[0]);
-                    } catch(err) {
-                      console.log(err);
-                    }
                     var customRenderers = [];
                     var curLocale = this.translateLocale(this.props.locale);
+                    try {
+                        layerNameFromFeatureId = this.props.layers.split(":")[0].concat(":").concat(feature.id.split(".")[0]);
+                    } catch(err) {
+                        console.log(err);
+                    }
                     if (this.props.layers !== layerNameFromFeatureId) {
                         layerName = layerNameFromFeatureId;
                     }
