@@ -612,20 +612,26 @@
 									    }
 
                  }
-             }, {
-							 "name": "WFSDownload",
-								"cfg": {
-								  "formats": [
-								          {"name": "csv", "label": "csv"},
-								          {"name": "shape-zip", "label": "shape-zip"}
-								  ],
-								    "srsList": [
-								          {"name": "native", "label": "Native"},
-								          {"name": "EPSG:4326", "label": "WGS84"}
-								  ],
-								    "defaultSrs": "native"
-								}
-						}
+   				 		},
+	            {
+	               "name": "WFSDownload",
+	               "cfg": {
+	                   "formats": [
+	                       {"name": "application/json", "label": "GeoJSON"},
+	                       {"name": "application/x-gpkg", "label": "GeoPackage"},
+	                       {"name": "gml3", "label": "GML3.1"},
+	                     	 {"name": "GML2", "label": "GML2"},
+	                       {"name": "csv", "label": "csv"},
+	                       {"name": "shape-zip", "label": "shape-zip"}
+	                   ],
+	                   "srsList": [
+	                       {"name": "native", "label": "Native"},
+	                       {"name": "EPSG:4326", "label": "WGS84"}
+	                   ],
+	                   "defaultSrs": "native"
+	               }
+	           }
+
          ]
 	}
 }
