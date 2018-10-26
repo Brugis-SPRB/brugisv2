@@ -6,7 +6,8 @@ const glob = require('glob');
 const ENV_CONFIG_GEOSERVER = {
   'DEV' : 'http://svappmavw115:8080/geoserver/ows',
   'STA' : 'http://mybrugis.irisnetlab.be/geoserver/ows',
-  'PRD' : 'https://mybrugis.irisnet.be/geoserver/ows'
+  'PRD' : 'https://mybrugis.irisnet.be/geoserver/ows',
+  'PRDSTUB' : 'https://mybrugis.irisnet.be/geoserver/www/wmsaatl/wmsc_brugis_anon.xml'
 };
 
 const ENV_CONFIG_SURVEY = {
@@ -15,7 +16,6 @@ const ENV_CONFIG_SURVEY = {
   'PRD' : "https://mbr227.irisnet.be/WebReperage"
 }
 
-https://mybrugis.irisnet.be/geoserver/ows
 
 function replaceSync(file, from, to, enc) {
   const content = fs.readFileSync(file, enc);
@@ -54,4 +54,9 @@ replaceInFile(
 replaceInFile(
   ["./config-en.json", "./config-fr.json", "./config-nl.json"],
   ENV_CONFIG_GEOSERVER['PRD'], ENV_CONFIG_GEOSERVER[args[0]]
+);
+
+replaceInFile(
+  ["./js/appConfig.js"],
+  ENV_CONFIG_GEOSERVER['PRDSTUB'], ENV_CONFIG_GEOSERVER[args[0]]
 );
