@@ -1714,36 +1714,6 @@
           </Style>
         </Layer>
         <Layer queryable="1">
-          <Name>BSO:RVOHR</Name>
-          <Title>RVOHR</Title>
-          <Abstract>A10_PRD_EDRLR</Abstract>
-          <KeywordList>
-            <Keyword>features</Keyword>
-            <Keyword>A10_PRD_EDRLR</Keyword>
-          </KeywordList>
-          <SRS>EPSG:31370</SRS>
-          <LatLonBoundingBox maxx="4.403611201044664" maxy="50.88672594034451" minx="4.291005174615489" miny="50.799702795863084" />
-          <BoundingBox SRS="EPSG:31370" maxx="152526.52" maxy="175180.22" minx="144602.897" miny="165502.444" />
-          <Style>
-            <Name>Alternatieve_RVOHR</Name>
-            <Title>RVOHR</Title>
-            <Abstract />
-            <LegendURL height="20" width="20">
-              <Format>image/png</Format>
-              <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=RVOHR" ns0:type="simple" />
-            </LegendURL>
-          </Style>
-          <Style>
-            <Name>RVOHR</Name>
-            <Title>RVOHR</Title>
-            <Abstract />
-            <LegendURL height="20" width="20">
-              <Format>image/png</Format>
-              <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=RVOHR&amp;style=RVOHR" ns0:type="simple" />
-            </LegendURL>
-          </Style>
-        </Layer>
-        <Layer queryable="1">
           <Name>BSO_DSV:Voorkooprecht</Name>
           <Title>Voorkooprecht (Alleen maar Ord. 18/07/2002)</Title>
           <Abstract />
@@ -3358,6 +3328,36 @@
           <LegendURL height="20" width="20">
             <Format>image/png</Format>
             <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=PER%3AZone_voor_stedelijke_herwaardering" ns0:type="simple"/>
+          </LegendURL>
+        </Style>
+      </Layer>
+      <Layer queryable="1">
+        <Name>BSO:RVOHR</Name>
+        <Title>RVOHR</Title>
+        <Abstract>A10_PRD_EDRLR</Abstract>
+        <KeywordList>
+          <Keyword>features</Keyword>
+          <Keyword>A10_PRD_EDRLR</Keyword>
+        </KeywordList>
+        <SRS>EPSG:31370</SRS>
+        <LatLonBoundingBox maxx="4.403611201044664" maxy="50.88672594034451" minx="4.291005174615489" miny="50.799702795863084" />
+        <BoundingBox SRS="EPSG:31370" maxx="152526.52" maxy="175180.22" minx="144602.897" miny="165502.444" />
+        <Style>
+          <Name>Alternatieve_RVOHR</Name>
+          <Title>RVOHR</Title>
+          <Abstract />
+          <LegendURL height="20" width="20">
+            <Format>image/png</Format>
+            <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=RVOHR" ns0:type="simple" />
+          </LegendURL>
+        </Style>
+        <Style>
+          <Name>RVOHR</Name>
+          <Title>RVOHR</Title>
+          <Abstract />
+          <LegendURL height="20" width="20">
+            <Format>image/png</Format>
+            <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=RVOHR&amp;style=RVOHR" ns0:type="simple" />
           </LegendURL>
         </Style>
       </Layer>
