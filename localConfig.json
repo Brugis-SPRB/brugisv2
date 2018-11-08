@@ -331,7 +331,7 @@
 
 		 						"activateMetedataTool": false,
 		 						"activateMapTitle": false,
-		 						"activateSortLayer": false,
+		 						"activateSortLayer": true,
 		 						"activateDownloadTool": true,
 								"activateAddLayerButton": true,
 									"visibilityCheckType":"glyph",
