@@ -4,14 +4,14 @@ const fs = require('fs')
 const glob = require('glob');
 
 const ENV_CONFIG_GEOSERVER = {
-  'DEV' : 'http://svappmavw115:8080/geoserver/ows',
+  'DEV' : 'http://10.128.81.203:8080/geoserver/ows',
   'STA' : 'http://mybrugis.irisnetlab.be/geoserver/ows',
   'PRD' : 'https://mybrugis.irisnet.be/geoserver/ows',
   'PRDSTUB' : 'https://mybrugis.irisnet.be/geoserver/www/wmsaatl/wmsc_brugis_anon.xml'
 };
 
 const ENV_CONFIG_SURVEY = {
-  'DEV' : 'http://10.1.2.125:8080/WebReperage',
+  'DEV' : 'http://10.128.81.205:8080/WebReperage',
   'STA' : 'http://mbr127.irisnetlab.be/WebReperage',
   'PRD' : "https://mbr227.irisnet.be/WebReperage"
 }

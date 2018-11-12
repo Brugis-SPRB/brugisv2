@@ -135,7 +135,7 @@ module.exports = {
     devServer: {
         proxy: [{
             context: ['/brugis/proxy', '/print'],
-            target: "http://svappmavw115:8080"
+            target: "http://10.128.81.203:8080"
         }]
     },
 
