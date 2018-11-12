@@ -1,21 +1,49 @@
-.widget-card-on-map {
-    &.react-grid-layout {
+.draggableHandle {
+    cursor: -webkit-grab;
+    cursor: -moz-grab;
+    cursor: -o-grab;
+    cursor: -ms-grab;
+    cursor: grab;
+}
+.no-drag .draggableHandle {
+    cursor: inherit;
+}
+.widget-container {
+    &.react-grid-layout.on-map {
         pointer-events: none;
     }
-    &.react-grid-layout > * {
+    &.react-grid-layout.on-map > * {
         pointer-events: auto;
     }
+    /* selection */
+    &.selection-active {
+        background-color: #555;
+        .disabled {
+            opacity: 0.2;
+            pointer-events: none;
+        }
+        .mapstore-widget-card:not(.disabled) {
+            transition: all 200ms ease-in-out;
+            &:hover {
+                transform: scale(1.03);
+                cursor: pointer;
+            }
+        }
+    }
+    &.no-drag .mapstore-widget-card {
+         -webkit-box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2), 0 2px 8px rgba(0, 0, 0, 0.2);
+        -moz-box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2), 0 2px 8px rgba(0, 0, 0, 0.2);
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2), 0 2px 8px rgba(0, 0, 0, 0.2);
+    }
     .mapstore-widget-card {
-        background: #fff;
+        background: @ms2-color-background;
         margin: 20px 0;
         overflow: visible;
         position: absolute;
         height: 100%;
         width: 100%;
         margin: 0;
-        webkit-box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
-        -moz-box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
-        box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+        .shadow-far;
         .mapstore-widget-layer {
             text-align: center;
             margin: 10px 5%;
@@ -28,8 +56,8 @@
             margin: 10px 5%;
             font-size: 22px;
             font-weight: bold;
-            border-bottom: 1px solid #ddd;
-            color: #078aa3;
+            border-bottom: 1px solid @ms2-color-shade-lighter;
+            color: @ms2-color-primary;
             .widget-title {
                 text-overflow: ellipsis;
                 width: calc(100% - 30px);
@@ -43,6 +71,9 @@
                 color: @ms2-color-primary;
             }
         }
+        .mapstore-widget-default-content {
+            margin: 10px 5%;
+        }
         .mapstore-widget-description {
             text-align: center;
             width: 90%;
@@ -51,7 +82,7 @@
         .mapstore-widget-options {
             position: absolute;
             font-size: 18px;
-            color: #078aa3;
+            color: @ms2-color-primary;
             right: 20px;
         }
         .widget-menu {
@@ -78,6 +109,17 @@
             overflow-x: hidden;
             overflow-y: auto;
         }
+
+        .counter-widget-view > div > div {
+            transform: translate(-50%, -50%);
+            position: absolute;
+            top: 38%;
+            left: 50%;
+        }
+        .counter-widget .ms2-border-layout-body {
+            position: relative;
+        }
+
     }
 }
 
@@ -118,4 +160,57 @@
     border-radius: 50%;
     width: 18px;
     height: 18px;
+}
+/* BUILDER */
+.widgets-builder-header {
+    .mapstore-info-popover {
+        position: absolute;
+        right: 0;
+        padding: 7px;
+        margin-right: 13px;
+    }
+}
+.dashboard-editor {
+    /*
+     * this makes the shadow of upper header disappear
+     * to have the optical illusion of the search input and title
+     * inside the global dashboard editor
+     */
+     position: relative;
+    .layer-selector, .map-selector {
+        .ms2-border-layout-body {
+            position: relative;
+            .compat-catalog, .map-catalog {
+                .catalog-footer {
+                    z-index: 100;
+                    .shadow-soft-up;
+                }
+                .catalog-form {
+                    width: 100%;
+                    padding: 0 auto;
+                    z-index: 100;
+                    .shadow-soft;
+                }
+            }
+        }
+    }
+
+    /*
+     * fix for google map layer in preview
+     */
+    .map-selector {
+        .ms2-border-layout-body {
+            overflow: hidden;
+        }
+        #__base_map__ {
+            position: relative;
+        }
+    }
+    /*
+     * end - fix for google map layer in preview
+     */
+}
+
+.m-padding-md {
+    padding-bottom: 15px;
 }

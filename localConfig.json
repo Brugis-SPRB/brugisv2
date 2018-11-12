@@ -389,7 +389,8 @@
 	                  "collapsible": false
                   }
                }
-            },{
+            },
+						{
 								"name": "StreetView",
 								"showIn": ["StreetViewBar"] ,
 								"cfg": {
@@ -400,7 +401,7 @@
 									"className": "square-button",
                   "closeGlyph": "1-close"
 								}
-						},
+						},"Measure",
             {
                "name":"MeasureResults",
                "cfg":{

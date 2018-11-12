@@ -42,7 +42,6 @@ const StreetView = React.createClass({
             id: "streetview",
             className: "square-button",
             text: "StreetView",
-            toggleMeasure: () => {},
             enabled: false,
             draggable: true,
             tooltipPlace: "left",

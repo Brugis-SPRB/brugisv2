@@ -8,6 +8,7 @@ function streetView(state = null, action) {
                 clickPoint: action.point
             });
         }
+
         default:
           return state;
     }
