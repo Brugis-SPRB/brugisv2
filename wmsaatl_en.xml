@@ -3609,11 +3609,11 @@
           <Name>Cadastre</Name>
           <Title>Land registry</Title>
           <Layer noSubsets="0" opaque="0" queryable="1">
-            <Name>2017</Name>
-            <Title>2017</Title>
+            <Name>2018</Name>
+            <Title>2018</Title>
             <Layer queryable="1">
-              <Name>BDU:Batiment_2017</Name>
-              <Title>Building 2017</Title>
+              <Name>BDU:Batiment_2018</Name>
+              <Title>Building 2018</Title>
               <Abstract>V_PAB_AB_0</Abstract>
               <KeywordList>
                 <Keyword>V_PAB_AB_0</Keyword>
@@ -3643,8 +3643,8 @@
               <ScaleHint max="5000.0" min="0.0" />
             </Layer>
             <Layer queryable="1">
-              <Name>BDU:Parcelle_2017</Name>
-              <Title>Parcel 2017</Title>
+              <Name>BDU:Parcelle_2018</Name>
+              <Title>Parcel 2018</Title>
               <Abstract>V_PAB_AP_0</Abstract>
               <KeywordList>
                 <Keyword>V_PAB_AP_0</Keyword>
@@ -3675,11 +3675,11 @@
             </Layer>
           </Layer>
           <Layer noSubsets="0" opaque="0" queryable="1">
-            <Name>2016</Name>
-            <Title>2016</Title>
+            <Name>2017</Name>
+            <Title>2017</Title>
             <Layer queryable="1">
-              <Name>BDU:Batiment_2016</Name>
-              <Title>Building 2016</Title>
+              <Name>BDU:Batiment_2017</Name>
+              <Title>Building 2017</Title>
               <Abstract>V_PAB_AB_1</Abstract>
               <KeywordList>
                 <Keyword>V_PAB_AB_1</Keyword>
@@ -3709,8 +3709,8 @@
               <ScaleHint max="5000.0" min="0.0" />
             </Layer>
             <Layer queryable="1">
-              <Name>BDU:Parcelle_2016</Name>
-              <Title>Parcel 2016</Title>
+              <Name>BDU:Parcelle_2017</Name>
+              <Title>Parcel 2017</Title>
               <Abstract>V_PAB_AP_1</Abstract>
               <KeywordList>
                 <Keyword>features</Keyword>
@@ -3741,11 +3741,11 @@
             </Layer>
           </Layer>
           <Layer noSubsets="0" opaque="0" queryable="1">
-            <Name>2015</Name>
-            <Title>2015</Title>
+            <Name>2016</Name>
+            <Title>2016</Title>
             <Layer queryable="1">
-              <Name>BDU:Batiment_2015</Name>
-              <Title>Building 2015</Title>
+              <Name>BDU:Batiment_2016</Name>
+              <Title>Building 2016</Title>
               <Abstract>V_PAB_AB_2</Abstract>
               <KeywordList>
                 <Keyword>V_PAB_AB_2</Keyword>
@@ -3775,8 +3775,8 @@
               <ScaleHint max="5000.0" min="0.0" />
             </Layer>
             <Layer queryable="1">
-              <Name>BDU:Parcelle_2015</Name>
-              <Title>Parcel 2015</Title>
+              <Name>BDU:Parcelle_2016</Name>
+              <Title>Parcel 2016</Title>
               <Abstract>V_PAB_AP_2</Abstract>
               <KeywordList>
                 <Keyword>features</Keyword>
