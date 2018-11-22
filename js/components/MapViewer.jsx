@@ -33,7 +33,11 @@ class MapViewer extends React.Component {
 
     componentWillMount() {
         let simplifiedLocale = this.props.locale.slice(0, 2);
-        this.props.loadMapConfig("config-" + simplifiedLocale + ".json", false);
+        if (urlQuery.customConfig) {
+            this.props.loadMapConfig(urlQuery.customConfig + ".json", false);
+        } else {
+            this.props.loadMapConfig("config-" + simplifiedLocale + ".json", false);
+        }
     }
 
     render() {
