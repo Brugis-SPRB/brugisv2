@@ -8,7 +8,7 @@ Clone the repository with the --recursive option to automatically clone submodul
 
 `git clone --recursive https://github.com/Brugis-SPRB/brugisv2.git`
 
-Install NodeJS, if needed, from [here](https://nodejs.org/en/blog/release/v0.12.7/).
+Install NodeJS, if needed, from [here](https://nodejs.org/en/). Please use LTS version.
 
 Start the development application locally:
 
