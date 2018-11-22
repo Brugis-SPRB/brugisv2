@@ -142,6 +142,7 @@
                                     <include>*.json</include>
                                     <include>wmsaatl*.xml</include>
                                     <include>img/*</include>
+                                    <include>maps/*.json</include>
                                 </includes>
                                 <excludes>
                                     <exclude>MapStore2/*</exclude>
