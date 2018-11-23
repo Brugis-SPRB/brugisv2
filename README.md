@@ -27,3 +27,10 @@ Package the app as a java web archive:
 
 `mvn clean install`
 
+Custom Maps
+-----------
+
+Default map configuration can be overrided by specifying a custom config name in the url. http://localhost:8081/?customConfig={configname}#/
+
+ie:
+http://localhost:8081/?customConfig=zeusfr#/
