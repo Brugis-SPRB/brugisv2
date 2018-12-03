@@ -190,7 +190,7 @@
     "resize-observer-polyfill": "1.5.0",
     "rxjs": "5.1.1",
     "screenfull": "3.1.0",
-    "shpjs": "3.4.2",
+    "shpjs": "https://github.com/Brugis-SPRB/shapefile-js/tarball/brugisl72fix",
     "tinycolor2": "1.4.1",
     "turf-bbox": "3.0.10",
     "turf-buffer": "3.0.10",

@@ -102,7 +102,7 @@ function mapCapaWFStoUrbisResult(wfsResponse) {
                 },
                 extent: { xmin: bbox[0], ymin: bbox[1], xmax: bbox[2], ymax: bbox[3]},
                 language: "",
-                point: { x: (bbox[2] - bbox[0]), y: (bbox[3] - bbox[1])}
+                point: { x: bbox[0] + (bbox[2] - bbox[0]) / 2, y: bbox[1] + (bbox[3] - bbox[1]) / 2}
             };
             urbisResults.result.push(urbisResult);
         });
