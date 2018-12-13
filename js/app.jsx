@@ -11,6 +11,7 @@ require('./proj/3812.js');
 require('./proj/3035.js');
 
 const {loadVersion} = require('../MapStore2/web/client/actions/version');
+const CoordinatesUtils = require('../MapStore2/web/client/utils/CoordinatesUtils');
 
 const {createSelector} = require('reselect');
 
@@ -29,6 +30,12 @@ LocaleUtils.setSupportedLocales({
         code: "nl-NL",
         description: "Nederlands"
     }
+});
+
+CoordinatesUtils.setCrsLabels({
+    "EPSG:31370": "Belge 1972 / Belgian Lambert 72",
+    "ESPG:4326": "WGS 84",
+    "ESPG:3812": "ETRS89 / Belgian Lambert 2008"
 });
 
 const startApp = () => {
