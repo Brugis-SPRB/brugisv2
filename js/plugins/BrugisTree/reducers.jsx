@@ -56,7 +56,8 @@ function wmsWalker(layers, serverMappingUrl) {
         layers.forEach(function(curLayer) {
             var wmsServer = inspectKeywords(curLayer, serverMappingUrl);
 
-            var infoFormat = wmsServer === "http://wms.ibgebim.be/ibgewms" ? "TEXT" : "JSON";
+            //var infoFormat = wmsServer === "http://wms.ibgebim.be/ibgewms" ? "TEXT" : "JSON";
+            var infoFormat = wmsServer === "https://wms.environnement.brussels/be_wms" ? "TEXT" : "JSON";
             tmpNodes.push({
                 "expanded": true,
                 "name": curLayer.name,
