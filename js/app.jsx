@@ -6,16 +6,20 @@ const LocaleUtils = require('../MapStore2/web/client/utils/LocaleUtils');
 const ol = require('openlayers');
 const proj4 = require('proj4').default;
 
-require('./proj/31370.js');
-require('./proj/3812.js');
-require('./proj/3035.js');
-
 const {loadVersion} = require('../MapStore2/web/client/actions/version');
 const CoordinatesUtils = require('../MapStore2/web/client/utils/CoordinatesUtils');
+
+
+CoordinatesUtils.setCrsLabels({
+    "EPSG:31370": "Belge 1972 / Belgian Lambert 72",
+    "EPSG:3812": "ETRS89 / Belgian Lambert 2008",
+    "EPSG:4326": "WGS 84"
+});
 
 const {createSelector} = require('reselect');
 
 require('rxjs/Rx');
+
 
 LocaleUtils.setSupportedLocales({
     "fr": {
@@ -32,13 +36,14 @@ LocaleUtils.setSupportedLocales({
     }
 });
 
-CoordinatesUtils.setCrsLabels({
-    "EPSG:31370": "Belge 1972 / Belgian Lambert 72",
-    "ESPG:4326": "WGS 84",
-    "ESPG:3812": "ETRS89 / Belgian Lambert 2008"
-});
+
 
 const startApp = () => {
+
+    require('./proj/31370.js');
+    require('./proj/3812.js');
+    require('./proj/3035.js');
+
     const StandardApp = require('./components/StandardApp');
     const {pages, pluginsDef, initialState, storeOpts, appEpics = {}} = require('./appConfig');
     // const {versionSelector} = require('../MapStore2/web/client/selectors/version');
