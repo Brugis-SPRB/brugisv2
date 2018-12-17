@@ -20,7 +20,7 @@ const ENV_CONFIG_SURVEY = {
 function replaceSync(file, from, to, enc) {
   const regExFrom = new RegExp(from, "g")
   const content = fs.readFileSync(file, enc);
-  const newContent = content.replace(from, to);
+  const newContent = content.replace(regExFrom, to);
   if (content === newContent) {
     console.log("New content equals old content for" + file + " from:" + from + " to:" + to);
     return false;
