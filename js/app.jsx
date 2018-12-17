@@ -37,7 +37,6 @@ LocaleUtils.setSupportedLocales({
 });
 
 
-
 const startApp = () => {
 
     require('./proj/31370.js');
