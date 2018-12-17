@@ -48,7 +48,7 @@
         },{
 
         	"type": "wms",
-            "url":["https://mybrugis.irisnet.be/geoserver/wms"],
+            "url":["https://mybrugis.irisnet.be/geoserver/ows"],
         	"title": "Aquarelle",
         	"name": "BCR:Aquarelle",
             "group": "background",
