@@ -4,9 +4,9 @@ const fs = require('fs')
 const glob = require('glob');
 
 const ENV_CONFIG_GEOSERVER = {
-  'DEV' : 'http://10.128.81.203:8080/geoserver/ows',
-  'STA' : 'http://mybrugis.irisnetlab.be/geoserver/ows',
-  'PRD' : 'https://mybrugis.irisnet.be/geoserver/ows',
+  'DEV' : 'http://10.128.81.203:8080/geoserver',
+  'STA' : 'http://mybrugis.irisnetlab.be/geoserver',
+  'PRD' : 'https://mybrugis.irisnet.be/geoserver',
   'PRDSTUB' : 'https://mybrugis.irisnet.be/geoserver/www/wmsaatl/wmsc_brugis_anon.xml'
 };
 
@@ -18,6 +18,7 @@ const ENV_CONFIG_SURVEY = {
 
 
 function replaceSync(file, from, to, enc) {
+  const regExFrom = new RegExp(from, "g")
   const content = fs.readFileSync(file, enc);
   const newContent = content.replace(from, to);
   if (content === newContent) {
