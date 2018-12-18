@@ -3,6 +3,12 @@
 const fs = require('fs')
 const glob = require('glob');
 
+const ENV_CONFIG_GEOSERVER_URBIS = {
+  'DEV' : 'http://10.128.81.203:8080/geoserver/URBIS/wms',
+  'STA' : 'http://mybrugis.irisnetlab.be/geoserver/URBIS/wms',
+  'PRD' : 'https://mybrugis.irisnet.be/geoserver/URBIS/wms'
+};
+
 const ENV_CONFIG_GEOSERVER = {
   'DEV' : 'http://10.128.81.203:8080/geoserver/ows',
   'STA' : 'http://mybrugis.irisnetlab.be/geoserver/ows',
@@ -55,6 +61,11 @@ replaceInFile(
 replaceInFile(
   ["./config-en.json", "./config-fr.json", "./config-nl.json"],
   ENV_CONFIG_GEOSERVER['PRD'], ENV_CONFIG_GEOSERVER[args[0]]
+);
+
+replaceInFile(
+  ["./config-en.json", "./config-fr.json", "./config-nl.json"],
+  ENV_CONFIG_GEOSERVER_URBIS['PRD'], ENV_CONFIG_GEOSERVER_URBIS[args[0]]
 );
 
 replaceInFile(
