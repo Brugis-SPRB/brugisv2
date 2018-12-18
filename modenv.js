@@ -3,6 +3,12 @@
 const fs = require('fs')
 const glob = require('glob');
 
+const ENV_CONFIG_GEOSERVER_URBIS = {
+  'DEV' : 'http://10.128.81.203:8080/geoserver/URBIS/wms',
+  'STA' : 'http://mybrugis.irisnetlab.be/geoserver/URBIS/wms',
+  'PRD' : 'https://mybrugis.irisnet.be/geoserver/URBIS/wms'
+};
+
 const ENV_CONFIG_GEOSERVER = {
   'DEV' : 'http://10.128.81.203:8080/geoserver/ows',
   'STA' : 'http://mybrugis.irisnetlab.be/geoserver/ows',
@@ -18,8 +24,9 @@ const ENV_CONFIG_SURVEY = {
 
 
 function replaceSync(file, from, to, enc) {
+  const regExFrom = new RegExp(from, "g")
   const content = fs.readFileSync(file, enc);
-  const newContent = content.replace(from, to);
+  const newContent = content.replace(regExFrom, to);
   if (content === newContent) {
     console.log("New content equals old content for" + file + " from:" + from + " to:" + to);
     return false;
@@ -54,6 +61,11 @@ replaceInFile(
 replaceInFile(
   ["./config-en.json", "./config-fr.json", "./config-nl.json"],
   ENV_CONFIG_GEOSERVER['PRD'], ENV_CONFIG_GEOSERVER[args[0]]
+);
+
+replaceInFile(
+  ["./config-en.json", "./config-fr.json", "./config-nl.json"],
+  ENV_CONFIG_GEOSERVER_URBIS['PRD'], ENV_CONFIG_GEOSERVER_URBIS[args[0]]
 );
 
 replaceInFile(
