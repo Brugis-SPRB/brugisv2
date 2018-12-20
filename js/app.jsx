@@ -45,8 +45,7 @@ const startApp = () => {
 
     const StandardApp = require('./components/StandardApp');
     const {pages, pluginsDef, initialState, storeOpts, appEpics = {}} = require('./appConfig');
-    // const {versionSelector} = require('../MapStore2/web/client/selectors/version');
-
+ 
     const routerSelector = createSelector(state => state.locale, (locale) => ({
         locale: locale || {},
         version: "no-version",
@@ -55,16 +54,7 @@ const startApp = () => {
         },
         pages
     }));
-    /*
-    const StandardRouter = connect((state) => ({
-        locale: state.locale || {},
-        pages,
-        version: versionSelector(state),
-        themeCfg: {
-            theme: "brugis"
-        },
-    }))(require('../MapStore2/web/client/components/app/StandardRouter'));
-    */
+
     const StandardRouter = connect(routerSelector)(require('../MapStore2/web/client/components/app/StandardRouter'));
     const {saveLangageEpic} = require('./appEpics');
 

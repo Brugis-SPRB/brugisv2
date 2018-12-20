@@ -3,7 +3,7 @@ const React = require('react');
 const PropTypes = require('prop-types');
 const {Form, FormGroup, FormControl, InputGroup, ControlLabel} = require('react-bootstrap');
 const FileSaver = require('file-saver');
-const LOCAL_MAPS_PREFIX = 'mapstore.localmaps.';
+const {DEFAULT_MAPS_PREFIX, LOCAL_MAPS_PREFIX} = require('./actions');
 const Message = require('../../../MapStore2/web/client/plugins/locale/Message');
 
 class SaveButton extends React.Component {
@@ -12,14 +12,16 @@ class SaveButton extends React.Component {
         onSave: PropTypes.func,
         onLoad: PropTypes.func,
         onDel: PropTypes.func,
-        onImport: PropTypes.func
+        onImport: PropTypes.func,
+        onChangeDefaultMap: PropTypes.func
     }
 
     static defaultProps = {
         onSave: () => {},
         onLoad: () => {},
         onDel: () => {},
-        onImport: () => {}
+        onImport: () => {},
+        onChangeDefaultMap: () => {}
     }
 
     constructor(props) {
@@ -38,10 +40,24 @@ class SaveButton extends React.Component {
         this.setState({loadname: e.target.options[e.target.selectedIndex].value});
     }
 
+
     renderSaved() {
-        return [<option key="---" value="">---</option>, ...Object.keys(localStorage).filter((key) => key.indexOf('mapstore.localmaps.') === 0)
+        return [...Object.keys(localStorage).filter((key) => key.indexOf('mapstore.localmaps.') === 0)
             .map((key) => key.substring('mapstore.localmaps.'.length))
             .map((name) => <option key={name} value={name}>{name}</option>)];
+    }
+
+    renderDefaultMap() {
+        let defaultMap = localStorage.get(DEFAULT_MAPS_PREFIX);
+        return [...Object.keys(localStorage).filter((key) => key.indexOf('mapstore.localmaps.') === 0)
+            .map((key) => key.substring('mapstore.localmaps.'.length))
+            .map((name) => {
+                let value = <option key={name} value={name}>{name}</option>;
+                if (name === defaultMap) {
+                    value = <option key={name} value={name} selected>{name}</option>;
+                }
+                return value;
+            })];
     }
 
     render() {
@@ -76,6 +92,7 @@ class SaveButton extends React.Component {
                   </InputGroup>
                   <InputGroup>
                       <FormControl componentClass="select" placeholder="Map Name" onChange={this.onChangeLoadName.bind(this)}>
+                            <option key="---" value="">---</option>
                           {this.renderSaved()}
                       </FormControl>
 
@@ -93,6 +110,14 @@ class SaveButton extends React.Component {
                         </ControlLabel>
                       </InputGroup.Addon>
                   </InputGroup>
+
+                </FormGroup>
+                <FormGroup controlId="formControlsSelect">
+                    <ControlLabel><Message msgId="localmaps.defaultmap"/></ControlLabel>
+                    <FormControl componentClass="select" placeholder="select" onChange={this.changeDefaultMap.bind(this)}>
+                        <option value="none"><Message msgId="localmaps.none"/></option>
+                        {this.renderSaved()}
+                    </FormControl>
                 </FormGroup>
              </Form>
             </div>);
@@ -122,6 +147,10 @@ class SaveButton extends React.Component {
     del() {
         this.props.onDel(this.state.loadname);
         this.setState({key: Math.random()});
+    }
+
+    changeDefaultMap(e) {
+        this.props.onChangeDefaultMap(e.target.value);
     }
 
     exportMap() {
