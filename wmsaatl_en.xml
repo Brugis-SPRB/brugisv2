@@ -1702,30 +1702,6 @@
             </Style>
           </Layer>
         </Layer>
-        <Layer noSubsets="0" opaque="0" queryable="1">
-          <Name>Housing</Name>
-          <Title>Housing</Title>
-          <Layer noSubsets="0" opaque="0" queryable="1">
-            <Name>BDU:Quartiers_a_loyers_majores_destines_aux_ais</Name>
-            <Title>Area with increased rents intended for AIS</Title>
-            <Abstract/>
-            <KeywordList>
-              <Keyword>A70_QUARTIERS_AIS</Keyword>
-              <Keyword>features</Keyword>
-            </KeywordList>
-            <SRS>EPSG:31370</SRS>
-            <LatLonBoundingBox maxx="4.4814185885749405" maxy="50.913653774000515" minx="4.242470212763538" miny="50.76335283201384"/>
-            <BoundingBox SRS="EPSG:31370" maxx="165088.0" maxy="185088.0" minx="140000.0" miny="160000.0"/>
-            <Style>
-              <Name>quartiers_ais</Name>
-              <Title>Quartiers a loyers majores destines aux AIS</Title>
-              <LegendURL height="40" width="100">
-                <Format>image/png</Format>
-                <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=BDU%3AQuartiers_a_loyers_majores_destines_aux_ais" ns0:type="simple"/>
-              </LegendURL>
-            </Style>
-          </Layer>
-        </Layer>
       </Layer>
       <Layer>
         <Title>Brussels Economy and Employment</Title>
@@ -2526,6 +2502,30 @@
             <Format>text/html</Format>
             <OnlineResource ns0:href="http://geonetwork.geobru.irisnetlab.be/geonetwork/srv/eng/csw?Request=GetRecordById&amp;Service=CSW&amp;Version=2.0.2&amp;elementSetName=full&amp;outputSchema=http://www.isotc211.org/2005/gmd&amp;id=5d68c6ff-8875-4fdc-85db-aa298d1ca072" ns0:type="simple" />
           </MetadataURL>
+        </Layer>
+      </Layer>
+      <Layer>
+        <Name>housing.brussels</Name>
+        <Title>housing.brussels</Title>
+        <Layer noSubsets="0" opaque="0" queryable="1">
+          <Name>BDU:Quartiers_a_loyers_majores_destines_aux_ais</Name>
+          <Title>Area with increased rents intended for AIS</Title>
+          <Abstract/>
+          <KeywordList>
+            <Keyword>A70_QUARTIERS_AIS</Keyword>
+            <Keyword>features</Keyword>
+          </KeywordList>
+          <SRS>EPSG:31370</SRS>
+          <LatLonBoundingBox maxx="4.4814185885749405" maxy="50.913653774000515" minx="4.242470212763538" miny="50.76335283201384"/>
+          <BoundingBox SRS="EPSG:31370" maxx="165088.0" maxy="185088.0" minx="140000.0" miny="160000.0"/>
+          <Style>
+            <Name>quartiers_ais</Name>
+            <Title>Quartiers a loyers majores destines aux AIS</Title>
+            <LegendURL height="40" width="100">
+              <Format>image/png</Format>
+              <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=BDU%3AQuartiers_a_loyers_majores_destines_aux_ais" ns0:type="simple"/>
+            </LegendURL>
+          </Style>
         </Layer>
       </Layer>
       <Layer>

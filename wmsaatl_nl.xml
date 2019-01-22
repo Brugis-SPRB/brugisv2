@@ -1744,30 +1744,6 @@
           </Style>
         </Layer>
       </Layer>
-      <Layer noSubsets="0" opaque="0" queryable="1">
-        <Name>Huisvesting</Name>
-        <Title>Huisvesting</Title>
-        <Layer noSubsets="0" opaque="0" queryable="1">
-          <Name>BSO:Zones_met_verhoogde_huurprijs_bestemd_voor_de_svk</Name>
-          <Title>Zones met verhoogde huurprijs bestemd voor de SVK</Title>
-          <Abstract/>
-          <KeywordList>
-            <Keyword>features</Keyword>
-            <Keyword>A70_QUARTIERS_AIS</Keyword>
-          </KeywordList>
-          <SRS>EPSG:31370</SRS>
-          <LatLonBoundingBox maxx="4.4814185885749405" maxy="50.913653774000515" minx="4.242470212763538" miny="50.76335283201384"/>
-          <BoundingBox SRS="EPSG:31370" maxx="165088.0" maxy="185088.0" minx="140000.0" miny="160000.0"/>
-          <Style>
-            <Name>Zones_met_verhoogde_huurprijs</Name>
-            <Title>Zones met verhoogde huurprijs bestemd voor de SVK</Title>
-            <LegendURL height="40" width="92">
-              <Format>image/png</Format>
-              <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=BSO%3AZones_met_verhoogde_huurprijs_bestemd_voor_de_svk" ns0:type="simple"/>
-            </LegendURL>
-          </Style>
-        </Layer>
-      </Layer>
     </Layer>
     <Layer>
       <Title>Brussel Economie en Werkgelegenheid</Title>
@@ -2477,6 +2453,31 @@
         </MetadataURL>
       </Layer>
     </Layer>
+    <Layer>
+      <Name>huisvesting.brussels</Name>
+      <Title>huisvesting.brussels</Title>
+      <Layer noSubsets="0" opaque="0" queryable="1">
+        <Name>BSO:Zones_met_verhoogde_huurprijs_bestemd_voor_de_svk</Name>
+        <Title>Zones met verhoogde huurprijs bestemd voor de SVK</Title>
+        <Abstract/>
+        <KeywordList>
+          <Keyword>features</Keyword>
+          <Keyword>A70_QUARTIERS_AIS</Keyword>
+        </KeywordList>
+        <SRS>EPSG:31370</SRS>
+        <LatLonBoundingBox maxx="4.4814185885749405" maxy="50.913653774000515" minx="4.242470212763538" miny="50.76335283201384"/>
+        <BoundingBox SRS="EPSG:31370" maxx="165088.0" maxy="185088.0" minx="140000.0" miny="160000.0"/>
+        <Style>
+          <Name>Zones_met_verhoogde_huurprijs</Name>
+          <Title>Zones met verhoogde huurprijs bestemd voor de SVK</Title>
+          <LegendURL height="40" width="92">
+            <Format>image/png</Format>
+            <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=BSO%3AZones_met_verhoogde_huurprijs_bestemd_voor_de_svk" ns0:type="simple"/>
+          </LegendURL>
+        </Style>
+      </Layer>
+    </Layer>
+
     <Layer>
       <Title>perspective.brussels</Title>
       <Abstract>A compliant implementation of WMS plus most of the SLD extension (dynamic styling). Can also generate PDF, SVG, KML, GeoRSS</Abstract>
