@@ -3641,6 +3641,7 @@
             <KeywordList>
               <Keyword>features</Keyword>
               <Keyword>V_URBIS_PAB_AP_0</Keyword>
+              <Keyword>SINGLETILE</Keyword>
             </KeywordList>
             <SRS>EPSG:31370</SRS>
             <LatLonBoundingBox maxx="4.4814185885749405" maxy="50.913653774000515" minx="4.242470212763538" miny="50.76335283201384"/>
@@ -3687,6 +3688,7 @@
             <KeywordList>
               <Keyword>features</Keyword>
               <Keyword>V_URBIS_PAB_AP_1</Keyword>
+              <Keyword>SINGLETILE</Keyword>
             </KeywordList>
             <SRS>EPSG:31370</SRS>
             <LatLonBoundingBox maxx="4.4814185885749405" maxy="50.913653774000515" minx="4.242470212763538" miny="50.76335283201384"/>
@@ -3733,6 +3735,7 @@
             <KeywordList>
               <Keyword>features</Keyword>
               <Keyword>V_URBIS_PAB_AP_2</Keyword>
+              <Keyword>SINGLETILE</Keyword>
             </KeywordList>
             <SRS>EPSG:31370</SRS>
             <LatLonBoundingBox maxx="4.4814185885749405" maxy="50.913653774000515" minx="4.242470212763538" miny="50.76335283201384"/>

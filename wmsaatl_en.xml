@@ -3677,6 +3677,7 @@
               <KeywordList>
                 <Keyword>V_PAB_AP_0</Keyword>
                 <Keyword>features</Keyword>
+                <Keyword>SINGLETILE</Keyword>
               </KeywordList>
               <SRS>EPSG:31370</SRS>
               <LatLonBoundingBox maxx="4.479916592688879" maxy="50.9136537389242" minx="4.24247021276358" miny="50.763393168788134" />
@@ -3743,6 +3744,7 @@
               <KeywordList>
                 <Keyword>features</Keyword>
                 <Keyword>V_PAB_AP_1</Keyword>
+                <Keyword>SINGLETILE</Keyword>
               </KeywordList>
               <SRS>EPSG:31370</SRS>
               <LatLonBoundingBox maxx="4.479916592688879" maxy="50.9136537389242" minx="4.24247021276358" miny="50.763393168788134" />
@@ -3778,6 +3780,7 @@
               <KeywordList>
                 <Keyword>V_PAB_AB_2</Keyword>
                 <Keyword>features</Keyword>
+                <Keyword>SINGLETILE</Keyword>
               </KeywordList>
               <SRS>EPSG:31370</SRS>
               <LatLonBoundingBox maxx="4.479855757140303" maxy="50.911995243493614" minx="4.250096849143969" miny="50.76828775272663" />
