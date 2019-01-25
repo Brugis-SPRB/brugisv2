@@ -13,12 +13,12 @@ const {Glyphicon} = require('react-bootstrap');
 const SurveyForm = require('./SurveyForm');
 const SurveyToolBox = require('./SurveyToolbox');
 const SurveyGrid = require('./SurveyGrid');
-const {toggleControl} = require('../../../MapStore2/web/client/actions/controls');
+const {setControlProperty} = require('../../../MapStore2/web/client/actions/controls');
 const {Panel} = require('react-bootstrap');
 const Dialog = require('../../../MapStore2/web/client/components/misc/Dialog');
 const Message = require('../../../MapStore2/web/client/plugins/locale/Message');
 
-const {addremoveparcelsonactivativeEpic, closebrugissurveyEpic, reloadWhenNewSurveyIsDone} = require('./epics');
+const {addremoveparcelsonactivativeEpic, closeBrugisInfo, reloadWhenNewSurveyIsDone} = require('./epics');
 
 const {
     loadBrugisSurveys,
@@ -125,7 +125,7 @@ const BrugisSurvey = React.createClass({
 
   componentDidMount() {
       this.props.onLoadBrugisSurveyTypes(this.props.webreperagehost + "/resources/ReperagesType");
-      this.interval = setInterval(this.loadSurveyTime.bind(this), 1000);
+      // this.interval = setInterval(this.loadSurveyTime.bind(this), 1000);
   },
 
   componentWillUnmount() {
@@ -260,7 +260,7 @@ const BrugisSurveyPlugin = connect((state) => ({
     geoserver: state.brugisSurvey && state.brugisSurvey.geoserver || ""
 }), {
     loadSurveys: loadBrugisSurveys,
-    toggleControl: toggleControl.bind(null, 'brugissurvey', null),
+    toggleControl: setControlProperty.bind(null, 'toolbar', 'active', 'BrugisSurvey', true),
     onChangeDrawingStatus: changeDrawingStatus,
     onEndDrawing: endDrawing,
     onBrugisSurveyDrawSurfaceToggle: brugisSurveyDrawSurfaceToggle,
@@ -280,7 +280,6 @@ module.exports = {
             // title: 'BrugisSurvey',
             icon: <img src={Urbanalyseicon} height="47" width="38"></img>,
             panel: true,
-            // tool: true,
             exclusive: true,
             priority: 1
         }
@@ -290,7 +289,7 @@ module.exports = {
     },
     epics: {
       addremoveparcelsonactivativeEpic,
-      closebrugissurveyEpic,
-      reloadWhenNewSurveyIsDone
+      reloadWhenNewSurveyIsDone,
+      closeBrugisInfo
     }
 };

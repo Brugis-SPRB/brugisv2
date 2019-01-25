@@ -8,11 +8,12 @@ const {layersSelector} = require('../../../MapStore2/web/client/selectors/layers
 const {getFeatureInfo, getVectorInfo, purgeMapInfoResults, showMapinfoMarker, hideMapinfoMarker, showMapinfoRevGeocode, hideMapinfoRevGeocode, noQueryableLayers, clearWarning, toggleMapInfoState} = require('../../../MapStore2/web/client/actions/mapInfo');
 const {changeMousePointer} = require('../../../MapStore2/web/client/actions/map');
 const {changeMapInfoFormat} = require('../../../MapStore2/web/client/actions/mapInfo');
+const {toggleControl} = require('../../../MapStore2/web/client/actions/controls');
 
 const Message = require('../../../MapStore2/web/client/plugins/locale/Message');
 const Gfiicon = require('./img/info-phil-2.svg');
 const assign = require('object-assign');
-const {purgeHightlight} = require('./epics');
+const {purgeHightlight, syncEnabledFlag, closeBrugisSurvey} = require('./epics');
 
 require('../../../MapStore2/web/client/plugins/identify/identify.css');
 
@@ -24,7 +25,7 @@ const {
 
 
 const selector = createSelector([
-    (state) => (state.mapInfo && state.mapInfo.enabled) || (state.controls && state.controls.identify && state.controls.identify.active === "info") || false,
+    (state) => (state.mapInfo && state.mapInfo.enabled) || (state.controls && state.controls.info && state.controls.info.enabled) || false,
     (state) => state.mapInfo && state.mapInfo.responses || [],
     (state) => state.mapInfo && state.mapInfo.requests || [],
     (state) => state.mapInfo && state.mapInfo.infoFormat,
@@ -115,11 +116,16 @@ module.exports = {
             tooltip: "info.tooltip",
             icon: <img src={Gfiicon} height="45" width="38"></img>,
             help: <Message msgId="helptexts.infoButton"/>,
-
-            action: toggleMapInfoState,
+            action: toggleControl.bind(null, 'info', null),  // toggleMapInfoState,
+            /*
             selector: (state) => ({
                 bsStyle: state.mapInfo && state.mapInfo.enabled ? "success" : "primary",
                 active: !!(state.mapInfo && state.mapInfo.enabled)
+            })
+            */
+            selector: (state) => ({
+                bsStyle: state.controls && state.controls.info && state.controls.info.enabled ? "success" : "primary",
+                active: !!(state.controls && state.controls.info && state.controls.info.enabled)
             })
         },
         Settings: {
@@ -135,6 +141,8 @@ module.exports = {
       purgeHightlight,
       closeFeatureGridFromIdentifyEpic,
       changeMapPointer,
-      onMapClick
+      onMapClick,
+      syncEnabledFlag,
+      closeBrugisSurvey
     }
 };

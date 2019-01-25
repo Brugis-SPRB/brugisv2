@@ -1,7 +1,8 @@
 const Rx = require('rxjs');
-var {SET_CONTROL_PROPERTY, setControlProperty, TOGGLE_CONTROL} = require('../../../MapStore2/web/client/actions/controls');
+var {SET_CONTROL_PROPERTY, TOGGLE_CONTROL, toggleControl} = require('../../../MapStore2/web/client/actions/controls');
 const {addLayer, removeLayer} = require('../../../MapStore2/web/client/actions/layers');
 const PARCEL_LAYER_ID = "SURVEY_PARCEL";
+
 
 const {
     changeDrawingStatus
@@ -27,23 +28,25 @@ const addremoveparcelsonactivativeEpic = (action$, store) =>
                   tileSize: 256,
                   tiled: true,
                   id: PARCEL_LAYER_ID
-              }));
+              }), toggleControl('brugissurvey', null));
           }
           return Rx.Observable.of(
             removeLayer(PARCEL_LAYER_ID),
             changeDrawingStatus("clean", null, 'BrugisSurvey'),
-            brugisSurveyDeleteDrawings()
+            brugisSurveyDeleteDrawings(),
+            toggleControl('brugissurvey', null)
           );
       });
 
-const closebrugissurveyEpic = (action$, store) =>
+const closeBrugisInfo = (action$, store) =>
     action$.ofType(TOGGLE_CONTROL)
-      .filter( (action) => action.control === "brugissurvey" )
+      .filter( (action) => action.control === "brugissurvey")
       .switchMap(() => {
-          let state = store.getState();
-          if (state.controls && state.controls.toolbar && state.controls.toolbar.active === "BrugisSurvey" || false) {
-              return Rx.Observable.of(setControlProperty("toolbar", "active", "BrugisSurvey", true));
-          }
+        let state = store.getState();
+        if (state.controls && state.controls.info && state.controls.info.enabled && state.controls.brugissurvey && state.controls.brugissurvey.enabled) {
+            return Rx.Observable.of(toggleControl('info'));
+        } 
+        return Rx.Observable.empty();
       });
 
 const reloadWhenNewSurveyIsDone = (action$, store) =>
@@ -57,6 +60,6 @@ const reloadWhenNewSurveyIsDone = (action$, store) =>
 
 module.exports = {
     addremoveparcelsonactivativeEpic,
-    closebrugissurveyEpic,
-    reloadWhenNewSurveyIsDone
+    reloadWhenNewSurveyIsDone,
+    closeBrugisInfo
 };
