@@ -5,7 +5,7 @@ const {createSelector} = require('reselect');
 const {mapSelector} = require('../../../MapStore2/web/client/selectors/map');
 const {layersSelector} = require('../../../MapStore2/web/client/selectors/layers');
 
-const {getFeatureInfo, getVectorInfo, purgeMapInfoResults, showMapinfoMarker, hideMapinfoMarker, showMapinfoRevGeocode, hideMapinfoRevGeocode, noQueryableLayers, clearWarning, toggleMapInfoState} = require('../../../MapStore2/web/client/actions/mapInfo');
+const {getFeatureInfo, getVectorInfo, purgeMapInfoResults, showMapinfoMarker, hideMapinfoMarker, showMapinfoRevGeocode, hideMapinfoRevGeocode, noQueryableLayers, clearWarning} = require('../../../MapStore2/web/client/actions/mapInfo');
 const {changeMousePointer} = require('../../../MapStore2/web/client/actions/map');
 const {changeMapInfoFormat} = require('../../../MapStore2/web/client/actions/mapInfo');
 const {toggleControl} = require('../../../MapStore2/web/client/actions/controls');
@@ -116,7 +116,7 @@ module.exports = {
             tooltip: "info.tooltip",
             icon: <img src={Gfiicon} height="45" width="38"></img>,
             help: <Message msgId="helptexts.infoButton"/>,
-            action: toggleControl.bind(null, 'info', null),  // toggleMapInfoState,
+            action: toggleControl.bind(null, 'info', null),
             /*
             selector: (state) => ({
                 bsStyle: state.mapInfo && state.mapInfo.enabled ? "success" : "primary",

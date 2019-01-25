@@ -21,8 +21,6 @@ const {LOAD_FEATURE_INFO} = require('../../../MapStore2/web/client/actions/mapIn
 
 const {MAP_CONFIG_LOADED} = require('../../../MapStore2/web/client/actions/config');
 
-var {SET_CONTROL_PROPERTY} = require('../../../MapStore2/web/client/actions/controls');
-
 const assign = require('object-assign');
 
 const initialState = {

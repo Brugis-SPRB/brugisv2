@@ -20,11 +20,11 @@ const closeBrugisSurvey = (action$, store) =>
     action$.ofType(TOGGLE_CONTROL)
       .filter( (action) => action.control === "info")
       .switchMap(() => {
-        let state = store.getState();
-        if (state.controls && state.controls.brugissurvey && state.controls.brugissurvey.enabled && state.controls.info && state.controls.info.enabled) {
-            return Rx.Observable.of(setControlProperty('toolbar', 'active', 'BrugisSurvey', true));
-        } 
-        return Rx.Observable.empty();
+          let state = store.getState();
+          if (state.controls && state.controls.brugissurvey && state.controls.brugissurvey.enabled && state.controls.info && state.controls.info.enabled) {
+              return Rx.Observable.of(setControlProperty('toolbar', 'active', 'BrugisSurvey', true));
+          }
+          return Rx.Observable.empty();
       });
 
 
