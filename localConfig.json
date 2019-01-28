@@ -32,7 +32,7 @@
 						 }
 					 }
 				 }
-			},"MapFooter",
+			},"MapFooter","Notifications",
 			{
 					"name" : "BrugisTree",
 					 "hide" : true,
@@ -324,7 +324,7 @@
 									  "id": "superbroleke"
 								}
 						},
-						"TOCItemsSettings",
+						"TOCItemsSettings","Notifications",
 						{
 							 "name":"TOC",
 							 "cfg":{

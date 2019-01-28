@@ -6,6 +6,7 @@ const streetviewIcon = require('./imgs/littleman-02.svg');
 const {connect} = require('react-redux');
 const {createSelector} = require('reselect');
 const StreetView = require('./StreetView');
+const {addLayer, removeLayer} = require('../../../MapStore2/web/client/actions/layers');
 
 const selector = createSelector([
     (state) => state.controls && state.controls.streetview && state.controls.streetview.active === "streetView" || false,
@@ -18,7 +19,9 @@ const selector = createSelector([
 }));
 
 const StreetViewPlugin = connect(selector, {
-    toggleControl: setControlProperty.bind(null, 'streetview', 'active', "streetView", true)
+    toggleControl: setControlProperty.bind(null, 'streetview', 'active', "streetView", true),
+    addLayer: addLayer,
+    removeLayer: removeLayer
 })(StreetView);
 
 module.exports = {

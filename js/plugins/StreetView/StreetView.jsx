@@ -5,6 +5,8 @@ const {Panel, Glyphicon} = require('react-bootstrap');
 const asyncLoading = require('react-async-loader');
 const Dialog = require('../../../MapStore2/web/client/components/misc/Dialog');
 const Message = require('../../../MapStore2/web/client/components/I18N/Message');
+const MapInfoUtils = require('../../../MapStore2/web/client/utils/MapInfoUtils');
+import mainLogo from'./imgs/littleman.png';
 
 const StreetView = React.createClass({
 
@@ -34,7 +36,10 @@ const StreetView = React.createClass({
         closeGlyph: PropTypes.string,
         google_map_api_key: PropTypes.string,
         googleMaps: PropTypes.object,
-        toggleControl: PropTypes.func
+        toggleControl: PropTypes.func,
+        addLayer: PropTypes.func,
+        removeLayer: PropTypes.func,
+        defaultIconStyle: PropTypes.object
     },
 
     getDefaultProps() {
@@ -63,7 +68,17 @@ const StreetView = React.createClass({
             tabkey: 0,
             google_map_api_key: "AIzaSyBOj4l8-OrXmpVXEpeLH-dIfjCxhGkWxh0",
             googleMaps: {},
-            toggleControl: () => {}
+            toggleControl: () => {},
+            addLayer: () => {},
+            removeLayer: () => {},
+            defaultIconStyle: {
+                iconUrl: mainLogo,  // "https://cdn.rawgit.com/pointhi/leaflet-color-markers/master/img/marker-icon-red.png",
+                shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.3.1/images/marker-shadow.png',
+                iconSize: [25, 41],
+                iconAnchor: [12, 41],
+                popupAnchor: [1, -34],
+                shadowSize: [41, 41]
+            }
         };
     },
     componentWillReceiveProps(newProps) {
@@ -75,9 +90,25 @@ const StreetView = React.createClass({
                     zoom: 1
                 };
                 this.initialize(this.ctn, infos, true);
+                let layer = MapInfoUtils.getMarkerLayer("GetFeatureInfo", {
+                    lat: newProps.lat,
+                    lng: newProps.lng
+                }, 'marker', {
+                    overrideOLStyle: true,
+                    style: this.props.defaultIconStyle
+                });
+
+                layer.id = this.props.id;
+                this.props.removeLayer(this.props.id);
+                this.props.addLayer(layer);
+            }
+        } else {
+            if (this.props.enabled) {
+                this.props.removeLayer(this.props.id);
             }
         }
     },
+
     renderHeader() {
         return (
             <span role="header">
