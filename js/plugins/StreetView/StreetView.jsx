@@ -28,6 +28,8 @@ const StreetView = React.createClass({
         tooltipPlace: PropTypes.string,
         lat: PropTypes.number,
         lng: PropTypes.number,
+        latMov: PropTypes.number,
+        lngMov: PropTypes.number,
         heading: PropTypes.number,
         pitch: PropTypes.number,
         zoom: PropTypes.number,
@@ -39,7 +41,8 @@ const StreetView = React.createClass({
         toggleControl: PropTypes.func,
         addLayer: PropTypes.func,
         removeLayer: PropTypes.func,
-        defaultIconStyle: PropTypes.object
+        defaultIconStyle: PropTypes.object,
+        updateLocation: PropTypes.func
     },
 
     getDefaultProps() {
@@ -62,6 +65,8 @@ const StreetView = React.createClass({
             },
             lat: 46.9171876,
             lng: 17.8951832,
+            latMov: 46.9171876,
+            lngMov: 17.8951832,
             heading: 100,
             pitch: 0,
             zoom: 1,
@@ -78,7 +83,8 @@ const StreetView = React.createClass({
                 iconAnchor: [12, 41],
                 popupAnchor: [1, -34],
                 shadowSize: [41, 41]
-            }
+            },
+            updateLocation: () => {}
         };
     },
     componentWillReceiveProps(newProps) {
@@ -87,20 +93,14 @@ const StreetView = React.createClass({
                 let infos = {
                     position: {lat: newProps.lat, lng: newProps.lng},
                     pov: {heading: 0, pitch: 0},
-                    zoom: 1
+                    zoom: 1,
+                    linksControl: false
                 };
-                this.initialize(this.ctn, infos, true);
-                let layer = MapInfoUtils.getMarkerLayer("GetFeatureInfo", {
-                    lat: newProps.lat,
-                    lng: newProps.lng
-                }, 'marker', {
-                    overrideOLStyle: true,
-                    style: this.props.defaultIconStyle
-                });
-
-                layer.id = this.props.id;
-                this.props.removeLayer(this.props.id);
-                this.props.addLayer(layer);
+                this.initialize(this.ctn, infos, {lat: newProps.lat, lng: newProps.lng});
+            } else {
+                if (this.hasMovedInsideStreetView(newProps)) {
+                    this.showMarker(newProps.latMov, newProps.lngMov);
+                }
             }
         } else {
             if (this.props.enabled) {
@@ -113,7 +113,7 @@ const StreetView = React.createClass({
         return (
             <span role="header">
                 {this.props.headerGlyph ? <Glyphicon glyph={this.props.headerGlyph} /> : null}&nbsp;<Message msgId="StreetView" />
-                <button onClick={this.props.toggleControl} className="close">{this.props.closeGlyph ? <Glyphicon glyph={this.props.closeGlyph}/> : <span>×</span>}</button>
+                <button onClick={this.handleClose} className="close">{this.props.closeGlyph ? <Glyphicon glyph={this.props.closeGlyph}/> : <span>×</span>}</button>
             </span>
         );
     },
@@ -170,13 +170,38 @@ const StreetView = React.createClass({
         return null;
     },
 
-    initialize(canvas, infos, update) {
-        if (this.props.googleMaps && typeof (this.streetView) === "undefined" || update === true) {
+    initialize(canvas, infos, pos) {
+        if (this.props.googleMaps && typeof (this.streetView) === "undefined") {
             this.streetView = new this.props.googleMaps.StreetViewPanorama(
-              canvas,
-              infos
+                canvas,
+                infos
             );
+            this.streetView.addListener('position_changed', function() {
+                let currentPos = this.streetView.getPosition();      
+                let currentPosLat = currentPos.lat();
+                let currentPosLng = currentPos.lng();
+
+                this.props.updateLocation({
+                    lat: currentPosLat,
+                    lng: currentPosLng
+                });
+            }.bind(this));
+        } else {
+            this.streetView.setPosition(pos);
         }
+    },
+
+    showMarker(lat, lng) {
+        let layer = MapInfoUtils.getMarkerLayer("GetFeatureInfo", {
+            lat: lat,
+            lng: lng
+        }, 'marker', {
+            overrideOLStyle: true,
+            style: this.props.defaultIconStyle
+        });
+        layer.id = this.props.id;
+        this.props.removeLayer(this.props.id);
+        this.props.addLayer(layer);
     },
 
     needStreetViewRefresh(newProps) {
@@ -187,6 +212,18 @@ const StreetView = React.createClass({
             return true;
         }
         return false;
+    },
+
+    hasMovedInsideStreetView(newProps) {
+        if (this.props.latMov !== newProps.latMov || this.props.lngMov !== newProps.lngMov) {
+            return true;
+        }
+        return false;
+    },
+
+    handleClose() {
+        delete this.streetView;
+        this.props.toggleControl();
     }
 });
 
