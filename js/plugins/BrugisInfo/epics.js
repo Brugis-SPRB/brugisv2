@@ -27,9 +27,20 @@ const closeBrugisSurvey = (action$, store) =>
           return Rx.Observable.empty();
       });
 
+const closeStreetView = (action$, store) =>
+    action$.ofType(TOGGLE_CONTROL)
+      .filter( (action) => action.control === "info")
+      .switchMap(() => {
+          let state = store.getState();
+          if (state.controls && state.controls.streetview && state.controls.streetview.active === "streetView") {
+              return Rx.Observable.of(setControlProperty('streetview', 'active', 'streetView', true));
+          }
+          return Rx.Observable.empty();
+      });
 
 module.exports = {
     purgeHightlight,
     syncEnabledFlag,
-    closeBrugisSurvey
+    closeBrugisSurvey,
+    closeStreetView
 };

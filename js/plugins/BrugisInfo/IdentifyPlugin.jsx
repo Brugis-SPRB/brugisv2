@@ -13,7 +13,7 @@ const {toggleControl} = require('../../../MapStore2/web/client/actions/controls'
 const Message = require('../../../MapStore2/web/client/plugins/locale/Message');
 const Gfiicon = require('./img/info-phil-2.svg');
 const assign = require('object-assign');
-const {purgeHightlight, syncEnabledFlag, closeBrugisSurvey} = require('./epics');
+const {purgeHightlight, syncEnabledFlag, closeBrugisSurvey, closeStreetView} = require('./epics');
 
 require('../../../MapStore2/web/client/plugins/identify/identify.css');
 
@@ -117,12 +117,7 @@ module.exports = {
             icon: <img src={Gfiicon} height="45" width="38"></img>,
             help: <Message msgId="helptexts.infoButton"/>,
             action: toggleControl.bind(null, 'info', null),
-            /*
-            selector: (state) => ({
-                bsStyle: state.mapInfo && state.mapInfo.enabled ? "success" : "primary",
-                active: !!(state.mapInfo && state.mapInfo.enabled)
-            })
-            */
+
             selector: (state) => ({
                 bsStyle: state.controls && state.controls.info && state.controls.info.enabled ? "success" : "primary",
                 active: !!(state.controls && state.controls.info && state.controls.info.enabled)
@@ -143,6 +138,7 @@ module.exports = {
       changeMapPointer,
       onMapClick,
       syncEnabledFlag,
-      closeBrugisSurvey
+      closeBrugisSurvey,
+      closeStreetView
     }
 };

@@ -8,6 +8,7 @@ const {createSelector} = require('reselect');
 const StreetView = require('./StreetView');
 const {addLayer, removeLayer} = require('../../../MapStore2/web/client/actions/layers');
 const {updateLocation} = require('./actions');
+const {closeBrugisInfo} = require('./epics');
 
 const selector = createSelector([
     (state) => state.controls && state.controls.streetview && state.controls.streetview.active === "streetView" || false,
@@ -44,5 +45,8 @@ module.exports = {
     }),
     reducers: {
       streetView: require('./reducers')
+    },
+    epics: {
+      closeBrugisInfo
     }
 };
