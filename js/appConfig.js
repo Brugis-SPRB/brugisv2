@@ -84,6 +84,12 @@ module.exports = {
                     "type": "wms",
                     "title": "IBSA WMS",
                     "autoload": false
+                  },
+                  'CIRB WMS': {
+                    "url": "http://geoservices-urbis.irisnet.be/geoserver/ows?",
+                    "type": "wms",
+                    "title": "CIRB WMS",
+                    "autoload": false
                   }
                 }
               }
