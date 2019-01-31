@@ -177,7 +177,7 @@ const StreetView = React.createClass({
                 infos
             );
             this.streetView.addListener('position_changed', function() {
-                let currentPos = this.streetView.getPosition();      
+                let currentPos = this.streetView.getPosition();
                 let currentPosLat = currentPos.lat();
                 let currentPosLng = currentPos.lng();
 
