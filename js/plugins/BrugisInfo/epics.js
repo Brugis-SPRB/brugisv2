@@ -32,7 +32,7 @@ const closeStreetView = (action$, store) =>
       .filter( (action) => action.control === "info")
       .switchMap(() => {
           let state = store.getState();
-          if (state.controls && state.controls.streetview && state.controls.streetview.active === "streetView") {
+          if (state.controls && state.controls.streetview && state.controls.streetview.active === "streetView" && state.controls.info && state.controls.info.enabled) {
               return Rx.Observable.of(setControlProperty('streetview', 'active', 'streetView', true));
           }
           return Rx.Observable.empty();

@@ -89,6 +89,9 @@ const StreetView = React.createClass({
     },
     componentWillReceiveProps(newProps) {
         if (newProps.enabled) {
+            if (newProps.enabled && !this.props.enabled) {
+                delete this.streetView;
+            }
             if (this.needStreetViewRefresh(newProps)) {
                 let infos = {
                     position: {lat: newProps.lat, lng: newProps.lng},

@@ -6,7 +6,8 @@ const closeBrugisInfo = (action$, store) =>
     .filter( (action) => action.toggle === true && action.value === "streetView" && action.control === "streetview")
       .switchMap(() => {
           let state = store.getState();
-          if (state.controls && state.controls.toolbar && state.controls.streetview.active === "streetView" && state.controls && state.controls.info && state.controls.info.enabled) {
+          if (state.controls && state.controls.toolbar && state.controls.streetview.active === "streetView"
+                 && state.controls && state.controls.info && state.controls.info.enabled) {
               return Rx.Observable.of(toggleControl('info'));
           }
           return Rx.Observable.empty();
