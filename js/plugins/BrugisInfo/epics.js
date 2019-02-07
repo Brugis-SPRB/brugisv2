@@ -9,38 +9,27 @@ const purgeHightlight = (action$) =>
           return Rx.Observable.of(changeDrawingStatus("clean", null, 'BrugisInfo'));
       });
 
-const syncEnabledFlag = (action$) =>
-    action$.ofType(TOGGLE_CONTROL)
-      .filter( (action) => action.control === "info")
-      .switchMap(() => {
-          return Rx.Observable.of(toggleMapInfoState());
-      });
-
-const closeBrugisSurvey = (action$, store) =>
+const syncEnabledFlag = (action$, store) =>
     action$.ofType(TOGGLE_CONTROL)
       .filter( (action) => action.control === "info")
       .switchMap(() => {
           let state = store.getState();
-          if (state.controls && state.controls.brugissurvey && state.controls.brugissurvey.enabled && state.controls.info && state.controls.info.enabled) {
-              return Rx.Observable.of(setControlProperty('toolbar', 'active', 'BrugisSurvey', true));
-          }
-          return Rx.Observable.empty();
-      });
+          let mustCloseInfo = Rx.Observable.empty();
+          let mustCloneStreet = Rx.Observable.empty();
 
-const closeStreetView = (action$, store) =>
-    action$.ofType(TOGGLE_CONTROL)
-      .filter( (action) => action.control === "info")
-      .switchMap(() => {
-          let state = store.getState();
-          if (state.controls && state.controls.streetview && state.controls.streetview.active === "streetView" && state.controls.info && state.controls.info.enabled) {
-              return Rx.Observable.of(setControlProperty('streetview', 'active', 'streetView', true));
+          if (state.controls.info && state.controls.info.enabled) {
+              if (state.controls && state.controls.brugissurvey && state.controls.brugissurvey.enabled) {
+                  mustCloseInfo = Rx.Observable.of(setControlProperty('toolbar', 'active', 'BrugisSurvey', true));
+              }
+
+              if (state.controls && state.controls.streetview && state.controls.streetview.active === "streetView") {
+                  mustCloneStreet = Rx.Observable.of(setControlProperty('streetview', 'active', 'streetView', true));
+              }
           }
-          return Rx.Observable.empty();
+          return Rx.Observable.merge(Rx.Observable.of(toggleMapInfoState()), mustCloseInfo, mustCloneStreet);
       });
 
 module.exports = {
     purgeHightlight,
-    syncEnabledFlag,
-    closeBrugisSurvey,
-    closeStreetView
+    syncEnabledFlag
 };

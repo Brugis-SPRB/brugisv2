@@ -18,7 +18,7 @@ const {Panel} = require('react-bootstrap');
 const Dialog = require('../../../MapStore2/web/client/components/misc/Dialog');
 const Message = require('../../../MapStore2/web/client/plugins/locale/Message');
 
-const {addremoveparcelsonactivativeEpic, closeBrugisInfo, reloadWhenNewSurveyIsDone} = require('./epics');
+const {addremoveparcelsonactivativeEpic, reloadWhenNewSurveyIsDone} = require('./epics');
 
 const {
     loadBrugisSurveys,
@@ -289,7 +289,6 @@ module.exports = {
     },
     epics: {
       addremoveparcelsonactivativeEpic,
-      reloadWhenNewSurveyIsDone,
-      closeBrugisInfo
+      reloadWhenNewSurveyIsDone
     }
 };

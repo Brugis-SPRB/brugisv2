@@ -13,7 +13,7 @@ const {toggleControl} = require('../../../MapStore2/web/client/actions/controls'
 const Message = require('../../../MapStore2/web/client/plugins/locale/Message');
 const Gfiicon = require('./img/info-phil-2.svg');
 const assign = require('object-assign');
-const {purgeHightlight, syncEnabledFlag, closeBrugisSurvey, closeStreetView} = require('./epics');
+const {purgeHightlight, syncEnabledFlag} = require('./epics');
 
 require('../../../MapStore2/web/client/plugins/identify/identify.css');
 
@@ -137,8 +137,6 @@ module.exports = {
       closeFeatureGridFromIdentifyEpic,
       changeMapPointer,
       onMapClick,
-      syncEnabledFlag,
-      closeBrugisSurvey,
-      closeStreetView
+      syncEnabledFlag
     }
 };

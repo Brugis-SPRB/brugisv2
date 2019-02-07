@@ -1,5 +1,5 @@
 const Rx = require('rxjs');
-var {SET_CONTROL_PROPERTY, TOGGLE_CONTROL, toggleControl} = require('../../../MapStore2/web/client/actions/controls');
+var {SET_CONTROL_PROPERTY, setControlProperty, toggleControl} = require('../../../MapStore2/web/client/actions/controls');
 const {addLayer, removeLayer} = require('../../../MapStore2/web/client/actions/layers');
 const PARCEL_LAYER_ID = "SURVEY_PARCEL";
 
@@ -17,18 +17,34 @@ const addremoveparcelsonactivativeEpic = (action$, store) =>
       .switchMap(() => {
           let state = store.getState();
           if (state.controls && state.controls.toolbar && state.controls.toolbar.active === "BrugisSurvey" || false) {
-              return Rx.Observable.of(addLayer({
-                  type: "wms",
-                  url: state.brugisSurvey.geoserver,
-                  visibility: true,
-                  name: "BDU:Parcelle_2017",
-                  title: "Parcelle",
-                  group: "brugis",
-                  origin: [140000.0, 160000.0],
-                  tileSize: 256,
-                  tiled: true,
-                  id: PARCEL_LAYER_ID
-              }), toggleControl('brugissurvey', null));
+              let baseobs = Rx.Observable.from([addLayer({
+                    type: "wms",
+                    url: state.brugisSurvey.geoserver,
+                    visibility: true,
+                    name: "BDU:Parcelle_2017",
+                    title: "Parcelle",
+                    group: "brugis",
+                    origin: [140000.0, 160000.0],
+                    tileSize: 256,
+                    tiled: true,
+                    id: PARCEL_LAYER_ID
+              }), toggleControl('brugissurvey', null)]);
+
+              let mustCloseInfo = Rx.Observable.empty();
+              if (state.controls && state.controls.info && state.controls.info.enabled) {
+                  mustCloseInfo = Rx.Observable.of(toggleControl('info'));
+              }
+
+              let mustCloneStreet = Rx.Observable.empty();
+              if (state.controls && state.controls.streetview && state.controls.streetview.active === "streetView") {
+                  mustCloneStreet = Rx.Observable.of(setControlProperty('streetview', 'active', 'streetView', true));
+              }
+
+              return Rx.Observable.merge(
+                baseobs,
+                mustCloseInfo,
+                mustCloneStreet
+              );
           }
           return Rx.Observable.of(
             removeLayer(PARCEL_LAYER_ID),
@@ -36,17 +52,6 @@ const addremoveparcelsonactivativeEpic = (action$, store) =>
             brugisSurveyDeleteDrawings(),
             toggleControl('brugissurvey', null)
           );
-      });
-
-const closeBrugisInfo = (action$, store) =>
-    action$.ofType(TOGGLE_CONTROL)
-      .filter( (action) => action.control === "brugissurvey")
-      .switchMap(() => {
-          let state = store.getState();
-          if (state.controls && state.controls.info && state.controls.info.enabled && state.controls.brugissurvey && state.controls.brugissurvey.enabled) {
-              return Rx.Observable.of(toggleControl('info'));
-          }
-          return Rx.Observable.empty();
       });
 
 const reloadWhenNewSurveyIsDone = (action$, store) =>
@@ -60,6 +65,5 @@ const reloadWhenNewSurveyIsDone = (action$, store) =>
 
 module.exports = {
     addremoveparcelsonactivativeEpic,
-    reloadWhenNewSurveyIsDone,
-    closeBrugisInfo
+    reloadWhenNewSurveyIsDone
 };
