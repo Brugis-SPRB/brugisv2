@@ -147,7 +147,6 @@
 				 }
 			},
 			{ "name" : "ScaleBox" },
-
 			{
 				 "name":"MetadataExplorer",
 				 "cfg":{
@@ -292,7 +291,7 @@
 									 }
 								 }
 							 }
-						},"MapFooter","BestEffort",
+						},"MapFooter","BestEffort","BrugisService",
             {
                 "name" : "BrugisTree",
 								"cfg" : {

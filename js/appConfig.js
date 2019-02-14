@@ -7,11 +7,7 @@ module.exports = {
     }, {
         name: "infos",
         path: "/infos",
-        component: require('./pages/Home')
-    }, {
-        name: "main",
-        path: "/main",
-        component: require('./pages/Main')
+        component: require('./pages/BrugisInfo')
     }],
     pluginsDef: require('./plugins.js'),
     initialState: {
