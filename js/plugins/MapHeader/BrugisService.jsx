@@ -1,7 +1,7 @@
 const React = require('react');
 const assign = require('object-assign');
 const PropTypes = require('prop-types');
-const {Glyphicon, Tooltip, Button, OverlayTrigger} = require('react-bootstrap');
+const {Glyphicon, Tooltip, Button} = require('react-bootstrap');
 
 const {goToPage} = require('../../../MapStore2/web/client/actions/router');
 const Message = require('../../../MapStore2/web/client/components/I18N/Message');

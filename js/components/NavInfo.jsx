@@ -48,7 +48,7 @@ class NavInfo extends React.Component {
                         News !
                 </NavItem>
                 <NavItem>
-                        WebServices
+                        Content
                 </NavItem>
                 <NavItem>
                         Contact
