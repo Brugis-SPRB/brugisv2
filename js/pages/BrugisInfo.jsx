@@ -16,13 +16,19 @@ class BrugisInfo extends React.Component {
         name: PropTypes.string,
         mode: PropTypes.string,
         match: PropTypes.object,
-        loadNews: PropTypes.func
+        loadNews: PropTypes.func,
+        locale: PropTypes.string
+    };
+
+    static contextTypes = {
+        router: PropTypes.object
     };
 
     static defaultProps = {
         name: "brugis",
         mode: 'desktop',
-        loadNews: () => {}
+        loadNews: () => {},
+        locale: 'en-EN'
     };
 
     componentWillMount() {
@@ -47,19 +53,20 @@ class BrugisInfo extends React.Component {
                 </Navbar.Brand>
                 <NavInfo />
                 <Nav pullRight>
-                    <NavItem eventKey={1} href="#" onClick={this.goBrugis()} >Back to brugis</NavItem>
+                    <NavItem onClick={this.goBrugis.bind(this)}>Back to brugis</NavItem>
                 </Nav>
             </Navbar>
             <Grid>
                 <InfoDescription />
-                <h2 id="news">News</h2>
-                <BrugisNews />
-                <h2 id="news">Content</h2>
+                <h2 id="newsId">News</h2>
+                <BrugisNews locale={this.props.locale} />
+                <h2 id="contentId">Content</h2>
                 <Tabs defaultActiveKey={2} id="uncontrolled-tab-example">
                     <Tab eventKey={1} title="Tab 1">Tab 1 content</Tab>
                     <Tab eventKey={2} title="Tab 2">Tab 2 content</Tab>
                     <Tab eventKey={3} title="Tab 3" disabled>Tab 3 content</Tab>
                 </Tabs>
+                <h2 id="contactId">Contact</h2>
                 <BrugisContact />
             </Grid>
      </div>);
@@ -71,7 +78,8 @@ class BrugisInfo extends React.Component {
 }
 
 module.exports = connect((state) => ({
-    mode: urlQuery.mobile || state.browser && state.browser.mobile ? 'mobile' : 'desktop'
+    mode: urlQuery.mobile || state.browser && state.browser.mobile ? 'mobile' : 'desktop',
+    locale: state.locale && state.locale.current || "fr-FR"
 }),
     {
         loadNews: () => {}

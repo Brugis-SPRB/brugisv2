@@ -31,26 +31,16 @@ class NavInfo extends React.Component {
        minWidth: 768
    };
 
-   getLinks = () => {
-       return (<NavItem
-            key="nv1"
-            target="_blank"
-            href="www.google.be"
-            onClick={isString(item.linkId) ? () => this.scroolIntoView(item.linkId) : () => {}}>
-            {"Marcel"}
-        </NavItem>);
-   };
-
    render() {
        return (
             <Nav {...this.props.navProps}>
-                <NavItem>
+                <NavItem onClick={() => this.scroolIntoView("newsId") }>
                         News !
                 </NavItem>
-                <NavItem>
+                <NavItem onClick={() => this.scroolIntoView("contentId") }>
                         Content
                 </NavItem>
-                <NavItem>
+                <NavItem onClick={() => this.scroolIntoView("contactId") }>
                         Contact
                 </NavItem>
             </Nav>
