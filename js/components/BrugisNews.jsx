@@ -9,13 +9,16 @@ class BrugisNews extends React.Component {
         style: PropTypes.object,
         className: PropTypes.string,
         name: PropTypes.string,
-        locale: PropTypes.string
+        locale: PropTypes.string,
+        contentTabStyle: PropTypes.string
     };
 
     static defaultProps = {
         name: 'Brugis',
         className: 'bg-news',
-        style: {}
+        contentTabStyle: {
+            'min-height': '300px'
+        }
     };
 
     renderNews() {
@@ -38,7 +41,7 @@ class BrugisNews extends React.Component {
     render() {
         return (
                 <Row>
-                    <Accordion>
+                    <Accordion style={this.props.contentTabStyle}>
                         {this.renderNews()}
                     </Accordion>
                 </Row>

@@ -17,7 +17,8 @@ class BrugisInfo extends React.Component {
         mode: PropTypes.string,
         match: PropTypes.object,
         loadNews: PropTypes.func,
-        locale: PropTypes.string
+        locale: PropTypes.string,
+        contentTabStyle: PropTypes.string
     };
 
     static contextTypes = {
@@ -28,7 +29,10 @@ class BrugisInfo extends React.Component {
         name: "brugis",
         mode: 'desktop',
         loadNews: () => {},
-        locale: 'en-EN'
+        locale: 'en-EN',
+        contentTabStyle: {
+            'min-height': '300px'
+        }
     };
 
     componentWillMount() {
@@ -46,8 +50,6 @@ class BrugisInfo extends React.Component {
                 <Navbar.Brand href="#home">
                 <img
                     src="../../assets/img/brugis_logo.jpg"
-                    width="30"
-                    height="30"
                     alt="Brugis"
                 />
                 </Navbar.Brand>
@@ -61,7 +63,7 @@ class BrugisInfo extends React.Component {
                 <h2 id="newsId">News</h2>
                 <BrugisNews locale={this.props.locale} />
                 <h2 id="contentId">Content</h2>
-                <Tabs defaultActiveKey={2} id="uncontrolled-tab-example">
+                <Tabs defaultActiveKey={2} id="content-tab" style={this.props.contentTabStyle} >
                     <Tab eventKey={1} title="Tab 1">Tab 1 content</Tab>
                     <Tab eventKey={2} title="Tab 2">Tab 2 content</Tab>
                     <Tab eventKey={3} title="Tab 3" disabled>Tab 3 content</Tab>
