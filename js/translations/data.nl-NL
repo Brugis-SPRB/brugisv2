@@ -903,7 +903,7 @@
       "downloadonlycurrentpage": "Enkel de huidige pagina downloaden",
       "error": {
         "title": "Fout tijdens exporteren",
-        "invalidOutputFormat": "Omdat BruGIS geen authentieke manager / bron voor de geselecteerde laag is, is de download niet beschikbaar."
+        "invalidOutputFormat": "BruGIS is geen beheerder / authentieke bron voor de geselecteerde laag, daarom is de download niet beschikbaar."
       }
     },
     "vectorstyler": {
