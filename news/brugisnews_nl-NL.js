@@ -21,6 +21,13 @@ const news = {
             "defcon": "2",
             "title": "Jean",
             "message": "poakpokdzokapokdopakopzkdpo"
+        },
+        {
+            "datestart": "2019-01-01",
+            "dateend": "2019-02-29",
+            "defcon": "2",
+            "title": "Nouvelle news",
+            "message": "zfoioijeoifzjoizjfojzeioejfzijfoi"
         }
     ]
 };
