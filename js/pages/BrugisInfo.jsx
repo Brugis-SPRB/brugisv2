@@ -7,6 +7,7 @@ import InfoDescription from '../components/InfoDescription';
 import BrugisNews from "../components/BrugisNews";
 import BrugisContact from "../components/BrugisContact";
 const {goToPage} = require('../../MapStore2/web/client/actions/router');
+import { Parallax, Background } from 'react-parallax';
 
 const url = require('url');
 const urlQuery = url.parse(window.location.href, true).query;
@@ -58,19 +59,50 @@ class BrugisInfo extends React.Component {
                     <NavItem onClick={this.goBrugis.bind(this)}>Back to brugis</NavItem>
                 </Nav>
             </Navbar>
-            <Grid>
                 <InfoDescription />
-                <h2 id="newsId">News</h2>
-                <BrugisNews locale={this.props.locale} />
-                <h2 id="contentId">Content</h2>
-                <Tabs defaultActiveKey={2} id="content-tab" style={this.props.contentTabStyle} >
-                    <Tab eventKey={1} title="Tab 1">Tab 1 content</Tab>
-                    <Tab eventKey={2} title="Tab 2">Tab 2 content</Tab>
-                    <Tab eventKey={3} title="Tab 3" disabled>Tab 3 content</Tab>
-                </Tabs>
-                <h2 id="contactId">Contact</h2>
-                <BrugisContact />
-            </Grid>
+                {/* -----basic config-----*/}
+
+                <Parallax
+                    strength={400}
+                    bgImage="http://www.fillmurray.com/500/320"
+                >
+                    <Grid>
+                        <h2 id="newsId">News</h2>
+                        <BrugisNews locale={this.props.locale} />
+                        <div style={{ height: '300px' }} />
+                    </Grid>
+                </Parallax>
+
+                <Parallax
+                    bgImage="https://imagesvc.timeincapp.com/v3/fan/image?url=https://winteriscoming.net/wp-content/blogs.dir/385/files/2017/07/white-walker-closeup.jpg&c=sc&w=1366&h=768"
+                    bgImageAlt="the cat"
+                    strength={200}
+                >
+                    <Grid>
+                        <h2 id="contentId">Content</h2>
+                        <Tabs defaultActiveKey={2} id="content-tab" style={this.props.contentTabStyle} >
+                            <Tab eventKey={1} title="Tab 1">Tab 1 content</Tab>
+                            <Tab eventKey={2} title="Tab 2">Tab 2 content</Tab>
+                            <Tab eventKey={3} title="Tab 3" disabled>Tab 3 content</Tab>
+                        </Tabs>
+                        <div style={{ height: '300px' }} />
+                    </Grid>
+                </Parallax>
+
+                <Parallax
+                    blur={10}
+                    bgImage="http://www.fillmurray.com/500/320"
+                    bgImageAlt="the cat"
+                    strength={200}
+                >
+                    <Grid>
+                        <h2 id="contactId">Contact</h2>
+                        <BrugisContact />
+                        <div style={{ height: '200px' }} />
+                    </Grid>
+                </Parallax>
+
+            
      </div>);
     }
 
