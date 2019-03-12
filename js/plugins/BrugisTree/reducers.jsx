@@ -10,6 +10,7 @@ const SERVER_MAPPING_URL = {
 											"CIRB WMS - Geoserver": "https://geoservices-urbis.irisnet.be/geoserver/ows",
 											"STIB WMS - Geoserver": "http://gis.irisnet.be/geoserver/stib_mivb/wms",
 											"Bruxelles Mobilité WMS - Geoserver": "http://data-mobility.irisnet.be/geoserver/bm_inspire_en/ows",
+											"Bruxelles Mobilité WMS - Geoserver - bm_security": "http://data-mobility.brussels/geoserver/bm_security/",
 											"IBGE WMS - Mapserver": "http://wms.ibgebim.be/ibgewms",
 											"IBGE WMS - Mapserver - Fr": "https://wms.environnement.brussels/be_wms",
 											"IBGE WMS - Mapserver - Nl": "https://wms.environnement.brussels/lb_wms"
