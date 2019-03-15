@@ -8,8 +8,10 @@ import BrugisNews from "../components/BrugisNews";
 import BrugisContact from "../components/BrugisContact";
 const {goToPage} = require('../../MapStore2/web/client/actions/router');
 
-import Parallax from 'react-springy-parallax';
+import Parallax from '../components/Parallax';
+//import Parallax from 'react-springy-parallax'
 import Animated from 'animated/lib/targets/react-dom';
+import Easing from 'animated/lib/Easing';
 
 import AliceCarousel from 'react-alice-carousel';
 import "react-alice-carousel/lib/alice-carousel.css";
@@ -81,54 +83,70 @@ class BrugisInfo extends React.Component {
             color: 'white',
             display: 'flex', alignItems: 'center', justifyContent: 'center'
         };
-        const handleOnDragStart = e => e.preventDefault();
+
         const items = this.galleryItems();
         return (<div>
 
-                <Parallax ref="parallax" pages={3} scrolling={true}>
+                <Parallax ref="parallax" pages={2} scrolling={true} effect={(animation, toValue) =>
+                    Animated.timing(animation, { toValue, duration: 0 })}
+                >
 
                 <Parallax.Layer
                     offset={0} speed={0} factor={3}
                     style={{ backgroundImage: burl('stars.svg'), backgroundSize: 'cover' }}
                 />
                 <Parallax.Layer
-                    offset={0} speed={0.001} factor={3}
-                    style={{ backgroundImage: burl('BruGIS_Vintage_02.png'), backgroundSize: 'cover' }}
+                    offset={0} speed={-1} factor={1}
+                    style={{ backgroundImage: burl('BruGIS_Vintage_2000.jpg'), backgroundSize: 'cover' }}
+                   
                 />
                     <Parallax.Layer
                         offset={0} speed={1} factor={1}
-                        style={{ backgroundImage: burl('brugis.png'), backgroundSize: 'cover' }}
+                        style={{ backgroundImage: burl('brugis_2000.png'), backgroundSize: 'contain' }}
                     />
                 <Parallax.Layer
-                    offset={0} speed={0.01} factor={3}
-                    style={{ backgroundImage: burl('achtergrond_02.png'), backgroundSize: 'cover' }}
+                    offset={0} speed={-0.5} factor={1.2}
+                    style={{ backgroundImage: burl('achtergrond_2000.png'), backgroundSize: 'cover' }}
+                   
                     >
                 </Parallax.Layer>
 
                     <Parallax.Layer
                         offset={0} speed={1} factor={1}
-                        style={{ backgroundImage: burl('voorgrond.png'), backgroundSize: 'cover' }}
+                        style={{ backgroundImage: burl('voorgrond_2000.png'), backgroundSize: 'contain' }}
                         onClick={() => this.refs.parallax.scrollTo(1)}
                     />
 
                     <Parallax.Layer
-                        offset={1}
+                        offset={0.8}
                         speed={1}
                         style={styles}
                     >
-                        <Grid style={{backgroundColor: 'white', height: '80%', color: 'black', width: '100%'}}>
+                        <Grid style={{backgroundColor: 'white', height: '60%', color: 'black', width: '80%'}}>
                            <h2> News </h2>
                            <AliceCarousel items={items} responsive={this.responsive} />
                         </Grid>
                     </Parallax.Layer>
 
                     <Parallax.Layer
-                        offset={2}
-                        speed={0.5}
+                        offset={1}
+                        speed={1}
+                        style={styles}
+                    >
+                        <Grid style={{backgroundColor: 'white', height: '60%', color: 'black', width: '80%'}}>
+                           <h2> WebServices </h2>
+                           
+                        </Grid>
+                    </Parallax.Layer>
+
+                    <Parallax.Layer
+                        offset={1.5}
+                        speed={1}
                         style={styles}
                         onClick={() => this.refs.parallax.scrollTo(0)}>
-                        <Grid style={{backgroundColor: 'white', height: '400px', color: 'black'}}>
+                        <Grid style={{ height: '60%', color: 'black', width: '80%'}}>
                            <h2> Contact </h2>
+
                         </Grid>
                     </Parallax.Layer>
                 </Parallax>
