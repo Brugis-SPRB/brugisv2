@@ -26,14 +26,14 @@ class NavInfo extends React.Component {
            bottom: 0
        },
        navProps: {
-           pullLeft: true
+           className : "justify-content-center"
        },
        minWidth: 768
    };
 
    render() {
        return (
-            <Nav {...this.props.navProps}>
+            <Nav {...this.props.navProps} justified bsStyle="pills">
                 <NavItem onClick={() => this.scroolIntoView("newsId") }>
                         News !
                 </NavItem>

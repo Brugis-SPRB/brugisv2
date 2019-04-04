@@ -62,7 +62,7 @@ class BrugisInfo extends React.Component {
         }
     }
     renderNavBar = () => {
-        return (<Navbar className="navbar shadow navbar-home">
+        return (<Navbar className="navbar shadow navbar-home" sticky="top">
         <Navbar.Brand href="#home">
         <img
             src="../../assets/img/brugis_logo.jpg"
@@ -92,13 +92,8 @@ class BrugisInfo extends React.Component {
                 >
 
                 <Parallax.Layer
-                    offset={0} speed={0} factor={3}
-                    style={{ backgroundImage: burl('stars.svg'), backgroundSize: 'cover' }}
-                />
-                <Parallax.Layer
                     offset={0} speed={-1} factor={1}
                     style={{ backgroundImage: burl('BruGIS_Vintage_2000.jpg'), backgroundSize: 'cover' }}
-                   
                 />
                     <Parallax.Layer
                         offset={0} speed={1} factor={1}
@@ -107,7 +102,6 @@ class BrugisInfo extends React.Component {
                 <Parallax.Layer
                     offset={0} speed={-0.5} factor={1.2}
                     style={{ backgroundImage: burl('achtergrond_2000.png'), backgroundSize: 'cover' }}
-                   
                     >
                 </Parallax.Layer>
 
@@ -117,14 +111,30 @@ class BrugisInfo extends React.Component {
                         onClick={() => this.refs.parallax.scrollTo(1)}
                     />
 
+                <Parallax.Layer offset={0} speed={0} factor={1}>
+                    <Grid style={{backgroundColor: 'white'}}>
+                        <Nav justified bsStyle="pills">
+                            <NavItem onClick={() => this.refs.parallax.scrollTo(0.8) }>
+                                    News !
+                            </NavItem>
+                            <NavItem onClick={() => this.refs.parallax.scrollTo(0.5) }>
+                                    Content
+                            </NavItem>
+                            <NavItem onClick={() => this.refs.parallax.scrollTo(2) }>
+                                    Contact
+                            </NavItem>
+                        </Nav>
+                    </Grid>             
+                </Parallax.Layer>
+
                     <Parallax.Layer
-                        offset={0.8}
+                        offset={0.5}
                         speed={1}
                         style={styles}
                     >
                         <Grid style={{backgroundColor: 'white', height: '60%', color: 'black', width: '80%'}}>
                            <h2> News </h2>
-                           <AliceCarousel items={items} responsive={this.responsive} />
+                           <AliceCarousel items={items} />
                         </Grid>
                     </Parallax.Layer>
 
@@ -140,7 +150,7 @@ class BrugisInfo extends React.Component {
                     </Parallax.Layer>
 
                     <Parallax.Layer
-                        offset={1.5}
+                        offset={1.2}
                         speed={1}
                         style={styles}
                         onClick={() => this.refs.parallax.scrollTo(0)}>
@@ -155,7 +165,7 @@ class BrugisInfo extends React.Component {
     }
 
     static responsive = {
-        0: { items: 1 },
+        0: { items: 2 },
         600: { items: 2 },
         1024: { items: 3 }
     };
@@ -163,7 +173,7 @@ class BrugisInfo extends React.Component {
     galleryItems = () => {
         return (
           [1, 2, 3, 4, 5].map((item, i) => (
-            <div key={`key-${i}`} style={{width: '200px'}}><h2>{item}</h2><img src="../../assets/img/urbis_color.PNG" /></div>
+            <div key={`key-${i}`}><h2>{item}</h2><img src="../../assets/img/urbis_color.PNG" /></div>
           ))
         );
     }
