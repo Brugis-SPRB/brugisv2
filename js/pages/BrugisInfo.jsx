@@ -1,7 +1,7 @@
 const React = require('react');
 const PropTypes = require('prop-types');
 const {connect} = require('react-redux');
-const {Navbar, Grid, Nav, NavItem, Tabs, Tab, Image} = require('react-bootstrap');
+const {Navbar, Grid, Nav, NavItem, Form, FormGroup, Col, ControlLabel, FormControl, Checkbox, Button, Panel, Row} = require('react-bootstrap');
 import NavInfo from '../components/NavInfo';
 import InfoDescription from '../components/InfoDescription';
 import BrugisNews from "../components/BrugisNews";
@@ -13,8 +13,8 @@ import Parallax from '../components/Parallax';
 import Animated from 'animated/lib/targets/react-dom';
 import Easing from 'animated/lib/Easing';
 
-import AliceCarousel from 'react-alice-carousel';
-import "react-alice-carousel/lib/alice-carousel.css";
+import Carousel from 'react-multi-carousel';
+import 'react-multi-carousel/lib/styles.css';
 
 const url = require('url');
 const urlQuery = url.parse(window.location.href, true).query;
@@ -114,11 +114,11 @@ class BrugisInfo extends React.Component {
                 <Parallax.Layer offset={0} speed={0} factor={1}>
                     <Grid style={{backgroundColor: 'white'}}>
                         <Nav justified bsStyle="pills">
-                            <NavItem onClick={() => this.refs.parallax.scrollTo(0.8) }>
-                                    News !
+                            <NavItem onClick={() => this.refs.parallax.scrollTo(0.3) }>
+                                    News
                             </NavItem>
-                            <NavItem onClick={() => this.refs.parallax.scrollTo(0.5) }>
-                                    Content
+                            <NavItem onClick={() => this.refs.parallax.scrollTo(0.8) }>
+                                    Webservices
                             </NavItem>
                             <NavItem onClick={() => this.refs.parallax.scrollTo(2) }>
                                     Contact
@@ -132,20 +132,35 @@ class BrugisInfo extends React.Component {
                         speed={1}
                         style={styles}
                     >
-                        <Grid style={{backgroundColor: 'white', height: '60%', color: 'black', width: '80%'}}>
-                           <h2> News </h2>
-                           <AliceCarousel items={items} />
+                        <Grid style={{ color: 'black', width: '80%'}}>
+                            <BrugisNews />
                         </Grid>
                     </Parallax.Layer>
 
                     <Parallax.Layer
-                        offset={1}
+                        offset={0.9}
                         speed={1}
                         style={styles}
                     >
-                        <Grid style={{backgroundColor: 'white', height: '60%', color: 'black', width: '80%'}}>
-                           <h2> WebServices </h2>
-                           
+                        <Grid style={{ color: 'black', width: '80%'}}>
+                            <Row>
+                                <Panel header="BruGIS Services" bsStyle="info">
+                                        <p>
+                                            The BruGIS® service presents all recent urban development data available in the Brussels Capital Region for engine the use of the zones surrounding yours, the areas of archaeological potential, the classified sites, …<br/>
+
+                                            The webservices for INSPIRE data : <br/>
+                                            <ul>
+                                                <li>WMS : http://ws.brugis.irisnet.be/geoserver/INSPIREEN/ows?service=WMS&version=1.1.1&request=GetCapabilities</li>
+                                                <li>WFS : http://ws.brugis.irisnet.be/geoserver/INSPIREEN/ows?service=WFS&version=1.0.0&request=GetCapabilities</li>
+                                            </ul>
+                                            The webservices for non-INSPIRE data : <br/>
+                                            <ul>
+                                                <li>WMS :http://www.mybrugis.irisnet.be/geoserver/ows?</li>
+                                            </ul>
+                                        </p>
+                                </Panel>
+                           </Row>
+
                         </Grid>
                     </Parallax.Layer>
 
@@ -155,8 +170,40 @@ class BrugisInfo extends React.Component {
                         style={styles}
                         onClick={() => this.refs.parallax.scrollTo(0)}>
                         <Grid style={{ height: '60%', color: 'black', width: '80%'}}>
-                           <h2> Contact </h2>
+                           <h2>Contac</h2>
+                           <Form horizontal>
+                            <FormGroup controlId="formHorizontalEmail">
+                            <Col componentClass={ControlLabel} sm={2}>
+                                Email
+                            </Col>
+                            <Col sm={10}>
+                                <FormControl type="email" placeholder="Email" />
+                            </Col>
+                            </FormGroup>
 
+                            <FormGroup controlId="formHorizontalPassword">
+                            <Col componentClass={ControlLabel} sm={2}>
+                                Password
+                            </Col>
+                            <Col sm={10}>
+                                <FormControl type="password" placeholder="Password" />
+                            </Col>
+                            </FormGroup>
+
+                            <FormGroup>
+                            <Col smOffset={2} sm={10}>
+                                <Checkbox>Remember me</Checkbox>
+                            </Col>
+                            </FormGroup>
+
+                            <FormGroup>
+                            <Col smOffset={2} sm={10}>
+                                <Button type="submit">
+                                Sign in
+                                </Button>
+                            </Col>
+                            </FormGroup>
+                        </Form>
                         </Grid>
                     </Parallax.Layer>
                 </Parallax>
@@ -165,10 +212,19 @@ class BrugisInfo extends React.Component {
     }
 
     static responsive = {
-        0: { items: 2 },
-        600: { items: 2 },
-        1024: { items: 3 }
-    };
+        desktop: {
+          breakpoint: { max: 3000, min: 1024 },
+          items: 3
+        },
+        tablet: {
+          breakpoint: { max: 1024, min: 464 },
+          items: 2
+        },
+        mobile: {
+          breakpoint: { max: 464, min: 0 },
+          items: 1
+        }
+      };
 
     galleryItems = () => {
         return (
