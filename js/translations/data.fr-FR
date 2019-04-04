@@ -992,7 +992,7 @@
       "downloadonlycurrentpage": "Télécharger uniquement la page actuelle",
       "error": {
         "title": "Erreur lors de l'exportation",
-        "invalidOutputFormat": "Le format d'exportation sélectionné n'est pas disponible"
+        "invalidOutputFormat": "BruGIS n'étant pas gestionnaire/source authentique pour la couche sélectionnée, le téléchargement n'est pas disponible."
       }
     },
     "vectorstyler": {

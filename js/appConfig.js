@@ -60,7 +60,7 @@ module.exports = {
                   "LeefMilieu Brussel": {
                     "url": "https://wms.environnement.brussels/lb_wms",
                     "type": "wms",
-                    "title": "Bruxelles environnement",
+                    "title": "LeefMilieu Brussel",
                     "autoload": false
                   },
                   'AGIV WMS - Basiskaart': {
