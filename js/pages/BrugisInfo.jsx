@@ -1,19 +1,16 @@
 const React = require('react');
 const PropTypes = require('prop-types');
 const {connect} = require('react-redux');
-const {Navbar, Grid, Nav, NavItem, Form, FormGroup, Col, ControlLabel, FormControl, Checkbox, Button, Panel, Row} = require('react-bootstrap');
+const {Navbar, Grid, Nav, NavItem, Form, FormGroup, Col, ControlLabel, FormControl, Checkbox, Button, Row} = require('react-bootstrap');
 import NavInfo from '../components/NavInfo';
-import InfoDescription from '../components/InfoDescription';
-import BrugisNews from "../components/BrugisNews";
-import BrugisContact from "../components/BrugisContact";
+
+import BrugisNews from "../components/BrugisNewsCarousel";
+
 const {goToPage} = require('../../MapStore2/web/client/actions/router');
 
 import Parallax from '../components/Parallax';
-//import Parallax from 'react-springy-parallax'
-import Animated from 'animated/lib/targets/react-dom';
-import Easing from 'animated/lib/Easing';
 
-import Carousel from 'react-multi-carousel';
+
 import 'react-multi-carousel/lib/styles.css';
 
 const url = require('url');
@@ -83,28 +80,23 @@ class BrugisInfo extends React.Component {
             color: 'white',
             display: 'flex', alignItems: 'center', justifyContent: 'center'
         };
+        
+        const multipleBackground = burl('BruGIS_Vintage_2000.jpg');
 
-        const items = this.galleryItems();
         return (<div>
+               
+               <Parallax ref="parallax" pages={4} scrolling={true} style={{'background-image': multipleBackground}}>
 
-                <Parallax ref="parallax" pages={2} scrolling={true} effect={(animation, toValue) =>
-                    Animated.timing(animation, { toValue, duration: 0 })}
-                >
-
-                <Parallax.Layer
-                    offset={0} speed={-1} factor={1}
-                    style={{ backgroundImage: burl('BruGIS_Vintage_2000.jpg'), backgroundSize: 'cover' }}
-                />
                     <Parallax.Layer
                         offset={0} speed={1} factor={1}
                         style={{ backgroundImage: burl('brugis_2000.png'), backgroundSize: 'contain' }}
                     />
-                <Parallax.Layer
-                    offset={0} speed={-0.5} factor={1.2}
-                    style={{ backgroundImage: burl('achtergrond_2000.png'), backgroundSize: 'cover' }}
+                               <Parallax.Layer
+                    offset={0} speed={0} factor={4}
+                    style={{ backgroundImage: burl('achtergrond_2000_4164.png'), backgroundSize: 'cover' }}
                     >
-                </Parallax.Layer>
-
+                    
+                </Parallax.Layer> 
                     <Parallax.Layer
                         offset={0} speed={1} factor={1}
                         style={{ backgroundImage: burl('voorgrond_2000.png'), backgroundSize: 'contain' }}
@@ -114,38 +106,38 @@ class BrugisInfo extends React.Component {
                 <Parallax.Layer offset={0} speed={0} factor={1}>
                     <Grid style={{backgroundColor: 'white'}}>
                         <Nav justified bsStyle="pills">
-                            <NavItem onClick={() => this.refs.parallax.scrollTo(0.3) }>
+                            <NavItem onClick={() => this.refs.parallax.scrollTo(1) }>
                                     News
                             </NavItem>
-                            <NavItem onClick={() => this.refs.parallax.scrollTo(0.8) }>
+                            <NavItem onClick={() => this.refs.parallax.scrollTo(2) }>
                                     Webservices
                             </NavItem>
-                            <NavItem onClick={() => this.refs.parallax.scrollTo(2) }>
+                            <NavItem onClick={() => this.refs.parallax.scrollTo(3) }>
                                     Contact
                             </NavItem>
                         </Nav>
-                    </Grid>             
+                    </Grid>        
                 </Parallax.Layer>
 
                     <Parallax.Layer
-                        offset={0.5}
+                        offset={1}
                         speed={1}
                         style={styles}
                     >
-                        <Grid style={{ color: 'black', width: '80%'}}>
+                        <Grid fluid style={{ color: 'black', width: '100%', backgroundColor: 'white', height: '60%'}}>
                             <BrugisNews />
                         </Grid>
                     </Parallax.Layer>
 
                     <Parallax.Layer
-                        offset={0.9}
+                        offset={2}
                         speed={1}
                         style={styles}
                     >
-                        <Grid style={{ color: 'black', width: '80%'}}>
+                        <Grid style={{ color: 'black', width: '100%', backgroundColor: 'white', height: '60%'}}>
                             <Row>
-                                <Panel header="BruGIS Services" bsStyle="info">
-                                        <p>
+                                <Col md={12}>
+                                    <p>
                                             The BruGIS® service presents all recent urban development data available in the Brussels Capital Region for engine the use of the zones surrounding yours, the areas of archaeological potential, the classified sites, …<br/>
 
                                             The webservices for INSPIRE data : <br/>
@@ -158,19 +150,19 @@ class BrugisInfo extends React.Component {
                                                 <li>WMS :http://www.mybrugis.irisnet.be/geoserver/ows?</li>
                                             </ul>
                                         </p>
-                                </Panel>
+                                </Col>
                            </Row>
 
                         </Grid>
                     </Parallax.Layer>
 
                     <Parallax.Layer
-                        offset={1.2}
+                        offset={3}
                         speed={1}
                         style={styles}
                         onClick={() => this.refs.parallax.scrollTo(0)}>
-                        <Grid style={{ height: '60%', color: 'black', width: '80%'}}>
-                           <h2>Contac</h2>
+                        <Grid style={{ height: '60%', color: 'black', width: '100%', backgroundColor: 'white'}}>
+                           <h2>Contact</h2>
                            <Form horizontal>
                             <FormGroup controlId="formHorizontalEmail">
                             <Col componentClass={ControlLabel} sm={2}>
