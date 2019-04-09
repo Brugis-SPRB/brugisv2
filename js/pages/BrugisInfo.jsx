@@ -72,6 +72,22 @@ class BrugisInfo extends React.Component {
         </Nav>
     </Navbar>);
     }
+
+    //this.onscroll = function() {scrollFunction()};
+
+    scrollFunction = () => {
+      console.log(this.refs.parallax);
+      //console.log(document.body.scrollTop);
+      //console.log(document.documentElement.scrollTop);
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        //console.log("Into scrollFunction: if true");
+        document.getElementById("myBtn").style.display = "block";
+      } else {
+        //console.log("Into scrollFunction: else");
+        document.getElementById("myBtn").style.display = "none";
+      }
+    }
+
     render() {
         const styles = {
             fontFamily: 'Menlo-Regular, Menlo, monospace',
@@ -80,56 +96,71 @@ class BrugisInfo extends React.Component {
             color: 'white',
             display: 'flex', alignItems: 'center', justifyContent: 'center'
         };
-        
+
         const multipleBackground = burl('BruGIS_Vintage_2000.jpg');
 
-        return (<div>
-               
-               <Parallax ref="parallax" pages={4} scrolling={true} style={{'background-image': multipleBackground}}>
-
+        return (<div
+                  onScroll={() => this.scrollFunction()}>
+               <button onClick={() => this.refs.parallax.scrollTo(0)} id="myBtn" title="Go to top">Top</button>
+               <Parallax
+                  ref="parallax"
+                  pages={4}
+                  scrolling={true}
+                  style={{'backgroundImage': multipleBackground, backgroundSize: 'cover'}}
+                  >
                     <Parallax.Layer
                         offset={0} speed={1} factor={1}
                         style={{ backgroundImage: burl('brugis_2000.png'), backgroundSize: 'contain' }}
                     />
-                               <Parallax.Layer
-                    offset={0} speed={0} factor={4}
-                    style={{ backgroundImage: burl('achtergrond_2000_4164.png'), backgroundSize: 'cover' }}
-                    >
-                    
-                </Parallax.Layer> 
+                    <Parallax.Layer
+                        offset={0} speed={0} factor={4}
+                        style={{ backgroundImage: burl('achtergrond_2000_4164.png'), backgroundSize: 'cover' }}
+                    />
                     <Parallax.Layer
                         offset={0} speed={1} factor={1}
                         style={{ backgroundImage: burl('voorgrond_2000.png'), backgroundSize: 'contain' }}
                         onClick={() => this.refs.parallax.scrollTo(1)}
                     />
-
-                <Parallax.Layer offset={0} speed={0} factor={1}>
-                    <Grid style={{backgroundColor: 'white'}}>
-                        <Nav justified bsStyle="pills">
-                            <NavItem onClick={() => this.refs.parallax.scrollTo(1) }>
-                                    News
-                            </NavItem>
-                            <NavItem onClick={() => this.refs.parallax.scrollTo(2) }>
-                                    Webservices
-                            </NavItem>
-                            <NavItem onClick={() => this.refs.parallax.scrollTo(3) }>
-                                    Contact
-                            </NavItem>
-                        </Nav>
-                    </Grid>        
-                </Parallax.Layer>
+                    <Parallax.Layer
+                        id="brugisInfoButtonBanner"
+                        offset={0}
+                        speed={-1}
+                        factor={1}
+                    >
+                        <Grid
+                            style={{backgroundColor: 'white'}}>
+                            <Nav justified bsStyle="pills">
+                                <NavItem
+                                    id="brugisInfoButton"
+                                    onClick={() => this.refs.parallax.scrollTo(1) }>
+                                        News
+                                </NavItem>
+                                <NavItem
+                                    id="brugisInfoButton"
+                                    onClick={() => this.refs.parallax.scrollTo(2) }>
+                                        Webservices
+                                </NavItem>
+                                <NavItem
+                                    id="brugisInfoButton"
+                                    onClick={() => this.refs.parallax.scrollTo(3) }>
+                                        Contact
+                                </NavItem>
+                            </Nav>
+                        </Grid>
+                    </Parallax.Layer>
 
                     <Parallax.Layer
+                        id="brugisInfoNews"
                         offset={1}
                         speed={1}
                         style={styles}
                     >
                         <Grid fluid style={{ color: 'black', width: '100%', backgroundColor: 'white', height: '60%'}}>
-                            <BrugisNews />
+                            <BrugisNews/>
                         </Grid>
                     </Parallax.Layer>
-
                     <Parallax.Layer
+                        id="brugisInfoServices"
                         offset={2}
                         speed={1}
                         style={styles}
@@ -137,8 +168,9 @@ class BrugisInfo extends React.Component {
                         <Grid style={{ color: 'black', width: '100%', backgroundColor: 'white', height: '60%'}}>
                             <Row>
                                 <Col md={12}>
+                                  <h2>Webservices</h2><br/>
                                     <p>
-                                            The BruGIS® service presents all recent urban development data available in the Brussels Capital Region for engine the use of the zones surrounding yours, the areas of archaeological potential, the classified sites, …<br/>
+                                            The BruGIS® service presents all recent urban development data available in the Brussels Capital Region for engine the use of the zones surrounding yours, the areas of archaeological potential, the classified sites, …<br/><br/>
 
                                             The webservices for INSPIRE data : <br/>
                                             <ul>
@@ -149,58 +181,53 @@ class BrugisInfo extends React.Component {
                                             <ul>
                                                 <li>WMS :http://www.mybrugis.irisnet.be/geoserver/ows?</li>
                                             </ul>
-                                        </p>
+                                    </p>
                                 </Col>
                            </Row>
-
                         </Grid>
                     </Parallax.Layer>
-
                     <Parallax.Layer
+                        id="brugisInfoContact"
                         offset={3}
                         speed={1}
                         style={styles}
                         onClick={() => this.refs.parallax.scrollTo(0)}>
                         <Grid style={{ height: '60%', color: 'black', width: '100%', backgroundColor: 'white'}}>
-                           <h2>Contact</h2>
+                           <h2>Contact</h2><br/>
                            <Form horizontal>
-                            <FormGroup controlId="formHorizontalEmail">
-                            <Col componentClass={ControlLabel} sm={2}>
-                                Email
-                            </Col>
-                            <Col sm={10}>
-                                <FormControl type="email" placeholder="Email" />
-                            </Col>
-                            </FormGroup>
-
-                            <FormGroup controlId="formHorizontalPassword">
-                            <Col componentClass={ControlLabel} sm={2}>
-                                Password
-                            </Col>
-                            <Col sm={10}>
-                                <FormControl type="password" placeholder="Password" />
-                            </Col>
-                            </FormGroup>
-
-                            <FormGroup>
-                            <Col smOffset={2} sm={10}>
-                                <Checkbox>Remember me</Checkbox>
-                            </Col>
-                            </FormGroup>
-
-                            <FormGroup>
-                            <Col smOffset={2} sm={10}>
-                                <Button type="submit">
-                                Sign in
-                                </Button>
-                            </Col>
-                            </FormGroup>
-                        </Form>
-                        </Grid>
-                    </Parallax.Layer>
-                </Parallax>
-
-     </div>);
+                              <FormGroup controlId="formHorizontalEmail">
+                              <Col componentClass={ControlLabel} sm={2}>
+                                  Email
+                              </Col>
+                              <Col sm={10}>
+                                  <FormControl type="email" placeholder="Email" />
+                              </Col>
+                              </FormGroup>
+                              <FormGroup controlId="formHorizontalPassword">
+                              <Col componentClass={ControlLabel} sm={2}>
+                                  Message
+                              </Col>
+                              <Col sm={10}>
+                                  <FormControl type="Message" placeholder="Message" />
+                              </Col>
+                              </FormGroup>
+                              <FormGroup>
+                              <Col smOffset={2} sm={10}>
+                                  <Checkbox>Remember me</Checkbox>
+                              </Col>
+                              </FormGroup>
+                              <FormGroup>
+                              <Col smOffset={2} sm={10}>
+                                  <Button type="submit">
+                                  Send
+                                  </Button>
+                              </Col>
+                              </FormGroup>
+                          </Form>
+                      </Grid>
+                  </Parallax.Layer>
+              </Parallax>
+          </div>);
     }
 
     static responsive = {
@@ -229,6 +256,7 @@ class BrugisInfo extends React.Component {
     goBrugis = () => {
         goToPage('/', this.context.router);
     }
+
 }
 
 module.exports = connect((state) => ({
