@@ -1,6 +1,6 @@
 const React = require('react');
 const PropTypes = require('prop-types');
-const {Accordion, Panel, Row, ListGroup, ListGroupItem, Col, Grid, Image} = require('react-bootstrap');
+const {Panel, Row, ListGroup, ListGroupItem, Col, Grid, Image} = require('react-bootstrap');
 const newsFR = require('../../news/brugisnews_fr-FR');
 const newsNL = require('../../news/brugisnews_nl-NL');
 
@@ -22,7 +22,7 @@ class BrugisNews extends React.Component {
     };
 
     renderNews() {
-        let eventCounter = 1;
+        //let eventCounter = 1;
         let news = (this.props.locale === "fr-FR" || this.props.locale === "fr-BE") ? newsFR : newsNL;
         return news.news.map((newsItem) => {
             let dateEnd = Date.parse(newsItem.dateend);
@@ -63,10 +63,10 @@ class BrugisNews extends React.Component {
                     <ListGroupItem>
                         <Grid fluid>
                             <Col xs={6} md={2}>
-                                <Image src="https://picsum.photos/300/200" responsive />                            
+                                <Image src="https://picsum.photos/300/200" responsive/>
                             </Col>
                             <Col xs={1} md={1}>
-                                {this.renderDate(dateStart)}                         
+                                {this.renderDate(dateStart)}
                             </Col>
                             <Col xs={5} md={9}>
                                 <h3 style={{"margin-top": "0px"}}>{newsItem.title}</h3>

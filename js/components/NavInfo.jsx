@@ -1,7 +1,7 @@
 
 const React = require('react');
 const PropTypes = require('prop-types');
-const {isString, trimStart} = require('lodash');
+const {trimStart} = require('lodash');
 const {Nav, NavItem} = require('react-bootstrap');
 
 class NavInfo extends React.Component {
@@ -26,7 +26,7 @@ class NavInfo extends React.Component {
            bottom: 0
        },
        navProps: {
-           className : "justify-content-center"
+           className: "justify-content-center"
        },
        minWidth: 768
    };

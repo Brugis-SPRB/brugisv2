@@ -106,7 +106,7 @@ export default class extends React.Component {
         effect(this.animatedScroll, offset * this.space).start();
     }
 
-    scrollStop = (event) => this.animatedScroll && this.animatedScroll.stopAnimation()
+    scrollStop = () => this.animatedScroll && this.animatedScroll.stopAnimation()
 
     updateRaf = () => {
         requestAnimationFrame(this.update);

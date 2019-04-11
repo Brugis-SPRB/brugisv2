@@ -1,6 +1,6 @@
 const React = require('react');
 const PropTypes = require('prop-types');
-const {Accordion, Panel, Row, ListGroup, ListGroupItem, Col, Grid, Image, Carousel} = require('react-bootstrap');
+const {Panel, Row, Col, Grid, Image, Carousel} = require('react-bootstrap');
 const newsFR = require('../../news/brugisnews_fr-FR');
 const newsNL = require('../../news/brugisnews_nl-NL');
 

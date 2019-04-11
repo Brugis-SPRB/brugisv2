@@ -20,7 +20,6 @@ class BrugisContact extends React.Component {
        return (
             <Row>
                 <hr />
-               
                 <label><Message msgId="best-effort" /><a href="mailto:brugis@urban.brussels"><Message msgId="BruGISTeam" /></a></label>
             </Row>
        );

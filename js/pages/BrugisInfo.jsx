@@ -1,7 +1,7 @@
 const React = require('react');
 const PropTypes = require('prop-types');
 const {connect} = require('react-redux');
-const {Navbar, Grid, Nav, NavItem, Form, FormGroup, Col, ControlLabel, FormControl, Checkbox, Button, ButtonGroup, ButtonToolbar, Row} = require('react-bootstrap');
+const {Navbar, Grid, Nav, NavItem, Form, FormGroup, Col, ControlLabel, FormControl, Checkbox, Button, ButtonGroup, Row} = require('react-bootstrap');
 import NavInfo from '../components/NavInfo';
 
 import BrugisNews from "../components/BrugisNewsCarousel";
@@ -18,14 +18,14 @@ const urlQuery = url.parse(window.location.href, true).query;
 
 // Little helpers ...
 const burl = (name) => `url(../../assets/img/${name})`;
-const Pink = ({ children }) => <span style={{ color: '#FF6AC1' }}>{children}</span>;
-const Yellow = ({ children }) => <span style={{ color: '#EFF59B' }}>{children}</span>;
-const Lightblue = ({ children }) => <span style={{ color: '#9AEDFE' }}>{children}</span>;
-const Green = ({ children }) => <span style={{ color: '#57EE89' }}>{children}</span>;
-const Blue = ({ children }) => <span style={{ color: '#57C7FF' }}>{children}</span>;
-const Gray = ({ children }) => <span style={{ color: '#909090' }}>{children}</span>;
+//const Pink = ({ children }) => <span style={{ color: '#FF6AC1' }}>{children}</span>;
+//const Yellow = ({ children }) => <span style={{ color: '#EFF59B' }}>{children}</span>;
+//const Lightblue = ({ children }) => <span style={{ color: '#9AEDFE' }}>{children}</span>;
+//const Green = ({ children }) => <span style={{ color: '#57EE89' }}>{children}</span>;
+//const Blue = ({ children }) => <span style={{ color: '#57C7FF' }}>{children}</span>;
+//const Gray = ({ children }) => <span style={{ color: '#909090' }}>{children}</span>;
 
-class BrugisInfoButton extends Button {};
+class BrugisInfoButton extends Button {}
 
 class BrugisInfo extends React.Component {
     static propTypes = {
@@ -103,7 +103,7 @@ class BrugisInfo extends React.Component {
                <Parallax
                   ref="parallax"
                   pages={4}
-                  scrolling={true}
+                  //scrolling={true}
                   style={{'backgroundImage': multipleBackground, backgroundSize: 'cover'}}
                   >
                     <Parallax.Layer
