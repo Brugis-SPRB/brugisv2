@@ -1,7 +1,7 @@
 const React = require('react');
 const PropTypes = require('prop-types');
 const {connect} = require('react-redux');
-const {Navbar, Grid, Nav, NavItem, Form, FormGroup, Col, ControlLabel, FormControl, Checkbox, Button, Row} = require('react-bootstrap');
+const {Navbar, Grid, Nav, NavItem, Form, FormGroup, Col, ControlLabel, FormControl, Checkbox, Button, ButtonGroup, ButtonToolbar, Row} = require('react-bootstrap');
 import NavInfo from '../components/NavInfo';
 
 import BrugisNews from "../components/BrugisNewsCarousel";
@@ -24,6 +24,8 @@ const Lightblue = ({ children }) => <span style={{ color: '#9AEDFE' }}>{children
 const Green = ({ children }) => <span style={{ color: '#57EE89' }}>{children}</span>;
 const Blue = ({ children }) => <span style={{ color: '#57C7FF' }}>{children}</span>;
 const Gray = ({ children }) => <span style={{ color: '#909090' }}>{children}</span>;
+
+class BrugisInfoButton extends Button {};
 
 class BrugisInfo extends React.Component {
     static propTypes = {
@@ -73,21 +75,6 @@ class BrugisInfo extends React.Component {
     </Navbar>);
     }
 
-    //this.onscroll = function() {scrollFunction()};
-
-    scrollFunction = () => {
-      console.log(this.refs.parallax);
-      //console.log(document.body.scrollTop);
-      //console.log(document.documentElement.scrollTop);
-      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-        //console.log("Into scrollFunction: if true");
-        document.getElementById("myBtn").style.display = "block";
-      } else {
-        //console.log("Into scrollFunction: else");
-        document.getElementById("myBtn").style.display = "none";
-      }
-    }
-
     render() {
         const styles = {
             fontFamily: 'Menlo-Regular, Menlo, monospace',
@@ -99,9 +86,20 @@ class BrugisInfo extends React.Component {
 
         const multipleBackground = burl('BruGIS_Vintage_2000.jpg');
 
-        return (<div
-                  onScroll={() => this.scrollFunction()}>
-               <button onClick={() => this.refs.parallax.scrollTo(0)} id="myBtn" title="Go to top">Top</button>
+        return (<div>
+                    <div className="d-flex flex-column" style={{}}>
+                      <ButtonGroup size="lg">
+                      <BrugisInfoButton variant="secondary" id="bibIllBeBack" onClick={this.goBrugis.bind(this)} title="Go back to BruGIS">BruGIS</BrugisInfoButton>
+                      </ButtonGroup >
+                      <ButtonGroup size="lg">
+                      <BrugisInfoButton variant="secondary" id="bibNews" onClick={() => this.refs.parallax.scrollTo(1)} title="Go back to News">News</BrugisInfoButton>
+                      <BrugisInfoButton variant="secondary" id="bibWS" onClick={() => this.refs.parallax.scrollTo(2)} title="Go back to Webservices">Webservices</BrugisInfoButton>
+                      <BrugisInfoButton variant="secondary" id="bibContact" onClick={() => this.refs.parallax.scrollTo(3)} title="Go back to Contact">Contact</BrugisInfoButton>
+                      </ButtonGroup >
+                      <ButtonGroup size="lg">
+                      <BrugisInfoButton variant="secondary" id="bibTop" onClick={() => this.refs.parallax.scrollTo(0)} title="Go to top">Top</BrugisInfoButton>
+                      </ButtonGroup >
+                    </div>
                <Parallax
                   ref="parallax"
                   pages={4}
@@ -119,36 +117,7 @@ class BrugisInfo extends React.Component {
                     <Parallax.Layer
                         offset={0} speed={1} factor={1}
                         style={{ backgroundImage: burl('voorgrond_2000.png'), backgroundSize: 'contain' }}
-                        onClick={() => this.refs.parallax.scrollTo(1)}
                     />
-                    <Parallax.Layer
-                        id="brugisInfoButtonBanner"
-                        offset={0}
-                        speed={-1}
-                        factor={1}
-                    >
-                        <Grid
-                            style={{backgroundColor: 'white'}}>
-                            <Nav justified bsStyle="pills">
-                                <NavItem
-                                    id="brugisInfoButton"
-                                    onClick={() => this.refs.parallax.scrollTo(1) }>
-                                        News
-                                </NavItem>
-                                <NavItem
-                                    id="brugisInfoButton"
-                                    onClick={() => this.refs.parallax.scrollTo(2) }>
-                                        Webservices
-                                </NavItem>
-                                <NavItem
-                                    id="brugisInfoButton"
-                                    onClick={() => this.refs.parallax.scrollTo(3) }>
-                                        Contact
-                                </NavItem>
-                            </Nav>
-                        </Grid>
-                    </Parallax.Layer>
-
                     <Parallax.Layer
                         id="brugisInfoNews"
                         offset={1}
