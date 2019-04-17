@@ -77,11 +77,11 @@ class BrugisInfo extends React.Component {
 
         return (<div>
                     <div className="d-flex">
-                      <div className="p-2 flex-fill" onClick={this.goBrugis.bind(this)} title="Go back to BruGIS" id="bibIllBeBack">BruGIS</div>
-                      <div className="p-2 flex-fill" onClick={() => this.refs.parallax.scrollTo(1)} title="Go to BruGIS News" id="bibNews">News</div>
-                      <div className="p-2 flex-fill" onClick={() => this.refs.parallax.scrollTo(2)} title="Go to BruGIS Webservices" id="bibWS">Webservices</div>
-                      <div className="p-2 flex-fill" onClick={() => this.refs.parallax.scrollTo(3)} title="Go to Contact BruGIS" id="bibContact">Contact</div>
-                      <div className="p-2 flex-fill" onClick={() => this.refs.parallax.scrollTo(0)} title="Go back to top" id="bibTop">Top</div>
+                      <div className="flex-fill" onClick={this.goBrugis.bind(this)} title="Go back to BruGIS" id="bibIllBeBack">BruGIS</div>
+                      <div className="flex-fill d-none d-lg-block" onClick={() => this.refs.parallax.scrollTo(1)} title="Go to BruGIS News" id="bibNews">News</div>
+                      <div className="flex-fill d-none d-lg-block" onClick={() => this.refs.parallax.scrollTo(2)} title="Go to BruGIS Webservices" id="bibWS">Webservices</div>
+                      <div className="flex-fill d-none d-lg-block" onClick={() => this.refs.parallax.scrollTo(3)} title="Go to Contact BruGIS" id="bibContact">Contact</div>
+                      <div className="flex-fill" onClick={() => this.refs.parallax.scrollTo(0)} title="Go back to top" id="bibTop">Top</div>
                     </div>
                <Parallax
                   ref="parallax"
