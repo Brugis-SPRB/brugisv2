@@ -22,7 +22,7 @@ class BrugisNews extends React.Component {
     };
 
     renderNews() {
-        //let eventCounter = 1;
+        let eventCounter = 1;
         let news = (this.props.locale === "fr-FR" || this.props.locale === "fr-BE") ? newsFR : newsNL;
         return news.news.map((newsItem) => {
             let dateEnd = Date.parse(newsItem.dateend);
@@ -52,7 +52,7 @@ class BrugisNews extends React.Component {
     }
 
     renderNewsGroupItem() {
-        let eventCounter = 1;
+        // let eventCounter = 1;
         let news = (this.props.locale === "fr-FR" || this.props.locale === "fr-BE") ? newsFR : newsNL;
         return news.news.map((newsItem) => {
             let dateEnd = new Date(Date.parse(newsItem.dateend));

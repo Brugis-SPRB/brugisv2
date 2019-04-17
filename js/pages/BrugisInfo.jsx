@@ -1,7 +1,7 @@
 const React = require('react');
 const PropTypes = require('prop-types');
 const {connect} = require('react-redux');
-const {Navbar, Grid, Nav, NavItem, Form, FormGroup, Col, ControlLabel, FormControl, Checkbox, Button, ButtonGroup, Row} = require('react-bootstrap');
+const {Navbar, Grid, Nav, NavItem, Form, FormGroup, Col, ControlLabel, FormControl, Checkbox, Button, Row} = require('react-bootstrap');
 const {goToPage} = require('../../MapStore2/web/client/actions/router');
 
 import NavInfo from '../components/NavInfo';
@@ -14,8 +14,6 @@ const urlQuery = url.parse(window.location.href, true).query;
 
 // Little helpers ...
 const burl = (name) => `url(../../assets/img/${name})`;
-
-class BrugisInfoButton extends Button {}
 
 class BrugisInfo extends React.Component {
     static propTypes = {
@@ -66,8 +64,7 @@ class BrugisInfo extends React.Component {
     }
 
     render() {
-        console.log(this.props.locale);
-
+        // console.log(this.props.locale);
         const styles = {
             fontFamily: 'Menlo-Regular, Menlo, monospace',
             fontSize: 14,
@@ -79,23 +76,16 @@ class BrugisInfo extends React.Component {
         const multipleBackground = burl('BruGIS_Vintage_2000.jpg');
 
         return (<div>
-                    <div className="d-flex flex-column" style={{}}>
-                      <ButtonGroup size="lg">
-                      <BrugisInfoButton variant="secondary" id="bibIllBeBack" onClick={this.goBrugis.bind(this)} title="Go back to BruGIS">BruGIS</BrugisInfoButton>
-                      </ButtonGroup >
-                      <ButtonGroup size="lg">
-                      <BrugisInfoButton variant="secondary" id="bibNews" onClick={() => this.refs.parallax.scrollTo(1)} title="Go to BruGIS News">News</BrugisInfoButton>
-                      <BrugisInfoButton variant="secondary" id="bibWS" onClick={() => this.refs.parallax.scrollTo(2)} title="Go to BruGIS Webservices">Webservices</BrugisInfoButton>
-                      <BrugisInfoButton variant="secondary" id="bibContact" onClick={() => this.refs.parallax.scrollTo(3)} title="Go to Contact BruGIS">Contact</BrugisInfoButton>
-                      </ButtonGroup >
-                      <ButtonGroup size="lg">
-                      <BrugisInfoButton variant="secondary" id="bibTop" onClick={() => this.refs.parallax.scrollTo(0)} title="Go back to top">Top</BrugisInfoButton>
-                      </ButtonGroup >
+                    <div className="d-flex">
+                      <div className="p-2 flex-fill" onClick={this.goBrugis.bind(this)} title="Go back to BruGIS" id="bibIllBeBack">BruGIS</div>
+                      <div className="p-2 flex-fill" onClick={() => this.refs.parallax.scrollTo(1)} title="Go to BruGIS News" id="bibNews">News</div>
+                      <div className="p-2 flex-fill" onClick={() => this.refs.parallax.scrollTo(2)} title="Go to BruGIS Webservices" id="bibWS">Webservices</div>
+                      <div className="p-2 flex-fill" onClick={() => this.refs.parallax.scrollTo(3)} title="Go to Contact BruGIS" id="bibContact">Contact</div>
+                      <div className="p-2 flex-fill" onClick={() => this.refs.parallax.scrollTo(0)} title="Go back to top" id="bibTop">Top</div>
                     </div>
                <Parallax
                   ref="parallax"
                   pages={4}
-                  //scrolling={true}
                   style={{'backgroundImage': multipleBackground, backgroundSize: 'cover'}}
                   >
                     <Parallax.Layer

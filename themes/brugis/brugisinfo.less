@@ -72,99 +72,69 @@
   //columns-webkit-text-fill-color: #909090;
 }
 
-.BrugisInfoButton {
-  display: block; /* Hidden by default */
-  z-index: 99; /* Make sure it does not overlap */
+.d-flex {
+  width: 100%;
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.d-flex div {
+  padding: 1rem;
+  text-align: center;
+  // z-index: 99; /* Make sure it does not overlap */
   border: none; /* Remove borders */
   outline: none; /* Remove outline */
-  background-color: #4f8da8; /* Set a background color */
   color: white; /* Text color */
   cursor: pointer; /* Add a mouse pointer on hover */
-  padding: 15px; /* Some padding */
-  border-radius: 10px; /* Rounded corners */
   font-size: 18px; /* Increase font size */
 }
-
-.BrugisInfoButton:hover {
-  background-color: #555; /* Add a dark-grey background on hover */
+/*
+.d-flex div:hover {
+  background-color: #555;
+}
+*/
+.d-flex #bibIllBeBack {
+  background-color: #a2c6d7; /* Set a background color */
+  flex-grow: 1;
 }
 
-#bibIllBeBack {
-  display: block; /* Hidden by default */
-  z-index: 99; /* Make sure it does not overlap */
-  border: none; /* Remove borders */
-  outline: none; /* Remove outline */
+.d-flex #bibNews {
   background-color: #4f8da8; /* Set a background color */
-  color: white; /* Text color */
-  cursor: pointer; /* Add a mouse pointer on hover */
-  padding: 15px; /* Some padding */
-  border-radius: 10px; /* Rounded corners */
-  font-size: 18px; /* Increase font size */
-  position: fixed; /* Fixed/sticky position */
-  top: 20px; /* Place the button at the bottom of the page */
-  left: 30px; /* Place the button 30px from the right */
+  flex-grow: 4;
 }
 
-#bibTop {
-  display: block; /* Hidden by default */
-  z-index: 99; /* Make sure it does not overlap */
-  border: none; /* Remove borders */
-  outline: none; /* Remove outline */
+.d-flex #bibWS {
+  background-color: #4f8da8; /* Set a background color */
+  flex-grow: 4;
+}
+
+.d-flex #bibContact {
+  background-color: #4f8da8; /* Set a background color */
+  flex-grow: 4;
+}
+
+.d-flex #bibTop {
   background-color: #345d6f; /* Set a background color */
-  color: white; /* Text color */
-  cursor: pointer; /* Add a mouse pointer on hover */
-  padding: 15px; /* Some padding */
-  border-radius: 10px; /* Rounded corners */
-  font-size: 18px; /* Increase font size */
-  position: fixed; /* Fixed/sticky position */
-  top: 20px; /* Place the button at the bottom of the page */
-  right: 30px; /* Place the button 30px from the right */
+  flex-grow: 1;
 }
 
-#bibNews {
-  display: block; /* Hidden by default */
-  z-index: 99; /* Make sure it does not overlap */
-  border: none; /* Remove borders */
-  outline: none; /* Remove outline */
-  background-color: #a2c6d7; /* Set a background color */
-  color: white; /* Text color */
-  cursor: pointer; /* Add a mouse pointer on hover */
-  padding: 15px; /* Some padding */
-  border-radius: 10px; /* Rounded corners */
-  font-size: 18px; /* Increase font size */
-  position: fixed; /* Fixed/sticky position */
-  top: 20px; /* Place the button at the bottom of the page */
-  left: 200px; /* Place the button 30px from the right */
+.d-flex #bibIllBeBack:hover {
+  background-color: #555;
 }
 
-#bibWS {
-  display: block; /* Hidden by default */
-  z-index: 99; /* Make sure it does not overlap */
-  border: none; /* Remove borders */
-  outline: none; /* Remove outline */
-  background-color: #a2c6d7; /* Set a background color */
-  color: white; /* Text color */
-  cursor: pointer; /* Add a mouse pointer on hover */
-  padding: 15px; /* Some padding */
-  border-radius: 10px; /* Rounded corners */
-  font-size: 18px; /* Increase font size */
-  position: fixed; /* Fixed/sticky position */
-  top: 20px; /* Place the button at the bottom of the page */
-  right: 600px; /* Place the button 30px from the right */
+.d-flex #bibNews:hover {
+  background-color: #555;
 }
 
-#bibContact {
-  display: block; /* Hidden by default */
-  z-index: 99; /* Make sure it does not overlap */
-  border: none; /* Remove borders */
-  outline: none; /* Remove outline */
-  background-color: #a2c6d7; /* Set a background color */
-  color: white; /* Text color */
-  cursor: pointer; /* Add a mouse pointer on hover */
-  padding: 15px; /* Some padding */
-  border-radius: 10px; /* Rounded corners */
-  font-size: 18px; /* Increase font size */
-  position: fixed; /* Fixed/sticky position */
-  top: 20px; /* Place the button at the bottom of the page */
-  right: 200px; /* Place the button 30px from the right */
+.d-flex #bibWS:hover {
+  background-color: #555;
+}
+
+.d-flex #bibContact:hover {
+  background-color: #555;
+
+}
+.d-flex #bibTop:hover {
+  background-color: #555;
 }

@@ -50,7 +50,7 @@ class SurveyGrid extends React.Component {
         var docxUrl = this.props.webreperagehost + "/res/reperage/" + survey.id + ".docx?lang=" + SurveyUtils.getOldBrugisLocale(this.props.locale) + "&user=" + this.props.user;
         if (survey.state === "DONE") {
             docxUrl = this.props.webreperagehost + "/res/reperage/" + survey.id + ".docx?lang=" + SurveyUtils.getOldBrugisLocale(this.props.locale) + "&user=" + this.props.user;
-            console.log(docxUrl);
+            // console.log(docxUrl);
             window.open(docxUrl);
         }
     }
@@ -59,7 +59,7 @@ class SurveyGrid extends React.Component {
         var pdfUrl = this.props.webreperagehost + "/res/reperage/" + survey.id + ".pdf?lang=" + SurveyUtils.getOldBrugisLocale(this.props.locale) + "&user=" + this.props.user;
         if (survey.state === "DONE") {
             pdfUrl = this.props.webreperagehost + "/res/reperage/" + survey.id + ".pdf?lang=" + SurveyUtils.getOldBrugisLocale(this.props.locale) + "&user=" + this.props.user;
-            console.log(pdfUrl);
+            // console.log(pdfUrl);
             window.open(pdfUrl);
         }
     }
