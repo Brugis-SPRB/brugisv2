@@ -16,6 +16,7 @@ class BrugisNews extends React.Component {
     static defaultProps = {
         name: 'Brugis',
         className: 'bg-news',
+        locale: 'en-EN',
         contentTabStyle: {
             'min-height': '300px'
         }
@@ -66,6 +67,7 @@ class BrugisNews extends React.Component {
 
     renderCarouselItem() {
         let news = (this.props.locale === "fr-FR" || this.props.locale === "fr-BE") ? newsFR : newsNL;
+        console.log(this.props.locale);
         return news.news.map((newsItem) => {
             let dateEnd = new Date(Date.parse(newsItem.dateend));
             let dateStart = new Date(Date.parse(newsItem.datestart));
