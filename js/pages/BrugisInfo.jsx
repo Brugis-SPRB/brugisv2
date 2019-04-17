@@ -141,8 +141,7 @@ class BrugisInfo extends React.Component {
                         id="brugisInfoContact"
                         offset={3}
                         speed={1}
-                        style={styles}
-                        onClick={() => this.refs.parallax.scrollTo(0)}>
+                        style={styles}>
                         <Grid style={{ height: '60%', color: 'black', width: '100%', backgroundColor: 'white'}}>
                            <h2>Contact</h2><br/>
                            <Form horizontal>

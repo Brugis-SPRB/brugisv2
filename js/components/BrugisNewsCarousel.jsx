@@ -78,13 +78,12 @@ class BrugisNews extends React.Component {
                     <Grid fluid style={{backgroundColor: 'white', height: '100%'}}>
                         <Col md={6}>
                             <Image src="https://picsum.photos/900/500" responsive />
-
                         </Col>
                         <Col md={6} >
                         <h2 >{newsItem.title}</h2>
                         <h4>{dateStart.toLocaleString(this.props.locale, { month: 'long', day: 'numeric'})}</h4>
                         <p style={{"padding": "10px"}}>
-                                    {newsItem.message}
+                            {newsItem.message}
                         </p>
                         </Col>
                     </Grid>
