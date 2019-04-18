@@ -71,28 +71,52 @@
   color: #909090;
   //columns-webkit-text-fill-color: #909090;
 }
+#brugisInfoNews .container-fluid {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.12), 0 4px 8px rgba(0, 0, 0, 0.24);
+}
+
+#brugisInfoServices .container {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.12), 0 4px 8px rgba(0, 0, 0, 0.24);
+}
+
+#brugisInfoContact .container {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.12), 0 4px 8px rgba(0, 0, 0, 0.24);
+}
+
+#shadowBox {
+  //display: block;
+  width: -webkit-fill-available;
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-top: 5px;
+  //height: 57px;
+  position: absolute;
+}
 
 .d-flex {
-  display: block;
+  //display: block;
   z-index: 99;
   width: 100%;
   display: inline-flex;
   justify-content: space-between;
-  padding-left: 5px;
-  padding-right: 5px;
-  padding-top: 5px;
-  height: 57px;
+  height: 52px;
   position: absolute;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.12), 0 4px 8px rgba(0, 0, 0, 0.24);
 }
 
 .d-flex div {
-  padding: 1rem;
+  //padding: 1rem;
+  padding-top: 1.2rem;
+    padding-right: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
   text-align: center;
   border: none; /* Remove borders */
   outline: none; /* Remove outline */
   color: white; /* Text color */
   cursor: pointer; /* Add a mouse pointer on hover */
   font-size: 20px; /* Increase font size */
+
 }
 /*
 .d-flex div:hover {
