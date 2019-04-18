@@ -1,10 +1,9 @@
 const React = require('react');
 const PropTypes = require('prop-types');
 const {connect} = require('react-redux');
-const {Navbar, Grid, Nav, NavItem, Form, FormGroup, Col, ControlLabel, FormControl, Checkbox, Button, Row} = require('react-bootstrap');
+const {Grid} = require('react-bootstrap');
 const {goToPage} = require('../../MapStore2/web/client/actions/router');
 
-import NavInfo from '../components/NavInfo';
 import BrugisNews from "../components/BrugisNewsCarousel";
 import InfoDescription from "../components/InfoDescription";
 import Parallax from '../components/Parallax';
