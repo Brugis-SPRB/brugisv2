@@ -8,7 +8,6 @@ import BrugisNews from "../components/BrugisNewsCarousel";
 import InfoDescription from "../components/InfoDescription";
 import Parallax from '../components/Parallax';
 import BrugisContact from '../components/BrugisContact';
-import 'react-multi-carousel/lib/styles.css';
 
 const url = require('url');
 const urlQuery = url.parse(window.location.href, true).query;
