@@ -6,7 +6,9 @@ const {goToPage} = require('../../MapStore2/web/client/actions/router');
 
 import NavInfo from '../components/NavInfo';
 import BrugisNews from "../components/BrugisNewsCarousel";
+import InfoDescription from "../components/InfoDescription";
 import Parallax from '../components/Parallax';
+import BrugisContact from '../components/BrugisContact';
 import 'react-multi-carousel/lib/styles.css';
 
 const url = require('url');
@@ -39,7 +41,6 @@ class BrugisInfo extends React.Component {
         }
     };
 
-
     componentWillMount() {
         if (this.props.match.params.mapType && this.props.match.params.mapId) {
             if (this.props.mode === 'mobile') {
@@ -47,20 +48,6 @@ class BrugisInfo extends React.Component {
             }
             this.props.loadNews();
         }
-    }
-    renderNavBar = () => {
-        return (<Navbar className="navbar shadow navbar-home" sticky="top">
-        <Navbar.Brand href="#home">
-        <img
-            src="../../assets/img/brugis_logo.jpg"
-            alt="Brugis"
-        />
-        </Navbar.Brand>
-        <NavInfo />
-        <Nav pullRight>
-            <NavItem onClick={this.goBrugis.bind(this)}>Back to brugis</NavItem>
-        </Nav>
-    </Navbar>);
     }
 
     render() {
@@ -81,11 +68,10 @@ class BrugisInfo extends React.Component {
                       <div className="flex-fill d-none d-lg-block" onClick={() => this.refs.parallax.scrollTo(2)} title="Go to BruGIS Webservices" id="bibWS">Webservices</div>
                       <div className="flex-fill d-none d-lg-block" onClick={() => this.refs.parallax.scrollTo(3)} title="Go to Contact BruGIS" id="bibContact">Contact</div>
                       <div className="flex-fill" onClick={() => this.refs.parallax.scrollTo(0)} title="Go back to top" id="bibTop">Top</div>
-                    </div>  
+                    </div>
                <Parallax
                   ref="parallax"
                   pages={4}
-                
                   style={{'backgroundImage': multipleBackground, backgroundSize: 'cover'}}
                   >
                     <Parallax.Layer
@@ -116,92 +102,18 @@ class BrugisInfo extends React.Component {
                         speed={1}
                         style={styles}
                     >
-                        <Grid style={{ color: 'black', width: '100%', backgroundColor: 'white', height: '60%'}}>
-                            <Row>
-                                <Col md={12}>
-                                  <h2>Webservices</h2><br/>
-                                    <p>
-                                            The BruGIS® service presents all recent urban development data available in the Brussels Capital Region for engine the use of the zones surrounding yours, the areas of archaeological potential, the classified sites, …<br/><br/>
-
-                                            The webservices for INSPIRE data : <br/>
-                                            <ul>
-                                                <li>WMS : http://ws.brugis.irisnet.be/geoserver/INSPIREEN/ows?service=WMS&version=1.1.1&request=GetCapabilities</li>
-                                                <li>WFS : http://ws.brugis.irisnet.be/geoserver/INSPIREEN/ows?service=WFS&version=1.0.0&request=GetCapabilities</li>
-                                            </ul>
-                                            The webservices for non-INSPIRE data : <br/>
-                                            <ul>
-                                                <li>WMS :http://www.mybrugis.irisnet.be/geoserver/ows?</li>
-                                            </ul>
-                                    </p>
-                                </Col>
-                           </Row>
-                        </Grid>
+                        <InfoDescription />
                     </Parallax.Layer>
                     <Parallax.Layer
                         id="brugisInfoContact"
                         offset={3}
                         speed={1}
                         style={styles}>
-                        <Grid style={{ height: '60%', color: 'black', width: '100%', backgroundColor: 'white'}}>
-                           <h2>Contact</h2><br/>
-                           <Form horizontal>
-                              <FormGroup controlId="formHorizontalEmail">
-                              <Col componentClass={ControlLabel} sm={2}>
-                                  Email
-                              </Col>
-                              <Col sm={10}>
-                                  <FormControl type="email" placeholder="Email" />
-                              </Col>
-                              </FormGroup>
-                              <FormGroup controlId="formHorizontalPassword">
-                              <Col componentClass={ControlLabel} sm={2}>
-                                  Message
-                              </Col>
-                              <Col sm={10}>
-                                  <FormControl type="Message" placeholder="Message" />
-                              </Col>
-                              </FormGroup>
-                              <FormGroup>
-                              <Col smOffset={2} sm={10}>
-                                  <Checkbox>Remember me</Checkbox>
-                              </Col>
-                              </FormGroup>
-                              <FormGroup>
-                              <Col smOffset={2} sm={10}>
-                                  <Button type="submit">
-                                  Send
-                                  </Button>
-                              </Col>
-                              </FormGroup>
-                          </Form>
-                      </Grid>
+                        <BrugisContact />
                   </Parallax.Layer>
               </Parallax>
 
           </div>);
-    }
-
-    static responsive = {
-        desktop: {
-          breakpoint: { max: 3000, min: 1024 },
-          items: 3
-        },
-        tablet: {
-          breakpoint: { max: 1024, min: 464 },
-          items: 2
-        },
-        mobile: {
-          breakpoint: { max: 464, min: 0 },
-          items: 1
-        }
-      };
-
-    galleryItems = () => {
-        return (
-          [1, 2, 3, 4, 5].map((item, i) => (
-            <div key={`key-${i}`}><h2>{item}</h2><img src="../../assets/img/urbis_color.PNG" /></div>
-          ))
-        );
     }
 
     goBrugis = () => {
