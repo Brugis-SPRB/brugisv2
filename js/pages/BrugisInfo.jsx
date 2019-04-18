@@ -64,7 +64,6 @@ class BrugisInfo extends React.Component {
     }
 
     render() {
-        // console.log(this.props.locale);
         const styles = {
             fontFamily: 'Menlo-Regular, Menlo, monospace',
             fontSize: 14,
@@ -107,7 +106,7 @@ class BrugisInfo extends React.Component {
                         style={styles}
                     >
                         <Grid fluid style={{ color: 'black', width: '100%', backgroundColor: 'white', height: '60%'}}>
-                            <BrugisNews/>
+                            <BrugisNews locale={this.props.locale} />
                         </Grid>
                     </Parallax.Layer>
                     <Parallax.Layer
