@@ -7,7 +7,10 @@ export default class extends React.Component {
         pages: PropTypes.number.isRequired,
         effect: PropTypes.func,
         scrolling: PropTypes.bool,
-        horizontal: PropTypes.bool
+        horizontal: PropTypes.bool,
+        style: PropTypes.object,
+        innerStyle: PropTypes.object,
+        className: PropTypes.object
     }
     static childContextTypes = { parallax: PropTypes.object }
     static defaultProps = {
