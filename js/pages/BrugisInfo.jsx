@@ -73,7 +73,7 @@ class BrugisInfo extends React.Component {
             display: 'flex', alignItems: 'center', justifyContent: 'center'
         };
 
-        const multipleBackground = burl('BruGIS_Vintage_2000.jpg');
+        const multipleBackground = burl('BruGIS_Vintage_2000_corr.jpg');
 
         return (<div>
                     <div className="d-flex">
