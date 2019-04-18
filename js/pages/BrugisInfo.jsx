@@ -86,7 +86,7 @@ class BrugisInfo extends React.Component {
                <Parallax
                   ref="parallax"
                   pages={4}
-                  style={{'backgroundImage': multipleBackground, backgroundSize: 'cover'}}
+                  style={{'backgroundImage': multipleBackground, backgroundSize: 'cover', 'margin-top': '-62px', 'z-index': 1000}}
                   >
                     <Parallax.Layer
                         offset={0} speed={1} factor={1}
