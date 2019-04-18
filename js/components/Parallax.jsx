@@ -59,6 +59,7 @@ export default class extends React.Component {
     render() {
         const {style, innerStyle, pages, className, scrolling, children, horizontal } = this.props;
         const overflow = scrolling ? 'scroll' : 'hidden';
+
         return (
             <div
                 ref="container"
