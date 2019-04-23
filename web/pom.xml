@@ -141,7 +141,7 @@
                                     <include>*.html</include>
                                     <include>*.json</include>
                                     <include>wmsaatl*.xml</include>
-                                    <include>assets/img/*.*</include>
+                                    <include>brugis/assets/img/*.*</include>
                                     <include>maps/*.json</include>
                                 </includes>
                                 <excludes>
