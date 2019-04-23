@@ -13,7 +13,7 @@ const url = require('url');
 const urlQuery = url.parse(window.location.href, true).query;
 
 // Little helpers ...
-const burl = (name) => `url(../../assets/img/${name})`;
+const burl = (name) => `url(../../../brugis/assets/img/${name})`;
 
 class BrugisInfo extends React.Component {
     static propTypes = {
