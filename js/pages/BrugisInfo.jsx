@@ -15,7 +15,7 @@ const url = require('url');
 const urlQuery = url.parse(window.location.href, true).query;
 
 // Little helpers ...
-const burl = (name) => `url(../../../brugis/assets/img/${name})`;
+// const burl = (name) => `url(../../../brugis/assets/img/${name})`;
 
 import BrugisBackground from '../../assets/img/BruGIS_Vintage_2000_corr.jpg';
 import Brugis2000 from '../../assets/img/brugis_2000.png';
