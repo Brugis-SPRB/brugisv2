@@ -50,7 +50,7 @@ class BrugisInfo extends React.Component {
 
     render() {
         const styles = {
-            fontFamily: 'Menlo-Regular, Menlo, monospace',
+            fontFamily: 'Dosis, sans-serif',
             fontSize: 14,
             lineHeight: '10px',
             color: 'white',
