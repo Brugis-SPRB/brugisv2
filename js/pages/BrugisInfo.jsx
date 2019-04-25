@@ -1,7 +1,7 @@
 const React = require('react');
 const PropTypes = require('prop-types');
 const {connect} = require('react-redux');
-const {Grid} = require('react-bootstrap');
+const {Grid, Image, Glyphicon} = require('react-bootstrap');
 const {goToPage} = require('../../MapStore2/web/client/actions/router');
 
 import BrugisNews from "../components/BrugisNewsCarousel";
@@ -9,11 +9,15 @@ import InfoDescription from "../components/InfoDescription";
 import Parallax from '../components/Parallax';
 import BrugisContact from '../components/BrugisContact';
 
+import BrugisLogo from '../../assets/img/Brugis_blanc_500.png';
+
 const url = require('url');
 const urlQuery = url.parse(window.location.href, true).query;
 
 // Little helpers ...
 const burl = (name) => `url(../../../brugis/assets/img/${name})`;
+// const burl = (name) => `url(../../assets/img/${name})`;
+
 
 class BrugisInfo extends React.Component {
     static propTypes = {
@@ -62,11 +66,13 @@ class BrugisInfo extends React.Component {
         return (<div>
                 <div id="shadowBox">
                     <div className="d-flex">
-                          <div className="flex-fill" onClick={this.goBrugis.bind(this)} title="Go back to BruGIS" id="bibIllBeBack">BruGIS</div>
+                          <div className="flex-fill" onClick={this.goBrugis.bind(this)} title="Go back to BruGIS" id="bibIllBeBack">
+                            <Image src={BrugisLogo} responsive style={{ height: '50px'}}/>
+                           </div>
                           <div className="flex-fill d-none d-lg-block" onClick={() => this.refs.parallax.scrollTo(1)} title="Go to BruGIS News" id="bibNews">News</div>
                           <div className="flex-fill d-none d-lg-block" onClick={() => this.refs.parallax.scrollTo(2)} title="Go to BruGIS Webservices" id="bibWS">Webservices</div>
                           <div className="flex-fill d-none d-lg-block" onClick={() => this.refs.parallax.scrollTo(3)} title="Go to Contact BruGIS" id="bibContact">Contact</div>
-                          <div className="flex-fill" onClick={() => this.refs.parallax.scrollTo(0)} title="Go back to top" id="bibTop">Top</div>
+                          <div className="flex-fill" onClick={() => this.refs.parallax.scrollTo(0)} title="Go back to top" id="bibTop"><Glyphicon glyph="arrow-up"/></div>
                     </div>
                </div>
                <Parallax
