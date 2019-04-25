@@ -16,8 +16,11 @@ const urlQuery = url.parse(window.location.href, true).query;
 
 // Little helpers ...
 const burl = (name) => `url(../../../brugis/assets/img/${name})`;
-// const burl = (name) => `url(../../assets/img/${name})`;
 
+import BrugisBackground from '../../assets/img/BruGIS_Vintage_2000_corr.jpg';
+import Brugis2000 from '../../assets/img/brugis_2000.png';
+import AchterGrond2000 from '../../assets/img/achtergrond_2000_4164.png';
+import VoorGrond200 from '../../assets/img/voorgrond_2000.png';
 
 class BrugisInfo extends React.Component {
     static propTypes = {
@@ -61,8 +64,6 @@ class BrugisInfo extends React.Component {
             display: 'flex', alignItems: 'center', justifyContent: 'center'
         };
 
-        const multipleBackground = burl('BruGIS_Vintage_2000_corr.jpg');
-
         return (<div>
                 <div id="shadowBox">
                     <div className="d-flex">
@@ -78,19 +79,19 @@ class BrugisInfo extends React.Component {
                <Parallax
                   ref="parallax"
                   pages={4}
-                  style={{'backgroundImage': multipleBackground, backgroundSize: 'cover'}}
+                  style={{backgroundImage: "url(" + BrugisBackground + ")", backgroundSize: 'cover'}}
                   >
                     <Parallax.Layer
                         offset={0} speed={1} factor={1}
-                        style={{ backgroundImage: burl('brugis_2000.png'), backgroundSize: 'contain' }}
+                        style={{backgroundImage: "url(" + Brugis2000 + ")", backgroundSize: 'contain'}}
                     />
                     <Parallax.Layer
                         offset={0} speed={0} factor={4}
-                        style={{ backgroundImage: burl('achtergrond_2000_4164.png'), backgroundSize: 'cover' }}
+                        style={{backgroundImage: "url(" + AchterGrond2000 + ")", backgroundSize: 'cover'}}
                     />
                     <Parallax.Layer
                         offset={0} speed={1} factor={1}
-                        style={{ backgroundImage: burl('voorgrond_2000.png'), backgroundSize: 'contain' }}
+                        style={{backgroundImage: "url(" + VoorGrond200 + ")", backgroundSize: 'contain'}}
                     />
                     <Parallax.Layer
                         id="brugisInfoNews"
