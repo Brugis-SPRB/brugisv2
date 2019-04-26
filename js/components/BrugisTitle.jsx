@@ -19,14 +19,14 @@ class BrugisTitle extends React.Component {
    render() {
        return (
            <Grid style={{ height: '60%', width: '100%', fontWeight: 'Medium'}}>
-            <Row style={{ fontSize: '8em', lineHeight: '1em', color: '#a2c6d7'}}>
+            <Row style={{ fontSize: '8em', lineHeight: '1em', color: '#4f8da8'}}>
                 <Col md={6}>
                 </Col>
                 <Col md={6}>
                 BIENVENUE
                 </Col>
             </Row>
-            <Row style={{ fontSize: '5em', lineHeight: '1em', fontWeight: 'Bold', color: '#4f8da8'}}>
+            <Row style={{ fontSize: '5em', lineHeight: '1em', fontWeight: 'Bold', color: '#a2c6d7'}}>
                 <Col md={3}>
                 </Col>
                 <Col md={7}>
