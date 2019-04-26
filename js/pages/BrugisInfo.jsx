@@ -7,6 +7,8 @@ const {goToPage} = require('../../MapStore2/web/client/actions/router');
 import BrugisNews from "../components/BrugisNewsCarousel";
 import InfoDescription from "../components/InfoDescription";
 import Parallax from '../components/Parallax';
+import Animated from 'animated/lib/targets/react-dom'
+import Easing from 'animated/lib/Easing'
 import BrugisContact from '../components/BrugisContact';
 import BrugisTitle from '../components/BrugisTitle';
 
@@ -113,6 +115,8 @@ class BrugisInfo extends React.Component {
                   ref="parallax"
                   pages={4}
                   style={{backgroundImage: "url(" + BrugisBackground + ")", backgroundSize: 'cover'}}
+                  effect={(animation, toValue) =>
+                     Animated.timing(animation, { toValue, duration: 650})}
                   >
                     <Parallax.Layer
                         offset={0} speed={1} factor={1}
