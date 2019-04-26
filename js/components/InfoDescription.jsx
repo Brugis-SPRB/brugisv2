@@ -16,7 +16,7 @@ class InfoDescription extends React.Component {
 
     render() {
         return (
-            <Grid style={{ color: 'black', width: '100%', backgroundColor: 'white', height: '60%'}}>
+            <Grid style={{ color: '#8d8d8d', width: '100%', backgroundColor: 'white', height: '60%'}}>
             <Row>
                 <Col md={12}>
                     <h2>Webservices</h2><br/>

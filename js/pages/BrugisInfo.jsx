@@ -133,7 +133,7 @@ class BrugisInfo extends React.Component {
                     <Parallax.Layer
                         id="brugisInfoTitle"
                         offset={0.3}
-                        speed={-2}
+                        speed={1.4}
                         factor={1}
                         style={styles}>
                         <BrugisTitle />

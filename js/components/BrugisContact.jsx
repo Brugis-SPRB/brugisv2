@@ -18,7 +18,7 @@ class BrugisContact extends React.Component {
 
    render() {
        return (
-           <Grid style={{ height: '60%', color: 'black', width: '100%', backgroundColor: 'white'}}>
+           <Grid style={{ height: '60%', color: '#8d8d8d', width: '100%', backgroundColor: 'white'}}>
             <Row>
                 <Col md={6}>
                 <h2>Contact</h2><br/>

@@ -75,7 +75,7 @@ class BrugisNews extends React.Component {
             if (dateStart <= dateNow && dateEnd >= dateNow) {
                 return (
                    <Carousel.Item>
-                    <Grid fluid style={{backgroundColor: 'white', height: '100%'}}>
+                    <Grid fluid style={{backgroundColor: 'white', height: '100%', color: '#8d8d8d'}}>
                         <Col md={6}>
                             <Image src="https://picsum.photos/900/500" responsive />
                         </Col>
