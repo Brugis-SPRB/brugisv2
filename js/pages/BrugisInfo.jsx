@@ -8,6 +8,7 @@ import BrugisNews from "../components/BrugisNewsCarousel";
 import InfoDescription from "../components/InfoDescription";
 import Parallax from '../components/Parallax';
 import BrugisContact from '../components/BrugisContact';
+import BrugisTitle from '../components/BrugisTitle';
 
 import BrugisLogo from '../../assets/img/Brugis_envecto_nondidju_500px.svg';
 
@@ -126,11 +127,18 @@ class BrugisInfo extends React.Component {
                         style={{backgroundImage: "url(" + VoorGrond200 + ")", backgroundSize: 'contain'}}
                     />
                     <Parallax.Layer
+                        id="brugisInfoTitle"
+                        offset={0.3}
+                        speed={-2}
+                        factor={1}
+                        style={styles}>
+                        <BrugisTitle />
+                    </Parallax.Layer>
+                    <Parallax.Layer
                         id="brugisInfoNews"
                         offset={1}
                         speed={1}
-                        style={styles}
-                    >
+                        style={styles}>
                         <Grid fluid style={{ color: 'black', width: '100%', backgroundColor: 'white', height: '60%'}}>
                             <BrugisNews locale={this.props.locale} />
                         </Grid>
@@ -139,8 +147,7 @@ class BrugisInfo extends React.Component {
                         id="brugisInfoServices"
                         offset={2}
                         speed={1}
-                        style={styles}
-                    >
+                        style={styles}>
                         <InfoDescription />
                     </Parallax.Layer>
                     <Parallax.Layer
