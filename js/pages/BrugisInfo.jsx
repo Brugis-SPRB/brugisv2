@@ -7,8 +7,8 @@ const {goToPage} = require('../../MapStore2/web/client/actions/router');
 import BrugisNews from "../components/BrugisNewsCarousel";
 import InfoDescription from "../components/InfoDescription";
 import Parallax from '../components/Parallax';
-import Animated from 'animated/lib/targets/react-dom'
-import Easing from 'animated/lib/Easing'
+import Animated from 'animated/lib/targets/react-dom';
+// import from 'animated/lib/Easing';
 import BrugisContact from '../components/BrugisContact';
 import BrugisTitle from '../components/BrugisTitle';
 
