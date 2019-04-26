@@ -9,7 +9,7 @@ import InfoDescription from "../components/InfoDescription";
 import Parallax from '../components/Parallax';
 import BrugisContact from '../components/BrugisContact';
 
-import BrugisLogo from '../../assets/img/Brugis_blanc_500.png';
+import BrugisLogo from '../../assets/img/Brugis_envecto_nondidju_500px.svg';
 
 const url = require('url');
 const urlQuery = url.parse(window.location.href, true).query;
@@ -67,13 +67,45 @@ class BrugisInfo extends React.Component {
         return (<div>
                 <div id="shadowBox">
                     <div className="d-flex">
-                          <div className="flex-fill" onClick={this.goBrugis.bind(this)} title="Go back to BruGIS" id="bibIllBeBack">
-                            <Image src={BrugisLogo} responsive style={{ height: '50px'}}/>
-                           </div>
-                          <div className="flex-fill d-none d-lg-block" onClick={() => this.refs.parallax.scrollTo(1)} title="Go to BruGIS News" id="bibNews">News</div>
-                          <div className="flex-fill d-none d-lg-block" onClick={() => this.refs.parallax.scrollTo(2)} title="Go to BruGIS Webservices" id="bibWS">Webservices</div>
-                          <div className="flex-fill d-none d-lg-block" onClick={() => this.refs.parallax.scrollTo(3)} title="Go to Contact BruGIS" id="bibContact">Contact</div>
-                          <div className="flex-fill" onClick={() => this.refs.parallax.scrollTo(0)} title="Go back to top" id="bibTop"><Glyphicon glyph="arrow-up"/></div>
+                          <div onClick={this.goBrugis.bind(this)} title="Go back to BruGIS" style={{ flexGrow: 1}}>
+                             <div style={{
+                                height: '52px',
+                                width: '52px',
+                                padding: '5px',
+                                backgroundColor: '#345d6f',
+                                boxShadow: '0 3px 6px rgba(0, 0, 0, 0.12), 0 4px 8px rgba(0, 0, 0, 0.24)'
+                              }} id="bibIllBeBack">
+                                <Image src={BrugisLogo} responsive/>
+                             </div>
+                          </div>
+                          <div style={{ flexGrow: 3}} />
+
+                          <div style={{
+                                flexGrow: 5,
+                                display: 'inline-flex',
+                                justifyContent: 'space-between',
+                                boxShadow: '0 3px 6px rgba(0, 0, 0, 0.12), 0 4px 8px rgba(0, 0, 0, 0.24)',
+                                lineHeight: '52px',
+                                fontFamily: 'Montserrat, sans-serif'
+                           }}>
+                            <div onClick={() => this.refs.parallax.scrollTo(1)} title="Go to BruGIS News" id="bibNews">News</div>
+                            <div onClick={() => this.refs.parallax.scrollTo(2)} title="Go to BruGIS Webservices" id="bibWS">Webservices</div>
+                            <div onClick={() => this.refs.parallax.scrollTo(3)} title="Go to Contact BruGIS" id="bibContact">Contact</div>
+                          </div>
+
+                          <div style={{ flexGrow: 3}} />
+                          <div onClick={() => this.refs.parallax.scrollTo(0)} title="Go back to top" style={{ flexGrow: 1}}>
+                            <div id="bibTop" style={{
+                                backgroundColor: '#a2c6d7',
+                                'float': 'right',
+                                width: '52px',
+                                height: '52px',
+                                fontSize: '2.1em',
+                                boxShadow: '0 3px 6px rgba(0, 0, 0, 0.12), 0 4px 8px rgba(0, 0, 0, 0.24)'
+                            }}>
+                                <Glyphicon glyph="arrow-up"/>
+                            </div>
+                          </div>
                     </div>
                </div>
                <Parallax
