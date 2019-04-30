@@ -4360,8 +4360,35 @@
           <BoundingBox SRS="EPSG:4326" maxx="4.481318" maxy="50.914392" minx="4.242254" miny="50.76416" />
         </Layer>
         <Layer cascaded="1" queryable="0">
+          <Name>BDU_DEP:Orthophotoplans_1987</Name>
+          <Title>Orthophotoplans 1987</Title>
+          <Abstract />
+          <KeywordList />
+          <SRS>EPSG:4326</SRS>
+          <LatLonBoundingBox maxx="4.48125845419357" maxy="50.9218586969616" minx="4.23949305273467" miny="50.7599823865622" />
+          <BoundingBox SRS="EPSG:4326" maxx="50.9218586969616" maxy="4.48125845419357" minx="50.7599823865622" miny="4.23949305273467" />
+        </Layer>
+        <Layer cascaded="1" queryable="0">
+          <Name>BDU_DEP:Orthophotoplans_1977</Name>
+          <Title>Orthophotoplans 1977</Title>
+          <Abstract />
+          <KeywordList />
+          <SRS>EPSG:4326</SRS>
+          <LatLonBoundingBox maxx="4.48125845419357" maxy="50.9218586969616" minx="4.23949305273467" miny="50.7599823865622" />
+          <BoundingBox SRS="EPSG:4326" maxx="50.9218586969616" maxy="4.48125845419357" minx="50.7599823865622" miny="4.23949305273467" />
+        </Layer>
+        <Layer cascaded="1" queryable="0">
           <Name>BDU_DEP:Orthophotoplans_1971</Name>
           <Title>Orthophotoplans 1971</Title>
+          <Abstract />
+          <KeywordList />
+          <SRS>EPSG:4326</SRS>
+          <LatLonBoundingBox maxx="4.48125845419357" maxy="50.9218586969616" minx="4.23949305273467" miny="50.7599823865622" />
+          <BoundingBox SRS="EPSG:4326" maxx="50.9218586969616" maxy="4.48125845419357" minx="50.7599823865622" miny="4.23949305273467" />
+        </Layer>
+        <Layer cascaded="1" queryable="0">
+          <Name>BDU_DEP:Orthophotoplans_1961</Name>
+          <Title>Orthophotoplans 1961</Title>
           <Abstract />
           <KeywordList />
           <SRS>EPSG:4326</SRS>
