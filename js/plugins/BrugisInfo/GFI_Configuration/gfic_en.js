@@ -285,7 +285,7 @@ const gfiEn = {
 		"actiontype": "GRID",
 		"title": "[%REFSITEX%]",
 		"attributes": [{
-				"name": "Nom",
+				"name": "Object",
 				"label": "[%OBJET%]",
 				"type": "string"
 			},

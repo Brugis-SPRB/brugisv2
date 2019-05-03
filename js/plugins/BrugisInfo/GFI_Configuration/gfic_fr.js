@@ -291,7 +291,7 @@ const gfiFr = {
 		"actiontype": "GRID",
 		"title": "[%REFSITEX%]",
 		"attributes": [{
-				"name": "Nom",
+				"name": "Objet",
 				"label": "[%OBJET%]",
 				"type": "string"
 			},

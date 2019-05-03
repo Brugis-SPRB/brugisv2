@@ -358,7 +358,7 @@ const gfiNl = {
 		"actiontype": "GRID",
 		"title": "[%REFSITEX%]",
 		"attributes": [{
-				"name": "Naam",
+				"name": "Objekt",
 				"label": "[%OBJET%]",
 				"type": "string"
 			},
