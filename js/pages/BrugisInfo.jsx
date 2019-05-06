@@ -121,28 +121,38 @@ class BrugisInfo extends React.Component {
                     <Parallax.Layer
                         offset={0} speed={1} factor={1}
                         style={{backgroundImage: "url(" + Brugis2000 + ")", backgroundSize: 'contain'}}
+                        effect={(animation, toValue) =>
+                           Animated.timing(animation, { toValue, duration: 650})}
                     />
                     <Parallax.Layer
                         offset={0} speed={0} factor={4}
                         style={{backgroundImage: "url(" + AchterGrond2000 + ")", backgroundSize: 'cover'}}
+                        effect={(animation, toValue) =>
+                           Animated.timing(animation, { toValue, duration: 650})}
                     />
                     <Parallax.Layer
                         offset={0} speed={1} factor={1}
                         style={{backgroundImage: "url(" + VoorGrond200 + ")", backgroundSize: 'contain'}}
+                        effect={(animation, toValue) =>
+                           Animated.timing(animation, { toValue, duration: 650})}
                     />
                     <Parallax.Layer
                         id="brugisInfoTitle"
                         offset={0.3}
                         speed={1.4}
                         factor={1}
-                        style={styles}>
+                        style={styles}
+                        effect={(animation, toValue) =>
+                           Animated.timing(animation, { toValue, duration: 650})}>
                         <BrugisTitle />
                     </Parallax.Layer>
                     <Parallax.Layer
                         id="brugisInfoNews"
                         offset={1}
                         speed={1}
-                        style={styles}>
+                        style={styles}
+                        effect={(animation, toValue) =>
+                           Animated.timing(animation, { toValue, duration: 650})}>
                         <Grid fluid style={{ color: 'black', width: '100%', backgroundColor: 'white', height: '60%'}}>
                             <BrugisNews locale={this.props.locale} />
                         </Grid>
@@ -151,14 +161,18 @@ class BrugisInfo extends React.Component {
                         id="brugisInfoServices"
                         offset={2}
                         speed={1}
-                        style={styles}>
+                        style={styles}
+                        effect={(animation, toValue) =>
+                           Animated.timing(animation, { toValue, duration: 650})}>
                         <InfoDescription />
                     </Parallax.Layer>
                     <Parallax.Layer
                         id="brugisInfoContact"
                         offset={3}
                         speed={1}
-                        style={styles}>
+                        style={styles}
+                        effect={(animation, toValue) =>
+                           Animated.timing(animation, { toValue, duration: 650})}>
                         <BrugisContact />
                   </Parallax.Layer>
               </Parallax>

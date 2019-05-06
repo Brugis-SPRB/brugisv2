@@ -77,12 +77,12 @@ class BrugisNews extends React.Component {
                    <Carousel.Item>
                     <Grid fluid style={{backgroundColor: 'white', height: '100%', color: '#8d8d8d'}}>
                         <Col md={6}>
-                            <Image src="https://picsum.photos/900/500" responsive />
+                            <Image src="https://picsum.photos/900/560" responsive />
                         </Col>
                         <Col md={6} >
                         <h2 >{newsItem.title}</h2>
                         <h4>{dateStart.toLocaleString(this.props.locale, { month: 'long', day: 'numeric'})}</h4>
-                        <p style={{"padding": "10px"}}>
+                        <p style={{"padding": "10px", "lineHeight": '1em', }}>
                             {newsItem.message}
                         </p>
                         </Col>
