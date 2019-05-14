@@ -1765,26 +1765,50 @@
         <Name>Brussels Environnement</Name>
         <Title>Brussels Environnement</Title>
         <Layer noSubsets="0" opaque="0" queryable="1">
-        <Name>BDU:PUBBELB_INVENTAIRE_ETAT_SOL_PUBLIC</Name>
-        <Title>PUBBELB_INVENTAIRE_ETAT_SOL_PUBLIC</Title>
-        <Abstract/>
-        <KeywordList>
-        <Keyword>features</Keyword>
-        <Keyword>PUBBELB_INVENTAIRE_ETAT_SOL_PUBLIC</Keyword>
-        </KeywordList>
-        <SRS>EPSG:31370</SRS>
-        <LatLonBoundingBox maxx="4.479551179274349" maxy="50.91222425243426" minx="4.252627282029799" miny="50.76873160510658"/>
-        <BoundingBox SRS="EPSG:31370" maxx="165088.0" maxy="185088.0" minx="140000.0" miny="160000.0"/>
-        <Style>
-        <Name>IBGE_Inventaire_etat_sol_public</Name>
-        <Title>inventaire etat du sol public</Title>
-        <LegendURL height="180" width="109">
-        <Format>image/png</Format>
-        <OnlineResource ns0:href="http://10.128.81.203:8080/geoserver/wms?request=GetLegendGraphic&format=image%2Fpng&width=20&height=20&layer=BDU%3APUBBELB_INVENTAIRE_ETAT_SOL_PUBLIC" ns0:type="simple"/>
-        </LegendURL>
-        </Style>
-        </Layer>
+          <Name>Polluted areas catalogue</Name>
+          <Title>Polluted areas catalogue</Title>
+          <Layer cascaded="0" opaque="0" queryable="1">
+            <Name>BDU:PUBBELB_INVENTAIRE_ETAT_SOL_PUBLIC</Name>
+            <Title>PUBBELB_INVENTAIRE_ETAT_SOL_PUBLIC</Title>
+            <Abstract />
+            <KeywordList>
+              <Keyword>features</Keyword>
+              <Keyword>PUBBELB_INVENTAIRE_ETAT_SOL_PUBLIC</Keyword>
+            </KeywordList>
+            <SRS>EPSG:31370</SRS>
+            <LatLonBoundingBox maxx="4.479551179274349" maxy="50.91222425243426" minx="4.252627282029799" miny="50.76873160510658"/>
+            <BoundingBox SRS="EPSG:31370" maxx="165088.0" maxy="185088.0" minx="140000.0" miny="160000.0"/>
+            <Style>
+            <Name>IBGE_Inventaire_etat_sol_public</Name>
+            <Title>inventaire etat du sol public</Title>
+            <LegendURL height="180" width="109">
+            <Format>image/png</Format>
+            <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=BDU%3APUBBELB_INVENTAIRE_ETAT_SOL_PUBLIC" ns0:type="simple"/>
+            </LegendURL>
+            </Style>
+          </Layer>
 
+          <Layer cascaded="0" opaque="0" queryable="1">
+            <Name>inventaire_etat_sol_public</Name>
+            <Title>Cadastral Parcels in the Polluted areas catalogue</Title>
+            <KeywordList>
+              <Keyword>inventaire sol</Keyword>
+              <Keyword>IBGE WMS - Mapserver</Keyword>
+            </KeywordList>
+            <SRS>EPSG:31370</SRS>
+            <LatLonBoundingBox maxx="4.49186" maxy="50.9208" minx="4.22901" miny="50.7556" />
+            <BoundingBox SRS="EPSG:31370" maxx="158835" maxy="179004" minx="140352" miny="160632" />
+            <source>IBGE WMS - Mapserver</source>
+            <Style>
+              <Name>default</Name>
+              <Title>default</Title>
+              <LegendURL height="149" width="131">
+                <Format>image/png</Format>
+                <OnlineResource ns0:href="http://wms.ibgebim.be/ibgewms?version=1.1.1&amp;service=WMS&amp;request=GetLegendGraphic&amp;layer=inventaire_etat_sol_public&amp;format=image/png&amp;STYLE=default" ns0:type="simple" />
+              </LegendURL>
+            </Style>
+          </Layer>
+        </Layer>
         <Layer noSubsets="0" opaque="0" queryable="1">
           <Name>Zones, Habitats, Sites</Name>
           <Title>Zones, Habitats, Sites</Title>
