@@ -82,7 +82,7 @@ class BrugisNews extends React.Component {
                         <Col md={6} >
                         <h2 >{newsItem.title}</h2>
                         <h4>{dateStart.toLocaleString(this.props.locale, { month: 'long', day: 'numeric'})}</h4>
-                        <p style={{"padding": "10px", "lineHeight": '1em', }}>
+                        <p style={{"padding": "10px", "lineHeight": '1em'}}>
                             {newsItem.message}
                         </p>
                         </Col>
