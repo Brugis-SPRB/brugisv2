@@ -10,7 +10,7 @@ import Parallax from '../components/Parallax';
 import Animated from 'animated/lib/targets/react-dom';
 // import from 'animated/lib/Easing';
 import BrugisContact from '../components/BrugisContact';
-import BrugisTitle from '../components/BrugisTitle';
+// import BrugisTitle from '../components/BrugisTitle';
 
 import BrugisLogo from '../../assets/img/Brugis_envecto_nondidju_500px.svg';
 
@@ -23,7 +23,7 @@ const urlQuery = url.parse(window.location.href, true).query;
 import BrugisBackground from '../../assets/img/BruGIS_Vintage_2000_corr.jpg';
 import Brugis2000 from '../../assets/img/brugis_2000.png';
 import AchterGrond2000 from '../../assets/img/achtergrond_2000_4164.png';
-import VoorGrond200 from '../../assets/img/voorgrond_2000.png';
+import VoorGrond2000 from '../../assets/img/voorgrond_2000.png';
 
 class BrugisInfo extends React.Component {
     static propTypes = {
@@ -91,9 +91,9 @@ class BrugisInfo extends React.Component {
                                 lineHeight: '52px',
                                 fontFamily: 'Montserrat, sans-serif'
                            }}>
-                            <div onClick={() => this.refs.parallax.scrollTo(1)} title="Go to BruGIS News" id="bibNews">News</div>
-                            <div onClick={() => this.refs.parallax.scrollTo(2)} title="Go to BruGIS Webservices" id="bibWS">Webservices</div>
-                            <div onClick={() => this.refs.parallax.scrollTo(3)} title="Go to Contact BruGIS" id="bibContact">Contact</div>
+                            <div onClick={() => this.refs.parallax.scrollTo(0)} title="Go to BruGIS News" id="bibNews">News</div>
+                            <div onClick={() => this.refs.parallax.scrollTo(1)} title="Go to BruGIS Webservices" id="bibWS">Webservices</div>
+                            <div onClick={() => this.refs.parallax.scrollTo(2)} title="Go to Contact BruGIS" id="bibContact">Contact</div>
                           </div>
 
                           <div style={{ flexGrow: 3}} />
@@ -113,13 +113,13 @@ class BrugisInfo extends React.Component {
                </div>
                <Parallax
                   ref="parallax"
-                  pages={4}
+                  pages={3}
                   style={{backgroundImage: "url(" + BrugisBackground + ")", backgroundSize: 'cover'}}
                   effect={(animation, toValue) =>
                      Animated.timing(animation, { toValue, duration: 650})}
                   >
                     <Parallax.Layer
-                        offset={0} speed={1} factor={1}
+                        offset={2} speed={1} factor={1}
                         style={{backgroundImage: "url(" + Brugis2000 + ")", backgroundSize: 'contain'}}
                         effect={(animation, toValue) =>
                            Animated.timing(animation, { toValue, duration: 650})}
@@ -131,24 +131,15 @@ class BrugisInfo extends React.Component {
                            Animated.timing(animation, { toValue, duration: 650})}
                     />
                     <Parallax.Layer
-                        offset={0} speed={1} factor={1}
-                        style={{backgroundImage: "url(" + VoorGrond200 + ")", backgroundSize: 'contain'}}
+                        offset={2} speed={1} factor={1}
+                        style={{backgroundImage: "url(" + VoorGrond2000 + ")", backgroundSize: 'contain'}}
                         effect={(animation, toValue) =>
                            Animated.timing(animation, { toValue, duration: 650})}
                     />
-                    <Parallax.Layer
-                        id="brugisInfoTitle"
-                        offset={0.3}
-                        speed={1.4}
-                        factor={1}
-                        style={styles}
-                        effect={(animation, toValue) =>
-                           Animated.timing(animation, { toValue, duration: 650})}>
-                        <BrugisTitle />
-                    </Parallax.Layer>
+
                     <Parallax.Layer
                         id="brugisInfoNews"
-                        offset={1}
+                        offset={0.05}
                         speed={1}
                         style={styles}
                         effect={(animation, toValue) =>
@@ -159,7 +150,7 @@ class BrugisInfo extends React.Component {
                     </Parallax.Layer>
                     <Parallax.Layer
                         id="brugisInfoServices"
-                        offset={2}
+                        offset={1.05}
                         speed={1}
                         style={styles}
                         effect={(animation, toValue) =>
@@ -168,7 +159,7 @@ class BrugisInfo extends React.Component {
                     </Parallax.Layer>
                     <Parallax.Layer
                         id="brugisInfoContact"
-                        offset={3}
+                        offset={2.15}
                         speed={1}
                         style={styles}
                         effect={(animation, toValue) =>
