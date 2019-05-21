@@ -1,7 +1,7 @@
 const React = require('react');
 const PropTypes = require('prop-types');
 const {Grid, Row, Col} = require('react-bootstrap');
-const HTML = require('../../MapStore2/web/client/components/I18N/HTML');
+const Message = require('../../MapStore2/web/client/components/I18N/Message');
 
 class InfoDescription extends React.Component {
     static propTypes = {
@@ -19,9 +19,9 @@ class InfoDescription extends React.Component {
             <Grid style={{ color: '#8d8d8d', width: '100%', backgroundColor: 'white', height: '60%'}}>
             <Row>
                 <Col md={12}>
-                    <h2>Webservices</h2><br/>
+                    <h2><Message msgId="brugisInfo.webservice_title" /></h2><br/>
                     <p>
-                        <HTML msgId="home.shortDescription"/>
+                        <Message msgId="home.shortDescription"/>
                     </p>
                 </Col>
            </Row>

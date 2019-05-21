@@ -3,6 +3,7 @@ const PropTypes = require('prop-types');
 const {connect} = require('react-redux');
 const {Grid, Image, Glyphicon} = require('react-bootstrap');
 const {goToPage} = require('../../MapStore2/web/client/actions/router');
+const Message = require('../../MapStore2/web/client/components/I18N/Message');
 
 import BrugisNews from "../components/BrugisNewsCarousel";
 import InfoDescription from "../components/InfoDescription";
@@ -66,11 +67,15 @@ class BrugisInfo extends React.Component {
             color: 'white',
             display: 'flex', alignItems: 'center', justifyContent: 'center'
         };
-
+        const goBackToBruGISTooltipText = (<Message msgId="brugisInfo.main_go_back_to_brugis" />);
+        const newsTooltipText = (<Message msgId="brugisInfo.main_news_tooltip" />);
+        const webservicesTooltipText = (<Message msgId="brugisInfo.main_webservices_tooltip" />);
+        const contactTooltipText = (<Message msgId="brugisInfo.main_contact_tooltip" />);
+        const goBackToTopTooltipText = (<Message msgId="brugisInfo.main_go_back_to_top_tooltip" />);
         return (<div>
                 <div id="shadowBox">
                     <div className="d-flex">
-                          <div onClick={this.goBrugis.bind(this)} title="Go back to BruGIS" style={{ flexGrow: 1}}>
+                          <div onClick={this.goBrugis.bind(this)} title={goBackToBruGISTooltipText} style={{ flexGrow: 1}}>
                              <div style={{
                                 height: '52px',
                                 width: '52px',
@@ -91,13 +96,13 @@ class BrugisInfo extends React.Component {
                                 lineHeight: '52px',
                                 fontFamily: 'Montserrat, sans-serif'
                            }}>
-                            <div onClick={() => this.refs.parallax.scrollTo(0)} title="Go to BruGIS News" id="bibNews">News</div>
-                            <div onClick={() => this.refs.parallax.scrollTo(1)} title="Go to BruGIS Webservices" id="bibWS">Webservices</div>
-                            <div onClick={() => this.refs.parallax.scrollTo(2)} title="Go to Contact BruGIS" id="bibContact">Contact</div>
+                            <div onClick={() => this.refs.parallax.scrollTo(0)} title={newsTooltipText} id="bibNews"><Message msgId="brugisInfo.main_news"/></div>
+                            <div onClick={() => this.refs.parallax.scrollTo(1)} title={webservicesTooltipText} id="bibWS"><Message msgId="brugisInfo.main_webservices"/></div>
+                            <div onClick={() => this.refs.parallax.scrollTo(2)} title={contactTooltipText} id="bibContact"><Message msgId="brugisInfo.main_contact"/></div>
                           </div>
 
                           <div style={{ flexGrow: 3}} />
-                          <div onClick={() => this.refs.parallax.scrollTo(0)} title="Go back to top" style={{ flexGrow: 1}}>
+                          <div onClick={() => this.refs.parallax.scrollTo(0)} title={goBackToTopTooltipText} style={{ flexGrow: 1}}>
                             <div id="bibTop" style={{
                                 backgroundColor: '#a2c6d7',
                                 'float': 'right',

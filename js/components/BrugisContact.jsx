@@ -2,7 +2,7 @@
 const React = require('react');
 const PropTypes = require('prop-types');
 const {Grid, Row, Col, Form, FormGroup, FormControl, Button, Checkbox, ControlLabel} = require('react-bootstrap');
-// const Message = require('../../MapStore2/web/client/components/I18N/Message');
+const Message = require('../../MapStore2/web/client/components/I18N/Message');
 
 class BrugisContact extends React.Component {
    static propTypes = {
@@ -17,6 +17,8 @@ class BrugisContact extends React.Component {
    };
 
    render() {
+       const subjectPlaceholder = (<Message msgId="brugisInfo.contact_subject_placeholder" />);
+       const messagePlaceholder = (<Message msgId="brugisInfo.contact_message_placeholder" />);
        return (
            <Grid style={{ height: '40%', color: '#345d6f', width: '100%'}}>
             <Row>
@@ -25,25 +27,25 @@ class BrugisContact extends React.Component {
                 <Form horizontal action="mailto:brugis@urban.brussels" method="GET">
                     <FormGroup controlId="formHorizontalEmail">
                     <Col componentClass={ControlLabel} sm={3}>
-                        Subject:
+                        <Message msgId="brugisInfo.contact_subject"/>
                     </Col>
                     <Col sm={9}>
-                        <FormControl type="text" placeholder="Subject" name="subject"/>
+                        <FormControl type="text" placeholder={subjectPlaceholder} name="subject"/>
                     </Col>
                     </FormGroup>
 
                     <FormGroup controlId="formControlsTextarea">
                     <Col componentClass={ControlLabel} sm={3}>
-                     Message:
+                       <Message msgId="brugisInfo.contact_message"/>
                     </Col>
                     <Col sm={9}>
-                        <FormControl componentClass="textarea" placeholder="textarea" name="body" />
+                        <FormControl componentClass="textarea" placeholder={messagePlaceholder} name="body" />
                     </Col>
                     </FormGroup>
 
                     <FormGroup>
                     <Col componentClass={ControlLabel} sm={3}>
-                    Urgent
+                        <Message msgId="brugisInfo.contact_urgent"/>
                     </Col>
                     <Col sm={9}>
                         <Checkbox/>
@@ -53,7 +55,7 @@ class BrugisContact extends React.Component {
                     <FormGroup>
                     <Col smOffset={10} sm={9}>
                         <Button type="submit">
-                        Send
+                            <Message msgId="brugisInfo.contact_send"/>
                         </Button>
                     </Col>
                     </FormGroup>
