@@ -4,6 +4,10 @@ var {Button, ButtonGroup} = require('react-bootstrap');
 const MapUtils = require('../../../MapStore2/web/client/utils/MapUtils');
 const CoordinatesUtils = require('../../../MapStore2/web/client/utils/CoordinatesUtils');
 const Message = require('../../../MapStore2/web/client/plugins/locale/Message');
+const selectIcon = require('./img/pointG.svg');
+const drawIcon = require('./img/pointG.svg');
+const deleteIcon = require('./img/pointG.svg');
+const glueIcon = require('./img/pointG.svg');
 
 var SurveyToolBox = React.createClass({
     propTypes: {
@@ -63,18 +67,23 @@ var SurveyToolBox = React.createClass({
         return (
           <span>
                 <ButtonGroup>
-                    <Button bsSize={this.props.bsSize} bsStyle="primary" onClick={this.drawSurface} active={this.props.drawSurfaceActive}>
-                        <Message msgId="brugisSurvey.draw"/>
+                    <Button id="toolButton" bsSize={this.props.bsSize} bsStyle="primary" onClick={this.drawSurface} active={this.props.drawSurfaceActive}>
+                        <img src={drawIcon} height="45" width="38"></img>
                     </Button>
                 </ButtonGroup>
                 <ButtonGroup>
-                    <Button bsSize={this.props.bsSize} bsStyle="primary" onClick={this.selectParcel} active={this.props.selectParcelActive}>
-                        <Message msgId="brugisSurvey.select"/>
+                    <Button  id="toolButton" bsSize={this.props.bsSize} bsStyle="primary" onClick={this.selectParcel} active={this.props.selectParcelActive}>
+                        <img src={selectIcon} height="45" width="38"></img>
                     </Button>
                 </ButtonGroup>
                 <ButtonGroup>
-                    <Button bsSize={this.props.bsSize} bsStyle="primary" onClick={this.deleteDrawing}>
-                        <Message msgId="brugisSurvey.suppress"/>
+                    <Button  id="toolButton" bsSize={this.props.bsSize} bsStyle="primary" onClick={this.deleteDrawing}>
+                        <img src={deleteIcon} height="45" width="38"></img>
+                    </Button>
+                </ButtonGroup>
+                <ButtonGroup>
+                    <Button  id="toolButton" bsSize={this.props.bsSize} bsStyle="primary" >
+                        <img src={glueIcon} height="45" width="38"></img>
                     </Button>
                 </ButtonGroup>
           </span>

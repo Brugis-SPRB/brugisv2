@@ -2,21 +2,21 @@
   "locale": "en-US",
   "messages": {
     "brugisInfo": {
-      "main_go_back_to_brugis": "Retour vers BruGIS",
-      "main_news": "Nouveautés",
-      "main_news_tooltip": "Vers les nouveautés",
-      "main_webservices": "Services Web",
-      "main_webservices_tooltip": "Vers les services web",
+      "main_go_back_to_brugis": "Back to BruGIS",
+      "main_news": "News",
+      "main_news_tooltip": "To the News",
+      "main_webservices": "Webservices",
+      "main_webservices_tooltip": "To webservices",
       "main_contact": "Contact",
-      "main_contact_tooltip": "Vers Contact",
-      "main_go_back_to_top_tooltip": "Retour au haut de page",
-      "contact_subject": "Sujet",
-      "contact_subject_placeholder": "Sujet",
+      "main_contact_tooltip": "To Contact",
+      "main_go_back_to_top_tooltip": "Back to top",
+      "contact_subject": "Topic",
+      "contact_subject_placeholder": "Message topic",
       "contact_message": "Message",
-      "contact_message_placeholder": "Contenu",
+      "contact_message_placeholder": "Message content",
       "contact_urgent": "Urgent",
-      "contact_send": "Envoyer",
-      "webservice_title": "Services web"
+      "contact_send": "Send",
+      "webservice_title": "Webservices"
     },
     "best-effort": "Indicative map - Done by ",
     "brugisSurvey": {
