@@ -155,7 +155,7 @@ class BrugisInfo extends React.Component {
                     </Parallax.Layer>
                     <Parallax.Layer
                         id="brugisInfoServices"
-                        offset={1.05}
+                        offset={1.02}
                         speed={1}
                         style={styles}
                         effect={(animation, toValue) =>
