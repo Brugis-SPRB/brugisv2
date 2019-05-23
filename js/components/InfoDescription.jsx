@@ -28,7 +28,7 @@ class InfoDescription extends React.Component {
                         classique de bureau tel qGIS.<br/><br/>
                         <div>
                         Adresse du WMS BruGIS: <a target="_blank" href="https://mybrugis.irisnet.be/geoserver/ows?">https://mybrugis.irisnet.be/geoserver/ows?</a><br/>
-                        Exemple de requête d'obtention de notre catalogue: <a target="_blank" href="https://mybrugis.irisnet.be/geoserver/ows?service=wms&version=1.3.0&request=GetCapabilities">GetCapabilities WMS</a><br/>
+                        Exemple d'obtention de notre catalogue: <a target="_blank" href="https://mybrugis.irisnet.be/geoserver/ows?service=wms&version=1.3.0&request=GetCapabilities">GetCapabilities WMS</a><br/>
                         Exemple de visualisation d'une couche: <a target="_blank" href="https://mybrugis.irisnet.be/geoserver/ows?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetMap&FORMAT=image%2Fpng&TRANSPARENT=true&LAYERS=BDU%3APatrimoine&STYLES=&SRS=EPSG%3A31370&CRS=EPSG%3A31370&TILED=true&WIDTH=256&HEIGHT=256&BBOX=148960%2C170752%2C149031.68%2C170823.68">GetMap</a><br/>
                         Exemple d'interrogation d'un objet: <a target="_blank" href="https://mybrugis.irisnet.be/geoserver/ows?service=WMS&version=1.1.1&request=GetFeatureInfo&exceptions=application%2Fjson&id=dd5d36e7-abd0-8d4d-d74f-3b77d685e7f4&layers=BDU:Patrimoine&query_layers=BDU:Patrimoine&x=51&y=51&height=101&width=101&srs=EPSG:31370&bbox=148829.7997120187,170672.04027971838,148886.3597120187,170728.60027971838&feature_count=10&info_format=application%2Fjson&ENV=">GetFeatureInfo</a><br/>
                         </div>
@@ -45,8 +45,9 @@ class InfoDescription extends React.Component {
                          sous différents formats géomatiques classiques, tels que shapefile ou GML entre autres.<br/><br/>
                         <div>
                         Adresse du WFS BruGIS: <a target="_blank" href="https://mybrugis.irisnet.be/geoserver/ows?">https://mybrugis.irisnet.be/geoserver/ows?</a><br/>
-                        Exemple de requête d'obtention de notre catalogue: <a target="_blank" href="https://mybrugis.irisnet.be/geoserver/ows?service=wfs&version=1.1.0&request=GetCapabilities">GetCapabilities WFS</a><br/>
-                        Exemple d'obtention d'un objet: TOBEDONE<br/>
+                        Exemple d'obtention de notre catalogue: <a target="_blank" href="https://mybrugis.irisnet.be/geoserver/ows?service=wfs&version=1.1.0&request=GetCapabilities">GetCapabilities WFS</a><br/>
+                        Exemple de téléchargement d'une couche complète en GML: <a target="_blank" href="https://mybrugis.irisnet.be/geoserver/BDU/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=BDU%3APatrimoine">GetFeature WFS</a><br/>
+                        Exemple d'obtention d'un objet dans une zone donnée: <a target="_blank" href="https://mybrugis.irisnet.be/geoserver/wfs?request=GetFeature&version=1.1.0&typeName=BDU:Patrimoine&propertyName=BENAMING_FR,TYPE_VRIJWARING_FR,FOTO&BBOX=148780,170615,148932,170782,EPSG:31370">GetFeature avec BBOX WFS</a><br/>
                         </div>
                         </div>
                     </p>
@@ -60,7 +61,7 @@ class InfoDescription extends React.Component {
                     <p>
                       <h3>API - Services d'urbanalyse</h3>
                         <div>
-                        Le service web d'urbanalyse de type XXX peut être intégré dans un site web ou un logiciel tiers afin d'obtenir
+                        Le service web d'urbanalyse de type REST peut être intégré dans un site web ou un logiciel tiers afin d'obtenir
                          un rapport urbanistique complet d'une situation sur le territoire de la région bruxelloise. Ce service web est
                         asynchrone et permet donc de poster une requête d'urbanalyse, d'obtenir un identifiant unique; à l'aide de
                         celui-ci de s'enquérir de l'état de la requête soumise, et enfin d'en obtenir le résultat aux formats docx, pdf
@@ -78,12 +79,8 @@ class InfoDescription extends React.Component {
                     <p>
                       <h3>Autres services BruGIS</h3>
                         <div>
-                        La cellule BruGIS se tient à votre disposition pour tout développement géomatique dont vous auriez le besoin.
-                        Ceux-ci vont de la création et manipulation de données cartographiques, au développemnt d'un site
-                        cartographique sur mesure, en passant par l'hébergement et la publication de données cartographiques avec
-                        possibilité de mise à jour en continu de vos données par vous-même, ou la mise à disposition d'une application
-                        métier à contenu cartographique.<br/>
-                        Veuillez nous contacter via le <a href="#" onClick={() => this.refs.parallax.scrollTo(2)}>formulaire</a> ci-dessous pour toutes vos demandes.
+                        La cellule BruGIS se tient à votre disposition pour tout conseil en matière de cartographie et de géomatique.<br/>
+                        Veuillez nous contacter via le <a href="#" onClick={() => this.refs.parallax.scrollTo(2)}>formulaire</a> ci-dessous pour toutes vos questions.
                         </div>
                     </p>
                 </Col>
