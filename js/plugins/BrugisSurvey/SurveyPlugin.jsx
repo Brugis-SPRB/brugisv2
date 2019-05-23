@@ -17,6 +17,7 @@ const {setControlProperty} = require('../../../MapStore2/web/client/actions/cont
 const {Panel} = require('react-bootstrap');
 const Dialog = require('../../../MapStore2/web/client/components/misc/Dialog');
 const Message = require('../../../MapStore2/web/client/plugins/locale/Message');
+const selfIntersectCheck = require('../../utils/SelfIntersectCheck');
 
 const {addremoveparcelsonactivativeEpic, reloadWhenNewSurveyIsDone} = require('./epics');
 
@@ -141,19 +142,26 @@ const BrugisSurvey = React.createClass({
                   surveyAreaJson = union(surveyAreaJson, geomToMerge);
               }
           }
-          let surveyAreaWKT = stringify(surveyAreaJson);
-          this.props.onPostNewSurvey(
-            this.props.webreperagehost + "/res/reperage",
-            qs.stringify({
-              geom: surveyAreaWKT,
-              adr: infos.adr,
-              refdossier: infos.refdoc,
-              reptype: infos.type,
-              user: this.props.user
-            })
-          );
-          this.props.onChangeDrawingStatus("clean", null, 'BrugisSurvey');
-          this.props.onBrugisSurveyDeleteDrawings();
+          let selfIntersectResult = selfIntersectCheck(surveyAreaJson);
+          if (selfIntersectResult.intersections.features.length === 0) {
+              let surveyAreaWKT = stringify(surveyAreaJson);
+              this.props.onPostNewSurvey(
+              this.props.webreperagehost + "/res/reperage",
+                qs.stringify({
+                    geom: surveyAreaWKT,
+                    adr: infos.adr,
+                    refdossier: infos.refdoc,
+                    reptype: infos.type,
+                    user: this.props.user
+                })
+                );
+              this.props.onChangeDrawingStatus("clean", null, 'BrugisSurvey');
+              this.props.onBrugisSurveyDeleteDrawings();
+          } else {
+              alert("Self intersecting geometry, please redraw");
+              this.props.onChangeDrawingStatus("clean", null, 'BrugisSurvey');
+              this.props.onBrugisSurveyDeleteDrawings();
+          }
       } else {
           alert("Please Draw a geometry first");
       }
