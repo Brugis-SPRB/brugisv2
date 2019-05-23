@@ -6,12 +6,14 @@ const Message = require('../../MapStore2/web/client/components/I18N/Message');
 class InfoDescription extends React.Component {
     static propTypes = {
         style: PropTypes.object,
-        name: PropTypes.string
+        name: PropTypes.string,
+        scrollToContact: PropTypes.func
     };
 
     static defaultProps = {
         name: 'Brugis',
-        style: {}
+        style: {},
+        scrollToContact: () => {}
     };
 
     render() {
@@ -67,7 +69,7 @@ class InfoDescription extends React.Component {
                         celui-ci de s'enquérir de l'état de la requête soumise, et enfin d'en obtenir le résultat aux formats docx, pdf
                         , pour une visualisation directe ou xml pour une intégration des résultats dans une plateforme tierce.<br/>
                         Pour l'exploitation et l'intégration de ce service web dans votre solution, merci de nous contacter via
-                        le <a href="#" onClick={() => this.refs.parallax.scrollTo(2)}>formulaire</a> ci-dessous pour obtenir toute l'aide nécessaire.<br/>
+                        le <a href="" onClick={(e) => {this.props.scrollToContact(); e.preventDefault(); }}>formulaire</a> ci-dessous pour obtenir toute l'aide nécessaire.<br/>
                         </div>
                     </p>
                     <p>
@@ -80,7 +82,7 @@ class InfoDescription extends React.Component {
                       <h3>Autres services BruGIS</h3>
                         <div>
                         La cellule BruGIS se tient à votre disposition pour tout conseil en matière de cartographie et de géomatique.<br/>
-                        Veuillez nous contacter via le <a href="#" onClick={() => this.refs.parallax.scrollTo(2)}>formulaire</a> ci-dessous pour toutes vos questions.
+                        Veuillez nous contacter via le <a href="" onClick={(e) => {this.props.scrollToContact(); e.preventDefault(); }}>formulaire</a> ci-dessous pour toutes vos questions.
                         </div>
                     </p>
                 </Col>

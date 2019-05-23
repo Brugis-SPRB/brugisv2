@@ -160,7 +160,7 @@ class BrugisInfo extends React.Component {
                         style={styles}
                         effect={(animation, toValue) =>
                            Animated.timing(animation, { toValue, duration: 650})}>
-                        <InfoDescription />
+                        <InfoDescription scrollToContact={() => {this.refs.parallax.scrollTo(2); }}/>
                     </Parallax.Layer>
                     <Parallax.Layer
                         id="brugisInfoContact"
@@ -180,6 +180,9 @@ class BrugisInfo extends React.Component {
         goToPage('/', this.context.router);
     }
 
+    scrollToContact() {
+        this.refs.parallax.scrollTo(2);
+    }
 }
 
 module.exports = connect((state) => ({
