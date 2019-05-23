@@ -10,15 +10,18 @@ class BrugisContact extends React.Component {
     className: PropTypes.string
    };
 
+   static contextTypes = {
+    intl: PropTypes.object.isRequired
+   };
+
    static defaultProps = {
-        name: 'Brugis',
-        className: 'bg-news',
-        style: {}
+    name: 'Brugis',
+    className: 'bg-news',
+    style: {}
    };
 
    render() {
-       const subjectPlaceholder = (<Message msgId="brugisInfo.contact_subject_placeholder" />);
-       const messagePlaceholder = (<Message msgId="brugisInfo.contact_message_placeholder" />);
+
        return (
            <Grid style={{ height: '40%', color: '#345d6f', width: '100%'}}>
             <Row>
@@ -30,7 +33,7 @@ class BrugisContact extends React.Component {
                         <Message msgId="brugisInfo.contact_subject"/>
                     </Col>
                     <Col sm={9}>
-                        <FormControl type="text" placeholder={subjectPlaceholder} name="subject"/>
+                        <FormControl type="text" placeholder={this.context.intl.formatMessage({id: 'brugisInfo.contact_subject_placeholder'})} name="subject"/>
                     </Col>
                     </FormGroup>
 
@@ -39,7 +42,7 @@ class BrugisContact extends React.Component {
                        <Message msgId="brugisInfo.contact_message"/>
                     </Col>
                     <Col sm={9}>
-                        <FormControl componentClass="textarea" placeholder={messagePlaceholder} name="body" />
+                        <FormControl componentClass="textarea" placeholder={this.context.intl.formatMessage({id: 'brugisInfo.contact_message_placeholder'})} name="body" />
                     </Col>
                     </FormGroup>
 
