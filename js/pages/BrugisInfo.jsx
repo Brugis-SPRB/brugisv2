@@ -37,7 +37,8 @@ class BrugisInfo extends React.Component {
     };
 
     static contextTypes = {
-        router: PropTypes.object
+        router: PropTypes.object,
+        intl: PropTypes.object.isRequired
     };
 
     static defaultProps = {
@@ -67,15 +68,10 @@ class BrugisInfo extends React.Component {
             color: 'white',
             display: 'flex', alignItems: 'center', justifyContent: 'center'
         };
-        const goBackToBruGISTooltipText = (<Message msgId="brugisInfo.main_go_back_to_brugis" />);
-        const newsTooltipText = (<Message msgId="brugisInfo.main_news_tooltip" />);
-        const webservicesTooltipText = (<Message msgId="brugisInfo.main_webservices_tooltip" />);
-        const contactTooltipText = (<Message msgId="brugisInfo.main_contact_tooltip" />);
-        const goBackToTopTooltipText = (<Message msgId="brugisInfo.main_go_back_to_top_tooltip" />);
         return (<div>
                 <div id="shadowBox">
                     <div className="d-flex">
-                          <div onClick={this.goBrugis.bind(this)} title={goBackToBruGISTooltipText} style={{ flexGrow: 1}}>
+                          <div onClick={this.goBrugis.bind(this)} title={this.context.intl.formatMessage({id: 'brugisInfo.main_go_back_to_brugis'})} style={{ flexGrow: 1}}>
                              <div style={{
                                 height: '52px',
                                 width: '52px',
@@ -96,13 +92,13 @@ class BrugisInfo extends React.Component {
                                 lineHeight: '52px',
                                 fontFamily: 'Montserrat, sans-serif'
                            }}>
-                            <div onClick={() => this.refs.parallax.scrollTo(0)} title={newsTooltipText} id="bibNews"><Message msgId="brugisInfo.main_news"/></div>
-                            <div onClick={() => this.refs.parallax.scrollTo(1)} title={webservicesTooltipText} id="bibWS"><Message msgId="brugisInfo.main_webservices"/></div>
-                            <div onClick={() => this.refs.parallax.scrollTo(2)} title={contactTooltipText} id="bibContact"><Message msgId="brugisInfo.main_contact"/></div>
+                            <div onClick={() => this.refs.parallax.scrollTo(0)} title={this.context.intl.formatMessage({id: 'brugisInfo.main_news_tooltip'})} id="bibNews"><Message msgId="brugisInfo.main_news"/></div>
+                            <div onClick={() => this.refs.parallax.scrollTo(1)} title={this.context.intl.formatMessage({id: 'brugisInfo.main_webservices_tooltip'})} id="bibWS"><Message msgId="brugisInfo.main_webservices"/></div>
+                            <div onClick={() => this.refs.parallax.scrollTo(2)} title={this.context.intl.formatMessage({id: 'brugisInfo.main_contact_tooltip'})} id="bibContact"><Message msgId="brugisInfo.main_contact"/></div>
                           </div>
 
                           <div style={{ flexGrow: 3}} />
-                          <div onClick={() => this.refs.parallax.scrollTo(0)} title={goBackToTopTooltipText} style={{ flexGrow: 1}}>
+                          <div onClick={() => this.refs.parallax.scrollTo(0)} title={this.context.intl.formatMessage({id: 'brugisInfo.main_go_back_to_top_tooltip'})} style={{ flexGrow: 1}}>
                             <div id="bibTop" style={{
                                 backgroundColor: '#a2c6d7',
                                 'float': 'right',

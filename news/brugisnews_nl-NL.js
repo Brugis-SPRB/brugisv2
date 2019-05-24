@@ -5,7 +5,7 @@ const news = {
             "datestart": "2019-05-01",
             "dateend": "2020-12-01",
             "defcon": "5",
-            "title": "BruGIS krujgt er een pagina bij!",
+            "title": "BruGIS krijgt er een pagina bij!",
             "message": "BruGIS heeft nu een informatiepagina. Hier vindt u de nieuwsberichten over BruGIS, technische informatie over onze webservices en een contactformulier. Kom regelmatig terug en kijk op deze pagina om op de hoogte te blijven van wat er nieuw is, of het nu gaat om nieuwe lagen die aan het platform worden toegevoegd of om een aanpassing van een tool."
         },
         {
