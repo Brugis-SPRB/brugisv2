@@ -10,10 +10,6 @@ const glueIcon = require('./img/join.svg');
 
 var SurveyToolBox = React.createClass({
 
-    contextTypes: {
-        intl: PropTypes.object.isRequired
-    },
-
     propTypes: {
         loadSurveyTypes: PropTypes.func,
         submitNewSurvey: PropTypes.func,
@@ -31,6 +27,9 @@ var SurveyToolBox = React.createClass({
         parcel: PropTypes.object,
         map: PropTypes.object,
         geoserver: PropTypes.string
+    },
+    contextTypes: {
+        intl: PropTypes.object.isRequired
     },
     getDefaultProps() {
         return {

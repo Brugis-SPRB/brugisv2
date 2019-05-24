@@ -5,20 +5,20 @@ const firstIcon = require('./img/noun_arrow first_839194.svg');
 const priorIcon = require('./img/noun_arrow prior_839193.svg');
 const nextIcon = require('./img/noun_Arrow next_839191.svg');
 const lastIcon = require('./img/noun_arrow last_839192.svg');
-const Message = require('../../../MapStore2/web/client/plugins/locale/Message');
+// const Message = require('../../../MapStore2/web/client/plugins/locale/Message');
 
 class BrugisPagination extends React.Component {
-
-    static contextTypes = {
-      intl: PropTypes.object.isRequired
-    };
 
     static propTypes = {
         items: PropTypes.array.isRequired,
         onChangePage: PropTypes.func.isRequired,
         initialPage: PropTypes.number,
         surveyUpdate: PropTypes.number,
-        bsSize: PropTypes.string,
+        bsSize: PropTypes.string
+    };
+
+    static contextTypes = {
+      intl: PropTypes.object.isRequired
     };
 
     static defaultProps = {
