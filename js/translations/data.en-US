@@ -62,6 +62,7 @@
       "draw": "Draw a surface",
       "select": "Select a parcel",
       "suppress": "Delete surface",
+      "glue": "fuse two surfaces",
       "footprint": "Footprint",
       "file_entry": "Enter File reference",
       "address_entry": "Enter file address",

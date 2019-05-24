@@ -62,6 +62,7 @@
       "draw": "Teken een oppervlak",
       "select": "Kies een perceel",
       "suppress": "Verwijder een oppervlak",
+      "glue": "fusionner deux dessins",
       "footprint": "Voetafdruk",
       "file_entry": "Voer referentie dossier in",
       "address_entry": "Voer adres in",

@@ -62,6 +62,7 @@
       "draw": "Dessiner une surface",
       "select": "Sélectionner une parcelle",
       "suppress": "Supprimer le dessin",
+      "glue": "fusionner deux dessins",
       "footprint": "Empreinte",
       "file_entry": "Encoder la référence dossier",
       "address_entry": "Encoder l'adresse",
