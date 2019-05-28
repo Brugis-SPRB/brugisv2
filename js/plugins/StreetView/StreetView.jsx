@@ -6,7 +6,7 @@ const asyncLoading = require('react-async-loader');
 const Dialog = require('../../../MapStore2/web/client/components/misc/Dialog');
 const Message = require('../../../MapStore2/web/client/components/I18N/Message');
 const MapInfoUtils = require('../../../MapStore2/web/client/utils/MapInfoUtils');
-//import mainLogo from'./imgs/littleman_blue.png';
+// import mainLogo from'./imgs/littleman_blue.png';
 const mainLogo = require('./imgs/littleman_blue.svg');
 
 const StreetView = React.createClass({
