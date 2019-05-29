@@ -1,7 +1,7 @@
 
 const React = require('react');
 const PropTypes = require('prop-types');
-const {Grid, Row, Col, Form, FormGroup, FormControl, Button, Checkbox, ControlLabel, Image} = require('react-bootstrap');
+const {Grid, Row, Col, Form, FormGroup, FormControl, Button, ControlLabel, Image} = require('react-bootstrap');
 const Message = require('../../MapStore2/web/client/components/I18N/Message');
 import sendMail from './img/noun_send mail_877514.svg';
 

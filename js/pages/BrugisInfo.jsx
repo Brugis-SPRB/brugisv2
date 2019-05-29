@@ -1,7 +1,7 @@
 const React = require('react');
 const PropTypes = require('prop-types');
 const {connect} = require('react-redux');
-const {Grid, Image, Glyphicon} = require('react-bootstrap');
+const {Grid, Image} = require('react-bootstrap');
 const {goToPage} = require('../../MapStore2/web/client/actions/router');
 const Message = require('../../MapStore2/web/client/components/I18N/Message');
 
