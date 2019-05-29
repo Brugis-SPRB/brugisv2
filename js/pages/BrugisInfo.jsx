@@ -14,6 +14,7 @@ import BrugisContact from '../components/BrugisContact';
 // import BrugisTitle from '../components/BrugisTitle';
 
 import BrugisLogo from '../../assets/img/Brugis_envecto_nondidju_500px.svg';
+import toTopArrow from '../components/img/noun_Arrow_2333167.svg';
 
 const url = require('url');
 const urlQuery = url.parse(window.location.href, true).query;
@@ -107,7 +108,8 @@ class BrugisInfo extends React.Component {
                                 fontSize: '2.1em',
                                 boxShadow: '0 3px 6px rgba(0, 0, 0, 0.12), 0 4px 8px rgba(0, 0, 0, 0.24)'
                             }}>
-                                <Glyphicon glyph="arrow-up"/>
+                                <Image src={toTopArrow} responsive/>
+
                             </div>
                           </div>
                     </div>

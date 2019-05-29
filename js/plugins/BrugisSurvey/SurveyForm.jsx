@@ -1,7 +1,8 @@
 var React = require('react');
 const PropTypes = require('prop-types');
 const Message = require('../../../MapStore2/web/client/plugins/locale/Message');
-var {Col, Button, Panel, FormGroup, ControlLabel, FormControl, Form, Row, ButtonGroup, ButtonToolbar} = require('react-bootstrap');
+var {Col, Button, Panel, FormGroup, ControlLabel, FormControl, Form, Row, ButtonGroup, ButtonToolbar, Image} = require('react-bootstrap');
+import postUrbanalysis from './img/noun_Ok_1485767.svg';
 
 class SurveyForm extends React.Component {
     static propTypes = {
@@ -11,6 +12,10 @@ class SurveyForm extends React.Component {
         panelClassName: PropTypes.string,
         types: PropTypes.array,
         onPostNewSurvey: PropTypes.func
+    };
+
+    static contextTypes = {
+     intl: PropTypes.object.isRequired
     };
 
     static defaultProps = {
@@ -90,10 +95,10 @@ class SurveyForm extends React.Component {
                       </Col>
                     </FormGroup>
                     <Row>
-                      <Col smOffset={10}>
-                        <ButtonGroup block>
-                            <Button type="submit" bsSize={this.props.bsSize} bsStyle="primary" disabled={this.isSendDisabled()}>
-                              <Message msgId="brugisSurvey.send"/>
+                      <Col>
+                        <ButtonGroup block id="sendButtonGroup">
+                            <Button id="sendButton" type="submit" bsSize={this.props.bsSize} bsStyle="primary" disabled={this.isSendDisabled()} title={this.context.intl.formatMessage({id: 'brugisSurvey.send'})}>
+                              <Image src={postUrbanalysis} responsive/>
                             </Button>
                         </ButtonGroup>
                       </Col>

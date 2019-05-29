@@ -1,8 +1,9 @@
 
 const React = require('react');
 const PropTypes = require('prop-types');
-const {Grid, Row, Col, Form, FormGroup, FormControl, Button, Checkbox, ControlLabel} = require('react-bootstrap');
+const {Grid, Row, Col, Form, FormGroup, FormControl, Button, Checkbox, ControlLabel, Image} = require('react-bootstrap');
 const Message = require('../../MapStore2/web/client/components/I18N/Message');
+import sendMail from './img/noun_send mail_877514.svg';
 
 class BrugisContact extends React.Component {
    static propTypes = {
@@ -45,26 +46,16 @@ class BrugisContact extends React.Component {
                         <FormControl componentClass="textarea" placeholder={this.context.intl.formatMessage({id: 'brugisInfo.contact_message_placeholder'})} name="body" />
                     </Col>
                     </FormGroup>
-
-                    <FormGroup>
-                    <Col componentClass={ControlLabel} sm={3}>
-                        <Message msgId="brugisInfo.contact_urgent"/>
-                    </Col>
-                    <Col sm={9}>
-                        <Checkbox/>
-                    </Col>
-                    </FormGroup>
-
-                    <FormGroup>
-                    <Col smOffset={10} sm={9}>
-                        <Button type="submit">
-                            <Message msgId="brugisInfo.contact_send"/>
+                    <FormGroup id="sendMailFormGroup">
+                    <Col>
+                        <Button style ={{boxShadow: '0 3px 6px rgba(0, 0, 0, 0.12), 0 4px 8px rgba(0, 0, 0, 0.24)'}}
+                                type="submit" title={this.context.intl.formatMessage({id: 'brugisInfo.contact_send'})}>
+                            <Image src={sendMail} responsive/>
                         </Button>
                     </Col>
                     </FormGroup>
                 </Form>
                 </Col>
-                <Col md={3}/>
             </Row>
             </Grid>
        );
