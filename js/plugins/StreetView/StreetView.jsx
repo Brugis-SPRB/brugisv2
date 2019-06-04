@@ -8,6 +8,7 @@ const Message = require('../../../MapStore2/web/client/components/I18N/Message')
 const MapInfoUtils = require('../../../MapStore2/web/client/utils/MapInfoUtils');
 // import mainLogo from'./imgs/littleman_blue.png';
 const mainLogo = require('./imgs/littleman_blue.svg');
+const streetviewIcon = require('./imgs/littleman-02.svg');
 
 const StreetView = React.createClass({
 
@@ -116,7 +117,7 @@ const StreetView = React.createClass({
     renderHeader() {
         return (
             <span role="header">
-                {this.props.headerGlyph ? <Glyphicon glyph={this.props.headerGlyph} /> : null}&nbsp;<Message msgId="StreetView" />
+                <img src={streetviewIcon} height="28" width="28"></img>&nbsp;<Message msgId="StreetView" />
                 <button onClick={this.handleClose} className="close">{this.props.closeGlyph ? <Glyphicon glyph={this.props.closeGlyph}/> : <span>×</span>}</button>
             </span>
         );

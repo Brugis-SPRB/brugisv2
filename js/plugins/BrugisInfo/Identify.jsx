@@ -11,6 +11,7 @@ const Spinner = require('../../../MapStore2/web/client/components/misc/spinners/
 const Message = require('../../../MapStore2/web/client/components/I18N/Message');
 const DefaultViewer = require('./BrugisViewer');
 const Dialog = require('../../../MapStore2/web/client/components/misc/Dialog');
+const Gfiicon = require('./img/info-phil-2.svg');
 
 class Identify extends React.Component {
     static propTypes = {
@@ -175,7 +176,7 @@ class Identify extends React.Component {
         return (
             <span role="header">
                 { (missing !== 0 ) ? <Spinner value={missing} sSize="sp-small" /> : null }
-                {this.props.headerGlyph ? <Glyphicon glyph={this.props.headerGlyph} /> : null}&nbsp;<Message msgId="identifyTitle" />
+                <img src={Gfiicon} height="28" width="28"></img>&nbsp;<Message msgId="identifyTitle" />
                 <button onClick={this.onModalHiding.bind(this)} className="close">{this.props.closeGlyph ? <Glyphicon glyph={this.props.closeGlyph}/> : <span>×</span>}</button>
             </span>
         );
