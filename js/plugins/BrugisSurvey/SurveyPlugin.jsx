@@ -93,7 +93,8 @@ const BrugisSurvey = React.createClass({
               overflow: "auto",
               top: "100px",
               left: "calc(50% - 150px)",
-              backgroundColor: "white"
+              backgroundColor: "white",
+              margin: "0px"
           },
           panelClassName: "toolbar-panel",
           visible: false,

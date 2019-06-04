@@ -2,7 +2,7 @@ var React = require('react');
 const PropTypes = require('prop-types');
 const Message = require('../../../MapStore2/web/client/plugins/locale/Message');
 var {Col, Button, Panel, FormGroup, ControlLabel, FormControl, Form, Row, ButtonGroup, ButtonToolbar, Image} = require('react-bootstrap');
-import postUrbanalysis from './img/noun_Ok_1485767.svg';
+import postUrbanalysis from './img/noun_send_1022904.svg';
 
 class SurveyForm extends React.Component {
     static propTypes = {
@@ -42,21 +42,15 @@ class SurveyForm extends React.Component {
     };
 
     render() {
-        const headerMessage = (<Message msgId="brugisSurvey.title_new" />);
-        // const fileEntry = (<Message msgId="brugisSurvey.file_entry" />);
-        // const addressEntry = (<Message msgId="brugisSurvey.address_entry" />);
         const typeEntryDefault = (<Message msgId="brugisSurvey.type_entry_default" />);
-        return (<Panel header={headerMessage} eventKey={this.props.evtKey} className={this.props.panelClassName} collapsible defaultExpanded>
+        return (<Panel eventKey={this.props.evtKey} className={this.props.panelClassName} collapsible defaultExpanded>
             <Form horizontal onSubmit={this.handleSubmit.bind(this)}>
              <br />
               <Row className="show-grid">
                 <Col sm={12}>
                   <FormGroup controlId="empreinte">
-                    <Col componentClass={ControlLabel} sm={2}>
-                      <Message msgId="brugisSurvey.footprint"/>
-                    </Col>
-                    <Col sm={10}>
-                      <ButtonToolbar>
+                    <Col>
+                      <ButtonToolbar id="toolButtonGroup">
                         {this.props.children}
                       </ButtonToolbar>
                     </Col>
@@ -64,7 +58,7 @@ class SurveyForm extends React.Component {
                 </Col>
               </Row>
               <Row>
-                <Col sm={12}>
+                <Col sm={10}>
                     <FormGroup controlId="refdoc" bsSize={this.props.bsSize}>
                       <Col componentClass={ControlLabel} sm={2}>
                         <Message msgId="brugisSurvey.file"/>
@@ -94,15 +88,13 @@ class SurveyForm extends React.Component {
                         </FormControl>
                       </Col>
                     </FormGroup>
-                    <Row>
-                      <Col>
-                        <ButtonGroup block id="sendButtonGroup">
-                            <Button id="sendButton" type="submit" bsSize={this.props.bsSize} bsStyle="primary" disabled={this.isSendDisabled()} title={this.context.intl.formatMessage({id: 'brugisSurvey.send'})}>
-                              <Image src={postUrbanalysis} responsive/>
-                            </Button>
-                        </ButtonGroup>
-                      </Col>
-                    </Row>
+                </Col>
+                <Col sm={2}>
+                  <ButtonGroup id="sendButtonGroup">
+                      <Button id="sendButton" type="submit" bsSize={this.props.bsSize} bsStyle="primary" disabled={this.isSendDisabled()} title={this.context.intl.formatMessage({id: 'brugisSurvey.send'})}>
+                        <Image src={postUrbanalysis} responsive/>
+                      </Button>
+                  </ButtonGroup>
                 </Col>
               </Row>
               </Form>

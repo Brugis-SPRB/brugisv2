@@ -10,6 +10,7 @@ var BrugisPagination = require('./Pagination');
 class SurveyGrid extends React.Component {
     static propTypes = {
         title: PropTypes.string,
+        panelClassName: PropTypes.string,
         surveys: PropTypes.array,
         evtKey: PropTypes.number,
         user: PropTypes.string,
@@ -26,7 +27,8 @@ class SurveyGrid extends React.Component {
         evtKey: 1,
         user: "",
         locale: "fr-FR",
-        webreperagehost: ""
+        webreperagehost: "",
+        panelClassName: "grid-panel"
     };
 
     constructor() {
@@ -108,8 +110,7 @@ class SurveyGrid extends React.Component {
     }
 
     render() {
-        const headerMessage = (<Message msgId="brugisSurvey.title_list" />);
-        return (<Panel header={headerMessage} eventKey={this.props.evtKey} collapsible defaultExpanded="true">
+        return (<Panel eventKey={this.props.evtKey} className={this.props.panelClassName} collapsible defaultExpanded="true">
           <Table responsive striped bordered condensed hover>
             <thead>
               <tr>

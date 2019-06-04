@@ -2,22 +2,52 @@
  * Framework Brugis Survey plugin
  * ------------------------------
  */
+
+th {
+  font-weight: inherit;
+}
+
+#navigationBar .toolbar-panel {
+  margin-bottom: 15px !important;
+}
+
+#navigationBar .grid-panel {
+  margin-bottom: 0px !important;
+}
+
+#toolButton {
+  width: 52px;
+  height: 52px;
+}
+
 #toolButton img {
-     margin-top: 0px;
+     margin-top: 5px;
      margin-left: 0px;
+ }
+
+ #toolButtonGroup {
+   margin: auto;
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
  }
 
 #sendButtonGroup {
   margin: auto;
   display: flex;
-  flex-direction: row;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: flex-start;
+  //padding-left: 15px;
+  //padding-right: 20px;
+  margin-top: 70px;
+  margin-bottom: 5px;
+  margin-left: -5px;
   //height: 30px;
 }
 
 #sendButton {
-  width: 49px;
-  height: 50px;
+  width: 52px;
+  height: 52px;
   padding: 0px;
   margin: 0px;
 }
@@ -36,13 +66,14 @@
   flex-direction: row;
   justify-content: center;
   height: 30px;
+  margin-bottom: 5px;
 }
 
 #paginationButtons button{
-  width: 50px;
-  height: 30px;
+  width: 52px;
+  height: 32px;
 }
 
 #paginationButtons img{
-  margin-top: -13px;
+  margin-top: -12px;
 }
