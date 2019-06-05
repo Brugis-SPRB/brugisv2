@@ -8,6 +8,19 @@ const drawIcon = require('./img/draw.svg');
 const deleteIcon = require('./img/delete.svg');
 const glueIcon = require('./img/join.svg');
 
+/*
+<ButtonGroup>
+    <Button
+      id="toolButton"
+      title={this.context.intl.formatMessage({id: 'brugisSurvey.glue'})}
+      bsSize={this.props.bsSize}
+      bsStyle="primary"
+      onClick={this.glueDrawing}>
+        <img src={glueIcon} height="45" width="38"></img>
+    </Button>
+</ButtonGroup>
+*/
+
 var SurveyToolBox = React.createClass({
 
     propTypes: {
@@ -99,16 +112,6 @@ var SurveyToolBox = React.createClass({
                       bsStyle="primary"
                       onClick={this.deleteDrawing}>
                         <img src={deleteIcon} height="45" width="38"></img>
-                    </Button>
-                </ButtonGroup>
-                <ButtonGroup>
-                    <Button
-                      id="toolButton"
-                      title={this.context.intl.formatMessage({id: 'brugisSurvey.glue'})}
-                      bsSize={this.props.bsSize}
-                      bsStyle="primary"
-                      onClick={this.glueDrawing}>
-                        <img src={glueIcon} height="45" width="38"></img>
                     </Button>
                 </ButtonGroup>
           </span>
