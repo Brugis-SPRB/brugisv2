@@ -6,7 +6,7 @@ const CoordinatesUtils = require('../../../MapStore2/web/client/utils/Coordinate
 const selectIcon = require('./img/select.svg');
 const drawIcon = require('./img/draw.svg');
 const deleteIcon = require('./img/delete.svg');
-const glueIcon = require('./img/join.svg');
+// const glueIcon = require('./img/join.svg');
 
 /*
 <ButtonGroup>
