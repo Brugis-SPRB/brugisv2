@@ -49,7 +49,7 @@ class BrugisService extends React.Component {
                 onClick={this.goNews}
                 tooltip={tooltip}
                 >{this.props.icon}
-                { this.getNewsCount() > 0 ? <Badge bsStyle="danger" className="brugisnewsBadge">{this.getNewsCount()}</Badge> : "" }
+                { this.getNewsCount() > 0 ? <Badge pill bsStyle="light" className="brugisnewsBadge">{this.getNewsCount()}</Badge> : "" }
             </Button>
         );
     }
