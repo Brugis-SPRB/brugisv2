@@ -2038,6 +2038,27 @@
       <Layer noSubsets="0" opaque="0" queryable="1">
         <Name>Inventaire Etat du Sol</Name>
         <Title>Inventaire Etat du Sol</Title>
+        <Layer noSubsets="0" opaque="0" queryable="1">
+          <Name>BDU:PUBBELB_INVENTAIRE_ETAT_SOL_PUBLIC</Name>
+          <Title>PUBBELB_INVENTAIRE_ETAT_SOL_PUBLIC</Title>
+          <Abstract/>
+          <KeywordList>
+            <Keyword>features</Keyword>
+            <Keyword>PUBBELB_INVENTAIRE_ETAT_SOL_PUBLIC</Keyword>
+          </KeywordList>
+          <SRS>EPSG:31370</SRS>
+          <LatLonBoundingBox maxx="4.479551179274349" maxy="50.91222425243426" minx="4.252627282029799" miny="50.76873160510658"/>
+          <BoundingBox SRS="EPSG:31370" maxx="165088.0" maxy="185088.0" minx="140000.0" miny="160000.0"/>
+          <Style>
+            <Name>IBGE_Inventaire_etat_sol_public</Name>
+            <Title>inventaire etat du sol public</Title>
+            <LegendURL height="20" width="20">
+              <Format>image/png</Format>
+              <OnlineResource ns0:href="http://10.128.81.203:8080/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=BDU%3APUBBELB_INVENTAIRE_ETAT_SOL_PUBLIC" ns0:type="simple"/>
+            </LegendURL>
+          </Style>
+        </Layer>
+
         <Layer cascaded="0" opaque="0" queryable="1">
           <Name>inventaire_etat_sol_public</Name>
           <Title>parcelle cadastrale contenu dans inventaire sol</Title>
@@ -2058,6 +2079,7 @@
             </LegendURL>
           </Style>
         </Layer>
+
       </Layer>
       <Layer noSubsets="0" opaque="0" queryable="1">
         <Name>Zones, Habitats, Sites</Name>
