@@ -92,7 +92,7 @@ module.exports = {
             }
         },
         mobile: {
-            mapInfo: {enabled: false, infoFormat: 'text/html' },
+            mapInfo: {infoFormat: 'text/html' },
             mousePosition: {enabled: true, crs: "EPSG:31370", showCenter: false}
         }
     },
