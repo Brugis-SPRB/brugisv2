@@ -1,10 +1,15 @@
 
 const React = require('react');
 const PropTypes = require('prop-types');
-const {Form, FormGroup, FormControl, InputGroup, ControlLabel} = require('react-bootstrap');
+const {Form, FormGroup, FormControl, InputGroup, ControlLabel, Button} = require('react-bootstrap');
 const FileSaver = require('file-saver');
 const LOCAL_MAPS_PREFIX = 'mapstore.localmaps.';
-const Message = require('../../../MapStore2/web/client/plugins/locale/Message');
+// const Message = require('../../../MapStore2/web/client/plugins/locale/Message');
+const saveIcon = require('./img/noun_Save_2433496.svg');
+const importIcon = require('./img/noun_Download_2603364.svg');
+const loadIcon = require('./img/noun_loader_2514093.svg');
+const deleteIcon = require('./img/noun_Delete_2595537.svg');
+const exportIcon = require('./img/noun_Upload_2603385.svg');
 
 class SaveButton extends React.Component {
 
@@ -13,14 +18,18 @@ class SaveButton extends React.Component {
         onLoad: PropTypes.func,
         onDel: PropTypes.func,
         onImport: PropTypes.func
-    }
+    };
+
+    static contextTypes = {
+     intl: PropTypes.object.isRequired
+    };
 
     static defaultProps = {
         onSave: () => {},
         onLoad: () => {},
         onDel: () => {},
         onImport: () => {}
-    }
+    };
 
     constructor(props) {
         super(props);
@@ -47,16 +56,31 @@ class SaveButton extends React.Component {
     render() {
         return (<div className="save">
             <Form>
-                <FormGroup>
+                <FormGroup
+                 id="saveAndImportFormGroup">
                   <InputGroup>
-                    <FormControl type="text" placeholder="Map Name" onChange={this.onChangeSaveName.bind(this)} />
-                    <InputGroup.Addon>
-                        <ControlLabel disabled={this.state.savename === ''} style={this.buttonStyle(this.state.savename === '')} onClick={this.save.bind(this)}>
-                            <Message msgId="localmaps.save"/>
-                        </ControlLabel>
+                    <FormControl
+                      type="text"
+                      placeholder="Map Name"
+                      onChange={this.onChangeSaveName.bind(this)} />
+                    <InputGroup.Addon
+                      id="savAndImportInputGroup">
+                        <Button
+                          id="saveButton"
+                          title={this.context.intl.formatMessage({id: 'localmaps.save'})}
+                          bsStyle="primary"
+                          onClick={this.save.bind(this)}
+                          style={this.buttonStyle(this.state.savename === '')}>
+                            <img src={saveIcon} height="38" width="38"></img>
+                        </Button>
+
+
                         &nbsp;&nbsp;
-                        <ControlLabel htmlFor="fileUpload" style={{ cursor: "pointer" }}>
-                            <Message msgId="localmaps.import"/>
+                        <ControlLabel
+                            htmlFor="fileUpload"
+                            style={{ cursor: "pointer" }}
+                            title={this.context.intl.formatMessage({id: 'localmaps.import'})}>
+                              <img src={importIcon} height="38" width="38"></img>
                             <FormControl
                                 id="fileUpload"
                                 type="file"
@@ -73,24 +97,40 @@ class SaveButton extends React.Component {
                             />
                         </ControlLabel>
                     </InputGroup.Addon>
-                  </InputGroup>
+                  </InputGroup><br/>
                   <InputGroup>
                       <FormControl componentClass="select" placeholder="Map Name" onChange={this.onChangeLoadName.bind(this)}>
                           {this.renderSaved()}
                       </FormControl>
 
                       <InputGroup.Addon>
-                        <ControlLabel disabled={this.state.loadname === ''} style={this.buttonStyle(this.state.loadname === '')}onClick={this.load.bind(this)}>
-                            <Message msgId="localmaps.load"/>
-                        </ControlLabel>
-                        &nbsp;&nbsp;
-                        <ControlLabel disabled={this.state.loadname === ''} style={this.buttonStyle(this.state.loadname === '')} onClick={this.del.bind(this)}>
-                            <Message msgId="localmaps.delete"/>
-                        </ControlLabel>
-                        &nbsp;&nbsp;
-                        <ControlLabel disabled={this.state.loadname === ''} style={this.buttonStyle(this.state.loadname === '')} onClick={this.exportMap.bind(this)}>
-                            <Message msgId="localmaps.export"/>
-                        </ControlLabel>
+                        <Button
+                          id="loadButton"
+                          disabled={this.state.loadname === ''}
+                          title={this.context.intl.formatMessage({id: 'localmaps.load'})}
+                          bsStyle="primary"
+                          onClick={this.load.bind(this)}
+                          style={this.buttonStyle(this.state.loadname === '')}>
+                            <img src={loadIcon} height="38" width="38"></img>
+                        </Button>
+                        <Button
+                          id="deleteButton"
+                          disabled={this.state.loadname === ''}
+                          title={this.context.intl.formatMessage({id: 'localmaps.delete'})}
+                          bsStyle="primary"
+                          onClick={this.del.bind(this)}
+                          style={this.buttonStyle(this.state.loadname === '')}>
+                            <img src={deleteIcon} height="38" width="38"></img>
+                        </Button>
+                        <Button
+                          id="exportButton"
+                          disabled={this.state.loadname === ''}
+                          title={this.context.intl.formatMessage({id: 'localmaps.export'})}
+                          bsStyle="primary"
+                          onClick={this.exportMap.bind(this)}
+                          style={this.buttonStyle(this.state.loadname === '')}>
+                            <img src={exportIcon} height="38" width="38"></img>
+                        </Button>
                       </InputGroup.Addon>
                   </InputGroup>
                 </FormGroup>

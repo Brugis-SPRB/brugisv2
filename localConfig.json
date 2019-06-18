@@ -150,6 +150,7 @@
 			{
 				 "name":"MetadataExplorer",
 				 "cfg":{
+					  "width": 400,
 						"showGetCapLinks":false,
 						"addAuthentication":true,
 						"wrap":true,
@@ -452,6 +453,7 @@
             {
                "name":"MetadataExplorer",
                "cfg":{
+								  "width": 450,
                   "showGetCapLinks":false,
                   "addAuthentication":true,
                   "wrap":true,
