@@ -21,6 +21,13 @@ const news = {
         "defcon": "5",
         "title": "La topographie au format raster!",
         "message": "En complément des courbes de niveaux, un modèle numérique de terrain est disponible. Vous trouverez cette nouvelle couche dans les fonds de plan."
+      },
+      {
+        "datestart": "2019-06-20",
+        "dateend": "2019-09-01",
+        "defcon": "5",
+        "title": "Interface graphique améliorée!",
+        "message": "Les outils d'urbanalyse, mes cartes, et d'autres ont été améliorés afin d'en faciliter l'usage. Les anciens textes sont dorénavant remplacés par des icônes plus faciles à utiliser et à comprendre. D'autres adaptations mineures ont été réalisées, entre autre dans le catalogue."
       }
     ]
 };
