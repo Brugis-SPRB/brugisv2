@@ -6,7 +6,8 @@ var {saveMapState, loadMapState, delMapState} = require('./actions');
 const SaveAndLoad = require('./SaveAndLoad');
 const {connect} = require('react-redux');
 const {Glyphicon} = require('react-bootstrap');
-const {Modal, Dialog} = require('react-bootstrap');
+const {Modal} = require('react-bootstrap');
+const Dialog = require('../../../MapStore2/web/client/components/misc/Dialog');
 const {toggleControl, setControlProperty} = require("../../../MapStore2/web/client/actions/controls");
 const {mapSelector} = require('../../../MapStore2/web/client/selectors/map');
 const {layersSelector} = require('../../../MapStore2/web/client/selectors/layers');
@@ -50,7 +51,7 @@ class LocalMaps extends React.Component {
       active: false,
       id: "brugis_localmaps",
       panelClassName: "toolbar-panel",
-      modal: true,
+      modal: false,
       panelStyle: {
           minWidth: "600px",
           zIndex: 100,
