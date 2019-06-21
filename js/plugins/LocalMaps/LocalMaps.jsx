@@ -68,7 +68,7 @@ class LocalMaps extends React.Component {
         if (this.props.active) {
             if (this.props.modal) {
                 return (
-                    <Modal show={this.props.active} onHide={this.close} bsSize="small" aria-labelledby="contained-modal-title-sm">
+                    <Modal id={this.props.id} show={this.props.active} onHide={this.close} bsSize="small" aria-labelledby="contained-modal-title-sm">
                       <span role="header">
                       <Modal.Header closeButton>
                         <img src={mapIcon} height="28" width="28"></img>
