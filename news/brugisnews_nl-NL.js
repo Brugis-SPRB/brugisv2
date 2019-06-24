@@ -28,6 +28,13 @@ const news = {
           "defcon": "5",
           "title": "Verbeterde grafische interface!",
           "message": "Urbanalyse tool, Mijn kaarten en andere zijn verbeterd om het gebruik ervan te vereenvoudigen. De vroegere teksten worden nu vervangen door pictogrammen die makkelijker te begrijpen en gebruiksvriendelijker zijn. Andere kleine aanpassingen werden aangebracht, onder meer in de catalogus."
+        },
+        {
+          "datestart": "2019-06-25",
+          "dateend": "2019-09-01",
+          "defcon": "5",
+          "title": "De tool Mijn kaarten versoepelt!",
+          "message": "De tool Mijn kaarten vanaf nu in een onafhankelijk venster, wat het mogelijk maakt om je kaart nog een laatste keer bij te werken alvorens die op te slaan."
         }
     ]
 };
