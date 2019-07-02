@@ -28,6 +28,13 @@ const news = {
         "defcon": "5",
         "title": "Interface graphique améliorée!",
         "message": "Les outils d'urbanalyse, mes cartes, et d'autres ont été améliorés afin d'en faciliter l'usage. Les anciens textes sont dorénavant remplacés par des icônes plus faciles à utiliser et à comprendre. D'autres adaptations mineures ont été réalisées, entre autre dans le catalogue."
+      },
+      {
+        "datestart": "2019-06-25",
+        "dateend": "2019-09-01",
+        "defcon": "5",
+        "title": "L'outil Mes Cartes se libère!",
+        "message": "L'outil Mes Cartes se dote d'une fenêtre libre, ce qui vous permettra d'ajuster une dernière fois votre carte avant de la sauver."
       }
     ]
 };

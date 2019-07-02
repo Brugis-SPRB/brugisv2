@@ -61,7 +61,9 @@ class LocalMaps extends React.Component {
           left: "calc(50% - 150px)",
           backgroundColor: "white",
           margin: "0px"
-      }
+      },
+      closeGlyph: "1-close"
+
 
     };
 
@@ -88,7 +90,8 @@ class LocalMaps extends React.Component {
             return (
               <Dialog id={this.props.id} style={this.props.panelStyle} className={this.props.panelClassName}>
                 <span role="header">
-                    <img src={mapIcon} height="28" width="28"></img>&nbsp;<span className="settings-panel-title"><Message msgId="localmaps.save_or_load_title"/>
+                    <img src={mapIcon} height="28" width="28"></img>&nbsp;<span className="settings-panel-title">
+                    <Message msgId="localmaps.save_or_load_title"/>
                     <button onClick={this.close} className="close">{this.props.closeGlyph ? <Glyphicon glyph={this.props.closeGlyph}/> : <span>×</span>}</button></span>
                 </span>
                 <span role="body">
