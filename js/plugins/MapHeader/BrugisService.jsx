@@ -56,6 +56,12 @@ class BrugisService extends React.Component {
 
     goNews = () => {
         this.updateNewsViewingTime();
+
+        window.gtag('config', 'UA-21637975-6', {
+            'page_title' : 'BrugisInfo',
+            'page_path': '/infos'
+        });
+
         goToPage('/infos', this.context.router);
     }
 

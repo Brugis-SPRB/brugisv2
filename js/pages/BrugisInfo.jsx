@@ -176,6 +176,11 @@ class BrugisInfo extends React.Component {
 
     goBrugis = () => {
         goToPage('/', this.context.router);
+
+        window.gtag('config', 'UA-21637975-6', {
+            'page_title' : 'BrugisHome',
+            'page_path': '/'
+        });
     }
 
     scrollToContact() {
