@@ -1,6 +1,7 @@
 const React = require('react');
 const PropTypes = require('prop-types');
 const {Panel, Row, Col, Grid, Image, Carousel, Button} = require('react-bootstrap');
+const Message = require('../../MapStore2/web/client/components/I18N/Message');
 const newsFR = require('../../news/brugisnews_fr-FR');
 const newsNL = require('../../news/brugisnews_nl-NL');
 
@@ -110,7 +111,7 @@ class BrugisNews extends React.Component {
     renderAllNewsButton() {
         const { showAllNews } = this.state;
         return (
-            <Button id="renderallnews" onClick={this.toggleAllNews.bind(this)}>{showAllNews ? 'Voir les news' : 'Voire les archives'}</Button>
+            <Button id="renderallnews" onClick={this.toggleAllNews.bind(this)}>{showAllNews ? <Message msgId="Show news" /> : <Message msgId="Show archives" />}</Button>
         );
     }
 
