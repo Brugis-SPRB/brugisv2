@@ -1,3 +1,4 @@
+
 const news = {
     "locale": "fr-FR",
     "news": [
@@ -6,6 +7,7 @@ const news = {
           "dateend": "2020-12-01",
           "defcon": "5",
           "title": "BruGIS se dote d'une nouvelle page!",
+          "img": 'brugis.png',
           "message": "BruGIS possède dorénavant une page d'information. Vous y trouverez les news de BruGIS, des renseignements techniques quant à nos webservices, ainsi qu'un panneau de contact. Revenez couramment consulter cette page afin d'être au courant des nouveautés, que ce soit à propos de nouvelles couches ajoutées à la plateforme qu'une modification d'un outil."
       },
       {
@@ -13,6 +15,7 @@ const news = {
         "dateend": "2019-09-01",
         "defcon": "5",
         "title": "Des isohypses dans BruGIS!",
+        "img": 'brugis.png',
         "message": "La topographie bruxelloise peut être visualisée dès à présent à l'aide de courbes de niveau (ou isohypses). Vous trouverez cette nouvelle couche dans les fonds de plan."
       },
       {
@@ -20,6 +23,7 @@ const news = {
         "dateend": "2019-09-01",
         "defcon": "5",
         "title": "La topographie au format raster!",
+        "img": 'brugis.png',
         "message": "En complément des courbes de niveaux, un modèle numérique de terrain est disponible. Vous trouverez cette nouvelle couche dans les fonds de plan."
       },
       {
@@ -27,6 +31,7 @@ const news = {
         "dateend": "2019-09-01",
         "defcon": "5",
         "title": "Interface graphique améliorée!",
+        "img": 'brugis.png',
         "message": "Les outils d'urbanalyse, mes cartes, et d'autres ont été améliorés afin d'en faciliter l'usage. Les anciens textes sont dorénavant remplacés par des icônes plus faciles à utiliser et à comprendre. D'autres adaptations mineures ont été réalisées, entre autre dans le catalogue."
       },
       {
