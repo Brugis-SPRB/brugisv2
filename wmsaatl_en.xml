@@ -4119,6 +4119,15 @@
               </LogoURL>
             </Attribution>
           </Layer>
+          <Layer cascaded="1" noSubsets="0" opaque="0" queryable="0">
+            <Name>BDU_DEP:Orthophotoplans_1996</Name>
+            <Title>Orthophotoplans 1996</Title>
+            <Abstract />
+            <KeywordList />
+            <SRS>EPSG:4326</SRS>
+            <LatLonBoundingBox maxx="4.481318" maxy="50.914392" minx="4.242254" miny="50.76416" />
+            <BoundingBox SRS="EPSG:4326" maxx="4.481318" maxy="50.914392" minx="4.242254" miny="50.76416" />
+          </Layer>
           <Layer cascaded="1" queryable="0">
             <Name>BDU_DEP:Orthophotoplans_1987</Name>
             <Title>Orthophotoplans 1987</Title>
