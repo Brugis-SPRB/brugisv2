@@ -83,7 +83,7 @@ class BrugisNews extends React.Component {
             let dateEnd = new Date(Date.parse(newsItem.dateend));
             let dateStart = new Date(Date.parse(newsItem.datestart));
             let dateNow = new Date();
-            let img = "https://picsum.photos/600/500";
+            let img = "https://picsum.photos/900/560";
             if (newsItem.img) {
                 img = require('../../news/imgs/' + newsItem.img);
             }
