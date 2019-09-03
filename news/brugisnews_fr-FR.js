@@ -3,6 +3,22 @@ const news = {
     "locale": "fr-FR",
     "news": [
       {
+          "datestart": "2019-09-01",
+          "dateend": "2020-10-01",
+          "defcon": "5",
+          "title": "Captage d'eau souterraine à Bruxelles",
+          "img": 'brugis.png',
+          "message": "Bruxelles Environnement possède une carte des captages d'eau souterraine. Vous retrouverez celle-ci sous Bruxelles Environnement - Données hydrographiques."
+      },
+      {
+          "datestart": "2019-09-01",
+          "dateend": "2020-10-01",
+          "defcon": "5",
+          "title": "Plan de qualité paysagère et urbanistique",
+          "img": 'brugis.png',
+          "message": "Perspective propose une nouvelle carte reprenant le plan de qualité paysagère et urbanistique. Vous le trouverez sous Perspective.brussels."
+      },
+      {
           "datestart": "2019-05-01",
           "dateend": "2020-12-01",
           "defcon": "5",

@@ -2,6 +2,22 @@ const news = {
     "locale": "nl-NL",
     "news": [
         {
+            "datestart": "2019-09-01",
+            "dateend": "2020-10-01",
+            "defcon": "5",
+            "title": "Beeldkwaliteitsplan",
+            "img": 'brugis.png',
+            "message": "Perspective stelt een nieuwe kaart voor met het beeldkwaliteitsplan. Je vindt het onder Perspective.brussels."
+        },
+        {
+            "datestart": "2019-09-01",
+            "dateend": "2020-10-01",
+            "defcon": "5",
+            "title": "Grondwaterwinning in Brussel",
+            "img": 'brugis.png',
+            "message": "Leefmilieu Brussel heeft een kaart met de grondwaterwinningen. Je vindt het onder Leefmilieu Brussel - Hydrografische gegevens."
+        },
+        {
             "datestart": "2019-05-01",
             "dateend": "2020-12-01",
             "defcon": "5",
