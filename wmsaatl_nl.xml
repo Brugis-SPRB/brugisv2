@@ -3524,6 +3524,26 @@
           </LegendURL>
         </Style>
       </Layer>
+      <Layer queryable="1" opaque="0">
+        <Name>BDU:VM_A60_TRACE_PERIMETER_IR_FR</Name>
+        <Title>Perimeter van gewestelijk Belang</Title>
+        <Abstract/>
+        <KeywordList>
+          <Keyword>features</Keyword>
+          <Keyword>VM_A60_TRACE_PERIMETER_IR_FR</Keyword>
+        </KeywordList>
+        <SRS>EPSG:31370</SRS>
+        <LatLonBoundingBox minx="4.367039424895221" miny="50.842434311573285" maxx="4.4352204479204165" maxy="50.861876340272254"/>
+        <BoundingBox SRS="EPSG:31370" minx="149953.114380523" miny="170255.362842085" maxx="154753.271" maxy="172415.91"/>
+        <Style>
+          <Name>traces_Perimeter_IR</Name>
+          <Title>Entites urbanistiques</Title>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://10.128.81.203:8080/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=BDU%3AVM_A60_TRACE_PERIMETER_IR_FR"/>
+          </LegendURL>
+        </Style>
+      </Layer>
     </Layer>
     <Layer>
       <Title>Europese structuurfondsen</Title>
