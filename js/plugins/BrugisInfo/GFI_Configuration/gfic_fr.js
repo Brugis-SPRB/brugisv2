@@ -2823,6 +2823,16 @@ const gfiFr = {
 				"type": "string"
 			}
 		]
+	},
+	"BDU:plan_de_qualite_paysagere_et_urbanistique": {
+		"actiontype": "GRID",
+		"title": "Plan de qualité paysagère et urbanistique",
+		"attributes": [{
+				"name": "Lien",
+				"label": "[%URL_FR%]",
+				"type": "link"
+			}
+		]
 	}
 };
 

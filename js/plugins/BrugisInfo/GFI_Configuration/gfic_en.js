@@ -807,6 +807,16 @@ const gfiEn = {
 				"type": "string"
 			}
 		]
+	},
+	"BDU:plan_de_qualite_paysagere_et_urbanistique": {
+		"actiontype": "GRID",
+		"title": "Urban and Landscape quality map",
+		"attributes": [{
+				"name": "Link",
+				"label": "[%URL_FR%]",
+				"type": "link"
+			}
+		]
 	}
 };
 module.exports = gfiEn;

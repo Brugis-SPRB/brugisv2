@@ -2323,6 +2323,16 @@ const gfiNl = {
 				"type": "string"
 			}
 		]
+	},
+	"BSO:Beeldkwaliteitsplan": {
+		"actiontype": "GRID",
+		"title": "Beeldkwaliteitsplan",
+		"attributes": [{
+				"name": "Link",
+				"label": "[%URL_NL%]",
+				"type": "link"
+			}
+		]
 	}
 };
 module.exports = gfiNl;
