@@ -25,14 +25,25 @@ var JSONViewer = React.createClass({
     render() {
         const RowViewer = this.props.rowViewer || PropertiesViewer;
 
+        var curLocale = this.translateLocale(this.props.locale);
+        var layerName = this.props.layers ? this.props.layers : "Vector";
+
+        if (GFI_DICT[curLocale] && GFI_DICT[curLocale][layerName] && GFI_DICT[curLocale][layerName].actiontype === "REDIRECT") {
+              {(this.props.response.features || []).map((feature, i) => {
+                  window.open(this.parseTitle(GFI_DICT[curLocale][layerName].url, feature.properties),  '_blank');
+              })
+            }
+        }
+
+
         return (<div style={{maxHeight: "250px"}}>
                 <Accordion>
                 {(this.props.response.features || []).map((feature, i) => {
                     var displayTitle = feature.id;
-                    var layerName = this.props.layers ? this.props.layers : "Vector";
+                    // var layerName = this.props.layers ? this.props.layers : "Vector";
                     var layerNameFromFeatureId = layerName;
                     var customRenderers = [];
-                    var curLocale = this.translateLocale(this.props.locale);
+                    // var curLocale = this.translateLocale(this.props.locale);
                     try {
                         layerNameFromFeatureId = this.props.layers.split(":")[0].concat(":").concat(feature.id.split(".")[0]);
                     } catch(err) {
