@@ -34,7 +34,10 @@ var JSONViewer = React.createClass({
               })
             }
         }
-
+        // et ici, comment éviter d'ouvrir le popup, tout en permettant, si rien n'existe dans le GFI_DICT[curLocale]
+        // pour [layerName], d'obtenir tout de même un popup vanilla?
+        // En l'état, "REDIRECT" ouvre bien l'url dans un nouvel onglet, mais ouvre aussi le popup d'info, ce qui en
+        // soi n'est pas gênant, mais pourrait être amélioré.
 
         return (<div style={{maxHeight: "250px"}}>
                 <Accordion>
