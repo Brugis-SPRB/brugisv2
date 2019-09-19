@@ -318,6 +318,7 @@
       "toolTrashLayerTooltip": "Retirer la couche sélectionnée",
       "toolTrashLayersTooltip": "Retirer les couches sélectionnées",
       "toolFeaturesGridTooltip": "Ouvrir la table attributaires",
+      "toolDownloadTooltip": "Télécharger la couche sélectionnée",
       "noFilteredResults": "Pas de résultats",
       "filterPlaceholder": "Filtrer les couches",
       "clearFilter": "Supprimer le filtre",
