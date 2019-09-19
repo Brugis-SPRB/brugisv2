@@ -29,10 +29,9 @@ var JSONViewer = React.createClass({
         var layerName = this.props.layers ? this.props.layers : "Vector";
 
         if (GFI_DICT[curLocale] && GFI_DICT[curLocale][layerName] && GFI_DICT[curLocale][layerName].actiontype === "REDIRECT") {
-              {(this.props.response.features || []).map((feature, i) => {
-                  window.open(this.parseTitle(GFI_DICT[curLocale][layerName].url, feature.properties),  '_blank');
-              })
-            }
+            (this.props.response.features || []).map((feature) => {
+                window.open(this.parseTitle(GFI_DICT[curLocale][layerName].url, feature.properties), '_blank');
+            });
         }
         // et ici, comment éviter d'ouvrir le popup, tout en permettant, si rien n'existe dans le GFI_DICT[curLocale]
         // pour [layerName], d'obtenir tout de même un popup vanilla?
