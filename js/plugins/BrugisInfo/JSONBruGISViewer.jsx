@@ -112,15 +112,16 @@ var JSONViewer = React.createClass({
                 attribute.label = attribute.label.replace(pattern, properties[key]);
             });
 
-            if (attribute.type && attribute.type === "substitutedLink") {
-                customRenderers[attribute.name] = function(attrib, attrib2) {
-                    return (<a href={attrib} target="_blank">{attrib2}</a>);
-                };
-            }
             if (attribute.type && attribute.type === "link") {
-                customRenderers[attribute.name] = function(attrib) {
-                    return (<a href={attrib} target="_blank">{attrib}</a>);
-                };
+                if (attribute.substutedString) {
+                    customRenderers[attribute.name] = function() {
+                        return (<a href={attribute.label} target="_blank">{attribute.substutedString}</a>);
+                    };
+                } else {
+                    customRenderers[attribute.name] = function(attrib) {
+                        return (<a href={attrib} target="_blank">{attrib}</a>);
+                    };
+                }
             }
             if (attribute.type && attribute.type === "date") {
                 customRenderers[attribute.name] = function(attrib) {
