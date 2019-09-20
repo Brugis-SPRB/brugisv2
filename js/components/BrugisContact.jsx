@@ -21,6 +21,13 @@ class BrugisContact extends React.Component {
     style: {}
    };
 
+   constructor(props) {
+       super(props);
+       this.state = {value: ''};
+
+       this.handleChange = this.handleChange.bind(this);
+   }
+
    render() {
 
        return (
@@ -43,7 +50,7 @@ class BrugisContact extends React.Component {
                        <Message msgId="brugisInfo.contact_message"/>
                     </Col>
                     <Col sm={9}>
-                        <FormControl componentClass="textarea" placeholder={this.context.intl.formatMessage({id: 'brugisInfo.contact_message_placeholder'})} name="body" />
+                        <FormControl componentClass="textarea" placeholder={this.context.intl.formatMessage({id: 'brugisInfo.contact_message_placeholder'})} onChange={this.handleChange} />
                     </Col>
                     </FormGroup>
                     <FormGroup id="sendMailFormGroup">
@@ -54,12 +61,18 @@ class BrugisContact extends React.Component {
                         </Button>
                     </Col>
                     </FormGroup>
+                    <input type="hidden" name="body" value={this.state.value} id="hbody"></input>
                 </Form>
                 </Col>
             </Row>
             </Grid>
        );
    }
+
+   handleChange(event) {
+       this.setState({value: encodeURIComponent(event.target.value)});
+   }
+
 }
 
 module.exports = BrugisContact;

@@ -787,7 +787,7 @@
       "search": "Zoek",
       "reset": "Verwijder",
       "options": "Opties",
-      "srs_not_allowed": "Deze service ondersteunt het geografische coördinatensysteem van de kaart niet"
+      "srs_not_allowed": "Deze service ondersteunt het geografische coördinatensysteem van de kaart niet",
       "add": "Toevoegen",
       "service": "Service",
       "servicePlaceholder": "Typ een service",
