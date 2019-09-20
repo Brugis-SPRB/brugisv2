@@ -27,10 +27,10 @@ function brugisSurveyCreateDone(info) {
     };
 }
 
-function brugisSurveyCreateError(error) {
+function brugisSurveyCreateError(errormsg) {
     return {
         type: BRUGIS_SURVEY_CREATE_FAILED,
-        error
+        errormsg
     };
 }
 
@@ -47,10 +47,10 @@ function brugisSurveyLoaded(info) {
     };
 }
 
-function brugisSurveyLoadError(error) {
+function brugisSurveyLoadError(errormsg) {
     return {
         type: BRUGIS_SURVEY_LOAD_ERROR,
-        error
+        errormsg
     };
 }
 
@@ -118,7 +118,6 @@ function postNewSurvey(url, payload) {
                 if (response.data.success) {
                     dispatch(brugisSurveyCreateDone(response.data));
                 } else {
-                    //  dispatch(brugisSurveyCreateError(response.data.msg));
                     dispatch(error({
                         message: response.data.msg
                     }));
