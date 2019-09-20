@@ -112,6 +112,11 @@ var JSONViewer = React.createClass({
                 attribute.label = attribute.label.replace(pattern, properties[key]);
             });
 
+            if (attribute.type && attribute.type === "substitutedLink") {
+                customRenderers[attribute.name] = function(attrib, attrib2) {
+                    return (<a href={attrib} target="_blank">{attrib2}</a>);
+                };
+            }
             if (attribute.type && attribute.type === "link") {
                 customRenderers[attribute.name] = function(attrib) {
                     return (<a href={attrib} target="_blank">{attrib}</a>);

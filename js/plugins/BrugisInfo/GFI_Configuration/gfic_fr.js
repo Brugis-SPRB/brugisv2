@@ -2831,7 +2831,8 @@ const gfiFr = {
 		"attributes": [{
 				"name": "Lien",
 				"label": "[%URL_FR%]",
-				"type": "link"
+				"type": "link",
+				"substutedString": "Cliquez ici."
 			}
 		]
 	}
