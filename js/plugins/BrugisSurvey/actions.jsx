@@ -11,6 +11,8 @@ const BRUGIS_SURVEY_CREATE_DONE = 'BRUGIS_SURVEY_CREATE_DONE';
 const BRUGIS_SURVEY_CREATE_FAILED = 'BRUGIS_SURVEY_CREATE_FAILED';
 const BRUGIS_SURVEY_TYPE_LOADED = 'BRUGIS_SURVEY_TYPE_LOADED';
 
+const {error} = require('../../../MapStore2/web/client/actions/notifications');
+
 function brugisSurveyTypeLoaded(info) {
     return {
       type: BRUGIS_SURVEY_TYPE_LOADED,
@@ -116,13 +118,23 @@ function postNewSurvey(url, payload) {
                 if (response.data.success) {
                     dispatch(brugisSurveyCreateDone(response.data));
                 } else {
-                    dispatch(brugisSurveyCreateError(response.data.msg));
+                    //  dispatch(brugisSurveyCreateError(response.data.msg));
+                    dispatch(error({
+                        message: response.data.msg
+                    }));
                 }
             } else {
                 dispatch(brugisSurveyCreateError('response is not json (' + response + ')'));
             }
         }).catch((e) => {
-            dispatch(brugisSurveyCreateError(e));
+            if (e.data && e.data.msg) {
+                dispatch(error({
+                    message: e.data.msg,
+                    title: e.data.msg
+                }));
+            } else {
+                dispatch(brugisSurveyCreateError(e));
+            }
         });
     };
 }
