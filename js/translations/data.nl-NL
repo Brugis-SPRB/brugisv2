@@ -76,10 +76,9 @@
       "next": "Volgende",
       "last": "Laatste",
       "error": {
-        "missing_geometry": "Please select at least one parcel or draw a polygon.",
-        "self_intersect": "The drawn polygon is self-crossing, please redraw it.",
-        "area_too_big": "he area drawn is too big, urbanalysis impossible."
-      }
+        "missing_geometry": "Selecteer minimaal één perceel of teken een polygoon.",
+        "self_intersect": "De getekende polygoon kruist zichzelf, gelieve deze opnieuw te tekenen.",
+        "area_too_big": "Het getekende gebied is te groot, de urbanalyse is onmogelijk."
     },
     "localmaps": {
       "save_or_load_title": "Mijn kaarten",
