@@ -74,7 +74,12 @@
       "first": "Début",
       "prev": "préc.",
       "next": "suiv.",
-      "last": "fin"
+      "last": "fin",
+      "error": {
+        "missing_geometry": "Veuillez d'abord sélectionner au moins une parcelle ou dessiner un polygone.",
+        "self_intersect": "Le polygone dessiné se croise lui-même, veuillez le redessiner.",
+        "area_too_big": "La surface dessinée est trop grande, repérage impossible."
+      }
     },
     "localmaps": {
       "save_or_load_title": "Mes cartes",

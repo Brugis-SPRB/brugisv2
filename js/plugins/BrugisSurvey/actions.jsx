@@ -108,7 +108,7 @@ function loadBrugisSurveyTypes(url) {
     };
 }
 
-function postNewSurvey(url, payload) {
+function postNewSurvey(url, payload, thisFromAbove) {
     return (dispatch) => {
         dispatch(brugisSurveyCreateStart());
         return axios.post(url, payload, {
@@ -127,10 +127,15 @@ function postNewSurvey(url, payload) {
             }
         }).catch((e) => {
             if (e.data && e.data.msg) {
-                dispatch(error({
-                    message: e.data.msg,
-                    title: e.data.msg
-                }));
+                if (e.data.msg === "Invalid request: 'geom' area is too big") {
+                    // Ici comment exploiter this.context.intl.formatMessage({id: 'brugisSurvey.error.area_too_big'}) ?
+                    alert(thisFromAbove.context.intl.formatMessage({id: 'brugisSurvey.error.area_too_big'}));
+                } else {
+                  dispatch(error({
+                      message: e.data.msg,
+                      title: e.data.msg
+                  }));
+                }
             } else {
                 dispatch(brugisSurveyCreateError(e));
             }

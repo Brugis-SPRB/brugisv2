@@ -74,7 +74,12 @@
       "first": "First",
       "prev": "Prev.",
       "next": "Next",
-      "last": "Last"
+      "last": "Last",
+      "error": {
+        "missing_geometry": "Please select at least one parcel or draw a polygon.",
+        "self_intersect": "The drawn polygon is self-crossing, please redraw it.",
+        "area_too_big": "he area drawn is too big, urbanalysis impossible."
+      }
     },
     "localmaps": {
       "save_or_load_title": "My maps",
