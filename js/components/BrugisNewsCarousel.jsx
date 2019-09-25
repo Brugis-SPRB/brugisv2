@@ -15,6 +15,11 @@ class BrugisNews extends React.Component {
         showAllNews: PropTypes.bool
     };
 
+    static contextTypes = {
+        router: PropTypes.object,
+        intl: PropTypes.object.isRequired
+    };
+
     static defaultProps = {
         name: 'Brugis',
         className: 'bg-news',
@@ -23,11 +28,6 @@ class BrugisNews extends React.Component {
             'min-height': '300px'
         },
         showAllNews: false
-    };
-
-    static contextTypes = {
-        router: PropTypes.object,
-        intl: PropTypes.object.isRequired
     };
 
     constructor(props, context) {
@@ -143,7 +143,7 @@ class BrugisNews extends React.Component {
     }
 
     toggleAllNews() {
-        const { showAllNews } = this.state;
+        // const { showAllNews } = this.state;
         this.setState({
             showAllNews: !(this.state.showAllNews)
         });
