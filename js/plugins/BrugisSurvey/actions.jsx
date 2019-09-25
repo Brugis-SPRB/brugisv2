@@ -131,10 +131,10 @@ function postNewSurvey(url, payload, thisFromAbove) {
                     // Ici comment exploiter this.context.intl.formatMessage({id: 'brugisSurvey.error.area_too_big'}) ?
                     alert(thisFromAbove.context.intl.formatMessage({id: 'brugisSurvey.error.area_too_big'}));
                 } else {
-                  dispatch(error({
-                      message: e.data.msg,
-                      title: e.data.msg
-                  }));
+                    dispatch(error({
+                        message: e.data.msg,
+                        title: e.data.msg
+                    }));
                 }
             } else {
                 dispatch(brugisSurveyCreateError(e));
