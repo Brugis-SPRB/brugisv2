@@ -25,6 +25,11 @@ class BrugisNews extends React.Component {
         showAllNews: false
     };
 
+    static contextTypes = {
+        router: PropTypes.object,
+        intl: PropTypes.object.isRequired
+    };
+
     constructor(props, context) {
         super(props, context);
 
@@ -78,7 +83,7 @@ class BrugisNews extends React.Component {
 
     renderCarouselItem() {
         let news = (this.props.locale === "fr-FR" || this.props.locale === "fr-BE") ? newsFR : newsNL;
-
+        // const { showAllNews } = this.state;
         return news.news.reverse().map((newsItem) => {
             let dateEnd = new Date(Date.parse(newsItem.dateend));
             let dateStart = new Date(Date.parse(newsItem.datestart));
@@ -87,7 +92,8 @@ class BrugisNews extends React.Component {
             if (newsItem.img) {
                 img = require('../../news/imgs/' + newsItem.img);
             }
-            if (this.showAllNews || (dateStart <= dateNow && dateEnd >= dateNow)) {
+            if (this.state.showAllNews || (dateStart <= dateNow && dateEnd >= dateNow)) {
+                // console.log("this.props.showAllNews: " + this.props.showAllNews);
                 return (
                    <Carousel.Item>
                     <Grid fluid style={{backgroundColor: 'white', height: '100%', color: '#8d8d8d'}}>
@@ -111,7 +117,7 @@ class BrugisNews extends React.Component {
     renderAllNewsButton() {
         const { showAllNews } = this.state;
         return (
-            <Button id="renderallnews" onClick={this.toggleAllNews.bind(this)}>{showAllNews ? <Message msgId="Show news" /> : <Message msgId="Show archives" />}</Button>
+            <Button id="renderallnews" onClick={this.toggleAllNews.bind(this)}>{showAllNews ? <Message msgId="brugisInfo.show_news" text={this.context.intl.formatMessage({id: 'brugisInfo.show_news'})}/> : <Message msgId="brugisInfo.show_archives" text={this.context.intl.formatMessage({id: 'brugisInfo.show_archives'})}/>}</Button>
         );
     }
 
@@ -139,7 +145,7 @@ class BrugisNews extends React.Component {
     toggleAllNews() {
         const { showAllNews } = this.state;
         this.setState({
-            showAllNews: !showAllNews
+            showAllNews: !(this.state.showAllNews)
         });
     }
 }

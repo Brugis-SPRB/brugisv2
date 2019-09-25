@@ -5,6 +5,8 @@
       "main_go_back_to_brugis": "Terug naar BruGIS",
       "main_news": "Nieuws",
       "main_news_tooltip": "Nieuws",
+      "show_news": "Nieuw",
+      "show_archives": "Oud",
       "main_webservices": "Webservices",
       "main_webservices_tooltip": "Webservices",
       "main_contact": "Contact",

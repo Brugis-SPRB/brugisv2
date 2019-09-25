@@ -5,6 +5,8 @@
       "main_go_back_to_brugis": "Retour vers BruGIS",
       "main_news": "Nouveautés",
       "main_news_tooltip": "Vers les nouveautés",
+      "show_news": "Actuelles",
+      "show_archives": "Anciennes",
       "main_webservices": "Services Web",
       "main_webservices_tooltip": "Vers les services web",
       "main_contact": "Contact",
