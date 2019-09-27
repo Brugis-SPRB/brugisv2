@@ -633,7 +633,10 @@
 	                   ],
 	                   "defaultSrs": "native"
 	               }
-	           }
+			   },
+			   {
+				   "name": "Brugis3DBuilding"
+			   }
 
          ]
 	}

@@ -24,9 +24,6 @@ module.exports = {
         BrugisTreePlugin: require('./plugins/BrugisTree/BrugisTree'),
         LocalMapsPlugin: require('./plugins/LocalMaps/LocalMaps'),
         MeasurePlugin: require('./plugins/Measure/Measure'),
-        //  MeasureResultsPlugin: require('../MapStore2/web/client/plugins/MeasureResults'),
-        //  MeasureAreaPlugin: require('./plugins/MeasureArea/MeasureArea'),
-        //  MeasureLengthPlugin: require('./plugins/MeasureLength/MeasureLength'),
         IdentifyPlugin: require('./plugins/BrugisInfo/IdentifyPlugin'),
         TutorialPlugin: require('../MapStore2/web/client/plugins/Tutorial'),
         BrugisSurveyPlugin: require('./plugins/BrugisSurvey/SurveyPlugin'),
@@ -38,7 +35,8 @@ module.exports = {
         ShapeFilePlugin: require('../MapStore2/web/client/plugins/ShapeFile'),
         TOCItemsSettingsPlugin: require('../MapStore2/web/client/plugins/TOCItemsSettings'),
         NotificationsPlugin: require('../MapStore2/web/client/plugins/Notifications'),
-        BrugisServicePlugin: require('./plugins/MapHeader/BrugisService')
+        BrugisServicePlugin: require('./plugins/MapHeader/BrugisService'),
+        Brugis3DBuilding: require('./plugins/Brugis3DBuilding/Brugis3DBuildingPlugin')
     },
     requires: {
 
