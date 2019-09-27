@@ -3,6 +3,14 @@ const news = {
     "locale": "fr-FR",
     "news": [
       {
+          "datestart": "2019-10-01",
+          "dateend": "2020-10-01",
+          "defcon": "5",
+          "title": "Les Orthophotoplans 2019 sont en ligne!",
+          "img": 'brugis.png',
+          "message": "Le dernier orthophotoplan 2019 est désormais accessible via BruGIS."
+      },
+      {
           "datestart": "2019-09-01",
           "dateend": "2020-10-01",
           "defcon": "5",
