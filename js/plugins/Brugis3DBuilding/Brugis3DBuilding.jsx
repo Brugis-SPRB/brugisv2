@@ -55,7 +55,6 @@ const Brugis3DBuilding = React.createClass({
             draggable: true,
             tooltipPlace: "left",
             bsStyle: "primary",
-            asPanel: false,
             style: {
                 position: "absolute",
                 width: "500px",

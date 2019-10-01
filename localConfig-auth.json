@@ -376,6 +376,17 @@
 									"className": "square-button",
                   "closeGlyph": "1-close"
 								}
+						},{
+								"name": "Brugis3DBuilding",
+								"showIn": ["Brugis3DBuildingBar"] ,
+								"cfg": {
+									"panelClassName": "modal-dialog info-panel modal-content",
+                  "headerClassName": "modal-header",
+                  "bodyClassName": "modal-body info-wrap",
+                  "asPanel": false,
+									"className": "square-button",
+                  "closeGlyph": "1-close"
+								}
 						},
             {
                "name":"MeasureResults",
@@ -464,6 +475,16 @@
                "buttonStyle": "primary",
                "pressedButtonStyle": "success",
                "id": "StreetViewBar"
+             },
+             "isDefault": false
+           }, {
+             "name": "Toolbar",
+             "id": "Brugis3DBuildingBar",
+             "stateSelector": "Brugis3DBuilding",
+             "cfg": {
+               "buttonStyle": "primary",
+               "pressedButtonStyle": "success",
+               "id": "Brugis3DBuildingBar"
              },
              "isDefault": false
            },

@@ -117,8 +117,8 @@ const StreetView = React.createClass({
     renderHeader() {
         return (
             <span role="header">
-                <img src={streetviewIcon} height="28" width="28"></img>&nbsp;<Message msgId="StreetView" />
-                <button onClick={this.handleClose} className="close">{this.props.closeGlyph ? <Glyphicon glyph={this.props.closeGlyph}/> : <span>×</span>}</button>
+                <img src={streetviewIcon} height="28" width="28"></img>&nbsp;<span className="settings-panel-title"><Message msgId="streetview.title_panel"/>
+                <button onClick={this.handleClose} className="close">{this.props.closeGlyph ? <Glyphicon glyph={this.props.closeGlyph}/> : <span>×</span>}</button></span>
             </span>
         );
     },

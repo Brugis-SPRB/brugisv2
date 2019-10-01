@@ -1,6 +1,7 @@
 {
   "locale": "en-US",
   "messages": {
+    "BruGISTeam": "BruGISTeam",
     "Brugis3DBuilding": {
       "title_panel": "3D view tool",
       "tooltip": "Open the 3d view tool"
@@ -391,6 +392,7 @@
       "tooltip": "Query objects on map"
     },
     "streetview": {
+      "title_panel": "Google Streetview tool",
       "tooltip": "Get a Google streetview on map"
     },
     "expandtoolbar": {
@@ -1178,6 +1180,10 @@
       "streetViewButton": {
         "title": "Google Streetview",
         "text": "Press the button to activate the tool, then click on the map to obtain a google Streetview image"
+      },
+      "brugis3dBuildingButton": {
+        "title": "3d measuring tool",
+        "text": "Use this tool to measure areas on buildings, such as roofs or faces"
       },
       "BackgroundSelector": {
         "title": "Background selector",

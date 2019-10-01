@@ -1,6 +1,7 @@
 {
   "locale": "nl-NL",
   "messages": {
+    "BruGISTeam": "BruGISTeam",
     "Brugis3DBuilding": {
       "title_panel": "3D-weergave tool",
       "tooltip": "3D-weergave tool openen"
@@ -96,6 +97,7 @@
     },
     "Area": "Overvlakte",
     "Centroid": "Zwaartepunt",
+    "Layers": "Lagen",
     "Language": "Taal",
     "msgId0": "{name} heeft op {takenDate, date, long} {numPhotos, plural, =0 {geen foto's} =1 {een foto} other {# foto's}} genomen.",
     "htmlTest": "{name} {surname}",
@@ -130,6 +132,7 @@
       "name": "Naam",
       "group": "Groep",
       "general": "Algemeen",
+      "description": "Description",
       "display": "Weergave",
       "style": "Stijl",
       "transparent": "Transparant",
@@ -387,6 +390,7 @@
       "tooltip": "De objecten op de kaart ondervragen"
     },
     "streetview": {
+      "title_panel": "Google Streetview instrument",
       "tooltip": "Google streetview op de kaart"
     },
     "expandtoolbar": {
@@ -996,6 +1000,7 @@
     "wfsdownload": {
       "title": "De gegevens exporteren",
       "format": "Bestandsformaat",
+      "srs": "Spatiaal Referencie Systeem",
       "export": "Export",
       "downloadonlycurrentpage": "Enkel de huidige pagina downloaden",
       "error": {
@@ -1133,6 +1138,10 @@
       "streetViewButton": {
         "title": "Google Streetview",
         "text": "Cliquez le bouton pour activer l'outil, cliquez ensuite dans la carte pour obtenir une vue Streetview"
+      },
+      "brugis3dBuildingButton": {
+        "title": "Outil de mesure 3D",
+        "text": "Utilisez cet outil pour mesurer des surfaces d'un bâtiment, telles façades ou toitures"
       },
       "mapType": {
         "title": "Bibliotheek",

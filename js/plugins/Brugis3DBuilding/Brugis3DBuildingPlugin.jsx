@@ -35,10 +35,10 @@ module.exports = {
         Toolbar: {
           id: "brugis3dbuilding",
           name: 'brugis3dbuilding',
-          position: 8,
+          position: 10,
           tooltip: "Brugis3DBuilding.tooltip",
           icon: <img src={brugis3DBuildingIcon} height="45" width="38"></img>,
-          help: <Message msgId="helptexts.Brugis3DBuildingButton"/>,
+          help: <Message msgId="helptexts.Brugis3dBuildingButton"/>,
           // toggle: true
           exclusive: true,
           action: toggleBrugis3DBuildingTool

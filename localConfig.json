@@ -402,7 +402,20 @@
 									"className": "square-button",
                   "closeGlyph": "1-close"
 								}
-						},"Measure",
+						},
+						{
+								"name": "Brugis3DBuilding",
+								"showIn": ["Brugis3DbuildingBar"] ,
+								"cfg": {
+									"panelClassName": "modal-dialog info-panel modal-content",
+                  "headerClassName": "modal-header",
+                  "bodyClassName": "modal-body info-wrap",
+                  "asPanel": false,
+									"className": "square-button",
+                  "closeGlyph": "1-close"
+								}
+						},
+						"Measure",
             {
                "name":"MeasureResults",
                "cfg":{
@@ -491,6 +504,16 @@
                "buttonStyle": "primary",
                "pressedButtonStyle": "success",
                "id": "StreetViewBar"
+             },
+             "isDefault": false
+           }, {
+             "name": "Toolbar",
+             "id": "Brugis3DbuildingBar",
+             "stateSelector": "Brugis3dbuilding",
+             "cfg": {
+               "buttonStyle": "primary",
+               "pressedButtonStyle": "success",
+               "id": "Brugis3DbuildingBar"
              },
              "isDefault": false
            },
@@ -609,6 +632,7 @@
 												 {"translation": "fullscreen", "selector": "#fullscreen-btn", "position": "top"},
 	 											 {"translation": "identifyButton", "selector": "#identifyBar-container", "position": "top"},
 												 {"translation": "streetViewButton", "selector": "#StreetViewBar-container", "position": "top"},
+												 {"translation": "brugis3dBuildingButton", "selector": "#Brugis3DbuildingBar-container", "position": "top"},
 												 {"translation": "brugisSurvey", "selector": "#brugisSurvey-btn", "position": "top"},
 												 {"translation": "BackgroundSelector", "selector": ".background-plugin-position", "position": "top"}
 									     ]
@@ -633,9 +657,6 @@
 	                   ],
 	                   "defaultSrs": "native"
 	               }
-			   },
-			   {
-				   "name": "Brugis3DBuilding"
 			   }
 
          ]

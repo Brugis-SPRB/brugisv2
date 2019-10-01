@@ -1,6 +1,7 @@
 {
   "locale": "fr-FR",
   "messages": {
+    "BruGISTeam": "BruGISTeam",
     "Brugis3DBuilding": {
       "title_panel": "Outil de vue en 3d",
       "tooltip": "Ouvrir l'outil de vue en 3d"
@@ -395,6 +396,7 @@
       "tooltip": "Interroger les objets sur la carte"
     },
     "streetview": {
+      "title_panel": "Outil Google Streetview",
       "tooltip": "Obtenez Google streetview sur la carte"
     },
     "expandtoolbar": {
@@ -1184,6 +1186,10 @@
       "streetViewButton": {
         "title": "Google Streetview",
         "text": "Cliquez le bouton pour activer l'outil, cliquez ensuite dans la carte pour obtenir une vue Streetview"
+      },
+      "brugis3dBuildingButton": {
+        "title": "Outil de mesure 3D",
+        "text": "Utilisez cet outil pour mesurer des surfaces d'un bâtiment, telles façades ou toitures"
       },
       "BackgroundSelector": {
         "title": "Fonds de plan",
