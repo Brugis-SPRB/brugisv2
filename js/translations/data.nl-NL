@@ -1,6 +1,10 @@
 {
   "locale": "nl-NL",
   "messages": {
+    "Brugis3DBuilding": {
+      "title_panel": "3D-weergave tool",
+      "tooltip": "3D-weergave tool openen"
+    },
     "brugisInfo": {
       "main_go_back_to_brugis": "Terug naar BruGIS",
       "main_news": "Nieuws",
@@ -572,6 +576,8 @@
       "backgroundSwitcher": "This is the helptext for the BackgroundSwitcher",
       "layerSwitcher": "This is the helptext for the LayerSwitcher",
       "infoButton": "This is the helptext for the InfoButton",
+      "streetviewButton": "This is the helptext for the streetviewButton",
+      "Brugis3DBuildingButton": "This is the helptext for the streetviewButton",
       "locateBtn": "This is the helptext for the LocateBtn",
       "snapshot": "This is the helptext for the Snapshot",
       "print": "This is the helptext for Print",

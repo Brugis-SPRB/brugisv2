@@ -1,10 +1,12 @@
 const React = require('react');
 const PropTypes = require('prop-types');
 const Draggable = require('react-draggable');
-const {Panel, Glyphicon} = require('react-bootstrap');
+const {Panel, Glyphicon, Modal} = require('react-bootstrap');
 const Dialog = require('../../../MapStore2/web/client/components/misc/Dialog');
 const Message = require('../../../MapStore2/web/client/components/I18N/Message');
 const CesiumMap = require('./Map');
+const brugis3DBuildingIcon = require('./imgs/noun_House Frame_80931.svg');
+
 
 const Brugis3DBuilding = React.createClass({
 
@@ -41,13 +43,19 @@ const Brugis3DBuilding = React.createClass({
     getDefaultProps() {
         return {
             id: "brugis3dbuilding",
+            panelClassName: "modal-dialog info-panel modal-content",
+            headerClassName: "modal-header",
+            bodyClassName: "modal-body info-wrap",
+            asPanel: false,
+            headerGlyph: "",
+            closeGlyph: "1-close",
             className: "square-button",
             text: "brugis3dbuilding",
             enabled: false,
             draggable: true,
             tooltipPlace: "left",
             bsStyle: "primary",
-            asPanel: true,
+            asPanel: false,
             style: {
                 position: "absolute",
                 width: "500px",
@@ -60,15 +68,16 @@ const Brugis3DBuilding = React.createClass({
             lng: 17.8951832,
             addLayer: () => {},
             removeLayer: () => {},
-            updateLocation: () => {}
+            updateLocation: () => {},
+            toggleControl: () => {}
         };
     },
 
     renderHeader() {
         return (
             <span role="header">
-                <Message msgId="Brugis3DBuilding" />
-                <button onClick={this.handleClose} className="close">{this.props.closeGlyph ? <Glyphicon glyph={this.props.closeGlyph}/> : <span>×</span>}</button>
+                <img src={brugis3DBuildingIcon} height="28" width="28"></img>&nbsp;<span className="settings-panel-title"><Message msgId="Brugis3DBuilding.title_panel"/>
+                <button onClick={this.handleClose} className="close">{this.props.closeGlyph ? <Glyphicon glyph={this.props.closeGlyph}/> : <span>×</span>}</button></span>
             </span>
         );
     },
@@ -77,10 +86,10 @@ const Brugis3DBuilding = React.createClass({
             <Panel
                 defaultExpanded="true"
                 collapsible={this.props.collapsible}
-                id="mapstore-streetview"
+                id="mapstore-brugis3dbuilding"
                 style={this.props.style}
                 className={this.props.panelClassName}>
-                <div role="header" >
+                <div className={this.props.headerClassName ? this.props.headerClassName : "panel-heading"}>
                     {this.renderHeader()}
                 </div>
                 <div role="body">
@@ -93,7 +102,7 @@ const Brugis3DBuilding = React.createClass({
                 </div>
             </Panel>
         ) : (
-            <Dialog id="mapstore-streetview"
+            <Dialog id="mapstore-brugis3dbuilding"
                 style={this.props.style}
                 className={this.props.panelClassName}
                 headerClassName={this.props.headerClassName}
