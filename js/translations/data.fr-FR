@@ -1151,6 +1151,10 @@
         "title": "Recherche d'adresse",
         "text": "Tapez l'adresse recherchée, par ex. Rue du progrès 80"
       },
+      "brugisHomeButton": {
+        "title": "Services BruGIS",
+        "text": "Découvrez ici les nouveautés de BruGIS, les webservices offerts par BruGIS et contactez-nous au besoin"
+      },
       "burgerMenu": {
         "title": "Menu Options",
         "text": "Les outils d'ajout de catalogue externe, de sauvegarde de carte, de choix linguistique et de paramétrage de BruGIS se trouvent ici"

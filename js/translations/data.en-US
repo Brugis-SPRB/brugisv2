@@ -1145,6 +1145,10 @@
         "title": "Search",
         "text": "Click to open the search bar, then write the address of a place to find. e.g. '1st avenue, new york'. You can even insert coordinates in this format: 43.87,10.20"
       },
+      "brugisHomeButton": {
+        "title": "BruGIS News and services",
+        "text": "Discover here the news for BruGIS, find out more about the webservices BruGIS has to offer and contact us if needed"
+      },
       "burgerMenu": {
         "title": "Option Menu",
         "text": "You can find options, settings and help"

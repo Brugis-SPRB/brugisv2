@@ -292,7 +292,13 @@
 									 }
 								 }
 							 }
-						},"MapFooter","BestEffort","BrugisService",
+						},
+						"MapFooter",
+						"BestEffort",
+						{
+							"name": "BrugisService",
+							"id": "homeButton"
+						},
             {
                 "name" : "BrugisTree",
 								"cfg" : {
@@ -325,7 +331,8 @@
 									  "id": "superbroleke"
 								}
 						},
-						"TOCItemsSettings","Notifications",
+						"TOCItemsSettings",
+						"Notifications",
 						{
 							 "name":"TOC",
 							 "cfg":{
@@ -438,7 +445,8 @@
                   "wrap":true
                }
             },
-						{ "name" : "MousePosition",
+						{
+							"name" : "MousePosition",
 								 "cfg": {
 										 "editCRS": true,
 										 "showLabels": true,
@@ -461,8 +469,9 @@
                   }
                }
             },
-            { "name" : "ScaleBox" },
-
+            {
+							"name" : "ScaleBox"
+						},
             {
                "name":"MetadataExplorer",
                "cfg":{
@@ -478,7 +487,8 @@
                      "wms":"https://mybrugis.irisnet.be/geoserver/wms"
                   }
                }
-            },{
+            },
+						{
              "name": "Toolbar",
              "id": "NavigationBar",
              "stateSelector": "toolbar",
@@ -486,7 +496,8 @@
                "buttonStyle": "primary",
                "id": "navigationBar"
              }
-           }, {
+           },
+					 {
              "name": "Toolbar",
              "id": "IdentifyBar",
              "stateSelector": "identify",
@@ -561,8 +572,7 @@
             {
                "name":"BurgerMenu",
                "id": "BurgerMenu"
-            }
-            ,
+            },
              {
                 "name":"LocalMaps",
                 "showIn":[
@@ -582,18 +592,23 @@
                        "width" : 300
                    }
                 }
-             }, {
+             },
+						 {
                  "name":"MeasureArea"
-             }, {
+             },
+						 {
                  "name":"MeasureLength"
-             }, {
+             },
+						 {
 							 	 "name":"ShapeFile"
-						 }, {
+						 },
+						 {
                  "name": "Print",
 								 "cfg":{
 									 "useFixedScales": false
 								 }
-             }, {
+             },
+						 {
                  "name": "BrugisSurvey",
 								 "cfg": {
 	                 "panelClassName": "modal-dialog info-panel modal-content",
@@ -605,14 +620,16 @@
 	                 "className": "square-button",
 	                 "closeGlyph": "1-close"
 	               }
-             }, {
+             },
+						 {
                  "name": "FullScreen",
                  "override": {
                      "Toolbar": {
                          "alwaysVisible": false
                      }
                  }
-             }, {
+             },
+						 {
                  "name": "Tutorial" ,
                  "cfg": {
 								     "presetList": {
@@ -623,18 +640,19 @@
 												 "selector": "#intro-tutorial"
 									      },
 												{"translationHTML": "drawerMenu", "selector": "#drawer-menu-button"},
-	 											 {"translation": "searchBar", "selector": "#map-search-bar"},
-	 											 {"translation": "burgerMenu", "selector": "#mapstore-burger-menu"},
-	 											 {"translation": "zoomInButton", "selector": "#zoomin-btn", "position": "top"},
-	 											 {"translation": "zoomOutButton", "selector": "#zoomout-btn", "position": "top"},
-												 {"translation": "measureAreaBrugisButton", "selector": "#brugis-area", "position": "top"},
-												 {"translation": "measureLengthBrugisButton", "selector": "#brugis-length", "position": "top"},
-												 {"translation": "fullscreen", "selector": "#fullscreen-btn", "position": "top"},
-	 											 {"translation": "identifyButton", "selector": "#identifyBar-container", "position": "top"},
-												 {"translation": "streetViewButton", "selector": "#StreetViewBar-container", "position": "top"},
-												 {"translation": "brugis3dBuildingButton", "selector": "#Brugis3DbuildingBar-container", "position": "top"},
-												 {"translation": "brugisSurvey", "selector": "#brugisSurvey-btn", "position": "top"},
-												 {"translation": "BackgroundSelector", "selector": ".background-plugin-position", "position": "top"}
+												{"translation": "searchBar", "selector": "#map-search-bar"},
+												{"translation": "brugisHomeButton", "selector": "#home-button"},
+												{"translation": "burgerMenu", "selector": "#mapstore-burger-menu"},
+												{"translation": "zoomInButton", "selector": "#zoomin-btn", "position": "top"},
+												{"translation": "zoomOutButton", "selector": "#zoomout-btn", "position": "top"},
+												{"translation": "measureAreaBrugisButton", "selector": "#brugis-area", "position": "top"},
+												{"translation": "measureLengthBrugisButton", "selector": "#brugis-length", "position": "top"},
+												{"translation": "fullscreen", "selector": "#fullscreen-btn", "position": "top"},
+												{"translation": "identifyButton", "selector": "#identifyBar-container", "position": "top"},
+												{"translation": "streetViewButton", "selector": "#StreetViewBar-container", "position": "top"},
+												{"translation": "brugis3dBuildingButton", "selector": "#Brugis3DbuildingBar-container", "position": "top"},
+												{"translation": "brugisSurvey", "selector": "#brugisSurvey-btn", "position": "top"},
+												{"translation": "BackgroundSelector", "selector": ".background-plugin-position", "position": "top"}
 									     ]
 									    }
 

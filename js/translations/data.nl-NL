@@ -1103,6 +1103,10 @@
         "title": "Zoek",
         "text": "Klik om de zoekbalk te openen en typ vervolgens het adres van een te vinden plaats. bijv. '1st avenue, new york'. U kunt zelfs coördinaten invoegen in dit formaat: 43.87,10.20"
       },
+      "brugisHomeButton": {
+        "title": "BruGIS News and services",
+        "text": "Discover here the news for BruGIS, find out more about the webservices BruGIS has to offer and contact us if needed"
+      },
       "burgerMenu": {
         "title": "Optiemenu",
         "text": "U kunt opties, instellingen en hulp vinden"
