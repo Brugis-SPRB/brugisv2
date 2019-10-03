@@ -14,7 +14,7 @@ const toggleBrugis3DBuildingTool = setControlProperty.bind(null, 'brugis3db', 'a
 
 const selector = createSelector([
     (state) => state,
-    (state) => state.controls && state.controls.toolbar && state.controls.toolbar.active === "brugis3dbuilding" || false,
+    (state) => state.controls && state.controls.Brugis3dbuilding && state.controls.Brugis3dbuilding.active === "brugis3dbuilding" || false,
     (state) => state.brugis3db && state.brugis3db.clickPoint && state.brugis3db.clickPoint.latlng && state.brugis3db.clickPoint.latlng.lat,
     (state) => state.brugis3db && state.brugis3db.clickPoint && state.streetView.brugis3db.latlng && state.brugis3db.clickPoint.latlng.lng,
     (state) => state.brugis3db && state.brugis3db.warning,
