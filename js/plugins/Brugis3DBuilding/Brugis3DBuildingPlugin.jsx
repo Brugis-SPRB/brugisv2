@@ -18,9 +18,10 @@ const selector = createSelector([
     (state) => state.brugis3db && state.brugis3db.clickPoint && state.brugis3db.clickPoint.latlng && state.brugis3db.clickPoint.latlng.lat,
     (state) => state.brugis3db && state.brugis3db.clickPoint && state.streetView.brugis3db.latlng && state.brugis3db.clickPoint.latlng.lng,
     (state) => state.brugis3db && state.brugis3db.warning,
-    (state) => state.locale && state.locale.current
-], (state, enabled, lat, lng, warning, locale) => ({
-    state, enabled, lat, lng, warning, locale
+    (state) => state.locale && state.locale.current,
+    (state) => state.map && state.map.present || state.map || state.config && state.config.map || null
+], (state, enabled, lat, lng, warning, locale, map) => ({
+    state, enabled, lat, lng, warning, locale, map
 }));
 
 const Brugis3DBuildingPlugin = connect(selector, {

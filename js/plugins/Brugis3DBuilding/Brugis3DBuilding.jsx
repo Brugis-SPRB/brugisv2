@@ -37,7 +37,8 @@ const Brugis3DBuilding = React.createClass({
         addLayer: PropTypes.func,
         removeLayer: PropTypes.func,
         defaultIconStyle: PropTypes.object,
-        updateLocation: PropTypes.func
+        updateLocation: PropTypes.func,
+        map: PropTypes.object
     },
 
     getDefaultProps() {
@@ -96,7 +97,7 @@ const Brugis3DBuilding = React.createClass({
                       height: '450px',
                       backgroundColor: '#eeeeee'
                     }}>
-                        <CesiumMap />
+                        <CesiumMap/>
                   </div>
                 </div>
             </Panel>
@@ -115,7 +116,7 @@ const Brugis3DBuilding = React.createClass({
                       height: '450px',
                       backgroundColor: '#eeeeee'
                     }}>
-                        <CesiumMap />
+                         <CesiumMap />
                   </div>
                 </div>
             </Dialog>
