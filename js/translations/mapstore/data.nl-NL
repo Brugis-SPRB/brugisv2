@@ -1,0 +1,1610 @@
+{
+    "locale": "nl-NL", 
+    "messages": {
+        "Language": "Taal", 
+        "aboutLbl": "Over", 
+        "about_a0": "deze", 
+        "about_h20": "Licentie", 
+        "about_h21": "Credits", 
+        "about_p0-0": "MapStore is een framework dat het mogelijk maakt cartografische webtoepassingen te ontwikkelen met behulp van de standaard libraries zoals", 
+        "about_p0-1": "en", 
+        "about_p1": "MapStore heeft meerdere toepassingsvoorbeelden:", 
+        "about_p3": "MapStore is open source software, gebaseerd op OpenLayers 3, Leaflet and ReactJS, en is beschikbaar onder Simplified BSD License.", 
+        "about_p5-0": "Voor meer informatie, zie", 
+        "about_p5-1": "bladzijde.", 
+        "about_p6": "MapStore2 ontwikkeld door:", 
+        "about_title": "Info over deze app...", 
+        "about_ul0_li0": "MapViewer is een eenvoudige viewer van gepreconfigureerde kaarten (optioneel opgeslagen in een GeoStore database)", 
+        "about_ul0_li1": "MapPublisher is ontwikkeld om op een eenvoudige en intuïtieve manier kaarten en assemblages te maken, te bewaren en te delen. Kaarten op basis van inhoud van van servers zoals OpenStreetMap, Google Maps, MapQuest en iedere andere specifieke server van uw of van een andere organisatie. Voor meer informatie: ", 
+        "annotations": {
+            "add": "Nieuw", 
+            "addMarker": "Voeg een nieuw punt op de kaart toe", 
+            "back": "Terug", 
+            "cancel": "Annuleer", 
+            "confirm": "Bevestig", 
+            "deleteGeometry": "Verwijder bestaande punten", 
+            "edit": "Bewerk", 
+            "emptygeometry": "Geometrie kan niet leeg zijn", 
+            "field": {
+                "description": "Beschrijving", 
+                "title": "Titel"
+            }, 
+            "filter": "Annotaties filteren ...", 
+            "mandatory": "Verplicht veld", 
+            "remove": "Verwijder", 
+            "removeannotation": "Wilt u de annotatie verwijderen?", 
+            "removegeometry": "Wilt u alle annotatiepunten verwijderen?", 
+            "save": "Opslaan", 
+            "styleGeometry": "Kies een andere stijl voor de punten", 
+            "title": "Annotaties", 
+            "undo": "Weet je zeker dat je de bewerkingssessie van de annotaties wilt verlaten?", 
+            "zoomTo": "Zoom"
+        }, 
+        "annotationsbutton": "Annotaties", 
+        "autorefresh": {
+            "layers": "lagen", 
+            "of": "van", 
+            "updating": "Wordt bijgewerkt..."
+        }, 
+        "back": "Terug naar de importeur", 
+        "background": "Achtergrondkaart", 
+        "backgroundSwither": {
+            "tooltip": "Selectie van de achtergrond kaart"
+        }, 
+        "bandselector": {
+            "algorithm": {
+                "ClipToMinimumMaximum": "Klem", 
+                "ClipToZero": "Klem op nul", 
+                "StretchToMinimumMaximum": "Rekken", 
+                "none": "Geen"
+            }, 
+            "algorithmTitle": "Optioneel algoritme", 
+            "band": "Band", 
+            "enha": {
+                "GammaValue": "Gamma correctie", 
+                "Histogram": "Histogram", 
+                "Normalize": "Normaliseer", 
+                "none": "Geen"
+            }, 
+            "enhancement": "Verbetering", 
+            "max": "Max", 
+            "min": "Min", 
+            "value": "Waarde"
+        }, 
+        "cancel": "Annuleren", 
+        "catalog": {
+            "add": "Toevoegen", 
+            "addToMap": "Aan de kaart toevoegen", 
+            "autoload": "Zoeken op serviceselectie", 
+            "catalogUrlPlaceholder": "Voer URL-catalogus in...", 
+            "clearValueText": "Selectie wissen", 
+            "copied": "Gekopieerd!", 
+            "copyToClipboard": "Kopiëren naar klembord", 
+            "delete": "Verwijder", 
+            "error": "Er is een fout opgetreden tijdens het laden van de gegevens van de catalogus", 
+            "getWMSLink": "WMS-link", 
+            "missingReference": "Ontbrekende OGC-referentiemetagegevens", 
+            "noRecordsMatched": "Geen enkel overeenkomstige record", 
+            "noResultsText": "Geen enkel resultaat", 
+            "notification": {
+                "addCatalogService": "Service correct toegevoegd", 
+                "duplicatedServiceTitle": "Er bestaat al een service met die titel. Gelieve de titel te wijzigen", 
+                "errorServiceUrl": "Service niet beschikbaar. Controleer de opgegeven URL", 
+                "serviceDeletedCorrectly": "De service is correct verwijderd", 
+                "warningAddCatalogService": "Voer een geldige URL en titel in"
+            }, 
+            "options": "Opties", 
+            "pageInfo": "{start}-{end} resultaten op {total}", 
+            "pageInfoInfinite": "{total, plural, =undefined {} =0 {No results} =1 {{total} van {total} gevonden} other {laadde {loaded} van {total} gevonden}}", 
+            "reset": "Verwijder", 
+            "resultInfo": "{total, plural, =0 {No items} =1 {{total} Items van {total}} other {{start}-{end} van {total}}}", 
+            "search": "Zoek", 
+            "service": "Service", 
+            "servicePlaceholder": "typ een service", 
+            "serviceTitle": "Titel", 
+            "serviceTitlePlaceholder": "typ een titel", 
+            "share": "Deel", 
+            "srs_not_allowed": "Deze service ondersteunt het geografische coördinatensysteem van de kaart niet", 
+            "textSearchPlaceholder": "op te zoeken tekst...", 
+            "title": "Catalogus", 
+            "tooltip": "De catalogus doorlopen", 
+            "type": "Typ", 
+            "url": "Url", 
+            "urlPlaceholder": "typ een URL", 
+            "wfsGetCapLink": "WFS", 
+            "wmsGetCapLink": "WMS"
+        }, 
+        "close": "Sluiten", 
+        "colormapgrid": {
+            "color": "Kleur", 
+            "label": "Label", 
+            "minmaxerror": "De waarde moet tussen de waarden van de vorige en volgende cellen liggen", 
+            "quantity": "Hoeveelheid"
+        }, 
+        "confirm": "Bevestigen", 
+        "confirmTitle": "Kunt u bevestigen?", 
+        "cookie": {
+            "accept": "Aanvaarden", 
+            "info": "Deze website maakt gebruik van cookies om uw ervaring te verbeteren. We gaan ervan uit dat je hiermee akkoord gaat, maar je kunt er van afzien als je dat wilt.", 
+            "leave": "Verlaten", 
+            "moreDetailsButton": "Meer details"
+        }, 
+        "cookiesPolicyNotification": {
+            "confirm": "akkoord", 
+            "message": "Door onze website te blijven gebruiken, gaat u akkoord met ons gebruik van cookies.", 
+            "title": "Deze site maakt gebruik van cookies"
+        }, 
+        "dashboard": {
+            "editor": {
+                "addACardToTheDashboard": "Voeg een widget toe aan het dashboard", 
+                "hideConnections": "Verbindingen verbergen", 
+                "save": "Sla het dashboard op", 
+                "showConnections": "Toon verbindingen"
+            }, 
+            "emptyTitle": "Het dashboard is leeg", 
+            "errors": {
+                "loading": {
+                    "dashboardDoesNotExist": "Het dashboard dat u probeert te openen bestaat niet", 
+                    "dashboardNotAccessible": "U hebt geen toestemming om dit dashboard te openen. Neem contact op met de broneigenaar", 
+                    "notAccessible": "Dashboard niet toegankelijk", 
+                    "notFound": "Dashboard niet gevonden", 
+                    "pleaseLogin": "Dit dashboard is niet openbaar. Probeer in te loggen", 
+                    "title": "Fout bij laden van het dashboard", 
+                    "unknownError": "Er is een fout opgetreden bij het laden van het dashboard. Neem contact op met de beheerder"
+                }, 
+                "resourceAlreadyExists": "Er bestaat al een bron met deze naam. Probeer '{data}'"
+            }, 
+            "loadingSpinner": "Dashboard wordt geladen", 
+            "saveDialog": {
+                "cancel": "Annuleren", 
+                "close": "Sluiten", 
+                "confirmCloseText": "Er zijn wijzigingen in behandeling, weet u zeker dat u wilt sluiten zonder op te slaan?", 
+                "description": "Beschrijving", 
+                "descriptionPlaceholder": "Typ een beschrijving...", 
+                "name": "Naam", 
+                "namePlaceholder": "Typ een naam...", 
+                "saveSuccessMessage": "Dashboard succesvol opgeslagen", 
+                "saveSuccessTitle": "Succes", 
+                "title": "Dashboard-eigenschappen bewerken"
+            }
+        }, 
+        "details": {
+            "title": "Over deze kaart"
+        }, 
+        "dock": {
+            "row": "{rowsSelected} rij geselecteerd", 
+            "rows": "{rowsSelected} rijen geselecteerd"
+        }, 
+        "docs": "Docs", 
+        "drawLocal": {
+            "draw": {
+                "handlers": {
+                    "circle": {
+                        "tooltip": {
+                            "start": "Klik en sleep om een cirkel te tekenen."
+                        }
+                    }, 
+                    "marker": {
+                        "tooltip": {
+                            "start": "Klik om een punt te plaatsen."
+                        }
+                    }, 
+                    "polygon": {
+                        "error": "Fout: De randen van het vorm kunnen elkaar niet kruisen!", 
+                        "tooltip": {
+                            "cont": "Klik om door te gaan met de vorm.", 
+                            "end": "Klik op het eerste punt om de vorm te sluiten.", 
+                            "start": "Klik om te beginnen met het tekenen van een vorm."
+                        }
+                    }, 
+                    "polyline": {
+                        "error": "Fout: de streep van de lijnmag elkaar niet kruisen!", 
+                        "tooltip": {
+                            "cont": "Klik om verder te gaan met de lijn.", 
+                            "end": "Klik het laatste punt aan om de lijn te beëindigen.", 
+                            "start": "Klik om te beginnen met het tekenen van een lijn."
+                        }
+                    }, 
+                    "rectangle": {
+                        "tooltip": {
+                            "start": "Klik en sleep om een rechthoek te tekenen."
+                        }
+                    }, 
+                    "simpleshape": {
+                        "tooltip": {
+                            "end": "Laat de muis los om de rechthoek te voltooien."
+                        }
+                    }
+                }, 
+                "toolbar": {
+                    "actions": {
+                        "text": "Wissen", 
+                        "title": "Tekening wissen"
+                    }, 
+                    "buttons": {
+                        "circle": "Teken een cirkel", 
+                        "marker": "Teken een punt", 
+                        "polygon": "Teken een veelhoek", 
+                        "polyline": "teken een lijn", 
+                        "rectangle": "Teken een rechthoek"
+                    }, 
+                    "undo": {
+                        "text": "Verwijder het laatste punt", 
+                        "title": "Verwijder het laatst getekende punt"
+                    }
+                }
+            }, 
+            "edit": {
+                "handlers": {
+                    "edit": {
+                        "tooltip": {
+                            "subtext": "Klik op Annuleren om de wijzigingen ongedaan te maken.", 
+                            "text": "Verplaats de grepen, of wijs naar het object om het te wijzigen."
+                        }
+                    }, 
+                    "remove": {
+                        "tooltip": {
+                            "text": "Klik op het object om het te verwijderen"
+                        }
+                    }
+                }, 
+                "toolbar": {
+                    "actions": {
+                        "cancel": {
+                            "text": "Annuler", 
+                            "title": "Annuleer de bewerking, verwerp alle wijzigingen."
+                        }, 
+                        "save": {
+                            "text": "Opslaan", 
+                            "title": "Sla de wijzigingen op."
+                        }
+                    }, 
+                    "buttons": {
+                        "edit": "Wijzig de lagen.", 
+                        "editDisabled": "Geen enkele laag om te wijzigen.", 
+                        "remove": "Verwijder de lagen.", 
+                        "removeDisabled": "Geen enkele laag te verwijderen."
+                    }
+                }
+            }
+        }, 
+        "elevation": "Hoogte", 
+        "elevationLoading": "Bezig met laden...", 
+        "elevationLoadingError": "Fout", 
+        "elevationNotAvailable": "N/A", 
+        "enable": "Activeren", 
+        "equalinterval": {
+            "classes": "Klassen", 
+            "classify": "Classificeren", 
+            "max": "Max", 
+            "maxerror": "De maximale waarde moet groter zijn dan de minimale waarde", 
+            "min": "Min", 
+            "minerror": "De minimale waarde moet minder zijn dan de maximale waarde", 
+            "ramp": "Kleurengamma"
+        }, 
+        "errorDefault": "Er is een fout opgetreden", 
+        "errorTitleDefault": "Fout", 
+        "expandtoolbar": {
+            "tooltip": "Vergroten / Verkleinen"
+        }, 
+        "featuregrid": {
+            "backtosearch": "Terug naar zoeken", 
+            "clear": "Weet je zeker dat je alle wijzigingen wilt annuleren?", 
+            "columns": "Kolommen", 
+            "delete": "Valideren om de elementen te verwijderen?", 
+            "deleteButton": "Verwijderen", 
+            "deselectall": "Deselecteer alles", 
+            "errorProjFetch": "Fout bij het ophalen van de proj4-tekenreeksdefinitie van spatialreference.org. Synchronisatietool kan de ruimtelijke filter niet toepassen.", 
+            "errorSaving": "Er is een fout opgetreden tijdens het opslaan van de bewerking", 
+            "export": "Exporteren", 
+            "featureClose": "Wilt u echt het rooster sluiten?", 
+            "filter": {
+                "placeholders": {
+                    "default": "Zoeken...", 
+                    "number": "Typ een nummer of een expressie...", 
+                    "string": "Typ een tekst om te filteren..."
+                }, 
+                "tooltips": {
+                    "default": "Zoek...", 
+                    "editMode": "Snel zoeken is niet beschikbaar in de bewerkingsmodus", 
+                    "number": "Typ een nummer of een expressie. Bijvoorbeeld: 10, > 2, < 10", 
+                    "string": "Typ een tekst om te filteren..."
+                }
+            }, 
+            "header": "Zoek de resultatenlijst", 
+            "missingGeometry": "Ontbrekende geometrie", 
+            "noButton": "Neen", 
+            "noFeaturesAvailable": "Geen enkele functionaliteit beschikbaar", 
+            "notSupportedGeometry": "Het huidige type geometrie van de laag wordt niet ondersteund voor bewerking, maar u kunt nog steeds de attributen bewerken", 
+            "notSupportedGeometryTitle": "Geometrietype niet ondersteund ", 
+            "pageInfo": "{totalPages, plural, =0 {No pages} =1 {Page {totalPages} van {totalPages}} other {Page {page} van {totalPages}}}", 
+            "pagination": {
+                "more": "meer", 
+                "of": "van", 
+                "page": "Bladzijde", 
+                "to": "tot"
+            }, 
+            "resultInfo": "{total, plural, =0 {geen enkel object} =1 {{total} van {total}} other {{start}-{end} van {total}}}", 
+            "resultInfoVirtual": "{total, plural, =0 {geen enkel object} =1 {{total} van {total}} other {{total}}}", 
+            "selectall": "Selecteer alles", 
+            "toolbar": {
+                "addGeom": "Voeg een element toe aan de bestaande geometrie", 
+                "addNewFeatures": "Voeg een nieuw element toe", 
+                "advancedFilter": "Geavanceerd zoeken", 
+                "cancelChanges": "De wijzigingen annuleren", 
+                "createNewChart": "Maak een grafiek voor de geselecteerde laag", 
+                "deleteGeometry": "De geometrie verwijderen", 
+                "deleteSelectedFeatures": "Verwijder geselecteerde functies", 
+                "downloadGridData": "De gegevens downloaden", 
+                "drawFeature": "Tekenelement", 
+                "drawGeom": "Teken element", 
+                "editFeature": "Bewerk element", 
+                "editMode": "Bewerkingsmodus", 
+                "hideShowColumns": "De kolommen verbergen/tonen", 
+                "notShowAgain": "  Dit bericht niet meer tonen", 
+                "quitEditMode": "Verlaat de bewerkingsmodus", 
+                "saveChanges": "De wijzigingen opslaan", 
+                "saving": "wordt opgeslagen...", 
+                "stopDrawGeom": "Annuleer de creatie van de geometrie", 
+                "syncOnMap": "Kaart synchroniseren met filter", 
+                "synchPopoverText": "Gebruik deze tool om de kaart te synchroniseren met het geselecteerde filter", 
+                "synchPopoverTitle": "Kaart synchroniseren met filter ", 
+                "zoomAll": "Zoom in op de pagina"
+            }, 
+            "tools": "Gereedschapspaneel", 
+            "yesButton": "Ja"
+        }, 
+        "floatinglegend": {
+            "hideLegend": "Verberg de legende", 
+            "showLegend": "Toon de legende", 
+            "showTOC": "Toon de lagen"
+        }, 
+        "fullscreen": {
+            "tooltipActivate": "Overschakelen naar het volledige scherm", 
+            "tooltipDeactivate": "Volledig scherm verlaten", 
+            "viewLargerMap": "De kaart vergroten"
+        }, 
+        "getFeatureInfoError": {
+            "text": "Er is een fout opgetreden tijdens deze <b>GetFeatureInfo</b> query", 
+            "title": "Ooops! Iets werkt niet"
+        }, 
+        "getFeatureInfoTitle": "Item informatie", 
+        "global": {
+            "colors": {
+                "blue": "{number, plural, =0 {Bleu} =1 {Bleu} other {Bleus}}", 
+                "brown": "{number, plural, =0 {Brun} =1 {Brun} other {Bruns}}", 
+                "green": "{number, plural, =0 {vert} =1 {vert} other {verts}}", 
+                "purple": "{number, plural, =0 {Pourpre} =1 {Pourpre} other {Pourpre}}", 
+                "random": "{number, plural, =0 {Random} =1 {Random} other {Random}}", 
+                "red": "{number, plural, =0 {Rouge} =1 {Rouge} other {rouges}}"
+            }
+        }, 
+        "globeswitcher": {
+            "tooltipActivate": "Ga naar de 3D-modus", 
+            "tooltipDeactivate": "Verlaat de 3D-modus"
+        }, 
+        "gohome": "Terug", 
+        "group": "Groep", 
+        "groups": "Groepen", 
+        "help": "Help", 
+        "helptexts": {
+            "backgroundSwitcher": "Dit is de helptekst voor de achtergrondschakelaar", 
+            "expandToolbar": "Dit is de helptekst voor uitvouwen / samenvouwen", 
+            "gohome": "Dit is de helptekst voor Home", 
+            "historyredo": "Utiliser ce bouton pour revenir à l'extension et la position suivante", 
+            "historyundo": "Gebruik deze knop om terug te keren naar de vorige extensie en positie", 
+            "infoButton": "Dit is de helptekst voor de infoknop", 
+            "layerSwitcher": "Dit is de helptekst voor de lagenschakelaar", 
+            "locateBtn": "Dit is de helptekst voor de locatieknop", 
+            "measureComponent": "Dit is de helptekst voor de meetcomponent", 
+            "metadataExplorer": "This is the helptext for the MetadataExplorer", 
+            "metadataexplorer": "Dit is de helptekst voor de metadata verkenner", 
+            "print": "Dit is de helptekst voor het afdrukken", 
+            "rasterstyler": "Stel een minimum en maximum waarde in, klasnummer en kleurbereik en maak een nieuwe geclassificeerde laag op", 
+            "scaleBox": "Dit is de helptekst voor het schaalvak", 
+            "searchBar": "Typ het op te zoeken adres. Bv. 'Kunstlaan, Brussel'. U kunt ook coördinaten onder volgende vorm invoeren : 43.87,10.20", 
+            "settingsPanel": "Dit is de helptekst voor het instellingenpaneel", 
+            "shapefile": "Dit is de helptekst voor de shapefile", 
+            "snapshot": "Dit is de helptekst voor de snapshot", 
+            "styler": "Maak een stijl voor de geselecteerde laag", 
+            "vectorstyler": "Gebruik deze knop om terug te keren naar de extensie en de volgende positie", 
+            "zoomIn": "Dit is de helptekst voor het inzoomen", 
+            "zoomOut": "Dit is de helptekst voor het uitzoomen", 
+            "zoomToMaxExtentButton": "Dit is de helptekst voor de knop zoomen tot maximale omvang"
+        }, 
+        "history": {
+            "barLabel": "Geschiedenis van de kaart", 
+            "redoBtnTooltip": "Vooruit gaan", 
+            "undoBtnTooltip": "Terug gaan"
+        }, 
+        "home": {
+            "Applications": "Toepassingen", 
+            "Examples": "Voorbeelden", 
+            "LinkedinGroup": "Mapstore Linkedin groep", 
+            "description": "MapStore is ontwikkeld om op een eenvoudige en intuïtieve manier kaarten en assemblages te maken, te bewaren en te delen. Kaarten op basis van inhoud van van servers zoals OpenStreetMap, Google Maps, MapQuest en iedere andere specifieke server van uw of van een andere organisatie. <br/>Bezoek onze <a href=\"/mapstore/docs/\">homepage</a> voor meer detail.", 
+            "examples": {
+                "3dviewer": {
+                    "html": "<h3>3D viewer</h3><p>Eenvoudige 3D viewer gebaseerd op CesiumJS</p>"
+                }, 
+                "api": {
+                    "html": "<h3>API</h3><p>Gebruik API's om een MapStore2-kaart in uw applicatie op te nemen</p>"
+                }, 
+                "featuregrid": {
+                    "html": "<h3>Raster van de objecten</h3><p>Specifiek voorbeeld</p>"
+                }, 
+                "layertree": {
+                    "html": "<h3>Geavanceerde boom van de lagen</h3><p>Specifiek voorbeeld</p>"
+                }, 
+                "manager": {
+                    "html": "<h3>Beheerder</h3><p>De Mapstore-kaarten doorbladeren</p>"
+                }, 
+                "mouseposition": {
+                    "html": "<h3>Positie muis</h3><p>Specifiek voorbeeld</p>"
+                }, 
+                "plugins": {
+                    "html": "<h3>Plugins</h3><p>Uw eigen applicatie opbouwen</p>"
+                }, 
+                "print": {
+                    "html": "<h3>Afdrukken</h3><p>Specifiek voorbeeld</p>"
+                }, 
+                "queryform": {
+                    "html": "<h3>Query builder</h3><p>Specifiek voorbeeld</p>"
+                }, 
+                "rasterstyler": {
+                    "html": "<h3>Beeldweergave</h3><p>Uw beeldlaag weergeven</p>"
+                }, 
+                "scalebar": {
+                    "html": "<h3>Schaalbalk</h3><p>Specifiek voorbeeld</p>"
+                }, 
+                "viewer": {
+                    "html": "<h3>Viewer</h3><p>Eenvoudige viewer</p>"
+                }
+            }, 
+            "forkMeOnGitHub": "Vork me on GitHub", 
+            "ml": {
+                "email": "E-mail:", 
+                "subscribe": "Abonneren", 
+                "subscribe_devel": "Abonneer je op de mailinglijsten van ontwikkelaars", 
+                "subscribe_users": "Abonneer u op de gebruikers mailinglijsten", 
+                "title": "Blijf op de hoogte van de laatste ontwikkelingen via mailinglijsten", 
+                "visit_group": "Ga naar deze groep"
+            }, 
+            "open": "Openen", 
+            "scrollTop": "Terug naar boven", 
+            "shortDescription": "Moderne webmapping met OL3, Leaflet en React <br/> <small> bezoek de pagina <a href=\"/mapstore/docs/\"> documentatie </a> </small>"
+        }, 
+        "htmlTest": "{name} {surname}", 
+        "identifyNoQueryableLayers": "Geen actieve laag nodig", 
+        "identifyRevGeocodeCloseText": "Afsluiten", 
+        "identifyRevGeocodeError": "Geocoding onmogelijk", 
+        "identifyRevGeocodeHeader": "Coördinaten", 
+        "identifyRevGeocodeModalTitle": "Adres", 
+        "identifyRevGeocodeSubmitText": "Meer informatie", 
+        "identifyTitle": "Item informatie", 
+        "importer": {
+            "creatingImportProcess": "De import wordt uitgevoerd ...", 
+            "dropfile": "Sleep bestanden hier om een nieuw import proces te maken", 
+            "dropfileImport": "sleep bestanden hier om toe te voegen aan dit proces", 
+            "import": {
+                "actions": "Acties", 
+                "analyzing": "Pakket analyseren ...", 
+                "applyingPreset": "Presets d'application ...", 
+                "archive": "Archiveer", 
+                "deleteImport": "Proces verwijderen", 
+                "deleteTask": "Verwijderen", 
+                "deleting": "Clearing ...", 
+                "runImport": "begin", 
+                "status": "Statuut", 
+                "tasks": "taken"
+            }, 
+            "importN": "Proces {id}", 
+            "imports": "Import proces", 
+            "number": "#", 
+            "process": "Proces", 
+            "task": {
+                "delete": "Verwijder dit pakket", 
+                "edit": "Wijzig de standaardstijl", 
+                "file": "Naam van het bestand", 
+                "format": "Formaat", 
+                "general": "Generale Info", 
+                "layer": "Laag", 
+                "originalData": "origineel bestand", 
+                "panelTitle": "Taken {id}", 
+                "run": "Voer dit pakket in", 
+                "status": "Statuut", 
+                "storeName": "Naam van de store", 
+                "storeType": "Type store", 
+                "targetStore": "target store", 
+                "transforms": "Ketting van transformaties", 
+                "update": "Bijwerken", 
+                "updateMode": "Refresh modus"
+            }, 
+            "title": "Gegevens importeren", 
+            "transform": {
+                "actions": "Acties", 
+                "delete": "deze transformatie verwijderen", 
+                "options": "transformatie van de opties", 
+                "overviewlevels": "Overzicht van niveaus", 
+                "panelTitle": "Transformatie {id}", 
+                "type": "Transformatie type"
+            }, 
+            "workspace": {
+                "create": "Maak aan", 
+                "createWS": "maak een nieuwe werkruimte aan: ", 
+                "failure": "Fout opgetreden tijdens de aanmaak van de werkruimte: {statusWS}", 
+                "new": "Naam...", 
+                "select": "Selecteer de doel werkruimte", 
+                "success": "Werkruimte {statusWS} succesvol aangemaakt", 
+                "target": "doel werkruimte: "
+            }
+        }, 
+        "info": {
+            "tooltip": "De objecten op de kaart ondervragen"
+        }, 
+        "infoFormatLbl": "Informatie, formaat van het antwoord", 
+        "language": "Taal", 
+        "layerProperties": {
+            "cached": "Gebruik cache-opties", 
+            "changedSettings": "Gewijzigde instellingen", 
+            "changedSettingsAlert": "U sluit het instellingenpaneel zonder uw wijzigingen op te slaan", 
+            "confirmDelete": "Bent u zeker?", 
+            "delete": "Wissen", 
+            "deleteLayer": "Verwijder de laag", 
+            "deleteLayerMessage": "Weet u zeker dat u deze laag wilt verwijderen?", 
+            "description": "Beschrijving", 
+            "display": "Weergave", 
+            "editCustomFormat": "Aangepast formaat bewerken", 
+            "elevation": "hoogte", 
+            "exampleOfResponse": "Voorbeeld", 
+            "featureInfo": "Feature info", 
+            "featureInfoFormatLbl": "Informatie, formaat van het antwoord", 
+            "featureTypeError": "De atributen van de laag kunnen niet geladen worden", 
+            "featureTypeErrorInvalidJSON": "Kan de laagattributen niet laden. Antwoord is niet geldig", 
+            "format": "Formaat", 
+            "general": "Algemeen", 
+            "group": "Groep", 
+            "groupProperties": "Groep properties", 
+            "htmlFormatDescription": "Toont feature-inforesultaten als html", 
+            "htmlFormatTitle": "HTML", 
+            "legenderror": "Het legende is niet berijkbaar", 
+            "name": "Naam", 
+            "propertiesFormatDescription": "Toont feature-inforesultaten eigenschappenlijst", 
+            "propertiesFormatTitle": "EIGENSCHAPPEN", 
+            "singleTile": "Enkele tegel", 
+            "style": "Stijl", 
+            "styleCustom": "Gebruik een stijl genaamd \"{value} \"", 
+            "styleListLoadError": "Er is een fout opgetreden bij het laden van de lijst met stijlen", 
+            "stylesRefreshList": "Vernieuw de lijst met stijlen", 
+            "templateFormatDescription": "Pas het formaat van feature-inforesultaten aan", 
+            "templateFormatInfoAlert1": "Klik op de knop Bewerken om een nieuwe sjabloon toe te voegen.", 
+            "templateFormatInfoAlert2": "Gebruik ${ attribute } om de eigenschappen te verpakken die u moet weergeven", 
+            "templateFormatInfoAlertExample": "De id van de feature is ${ properties }", 
+            "templateFormatTitle": "SJABLOON", 
+            "templatePreview": "Voorbeeld van sjabloon", 
+            "textFormatDescription": "Toont informatie over feature info als gewone tekst", 
+            "textFormatTitle": "TEKST", 
+            "title": "Titel", 
+            "titleTranslations": "Titel vertalingen", 
+            "transparent": "Transparant", 
+            "windowTitle": "Eigenschappen van de laag"
+        }, 
+        "layers": "Lagen", 
+        "loading": "Bezig met laden...", 
+        "localeErrors": {
+            "404": "Vertaalbestand niet gevonden"
+        }, 
+        "locate": {
+            "feetUnit": "voet", 
+            "metersUnit": "meter", 
+            "outsideMapBoundsMsg": "U lijkt buiten de grenzen van de kaart", 
+            "popup": "U bent op minder dan {distance} {unit} van dat punt verwijderd", 
+            "tooltip": "Lokaliseer me"
+        }, 
+        "manager": {
+            "deleteMap": "Kaart verwijderen", 
+            "deleteMapMessage": "Wilt u deze kaart verwijderen?", 
+            "editMapMetadata": "De eigenschappen van de kaart wijzigen", 
+            "featuredMaps": "Featured Maps", 
+            "locales_combo": "Taal:", 
+            "mapTypes_combo": "De kaart-viewer kiezen: ", 
+            "maps_title": "Kaarten", 
+            "openInANewTab": "Kaart openen", 
+            "theme_combo": "Kies een thema:"
+        }, 
+        "map": {
+            "description": "Beschrijving", 
+            "descriptionPlaceholder": "Kaartbeschrijving", 
+            "details": {
+                "add": "Voeg nieuwe details toe", 
+                "back": "Terug", 
+                "delete": "Verwijder het blad met details", 
+                "edit": "Bewerk de details", 
+                "fieldsChanged": "Een aantal velden werd veranderd", 
+                "hidePreview": "Verberg het voorbeels", 
+                "rowTitle": "Details blad", 
+                "save": "Sla op", 
+                "show": "Toon de details van het blad", 
+                "showPreview": "Toon voorbeeld", 
+                "sureToClose": "Weet u zeker dat u wenst af te sluiten zonder uw wijzigingen op te slaan?", 
+                "title": "Details blad - {name}", 
+                "titleUnsavedChanges": "Weet u zeker dat u wenst af te sluiten zonder uw wijzigingen op te slaan?", 
+                "undo": "Verwijderen ongedaan maken"
+            }, 
+            "error": "Ongeldige afbeelding", 
+            "errorFormat": "Ondersteunde formaten: png/jpg", 
+            "errorSize": "Maximale toegestaan grootte : 500kb", 
+            "errors": {
+                "loading": {
+                    "notAccessible": "Kaart niet toegankelijk", 
+                    "notFound": "Kaart niet gevonden", 
+                    "unknownError": "<p><small>Een van de volgende redenen zou de oorzaak kunnen zijn :</small> <ul><li>u heeft geen toegangsrechten</li> <li>u probeert toegang te krijgen tot een kaart die niet bestaat</li> <li>de kaart is verwijderd</li></ul><p>"
+                }
+            }, 
+            "loading": "Bezig met laden...", 
+            "loadingSpinner": "Kaart wordt geladen", 
+            "loadingerror": "Fout bij het laden", 
+            "mapError": {
+                "error403": "Er is een fout opgetreden tijdens het verwijderen van de kaart", 
+                "error404": "Er is een fout opgetreden tijdens het aanmaken van de kaart", 
+                "error409": "Naam van de kaart bestaat al", 
+                "error500": "Interne Server Fout. Controleer of de bestandsconfiguratie van de kaart de vaste limiet niet overschrijdt", 
+                "errorDefault": "Er is een fout opgetreden op de server", 
+                "errorTitle": "Kan huidige kaart niet opslaan"
+            }, 
+            "message": "Drop of klik om een afbeelding te importeren", 
+            "name": "Naam", 
+            "namePlaceholder": "Kaartnaam", 
+            "permissions": {
+                "addRule": "een regel toevoegen...", 
+                "canView": "kan lezen", 
+                "canWrite": "kan wijzigen", 
+                "noResult": "geen enkel resultaat gevonden", 
+                "noRules": "geen enkele regel", 
+                "selectGroup": "een groep kiezen...", 
+                "title": "geautoriseerde groepen"
+            }, 
+            "saveText": "De huidige kaart opslaan", 
+            "saveTitle": "Kaart opslaan", 
+            "savedMapMessage": "De kaart is correct opgeslagen", 
+            "savedMapTitle": "Opgeslagen kaart", 
+            "suggestion": "(best 300px X 180px, max 500kb)", 
+            "thumbnail": "Thumbnail", 
+            "thumbnailError": {
+                "error403": "Er is een fout opgetreden bij het verwijderen van de thumbnail", 
+                "error404": "Er is een fout opgetreden tijdens het aanmaken van de thumbnail", 
+                "error409": "Naam van de thumbnail bestaat al", 
+                "errorDefault": "Er is een fout opgetreden op de server"
+            }
+        }, 
+        "mapScale": "Schaal:", 
+        "maps": {
+            "addToFeaturedMaps": "Toevoegen aan aanbevolen kaarten", 
+            "feedback": {
+                "allResDeleted": "Alle bronnen die aan deze kaart zijn gekoppeld, zijn succesvol verwijderd", 
+                "details": {
+                    "deletedSuccesfully": "De details zijn correct verwijderd", 
+                    "savedSuccesfully": "De details zijn correct opgeslagen", 
+                    "updatedSuccesfully": "De details zijn correct bijgewerkt"
+                }, 
+                "errorDeletingDetailsOfMap": "Fout bij het verwijderen van details voor deze kaart", 
+                "errorDeletingMap": "Fout bij het verwijderen van deze kaart", 
+                "errorDeletingThumbnailOfMap": "Fout bij het verwijderen van de thumbnail voor deze kaart", 
+                "errorFetchingDetailsOfMap": "Fout bij het ophalen van de details voor deze kaart", 
+                "errorSizeExceeded": "Verminder de grootte van de details of de kwaliteit van de afbeeldingen", 
+                "errorWhenDeleting": "Er is een fout opgetreden tijdens het verwijderen", 
+                "errorWhenSaving": "Er is een fout opgetreden tijdens het opslaan", 
+                "errorWhenUpdating": "Er is een fout opgetreden tijdens het bijwerkingsproces", 
+                "noDetailsAvailable": "Details niet beschikbaar", 
+                "successSavedMap": "De kaart is correct gemaakt", 
+                "thumbnail": {
+                    "deletedSuccesfully": "De thumbnail is correct verwijderd", 
+                    "savedSuccesfully": "De thumbnail is correct opgeslagen", 
+                    "updatedSuccesfully": "De thumbnail is correct bijgewerkt"
+                }
+            }, 
+            "removeFromFeaturedMaps": "Verwijderen uit aanbevolen kaarten", 
+            "search": "Kaarten opzoeken...", 
+            "title": "Kaarten"
+        }, 
+        "markNameSelector": {
+            "circle": "Cirkel", 
+            "cross": "Kruis", 
+            "square": "Vierkant", 
+            "star": "Ster", 
+            "triangle": "Driehoek", 
+            "x": "X"
+        }, 
+        "measureComponent": {
+            "Measure": "Meten", 
+            "MeasureArea": "Oppervlakte", 
+            "MeasureBearing": "Richtingsmeting", 
+            "MeasureLength": "Meetafstand", 
+            "areaButtonText": "Gebied", 
+            "areaLabel": "Afstand", 
+            "bearingLabel": "Richting", 
+            "formula": "Formule voor afstandsberekening", 
+            "lengthButtonText": "Lijn", 
+            "lengthLabel": "Lengte", 
+            "resetButtonText": "Herbeginnen", 
+            "showLabel": "Toon meetlabel", 
+            "title": "Meten", 
+            "tooltip": "Meting van afstanden, oppervlakken en coördinaten"
+        }, 
+        "measureSupport": {
+            "continueLine": "Klik om door te gaan met het tekenen van de lijn", 
+            "continuePolygon": "Klik om door te gaan met het tekenen van de veelhoek", 
+            "startDrawing": "Klik om te beginnen te tekenen"
+        }, 
+        "menu": "Menu", 
+        "mouseCoordinates": "Coördinaten:", 
+        "mousePositionCRS": "CRS:", 
+        "mousePositionCoordinates": "Coördinaten", 
+        "mousePositionElevation": "Elev.:", 
+        "mousePositionNoElevation": "N/A", 
+        "msgId0": "{name} heeft op {takenDate, date, long} {numPhotos, plural, =0 {geen foto's} =1 {een foto} other {# foto's}} genomen.", 
+        "newMap": "Nieuwe kaart", 
+        "no": "Nee", 
+        "noFeatureInfo": "Er is geen informatie beschikbaar voor het geklikte punt", 
+        "noInfoForLayers": "Er worden geen objecten gevonden voor de volgende lagen: ", 
+        "noresultfound": "Geen enkel resultaat gevonden", 
+        "notification": {
+            "backgroundLayerNotSupported": "De eerder geselecteerde achtergrond wordt niet ondersteund voor dit type kaart. De eerst beschikbare wordt vervolgens gebruikt.", 
+            "noBackgroundLayerSupported": "Er is geen achtergrondlaag ondersteund voor dit type kaart.", 
+            "saveUpdatedMap": "Alle lagen zijn succesvol bijgewerkt", 
+            "success": "Succes", 
+            "update": "Bijwerken", 
+            "updateOldMap": "Dit is een oude kaart, dus niet alle functionaliteiten kunnen worden ingeschakeld. Klik op de knop Bijwerken om de kaart bij te werken of sluit deze melding als u deze niet wilt bijwerken.", 
+            "warning": "Waarschuwing", 
+            "warningSaveUpdatedMap": "Sommige lagen zijn niet correct bijgewerkt"
+        }, 
+        "opacity": "Transparantie", 
+        "options": "Opties", 
+        "pageInfo": "{total, plural, =0 {geen enkel item} =1 {{total} item van de {total}} other {{start}-{end} items van de {total}}}", 
+        "pageInfoShowMore": "Resultaat {count} van {total}", 
+        "permission": "Permissie", 
+        "permissions": "Permissies", 
+        "print": {
+            "alternatives": {
+                "2pages": "Legenda op een afzonderlijke pagina", 
+                "landscape": "Landschap", 
+                "legend": "Legende toevoegen", 
+                "portrait": "Portret"
+            }, 
+            "defaultBackground": "Gebruik OSM als achtergrond kaart", 
+            "description": "Beschrijving", 
+            "descriptionplaceholder": "Voer een beschrijving in...", 
+            "layout": "Mise en page", 
+            "layoutWarning": "Lay-out onmogelijk", 
+            "legend": {
+                "antiAliasing": "Anti-aliasing van de fonts:", 
+                "dpi": "ppp:", 
+                "font": "Labels configureren:", 
+                "forceLabels": "De labels dwingen:", 
+                "iconsSize": "Pictogramgrootte:"
+            }, 
+            "legendoptions": "Opties van de legende", 
+            "paneltitle": "Afdrukken", 
+            "printtooltip": "Afdrukken", 
+            "resolution": "Résolutie:", 
+            "sheetsize": "Papierformaat :", 
+            "submit": "Afdrukken", 
+            "title": "Titel", 
+            "titleplaceholder": "Voer een titel in..."
+        }, 
+        "printbutton": "Afdrukken", 
+        "pseudocolorsettings": {
+            "add": "Voeg een waarde toe", 
+            "colormap": "Kleurkaart", 
+            "extended": "Uitgebreid", 
+            "remove": "Verwijder een waarde", 
+            "type": "Type"
+        }, 
+        "queryform": {
+            "attributefilter": {
+                "add_condition": " Voeg een voorwaarde toe", 
+                "add_group": " Voeg een groep toe", 
+                "attribute_filter_header": "Filter op attribuut", 
+                "autocomplete": {
+                    "emptyFilter": "De filter heeft geen resultaten opgeleverd", 
+                    "emptyList": "Geen enkel resultaat", 
+                    "open": "Open het menu"
+                }, 
+                "combo_placeholder": "Attribuut", 
+                "datefield": {
+                    "wrong_date_range": "De startdatum moet vóór de einddatum zijn"
+                }, 
+                "groupField": {
+                    "all": "alle", 
+                    "any": "sommige", 
+                    "none": "geen"
+                }, 
+                "group_label_a": "Toereikendheid", 
+                "group_label_b": "de volgende condities:", 
+                "numberfield": {
+                    "isRequired": "verplicht veld", 
+                    "wrong_range": "De onderste limiet moet kleiner zijn dan de bovenste limiet"
+                }, 
+                "text_placeholder": "Voer de te zoeken tekst in", 
+                "tooltipTextField": "utilise <b>*</b> voor om het even welk karakter</br>gebruik <b>.</b> voor een enkel karakter</br>gebruik <b>!</b> voor de speciale karakters (* en .)</br>"
+            }, 
+            "comboField": {
+                "default_placeholder": "Kies..."
+            }, 
+            "config": {
+                "load_config_exception": "Fout bij het laden van de configuratie"
+            }, 
+            "crossLayerFilter": {
+                "clear": "Filter wissen", 
+                "errors": {
+                    "noCrossLayerAvailable": "Cross layer filtering is niet beschikbaar voor de geselecteerde laag"
+                }, 
+                "operation": "Operatie", 
+                "targetLayer": "Doellaag", 
+                "title": "Laagfilter"
+            }, 
+            "emptyfilter": "Geen enkele filterset. De zoekopdracht kan verstrijken als paging niet door de server wordt ondersteund", 
+            "form": {
+                "dataset_header": "Geheel van gegevens", 
+                "header": "Zoek in de data"
+            }, 
+            "query": "Zoek", 
+            "query_request_exception": "Fout bij het uitvoeren van de query", 
+            "reset": "Herbegin", 
+            "spatialfilter": {
+                "combo_placeholder": "Kies...", 
+                "details": {
+                    "detail_button_label": "Details", 
+                    "details_bbox_label": "Bewerk coördinaten om het oppervlak te veranderen", 
+                    "details_circle_label": "Bewerk attributen om de straal en het midden van de cirkel te wijzigen", 
+                    "details_header": "Details van de selectie", 
+                    "radius": "Straal(m)", 
+                    "reset_bbox": "Herbegin", 
+                    "save_bbox": "Wijzigingen opslaan", 
+                    "save_radius": "Wijzigingen opslaan"
+                }, 
+                "draw_start_label": "Teken de regio van belang op de kaart", 
+                "dwithin_label": "meter", 
+                "filterType": "Filter type", 
+                "geometric_operation": "Geometrische operatie", 
+                "methods": {
+                    "box": "rechthoek", 
+                    "buffer": "Bufferzone", 
+                    "circle": "Cirkel", 
+                    "cql": "CQL", 
+                    "poly": "Veelhoek", 
+                    "regions": "Regions", 
+                    "viewport": "Viewport", 
+                    "zone": "Zone"
+                }, 
+                "operations": {
+                    "bbox": "Objectkader", 
+                    "contains": "Omvat", 
+                    "dwithin": "Afstand vanaf", 
+                    "intersects": "doorsnede", 
+                    "within": "Bevat"
+                }, 
+                "spatial_filter_header": "Ruimtelijke filter"
+            }, 
+            "title": "Geavanceerd zoeken"
+        }, 
+        "rasterstyler": {
+            "applybtn": "De stijl toepassen", 
+            "bluetitle": "Blauw", 
+            "eqinttitle": "Classificatie met regelmatig interval", 
+            "graytitle": "Grijs", 
+            "greentitle": "Groen", 
+            "layerlabel": "Laag", 
+            "opacitylabel": "Doorzichtigheid", 
+            "paneltitle": "Beeldstijl editor", 
+            "pseudobandtitle": "Selecteer de band", 
+            "pseudotitle": "Pseudo-kleurinstellingen", 
+            "redtitle": "Rood", 
+            "tooltip": "Creëer en bewerk een stijl voor een beeldlaag", 
+            "typelabel": "Stijltype"
+        }, 
+        "rasterstyletype": {
+            "gray": "Grijswaarde", 
+            "multi": "Meerdere bands", 
+            "pseudo": "Pseudo kleur", 
+            "rgb": "Rood Groen Blauw", 
+            "single": "enkele band"
+        }, 
+        "resources": {
+            "contents": {
+                "title": "Inhoud"
+            }, 
+            "dashboards": {
+                "create": "Dashboard maken", 
+                "createANewOne": "Maak een nieuwe", 
+                "deleteError": "Er is een fout opgetreden bij het verwijderen van de bron", 
+                "errorLoadingDashboards": "Er is een fout opgetreden bij het laden van de dashboards", 
+                "newDashboard": "Nieuw Dashboard", 
+                "noDashboardAvailable": "Geen dashboard beschikbaar", 
+                "title": "Dashboards ({count})", 
+                "titleNoCount": "Dashboards"
+            }, 
+            "deleteCancelButtonText": "Afsluiten", 
+            "deleteConfirmButtonText": "Verwijder", 
+            "deleteConfirmMessage": "Weet u zeker dat u deze bron wilt verwijderen?", 
+            "deleteConfirmTitle": "Weet je het zeker?", 
+            "maps": {
+                "title": "Kaarten ({count})"
+            }, 
+            "resource": {
+                "addToFeatured": "Toevoegen aan aanbevolen", 
+                "deleteResource": "Verwijder", 
+                "editResource": "Bewerk de eigenschappen", 
+                "removeFromFeatured": "Verwijderen uit aanbevolen", 
+                "showDetails": "Toon de details"
+            }
+        }, 
+        "rulesmanager": {
+            "access": "Toegang", 
+            "apply": "Toepassen", 
+            "avstyle": "Beschikbare stijlenvailable", 
+            "cacheCleaned": "Cache succesvol schoongemaakt", 
+            "cachemsg": "Weet u zeker dat u de GeoFence-cache wilt wissen?", 
+            "cachetitle": "Cache wissen", 
+            "cancelButton": "Annuleren", 
+            "clearbtn": "Alles wissen", 
+            "close": "Sluiten", 
+            "constraintsmsg": "Als u de grant, workspace of laag wijzigt, worden de details verwijderd. Weet je zeker dat je dat wilt doen?", 
+            "cqlRead": "CQL Filter Read Rules", 
+            "cqlWrite": "CQL Filter Write Rules", 
+            "defstyle": "Standaard stijl²", 
+            "deleteButton": "Wissen", 
+            "deleteModal": "Regel verwijderen", 
+            "delmsg": "Wilt u deze regel echt verwijderen?", 
+            "deltitle": "Verwijder regel", 
+            "editButton": "Opslaan", 
+            "editModal": "Regel wijzigen", 
+            "errorAddingRule": "Fout bij toevoegen van de regel.", 
+            "errorCQL": "Geometry niet geldig!", 
+            "errorCleaningCache": "Fout bij wissen van de geofence-cache.", 
+            "errorDeletingRules": "Fout bij verwijderen van de regels.", 
+            "errorDuplicateRule": "Dubbele regel.", 
+            "errorLoading": "Fout bij  het laden", 
+            "errorLoadingLayers": "Fout bij laden van de lagen.", 
+            "errorLoadingRoles": "Fout bij laden van de rollen.", 
+            "errorLoadingRules": "Fout bij laden van de regels.", 
+            "errorLoadingUsers": "Fout bij laden van de gebruikers.", 
+            "errorLoadingWorkspaces": "Fout bij laden van workspaces.", 
+            "errorMovingRules": "Fout bij verplaatsen van de regels.", 
+            "errorTitle": "Geofence", 
+            "errorUpdatingRule": "Fout bij bijwerken van de regel.", 
+            "filters": "Filters", 
+            "invalidForm": "Het formulier bevat ongeldige waarden voor selectievelden", 
+            "ip": "IP", 
+            "layer": "Laag", 
+            "menutitle": "Beheer GeoFence Rules", 
+            "missingconfig": "Regelmanager mist de configuratie. Toegang geweigerd!", 
+            "navItems": {
+                "attribute": "Attributenregel", 
+                "filter": "Filters", 
+                "main": "Algemene regel", 
+                "style": "Stijl"
+            }, 
+            "newButton": "Aanmaken", 
+            "newModal": "Nieuwe regel", 
+            "next": "volgende", 
+            "placeholders": {
+                "access": "Typ om toegang te zoeken", 
+                "filter": "Zoeken...", 
+                "ip": "###.###.###.###/##", 
+                "layer": "Typ om lagen te zoeken", 
+                "priority": "Selecteer prioriteit", 
+                "request": "Typ om verzoeken te vinden", 
+                "role": "Typ om rollen te zoeken", 
+                "service": "Typ om services te zoeken", 
+                "user": "Typ om gebruikers te zoeken", 
+                "workspace": "Typ om workspaces te zoeken"
+            }, 
+            "previous": "vorige", 
+            "priority": "Prioriteit", 
+            "remove": "Verwijder de geometrie", 
+            "request": "verzoek", 
+            "resetconstraints": "Reset Constraints", 
+            "role": "Rol", 
+            "rule": "Regel", 
+            "rules": "Regels", 
+            "selectbtn": "Selecteer alles", 
+            "selectedRulesDelete": "Wilt u de geselecteerde regels verwijderen?", 
+            "selectworkspace": "U moet de werkruimte selecteren om geavanceerde opties in te schakelen", 
+            "service": "Service", 
+            "title": "Toegangsregels", 
+            "tooltip": {
+                "addAfT": "Nieuwe regel toevoegen na selectie", 
+                "addBeT": "Nieuwe regel toevoegen voor selectie", 
+                "addT": "Regel toevoegen", 
+                "cacheT": "Cache wissen", 
+                "close": "Verlaat create rule", 
+                "deleteT": "Verwijder de gekozen regels", 
+                "editT": "Bewerk gekozen regel", 
+                "save": "Bewaar huidige regel"
+            }, 
+            "user": "Gebruiker", 
+            "workspace": "Workspace"
+        }, 
+        "save": "Opslaan", 
+        "saveAs": "Opslaan als", 
+        "scaledenominator": {
+            "maxerror": "De maximale waarde moet groter zijn dan de minimumwaarde", 
+            "maxlabel": "Maximale schaalnominator", 
+            "minerror": "De minimale waarde moet groter zijn dan de maximumwaarde", 
+            "minlabel": "Minimale schaalnominator", 
+            "none": "Geen enkele"
+        }, 
+        "search": {
+            "addbtn": "Bijvoegen", 
+            "cancelbtn": "Annuleren", 
+            "cancelconfirm": "Bent u zeker?", 
+            "configpaneltitle": "Een opzoekservice aanmaken/wijzigen", 
+            "confirmremove": "Verwijderen?", 
+            "nextbtn": "Volgende", 
+            "overriedservice": "Overtollige standaardservices", 
+            "placeholder": "Zoeken op plaatsnaam of coördinaten...", 
+            "prevbtn": "Vorige", 
+            "s_attributes": "De attributen", 
+            "s_description": "De beschrijving", 
+            "s_layer": "Laag", 
+            "s_max_features": "Max functies", 
+            "s_name": "Voornaam", 
+            "s_priority": "Prioriteit", 
+            "s_priority_info": "Gebruik eerst eerst hogere waarden om de zoekresultaten te sorteren. Nominatim-resultaten hebben prioriteit = 5", 
+            "s_result_props_label": "Eigenschappen van de weergave van de resultaten", 
+            "s_sort": "Sorteer op", 
+            "s_title": "Titel", 
+            "s_url": "Service-URL", 
+            "s_wfs_opt_props_label": "Optionele supports", 
+            "s_wfs_props_label": "WFS-serviceaccessoires", 
+            "savebtn": "Bijwerken", 
+            "searchservicesbutton": "Opzoekservices configureren", 
+            "serviceslistempty": "Er is geen aangepaste service gedefinieerd", 
+            "serviceslistlabel": "Beschikbare services"
+        }, 
+        "settings": "Instellingen", 
+        "shapefile": {
+            "add": "Voeg toe", 
+            "cancel": "Annuleer", 
+            "defaultStyle": "Standaard stijl", 
+            "error": {
+                "genericLoadError": "Kan het vectorbestand niet op de kaart laden", 
+                "missingPrj": "Ontbrekende projectiegegevens (.prj), coördinatenstelsel hoort EPSG:4326 te zijn", 
+                "select": "Kies één of meerdere zip-bestanden. (Shapefiles moeten in zip-archieven zijn opgenomen, KML/KMZ e GPX)", 
+                "shapeFileParsingError": "Kan het vectorbestand niet laden. Het bestand kan beschadigd zijn of niet goed gevormd"
+            }, 
+            "placeholder": "Drop je bestanden hier of klik hier op om de shapefiles te selecteren die u wilt importeren. (Shapefiles moeten in zip-archieven zijn opgenomen)", 
+            "success": " Import geslaagd", 
+            "title": "Voeg een lokaal bestand", 
+            "tooltip": "Voeg een lokaal bestand toe aan de kaart.", 
+            "zoom": "Zoomer op het bestand"
+        }, 
+        "share": {
+            "QRCodeLinkTitle": "qr code", 
+            "apiLinkTitle": "Via API's", 
+            "code": "Embed", 
+            "direct": "Link", 
+            "directLinkTitle": "Via een directe link", 
+            "embeddedLinkTitle": "Via de geïntegreerde code", 
+            "forceDrawer": "Inhoudsopgave tonen", 
+            "msgCopiedUrl": "Gekopieerd", 
+            "msgToCopyUrl": "Klik om te kopiëren", 
+            "sharedTitle": "Bekijk mijn nieuwe kaart: ", 
+            "social": "Sociaal", 
+            "socialIntro": "Via je favoriete sociale netwerk", 
+            "title": "Delen", 
+            "titlePanel": "De kaart delen"
+        }, 
+        "showMore": "Toon meer...", 
+        "showMousePositionCoordinates": "Toon de coördinaten", 
+        "snapshot": {
+            "date": "Datum", 
+            "downloadingSnapshots": "De afbeelding wordt gegenereerd, even geduld", 
+            "googleBingError": "Google- en Bing-lagen zijn niet beschikbaar voor het maken van afbeeldingen omwille van de rechten.", 
+            "layers": "Lagen", 
+            "notsupported": "Image capture wordt niet ondersteund", 
+            "save": "Opslaan", 
+            "size": "Grootte", 
+            "taintedMessage": "De opslagfunctie is beperkt omwille van beveiligingsbeperkingen van de browser. Klik met de rechtermuisknop op het voorbeeld en selecteer 'Afbeelding opslaan als ...' om een beter resultaat te bekomen (ondersteund door Firefox en Chrome)", 
+            "title": "Preview van de vastgelegde kaart", 
+            "tooltip": "Sla een afbeelding van de kaart op."
+        }, 
+        "styler": {
+            "layerlabel": "Laag", 
+            "paneltitle": "Laagstijl", 
+            "tooltip": "Maak en bewerk een laagstijl"
+        }, 
+        "toc": {
+            "addLayer": "Laag toevoegen", 
+            "backgroundSwitcher": "achtergrond kaart", 
+            "browseData": "Open de attributentabel", 
+            "clearFilter": "Filter wissen", 
+            "createWidget": "Maak een widget voor de geselecteerde laag", 
+            "displayLegendAndTools": "Toon de legende en de tools", 
+            "drawerButton": "Lagen", 
+            "editLayerProperties": "Wijzig de eigenschappen van de laag", 
+            "epsgNotSupported": "CRS {epsg} niet ondersteund voor zoomen naar laag", 
+            "filterPlaceholder": "Filter lagen", 
+            "grabGroupIcon": "Groep zoeken en sorteren", 
+            "grabLayerIcon": "Laag zoeken en sorteren", 
+            "layerMetadata": {
+                "abstract": "Abstract", 
+                "creator": "Creator", 
+                "identifier": "Identifier", 
+                "layerMetadataPanelTitle": "Metagegevens van de laag", 
+                "notification": {
+                    "warnigGetMetadataRecordById": "Fout bij zoeken naar metadata"
+                }, 
+                "subject": "Onderwerp", 
+                "title": "Titel", 
+                "toolLayerMetadataTooltip": "Toon de metadata van de geselecteerde laag", 
+                "type": "Type"
+            }, 
+            "layers": "Lagen", 
+            "loadingerror": "De laag is niet correct geladen", 
+            "measure": "Meten", 
+            "noFilteredResults": "Geen resultaat", 
+            "refreshConfirm": "Bijwerken", 
+            "refreshError": "Fout bij het bijwerken van de lagen: ", 
+            "refreshMessage": "Laad de configuratie van de WMS-lagen opnieuw vanaf de server(s)", 
+            "refreshOptions": {
+                "bbox": "BBOX bijwerken", 
+                "dimensions": "De dimensies bijwerken", 
+                "search": "De zoekopties bijwerken", 
+                "title": "De titet bijwerken"
+            }, 
+            "refreshTitle": "Lagen bijwerken", 
+            "removeLayer": "De laag verwijderen", 
+            "searchFeatures": "Zoek op deze laag ...", 
+            "statusIconClose": "Groep openen", 
+            "statusIconOpen": "Groep sluiten", 
+            "toggleLayerVisibility": "Zet de zichtbaarheid van de laag aan / uit", 
+            "toggleLayerVisibilityWarning": "Schakel zichtbaarheid van laag in, Waarschuwing: de laag is niet correct geladen", 
+            "toolDownloadTooltip": "Laaggegevens exporteren", 
+            "toolFeaturesGridTooltip": "Open attributentabel", 
+            "toolGroupSettingsTooltip": "Geselecteerde groepsinstellingen", 
+            "toolLayerSettingsTooltip": "Geselecteerde laaginstellingen", 
+            "toolReloadLayerTooltip": "Forceer herladen van geselecteerde laag", 
+            "toolReloadLayersTooltip": "Forceer herladen van geselecteerde lagen", 
+            "toolTrashLayerTooltip": "Verwijder geselecteerde laag", 
+            "toolTrashLayersTooltip": "Verwijder geselecteerde lagen", 
+            "toolZoomToLayerTooltip": "Zoom in tot het geselecteerde laag-extent", 
+            "toolZoomToLayersTooltip": "Zoom in tot het geselecteerde lagen-extent", 
+            "zoomToLayerExtent": "Zoom op de laag"
+        }, 
+        "tutorial": {
+            "back": "Vorige", 
+            "burgerMenu": {
+                "text": "U kunt opties, instellingen en hulp vinden", 
+                "title": "Optiemenu"
+            }, 
+            "cesium": {
+                "leftClick": "Klik met de linkermuisknop + slepen", 
+                "middleClick": "Middelste klik + slepen, of CTRL + Links / Rechts klikken + slepen", 
+                "oneDrag": "Sleep met één vinger", 
+                "pan": "Pan beeld", 
+                "rightClick": "Klik met de rechtermuisknop + slepen, of muiswiel scrollen", 
+                "rotate": "Draai het beeld", 
+                "tilt": "Schuine weergave", 
+                "title": "Interacties met de kaart", 
+                "twoDragOpposite": "Twee vingers slepen, tegengestelde richting", 
+                "twoDragSame": "Twee vingers slepen, dezelfde richting", 
+                "twoPinch": "Two finger pinch", 
+                "zoom": "Zoomweergave"
+            }, 
+            "cesiumCompass": {
+                "text": "Je kunt het kompas gebruiken om rond de wereld te cirkelen. Sleep om de kaart te draaien", 
+                "title": "Kompas"
+            }, 
+            "cesiumNavigation": {
+                "text": "Hier kunt u de knoppen voor in- en uitzoomen vinden", 
+                "title": "Navigatie"
+            }, 
+            "checkbox": "laat dit bericht niet meer zien", 
+            "close": "Sluiten", 
+            "dashboardAddChart": {
+                "text": "<p>Het is een widget die gegevens toont en verzamelt in taart-, lijn- of staafdiagrammen. </p><p> Stappen: </p><p><ul><li> Selecteer een vectorlaag </li><li> Selecteer grafiektype </li><li> Grafiekgegevens configureren </li><li> Opslaan en toevoegen aan dashboard </li></ul></p>", 
+                "title": "Grafiek-widget"
+            }, 
+            "dashboardAddCounter": {
+                "text": "<p>Voeg een nieuwe teller toe aan het dashboard. Teller toont numerieke waarde-aggregatiegegevens van een geselecteerde vectorlaag. </p><p> Stappen: </p><p><ul><li> Selecteer een vectorlaag </li><li> Tellergegevens configureren </li><li> Opslaan en toevoegen aan dashboard </li></ul></p>", 
+                "title": "Teller-Widget"
+            }, 
+            "dashboardAddMap": {
+                "text": "<p>Voeg een nieuwe interactieve kaart toe aan het dashboard. U kunt meer dan één kaart toevoegen met de mogelijkheid om andere widgets hieraan te verbinden. Nadat de eerste kaart is opgeslagen, wordt de legende-widget aan de lijst toegevoegd. De legende-widget toont een legende, gerelateerd aan de verbonden kaart. </p><p> Stappen: </p><p><ul><li> Selecteer een kaart </li><li> Kaart verbeteren door nieuwe lagen toe te voegen </li><li> Opslaan en toevoegen aan dashboard </li></ul></p>", 
+                "title": "Kaart-Widget"
+            }, 
+            "dashboardAddTable": {
+                "text": "<p>Voeg een attributentabel toe aan het dashboard die gegevens uit een geselecteerde vectorlaag bevat. U kunt ook gegevens filteren om uw tabel aan te passen. </p><p> Stappen: </p><p><ul><li> Selecteer een vectorlaag </li><li> Tabelgegevens configureren </li><li> Opslaan en toevoegen aan dashboard </li></ul></p>", 
+                "title": "Tabel-Widget"
+            }, 
+            "dashboardAddText": {
+                "text": "<p>Voeg uw eigen tekst toe aan het dashboard.</p><p>Stappen:</p><p><ul><li>Tekst bewerken in editor</li><li>Opslaan en toevoegen aan dashboard</li></ul></p>", 
+                "title": "Tekst-Widget"
+            }, 
+            "dashboardAddWidget": {
+                "text": "Om een widget aan het dashboard toe te voegen, klikt u op de knop +", 
+                "title": "Widget toevoegen"
+            }, 
+            "dashboardBuilder": {
+                "text": "U kunt selecteren welk type widget u wilt en vervolgens toevoegen aan het dashboard door een van de items in de lijst te selecteren", 
+                "title": "Maak een nieuwe widget"
+            }, 
+            "dashboardContainer": {
+                "text": "<p>Een Dashboard in MapStore2 biedt een set informatie die op geschikte wijze is verzameld om geaggregeerde gegevens in één opname weer te geven. Geospatiale gegevens die op een kaart worden weergegeven, kunnen naast bijbehorende attributentabellen, grafieken en andere worden geplaatst, met als doel verschillende soorten informatie te verbinden, statistische details en tekstuele beschrijvingen met betrekking tot een specifieke context te tonen. </p><p> Alle gebruikers kunnen gepubliceerde dashboards visualiseren en ermee werken, maar alleen gebruikers die mogen bewerken, kunnen alle widgets in een dashboard toevoegen, schikken, vergroten of verkleinen</p>", 
+                "title": "Dashboard"
+            }, 
+            "dashboardIntro": {
+                "text": "Overzicht van dashboardfuncties", 
+                "title": "Dashboard Tutorial"
+            }, 
+            "dashboardNav": {
+                "text": "Hier vindt u taalkiezer, login, homepagekoppeling en optiemenu", 
+                "title": "Navigatiebalk"
+            }, 
+            "drawerMenu": {
+                "text": "U kunt informatie en hulpmiddelen vinden om laag te beheren", 
+                "title": "Hoofdmenu"
+            }, 
+            "error": "Fout: doel niet gevonden", 
+            "examples": {
+                "text": "U kunt componenten en plug-ins van MapStore2 gebruiken om aangepaste applicaties te bouwen", 
+                "title": "Aangepaste applicatie"
+            }, 
+            "fullscreen": {
+                "text": "Schakel over naar volledig scherm", 
+                "title": "Schakel over naar volledig scherm"
+            }, 
+            "home": {
+                "text": "Ga naar homepagina", 
+                "title": "Home"
+            }, 
+            "identifyButton": {
+                "text": "Druk op de knop om de tool te activeren en klik vervolgens op de kaart om informatie uit lagen op te halen", 
+                "title": "Info"
+            }, 
+            "intro": {
+                "text": "framework om web mapping-applicaties te bouwen met behulp van standaard mapping-bibliotheken, zoals OpenLayers 3 en Leaflet.", 
+                "title": "Welkom bij MapStore2"
+            }, 
+            "introCesium": {
+                "text": "Klik op de volgende knop om de tutorial te starten", 
+                "title": "3D-kaartinstructies"
+            }, 
+            "last": "Einde", 
+            "mapType": {
+                "text": "U kunt Leaflet of OpenLayers kiezen om uw kaarten weer te geven", 
+                "title": "Bibliotheek"
+            }, 
+            "mapsGrid": {
+                "text": "Hier enkele voorbeelden van MapStore2. Klik op een afbeelding om de demo te proberen.", 
+                "title": "Kaarten"
+            }, 
+            "next": "Volgende", 
+            "searchBar": {
+                "text": "Schrijf het adres van een te vinden plaats, bijv. '1st avenue, new york'. U kunt zelfs coördinaten inbrengen in volgend formaat: 43.87,10.20", 
+                "title": "Zoekbalk"
+            }, 
+            "searchButton": {
+                "text": "Klik om de zoekbalk te openen en typ vervolgens het adres van een te vinden plaats. bijv. '1st avenue, new york'. U kunt zelfs coördinaten invoegen in dit formaat: 43.87,10.20", 
+                "title": "Zoek"
+            }, 
+            "skip": "Overslaan", 
+            "start": "Start", 
+            "title": "Tutorial", 
+            "zoomInButton": {
+                "text": "Klik om de kaart te vergroten", 
+                "title": "Inzoomen"
+            }, 
+            "zoomOutButton": {
+                "text": "Klik om de kaart te verkleinen", 
+                "title": "UItzoomen"
+            }
+        }, 
+        "uploader": {
+            "beforeUpload": "Pre-upload bewerkingen uitvoeren... ", 
+            "dropfile": "Plaats hier bestanden om te uploaden", 
+            "dropfileImport": "drop here files to add it to this process", 
+            "filename": "Bestandsnaam", 
+            "filesize": "Grootte", 
+            "lastModified": "Laatst gewijzigd", 
+            "type": "Type", 
+            "uploadingFiles": "Bestanden uploaden..."
+        }, 
+        "user": {
+            "changePwd": "Paswoord wijzigen", 
+            "details": "Details van de gebruiker", 
+            "detailsCompany": "Bedrijf", 
+            "detailsEmail": "E-mail", 
+            "detailsGroups": "Groepen", 
+            "detailsName": "Naam", 
+            "detailsNotes": "Nota's", 
+            "detailsRole": "Rol", 
+            "info": "Account informatie", 
+            "login": "Log in", 
+            "loginFail": "Verificatiefout", 
+            "loginFailedStatusMessages": {
+                "usernamePwdIncorrect": "Ongeldige gebruikersnaam of wachtwoord", 
+                "usernamePwdInsert": "Vul alstublieft uw gebruikersnaam en wachtwoord in"
+            }, 
+            "logout": "Log out", 
+            "newPwd": "Nieuw paswoord", 
+            "noAttributesMessage": "Er is geen informatie over uw account", 
+            "password": "Paswoord", 
+            "passwordChanged": "Wachtwoord gewijzigd", 
+            "passwordCheckFail": "De twee wachtwoorden komen niet overeen!", 
+            "passwordError": "Fout bij het wijzigen van het wachtwoord", 
+            "passwordInvalid": "Verkeerd wachtwoord", 
+            "passwordMinlenght": "Uw wachtwoord moet minstens {minSize} tekens bevatten", 
+            "retypePwd": "Bevestig het paswoord", 
+            "signIn": "Certificeer", 
+            "username": "Gebruikersnaam"
+        }, 
+        "usergroups": {
+            "addMember": "Lid toevoegen:", 
+            "confirmDeleteGroup": "Weet u zeker dat u deze groep wilt verwijderen?", 
+            "createGroup": "Aanmaken", 
+            "creatingGroup": "Wordt aangemaakt...", 
+            "deleteGroup": "Verwijderen", 
+            "descLimit": "De beschrijving is beperkt tot 255 tekens.", 
+            "description": "Beschrijving:", 
+            "editGroup": "Wijzigen", 
+            "errorDelete": "Er is een fout opgetreden tijdens het verwijderen van deze groep", 
+            "errorSaving": "Er is een fout opgetreden tijdens het registreren van deze groep", 
+            "groupDescription": "Beschrijving", 
+            "groupMembers": "Leden:", 
+            "groupName": "Naam van de groep", 
+            "groups": "Groepen", 
+            "manageGroups": "Beheer van de groepen", 
+            "nameLimit": "De naam is beperkt tot 255 tekens.", 
+            "newGroup": "Nieuwe groep", 
+            "noDescriptionAvailable": "(Geen beschrijving)", 
+            "noUsers": "Geen enkele gebruiker voor deze groep", 
+            "removeUser": "verwijder de gebruiker", 
+            "saveGroup": "Opslaan", 
+            "searchGroups": "groepen opzoeken..."
+        }, 
+        "users": {
+            "confirmDeleteUser": "Weet u zeker dat u deze gebruiker wilt verwijderen?", 
+            "createUser": "Aanmaken", 
+            "creatingUser": "Wordt aangemaakt...", 
+            "delete": "Verwijderen", 
+            "deleteUser": "Verwijderen", 
+            "deleting": "Wordt verwijderd...", 
+            "editUser": "Wijzigen", 
+            "enabled": "Geactiveerd", 
+            "errorDelete": "Er is een fout opgetreden bij het wissen van deze gebruiker:", 
+            "errorSaving": "Er is een fout opgetreden bij het opslaan van deze gebruiker", 
+            "groupTitle": "Groepen:", 
+            "manageUsers": "Gebruikers beheren", 
+            "newUser": "Nieuw", 
+            "roleTitle": "Rol", 
+            "saveUser": "Opslaan", 
+            "savingUser": "wordt opgeslagen...", 
+            "searchUsers": "zoeken naar gebruikers ...", 
+            "selectedGroups": "BEPAALDE GROEPEN", 
+            "statusTitle": "Statuut", 
+            "title": "Accounts beheren", 
+            "userCreated": "Aangemaakt!", 
+            "userSaved": "Opgeslagen!", 
+            "users": "Gebruikersnaam"
+        }, 
+        "vectorstyler": {
+            "addrulebtn": "Regel toevoegen", 
+            "applybtn": "Stijl toepassen", 
+            "conditiontitle": "Voorwaarden", 
+            "labeltitle": "Etiket", 
+            "layerlabel": "Laag", 
+            "namelabel": "Naam van de regel", 
+            "paneltitle": "Laagstijl", 
+            "removerulebtn": "Regel verwijderen", 
+            "rulelabel": "Regels", 
+            "symboltitle": "Symbool", 
+            "tooltip": "Maak en bewerk een stijl van een vectorlaag"
+        }, 
+        "version": {
+            "label": "Versie"
+        }, 
+        "warning": "Opgepast", 
+        "wfsdownload": {
+            "downloadonlycurrentpage": "Enkel de huidige pagina downloaden", 
+            "error": {
+                "invalidOutputFormat": "Het geselecteerde exportformaat is niet beschikbaar", 
+                "title": "Fout tijdens exporteren"
+            }, 
+            "export": "Export", 
+            "format": "Bestandsformaat", 
+            "srs": "Ruimtelijk referentiesysteem", 
+            "title": "De gegevens exporteren"
+        }, 
+        "widgets": {
+            "aggregateFunction": {
+                "bar": "Opération", 
+                "counter": "Operatie", 
+                "default": "Operatie", 
+                "gauge": "Opération", 
+                "line": "Opération", 
+                "pie": "Opération"
+            }, 
+            "aggregationAttribute": {
+                "bar": "Attributs Y", 
+                "counter": "Waarde", 
+                "default": "Waarde", 
+                "gauge": "valeur", 
+                "line": "Attributs Y", 
+                "pie": "Valeur"
+            }, 
+            "builder": {
+                "errors": {
+                    "checkAtLeastOneAttribute": "U moet ten minste één kolom selecteren", 
+                    "noAttributesDescription": "De geselecteerde laag heeft geen attributen om weer te geven. Selecteer een ander widgettype of laag", 
+                    "noAttributesTitle": "Geen attributen om te tonen", 
+                    "noMapAvailableForLegend": "Geen kaart beschikbaar", 
+                    "noMapAvailableForLegendDescription": "U hebt minimaal één kaartwidget nodig om de legende te maken", 
+                    "noWidgetsAvailableDescription": "<p> Vous ne pouvez pas créer de widget pour le calque sélectionné. C'est probablement parce que la couche ne convient pas aux widgets ou que le serveur n'expose pas tous les services ou informations nécessaires pour générer un widget. Les causes possibles sont: <ul> <li> Le calque sélectionné est une couche raster </li><li> Le service WFS n'est pas disponible</li><li>gs:aggregate process n'est pas disponible </li> </ul>) <p>", 
+                    "noWidgetsAvailableTitle": "Aucun widget disponible"
+                }, 
+                "header": {
+                    "title": "Widget"
+                }, 
+                "setupFilter": "Configurer un filtre pour les données du widget", 
+                "wizard": {
+                    "addLayer": "Voeg een laag toe aan de kaart", 
+                    "addTheWidget": "Ajouter le widget", 
+                    "backToChartOptions": "retour aux options de graphique", 
+                    "backToFeatureGrid": "Terug naar het feature-raster", 
+                    "backToLayerSelection": "Terug naar laagselectie", 
+                    "backToMapSelection": "Terug naar kaartselectie", 
+                    "backToPreview": "Terug naar voorbeeld", 
+                    "backToTableOptions": "Terug naar tabelopties", 
+                    "backToTypeSelection": "Retour à la sélection du type", 
+                    "backToWidgetTypeSelection": "Terug naar selectie widgettype", 
+                    "clearConnection": "Wis connectie", 
+                    "configureChartOptions": "Configurer les options de graphique", 
+                    "configureMapOptions": "Configureer kaartopties", 
+                    "configureTableOptions": "Configureer tabelopties", 
+                    "configureWidgetOptions": "Configurer les options du widget", 
+                    "connectToAMap": "Connecteer met een kaart", 
+                    "connectToTheMap": "Connecteer met de kaart", 
+                    "preview": "Voorbeeld", 
+                    "resetColumnsSizes": "Reset alle wijzigingen in de kolomgroottes", 
+                    "selectALayer": "Selecteer een laap", 
+                    "selectAMap": "Selecteer een kaart", 
+                    "selectMapToConnect": "Selecteer de kaart om te connecteren", 
+                    "textPlaceholder": "Tekst invoegen ...", 
+                    "titlePlaceholder": "Titel invoegen ...", 
+                    "updateWidget": "Mettre à jour le widget", 
+                    "useTheSelectedLayer": "Gebruik de geselecteerde laag", 
+                    "useThisMap": "Gebruik deze kaart"
+                }
+            }, 
+            "chartOptionsTitle": "Données", 
+            "chartType": {
+                "bar": {
+                    "caption": "barres", 
+                    "description": "Créer un graphique à barres à ajouter à la carte", 
+                    "title": "Diagramme à barres"
+                }, 
+                "gauge": {
+                    "caption": "jauge", 
+                    "description": "Créer un graphique de jauge à ajouter à la carte", 
+                    "title": "Tableau de jauge"
+                }, 
+                "line": {
+                    "caption": "linéaire", 
+                    "description": "Créer un graphique linéaire à ajouter à la carte", 
+                    "title": "Graphique linéaire"
+                }, 
+                "pie": {
+                    "caption": "secteurs", 
+                    "description": "Créer un graphique à secteurs à ajouter à la carte", 
+                    "title": "Diagramme à secteurs"
+                }
+            }, 
+            "colorRamp": {
+                "bar": "Couleur", 
+                "counter": "Kleur", 
+                "default": "Kleur", 
+                "gauge": "Couleur", 
+                "line": "Couleur", 
+                "pie": "Rampe de couleur"
+            }, 
+            "description": "Beschrijving", 
+            "displayLegend": {
+                "bar": "Légende d'affichage", 
+                "gauge": "Afficher les étiquettes", 
+                "line": "Légende d'affichage", 
+                "pie": "Légende d'affichage"
+            }, 
+            "errors": {
+                "genericError": "Il y a une erreur lors de la récupération des données", 
+                "noLegend": "Geen items in de legende om te tonen", 
+                "noLegendDescription": "De verbonden kaart heeft geen lagen om in de legende te tonen", 
+                "nodata": "Aucune donnée disponible pour la couche / filtre sélectionné", 
+                "nodatainviewport": "Aucune donnée dans la fenêtre courante", 
+                "notext": "Geen tekst beschikbaar", 
+                "timeoutExpired": "Le service a pris trop de temps pour répondre. Peut-être que la requête est trop complexe ou que le serveur est occupé"
+            }, 
+            "groupByAttributes": {
+                "bar": "Attributs X", 
+                "counter": "Groeperen op", 
+                "default": "Groeperen op", 
+                "gauge": "Grouper par", 
+                "line": "Attributs X", 
+                "pie": "Grouper par"
+            }, 
+            "mapSync": "Live Filter par viewport", 
+            "selectChartType": {
+                "title": "Sélectionnez le type de widget"
+            }, 
+            "selectMap": {
+                "TOC": {
+                    "noLayerDescription": "Er zijn geen lagen op de kaart. Als u een laag uit de catalogus wilt toevoegen, klikt u op de knop '+' in de werkbalk bovenaan", 
+                    "noLayerTitle": "Geen lagen"
+                }, 
+                "emptyMap": {
+                    "description": "Begin met een lege kaart", 
+                    "title": "Lege kaart"
+                }
+            }, 
+            "selectWidgetType": "Selecteer het widgettype", 
+            "title": "Titre", 
+            "types": {
+                "chart": {
+                    "caption": "voeg een grafiek toe", 
+                    "title": "Grafiek"
+                }, 
+                "counter": {
+                    "caption": "voeg een teller toe", 
+                    "title": "Teller"
+                }, 
+                "legend": {
+                    "caption": "voeg een legende toe", 
+                    "title": "Legende"
+                }, 
+                "map": {
+                    "caption": "voeg een kaart toe", 
+                    "title": "Kaart"
+                }, 
+                "table": {
+                    "caption": "voeg een tabel toe", 
+                    "title": "Tabel"
+                }, 
+                "text": {
+                    "caption": "voeg een tekstgebied toe", 
+                    "title": "Tekst"
+                }
+            }, 
+            "uom": {
+                "bar": "Maateenheid", 
+                "counter": "Maateenheid", 
+                "default": "Maateenheid", 
+                "gauge": "Maateenheid", 
+                "line": "Maateenheid", 
+                "pie": "Maateenheid"
+            }, 
+            "widget": {
+                "menu": {
+                    "confirmDelete": "Êtes-vous sûr?", 
+                    "delete": "effacer", 
+                    "downloadData": "Télécharger les données", 
+                    "edit": "éditer", 
+                    "exportImage": "Exporter l'image", 
+                    "showChartData": "Afficher les données de graphique"
+                }
+            }, 
+            "widgetOptionsTitle": "Info sur le widget"
+        }, 
+        "wizard": {
+            "finish": "Finition", 
+            "next": "Suivant", 
+            "prev": "Précédent"
+        }, 
+        "yes": "Ja", 
+        "zoombuttons": {
+            "zoomAllTooltip": "Pas aan, aan de extensie van de gegevens", 
+            "zoomInTooltip": "Vergroten", 
+            "zoomOutTooltip": "Verkleinen"
+        }
+    }
+}

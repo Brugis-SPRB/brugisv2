@@ -1,0 +1,168 @@
+{
+    "messages": {
+        "Area": "Overvlakte", 
+        "BruGISTeam": "BruGISTeam", 
+        "Brugis3DBuilding": {
+            "title_panel": "3D-weergave tool", 
+            "tooltip": "3D-weergave tool openen"
+        }, 
+        "Centroid": "Zwaartepunt", 
+        "Layers": "Lagen", 
+        "Legend": "Legende", 
+        "best-effort": "Indicatieve kaart - Gerealiseerd door ", 
+        "brugisInfo": {
+            "contact_message": "Boodschap", 
+            "contact_message_placeholder": "Inhoud", 
+            "contact_send": "Versturen", 
+            "contact_subject": "Onderwerp", 
+            "contact_subject_placeholder": "Onderwerp", 
+            "contact_urgent": "Dringend", 
+            "main_contact": "Contact", 
+            "main_contact_tooltip": "Contact", 
+            "main_go_back_to_brugis": "Terug naar BruGIS", 
+            "main_go_back_to_top_tooltip": "Terug naar het begin van de pagina ", 
+            "main_news": "Nieuws", 
+            "main_news_tooltip": "Nieuws", 
+            "main_webservices": "Webservices", 
+            "main_webservices_tooltip": "Webservices", 
+            "show_archives": "Archief", 
+            "show_news": "News", 
+            "webservice_api_text_1": "De webservice Urbanalyse van het REST-type kan in een website of in software van derden geïntegreerd worden ten einde een volledig stedenbouwkundig rapport te bekomen van een bepaald gebied binnen het Brusselse Gewest. Deze webservice is asynchroon en maakt het mogelijk om een stedenbouwkundige analyse te posten, om een unieke ID te verkrijgen; deze te gebruiken om om de status van de ingediende aanvraag op te volgen en om uiteindelijk het resultaat te bekomen (in docx- of pdf-formaat voor een directe visualisatie, of in xml voor een integratie van de resultaten in een ander platform).", 
+            "webservice_api_text_2": "Voor de exploitatie en de integratie van deze webservice in uw oplossing, gelieve ons te contacteren via onderstaand ", 
+            "webservice_api_text_3": "formulier", 
+            "webservice_api_text_4": " voor alle bijkomende informatie.", 
+            "webservice_api_title": "API - Urbanalyse", 
+            "webservice_else_text_1": "De BruGIS-cel staat tot uw beschikking voor advies over kaarten en geomatica.", 
+            "webservice_else_text_2": "Gelieve ons te contacteren via onderstaand ", 
+            "webservice_else_text_3": "formulier", 
+            "webservice_else_text_4": " voor al uw vragen.", 
+            "webservice_else_title": "Andere diensten van BruGIS", 
+            "webservice_github_text_1": "De ontwikkelingen gemaakt door BruGIS zijn allemaal beschikbaar in open source via het platform ", 
+            "webservice_github_text_2": "GitHub", 
+            "webservice_github_title": "GitHub - broncode van BruGIS", 
+            "webservice_inspire_text_1": "BruGIS publiceert een deel van zijn catalogus in overeenstemming met de Europese richtlijn Inspire. U vindt deze gegevens ", 
+            "webservice_inspire_text_2": "hier", 
+            "webservice_inspire_title": "INSPIRE - Visualisatie- en downloaddiensten, en metadata volgens de Europese richtlijn", 
+            "webservice_title": "Webservices", 
+            "webservice_wfs_example_1": "Adres van WFS BruGIS: ", 
+            "webservice_wfs_example_2": "Voorbeeld om onze catalogus te verkrijgen: ", 
+            "webservice_wfs_example_3": "Voorbeeld van het downloaden van een volledige laag in GML: ", 
+            "webservice_wfs_example_4": "Voorbeeld om een object in een bepaald gebied, te verkrijgen: ", 
+            "webservice_wfs_text": "Met deze WFS-service kunnen naast de vectoren ook de gegevens zonder opmaak weergeven worden. Deze service kan op dezelfde manier als de WMS-service in een webGIS-toepassing gebruikt worden om onze gegevens te bekijken en de alfanumerieke inhoud van onze objecten te doorlopen. De service kan ook toegevoegd worden als een gegevensbron in een klassiek desktop-GIS zoals qGIS. Naast de visualisatie van de gegevens kunnen de vectoren gebruikt worden voor analyse en behandeling. Onze gegevens kunnen via deze service in verschillende klassieke geomatische formaten verkregen worden, zoals shapefile of GML.", 
+            "webservice_wfs_title": "WFS - Services van download/visualisatie (vectoren read only)", 
+            "webservice_wms_example_1": "Adres van WMS BruGIS: ", 
+            "webservice_wms_example_2": "Voorbeeld om onze catalogus te verkrijgen: ", 
+            "webservice_wms_example_3": "Voorbeeld om een laag te bekijken: ", 
+            "webservice_wms_example_4": "Voorbeeld om een object te bevragen: ", 
+            "webservice_wms_text": "Deze webservice kan in een webGIS-toepassing gebruikt worden om onze gegevens te bekijken en de alfanumerieke inhoud van onze objecten te doorlopen. De service kan ook toegevoegd worden als een gegevensbron in een klassiek desktop-GIS zoals qGIS.", 
+            "webservice_wms_title": "WMS - Visualisatieservices"
+        }, 
+        "brugisSurvey": {
+            "address": "Adres", 
+            "address_entry": "Voer adres in", 
+            "available": "Beschikbaar", 
+            "created": "Opgemaakt", 
+            "docx": "Docx", 
+            "draw": "Teken een oppervlak", 
+            "error": {
+                "area_too_big": "Het getekende gebied is te groot, de urbanalyse is onmogelijk.", 
+                "missing_geometry": "Selecteer minimaal één perceel of teken een polygoon.", 
+                "self_intersect": "De getekende polygoon kruist zichzelf, gelieve deze opnieuw te tekenen."
+            }, 
+            "file": "Bestand", 
+            "file_entry": "Voer referentie dossier in", 
+            "first": "Eerst", 
+            "footprint": "Voetafdruk", 
+            "glue": "twee tekeningen samenvoegen", 
+            "last": "Laatste", 
+            "next": "Volgende", 
+            "pdf": "PDF", 
+            "prev": "Voorgaande", 
+            "select": "Kies een perceel", 
+            "send": "Verzenden", 
+            "status": "Status", 
+            "suppress": "Verwijder een oppervlak", 
+            "title_list": "Lijst met jouw urbanalyses", 
+            "title_new": "Maak een Urbanalyse", 
+            "title_panel": "Urbanalyse", 
+            "tooltip": "Urbanalyse gereedschap", 
+            "type": "Type", 
+            "type_entry_default": "Kies een optie"
+        }, 
+        "catalog": {
+            "catalogUrlPlaceholder": "Voer de URL van de catalogus in..."
+        }, 
+        "drawLocal": {
+            "draw": {
+                "handlers": {
+                    "polygon": {
+                        "error": "Fout: de randen van de veelhoek mogen elkaar niet kruisen!"
+                    }
+                }
+            }
+        }, 
+        "featuregrid": {
+            "toolbar": {
+                "drawFeature": "Teken element"
+            }
+        }, 
+        "helptexts": {
+            "Brugis3DBuildingButton": "Dit is de helptekst voor de streetview-knop", 
+            "streetviewButton": "Dit is de helptekst voor de streetview-knop"
+        }, 
+        "localmaps": {
+            "close": "Voltooid", 
+            "delete": "Verwijderen", 
+            "export": "Export", 
+            "import": "Import", 
+            "load": "Opladen", 
+            "save": "Opslaan", 
+            "save_or_load_title": "Mijn kaarten"
+        }, 
+        "streetview": {
+            "title_panel": "Google Streetview instrument", 
+            "tooltip": "Google streetview op de kaart"
+        }, 
+        "toc": {
+            "searchFeatures": "Zoek op deze laag ..."
+        }, 
+        "tutorial": {
+            "BackgroundSelector": {
+                "text": "Kies hier je achtergrond", 
+                "title": "Achtergronden"
+            }, 
+            "BrugisSurvey": {
+                "text": "Select a parcel or draw an area and get a complete urban report for that area", 
+                "title": "Urbanalysis"
+            }, 
+            "brugis3dBuildingButton": {
+                "text": "Gebruik deze tool om bebouwde oppervlakken zoals gevels of daken te meten", 
+                "title": "3D meetinstrument"
+            }, 
+            "brugisHomeButton": {
+                "text": "Discover here the news for BruGIS, find out more about the webservices BruGIS has to offer and contact us if needed", 
+                "title": "BruGIS News and services"
+            }, 
+            "brugisIntro": {
+                "text": "framework om web mapping-applicaties te bouwen met behulp van standaard mapping-bibliotheken, zoals OpenLayers 3 en Leaflet.", 
+                "title": "Welkom bij BruGIS"
+            }, 
+            "brugisSurvey": {
+                "text": "Selecteer of teken een zone en verkrijg er een volledig stedenbouwkundig rapport van", 
+                "title": "Urbanalyse"
+            }, 
+            "measureAreaBrugisButton": {
+                "text": "Gebruik deze tool om oppervlakken te meten", 
+                "title": "Oppervlaktemeting"
+            }, 
+            "measureLengthBrugisButton": {
+                "text": "Gebruik dit hulpmiddel om afstanden te meten", 
+                "title": "Lengte meting"
+            }, 
+            "streetViewButton": {
+                "text": "Klik op de knop om de tool te activeren en klik vervolgens op de kaart om een Streetview-weergave te krijgen", 
+                "title": "Google Streetview"
+            }
+        }
+    }
+}

@@ -1,0 +1,1605 @@
+{
+    "locale": "fr-FR", 
+    "messages": {
+        "Language": "Langue", 
+        "aboutLbl": "A propos", 
+        "about_a0": "ceci", 
+        "about_h20": "License", 
+        "about_h21": "Crédits", 
+        "about_p0-0": "MapStore est un cadriciel permettant de développer des applications cartographiques web à l'aide des librairies standards cartographiques telles que", 
+        "about_p0-1": "et", 
+        "about_p1": "MapStore a plusieurs exemples d'applications:", 
+        "about_p3": "MapStore est un logiciel libre de droit à sources ouverts, basé sur OpenLayers 3, Leaflet et ReactJS, et est disponible sous Licence Simplifiée BSD.", 
+        "about_p5-0": "Pour plus d'informations, consultez", 
+        "about_p5-1": "page.", 
+        "about_p6": "MapStore2 est développé par:", 
+        "about_title": "A propos...", 
+        "about_ul0_li0": "MapViewer est un visualiseur simple de cartes préconfigurées (contenues optionnellement dans une base de données GeoStore)", 
+        "about_ul0_li1": "MapPublisher a été développé pour créer, sauver et partager de façon simple et intuitive cartes et assemblages créés à partir des contenus de serveurs tel que OpenStreetMap, Google Maps, MapQuest ou tout autre serveur spécifique fourni par votre organisation ou une organisation tierce. Pour plus d'information: ", 
+        "annotations": {
+            "add": "Nouvelle", 
+            "addMarker": "Ajouter un nouveau point sur la carte", 
+            "back": "Arrière", 
+            "cancel": "Annuler", 
+            "confirm": "confirmer", 
+            "deleteGeometry": "Supprimer les points existants", 
+            "edit": "Modifier", 
+            "emptygeometry": "La géométrie ne peut pas être vide", 
+            "field": {
+                "description": "Description", 
+                "title": "titre"
+            }, 
+            "filter": "Filtrer les annotations...", 
+            "mandatory": "champ obligatoire", 
+            "remove": "Effacer", 
+            "removeannotation": "Voulez-vous supprimer l'annotation?", 
+            "removegeometry": "Voulez-vous supprimer tous les points d'annotation?", 
+            "save": "Enregistrer", 
+            "styleGeometry": "Choisissez un style différent pour les points", 
+            "title": "Annotations", 
+            "undo": "Êtes-vous sûr de vouloir abandonner la session d'édition d'annotation?", 
+            "zoomTo": "Zoom"
+        }, 
+        "annotationsbutton": "Annotations", 
+        "autorefresh": {
+            "layers": "Couches", 
+            "of": "de", 
+            "updating": "Rafraichissement..."
+        }, 
+        "back": "Retour à l'import", 
+        "background": "Fond de plan", 
+        "backgroundSwither": {
+            "tooltip": "Sélection du fond de plan"
+        }, 
+        "bandselector": {
+            "algorithm": {
+                "ClipToMinimumMaximum": "Clip", 
+                "ClipToZero": "Clip à Zéro", 
+                "StretchToMinimumMaximum": "Etirer", 
+                "none": "Aucun"
+            }, 
+            "algorithmTitle": "Algorithme optionnel", 
+            "band": "Bande", 
+            "enha": {
+                "GammaValue": "Correction du gamma", 
+                "Histogram": "Histogramme", 
+                "Normalize": "Normaliser", 
+                "none": "Aucun"
+            }, 
+            "enhancement": "Amélioration", 
+            "max": "Max", 
+            "min": "Min", 
+            "value": "Valeur"
+        }, 
+        "cancel": "Annuler", 
+        "catalog": {
+            "add": "Ajouter", 
+            "addToMap": "Ajouter à la carte", 
+            "autoload": "Recherche sur la sélection du service", 
+            "clearValueText": "Effacer la sélection", 
+            "copied": "Copié!", 
+            "copyToClipboard": "Copier dans le presse-papier", 
+            "delete": "Effacer", 
+            "error": "Une erreur s'est produite lors du chargement des données du catalogue", 
+            "getWMSLink": "Lien WMS", 
+            "missingReference": "Métadonnées de référence OGC manquantes", 
+            "noRecordsMatched": "Aucun enregistrement correspondant", 
+            "noResultsText": "Aucun résultat trouvé", 
+            "notification": {
+                "addCatalogService": "Service ajouté correctement", 
+                "duplicatedServiceTitle": "Un service avec ce titre existe déjà, veuillez modifier le titre", 
+                "errorServiceUrl": "Service non disponible. Veuillez vérifier l'URL fournie", 
+                "serviceDeletedCorrectly": "Le service a été correctement effacé", 
+                "warningAddCatalogService": "Insérer une URL et un titre valides"
+            }, 
+            "options": "Options", 
+            "pageInfo": "{start}-{end} résultats parmi {total}", 
+            "pageInfoInfinite": "{total, plural, =undefined {} =0 {Aucun résultat} =1 {{total} sur {total} trouvés} other {chargé {loaded} sur {total} trouvés}}", 
+            "reset": "Effacer", 
+            "resultInfo": "{total, plural, =0 {Pas d'objet} =1 {{total} sur {total}} other {{start}-{end} sur {total}}}", 
+            "search": "Chercher", 
+            "service": "Service", 
+            "servicePlaceholder": "Tapez un service", 
+            "serviceTitle": "Titre", 
+            "serviceTitlePlaceholder": "tapez un titre", 
+            "share": "Partager", 
+            "srs_not_allowed": "Ce service ne supporte pas le systéme de coordonnées géographique de la carte", 
+            "textSearchPlaceholder": "texte à rechercher...", 
+            "title": "Catalogue", 
+            "tooltip": "Parcourir le catalogue", 
+            "type": "Type", 
+            "url": "Url", 
+            "urlPlaceholder": "tapez une url", 
+            "wfsGetCapLink": "WFS", 
+            "wmsGetCapLink": "WMS"
+        }, 
+        "close": "Fermer", 
+        "colormapgrid": {
+            "color": "Couleur", 
+            "label": "Label", 
+            "minmaxerror": "La valeur doit être comprise entre les valeurs des cellules précédentes et suivantes", 
+            "quantity": "Quantité"
+        }, 
+        "confirm": "Confirmer", 
+        "confirmTitle": "Confirmez-vous?", 
+        "cookie": {
+            "accept": "Accepter", 
+            "info": "Ce site fait usage de cookies pour améliorer votre expérience. Nous supposons que vous êtes d'accord avec cela, mais vous êtes libres de le refuser.", 
+            "leave": "Quitter", 
+            "moreDetailsButton": "Plus de détails"
+        }, 
+        "cookiesPolicyNotification": {
+            "confirm": "Je suis d'accord", 
+            "message": "En continuant d'utiliser notre site Web, vous acceptez notre utilisation de cookies.", 
+            "title": "Ce site utilise des cookies"
+        }, 
+        "dashboard": {
+            "editor": {
+                "addACardToTheDashboard": "Ajouter un widget au tableau de bord", 
+                "hideConnections": "Masquer les connexions", 
+                "save": "Sauvegarder le tableau de bord", 
+                "showConnections": "Afficher les connexions"
+            }, 
+            "emptyTitle": "Le tableau de bord est vide", 
+            "errors": {
+                "loading": {
+                    "dashboardDoesNotExist": "Le tableau de bord auquel vous tentez d'accéder n'existe pas", 
+                    "dashboardNotAccessible": "Vous n'êtes pas autorisé à accéder à ce tableau de bord. Veuillez contacter le propriétaire de la ressource", 
+                    "notAccessible": "Tableau de bord non accessible", 
+                    "notFound": "Tableau de bord introuvable", 
+                    "pleaseLogin": "Ce tableau de bord n'est pas public. Veuillez essayer de vous connecter", 
+                    "title": "Erreur lors du chargement du tableau de bord", 
+                    "unknownError": "Une erreur est survenue lors du chargement du tableau de bord. Veuillez contacter l'administrateur"
+                }, 
+                "resourceAlreadyExists": "Une ressource avec ce nom existe déjà. try '{data}'"
+            }, 
+            "loadingSpinner": "Chargement du tableau de bord", 
+            "saveDialog": {
+                "cancel": "Annuler", 
+                "close": "Fermer", 
+                "confirmCloseText": "Des modifications sont en attente, êtes-vous sûr de vouloir fermer sans enregistrer?", 
+                "description": "Description", 
+                "descriptionPlaceholder": "Tapez une description ...", 
+                "name": "Nom", 
+                "namePlaceholder": "Tapez un nom ...", 
+                "saveSuccessMessage": "Tableau de bord enregistré avec succès", 
+                "saveSuccessTitle": "Succès", 
+                "title": "Modifier les propriétés du tableau de bord"
+            }
+        }, 
+        "details": {
+            "title": "Info sur cette carte"
+        }, 
+        "dock": {
+            "row": "{rowsSelected} ligne sélectionné", 
+            "rows": "{rowsSelected} lignes sélectionné"
+        }, 
+        "docs": "Documentation", 
+        "drawLocal": {
+            "draw": {
+                "handlers": {
+                    "circle": {
+                        "tooltip": {
+                            "start": "Cliquer et tirer pour tracer un cercle."
+                        }
+                    }, 
+                    "marker": {
+                        "tooltip": {
+                            "start": "Cliquer pour placer un point."
+                        }
+                    }, 
+                    "polygon": {
+                        "tooltip": {
+                            "cont": "Cliquer pour continuer la forme.", 
+                            "end": "Cliquer sur le premier point pour fermer la forme.", 
+                            "start": "Cliquer pour commencer à tracer une forme."
+                        }
+                    }, 
+                    "polyline": {
+                        "error": "Erreur: le trait de la ligne ne peut se croiser!", 
+                        "tooltip": {
+                            "cont": "Cliquer pour continuer la ligne.", 
+                            "end": "Cliquer le dernier point pour finir le tracé.", 
+                            "start": "Cliquer pour commencer à tracer une ligne."
+                        }
+                    }, 
+                    "rectangle": {
+                        "tooltip": {
+                            "start": "Cliquer et tirer pour tracer un rectangle."
+                        }
+                    }, 
+                    "simpleshape": {
+                        "tooltip": {
+                            "end": "Relâcher la souris pour finir le tracé."
+                        }
+                    }
+                }, 
+                "toolbar": {
+                    "actions": {
+                        "text": "Effacer", 
+                        "title": "Effacer le dessin"
+                    }, 
+                    "buttons": {
+                        "circle": "Tracer un cercle", 
+                        "marker": "Tracer un point", 
+                        "polygon": "Tracer un polygone", 
+                        "polyline": "Tracer une ligne", 
+                        "rectangle": "Tracer un rectangle"
+                    }, 
+                    "undo": {
+                        "text": "Supprimer le dernier point", 
+                        "title": "Supprimer le dernier point dessiné"
+                    }
+                }
+            }, 
+            "edit": {
+                "handlers": {
+                    "edit": {
+                        "tooltip": {
+                            "subtext": "Cliquer Annuler pour invalider les modifications.", 
+                            "text": "Déplacer les poignées, ou le point pour modifier l'objet."
+                        }
+                    }, 
+                    "remove": {
+                        "tooltip": {
+                            "text": "Cliquer l'objet pour l'enlever"
+                        }
+                    }
+                }, 
+                "toolbar": {
+                    "actions": {
+                        "cancel": {
+                            "text": "Annuler", 
+                            "title": "Annuler l'édition, rejeter toutes les modifications."
+                        }, 
+                        "save": {
+                            "text": "Sauver", 
+                            "title": "Sauvegarder les modifications."
+                        }
+                    }, 
+                    "buttons": {
+                        "edit": "Modifier des couches.", 
+                        "editDisabled": "Aucune couche à modifier.", 
+                        "remove": "Supprimer des couches.", 
+                        "removeDisabled": "Aucune couche à supprimer."
+                    }
+                }
+            }
+        }, 
+        "elevation": "Elévation", 
+        "elevationLoading": "Chargement...", 
+        "elevationLoadingError": "Erreur", 
+        "elevationNotAvailable": "Int.", 
+        "enable": "Activer", 
+        "equalinterval": {
+            "classes": "Classes", 
+            "classify": "Classifier", 
+            "max": "Max", 
+            "maxerror": "La valeur max doit être supérieure à la valeur min", 
+            "min": "Min", 
+            "minerror": "La valeur min doit être inférieure à la valeur max", 
+            "ramp": "Gamme de couleur"
+        }, 
+        "errorDefault": "Une erreur est survenue", 
+        "errorTitleDefault": "Erreur", 
+        "expandtoolbar": {
+            "tooltip": "Agrandir / Réduire"
+        }, 
+        "featuregrid": {
+            "backtosearch": "Retour à la recherche", 
+            "clear": "Etes-vous sûr de vouloir annuler toutes les modifications apportées?", 
+            "columns": "Des colonnes", 
+            "delete": "Valider pour supprimer les éléments?", 
+            "deleteButton": "Effacer", 
+            "deselectall": "Tout désélectionner", 
+            "errorProjFetch": "Erreur lors de la recuperation de la definition de la charne proj4 depuis spatialreference.org. L'outil de synchronisation ne peut pas appliquer le filtre spatial.", 
+            "errorSaving": "Une erreur s'est produite lors de l'enregistrement de l'opération", 
+            "export": "Exporter", 
+            "featureClose": "Vraiment, vous voulez fermer la grille?", 
+            "filter": {
+                "placeholders": {
+                    "default": "Recherche...", 
+                    "number": "Tapez un nombre ou une expression...", 
+                    "string": "Tapez le texte à filtrer..."
+                }, 
+                "tooltips": {
+                    "default": "Recherche...", 
+                    "editMode": "La recherche rapide n'est pas disponible en mode édition", 
+                    "number": "Tapez un nombre ou une expression...", 
+                    "string": "Tapez le texte à filtrer..."
+                }
+            }, 
+            "header": "Rechercher la liste des résultats", 
+            "missingGeometry": "Géométrie manquante", 
+            "noButton": "Non", 
+            "noFeaturesAvailable": "Aucune fonctionnalité disponible", 
+            "notSupportedGeometry": "Le type de géométrie de la couche actuelle n'est pas supporté en édition mais l'édition attributaire reste possible", 
+            "notSupportedGeometryTitle": "Type de géométrie non pris en charge", 
+            "pageInfo": "{totalPages, plural, =0 {No pages} =1 {Page {totalPages} de {totalPages}} other {Page {page} de {totalPages}}}", 
+            "pagination": {
+                "more": "plus", 
+                "of": "de", 
+                "page": "Page", 
+                "to": "à"
+            }, 
+            "resultInfo": "{total, plural, =0 {aucun objet} =1 {{total} de {total}} other {{start}-{end} de {total}}}", 
+            "resultInfoVirtual": "{total, plural, =0 {aucun objet} =1 {{total} de {total}} other {{total} Objets}}", 
+            "selectall": "Tout sélectionner", 
+            "toolbar": {
+                "addGeom": "Ajouter un élément à la géométrie existante", 
+                "addNewFeatures": "Ajouter un nouvel élément", 
+                "advancedFilter": "Recherche Avancée", 
+                "cancelChanges": "Annuler les modifications", 
+                "createNewChart": "Créer un graphique pour le calque sélectionné", 
+                "deleteGeometry": "Supprimer la géométrie", 
+                "deleteSelectedFeatures": "Supprimer les fonctionnalités sélectionnées", 
+                "downloadGridData": "Télécharger les données", 
+                "drawGeom": "Élément de dessin", 
+                "editFeature": "Élément d'édition", 
+                "editMode": "Mode édition", 
+                "hideShowColumns": "Masquer / afficher les colonnes", 
+                "notShowAgain": "  Ne plus afficher ce message", 
+                "quitEditMode": "Quitter le mode d'édition", 
+                "saveChanges": "Sauvegarder les modifications", 
+                "saving": "sauvetage...", 
+                "stopDrawGeom": "Annuler la création de la géométrie", 
+                "syncOnMap": "Synchroniser la carte avec un filtre", 
+                "synchPopoverText": "Utilisez cet outil pour synchroniser la carte avec le filtre sélectionné", 
+                "synchPopoverTitle": "Synchroniser la carte avec un filtre ", 
+                "zoomAll": "Zoom sur la page"
+            }, 
+            "tools": "Panneau d'outils", 
+            "yesButton": "Oui"
+        }, 
+        "floatinglegend": {
+            "hideLegend": "Cacher la légende", 
+            "showLegend": "Afficher la légende", 
+            "showTOC": "Afficher les calques"
+        }, 
+        "fullscreen": {
+            "tooltipActivate": "Basculer en plein écran", 
+            "tooltipDeactivate": "Quitter plein écran", 
+            "viewLargerMap": "Agrandir le plan"
+        }, 
+        "getFeatureInfoError": {
+            "text": "Une erreur s'est produite au cours de cette <b>GetFeatureInfo</b> requête", 
+            "title": "Ooops! Quelque chose ne fonctionne pas"
+        }, 
+        "getFeatureInfoTitle": "Informations de l'objet", 
+        "global": {
+            "colors": {
+                "blue": "{number, plural, =0 {Blue} =1 {Blue} other {Blues}}", 
+                "brown": "{number, plural, =0 {Brown} =1 {Brown} other {Browns}}", 
+                "green": "{number, plural, =0 {green} =1 {Green} other {Greens}}", 
+                "purple": "{number, plural, =0 {Purple} =1 {Purple} other {Purples}}", 
+                "random": "{number, plural, =0 {Random} =1 {Random} other {Random}}", 
+                "red": "{number, plural, =0 {Red} =1 {Red} other {Reds}}"
+            }
+        }, 
+        "globeswitcher": {
+            "tooltipActivate": "Entrez le mode 3D", 
+            "tooltipDeactivate": "Sortie en mode 3D"
+        }, 
+        "gohome": "Retour à la page d'accueil", 
+        "group": "Groupe", 
+        "groups": "Groupes", 
+        "help": "Aide", 
+        "helptexts": {
+            "backgroundSwitcher": "This is the helptext for the BackgroundSwitcher", 
+            "expandToolbar": "This is the helptext for Expand / Collapse", 
+            "gohome": "This is the helptext for Home", 
+            "historyredo": "Utiliser ce bouton pour revenir à l'extension et la position suivante", 
+            "historyundo": "Utiliser ce bouton pour revenir à l'extension et la position précédente", 
+            "infoButton": "This is the helptext for the InfoButton", 
+            "layerSwitcher": "This is the helptext for the LayerSwitcher", 
+            "locateBtn": "This is the helptext for the LocateBtn", 
+            "measureComponent": "This is the helptext for the MeasureComponent", 
+            "metadataexplorer": "This is the helptext for the MetadataExplorer", 
+            "print": "This is the helptext for Print", 
+            "rasterstyler": "Définir une valeur minimale, maximale, le nombre de classe et une gamme de couleur et générer une nouvelle couche image classifiée", 
+            "scaleBox": "This is the helptext for the ScaleBox", 
+            "searchBar": "Tapez l'adresse à rechercher. p. ex.  '1st avenue, new york'. Vous pouvez aussi entrer des coordonnées au format suivant: 43.87,10.20", 
+            "settingsPanel": "This is the helptext for the SettingsPanel", 
+            "shapefile": "This is the helptext for the Shapefile", 
+            "snapshot": "This is the helptext for the Snapshot", 
+            "styler": "Créer un style pour la couche sélectionnée", 
+            "vectorstyler": "Créer un style pour la couche vectorielle sélectionnée", 
+            "zoomIn": "This is the helptext for the ZoomIn", 
+            "zoomOut": "This is the helptext for the ZoomOut", 
+            "zoomToMaxExtentButton": "This is the helptext for the ZoomToMaxExtentButton"
+        }, 
+        "history": {
+            "barLabel": "Historique de la carte", 
+            "redoBtnTooltip": "Aller en avant", 
+            "undoBtnTooltip": "Aller en arrière"
+        }, 
+        "home": {
+            "Applications": "Applications", 
+            "Examples": "Exemples", 
+            "LinkedinGroup": "Groupe Linkedin Mapstore", 
+            "description": "MapStore est développé pour créer, sauvegarder et partager de façon simple et intuitive cartes et assemblages créés à partir du contenu de serveurs tel que OpenStreetMap, Google Maps, MapQuest ou tout autre serveur spécifique fourni par votre organisation ou une organisation tierce.<br/>Visitez notre <a href=\"/mapstore/docs/\">page d'accueil</a> pour plus de détails.", 
+            "examples": {
+                "3dviewer": {
+                    "html": "<h3>Visualiseur 3D</h3><p>Visualiseur 3D simple basé sur CesiumJS</p>"
+                }, 
+                "api": {
+                    "html": "<h3>API</h3><p>Utilisez les API pour inclure une carte MapStore2 dans votre application</p>"
+                }, 
+                "featuregrid": {
+                    "html": "<h3>Éditeur d'objets</h3><p>Exemple particulier</p>"
+                }, 
+                "layertree": {
+                    "html": "<h3>Arborescence de couches avancée</h3><p>Exemple particulier</p>"
+                }, 
+                "manager": {
+                    "html": "<h3>Gestionnaire</h3><p>Feuilleter des cartes Mapstore</p>"
+                }, 
+                "mouseposition": {
+                    "html": "<h3>Contrôleur de position de pointeur</h3><p>Exemple particulier</p>"
+                }, 
+                "plugins": {
+                    "html": "<h3>Plugins</h3><p>Contruire sa propre application</p>"
+                }, 
+                "print": {
+                    "html": "<h3>Impression</h3><p>Exemple particulier</p>"
+                }, 
+                "queryform": {
+                    "html": "<h3>Constructeur de requête</h3><p>Exemple particulier</p>"
+                }, 
+                "rasterstyler": {
+                    "html": "<h3>Représentation d'image</h3><p>Représenter votre couche image</p>"
+                }, 
+                "scalebar": {
+                    "html": "<h3>Contrôleur d'échelle</h3><p>Exemple particulier</p>"
+                }, 
+                "viewer": {
+                    "html": "<h3>Visualiseur</h3><p>Visualiseur simple</p>"
+                }
+            }, 
+            "forkMeOnGitHub": "Fork me on GitHub", 
+            "ml": {
+                "email": "Courriel:", 
+                "subscribe": "Souscrire", 
+                "subscribe_devel": "Souscrire à la Mailing List développeurs", 
+                "subscribe_users": "Souscrire à la Mailing List utilisateurs", 
+                "title": "Restez au fait des derniers développements via les mailing lists", 
+                "visit_group": "Aller à ce groupe"
+            }, 
+            "open": "Ouvrir", 
+            "scrollTop": "Retour en haut de la page", 
+            "shortDescription": "Modern webmapping avec OL3, Leaflet et React<br/><small>consultez la page <a href=\"/mapstore/docs/\"> documentation </a> </ small>"
+        }, 
+        "htmlTest": "{name} {surname}", 
+        "identifyNoQueryableLayers": "Aucune couche active rencontrée", 
+        "identifyRevGeocodeCloseText": "Fermer", 
+        "identifyRevGeocodeError": "Geocodage impossible", 
+        "identifyRevGeocodeHeader": "Coordonnées", 
+        "identifyRevGeocodeModalTitle": "Adresse", 
+        "identifyRevGeocodeSubmitText": "Plus d'Informations", 
+        "identifyTitle": "Informations de l'objet", 
+        "importer": {
+            "creatingImportProcess": "Création d'importation ...", 
+            "dropfile": "faire glisser des fichiers ici pour créer un nouveau processus d'importation", 
+            "dropfileImport": "faites glisser les fichiers ici pour ajouter à ce processus", 
+            "import": {
+                "actions": "Actes", 
+                "analyzing": "paquet en analyse...", 
+                "applyingPreset": "Presets d'application ...", 
+                "archive": "Archives", 
+                "deleteImport": "Supprimer processus", 
+                "deleteTask": "Supprimer", 
+                "deleting": "Clearing ...", 
+                "runImport": "Début", 
+                "status": "Statut", 
+                "tasks": "paquet"
+            }, 
+            "importN": "Processus {id}", 
+            "imports": "Processus d'importation", 
+            "number": "#", 
+            "process": "Processus", 
+            "task": {
+                "delete": "Supprimer Ce forfait", 
+                "edit": "Modifier le style par défaut", 
+                "file": "Nom de fichier", 
+                "format": "Format", 
+                "general": "Information générale", 
+                "layer": "Couche", 
+                "originalData": "fichier original", 
+                "panelTitle": "Paquet {id}", 
+                "run": "Importez Ce forfait", 
+                "status": "Statut", 
+                "storeName": "Le nom du store", 
+                "storeType": "Type de store", 
+                "targetStore": "target store", 
+                "transforms": "Chaîne de transformations", 
+                "update": "Mettre à jour", 
+                "updateMode": "Mode refresh"
+            }, 
+            "title": "Importer des données", 
+            "transform": {
+                "actions": "Actes", 
+                "delete": "Supprimer cette transformation", 
+                "options": "transformations des options", 
+                "overviewlevels": "Vue d'ensemble des niveaux", 
+                "panelTitle": "Transformation {id}", 
+                "type": "Type de transformation"
+            }, 
+            "workspace": {
+                "create": "Créer", 
+                "createWS": "créer un nouvel espace de travail: ", 
+                "failure": "Erreur de création espace de travail: {statusWS}", 
+                "new": "Nom...", 
+                "select": "Sélectionnez l'espace de travail cible", 
+                "success": "Espace de travail {statusWS} créé avec succès", 
+                "target": "cible espace de travail: "
+            }
+        }, 
+        "info": {
+            "tooltip": "Interroger les objets sur la carte"
+        }, 
+        "infoFormatLbl": "Informations, format de la réponse", 
+        "language": "langue", 
+        "layerProperties": {
+            "cached": "Utiliser les options de cache", 
+            "changedSettings": "Paramètres modifiés", 
+            "changedSettingsAlert": "Vous fermez le panneau des paramètres sans enregistrer vos modifications", 
+            "confirmDelete": "Êtes-vous sûr?", 
+            "delete": "Effacer", 
+            "deleteLayer": "Supprimer le calque", 
+            "deleteLayerMessage": "Voulez-vous vraiment supprimer cette couche?", 
+            "description": "Description", 
+            "display": "Affichage", 
+            "editCustomFormat": "Modifier le format personnalisé", 
+            "elevation": "élévation", 
+            "exampleOfResponse": "Exemple", 
+            "featureInfo": "Informations attributaires de l'objet", 
+            "featureInfoFormatLbl": "Information, format de la réponse", 
+            "featureTypeError": "Impossible de charger les attributs de calque", 
+            "featureTypeErrorInvalidJSON": "Impossible de charger les attributs de calque. La réponse n'est pas valide", 
+            "format": "Format", 
+            "general": "Général", 
+            "group": "Groupe", 
+            "groupProperties": "Propriétés du groupe", 
+            "htmlFormatDescription": "Affiche les résultats de l'info sur les fonctionnalités au format html", 
+            "htmlFormatTitle": "HTML", 
+            "legenderror": "La légende n'est pas disponible", 
+            "name": "Nom", 
+            "propertiesFormatDescription": "Affiche les résultats des informations sur les fonctionnalités sous forme de liste de propriétés", 
+            "propertiesFormatTitle": "PROPRIÉTÉS", 
+            "singleTile": "Tuile unique", 
+            "style": "Style", 
+            "styleCustom": "Utilisez un style nommé \"{value} \"", 
+            "styleListLoadError": "Une erreur s'est produite lors du chargement de la liste de styles", 
+            "stylesRefreshList": "Actualiser la liste des styles", 
+            "templateFormatDescription": "Personnaliser le format des résultats d'informations sur les fonctionnalités", 
+            "templateFormatInfoAlert1": "Cliquez sur le bouton d'édition pour ajouter un nouveau modèle.", 
+            "templateFormatInfoAlert2": "Utilisez ${ attribut } pour envelopper les propriétés que vous devez afficher", 
+            "templateFormatInfoAlertExample": "L'ID de la fonctionnalité est ${ properties }", 
+            "templateFormatTitle": "TEMPLATE", 
+            "templatePreview": "Aperçu du template", 
+            "textFormatDescription": "Affiche les résultats d'info en texte brut", 
+            "textFormatTitle": "TEXT", 
+            "title": "Titre", 
+            "titleTranslations": "Traductions du titre", 
+            "transparent": "Transparent", 
+            "windowTitle": "Propriétés de la couche"
+        }, 
+        "layers": "Couches", 
+        "loading": "Chargement...", 
+        "localeErrors": {
+            "404": "Fichier de traduction introuvable"
+        }, 
+        "locate": {
+            "feetUnit": "pieds", 
+            "metersUnit": "mètres", 
+            "outsideMapBoundsMsg": "Vous semblez hors des limites de la carte", 
+            "popup": "Vous êtes à moins de {distance} {unit} de ce point", 
+            "tooltip": "Me localiser"
+        }, 
+        "manager": {
+            "deleteMap": "Supprimer la carte", 
+            "deleteMapMessage": "Voulez-vous supprimer cette carte?", 
+            "editMapMetadata": "Modifier les propriétés de la carte", 
+            "featuredMaps": "Cartes en vedette", 
+            "locales_combo": "Langue:", 
+            "mapTypes_combo": "Selectionner le viewer de carte: ", 
+            "maps_title": "Cartes", 
+            "openInANewTab": "Ouvrir la carte", 
+            "theme_combo": "Sélectionne un thème:"
+        }, 
+        "map": {
+            "description": "Description", 
+            "descriptionPlaceholder": "Description de la carte", 
+            "details": {
+                "add": "Ajouter de nouveaux détails", 
+                "back": "Arrière", 
+                "delete": "Supprimer la fiche détaillée", 
+                "edit": "Modifier les détails", 
+                "fieldsChanged": "Certains champs ont été modifiés", 
+                "hidePreview": "Masquer l'aperçu", 
+                "rowTitle": "Fiche de détails", 
+                "save": "Sauvegarder", 
+                "show": "Montrer la fiche détaillée", 
+                "showPreview": "Afficher l'aperçu", 
+                "sureToClose": "Êtes-vous sûr de fermer sans enregistrer vos modifications?", 
+                "title": "Fiche de détails - {name}", 
+                "titleUnsavedChanges": "Êtes-vous sûr de fermer sans enregistrer vos modifications?", 
+                "undo": "Annuler supprimer"
+            }, 
+            "error": "L'image fournie est pas valide", 
+            "errorFormat": "Formats supportés: png/jpg", 
+            "errorSize": "taille maximum autorisée: 500kb", 
+            "errors": {
+                "loading": {
+                    "notAccessible": "Carte non accessible", 
+                    "notFound": "Carte introuvable", 
+                    "unknownError": "<p> <small> L'une des raisons suivantes pourrait être la cause: </small> <ul><li> vous n'avez pas la permission d'accéder à </li> <li> vous essayez d'accéder à une carte qui n'existe pas </li> <li> la carte a été supprimée </li><ul> <p>"
+                }
+            }, 
+            "loading": "Chargement...", 
+            "loadingSpinner": "Carte de chargement", 
+            "loadingerror": "Erreur de chargement", 
+            "mapError": {
+                "error403": "Une erreur est survenue lors de la suppression de la carte", 
+                "error404": "Une erreur est survenue lors de la création de la carte", 
+                "error409": "Nom de la carte déjà choisie", 
+                "error500": "Erreur Interne du Serveur. Vérifier si la taille du fichier de configuration de la carte dépasse la limite fixée", 
+                "errorDefault": "Une erreur est survenue sur le serveur", 
+                "errorTitle": "Impossible d'enregistrer la carte actuelle"
+            }, 
+            "message": "Déposez ou cliquez sur pour importer une image", 
+            "name": "Nom", 
+            "namePlaceholder": "Nom de la carte", 
+            "permissions": {
+                "addRule": "ajouter une règle...", 
+                "canView": "peut voir", 
+                "canWrite": "peut éditer", 
+                "noResult": "aucun résultat trouvé", 
+                "noRules": "aucune règle", 
+                "selectGroup": "sélectionner un groupe...", 
+                "title": "groupes autorisés"
+            }, 
+            "saveText": "Sauver la carte courante?", 
+            "saveTitle": "Sauver la carte", 
+            "savedMapMessage": "La carte a été enregistrée correctement", 
+            "savedMapTitle": "Carte Sauvegardée", 
+            "suggestion": "(best 300px X 180px, max 500kb)", 
+            "thumbnail": "Vignette", 
+            "thumbnailError": {
+                "error403": "Une erreur est survenue lors de la suppression de la vignette", 
+                "error404": "Une erreur est survenue lors de la création de la vignette", 
+                "error409": "Nom de la vignette déjà choisie", 
+                "errorDefault": "Une erreur est survenue sur le serveur"
+            }
+        }, 
+        "mapScale": "Échelle:", 
+        "maps": {
+            "addToFeaturedMaps": "Ajouter aux cartes sélectionnées", 
+            "feedback": {
+                "allResDeleted": "Toutes les ressources associées à cette carte ont été supprimées avec succès", 
+                "details": {
+                    "deletedSuccesfully": "Les détails ont été supprimés correctement", 
+                    "savedSuccesfully": "Les détails ont été supprimés correctement", 
+                    "updatedSuccesfully": "Les détails ont été mis à jour correctement"
+                }, 
+                "errorDeletingDetailsOfMap": "Erreur lors de la suppression des détails de cette carte", 
+                "errorDeletingMap": "Erreur lors de la suppression de cette carte", 
+                "errorDeletingThumbnailOfMap": "Erreur lors de la suppression de la vignette pour cette carte", 
+                "errorFetchingDetailsOfMap": "Erreur lors de l'extraction des détails de cette carte", 
+                "errorSizeExceeded": "S'il vous plaît, réduisez la taille des détails ou la qualité des images", 
+                "errorWhenDeleting": "Une erreur s'est produite lors du processus de suppression", 
+                "errorWhenSaving": "Une erreur est survenue lors du processus d'enregistrement", 
+                "errorWhenUpdating": "Une erreur s'est produite lors du processus de mise à jour", 
+                "noDetailsAvailable": "Détails de la carte non disponibles", 
+                "successSavedMap": "La carte a été créée correctement", 
+                "thumbnail": {
+                    "deletedSuccesfully": "La vignette a été supprimée correctement", 
+                    "savedSuccesfully": "La vignette a été supprimée correctement", 
+                    "updatedSuccesfully": "La vignette a été mise à jour correctement"
+                }
+            }, 
+            "removeFromFeaturedMaps": "Supprimer des cartes en vedette", 
+            "search": "rechercher ...", 
+            "title": "Cartes"
+        }, 
+        "markNameSelector": {
+            "circle": "Cercle", 
+            "cross": "Croix", 
+            "square": "Carré", 
+            "star": "Etoile", 
+            "triangle": "Triangle", 
+            "x": "X"
+        }, 
+        "measureComponent": {
+            "Measure": "Mesurer", 
+            "MeasureArea": "Mesure de surface", 
+            "MeasureBearing": "Mesure de direction", 
+            "MeasureLength": "Mesure de distance", 
+            "areaButtonText": "Aire", 
+            "areaLabel": "Surface", 
+            "bearingLabel": "Direction", 
+            "formula": "Formule pour le calcul de la distance", 
+            "lengthButtonText": "Ligne", 
+            "lengthLabel": "Longueur", 
+            "resetButtonText": "Recommencer", 
+            "showLabel": "Afficher l'étiquette de mesure", 
+            "title": "Mesure", 
+            "tooltip": "Mesures de distances, surfaces et coordonnées"
+        }, 
+        "measureSupport": {
+            "continueLine": "Cliquez pour continuer à dessiner la ligne", 
+            "continuePolygon": "Cliquez pour continuer à dessiner le polygone", 
+            "startDrawing": "Cliquez pour commencer à dessiner"
+        }, 
+        "menu": "Menu", 
+        "mouseCoordinates": "Coordonnées:", 
+        "mousePositionCRS": "CRS:", 
+        "mousePositionCoordinates": "Coordonnées", 
+        "mousePositionElevation": "Élév.:", 
+        "mousePositionNoElevation": "Int.", 
+        "msgId0": "{name} a pris {numPhotos, plural, =0 {aucune photo} =1 {une photo} other {# photos}} le {takenDate, date, long}.", 
+        "newMap": "Nouvelle carte", 
+        "no": "Non", 
+        "noFeatureInfo": "Aucune information n'est disponible pour le point cliqué", 
+        "noInfoForLayers": "Aucun objet n'est trouvé pour les couches suivantes: ", 
+        "noresultfound": "Aucun résultat trouvé", 
+        "notification": {
+            "backgroundLayerNotSupported": "L'arrière-plan précédemment sélectionné est pas pris en charge pour ce type de carte. Le premier disponible est ensuite utilisée.", 
+            "noBackgroundLayerSupported": "Il n'y a pas de couches de fond supportées pour ce type de carte.", 
+            "saveUpdatedMap": "Toutes les couches ont bien été mises à jour", 
+            "success": "Succès", 
+            "update": "Mise à jour", 
+            "updateOldMap": "Ceci est une carte ancienne, toutes les fonctionnalités ne peuvent pas s'y retrouver. Cliquer sur le bouton de mise à jour pour rafraichir la carte ou ne tenez pas compte de cet avertissement pour ne pas rafraichir la carte.", 
+            "warning": "Avertissement", 
+            "warningSaveUpdatedMap": "Certaines couches n'ont pas été mises à jour correctement"
+        }, 
+        "opacity": "Opacité", 
+        "options": "Options", 
+        "pageInfo": "{total, plural, =0 {aucun objet} =1 {{total} objet parmi {total}} other {objets {start}-{end} parmi {total}}}", 
+        "pageInfoShowMore": "Résultats {count} de {total}", 
+        "permission": "Permission", 
+        "permissions": "Permissions", 
+        "print": {
+            "alternatives": {
+                "2pages": "Légende sur une page séparée", 
+                "landscape": "Paysage", 
+                "legend": "Inclure la légende", 
+                "portrait": "Portrait"
+            }, 
+            "defaultBackground": "Utiliser OSM comme fond de plan", 
+            "description": "Description", 
+            "descriptionplaceholder": "Entrer une description...", 
+            "layout": "Mise en page", 
+            "layoutWarning": "Mise en page impossible", 
+            "legend": {
+                "antiAliasing": "Anti crénelage des polices:", 
+                "dpi": "ppp:", 
+                "font": "Configuration des labels:", 
+                "forceLabels": "Forcer les labels:", 
+                "iconsSize": "Taille d'icône:"
+            }, 
+            "legendoptions": "Options de la légende", 
+            "paneltitle": "Impression", 
+            "printtooltip": "Impression", 
+            "resolution": "Résolution:", 
+            "sheetsize": "Taille du papier:", 
+            "submit": "Imprimer", 
+            "title": "Titre", 
+            "titleplaceholder": "Entrer un titre..."
+        }, 
+        "printbutton": "Imprimer", 
+        "pseudocolorsettings": {
+            "add": "Ajouter une entrée", 
+            "colormap": "Table des couleurs", 
+            "extended": "Etendu", 
+            "remove": "Retirer une entrée", 
+            "type": "Type"
+        }, 
+        "queryform": {
+            "attributefilter": {
+                "add_condition": " Ajouter une condition", 
+                "add_group": " Ajouter un groupe", 
+                "attribute_filter_header": "Filtre sur attribut", 
+                "autocomplete": {
+                    "emptyFilter": "Le filtre n'a donné aucun résultat", 
+                    "emptyList": "Aucun résultat", 
+                    "open": "Ouvrir le menu"
+                }, 
+                "combo_placeholder": "Attribut", 
+                "datefield": {
+                    "wrong_date_range": "La date de début doit être antérieure à la date de fin"
+                }, 
+                "groupField": {
+                    "all": "tous", 
+                    "any": "certain", 
+                    "none": "aucun"
+                }, 
+                "group_label_a": "Adéquation", 
+                "group_label_b": "des conditions suivantes:", 
+                "numberfield": {
+                    "isRequired": "champ indispensable", 
+                    "wrong_range": "La limite inférieure doit être plus petite que la limite supérieure"
+                }, 
+                "text_placeholder": "Entrer le texte à rechercher", 
+                "tooltipTextField": "utilise <b>*</b> pour tout caractère</br>utilise <b>.</b> pour un seul caractère</br>utilise <b>!</b> pour les caractères spéciaux (* et .)</br>"
+            }, 
+            "comboField": {
+                "default_placeholder": "Sélectionner..."
+            }, 
+            "config": {
+                "load_config_exception": "Erreur lors du chargement de la configuration"
+            }, 
+            "crossLayerFilter": {
+                "clear": "Effacer le filtre", 
+                "errors": {
+                    "noCrossLayerAvailable": "Le filtrage croisé n'est pas disponible pour le calque sélectionné"
+                }, 
+                "operation": "Opération", 
+                "targetLayer": "Couche cible", 
+                "title": "Filtre de couche"
+            }, 
+            "emptyfilter": "Aucun ensemble de filtres. La recherche pourrait expirer si la pagination n'est pas prise en charge par le serveur.", 
+            "form": {
+                "dataset_header": "Ensemble des données", 
+                "header": "Rechercher dans les données"
+            }, 
+            "query": "Recherche", 
+            "query_request_exception": "Erreur de requête", 
+            "reset": "Recommencer", 
+            "spatialfilter": {
+                "combo_placeholder": "Sélectionner...", 
+                "details": {
+                    "detail_button_label": "Détails", 
+                    "details_bbox_label": "Editer les coordonnées pour modifier la surface", 
+                    "details_circle_label": "Editer les attributs pour modifier le rayon et le centre du cercle", 
+                    "details_header": "Détails de la sélection", 
+                    "radius": "Rayon(m)", 
+                    "reset_bbox": "Recommencer", 
+                    "save_bbox": "Sauver les modifications", 
+                    "save_radius": "Sauver les modifications"
+                }, 
+                "draw_start_label": "Dessiner la région d'intérêt sur la carte", 
+                "dwithin_label": "mètres", 
+                "filterType": "Type de filtre", 
+                "geometric_operation": "Opération géométrique", 
+                "methods": {
+                    "box": "Rectangle", 
+                    "buffer": "Zone tampon", 
+                    "circle": "Cercle", 
+                    "cql": "CQL", 
+                    "poly": "Polygone", 
+                    "regions": "Régions", 
+                    "viewport": "Viewport", 
+                    "zone": "Zone"
+                }, 
+                "operations": {
+                    "bbox": "Cadre d'objet", 
+                    "contains": "Est contenu", 
+                    "dwithin": "Distance de", 
+                    "intersects": "intersecte", 
+                    "within": "Contient"
+                }, 
+                "spatial_filter_header": "Région d'intérêt"
+            }, 
+            "title": "Recherche Avancée"
+        }, 
+        "rasterstyler": {
+            "applybtn": "Appliquer le style", 
+            "bluetitle": "Bleu", 
+            "eqinttitle": "Classification par interval régulier", 
+            "graytitle": "Gris", 
+            "greentitle": "Vert", 
+            "layerlabel": "Couche", 
+            "opacitylabel": "Opacité", 
+            "paneltitle": "Editeur de style d'image", 
+            "pseudobandtitle": "Sélection de la bande", 
+            "pseudotitle": "Réglages des pseudo-couleurs", 
+            "redtitle": "Rouge", 
+            "tooltip": "Créer et éditer un style pour une couche image", 
+            "typelabel": "Type de style"
+        }, 
+        "rasterstyletype": {
+            "gray": "Niveau de gris", 
+            "multi": "Bandes multiples", 
+            "pseudo": "Fausse couleur", 
+            "rgb": "Rouge Vert Bleu", 
+            "single": "simple bande"
+        }, 
+        "resources": {
+            "contents": {
+                "title": "Contenu"
+            }, 
+            "dashboards": {
+                "create": "Créer un tableau de bord", 
+                "createANewOne": "Créer un nouveau", 
+                "deleteError": "Une erreur s'est produite lors de la suppression de la ressource", 
+                "errorLoadingDashboards": "Une erreur s'est produite lors du chargement des tableaux de bord", 
+                "newDashboard": "Nouveau tableau de bord", 
+                "noDashboardAvailable": "Aucun tableau de bord disponible", 
+                "title": "Tableaux de bord ({count})", 
+                "titleNoCount": "Tableaux de bord"
+            }, 
+            "deleteCancelButtonText": "Fermer", 
+            "deleteConfirmButtonText": "Supprimer", 
+            "deleteConfirmMessage": "Etes-vous sûr de vouloir supprimer cette ressource?", 
+            "deleteConfirmTitle": "Etes-vous sûr", 
+            "maps": {
+                "title": "Cartes ({count})"
+            }, 
+            "resource": {
+                "addToFeatured": "Ajouter à la présentation", 
+                "deleteResource": "Supprimer", 
+                "editResource": "Modifier les propriétés", 
+                "removeFromFeatured": "Supprimer de featured", 
+                "showDetails": "Afficher les détails"
+            }
+        }, 
+        "rulesmanager": {
+            "access": "Accès", 
+            "apply": "Appliquer", 
+            "avstyle": "Styles Disponibles", 
+            "cacheCleaned": "Cache nettoyé avec succès", 
+            "cachemsg": "Etes-vous sûr d'effacer le cache de GeoFence?", 
+            "cachetitle": "Vider le Cache", 
+            "cancelButton": "Annuler", 
+            "clearbtn": "Tout Effacer", 
+            "close": "Fermer", 
+            "constraintsmsg": "En changeant la subvention, l'espace de travail ou la couche, les détails seront supprimés. Êtes-vous sûr de vouloir faire ça?", 
+            "cqlRead": "Règles de lecture du filtre CQL", 
+            "cqlWrite": "Règles d'écriture du filtre CQL", 
+            "defstyle": "Style par Défaut", 
+            "deleteButton": "Effacer", 
+            "deleteModal": "Supprimer la règle", 
+            "delmsg": "Voulez-vous vraiment supprimer cette règle?", 
+            "deltitle": "Supprimer la règle", 
+            "editButton": "Enregistrer", 
+            "editModal": "Modifier la règle", 
+            "errorAddingRule": "Erreur lors de l'ajout de la règle.", 
+            "errorCQL": "La géométrie n'est pas valide!", 
+            "errorCleaningCache": "Erreur lors du nettoyage du cache de geofence.", 
+            "errorDeletingRules": "Erreur de suppression des règles.", 
+            "errorDuplicateRule": "Règle dupliquée", 
+            "errorLoading": "Erreur de chargement", 
+            "errorLoadingLayers": "Erreur lors du chargement des layers.", 
+            "errorLoadingRoles": "Erreur lors du chargement des rôles.", 
+            "errorLoadingRules": "Erreur lors du chargement des règles.", 
+            "errorLoadingUsers": "Erreur lors du chargement des utilisateurs.", 
+            "errorLoadingWorkspaces": "Erreur lors du chargement des  workspaces.", 
+            "errorMovingRules": "Erreur lors du déplacement des règles.", 
+            "errorTitle": "Geofence", 
+            "errorUpdatingRule": "Erreur lors de la mise à jour règle.", 
+            "filters": "Filtres", 
+            "invalidForm": "Le formulaire est invalide vérifier les valeurs des champs", 
+            "ip": "IP", 
+            "layer": "Couche", 
+            "menutitle": "Gérer les règles de GeoFence", 
+            "missingconfig": "Le gestionnaire de règles manque la configuration. Accès refusé!", 
+            "navItems": {
+                "attribute": "Règle des attributs", 
+                "filter": "Filtres", 
+                "main": "Règle générale", 
+                "style": "Style"
+            }, 
+            "newButton": "Créer", 
+            "newModal": "Nouvelle règle", 
+            "next": "prochain", 
+            "placeholders": {
+                "access": "Tapez pour rechercher Access", 
+                "filter": "Chercher...", 
+                "ip": "###.###.###.###/##", 
+                "layer": "Tapez pour rechercher des calques", 
+                "priority": "Sélectionnez Priorité", 
+                "request": "Tapez pour rechercher des demandes", 
+                "role": "Tapez pour rechercher des rôles", 
+                "service": "Tapez pour rechercher des services", 
+                "user": "Tapez pour rechercher des utilisateurs", 
+                "workspace": "Tapez pour rechercher des espaces de travail"
+            }, 
+            "previous": "précédent", 
+            "priority": "Priorité", 
+            "remove": "Supprimer la géométrie", 
+            "request": "Requête", 
+            "resetconstraints": "Réinitialise les contraintes", 
+            "role": "Rôle", 
+            "rule": "Règle", 
+            "rules": "Règles", 
+            "selectbtn": "Tout Sélectionner", 
+            "selectedRulesDelete": "Voulez-vous supprimer les règles sélectionnées ?", 
+            "selectworkspace": "Vous devez sélectionner l'espace de travail pour activer les options avancées.", 
+            "service": "Service", 
+            "title": "Règles d'accès", 
+            "tooltip": {
+                "addAfT": "Ajouter une nouvelle règle après la sélection", 
+                "addBeT": "Ajouter une nouvelle règle avant de sélectionner", 
+                "addT": "Ajouter une règle", 
+                "cacheT": "Vider le cache", 
+                "close": "Quitter de la règle de création", 
+                "deleteT": "Supprimer les règles sélectionnées", 
+                "editT": "Modifier la règle sélectionnée", 
+                "save": "Enregistrer la règle actuelle"
+            }, 
+            "user": "Utilisateur", 
+            "workspace": "Espace de travail"
+        }, 
+        "save": "Enregistrer", 
+        "saveAs": "Enregistrer sous", 
+        "scaledenominator": {
+            "maxerror": "La valeur max doit être plus grande que la valeur min", 
+            "maxlabel": "Dénominateur d'échelle maximum", 
+            "minerror": "La valeur min doit être plus petite que la valeur max", 
+            "minlabel": "Dénominateur d'échelle minimum", 
+            "none": "Aucun"
+        }, 
+        "search": {
+            "addbtn": "Ajouter", 
+            "cancelbtn": "Annuler", 
+            "cancelconfirm": "Êtes-vous sûr?", 
+            "configpaneltitle": "Créer / modifier un service de recherche", 
+            "confirmremove": "Effacer?", 
+            "nextbtn": "Prochain", 
+            "overriedservice": "Services par défaut excédentaires", 
+            "placeholder": "Recherche par toponyme ou coordonnées...", 
+            "prevbtn": "Arrière", 
+            "s_attributes": "Les attributs", 
+            "s_description": "La description", 
+            "s_layer": "Couche", 
+            "s_max_features": "Fonctionnalités Max", 
+            "s_name": "Prénom", 
+            "s_priority": "Priorité", 
+            "s_priority_info": "Utilisé pour trier les résultats de recherche, des valeurs plus élevées en premier. Les résultats Nominatim ont priorité = 5", 
+            "s_result_props_label": "Propriétés d'affichage des résultats", 
+            "s_sort": "Trier par", 
+            "s_title": "Titre", 
+            "s_url": "Url de service", 
+            "s_wfs_opt_props_label": "Supports optionnels", 
+            "s_wfs_props_label": "WFS accessoires du service", 
+            "savebtn": "Mettre à jour", 
+            "searchservicesbutton": "Configurer les services de recherche", 
+            "serviceslistempty": "Aucun service personnalisé n'a été défini", 
+            "serviceslistlabel": "Services disponibles"
+        }, 
+        "settings": "Réglages", 
+        "shapefile": {
+            "add": "Ajouter", 
+            "cancel": "Annuler", 
+            "defaultStyle": "Style par défaut", 
+            "error": {
+                "genericLoadError": "Impossible de charger le fichier de formes sur la carte", 
+                "missingPrj": "Information de projection manquante (.prj), le système de coordonnées est supposé être EPSG: 4326", 
+                "select": "Sélectionnez le bon fichier. (Shapefiles doivent être contenus dans des archives zip, KML/KMZ e GPX)", 
+                "shapeFileParsingError": "Impossible de charger le fichier de formes. Le fichier pourrait être endommagé ou mal formé"
+            }, 
+            "placeholder": "Déposez vos fichiers ici ou cliquez sur pour sélectionner les fichiers vectoriels à importer. (Shapefiles doivent être contenus dans des archives zip, KML/KMZ e GPX)", 
+            "success": " Import correct", 
+            "title": "Ajouter un fichier fichiers vectoriels", 
+            "tooltip": "Ajouter un fichier fichiers vectoriels à la carte.", 
+            "zoom": "Zoomer sur le fichier shape"
+        }, 
+        "share": {
+            "QRCodeLinkTitle": "qr code", 
+            "apiLinkTitle": "Via le APIs", 
+            "code": "Embed", 
+            "direct": "Link", 
+            "directLinkTitle": "Via un lien direct", 
+            "embeddedLinkTitle": "Via le code intégré", 
+            "forceDrawer": "Afficher la table des matières", 
+            "msgCopiedUrl": "Copié", 
+            "msgToCopyUrl": "Cliquer pour copier", 
+            "sharedTitle": "Regardez ma nouvelle carte: ", 
+            "social": "Social", 
+            "socialIntro": "via votre réseau social favori", 
+            "title": "Partager", 
+            "titlePanel": "Partager la carte"
+        }, 
+        "showMore": "Montre plus...", 
+        "showMousePositionCoordinates": "Montrer/cacher les Coordonnées", 
+        "snapshot": {
+            "date": "Date", 
+            "downloadingSnapshots": "en attente de la génération de l'image", 
+            "googleBingError": "les couches Google et Bing ne sont pas disponibles à la capture d'image pour des raisons de droits.", 
+            "layers": "Couches", 
+            "notsupported": "Capture d'image non supportée", 
+            "save": "Sauver", 
+            "size": "Taille", 
+            "taintedMessage": "La fonctionnalité de sauvegarde est limitée pour les limitations de sécurité du navigateur. Pour un meilleur résultat, cliquez avec le bouton droit de la souris sur l'aperçu et sélectionnez 'Enregistrer l'image sous...' (prise en charge par Firefox et Chrome)", 
+            "title": "Prévisualisation de la capture de la carte", 
+            "tooltip": "Sauver une image de la carte."
+        }, 
+        "styler": {
+            "layerlabel": "Couche", 
+            "paneltitle": "Style de couche", 
+            "tooltip": "Créer et éditer un style de couche"
+        }, 
+        "toc": {
+            "addLayer": "Ajouter la couche", 
+            "backgroundSwitcher": "Fond de plan", 
+            "browseData": "Ouvrir la table d'attribut", 
+            "clearFilter": "Supprimer le filtre", 
+            "createWidget": "Créer un widget pour le calque sélectionné", 
+            "displayLegendAndTools": "Afficher la légende et les outils", 
+            "drawerButton": "Couches", 
+            "editLayerProperties": "Modifier les propriétés de la couche", 
+            "epsgNotSupported": "CRS {epsg} non pris en charge pour le zoom sur la couche", 
+            "filterPlaceholder": "Filtrer les couches", 
+            "grabGroupIcon": "Attraper et déplacer le groupe", 
+            "grabLayerIcon": "Attraper et déplacer la couche", 
+            "layerMetadata": {
+                "abstract": "Résumé", 
+                "creator": "Créateur", 
+                "identifier": "Identifiant", 
+                "layerMetadataPanelTitle": "Métadonnées de couche", 
+                "notification": {
+                    "warnigGetMetadataRecordById": "Erreur dans la recherche de métadonnées"
+                }, 
+                "subject": "Sujet", 
+                "title": "Titre", 
+                "toolLayerMetadataTooltip": "Afficher les métadonnées de la couche sélectionnée", 
+                "type": "Type"
+            }, 
+            "layers": "Couches", 
+            "loadingerror": "La couche n'a pas été chargée correctement", 
+            "measure": "Mesurer", 
+            "noFilteredResults": "Pas de résultats", 
+            "refreshConfirm": "Mettre à jour", 
+            "refreshError": "Erreur lors de la mise à jour des couches: ", 
+            "refreshMessage": "Rechargez la configuration des couches WMS à partir du(s) serveur(s)", 
+            "refreshOptions": {
+                "bbox": "Mettre à jour BBOX", 
+                "dimensions": "Mettre à jour les dimensions", 
+                "search": "Mettre à jour les options de recherche", 
+                "title": "Mettre à jour le titre"
+            }, 
+            "refreshTitle": "Mise à jour des couches", 
+            "removeLayer": "Supprimer la couche", 
+            "statusIconClose": "Ouvrir le groupe de couches", 
+            "statusIconOpen": "Fermer le groupe de couches", 
+            "toggleLayerVisibility": "Activer / désactiver la visibilité du calque", 
+            "toggleLayerVisibilityWarning": "Inverser la visibilité de la couche, attention: la couche ne s'est pas chargée correctement", 
+            "toolDownloadTooltip": "Exporter les données de la couche", 
+            "toolFeaturesGridTooltip": "Ouvrir la table attributaires", 
+            "toolGroupSettingsTooltip": "Réglages du groupe de couches sélectionné", 
+            "toolLayerSettingsTooltip": "Réglages de la couche sélectionnée", 
+            "toolReloadLayerTooltip": "Forcer la recharge de la couche sélectionnée", 
+            "toolReloadLayersTooltip": "Forcer la recharge des couches sélectionnées", 
+            "toolTrashLayerTooltip": "Retirer la couche sélectionnée", 
+            "toolTrashLayersTooltip": "Retirer les couches sélectionnées", 
+            "toolZoomToLayerTooltip": "Zoomer sur l'extension de la couche sélectionnée", 
+            "toolZoomToLayersTooltip": "Zoomer sur l'extension des couches sélectionnées", 
+            "zoomToLayerExtent": "Zoomer sur l'étendue du calque"
+        }, 
+        "tutorial": {
+            "back": "Retour", 
+            "burgerMenu": {
+                "text": "Les outils d'ajout de catalogue externe, de sauvegarde de carte, de choix linguistique et de paramétrage de BruGIS se trouvent ici", 
+                "title": "Menu Options"
+            }, 
+            "cesium": {
+                "leftClick": "Clic gauche + déplacer", 
+                "middleClick": "Clic central + déplacer, ou CTRL + clic Gauche/Droit + déplacer", 
+                "oneDrag": "Déplacer à un doigt", 
+                "pan": "Panner la vue", 
+                "rightClick": "Clic droit + déplacer, ou molette souris", 
+                "rotate": "Tourner la vue", 
+                "tilt": "Incliner la vue", 
+                "title": "Interactions avec la carte", 
+                "twoDragOpposite": "Déplacer à deux doigts, directions opposées", 
+                "twoDragSame": "Déplacer à deux doigts, dans la même direction", 
+                "twoPinch": "Echelle à deux doigts", 
+                "zoom": "Zoomer dans la vue"
+            }, 
+            "cesiumCompass": {
+                "text": "Vous pouvez utiliser la boussole pour vous déplacer sur le globe. Déplacer pour bouger la carte", 
+                "title": "boussole"
+            }, 
+            "cesiumNavigation": {
+                "text": "Vous trouverez ici les boutons de zoom in et zoom out", 
+                "title": "Navigation"
+            }, 
+            "checkbox": "Ne plus me montrer ce message", 
+            "close": "Fermer", 
+            "dashboardAddChart": {
+                "text": "<p> C'est un widget qui affiche et agrège les données dans des graphiques à secteurs, à lignes ou à barres. </p> <p> Étapes: </p> <p> <ul> <li> Sélectionnez une couche vectorielle </li> <li> Sélectionner un type de graphique </li> <li> Configurer des données de graphique </li> <li> Enregistrer et ajouter au tableau de bord </li> </ul> </p>", 
+                "title": "Widget graphique"
+            }, 
+            "dashboardAddCounter": {
+                "text": "<p> Ajoutez un nouveau compteur au tableau de bord. Counter affiche les données d'agrégation de valeurs numériques d'une couche vectorielle sélectionnée. </p> <p> Étapes: </p> <p> <ul> <li> Sélectionnez une couche vectorielle </li> <li> Configurez les données du compteur </li> <li> Enregistrer et ajouter au tableau de bord </li> </ul> </p>", 
+                "title": "Compteur Widget"
+            }, 
+            "dashboardAddMap": {
+                "text": "<p> Ajoutez une nouvelle carte interactive au tableau de bord. Vous pouvez ajouter plusieurs cartes avec la possibilité de leur connecter d'autres widgets. Après avoir enregistré la première carte, le widget légende sera ajouté à la liste. Legend Widget affichera une légende liée à la carte connectée. </p> <p> Étapes: </p> <p> <ul> <li> Sélectionnez une carte </li> <li> Améliorer la carte en ajoutant de nouveaux calques </li> <li> Enregistrer et ajouter au tableau de bord </li> </ul> </p>", 
+                "title": "Widget Carte"
+            }, 
+            "dashboardAddTable": {
+                "text": "<p> Ajoutez une table attributaire au tableau de bord contenant les données d'une couche vectorielle sélectionnée. Vous pouvez également filtrer les données pour personnaliser votre table. </p> <p> Étapes: </p> <p> <ul> <li> Sélectionnez une couche vectorielle </li> <li> Configurer les données de table </li> <li> Enregistrer et ajouter au tableau de bord </li> </ul> </p>", 
+                "title": "Widget de table"
+            }, 
+            "dashboardAddText": {
+                "text": "<p> Ajoutez votre propre texte au tableau de bord. </p> <p> Étapes: </p> <p> <ul> <li> Modifier le texte dans l'éditeur </li> <li> Enregistrer et ajouter au tableau de bord </li> </ul> </p>", 
+                "title": "Widget de texte"
+            }, 
+            "dashboardAddWidget": {
+                "text": "Pour ajouter un widget au tableau de bord, vous pouvez cliquer sur le bouton +", 
+                "title": "Ajouter un widget"
+            }, 
+            "dashboardBuilder": {
+                "text": "Vous pouvez sélectionner le type de widget que vous souhaitez, puis l'ajouter au tableau de bord en sélectionnant l'un des éléments de la liste", 
+                "title": "Créer un nouveau widget"
+            }, 
+            "dashboardContainer": {
+                "text": "<p> Un tableau de bord dans MapStore2 fournit un ensemble d'informations collectées de manière appropriée pour afficher des données agrégées dans une vue en une vue. Les données géospatiales affichées dans une carte peuvent être placées côte à côte avec des tableaux d'attributs, des graphiques et autres, dans le but de connecter différents types d'informations, de montrer des détails statistiques et des descriptions textuelles relatives à un contexte spécifique. </p> <p> Tous les utilisateurs peuvent visualiser et interagir avec les tableaux de bord publiés, mais seuls les utilisateurs autorisés à modifier peuvent ajouter, organiser, redimensionner ou supprimer tous les widgets dans un tableau de bord. </p>", 
+                "title": "Tableau de bord"
+            }, 
+            "dashboardIntro": {
+                "text": "Vue d'ensemble des fonctionnalités du tableau de bord", 
+                "title": "Didacticiel du tableau de bord"
+            }, 
+            "dashboardNav": {
+                "text": "Ici vous pouvez trouver le sélecteur de langue, le login, le lien de page d'accueil et le menu d'options", 
+                "title": "Barre de navigation"
+            }, 
+            "drawerMenu": {
+                "text": "Le catalogue des données ainsi que la légende de la carte se trouvent ici", 
+                "title": "Menu Principal"
+            }, 
+            "error": "Erreur: ressource non trouvée", 
+            "examples": {
+                "text": "Utilisez les composants et outils de MapStore2 pour construire votre application personnalisée", 
+                "title": "Application sur mesure"
+            }, 
+            "fullscreen": {
+                "text": "Basculer en plein écran", 
+                "title": "Basculer en plein écran"
+            }, 
+            "home": {
+                "text": "Cliquer pour retourner à la page de démarrage", 
+                "title": "Page de démarrage"
+            }, 
+            "identifyButton": {
+                "text": "Cliquez le bouton pour activer l'outil, cliquez ensuite dans la carte pour obtenir plus d'information", 
+                "title": "Info"
+            }, 
+            "intro": {
+                "text": "Environnement de développement d'applications cartographiques en ligne utilisant des librairies cartographiques standards, telles qu'OpenLayers 3 et Leaflet.", 
+                "title": "Bienvenue dans MapStore2"
+            }, 
+            "introCesium": {
+                "text": "Cliquez le bouton suivant pour démarrer le tutoriel", 
+                "title": "Instructions carte 3D"
+            }, 
+            "last": "Terminer", 
+            "mapType": {
+                "text": "Choisissez Leaflet ou OpenLayers pour afficher vos cartes", 
+                "title": "Librairie"
+            }, 
+            "mapsGrid": {
+                "text": "Quelques exemples de MapStore2. Cliquez sur une image pour lancer la démo.", 
+                "title": "Cartes"
+            }, 
+            "next": "Suivant", 
+            "searchBar": {
+                "text": "Tapez l'adresse recherchée, par ex. Rue du progrès 80; vous pouvez aussi entrer des coordonnées au format 43.87,10.20", 
+                "title": "Recherche d'adresse"
+            }, 
+            "searchButton": {
+                "text": "Tapez l'adresse recherchée, par ex. Rue du progrès 80; vous pouvez aussi entrer des coordonnées au format 43.87,10.20", 
+                "title": "Recherche d'adresse"
+            }, 
+            "skip": "Passer", 
+            "start": "Commencer", 
+            "title": "Tutoriel", 
+            "zoomInButton": {
+                "text": "Cliquez pour aggrandir la carte", 
+                "title": "Zoom In"
+            }, 
+            "zoomOutButton": {
+                "text": "Cliquez pour diminuer la carte", 
+                "title": "Zoom Out"
+            }
+        }, 
+        "uploader": {
+            "beforeUpload": "Réalisation de pré-envoi en cours... ", 
+            "dropfile": "Déposer ici les fichiers à envoyer", 
+            "dropfileImport": "Déposer ici les fichiers à ajouter au traitement", 
+            "filename": "Nom du fichier", 
+            "filesize": "Taille", 
+            "lastModified": "Date de dernière modification", 
+            "type": "Type", 
+            "uploadingFiles": "Envoi des fichiers..."
+        }, 
+        "user": {
+            "changePwd": "Changer le mot de passe", 
+            "details": "Détails de l'utilisateur", 
+            "detailsCompany": "Compagnie", 
+            "detailsEmail": "E-mail", 
+            "detailsGroups": "Groupes", 
+            "detailsName": "Nom", 
+            "detailsNotes": "Remarques", 
+            "detailsRole": "Rôle", 
+            "info": "Informations du compte", 
+            "login": "Login", 
+            "loginFail": "Erreur d'authentification", 
+            "loginFailedStatusMessages": {
+                "usernamePwdIncorrect": "Nom d'utilisateur ou mot de passe incorrect", 
+                "usernamePwdInsert": "Merci d'entrer vos nom d'utilisateur et mot de passe"
+            }, 
+            "logout": "Logout", 
+            "newPwd": "Nouveau mot de passe", 
+            "noAttributesMessage": "Il n'y a pas d'informations relatives à votre compte", 
+            "password": "Mot de passe", 
+            "passwordChanged": "Mot de passe changé", 
+            "passwordCheckFail": "Les deux mots de passe ne correspondent pas!", 
+            "passwordError": "Erreur de changement de mot de passe", 
+            "passwordInvalid": "Mot de passe incorrect", 
+            "passwordMinlenght": "Votre mot de passe doit être d'au moins {minSize} caractères", 
+            "retypePwd": "Confirmer le mot de passe", 
+            "signIn": "S'authentifier", 
+            "username": "Nom d'utilisateur"
+        }, 
+        "usergroups": {
+            "addMember": "Ajouter un membre:", 
+            "confirmDeleteGroup": "Voulez-vous vraiment supprimer ce groupe?", 
+            "createGroup": "Créer", 
+            "creatingGroup": "Création...", 
+            "deleteGroup": "Supprimer", 
+            "descLimit": "La description est limité à 255 caractères.", 
+            "description": "Description:", 
+            "editGroup": "Modifier", 
+            "errorDelete": "Une erreur s'est produite lors de la suppression de ce groupe", 
+            "errorSaving": "Une erreur s'est produite lors de l'enregistrement de ce groupe", 
+            "groupDescription": "Description", 
+            "groupMembers": "Membres:", 
+            "groupName": "Nom de groupe", 
+            "groups": "Groupes", 
+            "manageGroups": "Gérer les groupes", 
+            "nameLimit": "Le nom est limité à 255 caractères.", 
+            "newGroup": "Nouveau groupe", 
+            "noDescriptionAvailable": "(Pas de description)", 
+            "noUsers": "Aucun utilisateur pour ce groupe", 
+            "removeUser": "supprimer l'utilisateur", 
+            "saveGroup": "Sauver", 
+            "searchGroups": "rechercher des groupes..."
+        }, 
+        "users": {
+            "confirmDeleteUser": "Êtes-vous sûr de vouloir supprimer cet utilisateur?", 
+            "createUser": "Créer", 
+            "creatingUser": "Création...", 
+            "delete": "Effacer", 
+            "deleteUser": "Supprimer", 
+            "deleting": "Suppression...", 
+            "editUser": "Modifier", 
+            "enabled": "Activée", 
+            "errorDelete": "Il y avait une erreur de supprimer cet utilisateur:", 
+            "errorSaving": "Il y avait une sauver l'erreur utilisateur:", 
+            "groupTitle": "Groupes:", 
+            "manageUsers": "Gérer les utilisateurs", 
+            "newUser": "Nouvel", 
+            "roleTitle": "Rôle", 
+            "saveUser": "Sauver", 
+            "savingUser": "sauvetage...", 
+            "searchUsers": "rechercher des utilisateurs ...", 
+            "selectedGroups": "CERTAINS GROUPES", 
+            "statusTitle": "Statut", 
+            "title": "Gérer les comptes", 
+            "userCreated": "Créé!", 
+            "userSaved": "Sauvé!", 
+            "users": "Utilisateurs"
+        }, 
+        "vectorstyler": {
+            "addrulebtn": "Ajouter une règle", 
+            "applybtn": "Appliquer le style", 
+            "conditiontitle": "Conditions", 
+            "labeltitle": "Label", 
+            "layerlabel": "Couche", 
+            "namelabel": "Nom de règle", 
+            "paneltitle": "Style de couche", 
+            "removerulebtn": "Retirer une règle", 
+            "rulelabel": "Règles", 
+            "symboltitle": "Symbole", 
+            "tooltip": "Créer et éditer un style de couche vectorielle"
+        }, 
+        "version": {
+            "label": "Version"
+        }, 
+        "warning": "Attention", 
+        "wfsdownload": {
+            "downloadonlycurrentpage": "Télécharger uniquement la page actuelle", 
+            "error": {
+                "invalidOutputFormat": "Le format d'exportation sélectionné n'est pas disponible", 
+                "title": "Erreur lors de l'exportation"
+            }, 
+            "export": "Exportations", 
+            "format": "Format de fichier", 
+            "srs": "Système de référence spatiale", 
+            "title": "Exporter des données"
+        }, 
+        "widgets": {
+            "aggregateFunction": {
+                "bar": "Opération", 
+                "counter": "Opération", 
+                "default": "Opération", 
+                "gauge": "Opération", 
+                "line": "Opération", 
+                "pie": "Opération"
+            }, 
+            "aggregationAttribute": {
+                "bar": "Attributs Y", 
+                "counter": "Valeur", 
+                "default": "Valeur", 
+                "gauge": "Valeur", 
+                "line": "Attributs Y", 
+                "pie": "Valeur"
+            }, 
+            "builder": {
+                "errors": {
+                    "checkAtLeastOneAttribute": "Vous devez sélectionner au moins une colonne", 
+                    "noAttributesDescription": "La couche sélectionnée n'a aucun attribut à afficher. Veuillez sélectionner un autre type ou couche de widget", 
+                    "noAttributesTitle": "Aucun attribut à afficher", 
+                    "noMapAvailableForLegend": "Aucune carte disponible", 
+                    "noMapAvailableForLegendDescription": "Vous avez besoin d'au moins un widget de carte pour créer la légende", 
+                    "noWidgetsAvailableDescription": "<p> <strong> Veuillez essayer de sélectionner un autre type de couche ou de widget </strong> </p> <p> Le serveur ne fournit pas les services requis pour la couche et le type de widget sélectionné </p> <p> Les causes possibles sont: <ul> <li> Le calque sélectionné est une couche raster </li> <li> Le service WFS n'est pas disponible </li> <li> Le processus WPS <code> gs:aggregate </code> n'est pas disponible </li> </ul> </p> ", 
+                    "noWidgetsAvailableTitle": "Impossible de créer le widget pour le calque sélectionné"
+                }, 
+                "header": {
+                    "title": "Widget"
+                }, 
+                "setupFilter": "Configurer un filtre pour les données du widget", 
+                "wizard": {
+                    "addLayer": "Ajouter une couche à la carte", 
+                    "addTheWidget": "Ajouter le widget", 
+                    "backToChartOptions": "retour aux options de graphique", 
+                    "backToFeatureGrid": "Retour à la grille des fonctionnalités", 
+                    "backToLayerSelection": "Retour à la sélection du calque", 
+                    "backToMapSelection": "Retour à la sélection de la carte", 
+                    "backToPreview": "Retour à l'aperçu", 
+                    "backToTableOptions": "Retour à l'option de table", 
+                    "backToTypeSelection": "Retour à la sélection du type", 
+                    "backToWidgetTypeSelection": "Retour à la sélection du type de widget", 
+                    "clearConnection": "Effacer la connexion", 
+                    "configureChartOptions": "Configurer les options de graphique", 
+                    "configureMapOptions": "Configurer les options de la carte", 
+                    "configureTableOptions": "Configurer les options de table", 
+                    "configureWidgetOptions": "Configurer les options du widget", 
+                    "connectToAMap": "Se connecter à une carte", 
+                    "connectToTheMap": "Se connecter à la carte", 
+                    "preview": "Aperçu", 
+                    "resetColumnsSizes": "Réinitialiser toutes les modifications aux tailles de colonnes", 
+                    "selectALayer": "Sélectionner une couche", 
+                    "selectAMap": "Sélectionnez une carte", 
+                    "selectMapToConnect": "Sélectionnez la carte à connecter", 
+                    "textPlaceholder": "Entrez le texte...", 
+                    "titlePlaceholder": "Entrez le titre...", 
+                    "updateWidget": "Mettre à jour le widget", 
+                    "useTheSelectedLayer": "Utiliser le calque sélectionné", 
+                    "useThisMap": "Utiliser cette carte"
+                }
+            }, 
+            "chartOptionsTitle": "Configurer les données", 
+            "chartType": {
+                "bar": {
+                    "caption": "barres", 
+                    "description": "Créer un graphique à barres à ajouter à la carte", 
+                    "title": "Diagramme à barres"
+                }, 
+                "gauge": {
+                    "caption": "jauge", 
+                    "description": "Créer un graphique de jauge à ajouter à la carte", 
+                    "title": "Tableau de jauge"
+                }, 
+                "line": {
+                    "caption": "linéaire", 
+                    "description": "Créer un graphique linéaire à ajouter à la carte", 
+                    "title": "Graphique linéaire"
+                }, 
+                "pie": {
+                    "caption": "secteurs", 
+                    "description": "Créer un graphique à secteurs à ajouter à la carte", 
+                    "title": "Diagramme à secteurs"
+                }
+            }, 
+            "colorRamp": {
+                "bar": "Couleur", 
+                "counter": "Couleur", 
+                "default": "Couleur", 
+                "gauge": "Couleur", 
+                "line": "Couleur", 
+                "pie": "Rampe de couleur"
+            }, 
+            "description": "Description", 
+            "displayLegend": {
+                "bar": "Légende d'affichage", 
+                "gauge": "Afficher les étiquettes", 
+                "line": "Légende d'affichage", 
+                "pie": "Légende d'affichage"
+            }, 
+            "errors": {
+                "genericError": "Il y a une erreur lors de la récupération des données", 
+                "noLegend": "Aucun élément de légende à afficher", 
+                "noLegendDescription": "La carte connectée n'a aucune couche à afficher dans la légende", 
+                "nodata": "Aucune donnée disponible pour la couche / filtre sélectionné", 
+                "nodatainviewport": "Aucune donnée dans la fenêtre courante", 
+                "notext": "Aucun texte disponible", 
+                "timeoutExpired": "Le service a pris trop de temps pour répondre. Peut-être que la requête est trop complexe ou que le serveur est occupé"
+            }, 
+            "groupByAttributes": {
+                "bar": "Attributs X", 
+                "counter": "Grouper par", 
+                "default": "Grouper par", 
+                "gauge": "Grouper par", 
+                "line": "Attributs X", 
+                "pie": "Grouper par"
+            }, 
+            "mapSync": "Live Filter par viewport", 
+            "selectChartType": {
+                "title": "Sélectionnez le type de widget"
+            }, 
+            "selectMap": {
+                "TOC": {
+                    "noLayerDescription": "Il n'y a pas de couches dans la carte. Si vous voulez ajouter une couche à partir du catalogue, cliquez sur le bouton '+' dans la barre d'outils", 
+                    "noLayerTitle": "Pas de couches"
+                }, 
+                "emptyMap": {
+                    "description": "Démarrer à partir d'une carte vide", 
+                    "title": "Carte vide"
+                }
+            }, 
+            "selectWidgetType": "Sélectionnez le type de widget", 
+            "title": "Titre", 
+            "types": {
+                "chart": {
+                    "caption": "ajouter un graphique", 
+                    "title": "Graphique"
+                }, 
+                "counter": {
+                    "caption": "ajouter un compteur", 
+                    "title": "Compteur"
+                }, 
+                "legend": {
+                    "caption": "ajouter une légende", 
+                    "title": "Légende"
+                }, 
+                "map": {
+                    "caption": "ajouter une carte", 
+                    "title": "Carte"
+                }, 
+                "table": {
+                    "caption": "ajouter une table", 
+                    "title": "Table"
+                }, 
+                "text": {
+                    "caption": "ajouter une zone de texte", 
+                    "title": "Texte"
+                }
+            }, 
+            "uom": {
+                "bar": "Unité de mesure", 
+                "counter": "Unité de mesure", 
+                "default": "Unité de mesure", 
+                "gauge": "Unité de mesure", 
+                "line": "Unité de mesure", 
+                "pie": "Unité de mesure"
+            }, 
+            "widget": {
+                "menu": {
+                    "confirmDelete": "Êtes-vous sûr?", 
+                    "delete": "effacer", 
+                    "downloadData": "Télécharger les données", 
+                    "edit": "éditer", 
+                    "exportImage": "Exporter l'image", 
+                    "showChartData": "Afficher les données de graphique"
+                }
+            }, 
+            "widgetOptionsTitle": "Configurer les informations du widget"
+        }, 
+        "wizard": {
+            "finish": "Finition", 
+            "next": "Suivant", 
+            "prev": "Précédent"
+        }, 
+        "yes": "Oui", 
+        "zoombuttons": {
+            "zoomAllTooltip": "Ajuster à l'extension des données", 
+            "zoomInTooltip": "Agrandir", 
+            "zoomOutTooltip": "Diminuer"
+        }
+    }
+}
