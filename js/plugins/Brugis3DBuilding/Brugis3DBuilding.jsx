@@ -82,45 +82,48 @@ const Brugis3DBuilding = React.createClass({
         );
     },
     renderContent() {
-        return this.props.asPanel ? (
-            <Panel
-                defaultExpanded="true"
-                collapsible={this.props.collapsible}
-                id="mapstore-brugis3dbuilding"
-                style={this.props.style}
-                className={this.props.panelClassName}>
-                <div className={this.props.headerClassName ? this.props.headerClassName : "panel-heading"}>
-                    {this.renderHeader()}
-                </div>
-                <div role="body">
-                  <div ref={ (ctn) => {this.ctn = ctn; }} style={{
-                      height: '450px',
-                      backgroundColor: '#eeeeee'
-                    }}>
-                        <CesiumMap/>
-                  </div>
-                </div>
-            </Panel>
-        ) : (
-            <Dialog id="mapstore-brugis3dbuilding"
-                style={this.props.style}
-                className={this.props.panelClassName}
-                headerClassName={this.props.headerClassName}
-                bodyClassName={this.props.bodyClassName}
-                >
-                <div role="header" >
-                  {this.renderHeader()}
-                </div>
-                <div role="body">
-                  <div ref={ (ctn) => {this.ctn = ctn; }} style={{
-                      height: '450px',
-                      backgroundColor: '#eeeeee'
-                    }}>
-                         <CesiumMap />
-                  </div>
-                </div>
-            </Dialog>
-        );
+        if(this.props.map) {
+            var bbox = this.props.map.bbox.bounds;
+            return this.props.asPanel ? (
+                <Panel
+                    defaultExpanded="true"
+                    collapsible={this.props.collapsible}
+                    id="mapstore-brugis3dbuilding"
+                    style={this.props.style}
+                    className={this.props.panelClassName}>
+                    <div className={this.props.headerClassName ? this.props.headerClassName : "panel-heading"}>
+                        {this.renderHeader()}
+                    </div>
+                    <div role="body">
+                      <div ref={ (ctn) => {this.ctn = ctn; }} style={{
+                          height: '450px',
+                          backgroundColor: '#eeeeee'
+                        }}>
+                            <CesiumMap bbox={bbox}/>
+                      </div>
+                    </div>
+                </Panel>
+            ) : (
+                <Dialog id="mapstore-brugis3dbuilding"
+                    style={this.props.style}
+                    className={this.props.panelClassName}
+                    headerClassName={this.props.headerClassName}
+                    bodyClassName={this.props.bodyClassName}
+                    >
+                    <div role="header" >
+                      {this.renderHeader()}
+                    </div>
+                    <div role="body">
+                      <div ref={ (ctn) => {this.ctn = ctn; }} style={{
+                          height: '450px',
+                          backgroundColor: '#eeeeee'
+                        }}>
+                             <CesiumMap bbox={bbox}/>
+                      </div>
+                    </div>
+                </Dialog>
+            );
+        }
     },
 
     render() {
