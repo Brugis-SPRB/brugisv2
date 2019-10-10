@@ -1,0 +1,168 @@
+{
+    "messages": {
+        "Area": "Area", 
+        "BruGISTeam": "BruGISTeam", 
+        "Brugis3DBuilding": {
+            "title_panel": "3D view tool", 
+            "tooltip": "Open the 3d view tool"
+        }, 
+        "Centroid": "Centroid", 
+        "Layers": "Layers", 
+        "Legend": "Legend", 
+        "best-effort": "Indicative map - Done by ", 
+        "brugisInfo": {
+            "contact_message": "Message", 
+            "contact_message_placeholder": "Message content", 
+            "contact_send": "Send", 
+            "contact_subject": "Topic", 
+            "contact_subject_placeholder": "Message topic", 
+            "contact_urgent": "Urgent", 
+            "main_contact": "Contact", 
+            "main_contact_tooltip": "To Contact", 
+            "main_go_back_to_brugis": "Back to BruGIS", 
+            "main_go_back_to_top_tooltip": "Back to top", 
+            "main_news": "News", 
+            "main_news_tooltip": "To the News", 
+            "main_webservices": "Webservices", 
+            "main_webservices_tooltip": "To webservices", 
+            "show_archives": "Show archives", 
+            "show_news": "Show news", 
+            "webservice_api_text_1": "The REST Urbanalysis webservice can be integrated into a website or a third-party software so as to obtain a complete urbanalysis reportfor any place inside the Brussels Region area. This webservice is asynchronous, hence allowing you to post a request, obtain an ID, and with this one to monitor the status of your request and download the results, as a docx of pdf document, or either as an xml file, for direct integration of these into your software or website.", 
+            "webservice_api_text_2": "For further explanations on how to integrate and exploit this webservice, please contact us through this ", 
+            "webservice_api_text_3": "form", 
+            "webservice_api_text_4": " hereunder to obtain all the help needed.", 
+            "webservice_api_title": "API - Urbanalysis service", 
+            "webservice_else_text_1": "BruGISTeam is ready to offer you support and help on your geomatic and mapping needs.", 
+            "webservice_else_text_2": "Please contact us with this ", 
+            "webservice_else_text_3": "form", 
+            "webservice_else_text_4": " Here under for all your requests.", 
+            "webservice_else_title": "Other BruGIS services", 
+            "webservice_github_text_1": "All developments done by BruGIS are available on ", 
+            "webservice_github_text_2": "GitHub", 
+            "webservice_github_title": "GitHub - Brugis opensource code service", 
+            "webservice_inspire_text_1": "BruGIS publish a part of its catalog under the Inspire recomendation, following the European directive. You'll find these data ", 
+            "webservice_inspire_text_2": "here", 
+            "webservice_inspire_title": "INSPIRE - Visualisation, download and metadata service (compliant with the Inspire European directive)", 
+            "webservice_title": "Webservices", 
+            "webservice_wfs_example_1": "BruGIS WFS url: ", 
+            "webservice_wfs_example_2": "Getting the catalog: ", 
+            "webservice_wfs_example_3": "Example of entire layer download in GML: ", 
+            "webservice_wfs_example_4": "Example of retrieving a feature: ", 
+            "webservice_wfs_text": "This WFS webservice lets you visualise data without any symbology applied to it, but it offers you access to raw vector data too. This can be used as a a normal WMS webservice, by visualising and interrogating attributes data. It can also be used as a data source in a GIS, such as QGIS, to use them for further analysis. A WFS webservice offers you also the ability to download data under several formats (gml, shapefile, ...).", 
+            "webservice_wfs_title": "WFS - Visualisation/download vector service (read only)", 
+            "webservice_wms_example_1": "BruGIS WMS url: ", 
+            "webservice_wms_example_2": "Getting the catalog: ", 
+            "webservice_wms_example_3": "Example of layer visualisation: ", 
+            "webservice_wms_example_4": "Example of feature interrogation: ", 
+            "webservice_wms_text": "The WMS webservice is to be used in any webGIS of GIS software such as QGIS, to visualize our data with their original symbology, and to conduct feature information interrogation on encountered object.", 
+            "webservice_wms_title": "WMS - Visualisation service"
+        }, 
+        "brugisSurvey": {
+            "address": "Address", 
+            "address_entry": "Enter file address", 
+            "available": "Available", 
+            "created": "Created", 
+            "docx": "Docx", 
+            "draw": "Draw a surface", 
+            "error": {
+                "area_too_big": "he area drawn is too big, urbanalysis impossible.", 
+                "missing_geometry": "Please select at least one parcel or draw a polygon.", 
+                "self_intersect": "The drawn polygon is self-crossing, please redraw it."
+            }, 
+            "file": "File", 
+            "file_entry": "Enter File reference", 
+            "first": "First", 
+            "footprint": "Footprint", 
+            "glue": "fuse two surfaces", 
+            "last": "Last", 
+            "next": "Next", 
+            "pdf": "PDF", 
+            "prev": "Prev.", 
+            "select": "Select a parcel", 
+            "send": "Send", 
+            "status": "Status", 
+            "suppress": "Delete surface", 
+            "title_list": "List of your urbanalysis", 
+            "title_new": "Create an Urbanalysis", 
+            "title_panel": "Urbanalysis", 
+            "tooltip": "Urbanalysis tool", 
+            "type": "Type", 
+            "type_entry_default": "Urbanalysis type"
+        }, 
+        "catalog": {
+            "catalogUrlPlaceholder": "Enter catalog URL..."
+        }, 
+        "drawLocal": {
+            "draw": {
+                "handlers": {
+                    "polygon": {
+                        "error": "Error: The polygon limit cannot cross itself!"
+                    }
+                }
+            }
+        }, 
+        "featuregrid": {
+            "toolbar": {
+                "drawFeature": "drawing features"
+            }
+        }, 
+        "helptexts": {
+            "Brugis3DBuildingButton": "This is the helptext for the Brugis3DBuildingButton", 
+            "streetviewButton": "This is the helptext for the streetviewButton"
+        }, 
+        "localmaps": {
+            "close": "Ok", 
+            "delete": "Delete", 
+            "export": "Export", 
+            "import": "Import", 
+            "load": "Load", 
+            "save": "Save", 
+            "save_or_load_title": "My maps"
+        }, 
+        "streetview": {
+            "title_panel": "Google Streetview tool", 
+            "tooltip": "Get a Google streetview on map"
+        }, 
+        "toc": {
+            "searchFeatures": "Searching into layer ..."
+        }, 
+        "tutorial": {
+            "BackgroundSelector": {
+                "text": "Select the background here", 
+                "title": "Background selector"
+            }, 
+            "BrugisSurvey": {
+                "text": "Select a parcel or draw an area and get a complete urban report for that area", 
+                "title": "Urbanalysis"
+            }, 
+            "brugis3dBuildingButton": {
+                "text": "Use this tool to measure areas on buildings, such as roofs or faces", 
+                "title": "3d measuring tool"
+            }, 
+            "brugisHomeButton": {
+                "text": "Discover here the news for BruGIS, find out more about the webservices BruGIS has to offer and contact us if needed", 
+                "title": "BruGIS News and services"
+            }, 
+            "brugisIntro": {
+                "text": "framework to build web mapping applications using standard mapping libraries, such as OpenLayers 3 and Leaflet.", 
+                "title": "Welcome on BruGIS"
+            }, 
+            "brugisSurvey": {
+                "text": "Select or draw an area and obtain a complete urbanalysis report for it", 
+                "title": "Urbanalysis"
+            }, 
+            "measureAreaBrugisButton": {
+                "text": "Use this tool to measure areas", 
+                "title": "Measure of area"
+            }, 
+            "measureLengthBrugisButton": {
+                "text": "Use this tool to measure lengths", 
+                "title": "Measure of Length"
+            }, 
+            "streetViewButton": {
+                "text": "Press the button to activate the tool, then click on the map to obtain a google Streetview image", 
+                "title": "Google Streetview"
+            }
+        }
+    }
+}

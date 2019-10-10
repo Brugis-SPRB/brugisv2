@@ -1,0 +1,164 @@
+{
+    "messages": {
+        "Area": "Surface", 
+        "BruGISTeam": "BruGISTeam", 
+        "Brugis3DBuilding": {
+            "title_panel": "Outil de vue en 3d", 
+            "tooltip": "Ouvrir l'outil de vue en 3d"
+        }, 
+        "Centroid": "Centroïde", 
+        "Layers": "Couches", 
+        "Legend": "Légende", 
+        "best-effort": "Carte indicative - Réalisé par ", 
+        "brugisInfo": {
+            "contact_message": "Message", 
+            "contact_message_placeholder": "Contenu", 
+            "contact_send": "Envoyer", 
+            "contact_subject": "Sujet", 
+            "contact_subject_placeholder": "Sujet", 
+            "contact_urgent": "Urgent", 
+            "main_contact": "Contact", 
+            "main_contact_tooltip": "Vers Contact", 
+            "main_go_back_to_brugis": "Retour vers BruGIS", 
+            "main_go_back_to_top_tooltip": "Retour au haut de page", 
+            "main_news": "Nouveautés", 
+            "main_news_tooltip": "Vers les nouveautés", 
+            "main_webservices": "Services Web", 
+            "main_webservices_tooltip": "Vers les services web", 
+            "show_archives": "Anciennes", 
+            "show_news": "Actuelles", 
+            "webservice_api_text_1": "Le service web d'urbanalyse de type REST peut être intégré dans un site web ou un logiciel tiers afin d'obtenir un rapport urbanistique complet d'une situation sur le territoire de la région bruxelloise. Ce service web est asynchrone et permet donc de poster une requête d'urbanalyse, d'obtenir un identifiant unique; à l'aide de celui-ci de s'enquérir de l'état de la requête soumise, et enfin d'en obtenir le résultat aux formats docx ou pdf pour une visualisation directe, ou xml pour une intégration des résultats dans une plateforme tierce.", 
+            "webservice_api_text_2": "Pour l'exploitation et l'intégration de ce service web dans votre solution, merci de nous contacter via le ", 
+            "webservice_api_text_3": "formulaire", 
+            "webservice_api_text_4": " ci-dessous pour obtenir toute l'aide nécessaire.", 
+            "webservice_api_title": "API - Services d'urbanalyse", 
+            "webservice_else_text_1": "La cellule BruGIS se tient à votre disposition pour tout conseil en matière de cartographie et de géomatique.", 
+            "webservice_else_text_2": "Veuillez nous contacter via le ", 
+            "webservice_else_text_3": "formulaire", 
+            "webservice_else_text_4": " ci-dessous pour toutes vos questions.", 
+            "webservice_else_title": "Autres services BruGIS", 
+            "webservice_github_text_1": "Les développements réalisés par BruGIS sont tous disponibles en open source via la plateforme ", 
+            "webservice_github_text_2": "GitHub", 
+            "webservice_github_title": "GitHub - Service de partage du code source de BruGIS", 
+            "webservice_inspire_text_1": "BruGIS publie en conformité avec la directive européenne Inspire une partie de son catalogue. Vous trouverez ces données ", 
+            "webservice_inspire_text_2": "ici", 
+            "webservice_inspire_title": "INSPIRE - Services de visualisation, téléchargement et métadonnées conforme à la directive européenne", 
+            "webservice_title": "Services web", 
+            "webservice_wfs_example_1": "Adresse du WFS BruGIS: ", 
+            "webservice_wfs_example_2": "Exemple d'obtention de notre catalogue: ", 
+            "webservice_wfs_example_3": "Exemple de téléchargement d'une couche complète en GML: ", 
+            "webservice_wfs_example_4": "Exemple d'obtention d'un objet dans une zone donnée: ", 
+            "webservice_wfs_text": "Ce service WFS permet non seulement d'afficher nos données sans mise en forme, mais aussi d'en obtenir le tracé vectoriel. Celui-ci peut-être utilisé à l'instar du service WMS dans une application webGIS pour y visualiser nos données et interroger le contenu alphanumérique de nos objets. Il peut aussi être ajouté comme source de données dans un GIS classique de bureau tel qGIS. Il permet outre la visualisation des données, leur exploitation vectorielle à des fins d'analyse ou de manipulation. Ce service WFS permet d'obtenir nos données sous différents formats géomatiques classiques, tels que shapefile ou GML entre autres.", 
+            "webservice_wfs_title": "WFS - Services de téléchargement/visualisation vectoriel en lecture seule", 
+            "webservice_wms_example_1": "Adresse du WMS BruGIS: ", 
+            "webservice_wms_example_2": "Exemple d'obtention de notre catalogue: ", 
+            "webservice_wms_example_3": "Exemple de visualisation d'une couche: ", 
+            "webservice_wms_example_4": "Exemple d'interrogation d'un objet: ", 
+            "webservice_wms_text": "Ce service web peut-être utilisé dans une application webGIS pour y visualiser nos données et interroger le contenu alphanumérique de nos objets. Il peut aussi être ajouté comme source de données dans un GIS classique de bureau tel qGIS.", 
+            "webservice_wms_title": "WMS - Services de visualisation"
+        }, 
+        "brugisSurvey": {
+            "address": "Adresse", 
+            "address_entry": "Encoder l'adresse", 
+            "available": "Disponible jusque", 
+            "created": "Créé le", 
+            "docx": "Docx", 
+            "draw": "Dessiner une surface", 
+            "error": {
+                "area_too_big": "La surface dessinée est trop grande, repérage impossible.", 
+                "missing_geometry": "Veuillez d'abord sélectionner au moins une parcelle ou dessiner un polygone.", 
+                "self_intersect": "Le polygone dessiné se croise lui-même, veuillez le redessiner."
+            }, 
+            "file": "Dossier", 
+            "file_entry": "Encoder la référence dossier", 
+            "first": "Début", 
+            "footprint": "Empreinte", 
+            "glue": "fusionner deux dessins", 
+            "last": "fin", 
+            "next": "suiv.", 
+            "pdf": "PDF", 
+            "prev": "préc.", 
+            "select": "Sélectionner une parcelle", 
+            "send": "Envoyer", 
+            "status": "Statut", 
+            "suppress": "Supprimer le dessin", 
+            "title_list": "Liste de vos urbanalyses", 
+            "title_new": "Nouvelle urbanalyse", 
+            "title_panel": "Urbanalyse", 
+            "tooltip": "Outil d'urbanalyse", 
+            "type": "Type", 
+            "type_entry_default": "Selectionner un type d'urbanalyse"
+        }, 
+        "catalog": {
+            "catalogUrlPlaceholder": "Entrez catalogue URL..."
+        }, 
+        "drawLocal": {
+            "draw": {
+                "handlers": {
+                    "polygon": {
+                        "error": "Erreur: les bords de la forme ne peuvent se croiser!"
+                    }
+                }
+            }
+        }, 
+        "featuregrid": {
+            "toolbar": {
+                "drawFeature": "Élément de dessin"
+            }
+        }, 
+        "helptexts": {
+            "Brugis3DBuildingButton": "This is the helptext for the streetviewButton", 
+            "streetviewButton": "This is the helptext for the streetviewButton"
+        }, 
+        "localmaps": {
+            "close": "Ok", 
+            "delete": "Effacer", 
+            "export": "Exporter", 
+            "import": "Importer", 
+            "load": "Charger", 
+            "save": "Sauver", 
+            "save_or_load_title": "Mes cartes"
+        }, 
+        "streetview": {
+            "title_panel": "Outil Google Streetview", 
+            "tooltip": "Obtenez Google streetview sur la carte"
+        }, 
+        "toc": {
+            "searchFeatures": "Recherche sur ce calque ..."
+        }, 
+        "tutorial": {
+            "BackgroundSelector": {
+                "text": "Choisissez votre fond de plan ici", 
+                "title": "Fonds de plan"
+            }, 
+            "brugis3dBuildingButton": {
+                "text": "Utilisez cet outil pour mesurer des surfaces d'un bâtiment, telles façades ou toitures", 
+                "title": "Outil de mesure 3D"
+            }, 
+            "brugisHomeButton": {
+                "text": "Découvrez ici les nouveautés de BruGIS, les webservices offerts par BruGIS et contactez-nous au besoin", 
+                "title": "Services BruGIS"
+            }, 
+            "brugisIntro": {
+                "text": "Environnement de développement d'applications cartographiques en ligne utilisant des librairies cartographiques standards, telles qu'OpenLayers 3 et Leaflet.", 
+                "title": "Bienvenue dans BruGIS"
+            }, 
+            "brugisSurvey": {
+                "text": "Sélectionnez ou dessinez une zone et obtenez un rapport urbanistique complet pour celle-ci", 
+                "title": "Urbanalyse"
+            }, 
+            "measureAreaBrugisButton": {
+                "text": "Utilisez cet outil pour mesurer des surfaces", 
+                "title": "Mesure de surface"
+            }, 
+            "measureLengthBrugisButton": {
+                "text": "Utilisez cet outil pour mesurer des distances", 
+                "title": "Mesure de longueur"
+            }, 
+            "streetViewButton": {
+                "text": "Cliquez le bouton pour activer l'outil, cliquez ensuite dans la carte pour obtenir une vue Streetview", 
+                "title": "Google Streetview"
+            }
+        }
+    }
+}
