@@ -33,8 +33,8 @@ class CesiumMap extends React.Component {
         onClick: () => {},
         onCreationError: () => {},
         center: {
-            x: 0,
-            y: 0,
+            x: 4,
+            y: 50,
             crs: "EPSG:3857"
         },
         projection: "EPSG:3857",
@@ -48,7 +48,8 @@ class CesiumMap extends React.Component {
                 pitch: -1 * Math.PI / 2,
                 roll: 0
             }
-        }
+        },
+        zoom: 10
     };
 
     state = { };
@@ -64,6 +65,25 @@ class CesiumMap extends React.Component {
     }
 
     componentDidMount() {
+        //https://urbisonline.brussels/rest/assets
+
+        //Cesium.Ion.defaultAccessToken = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiI3YzU2MjVmZS0xOGNlLTRjNjgtYWVlZS1iZGQ0NTJjZTY0ZDciLCJpZCI6MTYyOTEsInNjb3BlcyI6WyJhc3IiXSwiaWF0IjoxNTcwMDkzNDA3fQ.rXc6XVfdMgx829kf4Dialf0-6wtiwoTL4fhpq792y0Y';
+        Cesium.Ion.defaultAccessToken = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiI5MDUzZDE0YS0zMjY3LTRlMmMtYWI3Ny05Zjg0YzYyYzExYWUiLCJpZCI6MjEsImlhdCI6MTUzNzc4MTUwMn0.aVOizwYTIKqU8BhxKoSr8gyrorGtDgYnHSQuVOtmgw8';
+        
+        this.terrainProvider = new Cesium.CesiumTerrainProvider({
+            url: Cesium.IonResource.fromAssetId(6452),
+            requestWaterMask: !1,
+            requestVertexNormals: !0
+        });
+
+        //this.cesiumViewer.terrainProvider = this.terrainProvider,
+       // this.cesiumViewer.scene.globe.depthTestAgainstTerrain = !0,
+        this.building3dTileset = new Cesium.Cesium3DTileset({
+            url: Cesium.IonResource.fromAssetId(10065),
+            shadows: Cesium.ShadowMode.ENABLED,
+            show: !0
+        });
+        
         var map = new Cesium.Viewer(this.props.id, assign({
             baseLayerPicker: false,
             animation: false,
@@ -75,8 +95,11 @@ class CesiumMap extends React.Component {
             selectionIndicator: false,
             timeline: false,
             navigationHelpButton: false,
-            navigationInstructionsInitiallyVisible: false
+            navigationInstructionsInitiallyVisible: false,
+            terrainProvider : this.terrainProvider
         }, ));
+
+       
         /*
         map.imageryLayers.removeAll();
         map.camera.moveEnd.addEventListener(this.updateMapInfoState);
@@ -84,6 +107,7 @@ class CesiumMap extends React.Component {
         this.subscribeClickEvent(map);
         this.hand.setInputAction(throttle(this.onMouseMove.bind(this), 500), Cesium.ScreenSpaceEventType.MOUSE_MOVE);
         */
+        
         map.camera.setView({
             destination: Cesium.Cartesian3.fromDegrees(
                 this.props.center.x,
@@ -91,11 +115,14 @@ class CesiumMap extends React.Component {
                 this.getHeightFromZoom(this.props.zoom)
             )
         });
+        
         /*
         this.setMousePointer(this.props.mousePointer);
-
+        */
         this.map = map;
+        this.map.scene.primitives.add(this.building3dTileset);
         this.forceUpdate();
+        /*
         if (this.props.mapOptions.navigationTools) {
             this.cesiumNavigation = window.CesiumNavigation;
             if (this.cesiumNavigation) {
@@ -154,6 +181,7 @@ class CesiumMap extends React.Component {
     };
 
     onMouseMove = (movement) => {
+        /*
         if (this.props.onMouseMove && movement.endPosition) {
             const cartesian = this.map.camera.pickEllipsoid(movement.endPosition, this.map.scene.globe.ellipsoid);
             let cartographic = ClickUtils.getMouseXYZ(this.map, movement) || cartesian && Cesium.Cartographic.fromCartesian(cartesian);
@@ -167,6 +195,7 @@ class CesiumMap extends React.Component {
                 });
             }
         }
+        */
     };
 
     getMapOptions = (rawOptions) => {

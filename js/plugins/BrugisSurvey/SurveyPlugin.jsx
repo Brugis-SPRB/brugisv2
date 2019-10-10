@@ -130,7 +130,7 @@ const BrugisSurvey = React.createClass({
 
   componentDidMount() {
       this.props.onLoadBrugisSurveyTypes(this.props.webreperagehost + "/resources/ReperagesType");
-      this.interval = setInterval(this.loadSurveyTime.bind(this), 2000);
+      this.interval = setInterval(this.loadSurveyTime.bind(this), 20000);
   },
 
   componentWillUnmount() {
