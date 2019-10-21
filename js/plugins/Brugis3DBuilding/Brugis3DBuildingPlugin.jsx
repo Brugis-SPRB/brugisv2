@@ -10,17 +10,19 @@ const brugis3DBuildingIcon = require('./imgs/noun_House Frame_80931.svg');
 const {toggleControl} = require('../../../MapStore2/web/client/actions/controls');
 // const brugis3DBuildingIcon = require('./imgs/noun_Home_50688.svg');
 
-const toggleBrugis3DBuildingTool = setControlProperty.bind(null, 'brugis3db', 'active', "brugis3db", true);
+//const toggleBrugis3DBuildingTool = setControlProperty.bind(null, 'brugis3dbuilding', 'active', "brugis3dbuilding", true);
+const toggleBrugis3DBuildingTool = toggleControl.bind(null, 'brugis3dbuilding', null);
 
 const selector = createSelector([
     (state) => state,
-    (state) => state.controls && state.controls.toolbar && state.controls.toolbar.active === "brugis3dbuilding" || false,
+    (state) => state.controls && state.controls.brugis3dbuilding && state.controls.brugis3dbuilding.enabled === true || false,
     (state) => state.brugis3db && state.brugis3db.clickPoint && state.brugis3db.clickPoint.latlng && state.brugis3db.clickPoint.latlng.lat,
     (state) => state.brugis3db && state.brugis3db.clickPoint && state.streetView.brugis3db.latlng && state.brugis3db.clickPoint.latlng.lng,
     (state) => state.brugis3db && state.brugis3db.warning,
-    (state) => state.locale && state.locale.current
-], (state, enabled, lat, lng, warning, locale) => ({
-    state, enabled, lat, lng, warning, locale
+    (state) => state.locale && state.locale.current,
+    (state) => state.map && state.map.present || state.map || state.config && state.config.map || null
+], (state, enabled, lat, lng, warning, locale, map) => ({
+    state, enabled, lat, lng, warning, locale, map
 }));
 
 const Brugis3DBuildingPlugin = connect(selector, {
@@ -39,8 +41,8 @@ module.exports = {
           tooltip: "Brugis3DBuilding.tooltip",
           icon: <img src={brugis3DBuildingIcon} height="45" width="38"></img>,
           help: <Message msgId="helptexts.Brugis3dBuildingButton"/>,
-          // toggle: true
-          exclusive: true,
+          // toggle: true,
+          // exclusive: true,
           action: toggleBrugis3DBuildingTool
         }
     }),
