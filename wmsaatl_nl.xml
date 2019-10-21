@@ -3765,11 +3765,11 @@
         <Name>Kadaster</Name>
         <Title>Kadaster</Title>
         <Layer noSubsets="0" opaque="0" queryable="1">
-          <Name>2018</Name>
-          <Title>2018</Title>
+          <Name>2019</Name>
+          <Title>2019</Title>
           <Layer noSubsets="0" opaque="0" queryable="1">
-            <Name>BDU:Gebouw_2018</Name>
-            <Title>Gebouw 2018</Title>
+            <Name>BDU:Gebouw_2019</Name>
+            <Title>Gebouw 2019</Title>
             <Abstract/>
             <KeywordList>
               <Keyword>features</Keyword>
@@ -3789,8 +3789,8 @@
             <ScaleHint max="5000.1" min="0.0"/>
           </Layer>
           <Layer noSubsets="0" opaque="0" queryable="1">
-            <Name>BDU:Perceel_2018</Name>
-            <Title>Perceel 2018</Title>
+            <Name>BDU:Perceel_2019</Name>
+            <Title>Perceel 2019</Title>
             <Abstract/>
             <KeywordList>
               <Keyword>features</Keyword>
@@ -3812,11 +3812,11 @@
           </Layer>
         </Layer>
         <Layer noSubsets="0" opaque="0" queryable="1">
-          <Name>2017</Name>
-          <Title>2017</Title>
+          <Name>2018</Name>
+          <Title>2018</Title>
           <Layer noSubsets="0" opaque="0" queryable="1">
-            <Name>BDU:Gebouw_2017</Name>
-            <Title>Gebouw 2017</Title>
+            <Name>BDU:Gebouw_2018</Name>
+            <Title>Gebouw 2018</Title>
             <Abstract/>
             <KeywordList>
               <Keyword>features</Keyword>
@@ -3836,8 +3836,8 @@
             <ScaleHint max="5000.1" min="0.0"/>
           </Layer>
           <Layer noSubsets="0" opaque="0" queryable="1">
-            <Name>BDU:Perceel_2017</Name>
-            <Title>Perceel 2017</Title>
+            <Name>BDU:Perceel_2018</Name>
+            <Title>Perceel 2018</Title>
             <Abstract/>
             <KeywordList>
               <Keyword>features</Keyword>
@@ -3859,11 +3859,11 @@
           </Layer>
         </Layer>
         <Layer noSubsets="0" opaque="0" queryable="1">
-          <Name>2016</Name>
-          <Title>2016</Title>
+          <Name>2017</Name>
+          <Title>2017</Title>
           <Layer noSubsets="0" opaque="0" queryable="1">
-            <Name>BDU:Gebouw_2016</Name>
-            <Title>Gebouw 2016</Title>
+            <Name>BDU:Gebouw_2017</Name>
+            <Title>Gebouw 2017</Title>
             <Abstract/>
             <KeywordList>
               <Keyword>features</Keyword>
@@ -3883,8 +3883,8 @@
             <ScaleHint max="5000.1" min="0.0"/>
           </Layer>
           <Layer noSubsets="0" opaque="0" queryable="1">
-            <Name>BDU:Perceel_2016</Name>
-            <Title>Perceel 2016</Title>
+            <Name>BDU:Perceel_2017</Name>
+            <Title>Perceel 2017</Title>
             <Abstract/>
             <KeywordList>
               <Keyword>features</Keyword>
