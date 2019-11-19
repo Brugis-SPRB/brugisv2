@@ -1073,7 +1073,7 @@
             </Layer>
             <Layer noSubsets="0" opaque="0" queryable="1">
               <Name>BDU_DMS_PROT:Inventaire_legal_Quartiers_Leopold</Name>
-              <Title>inventaire légal Quartiers Léopold</Title>
+              <Title>Inventaire légal Quartiers Léopold</Title>
               <Abstract/>
               <KeywordList>
                 <Keyword>features</Keyword>
