@@ -3768,7 +3768,7 @@
           <Name>2019</Name>
           <Title>2019</Title>
           <Layer noSubsets="0" opaque="0" queryable="1">
-            <Name>BDU:Gebouw_2019</Name>
+            <Name>BSO:Gebouw_2019</Name>
             <Title>Gebouw 2019</Title>
             <Abstract/>
             <KeywordList>
@@ -3783,13 +3783,13 @@
               <Title>Gebouw</Title>
               <LegendURL height="20" width="20">
                 <Format>image/png</Format>
-                <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=BDU%3AGebouw_2019" ns0:type="simple"/>
+                <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=BSO%3AGebouw_2019" ns0:type="simple"/>
               </LegendURL>
             </Style>
             <ScaleHint max="5000.1" min="0.0"/>
           </Layer>
           <Layer noSubsets="0" opaque="0" queryable="1">
-            <Name>BDU:Perceel_2019</Name>
+            <Name>BSO:Perceel_2019</Name>
             <Title>Perceel 2019</Title>
             <Abstract/>
             <KeywordList>
@@ -3805,7 +3805,7 @@
               <Title>Perceel</Title>
               <LegendURL height="20" width="20">
                 <Format>image/png</Format>
-                <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=BDU%3APerceel_2019" ns0:type="simple"/>
+                <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=BSO%3APerceel_2019" ns0:type="simple"/>
               </LegendURL>
             </Style>
             <ScaleHint max="5000.1" min="0.0"/>
@@ -3815,7 +3815,7 @@
           <Name>2018</Name>
           <Title>2018</Title>
           <Layer noSubsets="0" opaque="0" queryable="1">
-            <Name>BDU:Gebouw_2018</Name>
+            <Name>BSO:Gebouw_2018</Name>
             <Title>Gebouw 2018</Title>
             <Abstract/>
             <KeywordList>
@@ -3830,13 +3830,13 @@
               <Title>Gebouw</Title>
               <LegendURL height="20" width="20">
                 <Format>image/png</Format>
-                <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=BDU%3AGebouw_2018" ns0:type="simple"/>
+                <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=BSO%3AGebouw_2018" ns0:type="simple"/>
               </LegendURL>
             </Style>
             <ScaleHint max="5000.1" min="0.0"/>
           </Layer>
           <Layer noSubsets="0" opaque="0" queryable="1">
-            <Name>BDU:Perceel_2018</Name>
+            <Name>BSO:Perceel_2018</Name>
             <Title>Perceel 2018</Title>
             <Abstract/>
             <KeywordList>
@@ -3852,7 +3852,7 @@
               <Title>Perceel</Title>
               <LegendURL height="20" width="20">
                 <Format>image/png</Format>
-                <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=BDU%3APerceel_2018" ns0:type="simple"/>
+                <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=BSO%3APerceel_2018" ns0:type="simple"/>
               </LegendURL>
             </Style>
             <ScaleHint max="5000.1" min="0.0"/>
@@ -3862,7 +3862,7 @@
           <Name>2017</Name>
           <Title>2017</Title>
           <Layer noSubsets="0" opaque="0" queryable="1">
-            <Name>BDU:Gebouw_2017</Name>
+            <Name>BSO:Gebouw_2017</Name>
             <Title>Gebouw 2017</Title>
             <Abstract/>
             <KeywordList>
@@ -3877,13 +3877,13 @@
               <Title>Gebouw</Title>
               <LegendURL height="20" width="20">
                 <Format>image/png</Format>
-                <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=BDU%3AGebouw_2017" ns0:type="simple"/>
+                <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=BSO%3AGebouw_2017" ns0:type="simple"/>
               </LegendURL>
             </Style>
             <ScaleHint max="5000.1" min="0.0"/>
           </Layer>
           <Layer noSubsets="0" opaque="0" queryable="1">
-            <Name>BDU:Perceel_2017</Name>
+            <Name>BSO:Perceel_2017</Name>
             <Title>Perceel 2017</Title>
             <Abstract/>
             <KeywordList>
@@ -3899,7 +3899,7 @@
               <Title>Perceel</Title>
               <LegendURL height="20" width="20">
                 <Format>image/png</Format>
-                <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=BDU%3APerceel_2017" ns0:type="simple"/>
+                <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=BSO%3APerceel_2017" ns0:type="simple"/>
               </LegendURL>
             </Style>
             <ScaleHint max="5000.1" min="0.0"/>
