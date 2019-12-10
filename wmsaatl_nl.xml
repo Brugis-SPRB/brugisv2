@@ -4240,7 +4240,7 @@
         </Layer>
         <Layer noSubsets="0" opaque="0" queryable="1">
           <Name>BDU:Topography</Name>
-          <Title>Topografie</Title>
+          <Title>Topographie</Title>
           <Abstract>Layer-Group type layer: BDU:Topography</Abstract>
           <KeywordList/>
           <SRS>EPSG:31370</SRS>
