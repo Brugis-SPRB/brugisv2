@@ -695,7 +695,7 @@ const gfiEn = {
 	},
 	"BDU:Limites_communales": {
 		"actiontype": "GRID",
-		"title": "Commune: [MUFN%]",
+		"title": "Commune: [MU_NAME_FRE%]",
 		"attributes": []
 	},
 	"BDU:Galeries_commercantes": {
