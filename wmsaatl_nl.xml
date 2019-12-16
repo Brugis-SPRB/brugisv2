@@ -3455,22 +3455,42 @@
         </Style>
       </Layer>
       <Layer noSubsets="0" opaque="0" queryable="1">
-        <Name>PER:Zone_voor_stedelijke_herwaardering</Name>
-        <Title>Zone voor stedelijke herwaardering</Title>
+        <Name>PER:Zone_voor_stedelijke_herwaardering_2016</Name>
+        <Title>Zone voor stedelijke herwaardering 2016</Title>
         <Abstract/>
         <KeywordList>
           <Keyword>features</Keyword>
-          <Keyword>PER_ZRU</Keyword>
+          <Keyword>A10_ZRU_2016</Keyword>
         </KeywordList>
         <SRS>EPSG:31370</SRS>
-        <LatLonBoundingBox maxx="4.4814185885749405" maxy="50.913653774000515" minx="4.242470212763538" miny="50.76335283201384"/>
+        <LatLonBoundingBox maxx="4.413600846937732" maxy="50.88592135350879" minx="4.289975263592765" miny="50.79065723491583"/>
         <BoundingBox SRS="EPSG:31370" maxx="165088.0" maxy="185088.0" minx="140000.0" miny="160000.0"/>
         <Style>
           <Name>Style_ZRU2016</Name>
           <Title>Style_ZRU2016</Title>
           <LegendURL height="20" width="20">
             <Format>image/png</Format>
-            <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=PER%3AZone_voor_stedelijke_herwaardering" ns0:type="simple"/>
+            <OnlineResource ns0:href="http://10.128.81.203:8080/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=PER%3AZone_voor_stedelijke_herwaardering_2016" ns0:type="simple"/>
+          </LegendURL>
+        </Style>
+      </Layer>
+      <Layer noSubsets="0" opaque="0" queryable="1">
+        <Name>PER:Zone_voor_stedelijke_herwaardering_2020</Name>
+        <Title>Zone voor stedelijke herwaardering 2020</Title>
+        <Abstract/>
+        <KeywordList>
+          <Keyword>features</Keyword>
+          <Keyword>A10_ZRU_2020</Keyword>
+        </KeywordList>
+        <SRS>EPSG:31370</SRS>
+        <LatLonBoundingBox maxx="4.444031364552706" maxy="50.89850803766236" minx="4.28995458193358" miny="50.790657224129404"/>
+        <BoundingBox SRS="EPSG:31370" maxx="165088.0" maxy="185088.0" minx="140000.0" miny="160000.0"/>
+        <Style>
+          <Name>Style_ZRU2020</Name>
+          <Title>Style_ZRU2020</Title>
+          <LegendURL height="20" width="20">
+            <Format>image/png</Format>
+            <OnlineResource ns0:href="http://10.128.81.203:8080/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=PER%3AZone_voor_stedelijke_herwaardering_2020" ns0:type="simple"/>
           </LegendURL>
         </Style>
       </Layer>
