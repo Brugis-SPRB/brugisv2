@@ -1661,7 +1661,7 @@ const gfiNl = {
 	},
 	"BSO:Gemeentegrenzen": {
 		"actiontype": "GRID",
-		"title": "Commune: [%MUDN%]",
+		"title": "Commune: [%MU_NAME_DUT%]",
 		"attributes": []
 	},
 	"BSO:Goed_dat_beschermd_is_of_ingeschreven_op_de_bewaarlijst": {
