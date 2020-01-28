@@ -53,7 +53,12 @@ if(args.length != 1) {
 
 replaceInFile(
   ["./wmsaatl_en.xml", "./wmsaatl_fr.xml", "./wmsaatl_nl.xml"],
-  "https://mybrugis.irisnet.be/geoserver/wms?SERVICE=WMS&amp;", ENV_CONFIG_GEOSERVER[args[0]]+ "?SERVICE=WMS&amp;"
+  "https://mybrugis.irisnet.be/geoserver/wms?SERVICE=WMS&amp;", string(ENV_CONFIG_GEOSERVER[args[0]]+ "?SERVICE=WMS&amp;")
+);
+
+replaceInFile(
+  ["./wmsaatl_en.xml", "./wmsaatl_fr.xml", "./wmsaatl_nl.xml"],
+  "https://mybrugis.irisnet.be/geoserver/wms?", string(ENV_CONFIG_GEOSERVER[args[0]]+ "?")
 );
 
 replaceInFile(
