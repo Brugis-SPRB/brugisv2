@@ -6,14 +6,14 @@ const glob = require('glob');
 const ENV_CONFIG_GEOSERVER_URBIS = {
   'DEV' : 'http://10.128.81.203:8080/geoserver/URBIS/wms',
   'STA' : 'http://mybrugis.irisnetlab.be/geoserver/URBIS/wms',
-  'STANEW' : 'HTTP://10.128.91.10:8080/geoserver/URBIS/wms',
+  'STANEW' : 'http://10.128.91.10:8080/geoserver/URBIS/wms',
   'PRD' : 'https://mybrugis.irisnet.be/geoserver/URBIS/wms'
 };
 
 const ENV_CONFIG_GEOSERVER = {
   'DEV' : 'http://10.128.81.203:8080/geoserver/ows',
   'STA' : 'http://mybrugis.irisnetlab.be/geoserver/ows',
-  'STANEW' : 'HTTP://10.128.91.10:8080/geoserver/ows',
+  'STANEW' : 'http://10.128.91.10:8080/geoserver/ows',
   'PRD' : 'https://mybrugis.irisnet.be/geoserver/ows',
   'PRDSTUB' : 'https://mybrugis.irisnet.be/geoserver/www/wmsaatl/wmsc_brugis_anon.xml'
 };
