@@ -1727,7 +1727,7 @@
             <Title>A azure polygon style</Title>
             <LegendURL height="20" width="20">
               <Format>image/png</Format>
-              <OnlineResource ns0:href="http://10.128.81.203:8080/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=BEE%3AZone_ZEUS" ns0:type="simple"/>
+              <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=BEE%3AZone_ZEUS" ns0:type="simple"/>
             </LegendURL>
           </Style>
           <Style>
@@ -1735,7 +1735,7 @@
             <Title>A azure polygon style</Title>
             <LegendURL height="20" width="20">
               <Format>image/png</Format>
-              <OnlineResource ns0:href="http://10.128.81.203:8080/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=BEE%3AZone_ZEUS&amp;style=Zone_ZEUS" ns0:type="simple"/>
+              <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=BEE%3AZone_ZEUS&amp;style=Zone_ZEUS" ns0:type="simple"/>
             </LegendURL>
           </Style>
         </Layer>
@@ -1783,7 +1783,7 @@
               <Title>inventaire etat du sol public</Title>
               <LegendURL height="20" width="20">
                 <Format>image/png</Format>
-                <OnlineResource ns0:href="http://10.128.81.203:8080/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=BDU%3APUBBELB_INVENTAIRE_ETAT_SOL_PUBLIC" ns0:type="simple"/>
+                <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=BDU%3APUBBELB_INVENTAIRE_ETAT_SOL_PUBLIC" ns0:type="simple"/>
               </LegendURL>
             </Style>
           </Layer>
@@ -3474,7 +3474,7 @@
             <Title>Style_ZRU2016</Title>
             <LegendURL height="20" width="20">
               <Format>image/png</Format>
-              <OnlineResource ns0:href="http://10.128.81.203:8080/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=PER%3AZone_de_revitalisation_urbaine_2016" ns0:type="simple"/>
+              <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=PER%3AZone_de_revitalisation_urbaine_2016" ns0:type="simple"/>
             </LegendURL>
           </Style>
         </Layer>
@@ -3494,7 +3494,7 @@
             <Title>Style_ZRU2020</Title>
             <LegendURL height="20" width="20">
               <Format>image/png</Format>
-              <OnlineResource ns0:href="http://10.128.81.203:8080/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=PER%3AZone_de_revitalisation_urbaine_2020" ns0:type="simple"/>
+              <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=PER%3AZone_de_revitalisation_urbaine_2020" ns0:type="simple"/>
             </LegendURL>
           </Style>
         </Layer>
@@ -3544,7 +3544,7 @@
             <Title>plan de qualité paysagère et urbanistique</Title>
             <LegendURL height="20" width="20">
               <Format>image/png</Format>
-              <OnlineResource ns0:href="http://10.128.81.203:8080/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=BDU%3Aplan%20de%20qualit%C3%A9%20paysag%C3%A8re%20et%20urbanistique" ns0:type="simple"/>
+              <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=BDU%3Aplan%20de%20qualit%C3%A9%20paysag%C3%A8re%20et%20urbanistique" ns0:type="simple"/>
             </LegendURL>
           </Style>
         </Layer>
@@ -3564,7 +3564,7 @@
             <Title>Entites urbanistiques</Title>
             <LegendURL width="20" height="20">
               <Format>image/png</Format>
-              <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://10.128.81.203:8080/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=BDU%3AVM_A60_TRACE_PERIMETER_IR_FR"/>
+              <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=BDU%3AVM_A60_TRACE_PERIMETER_IR_FR"/>
             </LegendURL>
           </Style>
         </Layer>

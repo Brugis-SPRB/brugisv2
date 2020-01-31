@@ -19,10 +19,10 @@ const ENV_CONFIG_GEOSERVER = {
 };
 
 const ENV_CONFIG_SURVEY = {
-  'DEV' : 'http://10.128.81.205:8080/WebReperage',
-  'STA' : 'http://mbr127.irisnetlab.be/WebReperage',
-  'STANEW' : 'http://10.128.91.12:8080/WebReperage',
-  'PRD' : "https://mbr227.irisnet.be/WebReperage"
+  'DEV' : 'http://10.128.81.205:8080/',
+  'STA' : 'http://mbr127.irisnetlab.be/',
+  'STANEW' : 'http://10.128.91.12:8080/',
+  'PRD' : "https://mbr227.irisnet.be/"
 }
 
 
@@ -51,11 +51,6 @@ if(args.length != 1) {
   console.log("This script accept only one parameter ex: modenv DEV|STA|PRD")
 }
 
-newLine = ENV_CONFIG_GEOSERVER[args[0]]+ "?SERVICE=WMS&amp;"
-replaceInFile(
-  ["./wmsaatl_en.xml", "./wmsaatl_fr.xml", "./wmsaatl_nl.xml"],
-  "https://mybrugis.irisnet.be/geoserver/wms?SERVICE=WMS&amp;", newLine
-);
 
 newLine = ENV_CONFIG_GEOSERVER[args[0]]+ "?"
 replaceInFile(
