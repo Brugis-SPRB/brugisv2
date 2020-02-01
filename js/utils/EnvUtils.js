@@ -8,8 +8,8 @@ const EnvUtils = {
 
     getEnvironment: function() {
         var hostname = window.location.hostname;
-        console.log(hostname);
         var ENV = DEV;
+        console.log(hostname);
         if (hostname.indexOf('irisnet.be') >= 0) {
             ENV = PRD;
         }
