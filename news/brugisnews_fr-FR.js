@@ -3,6 +3,22 @@ const news = {
     "locale": "fr-FR",
     "news": [
       {
+        "datestart": "2020-02-05",
+        "dateend": "2020-04-01",
+        "defcon": "5",
+        "title": "BruGIS victime de son succès...",
+        "img": 'brugis.png',
+        "message": "Notre plateforme est devenue très lente et difficile d'accès depuis décembre 2019. Nous sommes en cours de recréaction d'une nouvelle architecture de serveur pour retrouver un service et une disponibilité optimale. Nous vous présentons nos excuses pour les désagréments rencontrés"
+      },
+      {
+        "datestart": "2020-02-05",
+        "dateend": "2020-06-01",
+        "defcon": "5",
+        "title": "Une nouvelle zone de Rénovation Urbaine!",
+        "img": 'brugis.png',
+        "message": "La ZRU 2020 est désormais disponible sous le dossier Perspective!"
+      },
+      {
           "datestart": "2019-10-01",
           "dateend": "2020-10-01",
           "defcon": "5",
@@ -28,7 +44,7 @@ const news = {
       },
       {
           "datestart": "2019-05-01",
-          "dateend": "2020-12-01",
+          "dateend": "2020-01-01",
           "defcon": "5",
           "title": "BruGIS se dote d'une nouvelle page!",
           "img": 'brugis.png',

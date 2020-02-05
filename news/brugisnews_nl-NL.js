@@ -1,6 +1,22 @@
 const news = {
     "locale": "nl-NL",
     "news": [
+          {
+            "datestart": "2020-02-05",
+            "dateend": "2020-04-01",
+            "defcon": "5",
+            "title": "BruGIS slachtoffer van zijn succes ...",
+            "img": 'brugis.png',
+            "message": "Ons platform is sinds december 2019 erg traag en moeilijk toegankelijk geworden. We zijn bezig met de architectuur en serverinfrastructuur te vernieuwen om terug een optimale service en beschikbaarheid te kunnen leveren. Gelieve ons te verontschuldigen voor het ongemak"
+        },
+        {
+            "datestart": "2020-02-05",
+            "dateend": "2020-06-01",
+            "defcon": "5",
+            "title": "Een nieuwe zone voor Stedlijke Herwaardering!",
+            "img": 'brugis.png',
+            "message": "De ZSH 2020 is nu beschikbaar in de map Perspective.brussels!"
+        },
         {
             "datestart": "2019-10-01",
             "dateend": "2020-10-01",
