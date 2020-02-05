@@ -14,9 +14,9 @@ const news = {
         "datestart": "2020-02-05",
         "dateend": "2020-06-01",
         "defcon": "5",
-        "title": "Une nouvelle zone de Rénovation Urbaine!",
+        "title": "Une nouvelle zone de revitalisation Urbaine!",
         "img": 'brugis.png',
-        "message": "La ZRU 2020 est désormais disponible sous le dossier Perspective!"
+        "message": "La ZRU 2020 est désormais disponible sous le dossier Perspective.brussels!"
       },
       {
           "datestart": "2019-10-01",
