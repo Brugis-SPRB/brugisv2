@@ -6,20 +6,23 @@ const glob = require('glob');
 const ENV_CONFIG_GEOSERVER_URBIS = {
   'DEV' : 'http://10.128.81.203:8080/geoserver/URBIS/wms',
   'STA' : 'http://mybrugis.irisnetlab.be/geoserver/URBIS/wms',
+  'STANEW' : 'http://10.128.91.10:8080/geoserver/URBIS/wms',
   'PRD' : 'https://mybrugis.irisnet.be/geoserver/URBIS/wms'
 };
 
 const ENV_CONFIG_GEOSERVER = {
   'DEV' : 'http://10.128.81.203:8080/geoserver/ows',
   'STA' : 'http://mybrugis.irisnetlab.be/geoserver/ows',
+  'STANEW' : 'http://10.128.91.10:8080/geoserver/ows',
   'PRD' : 'https://mybrugis.irisnet.be/geoserver/ows',
   'PRDSTUB' : 'https://mybrugis.irisnet.be/geoserver/www/wmsaatl/wmsc_brugis_anon.xml'
 };
 
 const ENV_CONFIG_SURVEY = {
-  'DEV' : 'http://10.128.81.205:8080/WebReperage',
-  'STA' : 'http://mbr127.irisnetlab.be/WebReperage',
-  'PRD' : "https://mbr227.irisnet.be/WebReperage"
+  'DEV' : 'http://10.128.81.205:8080/',
+  'STA' : 'http://mbr127.irisnetlab.be/',
+  'STANEW' : 'http://10.128.91.12:8080/',
+  'PRD' : "https://mbr227.irisnet.be/"
 }
 
 
@@ -48,9 +51,11 @@ if(args.length != 1) {
   console.log("This script accept only one parameter ex: modenv DEV|STA|PRD")
 }
 
+
+newLine = ENV_CONFIG_GEOSERVER[args[0]]+ "?"
 replaceInFile(
   ["./wmsaatl_en.xml", "./wmsaatl_fr.xml", "./wmsaatl_nl.xml"],
-  "https://mybrugis.irisnet.be/geoserver/wms?SERVICE=WMS&amp;", ENV_CONFIG_GEOSERVER[args[0]]+ "?SERVICE=WMS&amp;"
+  "https://mybrugis.irisnet.be/geoserver/wms?", newLine
 );
 
 replaceInFile(
