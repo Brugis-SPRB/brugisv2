@@ -48,7 +48,7 @@ const WFSApi = {
         service: "wfs",
         version: "1.0.0",
         request: "GetFeature",
-        typeName: "BDU:Parcelle_2017",
+        typeName: "BDU:Parcelle_2019",
         outputFormat: "application/json",
         FILTER: filter
       }, options || {}, defaultOptions);
