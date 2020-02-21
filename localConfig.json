@@ -1,13 +1,13 @@
 {
 	"proxyUrl": {
 		"url": "/brugis/proxy/?url=",
-		"useCORS": ["https://mbr227.irisnet.be"]
+		"useCORS": ["https://mbr227.irisnet.be","http://10.128.81.205:8080"]
 	},
 	"geoStoreUrl": "/brugis/rest/geostore",
 	"printUrl": "https://mbr227.irisnet.be/print/print/dep/info.json?url=https://mbr227.irisnet.be/print/print/dep",
 	"bingApiKey": "AhuXBu7ipR1gNbBfXhtUAyCZ6rkC5PkWpxs2MnMRZ1ZupxQfivjLCch22ozKSCAn",
 	"translationsPath": ["./js/translations/mapstore", "./js/translations/brugis"],
-  "themePrefix": "brugis",
+  	"themePrefix": "brugis",
 	"plugins": {
 		"mobile":[
 			{

@@ -92,6 +92,10 @@ class CesiumMap extends React.Component {
             shadows: Cesium.ShadowMode.ENABLED,
             show: !0
         });
+
+        var portailtileset = new Cesium.Cesium3DTileset({
+            url : 'http://10.128.81.203:8080/geoserver/www/portailcesium/scene/portailcesium.json'
+       });
         
         var map = new Cesium.Viewer(this.props.id, assign({
             baseLayerPicker: false,
@@ -135,7 +139,10 @@ class CesiumMap extends React.Component {
         this.setMousePointer(this.props.mousePointer);
         */
         this.map = map;
-        this.map.scene.primitives.add(this.building3dTileset);
+        //this.map.scene.primitives.add(this.building3dTileset);
+        
+        this.map.scene.primitives.add(this.portailtileset);
+
         this.forceUpdate();
         /*
         if (this.props.mapOptions.navigationTools) {
