@@ -7,7 +7,8 @@ const ENV_CONFIG_GEOSERVER_URBIS = {
   'DEV' : 'http://10.128.81.203:8080/geoserver/URBIS/wms',
   'STA' : 'http://mybrugis.irisnetlab.be/geoserver/URBIS/wms',
   'STANEW' : 'http://gislab.urban.brussels/geoserver/URBIS/wms',
-  'PRD' : 'https://mybrugis.irisnet.be/geoserver/URBIS/wms'
+  'PRD' : 'https://mybrugis.irisnet.be/geoserver/URBIS/wms',
+  'PRDNEW' : 'https://gis.urban.brussels/geoserver/URBIS/wms'
 };
 
 const ENV_CONFIG_GEOSERVER = {
@@ -15,14 +16,16 @@ const ENV_CONFIG_GEOSERVER = {
   'STA' : 'http://mybrugis.irisnetlab.be/geoserver/ows',
   'STANEW' : 'http://gislab.urban.brussels/geoserver/ows',
   'PRD' : 'https://mybrugis.irisnet.be/geoserver/ows',
-  'PRDSTUB' : 'https://mybrugis.irisnet.be/geoserver/www/wmsaatl/wmsc_brugis_anon.xml'
+  'PRDSTUB' : 'https://mybrugis.irisnet.be/geoserver/www/wmsaatl/wmsc_brugis_anon.xml',
+  'PRDNEW' : 'http://gis.urban.brussels/geoserver/ows',
 };
 
 const ENV_CONFIG_SURVEY = {
   'DEV' : 'http://10.128.81.205:8080/',
   'STA' : 'http://mbr127.irisnetlab.be/',
   'STANEW' : 'http://gislab.urban.brussels/',
-  'PRD' : "https://mbr227.irisnet.be/"
+  'PRD' : "https://mbr227.irisnet.be/",
+  'PRDNEW' : 'http://gis.urban.brussels/',
 }
 
 
