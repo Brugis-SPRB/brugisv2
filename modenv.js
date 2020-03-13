@@ -26,6 +26,14 @@ const ENV_CONFIG_SURVEY = {
   'STANEW' : 'http://gislab.urban.brussels/',
   'PRD' : "https://mbr227.irisnet.be/",
   'PRDNEW' : 'http://gis.urban.brussels/',
+};
+
+const ENV_CONFIG_PRINTURL = {
+  'DEV'   : 'https://mbr227.irisnet.be/print/print/dep/info.json?url=https://mbr227.irisnet.be/print/print/dep',
+  'STA'   : 'https://mbr227.irisnet.be/print/print/dep/info.json?url=https://mbr227.irisnet.be/print/print/dep',
+  'STA_NEW'   : 'http://gislab.urban.brussels/print/print/dep/info.json?url=http://gislab.urban.brussels/print/print/dep',
+  'PRD'   : 'https://mbr227.irisnet.be/print/print/dep/info.json?url=https://mbr227.irisnet.be/print/print/dep',
+  'PRD_NEW'   : 'http://gis.urban.brussels/print/print/dep/info.json?url=http://gis.urban.brussels/print/print/dep'
 }
 
 
@@ -77,6 +85,11 @@ replaceInFile(
 );
 
 replaceInFile(
-  ["./js/appConfig.js"],
+  ["./js/localConfig.json"],
   ENV_CONFIG_GEOSERVER['PRDSTUB'], ENV_CONFIG_GEOSERVER[args[0]]
+);
+
+replaceInFile(
+  ["./js/appConfig.js"],
+  ENV_CONFIG_PRINTURL['DEV'], ENV_CONFIG_PRINTURL[args[0]]
 );
