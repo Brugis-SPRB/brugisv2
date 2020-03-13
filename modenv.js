@@ -85,11 +85,11 @@ replaceInFile(
 );
 
 replaceInFile(
-  ["./js/localConfig.json"],
+  ["./js/appConfig.json"],
   ENV_CONFIG_GEOSERVER['PRDSTUB'], ENV_CONFIG_GEOSERVER[args[0]]
 );
 
 replaceInFile(
-  ["./js/appConfig.js"],
+  ["./js/localConfig.js"],
   ENV_CONFIG_PRINTURL['DEV'], ENV_CONFIG_PRINTURL[args[0]]
 );
