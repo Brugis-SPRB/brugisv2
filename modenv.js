@@ -29,11 +29,11 @@ const ENV_CONFIG_SURVEY = {
 };
 
 const ENV_CONFIG_PRINTURL = {
-  'DEV'   : 'https://mbr227.irisnet.be/print/print/dep/info.json?url=https://mbr227.irisnet.be/print/print/dep',
-  'STA'   : 'https://mbr227.irisnet.be/print/print/dep/info.json?url=https://mbr227.irisnet.be/print/print/dep',
-  'STANEW'   : 'http://gislab.urban.brussels/print/print/dep/info.json?url=http://gislab.urban.brussels/print/print/dep',
-  'PRD'   : 'https://mbr227.irisnet.be/print/print/dep/info.json?url=https://mbr227.irisnet.be/print/print/dep',
-  'PRDNEW'   : 'http://gis.urban.brussels/print/print/dep/info.json?url=http://gis.urban.brussels/print/print/dep'
+  'DEV'   : 'https://mbr227.irisnet.be/',
+  'STA'   : 'https://mbr227.irisnet.be/',
+  'STANEW'   : 'http://gislab.urban.brussels/',
+  'PRD'   : 'https://mbr227.irisnet.be/',
+  'PRDNEW'   : 'http://gis.urban.brussels/'
 };
 
 
