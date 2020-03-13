@@ -90,6 +90,6 @@ replaceInFile(
 );
 
 replaceInFile(
-  ["./js/localConfig.js"],
+  ["./localConfig.js"],
   ENV_CONFIG_PRINTURL['DEV'], ENV_CONFIG_PRINTURL[args[0]]
 );
