@@ -84,12 +84,14 @@ replaceInFile(
   ENV_CONFIG_GEOSERVER_URBIS['PRD'], ENV_CONFIG_GEOSERVER_URBIS[args[0]]
 );
 
-replaceInFile(
-  ["./js/appConfig.json"],
-  ENV_CONFIG_GEOSERVER['PRDSTUB'], ENV_CONFIG_GEOSERVER[args[0]]
+replaceSync(
+  "./js/appConfig.js",
+  ENV_CONFIG_GEOSERVER['PRDSTUB'], ENV_CONFIG_GEOSERVER[args[0]],
+  'utf-8'
 );
 
-replaceInFile(
-  ["./localConfig.js"],
-  ENV_CONFIG_PRINTURL['DEV'], ENV_CONFIG_PRINTURL[args[0]]
+replaceSync(
+  "./localConfig.json",
+  ENV_CONFIG_PRINTURL['DEV'], ENV_CONFIG_PRINTURL[args[0]],
+  'utf-8'
 );
