@@ -2885,6 +2885,20 @@
       <SRS>EPSG:900913</SRS>
       <LatLonBoundingBox maxx="4.49547992326272" maxy="50.9218586969616" minx="4.22527159306639" miny="50.7599660513373" />
       <Layer noSubsets="0" opaque="0" queryable="1">
+        <Name>PRDD</Name>
+        <Title>PRDD</Title>
+        <Layer noSubsets="0" opaque="0" queryable="1">
+          <Name>Cartes générales</Name>
+          <Title>Cartes générales</Title>
+
+        </Layer>
+        <Layer noSubsets="0" opaque="0" queryable="1">
+          <Name>Cartes détaillées</Name>
+          <Title>Cartes détaillées</Title>
+
+        </Layer>
+      </Layer>
+      <Layer noSubsets="0" opaque="0" queryable="1">
         <Name>PRAS</Name>
         <Title>PRAS</Title>
         <Layer noSubsets="0" opaque="0" queryable="1">
