@@ -3,6 +3,7 @@ const DEV = 'DEV';
 const STA = 'STA';
 const STANEW = 'STANEW';
 const PRD = 'PRD';
+const PRDNEW = 'PRDNEW';
 
 const EnvUtils = {
 
@@ -18,6 +19,9 @@ const EnvUtils = {
         }
         if (hostname.indexOf('gislab.urban.brussels') >= 0) {
             ENV = STANEW;
+        }
+        if (hostname.indexOf('gis.urban.brussels') >= 0) {
+            ENV = PRDNEW;
         }
         return ENV;
     },
@@ -38,8 +42,11 @@ const EnvUtils = {
             case PRD:
                 url = "mybrugis.irisnet.be/geoserver/ows";
                 break;
-            default:
+            case PRD:
                 url = "mybrugis.irisnet.be/geoserver/ows";
+                break;
+            default:
+                url = "gis.urban.brussels/geoserver/ows";
                 break;
         }
         return url;
