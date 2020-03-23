@@ -42,8 +42,8 @@ const EnvUtils = {
             case PRD:
                 url = "mybrugis.irisnet.be/geoserver/ows";
                 break;
-            case PRD:
-                url = "mybrugis.irisnet.be/geoserver/ows";
+            case PRDNEW:
+                url = "gis.urban.brussels/geoserver/ows";
                 break;
             default:
                 url = "gis.urban.brussels/geoserver/ows";
