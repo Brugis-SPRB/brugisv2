@@ -8,7 +8,7 @@ const ENV_CONFIG_GEOSERVER_URBIS = {
   'STA' : 'http://mybrugis.irisnetlab.be/geoserver/URBIS/wms',
   'STANEW' : 'http://gislab.urban.brussels/geoserver/URBIS/wms',
   'PRD' : 'https://mybrugis.irisnet.be/geoserver/URBIS/wms',
-  'PRDNEW' : 'https://gis.urban.brussels/geoserver/URBIS/wms'
+  'PRDNEW' : 'http://gis.urban.brussels/geoserver/URBIS/wms'
 };
 
 const ENV_CONFIG_GEOSERVER = {
