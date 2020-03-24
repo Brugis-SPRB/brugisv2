@@ -2854,7 +2854,7 @@ const gfiFr = {
 			},
 			{
 			"name": "Statut",
-			"label": "{'V':'Permis octroyé','NV':'Permis refusé','I':'En instruction / abandonné'}[[%ETATFINAL%]]",
+			"label": "if ('[%ETATFINAL%]' == 'V'){'Permis octroyé'} else if ('[%ETATFINAL%]' == 'NV'){'Permis refusé'} else if ('[%ETATFINAL%]' == 'I'){'En instruction / abandonné'} else {'Statut non défini'}",
 			"type": "eval"
 			}
 		]
