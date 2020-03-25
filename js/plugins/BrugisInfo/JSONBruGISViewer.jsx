@@ -55,8 +55,21 @@ var JSONViewer = React.createClass({
                         layerName = layerNameFromFeatureId;
                     }
                     if (GFI_DICT[curLocale] && GFI_DICT[curLocale][layerName] && GFI_DICT[curLocale][layerName].actiontype === "LINK") {
-                        if (GFI_DICT[curLocale][layerName].title) {
+                        if (GFI_DICT[curLocale][layerName].title && GFI_DICT[curLocale][layerName].url) {
                             displayTitle = this.parseLinkTitle(GFI_DICT[curLocale][layerName].title, GFI_DICT[curLocale][layerName].url, feature.properties);
+                            console.log(displayTitle);
+                            return (displayTitle);
+                            // return (
+                            //         <RowViewer
+                            //           key={i}
+                            //           title={displayTitle}
+                            //           exclude={["bbox"]}
+                            //           geometry={feature.geometry}
+                            //           onChangeDrawingStatus={this.props.onChangeDrawingStatus}
+                            //           onGeometryChanged={this.props.onGeometryChanged}
+                            //           onEndDrawing={this.props.onEndDrawing}
+                            //           customRenderers={customRenderers} />
+                            // );
                         }
                     }
                     if (GFI_DICT[curLocale] && GFI_DICT[curLocale][layerName]) {
