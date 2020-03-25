@@ -2334,21 +2334,16 @@ const gfiNl = {
 			}
 		]
 	},
-	"BSO:NOVA_vergunningen": {
+	"BSO:OPENPERMITS_NL": {
 		"actiontype": "REDIRECT",
 		"url": "https://openpermits.brussels/nl/_[%REFNOVA%]",
-		"title": "Permis NOVA [%REFNOVA%]",
+		"title": "Permis [%REFNOVA%]",
 		"attributes": [
 			{
 				"name": "Lien",
 				"label": "https://openpermits.brussels/nl/_[%REFNOVA%]",
 				"type": "link",
 				"substutedString": "Click hier."
-			},
-			{
-				"name": "NOVA referencie",
-				"label": "[%REFNOVA%]",
-				"type": "string"
 			},
 			{
 			"name": "Staat",

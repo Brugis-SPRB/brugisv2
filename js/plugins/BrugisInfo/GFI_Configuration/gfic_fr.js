@@ -2836,28 +2836,10 @@ const gfiFr = {
 			}
 		]
 	},
-	"BDU:Permis_NOVA": {
-		"actiontype": "REDIRECT",
+	"BDU:OPENPERMITS_FR": {
+		"actiontype": "LINK",
 		"url": "https://openpermits.brussels/fr/_[%REFNOVA%]",
-		"title": "Permis NOVA [%REFNOVA%]",
-		"attributes": [
-			{
-				"name": "Lien",
-				"label": "https://openpermits.brussels/fr/_[%REFNOVA%]",
-				"type": "link",
-				"substutedString": "Cliquez ici."
-			},
-			{
-				"name": "Référence NOVA",
-				"label": "[%REFNOVA%]",
-				"type": "string"
-			},
-			{
-			"name": "Statut",
-			"label": "if ('[%ETATFINAL%]' == 'V'){'Permis octroyé'} else if ('[%ETATFINAL%]' == 'NV'){'Permis refusé'} else if ('[%ETATFINAL%]' == 'I'){'En instruction / abandonné'} else {'Statut non défini'}",
-			"type": "eval"
-			}
-		]
+		"title": "Permis [%REFNOVA%]"
 	}
 };
 

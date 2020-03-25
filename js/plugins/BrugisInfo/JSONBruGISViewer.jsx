@@ -54,6 +54,11 @@ var JSONViewer = React.createClass({
                     if (this.props.layers !== layerNameFromFeatureId) {
                         layerName = layerNameFromFeatureId;
                     }
+                    if (GFI_DICT[curLocale] && GFI_DICT[curLocale][layerName] && GFI_DICT[curLocale][layerName].actiontype === "LINK") {
+                        if (GFI_DICT[curLocale][layerName].title) {
+                            displayTitle = this.parseLinkTitle(GFI_DICT[curLocale][layerName].title, GFI_DICT[curLocale][layerName].url, feature.properties);
+                        }
+                    }
                     if (GFI_DICT[curLocale] && GFI_DICT[curLocale][layerName]) {
                         if (GFI_DICT[curLocale][layerName].title) {
                             displayTitle = this.parseTitle(GFI_DICT[curLocale][layerName].title, feature.properties);
@@ -102,6 +107,21 @@ var JSONViewer = React.createClass({
         });
         customTitle = customTitle.replace(/\[%(.*?)%\]/g, "");
         return customTitle;
+    },
+    parseLinkTitle(titleExp, urlExp, properties) {
+        var customTitle = titleExp;
+        var customUrl = urlExp;
+        Object.keys(properties).forEach((key) => {
+            var pattern = "\[%" + key + "%\]";
+            customTitle = customTitle.replace(pattern, properties[key]);
+        });
+        customTitle = customTitle.replace(/\[%(.*?)%\]/g, "");
+        Object.keys(properties).forEach((key) => {
+            var pattern = "\[%" + key + "%\]";
+            customUrl = customUrl.replace(pattern, properties[key]);
+        });
+        customUrl = customUrl.replace(/\[%(.*?)%\]/g, "");
+        return (<a href={customUrl} target="_blank">{customTitle}</a>);
     },
     customiseFeatureProperties(customRenderers, properties, attributes) {
         var newProperties = {};
