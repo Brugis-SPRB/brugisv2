@@ -2333,6 +2333,29 @@ const gfiNl = {
 				"type": "link"
 			}
 		]
+	},
+	"BSO:NOVA_vergunningen": {
+		"actiontype": "REDIRECT",
+		"url": "https://openpermits.brussels/nl/_[%REFNOVA%]",
+		"title": "Permis NOVA [%REFNOVA%]",
+		"attributes": [
+			{
+				"name": "Lien",
+				"label": "https://openpermits.brussels/nl/_[%REFNOVA%]",
+				"type": "link",
+				"substutedString": "Click hier."
+			},
+			{
+				"name": "NOVA referencie",
+				"label": "[%REFNOVA%]",
+				"type": "string"
+			},
+			{
+			"name": "Staat",
+			"label": "if ('[%ETATFINAL%]' == 'V'){'Vergunning'} else if ('[%ETATFINAL%]' == 'NV'){'Weigering'} else if ('[%ETATFINAL%]' == 'I'){'Lopende/afgelast'} else {'Ongedefinieerde status'}",
+			"type": "eval"
+			}
+		]
 	}
 };
 module.exports = gfiNl;
