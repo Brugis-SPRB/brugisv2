@@ -58,8 +58,7 @@ var JSONViewer = React.createClass({
                         if (GFI_DICT[curLocale][layerName].title && GFI_DICT[curLocale][layerName].url) {
                             displayTitle = this.parseLinkTitle(GFI_DICT[curLocale][layerName].title, GFI_DICT[curLocale][layerName].url, feature.properties);
                             console.log(displayTitle);
-                            // return (displayTitle);
-                            return (<div><span><span className="linkTitle">{displayTitle}</span></span></div>);
+                            return (<span><span className="linkTitle">{displayTitle}</span></span><div/>);
                             // return (
                             //         <RowViewer
                             //           key={i}
