@@ -2325,32 +2325,21 @@ const gfiNl = {
 		]
 	},
 	"BSO:Beeldkwaliteitsplan": {
-		"actiontype": "GRID",
+		"actiontype": "REDIRECT",
+		"url": "[%URL_NL%]",
 		"title": "Beeldkwaliteitsplan",
 		"attributes": [{
 				"name": "Link",
 				"label": "[%URL_NL%]",
-				"type": "link"
+				"type": "link",
+				"substutedString": "Clik hier."
 			}
 		]
 	},
 	"BSO:OPENPERMITS_NL": {
-		"actiontype": "REDIRECT",
+		"actiontype": "LINK",
 		"url": "https://openpermits.brussels/nl/_[%REFNOVA%]",
-		"title": "Permis [%REFNOVA%]",
-		"attributes": [
-			{
-				"name": "Lien",
-				"label": "https://openpermits.brussels/nl/_[%REFNOVA%]",
-				"type": "link",
-				"substutedString": "Click hier."
-			},
-			{
-			"name": "Staat",
-			"label": "if ('[%ETATFINAL%]' == 'V'){'Vergunning'} else if ('[%ETATFINAL%]' == 'NV'){'Weigering'} else if ('[%ETATFINAL%]' == 'I'){'Lopende/afgelast'} else {'Ongedefinieerde status'}",
-			"type": "eval"
-			}
-		]
+		"title": "Dossier [%REFNOVA%]"
 	}
 };
 module.exports = gfiNl;

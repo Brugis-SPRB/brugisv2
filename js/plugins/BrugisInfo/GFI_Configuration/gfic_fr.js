@@ -2839,7 +2839,7 @@ const gfiFr = {
 	"BDU:OPENPERMITS_FR": {
 		"actiontype": "LINK",
 		"url": "https://openpermits.brussels/fr/_[%REFNOVA%]",
-		"title": "Permis [%REFNOVA%]"
+		"title": "Dossier [%REFNOVA%]"
 	}
 };
 
