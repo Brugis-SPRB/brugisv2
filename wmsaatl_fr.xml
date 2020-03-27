@@ -1790,29 +1790,25 @@
         <Name>Urbanisme</Name>
         <Title>Urbanisme</Title>
         <Layer noSubsets="0" opaque="0" queryable="1">
-          <Name>Permis d'urbanisme</Name>
+          <Name>BDU:OPENPERMITS_FR</Name>
           <Title>Permis d'urbanisme</Title>
-          <Layer noSubsets="0" opaque="0" queryable="1">
-            <Name>BDU:OPENPERMITS_FR</Name>
-            <Title>Permis d'urbanisme</Title>
-            <Abstract/>
-            <KeywordList>
-              <Keyword>features</Keyword>
-              <Keyword>VM_NOVAPERMITS</Keyword>
-              <Keyword>SINGLETILE</Keyword>
-            </KeywordList>
-            <SRS>EPSG:31370</SRS>
-            <LatLonBoundingBox maxx="4.486099029621602" maxy="50.91175182743676" minx="4.249696750680997" miny="50.76009072098683"/>
-            <BoundingBox SRS="EPSG:31370" maxx="165088.0" maxy="185088.0" minx="140000.0" miny="160000.0"/>
-            <Style>
-              <Name>PU_PERMITS_FR</Name>
-              <Title>Permis d'Urbanisme</Title>
-              <LegendURL height="260" width="146">
-                <Format>image/png</Format>
-                <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=BDU%3AOPENPERMITS_FR" ns0:type="simple"/>
-              </LegendURL>
-            </Style>
-          </Layer>
+          <Abstract/>
+          <KeywordList>
+            <Keyword>features</Keyword>
+            <Keyword>VM_NOVAPERMITS</Keyword>
+            <Keyword>SINGLETILE</Keyword>
+          </KeywordList>
+          <SRS>EPSG:31370</SRS>
+          <LatLonBoundingBox maxx="4.486099029621602" maxy="50.91175182743676" minx="4.249696750680997" miny="50.76009072098683"/>
+          <BoundingBox SRS="EPSG:31370" maxx="165088.0" maxy="185088.0" minx="140000.0" miny="160000.0"/>
+          <Style>
+            <Name>PU_PERMITS_FR</Name>
+            <Title>Permis d'Urbanisme</Title>
+            <LegendURL height="260" width="146">
+              <Format>image/png</Format>
+              <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=BDU%3AOPENPERMITS_FR" ns0:type="simple"/>
+            </LegendURL>
+          </Style>
         </Layer>
         <Layer queryable="1">
           <Name>BDU:Lotissements</Name>
