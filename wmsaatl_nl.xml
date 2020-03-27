@@ -1610,6 +1610,7 @@
             <KeywordList>
               <Keyword>features</Keyword>
               <Keyword>VM_NOVAPERMITS</Keyword>
+              <Keyword>SINGLETILE</Keyword>
             </KeywordList>
             <SRS>EPSG:31370</SRS>
             <LatLonBoundingBox maxx="4.486099029621602" maxy="50.91175182743676" minx="4.249696750680997" miny="50.76009072098683"/>
