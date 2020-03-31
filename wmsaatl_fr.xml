@@ -2921,6 +2921,69 @@
             <LatLonBoundingBox maxx="4.501862742176479" maxy="50.932778191395016" minx="4.220178068350866" miny="50.7390418956114"/>
             <BoundingBox SRS="EPSG:31370" maxx="165088.0" maxy="185088.0" minx="140000.0" miny="160000.0"/>
           </Layer>
+          <Layer noSubsets="0" opaque="0" queryable="1">
+            <Name>PER:CARTE_PRDD_2_GRANDES_RESSOURCES_FONCIERES</Name>
+            <Title>Carte PRDD 2 Grandes Ressources Foncières</Title>
+            <Abstract>Layer-Group type layer: PER:CARTE_PRDD_2_GRANDES_RESSOURCES_FONCIERES</Abstract>
+            <KeywordList/>
+            <SRS>EPSG:31370</SRS>
+            <LatLonBoundingBox maxx="4.4819068060294365" maxy="50.913662159589926" minx="4.242071629304819" miny="50.76329466458694"/>
+            <BoundingBox SRS="EPSG:31370" maxx="165088.0" maxy="185088.0" minx="140000.0" miny="160000.0"/>
+          </Layer>
+          <Layer noSubsets="0" opaque="0" queryable="1">
+            <Name>PER:CARTE_PRDD_3_MAILLAGE_VERT_ET_BLEU</Name>
+            <Title>Carte PRDD 3 Maillage Vert et Bleu</Title>
+            <Abstract>Layer-Group type layer: PER:CARTE_PRDD_3_MAILLAGE_VERT_ET_BLEU</Abstract>
+            <KeywordList/>
+            <SRS>EPSG:31370</SRS>
+            <LatLonBoundingBox maxx="4.4707964005094185" maxy="50.91994612124158" minx="4.239473801383671" miny="50.76700822779816"/>
+            <BoundingBox SRS="EPSG:31370" maxx="165088.0" maxy="185088.0" minx="140000.0" miny="160000.0"/>
+          </Layer>
+          <Layer noSubsets="0" opaque="0" queryable="1">
+            <Name>PER:CARTE_PRDD_4_ESPACE_PUBLIC_ET_RENOVATION_URBAINE</Name>
+            <Title>Carte PRDD 4 Espace public et rénovation urbaine</Title>
+            <Abstract>Layer-Group type layer: PER:CARTE_PRDD_4_ESPACE_PUBLIC_ET_RENOVATION_URBAINE</Abstract>
+            <KeywordList/>
+            <SRS>EPSG:31370</SRS>
+            <LatLonBoundingBox maxx="4.481540382025686" maxy="50.91359611002929" minx="4.24247036581555" miny="50.76336086880375"/>
+            <BoundingBox SRS="EPSG:31370" maxx="165088.0" maxy="185088.0" minx="140000.0" miny="160000.0"/>
+          </Layer>
+          <Layer noSubsets="0" opaque="0" queryable="1">
+            <Name>PER:CARTE_PRDD_5_DEVELOPPEMENT_ECONOMIQUE</Name>
+            <Title>Carte PRDD 5 Développement économique</Title>
+            <Abstract>Layer-Group type layer: PER:CARTE_PRDD_5_DEVELOPPEMENT_ECONOMIQUE</Abstract>
+            <KeywordList/>
+            <SRS>EPSG:31370</SRS>
+            <LatLonBoundingBox maxx="4.48296557518834" maxy="50.914414116108844" minx="4.240867104763946" miny="50.76259333506502"/>
+            <BoundingBox SRS="EPSG:31370" maxx="165088.0" maxy="185088.0" minx="140000.0" miny="160000.0"/>
+          </Layer>
+          <Layer noSubsets="0" opaque="0" queryable="1">
+            <Name>PER:CARTE_PRDD_6_RESEAUX_STRUCTURANTS_DE_MOBILITE</Name>
+            <Title>Carte PRDD 6 Réseaux structurants de mobilité</Title>
+            <Abstract>Layer-Group type layer: PER:CARTE_PRDD_6_RESEAUX_STRUCTURANTS_DE_MOBILITE</Abstract>
+            <KeywordList/>
+            <SRS>EPSG:31370</SRS>
+            <LatLonBoundingBox maxx="4.482592207387343" maxy="50.91434679525825" minx="4.2412735653799425" miny="50.76266082001365"/>
+            <BoundingBox SRS="EPSG:31370" maxx="165088.0" maxy="185088.0" minx="140000.0" miny="160000.0"/>
+          </Layer>
+          <Layer noSubsets="0" opaque="0" queryable="1">
+            <Name>PER:CARTE_PRDD_7_RESEAU_CYCLABLE</Name>
+            <Title>Carte PRDD 7 Réseau cyclable</Title>
+            <Abstract>Layer-Group type layer: PER:CARTE_PRDD_7_RESEAU_CYCLABLE</Abstract>
+            <KeywordList/>
+            <SRS>EPSG:31370</SRS>
+            <LatLonBoundingBox maxx="4.504400615353169" maxy="50.932939686992526" minx="4.2218174088683895" miny="50.73945837894823"/>
+            <BoundingBox SRS="EPSG:31370" maxx="165088.0" maxy="185088.0" minx="140000.0" miny="160000.0"/>
+          </Layer>
+          <Layer noSubsets="0" opaque="0" queryable="1">
+            <Name>PER:CARTE_PRDD_8_PROJET_DE_VILLE</Name>
+            <Title>Carte PRDD 8 Projet de ville</Title>
+            <Abstract>Layer-Group type layer: PER:CARTE_PRDD_8_PROJET_DE_VILLE</Abstract>
+            <KeywordList/>
+            <SRS>EPSG:31370</SRS>
+            <LatLonBoundingBox maxx="4.501862742176479" maxy="50.932778191395016" minx="4.220178068350866" miny="50.7390418956114"/>
+            <BoundingBox SRS="EPSG:31370" maxx="165088.0" maxy="185088.0" minx="140000.0" miny="160000.0"/>
+          </Layer>
 
         </Layer>
         <Layer noSubsets="0" opaque="0" queryable="1">
