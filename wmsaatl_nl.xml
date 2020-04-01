@@ -2595,6 +2595,75 @@
       <SRS>EPSG:31370</SRS>
       <SRS>EPSG:900913</SRS>
       <LatLonBoundingBox maxx="4.49547992326272" maxy="50.9218586969616" minx="4.22527159306639" miny="50.7599660513373" />
+
+      <Layer noSubsets="0" opaque="0" queryable="1">
+        <Name>GPDO</Name>
+        <Title>GPDO</Title>
+        <Layer noSubsets="0" opaque="0" queryable="1">
+          <Name>Algemene kaarten</Name>
+          <Title>Algemene kaarten</Title>
+          <Layer noSubsets="0" opaque="0" queryable="1">
+            <Name>PER:KAART_GPDO_1_RUIMTELIJKE_RUGGENGRAAT_EN_VISIE_VOOR_BRUSSEL</Name>
+            <Title>KAART_GPDO_1_RUIMTELIJKE_RUGGENGRAAT_EN_VISIE_VOOR_BRUSSEL</Title>
+            <Abstract>Layer-Group type layer: PER:KAART_GPDO_1_RUIMTELIJKE_RUGGENGRAAT_EN_VISIE_VOOR_BRUSSEL</Abstract>
+            <KeywordList/>
+            <SRS>EPSG:31370</SRS>
+            <LatLonBoundingBox maxx="4.5029147493530415" maxy="50.93302979508387" minx="4.221228563430616" miny="50.73929601414212"/>
+            <BoundingBox SRS="EPSG:31370" maxx="165088.0" maxy="185088.0" minx="140000.0" miny="160000.0"/>
+          </Layer>
+          <Layer noSubsets="0" opaque="0" queryable="1">
+            <Name>PER:KAART_GPDO_2_GROTE_GRONDRESERVES</Name>
+            <Title>KAART_GPDO_2_GROTE_GRONDRESERVES</Title>
+            <Abstract>Layer-Group type layer: PER:KAART_GPDO_2_GROTE_GRONDRESERVES</Abstract>
+            <KeywordList/>
+            <SRS>EPSG:31370</SRS>
+            <LatLonBoundingBox maxx="4.48296557518834" maxy="50.914414116108844" minx="4.240867104763946" miny="50.76259333506502"/>
+            <BoundingBox SRS="EPSG:31370" maxx="165088.0" maxy="185088.0" minx="140000.0" miny="160000.0"/>
+          </Layer>
+          <Layer noSubsets="0" opaque="0" queryable="1">
+            <Name>PER:KAART_GPDO_3_GROEN_EN_BLAUW_NETWERK</Name>
+            <Title>KAART_GPDO_3_GROEN_EN_BLAUW_NETWERK</Title>
+            <Abstract>Layer-Group type layer: PER:KAART_GPDO_3_GROEN_EN_BLAUW_NETWERK</Abstract>
+            <KeywordList/>
+            <SRS>EPSG:31370</SRS>
+            <LatLonBoundingBox maxx="4.482979405115632" maxy="50.92001403617664" minx="4.239128689658547" miny="50.7625914770645"/>
+            <BoundingBox SRS="EPSG:31370" maxx="165088.0" maxy="185088.0" minx="140000.0" miny="160000.0"/>
+          </Layer>
+          <Layer noSubsets="0" opaque="0" queryable="1">
+            <Name>PER:KAART_GPDO_4_OPENBARE_RUIMTE_EN_STADSVERNIEUWING</Name>
+            <Title>KAART_GPDO_4_OPENBARE_RUIMTE_EN_STADSVERNIEUWING</Title>
+            <Abstract>Layer-Group type layer: PER:KAART_GPDO_4_OPENBARE_RUIMTE_EN_STADSVERNIEUWING</Abstract>
+            <KeywordList/>
+            <SRS>EPSG:31370</SRS>
+            <LatLonBoundingBox maxx="4.481914589727506" maxy="50.91416234359296" minx="4.239817419691095" miny="50.76233939230115"/>
+            <BoundingBox SRS="EPSG:31370" maxx="165088.0" maxy="185088.0" minx="140000.0" miny="160000.0"/>
+          </Layer>
+          <Layer noSubsets="0" opaque="0" queryable="1">
+            <Name>PER:KAART_GPDO_5_ECONOMISCHE_ONTWIKKELING</Name>
+            <Title>KAART_GPDO_5_ECONOMISCHE_ONTWIKKELING</Title>
+            <Abstract>Layer-Group type layer: PER:KAART_GPDO_5_ECONOMISCHE_ONTWIKKELING</Abstract>
+            <KeywordList/>
+            <SRS>EPSG:31370</SRS>
+            <LatLonBoundingBox maxx="4.48296557518834" maxy="50.91441409195927" minx="4.239816737362674" miny="50.76233939230115"/>
+            <BoundingBox SRS="EPSG:31370" maxx="165088.0" maxy="185088.0" minx="140000.0" miny="160000.0"/>
+          </Layer>
+          <Layer noSubsets="0" opaque="0" queryable="1">
+            <Name>PER:KAART_GPDO_6_STRUCTURERENDE_MOBILITEITSNETWERKEN</Name>
+            <Title>KAART_GPDO_6_STRUCTURERENDE_MOBILITEITSNETWERKEN</Title>
+            <Abstract>Layer-Group type layer: PER:KAART_GPDO_6_STRUCTURERENDE_MOBILITEITSNETWERKEN</Abstract>
+            <KeywordList/>
+            <SRS>EPSG:31370</SRS>
+            <LatLonBoundingBox maxx="4.5029147493530415" maxy="50.93302979508387" minx="4.221228563430616" miny="50.73929601414212"/>
+            <BoundingBox SRS="EPSG:31370" maxx="165088.0" maxy="185088.0" minx="140000.0" miny="160000.0"/>
+          </Layer>
+        </Layer>
+        <Layer noSubsets="0" opaque="0" queryable="1">
+          <Name>Algemene kaarten</Name>
+          <Title>Algemene kaarten</Title>
+
+        </Layer>
+      </Layer>
+
       <Layer noSubsets="0" opaque="0" queryable="1">
         <Name>GBP</Name>
         <Title>GBP</Title>
