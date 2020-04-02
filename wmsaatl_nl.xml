@@ -2665,6 +2665,15 @@
             <LatLonBoundingBox maxx="4.504966970270602" maxy="50.93302946375664" minx="4.221218523132021" miny="50.73936832837766"/>
             <BoundingBox SRS="EPSG:31370" maxx="165088.0" maxy="185088.0" minx="140000.0" miny="160000.0"/>
           </Layer>
+          <Layer noSubsets="0" opaque="0" queryable="1">
+            <Name>PER:KAART_GPDO_8_HET_STADSPROJECT</Name>
+            <Title>Kaart GPDO 8 Het stadsproject</Title>
+            <Abstract>Layer-Group type layer: PER:KAART_GPDO_8_HET_STADSPROJECT</Abstract>
+            <KeywordList/>
+            <SRS>EPSG:31370</SRS>
+            <LatLonBoundingBox maxx="4.502356606659889" maxy="50.932940069820106" minx="4.221827632054813" miny="50.739386052164924"/>
+            <BoundingBox SRS="EPSG:31370" maxx="165088.0" maxy="185088.0" minx="140000.0" miny="160000.0"/>
+          </Layer>
         </Layer>
         <Layer noSubsets="0" opaque="0" queryable="1">
           <Name>Gedetailleerde kaarten</Name>
