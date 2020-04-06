@@ -2678,6 +2678,51 @@
         <Layer noSubsets="0" opaque="0" queryable="1">
           <Name>Gedetailleerde kaarten</Name>
           <Title>Gedetailleerde kaarten</Title>
+          <Layer noSubsets="0" opaque="0" queryable="1">
+            <Name>PER:KAART_GPDO_01_KANAALGEBIED_PROJECTSITES_PRIORITAIRE_ONTWIKKELINGSSITES</Name>
+            <Title>01 Kanaalgebied Projectsites - Prioritaire ontwikkelingssites</Title>
+            <Abstract>Layer-Group type layer: PER:KAART_GPDO_01_KANAALGEBIED_PROJECTSITES_PRIORITAIRE_ONTWIKKELINGSSITES</Abstract>
+            <KeywordList/>
+            <SRS>EPSG:31370</SRS>
+            <LatLonBoundingBox maxx="4.482592207387343" maxy="50.91434679525825" minx="4.2412735653799425" miny="50.76266082001365"/>
+            <BoundingBox SRS="EPSG:31370" maxx="165088.0" maxy="185088.0" minx="140000.0" miny="160000.0"/>
+          </Layer>
+          <Layer noSubsets="0" opaque="0" queryable="1">
+            <Name>PER:KAART_GPDO_02_PRIORITAIRE_ONTWIKKELINGSSITES</Name>
+            <Title>02 Prioritaire ontwikkelingssites</Title>
+            <Abstract>Layer-Group type layer: PER:KAART_GPDO_02_PRIORITAIRE_ONTWIKKELINGSSITES</Abstract>
+            <KeywordList/>
+            <SRS>EPSG:31370</SRS>
+            <LatLonBoundingBox maxx="4.482592207387343" maxy="50.91434679525825" minx="4.2412735653799425" miny="50.76266082001365"/>
+            <BoundingBox SRS="EPSG:31370" maxx="165088.0" maxy="185088.0" minx="140000.0" miny="160000.0"/>
+          </Layer>
+          <Layer noSubsets="0" opaque="0" queryable="1">
+            <Name>PER:KAART_GPDO_03_VIJFHOEK_VAN_BRUSSEL</Name>
+            <Title>03 Vijfhoek van Brussel</Title>
+            <Abstract>Layer-Group type layer: PER:KAART_GPDO_03_VIJFHOEK_VAN_BRUSSEL</Abstract>
+            <KeywordList/>
+            <SRS>EPSG:31370</SRS>
+            <LatLonBoundingBox maxx="4.482592207387343" maxy="50.91434679525825" minx="4.2412735653799425" miny="50.76266082001365"/>
+            <BoundingBox SRS="EPSG:31370" maxx="165088.0" maxy="185088.0" minx="140000.0" miny="160000.0"/>
+          </Layer>
+          <Layer noSubsets="0" opaque="0" queryable="1">
+            <Name>PER:KAART_GPDO_04_LOKALE_POLEN</Name>
+            <Title>04 Lokale polen</Title>
+            <Abstract>Layer-Group type layer: PER:KAART_GPDO_04_LOKALE_POLEN</Abstract>
+            <KeywordList/>
+            <SRS>EPSG:31370</SRS>
+            <LatLonBoundingBox maxx="4.482592207387343" maxy="50.91434679525825" minx="4.2412735653799425" miny="50.76266082001365"/>
+            <BoundingBox SRS="EPSG:31370" maxx="165088.0" maxy="185088.0" minx="140000.0" miny="160000.0"/>
+          </Layer>
+          <Layer noSubsets="0" opaque="0" queryable="1">
+            <Name>PER:KAART_GPDO_05_LOKALE_IDENTITEITSKERN</Name>
+            <Title>05 Lokale identiteitskern</Title>
+            <Abstract>Layer-Group type layer: PER:KAART_GPDO_05_LOKALE_IDENTITEITSKERN</Abstract>
+            <KeywordList/>
+            <SRS>EPSG:31370</SRS>
+            <LatLonBoundingBox maxx="4.482592207387343" maxy="50.91434679525825" minx="4.2412735653799425" miny="50.76266082001365"/>
+            <BoundingBox SRS="EPSG:31370" maxx="165088.0" maxy="185088.0" minx="140000.0" miny="160000.0"/>
+          </Layer>
 
         </Layer>
       </Layer>
