@@ -2794,36 +2794,6 @@ const gfiFr = {
 			}
 		]
 	},
-	"BDU_DMS_PROT:Phototheque_Wikimedia_DMS": {
-		"actiontype": "GRID",
-		"title": "[%NAME%]",
-		"attributes": [{
-				"name": "Nom",
-				"label": "[%NAME%]",
-				"type": "string"
-			},
-			{
-				"name": "Image",
-				"label": "[%IMAGE%]",
-				"type": "picture"
-			},
-			{
-				"name": "Description",
-				"label": "[%DESCR_FR%]",
-				"type": "string"
-			},
-			{
-				"name": "Crédit",
-				"label": "[%CREDIT_FR%]",
-				"type": "string"
-			},
-			{
-				"name": "Source",
-				"label": "[%SOURCE%]",
-				"type": "string"
-			}
-		]
-	},
 	"BDU:plan_de_qualite_paysagere_et_urbanistique": {
 		"actiontype": "REDIRECT",
 		"url": "[%URL_FR%]",

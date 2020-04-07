@@ -28,6 +28,7 @@ var JSONViewer = React.createClass({
         var curLocale = this.translateLocale(this.props.locale);
         var layerName = this.props.layers ? this.props.layers : "Vector";
 
+        // Mode REDIRECT: it opens a given url directly and then construct a panel identical to the one created by the mode GRID
         if (GFI_DICT[curLocale] && GFI_DICT[curLocale][layerName] && GFI_DICT[curLocale][layerName].actiontype === "REDIRECT") {
             (this.props.response.features || []).map((feature) => {
                 window.open(this.parseTitle(GFI_DICT[curLocale][layerName].url, feature.properties), '_blank');
@@ -42,10 +43,9 @@ var JSONViewer = React.createClass({
                 <Accordion>
                 {(this.props.response.features || []).map((feature, i) => {
                     var displayTitle = feature.id;
-                    // var layerName = this.props.layers ? this.props.layers : "Vector";
                     var layerNameFromFeatureId = layerName;
                     var customRenderers = [];
-                    // var curLocale = this.translateLocale(this.props.locale);
+                    console.log(feature);
                     try {
                         layerNameFromFeatureId = this.props.layers.split(":")[0].concat(":").concat(feature.id.split(".")[0]);
                     } catch(err) {
@@ -54,13 +54,14 @@ var JSONViewer = React.createClass({
                     if (this.props.layers !== layerNameFromFeatureId) {
                         layerName = layerNameFromFeatureId;
                     }
+                    // Mode LINK: it renders a title and a list of clickable renamed urls for all the feature encountered in a single panel
                     if (GFI_DICT[curLocale] && GFI_DICT[curLocale][layerName] && GFI_DICT[curLocale][layerName].actiontype === "LINK") {
                         if (GFI_DICT[curLocale][layerName].title && GFI_DICT[curLocale][layerName].url) {
                             displayTitle = this.parseLinkTitle(GFI_DICT[curLocale][layerName].title, GFI_DICT[curLocale][layerName].url, feature.properties);
-                            // console.log(displayTitle);
                             return (<div><span><span className="linkTitle">{displayTitle}</span></span></div>);
                         }
                     }
+                    // mode GRID: it renders a custom title, it customise all the attributes that need it and create a panel for each feature encountered
                     if (GFI_DICT[curLocale] && GFI_DICT[curLocale][layerName]) {
                         if (GFI_DICT[curLocale][layerName].title) {
                             displayTitle = this.parseTitle(GFI_DICT[curLocale][layerName].title, feature.properties);
