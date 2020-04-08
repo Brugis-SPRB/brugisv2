@@ -2750,6 +2750,42 @@
             <LatLonBoundingBox maxx="4.482592207387343" maxy="50.91434679525825" minx="4.2412735653799425" miny="50.76266082001365"/>
             <BoundingBox SRS="EPSG:31370" maxx="165088.0" maxy="185088.0" minx="140000.0" miny="160000.0"/>
           </Layer>
+          <Layer noSubsets="0" opaque="0" queryable="1">
+            <Name>PER:KAART_GPDO_09_NETWERK_VAN_STRUCTURERENDE_ERFGOEDASSEN</Name>
+            <Title>09 Netwerk van structurerende erfgoedassen</Title>
+            <Abstract>Layer-Group type layer: PER:KAART_GPDO_09_NETWERK_VAN_STRUCTURERENDE_ERFGOEDASSEN</Abstract>
+            <KeywordList/>
+            <SRS>EPSG:31370</SRS>
+            <LatLonBoundingBox maxx="4.482635631396494" maxy="50.931982125444584" minx="4.239837314118492" miny="50.740436607569244"/>
+            <BoundingBox SRS="EPSG:31370" maxx="165088.0" maxy="185088.0" minx="140000.0" miny="160000.0"/>
+          </Layer>
+          <Layer noSubsets="0" opaque="0" queryable="1">
+            <Name>PER:KAART_GPDO_10_VERGROENINGSZONES</Name>
+            <Title>10 Vergroeningszones</Title>
+            <Abstract>Layer-Group type layer: PER:KAART_GPDO_10_VERGROENINGSZONES</Abstract>
+            <KeywordList/>
+            <SRS>EPSG:31370</SRS>
+            <LatLonBoundingBox maxx="4.482592207387343" maxy="50.91434679525825" minx="4.2412735653799425" miny="50.76266082001365"/>
+            <BoundingBox SRS="EPSG:31370" maxx="165088.0" maxy="185088.0" minx="140000.0" miny="160000.0"/>
+          </Layer>
+          <Layer noSubsets="0" opaque="0" queryable="1">
+            <Name>PER:KAART_GPDO_11_GROEN_NETWERK</Name>
+            <Title>11 Groen netwerk</Title>
+            <Abstract>Layer-Group type layer: PER:KAART_GPDO_11_GROEN_NETWERK</Abstract>
+            <KeywordList/>
+            <SRS>EPSG:31370</SRS>
+            <LatLonBoundingBox maxx="4.482592207387343" maxy="50.91434679525825" minx="4.2412735653799425" miny="50.76266082001365"/>
+            <BoundingBox SRS="EPSG:31370" maxx="165088.0" maxy="185088.0" minx="140000.0" miny="160000.0"/>
+          </Layer>
+          <Layer noSubsets="0" opaque="0" queryable="1">
+            <Name>PER:KAART_GPDO_12_BESCHERMING_VAN_DE_BIODIVERSITEIT</Name>
+            <Title>12 Bescherming van de biodiversiteit</Title>
+            <Abstract>Layer-Group type layer: PER:KAART_GPDO_12_BESCHERMING_VAN_DE_BIODIVERSITEIT</Abstract>
+            <KeywordList/>
+            <SRS>EPSG:31370</SRS>
+            <LatLonBoundingBox maxx="4.482592207387343" maxy="50.91434679525825" minx="4.2412735653799425" miny="50.76266082001365"/>
+            <BoundingBox SRS="EPSG:31370" maxx="165088.0" maxy="185088.0" minx="140000.0" miny="160000.0"/>
+          </Layer>
 
         </Layer>
       </Layer>
