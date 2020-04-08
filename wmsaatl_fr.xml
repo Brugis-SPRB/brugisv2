@@ -2914,7 +2914,7 @@
 
           <Layer noSubsets="0" opaque="0" queryable="1">
             <Name>PER:CARTE_PRDD_1_ARMATURE_SPATIALE_ET_VISION_POUR_BRUXELLES</Name>
-            <Title>Carte PRDD 1 Armature spatiale et vision pour Bruxelles</Title>
+            <Title>1 Armature spatiale et vision pour Bruxelles</Title>
             <Abstract>Layer-Group type layer: PER:CARTE_PRDD_1_ARMATURE_SPATIALE_ET_VISION_POUR_BRUXELLES</Abstract>
             <KeywordList/>
             <SRS>EPSG:31370</SRS>
@@ -2923,7 +2923,7 @@
           </Layer>
           <Layer noSubsets="0" opaque="0" queryable="1">
             <Name>PER:CARTE_PRDD_2_GRANDES_RESSOURCES_FONCIERES</Name>
-            <Title>Carte PRDD 2 Grandes Ressources Foncières</Title>
+            <Title>2 Grandes Ressources Foncières</Title>
             <Abstract>Layer-Group type layer: PER:CARTE_PRDD_2_GRANDES_RESSOURCES_FONCIERES</Abstract>
             <KeywordList/>
             <SRS>EPSG:31370</SRS>
@@ -2932,7 +2932,7 @@
           </Layer>
           <Layer noSubsets="0" opaque="0" queryable="1">
             <Name>PER:CARTE_PRDD_3_MAILLAGE_VERT_ET_BLEU</Name>
-            <Title>Carte PRDD 3 Maillage Vert et Bleu</Title>
+            <Title>3 Maillage Vert et Bleu</Title>
             <Abstract>Layer-Group type layer: PER:CARTE_PRDD_3_MAILLAGE_VERT_ET_BLEU</Abstract>
             <KeywordList/>
             <SRS>EPSG:31370</SRS>
@@ -2941,7 +2941,7 @@
           </Layer>
           <Layer noSubsets="0" opaque="0" queryable="1">
             <Name>PER:CARTE_PRDD_4_ESPACE_PUBLIC_ET_RENOVATION_URBAINE</Name>
-            <Title>Carte PRDD 4 Espace public et rénovation urbaine</Title>
+            <Title>4 Espace public et rénovation urbaine</Title>
             <Abstract>Layer-Group type layer: PER:CARTE_PRDD_4_ESPACE_PUBLIC_ET_RENOVATION_URBAINE</Abstract>
             <KeywordList/>
             <SRS>EPSG:31370</SRS>
@@ -2950,7 +2950,7 @@
           </Layer>
           <Layer noSubsets="0" opaque="0" queryable="1">
             <Name>PER:CARTE_PRDD_5_DEVELOPPEMENT_ECONOMIQUE</Name>
-            <Title>Carte PRDD 5 Développement économique</Title>
+            <Title>5 Développement économique</Title>
             <Abstract>Layer-Group type layer: PER:CARTE_PRDD_5_DEVELOPPEMENT_ECONOMIQUE</Abstract>
             <KeywordList/>
             <SRS>EPSG:31370</SRS>
@@ -2959,7 +2959,7 @@
           </Layer>
           <Layer noSubsets="0" opaque="0" queryable="1">
             <Name>PER:CARTE_PRDD_6_RESEAUX_STRUCTURANTS_DE_MOBILITE</Name>
-            <Title>Carte PRDD 6 Réseaux structurants de mobilité</Title>
+            <Title>6 Réseaux structurants de mobilité</Title>
             <Abstract>Layer-Group type layer: PER:CARTE_PRDD_6_RESEAUX_STRUCTURANTS_DE_MOBILITE</Abstract>
             <KeywordList/>
             <SRS>EPSG:31370</SRS>
@@ -2968,7 +2968,7 @@
           </Layer>
           <Layer noSubsets="0" opaque="0" queryable="1">
             <Name>PER:CARTE_PRDD_7_RESEAU_CYCLABLE</Name>
-            <Title>Carte PRDD 7 Réseau cyclable</Title>
+            <Title>7 Réseau cyclable</Title>
             <Abstract>Layer-Group type layer: PER:CARTE_PRDD_7_RESEAU_CYCLABLE</Abstract>
             <KeywordList/>
             <SRS>EPSG:31370</SRS>
@@ -2977,7 +2977,7 @@
           </Layer>
           <Layer noSubsets="0" opaque="0" queryable="1">
             <Name>PER:CARTE_PRDD_8_PROJET_DE_VILLE</Name>
-            <Title>Carte PRDD 8 Projet de ville</Title>
+            <Title>8 Projet de ville</Title>
             <Abstract>Layer-Group type layer: PER:CARTE_PRDD_8_PROJET_DE_VILLE</Abstract>
             <KeywordList/>
             <SRS>EPSG:31370</SRS>
@@ -2992,7 +2992,7 @@
 
           <Layer noSubsets="0" opaque="0" queryable="1">
             <Name>PER:CARTE_PRDD_01_TERRITOIRE_DU_CANAL_SITES_PRIORITAIRES_DE_DEVELOPPEMENT</Name>
-            <Title>Carte PRDD 01 Territoire du canal - Sites prioritaires de développement</Title>
+            <Title>01 Territoire du canal - Sites prioritaires de développement</Title>
             <Abstract>Layer-Group type layer: PER:CARTE_PRDD_01_TERRITOIRE_DU_CANAL_SITES_PRIORITAIRES_DE_DEVELOPPEMENT</Abstract>
             <KeywordList/>
             <SRS>EPSG:31370</SRS>
@@ -3001,7 +3001,7 @@
           </Layer>
           <Layer noSubsets="0" opaque="0" queryable="1">
             <Name>PER:CARTE_PRDD_02_POLES_DE_DEVELOPPEMENT_PRIORITAIRE</Name>
-            <Title>Carte PRDD 02 Pôles de développement prioritaire</Title>
+            <Title>02 Pôles de développement prioritaire</Title>
             <Abstract>Layer-Group type layer: PER:CARTE_PRDD_02_POLES_DE_DEVELOPPEMENT_PRIORITAIRE</Abstract>
             <KeywordList/>
             <SRS>EPSG:31370</SRS>
@@ -3010,7 +3010,7 @@
           </Layer>
           <Layer noSubsets="0" opaque="0" queryable="1">
             <Name>PER:CARTE_PRDD_03_PENTAGONE_DE_BRUXELLES</Name>
-            <Title>Carte PRDD 03 Pentagone de Bruxelles</Title>
+            <Title>03 Pentagone de Bruxelles</Title>
             <Abstract>Layer-Group type layer: PER:CARTE_PRDD_03_PENTAGONE_DE_BRUXELLES</Abstract>
             <KeywordList/>
             <SRS>EPSG:31370</SRS>
@@ -3019,7 +3019,7 @@
           </Layer>
           <Layer noSubsets="0" opaque="0" queryable="1">
             <Name>PER:CARTE_PRDD_04_POLES_D_ECHELLE_LOCALE</Name>
-            <Title>Carte PRDD 04 Pôles d'échelle locale</Title>
+            <Title>04 Pôles d'échelle locale</Title>
             <Abstract>Layer-Group type layer: PER:CARTE_PRDD_04_POLES_D_ECHELLE_LOCALE</Abstract>
             <KeywordList/>
             <SRS>EPSG:31370</SRS>
@@ -3028,7 +3028,7 @@
           </Layer>
           <Layer noSubsets="0" opaque="0" queryable="1">
             <Name>PER:CARTE_PRDD_05_NOYAUX_D_IDENTITE_LOCALE</Name>
-            <Title>Carte PRDD 05 Noyaux d'identité locale</Title>
+            <Title>05 Noyaux d'identité locale</Title>
             <Abstract>Layer-Group type layer: PER:CARTE_PRDD_05_NOYAUX_D_IDENTITE_LOCALE</Abstract>
             <KeywordList/>
             <SRS>EPSG:31370</SRS>
@@ -3037,7 +3037,7 @@
           </Layer>
           <Layer noSubsets="0" opaque="0" queryable="1">
             <Name>PER:CARTE_PRDD_06_ZONE_DE_REVITALISATION_URBAINE_2016</Name>
-            <Title>Carte PRDD 06 Zone de revitalisation urbaine</Title>
+            <Title>06 Zone de revitalisation urbaine</Title>
             <Abstract>Layer-Group type layer: PER:CARTE_PRDD_06_ZONE_DE_REVITALISATION_URBAINE_2016</Abstract>
             <KeywordList/>
             <SRS>EPSG:31370</SRS>
@@ -3046,7 +3046,7 @@
           </Layer>
           <Layer noSubsets="0" opaque="0" queryable="1">
             <Name>PER:CARTE_PRDD_07_ZONES_PATRIMONIALES</Name>
-            <Title>Carte PRDD 07 Zones patrimoniales</Title>
+            <Title>07 Zones patrimoniales</Title>
             <Abstract>Layer-Group type layer: PER:CARTE_PRDD_07_ZONES_PATRIMONIALES</Abstract>
             <KeywordList/>
             <SRS>EPSG:31370</SRS>
@@ -3055,7 +3055,7 @@
           </Layer>
           <Layer noSubsets="0" opaque="0" queryable="1">
             <Name>PER:CARTE_PRDD_08_PATRIMOINE_EMBLEMATIQUE</Name>
-            <Title>Carte PRDD 08 Patrimoine emblématique</Title>
+            <Title>08 Patrimoine emblématique</Title>
             <Abstract>Layer-Group type layer: PER:CARTE_PRDD_08_PATRIMOINE_EMBLEMATIQUE</Abstract>
             <KeywordList/>
             <SRS>EPSG:31370</SRS>
@@ -3064,7 +3064,7 @@
           </Layer>
           <Layer noSubsets="0" opaque="0" queryable="1">
             <Name>PER:CARTE_PRDD_09_RESEAUX_D_AXES_STRUCTURANTS_PATRIMONIAUX</Name>
-            <Title>Carte PRDD 09 Réseaux d'axes structurants patrimoniaux</Title>
+            <Title>09 Réseaux d'axes structurants patrimoniaux</Title>
             <Abstract>Layer-Group type layer: PER:CARTE_PRDD_09_RESEAUX_D_AXES_STRUCTURANTS_PATRIMONIAUX</Abstract>
             <KeywordList/>
             <SRS>EPSG:31370</SRS>
@@ -3073,7 +3073,7 @@
           </Layer>
           <Layer noSubsets="0" opaque="0" queryable="1">
             <Name>PER:CARTE_PRDD_10_ZONES_DE_VERDOIEMENT</Name>
-            <Title>Carte PRDD 10 Zones de verdoiement</Title>
+            <Title>10 Zones de verdoiement</Title>
             <Abstract>Layer-Group type layer: PER:CARTE_PRDD_10_ZONES_DE_VERDOIEMENT</Abstract>
             <KeywordList/>
             <SRS>EPSG:31370</SRS>
@@ -3082,7 +3082,7 @@
           </Layer>
           <Layer noSubsets="0" opaque="0" queryable="1">
             <Name>PER:CARTE_PRDD_11_ELEMENTS_DU_MAILLAGE_VERT</Name>
-            <Title>Carte PRDD 11 Elements du maillage vert</Title>
+            <Title>11 Elements du maillage vert</Title>
             <Abstract>Layer-Group type layer: PER:CARTE_PRDD_11_ELEMENTS_DU_MAILLAGE_VERT</Abstract>
             <KeywordList/>
             <SRS>EPSG:31370</SRS>
@@ -3091,7 +3091,7 @@
           </Layer>
           <Layer noSubsets="0" opaque="0" queryable="1">
             <Name>PER:CARTE_PRDD_12_PROTECTION_DE_LA_BIODIVERSITE</Name>
-            <Title>Carte PRDD 12 Protection de la biodiversité</Title>
+            <Title>12 Protection de la biodiversité</Title>
             <Abstract>Layer-Group type layer: PER:CARTE_PRDD_12_PROTECTION_DE_LA_BIODIVERSITE</Abstract>
             <KeywordList/>
             <SRS>EPSG:31370</SRS>
@@ -3100,7 +3100,7 @@
           </Layer>
           <Layer noSubsets="0" opaque="0" queryable="1">
             <Name>PER:CARTE_PRDD_13_MAILLAGE_BLEU</Name>
-            <Title>Carte PRDD 13 Maillage bleu</Title>
+            <Title>13 Maillage bleu</Title>
             <Abstract>Layer-Group type layer: PER:CARTE_PRDD_13_MAILLAGE_BLEU</Abstract>
             <KeywordList/>
             <SRS>EPSG:31370</SRS>
@@ -3109,7 +3109,7 @@
           </Layer>
           <Layer noSubsets="0" opaque="0" queryable="1">
             <Name>PER:CARTE_PRDD_14_RENFORCEMENT_DES_ESPACES_OUVERTS_A_L_ECHELLE_METROPOLITAINE</Name>
-            <Title>Carte PRDD 14 Renforcement des espaces ouverts à l'échelle métropolitaine</Title>
+            <Title>14 Renforcement des espaces ouverts à l'échelle métropolitaine</Title>
             <Abstract>Layer-Group type layer: PER:CARTE_PRDD_14_RENFORCEMENT_DES_ESPACES_OUVERTS_A_L_ECHELLE_METROPOLITAINE</Abstract>
             <KeywordList/>
             <SRS>EPSG:31370</SRS>
@@ -3118,7 +3118,7 @@
           </Layer>
           <Layer noSubsets="0" opaque="0" queryable="1">
             <Name>PER:CARTE_PRDD_15_AXES_DE_DEVELOPPEMENT_ECONOMIQUE</Name>
-            <Title>Carte PRDD 15 Axes de développement économique</Title>
+            <Title>15 Axes de développement économique</Title>
             <Abstract>Layer-Group type layer: PER:CARTE_PRDD_15_AXES_DE_DEVELOPPEMENT_ECONOMIQUE</Abstract>
             <KeywordList/>
             <SRS>EPSG:31370</SRS>
@@ -3127,7 +3127,7 @@
           </Layer>
           <Layer noSubsets="0" opaque="0" queryable="1">
             <Name>PER:CARTE_PRDD_16_POLES_DE_COMPETITIVITE_ET_CAMPUS_UNIVERSITAIRES</Name>
-            <Title>Carte PRDD 16 Pôles de compétitivité et campus universitaires</Title>
+            <Title>16 Pôles de compétitivité et campus universitaires</Title>
             <Abstract>Layer-Group type layer: PER:CARTE_PRDD_16_POLES_DE_COMPETITIVITE_ET_CAMPUS_UNIVERSITAIRES</Abstract>
             <KeywordList/>
             <SRS>EPSG:31370</SRS>
@@ -3136,7 +3136,7 @@
           </Layer>
           <Layer noSubsets="0" opaque="0" queryable="1">
             <Name>PER:CARTE_PRDD_17_ZONE_D_ECONOMIE_URBAINE_STIMULEE</Name>
-            <Title>Carte PRDD 17 Zone d'économie urbaine stimulée</Title>
+            <Title>17 Zone d'économie urbaine stimulée</Title>
             <Abstract>Layer-Group type layer: PER:CARTE_PRDD_17_ZONE_D_ECONOMIE_URBAINE_STIMULEE</Abstract>
             <KeywordList/>
             <SRS>EPSG:31370</SRS>
@@ -3145,7 +3145,7 @@
           </Layer>
           <Layer noSubsets="0" opaque="0" queryable="1">
             <Name>PER:CARTE_PRDD_18_RESEAU_STRUCTURANT_DE_TRANSPORT_EN_COMMUN</Name>
-            <Title>Carte PRDD 18 Réseau structurant de transport en commun</Title>
+            <Title>18 Réseau structurant de transport en commun</Title>
             <Abstract>Layer-Group type layer: PER:CARTE_PRDD_18_RESEAU_STRUCTURANT_DE_TRANSPORT_EN_COMMUN</Abstract>
             <KeywordList/>
             <SRS>EPSG:31370</SRS>
@@ -3154,7 +3154,7 @@
           </Layer>
           <Layer noSubsets="0" opaque="0" queryable="1">
             <Name>PER:CARTE_PRDD_19_PARKING_DE_TRANSIT</Name>
-            <Title>Carte PRDD 19 Parking de transit</Title>
+            <Title>19 Parking de transit</Title>
             <Abstract>Layer-Group type layer: PER:CARTE_PRDD_19_PARKING_DE_TRANSIT</Abstract>
             <KeywordList/>
             <SRS>EPSG:31370</SRS>
@@ -3163,7 +3163,7 @@
           </Layer>
           <Layer noSubsets="0" opaque="0" queryable="1">
             <Name>PER:CARTE_PRDD_20_RESEAU_STRUCTURANT_DE_VOIRIES</Name>
-            <Title>Carte PRDD 20 Réseau structurant de voiries</Title>
+            <Title>20 Réseau structurant de voiries</Title>
             <Abstract>Layer-Group type layer: PER:CARTE_PRDD_20_RESEAU_STRUCTURANT_DE_VOIRIES</Abstract>
             <KeywordList/>
             <SRS>EPSG:31370</SRS>
@@ -3172,7 +3172,7 @@
           </Layer>
           <Layer noSubsets="0" opaque="0" queryable="1">
             <Name>PER:CARTE_PRDD_21_AXES_PENETRANTS</Name>
-            <Title>Carte PRDD 21 Axes Pénétrants</Title>
+            <Title>21 Axes Pénétrants</Title>
             <Abstract>Layer-Group type layer: PER:CARTE_PRDD_21_AXES_PENETRANTS</Abstract>
             <KeywordList/>
             <SRS>EPSG:31370</SRS>
@@ -3181,7 +3181,7 @@
           </Layer>
           <Layer noSubsets="0" opaque="0" queryable="1">
             <Name>PER:CARTE_PRDD_22_RESEAUX_CYCLABLES</Name>
-            <Title>Carte PRDD 22 Réseaux cyclables</Title>
+            <Title>22 Réseaux cyclables</Title>
             <Abstract>Layer-Group type layer: PER:CARTE_PRDD_22_RESEAUX_CYCLABLES</Abstract>
             <KeywordList/>
             <SRS>EPSG:31370</SRS>

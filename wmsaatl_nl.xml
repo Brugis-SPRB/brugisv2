@@ -2604,7 +2604,7 @@
           <Title>Algemene kaarten</Title>
           <Layer noSubsets="0" opaque="0" queryable="1">
             <Name>PER:KAART_GPDO_1_RUIMTELIJKE_RUGGENGRAAT_EN_VISIE_VOOR_BRUSSEL</Name>
-            <Title>Kaart GPDO 1 Ruimtelijke ruggengraat en visie voor Brussel</Title>
+            <Title>1 Ruimtelijke ruggengraat en visie voor Brussel</Title>
             <Abstract>Layer-Group type layer: PER:KAART_GPDO_1_RUIMTELIJKE_RUGGENGRAAT_EN_VISIE_VOOR_BRUSSEL</Abstract>
             <KeywordList/>
             <SRS>EPSG:31370</SRS>
@@ -2613,7 +2613,7 @@
           </Layer>
           <Layer noSubsets="0" opaque="0" queryable="1">
             <Name>PER:KAART_GPDO_2_GROTE_GRONDRESERVES</Name>
-            <Title>Kaart GPDO 2 Grote grondreserves</Title>
+            <Title>2 Grote grondreserves</Title>
             <Abstract>Layer-Group type layer: PER:KAART_GPDO_2_GROTE_GRONDRESERVES</Abstract>
             <KeywordList/>
             <SRS>EPSG:31370</SRS>
@@ -2622,7 +2622,7 @@
           </Layer>
           <Layer noSubsets="0" opaque="0" queryable="1">
             <Name>PER:KAART_GPDO_3_GROEN_EN_BLAUW_NETWERK</Name>
-            <Title>Kaart GPDO 3 Groen en blauw netwerk</Title>
+            <Title>3 Groen en blauw netwerk</Title>
             <Abstract>Layer-Group type layer: PER:KAART_GPDO_3_GROEN_EN_BLAUW_NETWERK</Abstract>
             <KeywordList/>
             <SRS>EPSG:31370</SRS>
@@ -2631,7 +2631,7 @@
           </Layer>
           <Layer noSubsets="0" opaque="0" queryable="1">
             <Name>PER:KAART_GPDO_4_OPENBARE_RUIMTE_EN_STADSVERNIEUWING</Name>
-            <Title>Kaart GPDO 4 Openbare ruimte et stadsvernieuwing</Title>
+            <Title>4 Openbare ruimte et stadsvernieuwing</Title>
             <Abstract>Layer-Group type layer: PER:KAART_GPDO_4_OPENBARE_RUIMTE_EN_STADSVERNIEUWING</Abstract>
             <KeywordList/>
             <SRS>EPSG:31370</SRS>
@@ -2640,7 +2640,7 @@
           </Layer>
           <Layer noSubsets="0" opaque="0" queryable="1">
             <Name>PER:KAART_GPDO_5_ECONOMISCHE_ONTWIKKELING</Name>
-            <Title>Kaart GPDO 5 Economische ontwikkeling</Title>
+            <Title>5 Economische ontwikkeling</Title>
             <Abstract>Layer-Group type layer: PER:KAART_GPDO_5_ECONOMISCHE_ONTWIKKELING</Abstract>
             <KeywordList/>
             <SRS>EPSG:31370</SRS>
@@ -2649,7 +2649,7 @@
           </Layer>
           <Layer noSubsets="0" opaque="0" queryable="1">
             <Name>PER:KAART_GPDO_6_STRUCTURERENDE_MOBILITEITSNETWERKEN</Name>
-            <Title>Kaart GPDO 6 Structurerende mobiliteitsnetwerken</Title>
+            <Title>6 Structurerende mobiliteitsnetwerken</Title>
             <Abstract>Layer-Group type layer: PER:KAART_GPDO_6_STRUCTURERENDE_MOBILITEITSNETWERKEN</Abstract>
             <KeywordList/>
             <SRS>EPSG:31370</SRS>
@@ -2658,7 +2658,7 @@
           </Layer>
           <Layer noSubsets="0" opaque="0" queryable="1">
             <Name>PER:KAART_GPDO_7_FIETSNET</Name>
-            <Title>Kaart GPDO 7 Fietsnet</Title>
+            <Title>7 Fietsnet</Title>
             <Abstract>Layer-Group type layer: PER:KAART_GPDO_7_FIETSNET</Abstract>
             <KeywordList/>
             <SRS>EPSG:31370</SRS>
@@ -2667,7 +2667,7 @@
           </Layer>
           <Layer noSubsets="0" opaque="0" queryable="1">
             <Name>PER:KAART_GPDO_8_HET_STADSPROJECT</Name>
-            <Title>Kaart GPDO 8 Het stadsproject</Title>
+            <Title>8 Het stadsproject</Title>
             <Abstract>Layer-Group type layer: PER:KAART_GPDO_8_HET_STADSPROJECT</Abstract>
             <KeywordList/>
             <SRS>EPSG:31370</SRS>
@@ -2718,6 +2718,33 @@
             <Name>PER:KAART_GPDO_05_LOKALE_IDENTITEITSKERN</Name>
             <Title>05 Lokale identiteitskern</Title>
             <Abstract>Layer-Group type layer: PER:KAART_GPDO_05_LOKALE_IDENTITEITSKERN</Abstract>
+            <KeywordList/>
+            <SRS>EPSG:31370</SRS>
+            <LatLonBoundingBox maxx="4.482592207387343" maxy="50.91434679525825" minx="4.2412735653799425" miny="50.76266082001365"/>
+            <BoundingBox SRS="EPSG:31370" maxx="165088.0" maxy="185088.0" minx="140000.0" miny="160000.0"/>
+          </Layer>
+          <Layer noSubsets="0" opaque="0" queryable="1">
+            <Name>PER:KAART_GPDO_06_ZONE_VOOR_STEDELIJKE_HERWAARDERING_2016</Name>
+            <Title>06 Zone voor stedelijke hewaardereing 2016</Title>
+            <Abstract>Layer-Group type layer: PER:KAART_GPDO_06_ZONE_VOOR_STEDELIJKE_HERWAARDERING_2016</Abstract>
+            <KeywordList/>
+            <SRS>EPSG:31370</SRS>
+            <LatLonBoundingBox maxx="4.482592207387343" maxy="50.91434679525825" minx="4.2412735653799425" miny="50.76266082001365"/>
+            <BoundingBox SRS="EPSG:31370" maxx="165088.0" maxy="185088.0" minx="140000.0" miny="160000.0"/>
+          </Layer>
+          <Layer noSubsets="0" opaque="0" queryable="1">
+            <Name>PER:KAART_GPDO_07_ERFGOEDGEBEIDEN</Name>
+            <Title>07 Erfgoedgebieden</Title>
+            <Abstract>Layer-Group type layer: PER:KAART_GPDO_07_ERFGOEDGEBEIDEN</Abstract>
+            <KeywordList/>
+            <SRS>EPSG:31370</SRS>
+            <LatLonBoundingBox maxx="4.482592207387343" maxy="50.91434679525825" minx="4.2412735653799425" miny="50.76266082001365"/>
+            <BoundingBox SRS="EPSG:31370" maxx="165088.0" maxy="185088.0" minx="140000.0" miny="160000.0"/>
+          </Layer>
+          <Layer noSubsets="0" opaque="0" queryable="1">
+            <Name>PER:KAART_GPDO_08_ICONISCH_ERFGOED</Name>
+            <Title>08 Iconisch erfgoed</Title>
+            <Abstract>Layer-Group type layer: PER:KAART_GPDO_08_ICONISCH_ERFGOED</Abstract>
             <KeywordList/>
             <SRS>EPSG:31370</SRS>
             <LatLonBoundingBox maxx="4.482592207387343" maxy="50.91434679525825" minx="4.2412735653799425" miny="50.76266082001365"/>
