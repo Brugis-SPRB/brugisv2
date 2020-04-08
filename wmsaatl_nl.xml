@@ -2822,6 +2822,24 @@
             <LatLonBoundingBox maxx="4.482592207387343" maxy="50.91434679525825" minx="4.2412735653799425" miny="50.76266082001365"/>
             <BoundingBox SRS="EPSG:31370" maxx="165088.0" maxy="185088.0" minx="140000.0" miny="160000.0"/>
           </Layer>
+          <Layer noSubsets="0" opaque="0" queryable="1">
+            <Name>PER:KAART_GPDO_17_ZONE_VAN_ECONOMISCHE_UITBOUW_IN_DE_STAD</Name>
+            <Title>17 Zone van economische uitbouw in de stad</Title>
+            <Abstract>Layer-Group type layer: PER:KAART_GPDO_17_ZONE_VAN_ECONOMISCHE_UITBOUW_IN_DE_STAD</Abstract>
+            <KeywordList/>
+            <SRS>EPSG:31370</SRS>
+            <LatLonBoundingBox maxx="4.482592207387343" maxy="50.91434679525825" minx="4.2412735653799425" miny="50.76266082001365"/>
+            <BoundingBox SRS="EPSG:31370" maxx="165088.0" maxy="185088.0" minx="140000.0" miny="160000.0"/>
+          </Layer>
+          <Layer noSubsets="0" opaque="0" queryable="1">
+            <Name>PER:KAART_GPDO_18_STRUCTUREREND_OPENBAAR_VERVOERSNET</Name>
+            <Title>18 Structurerend openbaar vervoersnet</Title>
+            <Abstract>Layer-Group type layer: PER:KAART_GPDO_18_STRUCTUREREND_OPENBAAR_VERVOERSNET</Abstract>
+            <KeywordList/>
+            <SRS>EPSG:31370</SRS>
+            <LatLonBoundingBox maxx="4.502356606659889" maxy="50.932940069820106" minx="4.221827632054813" miny="50.739386052164924"/>
+            <BoundingBox SRS="EPSG:31370" maxx="165088.0" maxy="185088.0" minx="140000.0" miny="160000.0"/>
+          </Layer>
 
         </Layer>
       </Layer>
