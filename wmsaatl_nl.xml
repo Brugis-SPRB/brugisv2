@@ -2786,6 +2786,42 @@
             <LatLonBoundingBox maxx="4.482592207387343" maxy="50.91434679525825" minx="4.2412735653799425" miny="50.76266082001365"/>
             <BoundingBox SRS="EPSG:31370" maxx="165088.0" maxy="185088.0" minx="140000.0" miny="160000.0"/>
           </Layer>
+          <Layer noSubsets="0" opaque="0" queryable="1">
+            <Name>PER:KAART_GPDO_13_BLAUW_NETWERK</Name>
+            <Title>13 Blauw netwerk</Title>
+            <Abstract>Layer-Group type layer: PER:KAART_GPDO_13_BLAUW_NETWERK</Abstract>
+            <KeywordList/>
+            <SRS>EPSG:31370</SRS>
+            <LatLonBoundingBox maxx="4.482592207387343" maxy="50.91434675296011" minx="4.23948902148032" miny="50.76265890150132"/>
+            <BoundingBox SRS="EPSG:31370" maxx="165088.0" maxy="185088.0" minx="140000.0" miny="160000.0"/>
+          </Layer>
+          <Layer noSubsets="0" opaque="0" queryable="1">
+            <Name>PER:KAART_GPDO_14_VERSTERKING_VAN_OPEN_RUIMTES_OP_EEN_GROOTSTESTEDELIJKE_SCHAAL</Name>
+            <Title>14 Verstreking van open ruimtes op een grootstestedelijke schaal</Title>
+            <Abstract>Layer-Group type layer: PER:KAART_GPDO_14_VERSTERKING_VAN_OPEN_RUIMTES_OP_EEN_GROOTSTESTEDELIJKE_SCHAAL</Abstract>
+            <KeywordList/>
+            <SRS>EPSG:31370</SRS>
+            <LatLonBoundingBox maxx="4.482605992396876" maxy="50.91994659277171" minx="4.240314944000609" miny="50.76265980904919"/>
+            <BoundingBox SRS="EPSG:31370" maxx="165088.0" maxy="185088.0" minx="140000.0" miny="160000.0"/>
+          </Layer>
+          <Layer noSubsets="0" opaque="0" queryable="1">
+            <Name>PER:KAART_GPDO_15_ECONOMISCHE_ONTWIKKELINGSASSEN</Name>
+            <Title>15 Economische ontwikkelingsassen</Title>
+            <Abstract>Layer-Group type layer: PER:KAART_GPDO_15_ECONOMISCHE_ONTWIKKELINGSASSEN</Abstract>
+            <KeywordList/>
+            <SRS>EPSG:31370</SRS>
+            <LatLonBoundingBox maxx="4.482592207387343" maxy="50.91434679525825" minx="4.2412735653799425" miny="50.76266082001365"/>
+            <BoundingBox SRS="EPSG:31370" maxx="165088.0" maxy="185088.0" minx="140000.0" miny="160000.0"/>
+          </Layer>
+          <Layer noSubsets="0" opaque="0" queryable="1">
+            <Name>PER:KAART_GPDO_16_COMPETITIVITEITSPOLEN_EN_UNIVERSITEITSCAMPUSSEN</Name>
+            <Title>16 Competitiviteitspolen en universiteitscampussen</Title>
+            <Abstract>Layer-Group type layer: PER:KAART_GPDO_16_COMPETITIVITEITSPOLEN_EN_UNIVERSITEITSCAMPUSSEN</Abstract>
+            <KeywordList/>
+            <SRS>EPSG:31370</SRS>
+            <LatLonBoundingBox maxx="4.482592207387343" maxy="50.91434679525825" minx="4.2412735653799425" miny="50.76266082001365"/>
+            <BoundingBox SRS="EPSG:31370" maxx="165088.0" maxy="185088.0" minx="140000.0" miny="160000.0"/>
+          </Layer>
 
         </Layer>
       </Layer>
