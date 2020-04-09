@@ -2840,6 +2840,42 @@
             <LatLonBoundingBox maxx="4.502356606659889" maxy="50.932940069820106" minx="4.221827632054813" miny="50.739386052164924"/>
             <BoundingBox SRS="EPSG:31370" maxx="165088.0" maxy="185088.0" minx="140000.0" miny="160000.0"/>
           </Layer>
+          <Layer noSubsets="0" opaque="0" queryable="1">
+            <Name>PER:KAART_GPDO_19_OVERSTAPPARKING</Name>
+            <Title>19 Overstapparking</Title>
+            <Abstract>Layer-Group type layer: PER:KAART_GPDO_19_OVERSTAPPARKING</Abstract>
+            <KeywordList/>
+            <SRS>EPSG:31370</SRS>
+            <LatLonBoundingBox maxx="4.482592207387343" maxy="50.91434679525825" minx="4.2412735653799425" miny="50.76266082001365"/>
+            <BoundingBox SRS="EPSG:31370" maxx="165088.0" maxy="185088.0" minx="140000.0" miny="160000.0"/>
+          </Layer>
+          <Layer noSubsets="0" opaque="0" queryable="1">
+            <Name>PER:KAART_GPDO_20_STRUCTUREREND_WEGENNET</Name>
+            <Title>20 Structurerend wegennet</Title>
+            <Abstract>Layer-Group type layer: PER:KAART_GPDO_20_STRUCTUREREND_WEGENNET</Abstract>
+            <KeywordList/>
+            <SRS>EPSG:31370</SRS>
+            <LatLonBoundingBox maxx="4.482592207387343" maxy="50.91434679525825" minx="4.2412735653799425" miny="50.76266082001365"/>
+            <BoundingBox SRS="EPSG:31370" maxx="165088.0" maxy="185088.0" minx="140000.0" miny="160000.0"/>
+          </Layer>
+          <Layer noSubsets="0" opaque="0" queryable="1">
+            <Name>PER:KAART_GPDO_21_INVALSWEGEN</Name>
+            <Title>21 Invalswegen</Title>
+            <Abstract>Layer-Group type layer: PER:KAART_GPDO_21_INVALSWEGEN</Abstract>
+            <KeywordList/>
+            <SRS>EPSG:31370</SRS>
+            <LatLonBoundingBox maxx="4.482592207387343" maxy="50.91434679525825" minx="4.2412735653799425" miny="50.76266082001365"/>
+            <BoundingBox SRS="EPSG:31370" maxx="165088.0" maxy="185088.0" minx="140000.0" miny="160000.0"/>
+          </Layer>
+          <Layer noSubsets="0" opaque="0" queryable="1">
+            <Name>PER:KAART_GPDO_22_STRUCTUREREND_FIETSNET</Name>
+            <Title>22 Structurerend fietsnet</Title>
+            <Abstract>Layer-Group type layer: PER:KAART_GPDO_22_STRUCTUREREND_FIETSNET</Abstract>
+            <KeywordList/>
+            <SRS>EPSG:31370</SRS>
+            <LatLonBoundingBox maxx="4.504400615353169" maxy="50.932939686992526" minx="4.2218174088683895" miny="50.73945837894823"/>
+            <BoundingBox SRS="EPSG:31370" maxx="165088.0" maxy="185088.0" minx="140000.0" miny="160000.0"/>
+          </Layer>
 
         </Layer>
       </Layer>
