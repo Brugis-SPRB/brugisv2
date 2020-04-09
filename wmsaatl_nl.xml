@@ -2631,7 +2631,7 @@
           </Layer>
           <Layer noSubsets="0" opaque="0" queryable="1">
             <Name>PER:KAART_GPDO_4_OPENBARE_RUIMTE_EN_STADSVERNIEUWING</Name>
-            <Title>4 Openbare ruimte et stadsvernieuwing</Title>
+            <Title>4 Openbare ruimte en stadsvernieuwing</Title>
             <Abstract>Layer-Group type layer: PER:KAART_GPDO_4_OPENBARE_RUIMTE_EN_STADSVERNIEUWING</Abstract>
             <KeywordList/>
             <SRS>EPSG:31370</SRS>
