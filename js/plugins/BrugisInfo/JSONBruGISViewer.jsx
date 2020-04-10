@@ -41,6 +41,16 @@ var JSONViewer = React.createClass({
                     if (this.props.layers !== layerNameFromFeatureId) {
                         layerName = layerNameFromFeatureId;
                     }
+                    var gfiConf = getGFIConfForLayer(curLocale, layerName)
+                    if(gfiConf){
+                        if (gfiConf.title) {
+                            displayTitle = this.parseTitle(gfiConf.title, feature.properties);
+                        }
+                        if (gfiConf.attributes) {
+                            feature.properties = this.customiseFeatureProperties(customRenderers, feature.properties, gfiConf.attributes);
+                        }
+                    }
+                    /*
                     if (GFI_DICT[curLocale] && GFI_DICT[curLocale][layerName]) {
                         if (GFI_DICT[curLocale][layerName].title) {
                             displayTitle = this.parseTitle(GFI_DICT[curLocale][layerName].title, feature.properties);
@@ -49,6 +59,7 @@ var JSONViewer = React.createClass({
                             feature.properties = this.customiseFeatureProperties(customRenderers, feature.properties, GFI_DICT[curLocale][layerName].attributes);
                         }
                     }
+                    */
                     return (
                             <RowViewer
                               key={i}
@@ -66,6 +77,22 @@ var JSONViewer = React.createClass({
             </div>
         );
     },
+    getGFIConfForLayer(curLocale, layername) {
+        if(GFI_DICT[curLocale]){
+            for (let [key, value] of Object.entries(GFI_DICT[curLocale])) {
+                if(wildTest(key, layername)){
+                    return value;
+                }
+            }
+            return null;
+        }
+        return null;
+    },
+    wildTest(wildcard, str) {
+        const re = new RegExp(`^${wildcard.replace(/\*/g,'.*').replace(/\?/g,'.')}$`,'i');
+        return re.test(str); // remove last 'i' above to have case sensitive
+    },
+
     translateLocale(locale) {
         var gfiLocale = "FR";
         if (locale.indexOf("fr") >= 0) {
