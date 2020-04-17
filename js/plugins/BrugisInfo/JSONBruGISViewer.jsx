@@ -41,7 +41,7 @@ var JSONViewer = React.createClass({
                     if (this.props.layers !== layerNameFromFeatureId) {
                         layerName = layerNameFromFeatureId;
                     }
-                    var gfiConf = getGFIConfForLayer(curLocale, layerName)
+                    var gfiConf = this.getGFIConfForLayer(curLocale, layerName)
                     if(gfiConf){
                         if (gfiConf.title) {
                             displayTitle = this.parseTitle(gfiConf.title, feature.properties);
@@ -80,7 +80,7 @@ var JSONViewer = React.createClass({
     getGFIConfForLayer(curLocale, layername) {
         if(GFI_DICT[curLocale]){
             for (let [key, value] of Object.entries(GFI_DICT[curLocale])) {
-                if(wildTest(key, layername)){
+                if(this.wildTest(key, layername)){
                     return value;
                 }
             }
