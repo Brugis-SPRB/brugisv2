@@ -358,7 +358,7 @@ const gfiNl = {
 		"actiontype": "GRID",
 		"title": "[%REFSITEX%]",
 		"attributes": [{
-				"name": "Naam",
+				"name": "Objekt",
 				"label": "[%OBJET%]",
 				"type": "string"
 			},
@@ -1661,7 +1661,7 @@ const gfiNl = {
 	},
 	"BSO:Gemeentegrenzen": {
 		"actiontype": "GRID",
-		"title": "Commune: [%MUDN%]",
+		"title": "Commune: [%MU_NAME_DUT%]",
 		"attributes": []
 	},
 	"BSO:Goed_dat_beschermd_is_of_ingeschreven_op_de_bewaarlijst": {
@@ -2294,35 +2294,22 @@ const gfiNl = {
 			}
 		]
 	},
-	"BDU_DMS_PROT:Phototheque_Wikimedia_DMS": {
-		"actiontype": "GRID",
-		"title": "[%NAME%]",
+	"BSO:Beeldkwaliteitsplan": {
+		"actiontype": "REDIRECT",
+		"url": "[%URL_NL%]",
+		"title": "Beeldkwaliteitsplan",
 		"attributes": [{
-				"name": "Naam",
-				"label": "[%NAME%]",
-				"type": "string"
-			},
-			{
-				"name": "Beeld",
-				"label": "[%IMAGE%]",
-				"type": "picture"
-			},
-			{
-				"name": "Beschrijving",
-				"label": "[%DESCR_NL%]",
-				"type": "string"
-			},
-			{
-				"name": "Credit",
-				"label": "[%CREDIT_NL%]",
-				"type": "string"
-			},
-			{
-				"name": "Bron",
-				"label": "[%SOURCE%]",
-				"type": "string"
+				"name": "Link",
+				"label": "[%URL_NL%]",
+				"type": "link",
+				"substutedString": "Clik hier."
 			}
 		]
+	},
+	"BSO:OPENPERMITS_NL": {
+		"actiontype": "LINK",
+		"url": "https://openpermits.brussels/nl/_[%REFNOVA%]",
+		"title": "Dossier [%REFNOVA%]"
 	}
 };
 module.exports = gfiNl;

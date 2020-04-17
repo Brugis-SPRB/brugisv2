@@ -7,11 +7,7 @@ module.exports = {
     }, {
         name: "infos",
         path: "/infos",
-        component: require('./pages/Home')
-    }, {
-        name: "main",
-        path: "/main",
-        component: require('./pages/Main')
+        component: require('./pages/BrugisInfo')
     }],
     pluginsDef: require('./plugins.js'),
     initialState: {
@@ -96,8 +92,8 @@ module.exports = {
             }
         },
         mobile: {
-            mapInfo: {enabled: true, infoFormat: 'text/html' },
-            mousePosition: {enabled: true, crs: "EPSG:4326", showCenter: true}
+            mapInfo: {infoFormat: 'text/html' },
+            mousePosition: {enabled: true, crs: "EPSG:31370", showCenter: false}
         }
     },
     storeOpts: {

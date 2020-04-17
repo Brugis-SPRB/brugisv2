@@ -6,13 +6,17 @@ var {saveMapState, loadMapState, delMapState} = require('./actions');
 const SaveAndLoad = require('./SaveAndLoad');
 const {connect} = require('react-redux');
 const {Glyphicon} = require('react-bootstrap');
-const {Modal, Button} = require('react-bootstrap');
+const {Modal} = require('react-bootstrap');
+const Dialog = require('../../../MapStore2/web/client/components/misc/Dialog');
 const {toggleControl, setControlProperty} = require("../../../MapStore2/web/client/actions/controls");
 const {mapSelector} = require('../../../MapStore2/web/client/selectors/map');
 const {layersSelector} = require('../../../MapStore2/web/client/selectors/layers');
 const stateSelector = state => state;
 const LayersUtils = require('../../../MapStore2/web/client/utils/LayersUtils');
 const Message = require('../../../MapStore2/web/client/plugins/locale/Message');
+const mapIcon = require('./img/noun_Map_2606749.svg');
+const mapIcon2 = require('./img/noun_Map_26067490.svg');
+
 
 const selector = createSelector(mapSelector, stateSelector, layersSelector, (map, state, layers) => ({
     active: (state.controls && state.controls.LocalMaps && state.controls.LocalMaps.enabled) || (state.controls.toolbar && state.controls.toolbar.active === "LocalMaps"),
@@ -35,31 +39,65 @@ class LocalMaps extends React.Component {
         active: PropTypes.bool,
         toolbarActive: PropTypes.bool,
         onClose: PropTypes.func,
-        onCloseToolBar: PropTypes.func
+        onCloseToolBar: PropTypes.func,
+        panelStyle: PropTypes.object,
+        id: PropTypes.string,
+        panelClassName: PropTypes.string,
+        modal: PropTypes.bool,
+        closeGlyph: PropTypes.string
     };
 
     static defaultProps = {
-      active: false
+      active: false,
+      id: "brugis_localmaps",
+      panelClassName: "toolbar-panel",
+      modal: false,
+      panelStyle: {
+          minWidth: "600px",
+          zIndex: 100,
+          position: "absolute",
+          overflow: "auto",
+          top: "100px",
+          left: "calc(50% - 150px)",
+          backgroundColor: "white",
+          margin: "0px"
+      },
+      closeGlyph: "1-close"
+
+
     };
 
     render() {
         if (this.props.active) {
+            if (this.props.modal) {
+                return (
+                    <Modal id={this.props.id} show={this.props.active} onHide={this.close} bsSize="small" aria-labelledby="contained-modal-title-sm">
+                      <span role="header">
+                      <Modal.Header closeButton>
+                        <img src={mapIcon} height="28" width="28"></img>
+                        &nbsp;<span className="settings-panel-title">
+                        <Message msgId="localmaps.save_or_load_title"/>
+                        </span>
+                      </Modal.Header>
+                      </span>
+                      <Modal.Body>
+                        <SaveAndLoad onSave={this.saveMap} onLoad={this.props.onStateLoad} onDel={this.props.onStateDel} onImport={this.props.onStateSave}/>
+                      </Modal.Body>
+
+                    </Modal>
+                );
+            }
             return (
-                <Modal show={this.props.active} onHide={this.close} bsSize="small" aria-labelledby="contained-modal-title-sm">
-                  <Modal.Header closeButton>
-                    <Modal.Title id="contained-modal-title-sm">
-                      <Message msgId="localmaps.save_or_load_title"/>
-                    </Modal.Title>
-                  </Modal.Header>
-                  <Modal.Body>
-                    <SaveAndLoad onSave={this.saveMap} onLoad={this.props.onStateLoad} onDel={this.props.onStateDel} onImport={this.props.onStateSave}/>
-                  </Modal.Body>
-                  <Modal.Footer>
-                    <Button onClick={this.close}>
-                      <Message msgId="localmaps.close"/>
-                    </Button>
-                  </Modal.Footer>
-                </Modal>
+              <Dialog id={this.props.id} style={this.props.panelStyle} className={this.props.panelClassName}>
+                <span role="header">
+                    <img src={mapIcon} height="28" width="28"></img>&nbsp;<span className="settings-panel-title">
+                    <Message msgId="localmaps.save_or_load_title"/>
+                    <button onClick={this.close} className="close">{this.props.closeGlyph ? <Glyphicon glyph={this.props.closeGlyph}/> : <span>×</span>}</button></span>
+                </span>
+                <span role="body">
+                  <SaveAndLoad onSave={this.saveMap} onLoad={this.props.onStateLoad} onDel={this.props.onStateDel} onImport={this.props.onStateSave}/>
+                </span>
+              </Dialog>
             );
         }
         return null;
@@ -119,10 +157,10 @@ module.exports = {
             position: 9,
             exclusive: true,
             panel: true,
-            tooltip: "LocalMaps",
+            tooltip: <Message msgId="localmaps.save_or_load_title"/>,
             wrap: false,
             title: 'LocalMaps',
-            icon: <Glyphicon glyph="hdd"/>,
+            icon: <img src={mapIcon2} height="16" width="20"></img>,
             hide: false,
             priority: 2
         },
@@ -131,7 +169,7 @@ module.exports = {
             name: 'LocalMaps',
             position: 6,
             text: <Message msgId="localmaps.save_or_load_title"/>,
-            icon: <Glyphicon glyph="hdd"/>,
+            icon: <img src={mapIcon2} height="16" width="20"></img>,
             action: toggleControl.bind(null, 'LocalMaps', null),
             priority: 2,
             doNotHide: true

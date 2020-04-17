@@ -1,7 +1,7 @@
 {
 	"proxyUrl": {
 		"url": "/brugis/proxy/?url=",
-		"useCORS": ["https://mbr227.irisnet.be"]
+		"useCORS": ["https://mbr227.irisnet.be","http://10.128.81.205:8080", "http://gislab.urban.brussels", "http://gis.urban.brussels"]
 	},
 	"geoStoreUrl": "/brugis/rest/geostore",
 	"printUrl": "https://mbr227.irisnet.be/print/print/dep/info.json?url=https://mbr227.irisnet.be/print/print/dep",
@@ -147,10 +147,10 @@
 				 }
 			},
 			{ "name" : "ScaleBox" },
-
 			{
 				 "name":"MetadataExplorer",
 				 "cfg":{
+					  "width": 400,
 						"showGetCapLinks":false,
 						"addAuthentication":true,
 						"wrap":true,
@@ -292,7 +292,7 @@
 									 }
 								 }
 							 }
-						},"MapFooter","BestEffort",
+						},"MapFooter","BestEffort","BrugisService",
             {
                 "name" : "BrugisTree",
 								"cfg" : {
@@ -453,6 +453,7 @@
             {
                "name":"MetadataExplorer",
                "cfg":{
+								  "width": 450,
                   "showGetCapLinks":false,
                   "addAuthentication":true,
                   "wrap":true,

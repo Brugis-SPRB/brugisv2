@@ -285,7 +285,7 @@ const gfiEn = {
 		"actiontype": "GRID",
 		"title": "[%REFSITEX%]",
 		"attributes": [{
-				"name": "Nom",
+				"name": "Object",
 				"label": "[%OBJET%]",
 				"type": "string"
 			},
@@ -695,7 +695,7 @@ const gfiEn = {
 	},
 	"BDU:Limites_communales": {
 		"actiontype": "GRID",
-		"title": "Commune: [MUFN%]",
+		"title": "Commune: [MU_NAME_FRE%]",
 		"attributes": []
 	},
 	"BDU:Galeries_commercantes": {
@@ -805,6 +805,16 @@ const gfiEn = {
 				"name": "Source",
 				"label": "[%SOURCE%]",
 				"type": "string"
+			}
+		]
+	},
+	"BDU:plan_de_qualite_paysagere_et_urbanistique": {
+		"actiontype": "GRID",
+		"title": "Urban and Landscape quality map",
+		"attributes": [{
+				"name": "Link",
+				"label": "[%URL_FR%]",
+				"type": "link"
 			}
 		]
 	}

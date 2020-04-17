@@ -1,7 +1,11 @@
 import React, { PropTypes } from 'react';
 var {ButtonGroup, Button} = require('react-bootstrap');
 var _ = require('lodash');
-const Message = require('../../../MapStore2/web/client/plugins/locale/Message');
+const firstIcon = require('./img/noun_arrow first_839194.svg');
+const priorIcon = require('./img/noun_arrow prior_839193.svg');
+const nextIcon = require('./img/noun_Arrow next_839191.svg');
+const lastIcon = require('./img/noun_arrow last_839192.svg');
+// const Message = require('../../../MapStore2/web/client/plugins/locale/Message');
 
 class BrugisPagination extends React.Component {
 
@@ -9,11 +13,17 @@ class BrugisPagination extends React.Component {
         items: PropTypes.array.isRequired,
         onChangePage: PropTypes.func.isRequired,
         initialPage: PropTypes.number,
-        surveyUpdate: PropTypes.number
+        surveyUpdate: PropTypes.number,
+        bsSize: PropTypes.string
+    };
+
+    static contextTypes = {
+      intl: PropTypes.object.isRequired
     };
 
     static defaultProps = {
-        initialPage: 1
+        initialPage: 1,
+        bsSize: "small"
     };
 
     constructor(props) {
@@ -93,21 +103,45 @@ class BrugisPagination extends React.Component {
         var pager = this.state.pager;
 
         return (
-          <ButtonGroup block>
-            <Button disabled={pager.currentPage === 1 ? true : false} onClick={() => this.setPage(1)}>
-              <Message msgId="brugisSurvey.first"/>
+          <ButtonGroup block id="paginationButtons">
+            <Button
+              bsSize={this.props.bsSize}
+              bsStyle="primary"
+              title={this.context.intl.formatMessage({id: 'brugisSurvey.first'})}
+              disabled={pager.currentPage === 1 ? true : false}
+              onClick={() => this.setPage(1)}>
+              <img src={firstIcon} height="45" width="38"></img>
             </Button>
-            <Button disabled={pager.currentPage === 1 ? true : false} onClick={() => this.setPage(pager.currentPage - 1)}>
-              <Message msgId="brugisSurvey.prev"/>
+            <Button
+              bsSize={this.props.bsSize}
+              bsStyle="primary"
+              title={this.context.intl.formatMessage({id: 'brugisSurvey.prev'})}
+              disabled={pager.currentPage === 1 ? true : false}
+              onClick={() => this.setPage(pager.currentPage - 1)}>
+              <img src={priorIcon} height="45" width="38"></img>
             </Button>
             {pager.pages.map((page, index) =>
-                <Button active={pager.currentPage === page ? true : false} onClick={() => this.setPage(page)} >{index + 1}</Button>
+                <Button
+                  bsSize={this.props.bsSize}
+                  bsStyle="primary"
+                  active={pager.currentPage === page ? true : false}
+                  onClick={() => this.setPage(page)} >{index + 1}</Button>
             )}
-            <Button disabled={pager.currentPage === pager.totalPages ? true : false} onClick={() => this.setPage(pager.currentPage + 1)}>
-              <Message msgId="brugisSurvey.next"/>
+            <Button
+              bsSize={this.props.bsSize}
+              bsStyle="primary"
+              title={this.context.intl.formatMessage({id: 'brugisSurvey.next'})}
+              disabled={pager.currentPage === pager.totalPages ? true : false}
+              onClick={() => this.setPage(pager.currentPage + 1)}>
+              <img src={nextIcon} height="45" width="38"></img>
             </Button>
-            <Button disabled={pager.currentPage === pager.totalPages ? true : false} onClick={() => this.setPage(pager.totalPages)}>
-              <Message msgId="brugisSurvey.last"/>
+            <Button
+              bsSize={this.props.bsSize}
+              bsStyle="primary"
+              title={this.context.intl.formatMessage({id: 'brugisSurvey.last'})}
+              disabled={pager.currentPage === pager.totalPages ? true : false}
+              onClick={() => this.setPage(pager.totalPages)}>
+              <img src={lastIcon} height="45" width="38"></img>
             </Button>
           </ButtonGroup>
         );

@@ -25,14 +25,27 @@ var JSONViewer = React.createClass({
     render() {
         const RowViewer = this.props.rowViewer || PropertiesViewer;
 
+        var curLocale = this.translateLocale(this.props.locale);
+        var layerName = this.props.layers ? this.props.layers : "Vector";
+
+        // Mode REDIRECT: it opens a given url directly and then construct a panel identical to the one created by the mode GRID
+        if (GFI_DICT[curLocale] && GFI_DICT[curLocale][layerName] && GFI_DICT[curLocale][layerName].actiontype === "REDIRECT") {
+            (this.props.response.features || []).map((feature) => {
+                window.open(this.parseTitle(GFI_DICT[curLocale][layerName].url, feature.properties), '_blank');
+            });
+        }
+        // et ici, comment éviter d'ouvrir le popup, tout en permettant, si rien n'existe dans le GFI_DICT[curLocale]
+        // pour [layerName], d'obtenir tout de même un popup vanilla?
+        // En l'état, "REDIRECT" ouvre bien l'url dans un nouvel onglet, mais ouvre aussi le popup d'info, ce qui en
+        // soi n'est pas gênant, mais pourrait être amélioré.
+
         return (<div style={{maxHeight: "250px"}}>
                 <Accordion>
                 {(this.props.response.features || []).map((feature, i) => {
                     var displayTitle = feature.id;
-                    var layerName = this.props.layers ? this.props.layers : "Vector";
                     var layerNameFromFeatureId = layerName;
                     var customRenderers = [];
-                    var curLocale = this.translateLocale(this.props.locale);
+                    console.log(feature);
                     try {
                         layerNameFromFeatureId = this.props.layers.split(":")[0].concat(":").concat(feature.id.split(".")[0]);
                     } catch(err) {
@@ -41,6 +54,15 @@ var JSONViewer = React.createClass({
                     if (this.props.layers !== layerNameFromFeatureId) {
                         layerName = layerNameFromFeatureId;
                     }
+
+                    // Mode LINK: it renders a title and a list of clickable renamed urls for all the feature encountered in a single panel
+                    if (GFI_DICT[curLocale] && GFI_DICT[curLocale][layerName] && GFI_DICT[curLocale][layerName].actiontype === "LINK") {
+                        if (GFI_DICT[curLocale][layerName].title && GFI_DICT[curLocale][layerName].url) {
+                            displayTitle = this.parseLinkTitle(GFI_DICT[curLocale][layerName].title, GFI_DICT[curLocale][layerName].url, feature.properties);
+                            return (<div><span><span className="linkTitle">{displayTitle}</span></span></div>);
+                        }
+                    }
+                    // mode GRID: it renders a custom title, it customise all the attributes that need it and create a panel for each feature encountered
                     var gfiConf = this.getGFIConfForLayer(curLocale, layerName)
                     if(gfiConf){
                         if (gfiConf.title) {
@@ -50,16 +72,7 @@ var JSONViewer = React.createClass({
                             feature.properties = this.customiseFeatureProperties(customRenderers, feature.properties, gfiConf.attributes);
                         }
                     }
-                    /*
-                    if (GFI_DICT[curLocale] && GFI_DICT[curLocale][layerName]) {
-                        if (GFI_DICT[curLocale][layerName].title) {
-                            displayTitle = this.parseTitle(GFI_DICT[curLocale][layerName].title, feature.properties);
-                        }
-                        if (GFI_DICT[curLocale][layerName].attributes) {
-                            feature.properties = this.customiseFeatureProperties(customRenderers, feature.properties, GFI_DICT[curLocale][layerName].attributes);
-                        }
-                    }
-                    */
+
                     return (
                             <RowViewer
                               key={i}
@@ -117,6 +130,21 @@ var JSONViewer = React.createClass({
         customTitle = customTitle.replace(/\[%(.*?)%\]/g, "");
         return customTitle;
     },
+    parseLinkTitle(titleExp, urlExp, properties) {
+        var customTitle = titleExp;
+        var customUrl = urlExp;
+        Object.keys(properties).forEach((key) => {
+            var pattern = "\[%" + key + "%\]";
+            customTitle = customTitle.replace(pattern, properties[key]);
+        });
+        customTitle = customTitle.replace(/\[%(.*?)%\]/g, "");
+        Object.keys(properties).forEach((key) => {
+            var pattern = "\[%" + key + "%\]";
+            customUrl = customUrl.replace(pattern, properties[key]);
+        });
+        customUrl = customUrl.replace(/\[%(.*?)%\]/g, "");
+        return (<a href={customUrl} target="_blank">{customTitle}</a>);
+    },
     customiseFeatureProperties(customRenderers, properties, attributes) {
         var newProperties = {};
         attributes.forEach((attributeSource) => {
@@ -127,9 +155,15 @@ var JSONViewer = React.createClass({
             });
 
             if (attribute.type && attribute.type === "link") {
-                customRenderers[attribute.name] = function(attrib) {
-                    return (<a href={attrib} target="_blank">{attrib}</a>);
-                };
+                if (attribute.substutedString) {
+                    customRenderers[attribute.name] = function() {
+                        return (<a href={attribute.label} target="_blank">{attribute.substutedString}</a>);
+                    };
+                } else {
+                    customRenderers[attribute.name] = function(attrib) {
+                        return (<a href={attrib} target="_blank">{attrib}</a>);
+                    };
+                }
             }
             if (attribute.type && attribute.type === "date") {
                 customRenderers[attribute.name] = function(attrib) {

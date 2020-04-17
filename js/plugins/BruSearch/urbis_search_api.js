@@ -48,7 +48,7 @@ const WFSApi = {
         service: "wfs",
         version: "1.0.0",
         request: "GetFeature",
-        typeName: "BDU:Parcelle_2017",
+        typeName: "BDU:Parcelle_2019",
         outputFormat: "application/json",
         FILTER: filter
       }, options || {}, defaultOptions);
@@ -88,7 +88,7 @@ function mapCapaWFStoUrbisResult(wfsResponse) {
     if (wfsResponse.data.totalFeatures > 0) {
         wfsResponse.data.features.forEach((r) => {
             var bbox = extent(wfsResponse.data);
-            console.log(wfsResponse.data);
+            // console.log(wfsResponse.data);
             let urbisResult = {
                 adNc: "",
                 address: {
@@ -116,7 +116,7 @@ function textSearch(text) {
         var re = new RegExp(capakeyRegex);
         if (text.match(re)) {
             WFSApi.geocode(text).then((response) => {
-                console.log(response);
+                // console.log(response);
                 dispatch(searchResultLoaded(mapCapaWFStoUrbisResult(response)));
             }).catch((e) => {
                 dispatch(searchResultLoaded(e));

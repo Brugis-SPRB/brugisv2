@@ -1073,7 +1073,7 @@
             </Layer>
             <Layer noSubsets="0" opaque="0" queryable="1">
               <Name>BDU_DMS_PROT:Inventaire_legal_Quartiers_Leopold</Name>
-              <Title>inventaire légal Quartiers Léopold</Title>
+              <Title>Inventaire légal Quartiers Léopold</Title>
               <Abstract/>
               <KeywordList>
                 <Keyword>features</Keyword>
@@ -1087,7 +1087,7 @@
                 <Title>Inventaire</Title>
                 <LegendURL height="20" width="20">
                   <Format>image/png</Format>
-                  <OnlineResource ns0:href="http://10.128.81.203:8080/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=BDU_DMS_PROT%3AInventaire_legal_Quartiers_Leopold" ns0:type="simple"/>
+                  <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=BDU_DMS_PROT%3AInventaire_legal_Quartiers_Leopold" ns0:type="simple"/>
                 </LegendURL>
               </Style>
             </Layer>
@@ -1107,7 +1107,7 @@
                 <Title>Inventaire</Title>
                 <LegendURL height="20" width="20">
                   <Format>image/png</Format>
-                  <OnlineResource ns0:href="http://10.128.81.203:8080/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=BDU_DMS_PROT%3AInventaire_legal_des_sites" ns0:type="simple"/>
+                  <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=BDU_DMS_PROT%3AInventaire_legal_des_sites" ns0:type="simple"/>
                 </LegendURL>
               </Style>
             </Layer>
@@ -1785,36 +1785,31 @@
           </Layer-->
         </Layer>
 
-        <Layer noSubsets="0" opaque="0" queryable="1">
-          <Name>Phototheque Wikimedia</Name>
-          <Title>Photothèque Wikimedia</Title>
-
-            <Layer noSubsets="0" opaque="0" queryable="1">
-              <Name>BDU_DMS_PROT:Phototheque_Wikimedia_DMS</Name>
-              <Title>Photothèque Wikimedia DMS</Title>
-              <Abstract/>
-              <KeywordList>
-                <Keyword>features</Keyword>
-                <Keyword>PUBA40_PHOTOTHEQUE_WIKIMEDIA_DMS</Keyword>
-              </KeywordList>
-              <SRS>EPSG:31370</SRS>
-              <LatLonBoundingBox maxx="4.4814185885749405" maxy="50.913653774000515" minx="4.242470212763538" miny="50.76335283201384"/>
-              <BoundingBox SRS="EPSG:31370" maxx="165088.0" maxy="185088.0" minx="140000.0" miny="160000.0"/>
-              <Style>
-                <Name>point</Name>
-                <Title>Default Point</Title>
-                <LegendURL height="20" width="20">
-                  <Format>image/png</Format>
-                  <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=BDU_DMS_PROT%3APhototheque_Wikimedia_DMS" ns0:type="simple"/>
-                </LegendURL>
-              </Style>
-            </Layer>
-          </Layer>
-
       </Layer>
       <Layer noSubsets="0" opaque="0" queryable="1">
         <Name>Urbanisme</Name>
         <Title>Urbanisme</Title>
+        <Layer noSubsets="0" opaque="0" queryable="1">
+          <Name>BDU:OPENPERMITS_FR</Name>
+          <Title>Permis d'urbanisme</Title>
+          <Abstract/>
+          <KeywordList>
+            <Keyword>features</Keyword>
+            <Keyword>VM_NOVAPERMITS</Keyword>
+            <Keyword>SINGLETILE</Keyword>
+          </KeywordList>
+          <SRS>EPSG:31370</SRS>
+          <LatLonBoundingBox maxx="4.486099029621602" maxy="50.91175182743676" minx="4.249696750680997" miny="50.76009072098683"/>
+          <BoundingBox SRS="EPSG:31370" maxx="165088.0" maxy="185088.0" minx="140000.0" miny="160000.0"/>
+          <Style>
+            <Name>PU_PERMITS_FR</Name>
+            <Title>Permis d'Urbanisme</Title>
+            <LegendURL height="260" width="146">
+              <Format>image/png</Format>
+              <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=BDU%3AOPENPERMITS_FR" ns0:type="simple"/>
+            </LegendURL>
+          </Style>
+        </Layer>
         <Layer queryable="1">
           <Name>BDU:Lotissements</Name>
           <Title>Lotissements</Title>
@@ -1998,7 +1993,7 @@
           <Title>A azure polygon style</Title>
           <LegendURL height="20" width="20">
             <Format>image/png</Format>
-            <OnlineResource ns0:href="http://10.128.81.203:8080/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=BEE%3AZone_ZEUS" ns0:type="simple"/>
+            <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=BEE%3AZone_ZEUS" ns0:type="simple"/>
           </LegendURL>
         </Style>
         <Style>
@@ -2006,7 +2001,7 @@
           <Title>A azure polygon style</Title>
           <LegendURL height="20" width="20">
             <Format>image/png</Format>
-            <OnlineResource ns0:href="http://10.128.81.203:8080/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=BEE%3AZone_ZEUS&amp;style=Zone_ZEUS" ns0:type="simple"/>
+            <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=BEE%3AZone_ZEUS&amp;style=Zone_ZEUS" ns0:type="simple"/>
           </LegendURL>
         </Style>
       </Layer>
@@ -2038,6 +2033,27 @@
       <Layer noSubsets="0" opaque="0" queryable="1">
         <Name>Inventaire Etat du Sol</Name>
         <Title>Inventaire Etat du Sol</Title>
+        <Layer noSubsets="0" opaque="0" queryable="1">
+          <Name>BDU:PUBBELB_INVENTAIRE_ETAT_SOL_PUBLIC</Name>
+          <Title>PUBBELB_INVENTAIRE_ETAT_SOL_PUBLIC</Title>
+          <Abstract/>
+          <KeywordList>
+            <Keyword>features</Keyword>
+            <Keyword>PUBBELB_INVENTAIRE_ETAT_SOL_PUBLIC</Keyword>
+          </KeywordList>
+          <SRS>EPSG:31370</SRS>
+          <LatLonBoundingBox maxx="4.479551179274349" maxy="50.91222425243426" minx="4.252627282029799" miny="50.76873160510658"/>
+          <BoundingBox SRS="EPSG:31370" maxx="165088.0" maxy="185088.0" minx="140000.0" miny="160000.0"/>
+          <Style>
+            <Name>IBGE_Inventaire_etat_sol_public</Name>
+            <Title>inventaire etat du sol public</Title>
+            <LegendURL height="20" width="20">
+              <Format>image/png</Format>
+              <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=BDU%3APUBBELB_INVENTAIRE_ETAT_SOL_PUBLIC" ns0:type="simple"/>
+            </LegendURL>
+          </Style>
+        </Layer>
+
         <Layer cascaded="0" opaque="0" queryable="1">
           <Name>BDU:PUBBELB_INVENTAIRE_ETAT_SOL_PUBLIC</Name>
           <Title>PUBBELB_INVENTAIRE_ETAT_SOL_PUBLIC</Title>
@@ -2079,6 +2095,7 @@
             </LegendURL>
           </Style>
         </Layer>
+
       </Layer>
       <Layer noSubsets="0" opaque="0" queryable="1">
         <Name>Zones, Habitats, Sites</Name>
@@ -2342,6 +2359,36 @@
       <Layer noSubsets="0" opaque="0" queryable="1">
         <Name>Données hydrographiques</Name>
         <Title>Données hydrographiques</Title>
+        <Layer queryable="1" opaque="0" cascaded="0">
+          <Name>bruenvi_water_groudwater_abstraction</Name>
+          <Title>Captages eau souterraine</Title>
+          <Abstract>Captages eaux souterraines soumis a autorisation</Abstract>
+          <KeywordList>
+          <Keyword>captage</Keyword>
+          <Keyword> eau souterraine</Keyword>
+          <Keyword> permis</Keyword>
+          <Keyword>IBGE WMS - Mapserver - Fr</Keyword>
+          </KeywordList>
+          <CRS>EPSG:31370</CRS>
+          <EX_GeographicBoundingBox>
+          <westBoundLongitude>3.65481</westBoundLongitude>
+          <eastBoundLongitude>5.0827</eastBoundLongitude>
+          <southBoundLatitude>50.4787</southBoundLatitude>
+          <northBoundLatitude>51.1101</northBoundLatitude>
+          </EX_GeographicBoundingBox>
+          <BoundingBox CRS="EPSG:31370" minx="100000" miny="130000" maxx="200000" maxy="200000"/>
+          <BoundingBox CRS="EPSG:4326" minx="50.4787" miny="3.65481" maxx="51.1101" maxy="5.0827"/>
+          <BoundingBox CRS="EPSG:3812" minx="599997" miny="629995" maxx="700004" maxy="700006"/>
+          <BoundingBox CRS="EPSG:900913" minx="100000" miny="130000" maxx="200000" maxy="200000"/>
+          <Style>
+          <Name>default</Name>
+          <Title>default</Title>
+          <LegendURL width="191" height="76">
+          <Format>image/png</Format>
+          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://wms.environnement.brussels/be_wms?language=fre&amp;version=1.3.0&amp;service=WMS&amp;request=GetLegendGraphic&amp;sld_version=1.1.0&amp;layer=bruenvi_water_groudwater_abstraction&amp;format=image/png&amp;STYLE=default"/>
+          </LegendURL>
+          </Style>
+        </Layer>
         <Layer cascaded="0" opaque="0" queryable="1">
           <Name>bruenvi_water_surface</Name>
           <Title>Eaux de surface</Title>
@@ -2879,6 +2926,292 @@
       <SRS>EPSG:31370</SRS>
       <SRS>EPSG:900913</SRS>
       <LatLonBoundingBox maxx="4.49547992326272" maxy="50.9218586969616" minx="4.22527159306639" miny="50.7599660513373" />
+      <Layer noSubsets="0" opaque="0" queryable="1">
+        <Name>PRDD</Name>
+        <Title>PRDD</Title>
+        <Layer noSubsets="0" opaque="0" queryable="1">
+          <Name>Cartes générales</Name>
+          <Title>Cartes générales</Title>
+
+          <Layer noSubsets="0" opaque="0" queryable="1">
+            <Name>PER:CARTE_PRDD_1_ARMATURE_SPATIALE_ET_VISION_POUR_BRUXELLES</Name>
+            <Title>1 Armature spatiale et vision pour Bruxelles</Title>
+            <Abstract>Layer-Group type layer: PER:CARTE_PRDD_1_ARMATURE_SPATIALE_ET_VISION_POUR_BRUXELLES</Abstract>
+            <KeywordList/>
+            <SRS>EPSG:31370</SRS>
+            <LatLonBoundingBox maxx="4.501862742176479" maxy="50.932778191395016" minx="4.220178068350866" miny="50.7390418956114"/>
+            <BoundingBox SRS="EPSG:31370" maxx="165088.0" maxy="185088.0" minx="140000.0" miny="160000.0"/>
+          </Layer>
+          <Layer noSubsets="0" opaque="0" queryable="1">
+            <Name>PER:CARTE_PRDD_2_GRANDES_RESSOURCES_FONCIERES</Name>
+            <Title>2 Grandes Ressources Foncières</Title>
+            <Abstract>Layer-Group type layer: PER:CARTE_PRDD_2_GRANDES_RESSOURCES_FONCIERES</Abstract>
+            <KeywordList/>
+            <SRS>EPSG:31370</SRS>
+            <LatLonBoundingBox maxx="4.4819068060294365" maxy="50.913662159589926" minx="4.242071629304819" miny="50.76329466458694"/>
+            <BoundingBox SRS="EPSG:31370" maxx="165088.0" maxy="185088.0" minx="140000.0" miny="160000.0"/>
+          </Layer>
+          <Layer noSubsets="0" opaque="0" queryable="1">
+            <Name>PER:CARTE_PRDD_3_MAILLAGE_VERT_ET_BLEU</Name>
+            <Title>3 Maillage Vert et Bleu</Title>
+            <Abstract>Layer-Group type layer: PER:CARTE_PRDD_3_MAILLAGE_VERT_ET_BLEU</Abstract>
+            <KeywordList/>
+            <SRS>EPSG:31370</SRS>
+            <LatLonBoundingBox maxx="4.4707964005094185" maxy="50.91994612124158" minx="4.239473801383671" miny="50.76700822779816"/>
+            <BoundingBox SRS="EPSG:31370" maxx="165088.0" maxy="185088.0" minx="140000.0" miny="160000.0"/>
+          </Layer>
+          <Layer noSubsets="0" opaque="0" queryable="1">
+            <Name>PER:CARTE_PRDD_4_ESPACE_PUBLIC_ET_RENOVATION_URBAINE</Name>
+            <Title>4 Espace public et rénovation urbaine</Title>
+            <Abstract>Layer-Group type layer: PER:CARTE_PRDD_4_ESPACE_PUBLIC_ET_RENOVATION_URBAINE</Abstract>
+            <KeywordList/>
+            <SRS>EPSG:31370</SRS>
+            <LatLonBoundingBox maxx="4.481540382025686" maxy="50.91359611002929" minx="4.24247036581555" miny="50.76336086880375"/>
+            <BoundingBox SRS="EPSG:31370" maxx="165088.0" maxy="185088.0" minx="140000.0" miny="160000.0"/>
+          </Layer>
+          <Layer noSubsets="0" opaque="0" queryable="1">
+            <Name>PER:CARTE_PRDD_5_DEVELOPPEMENT_ECONOMIQUE</Name>
+            <Title>5 Développement économique</Title>
+            <Abstract>Layer-Group type layer: PER:CARTE_PRDD_5_DEVELOPPEMENT_ECONOMIQUE</Abstract>
+            <KeywordList/>
+            <SRS>EPSG:31370</SRS>
+            <LatLonBoundingBox maxx="4.48296557518834" maxy="50.914414116108844" minx="4.240867104763946" miny="50.76259333506502"/>
+            <BoundingBox SRS="EPSG:31370" maxx="165088.0" maxy="185088.0" minx="140000.0" miny="160000.0"/>
+          </Layer>
+          <Layer noSubsets="0" opaque="0" queryable="1">
+            <Name>PER:CARTE_PRDD_6_RESEAUX_STRUCTURANTS_DE_MOBILITE</Name>
+            <Title>6 Réseaux structurants de mobilité</Title>
+            <Abstract>Layer-Group type layer: PER:CARTE_PRDD_6_RESEAUX_STRUCTURANTS_DE_MOBILITE</Abstract>
+            <KeywordList/>
+            <SRS>EPSG:31370</SRS>
+            <LatLonBoundingBox maxx="4.482592207387343" maxy="50.91434679525825" minx="4.2412735653799425" miny="50.76266082001365"/>
+            <BoundingBox SRS="EPSG:31370" maxx="165088.0" maxy="185088.0" minx="140000.0" miny="160000.0"/>
+          </Layer>
+          <Layer noSubsets="0" opaque="0" queryable="1">
+            <Name>PER:CARTE_PRDD_7_RESEAU_CYCLABLE</Name>
+            <Title>7 Réseau cyclable</Title>
+            <Abstract>Layer-Group type layer: PER:CARTE_PRDD_7_RESEAU_CYCLABLE</Abstract>
+            <KeywordList/>
+            <SRS>EPSG:31370</SRS>
+            <LatLonBoundingBox maxx="4.504400615353169" maxy="50.932939686992526" minx="4.2218174088683895" miny="50.73945837894823"/>
+            <BoundingBox SRS="EPSG:31370" maxx="165088.0" maxy="185088.0" minx="140000.0" miny="160000.0"/>
+          </Layer>
+          <Layer noSubsets="0" opaque="0" queryable="1">
+            <Name>PER:CARTE_PRDD_8_PROJET_DE_VILLE</Name>
+            <Title>8 Projet de ville</Title>
+            <Abstract>Layer-Group type layer: PER:CARTE_PRDD_8_PROJET_DE_VILLE</Abstract>
+            <KeywordList/>
+            <SRS>EPSG:31370</SRS>
+            <LatLonBoundingBox maxx="4.501862742176479" maxy="50.932778191395016" minx="4.220178068350866" miny="50.7390418956114"/>
+            <BoundingBox SRS="EPSG:31370" maxx="165088.0" maxy="185088.0" minx="140000.0" miny="160000.0"/>
+          </Layer>
+
+        </Layer>
+        <Layer noSubsets="0" opaque="0" queryable="1">
+          <Name>Cartes détaillées</Name>
+          <Title>Cartes détaillées</Title>
+
+          <Layer noSubsets="0" opaque="0" queryable="1">
+            <Name>PER:CARTE_PRDD_01_TERRITOIRE_DU_CANAL_SITES_PRIORITAIRES_DE_DEVELOPPEMENT</Name>
+            <Title>01 Territoire du canal - Sites prioritaires de développement</Title>
+            <Abstract>Layer-Group type layer: PER:CARTE_PRDD_01_TERRITOIRE_DU_CANAL_SITES_PRIORITAIRES_DE_DEVELOPPEMENT</Abstract>
+            <KeywordList/>
+            <SRS>EPSG:31370</SRS>
+            <LatLonBoundingBox maxx="4.482592207387343" maxy="50.91434679525825" minx="4.2412735653799425" miny="50.76266082001365"/>
+            <BoundingBox SRS="EPSG:31370" maxx="165088.0" maxy="185088.0" minx="140000.0" miny="160000.0"/>
+          </Layer>
+          <Layer noSubsets="0" opaque="0" queryable="1">
+            <Name>PER:CARTE_PRDD_02_POLES_DE_DEVELOPPEMENT_PRIORITAIRE</Name>
+            <Title>02 Pôles de développement prioritaire</Title>
+            <Abstract>Layer-Group type layer: PER:CARTE_PRDD_02_POLES_DE_DEVELOPPEMENT_PRIORITAIRE</Abstract>
+            <KeywordList/>
+            <SRS>EPSG:31370</SRS>
+            <LatLonBoundingBox maxx="4.482592207387343" maxy="50.91434679525825" minx="4.2412735653799425" miny="50.76266082001365"/>
+            <BoundingBox SRS="EPSG:31370" maxx="165088.0" maxy="185088.0" minx="140000.0" miny="160000.0"/>
+          </Layer>
+          <Layer noSubsets="0" opaque="0" queryable="1">
+            <Name>PER:CARTE_PRDD_03_PENTAGONE_DE_BRUXELLES</Name>
+            <Title>03 Pentagone de Bruxelles</Title>
+            <Abstract>Layer-Group type layer: PER:CARTE_PRDD_03_PENTAGONE_DE_BRUXELLES</Abstract>
+            <KeywordList/>
+            <SRS>EPSG:31370</SRS>
+            <LatLonBoundingBox maxx="4.482592207387343" maxy="50.91434679525825" minx="4.2412735653799425" miny="50.76266082001365"/>
+            <BoundingBox SRS="EPSG:31370" maxx="165088.0" maxy="185088.0" minx="140000.0" miny="160000.0"/>
+          </Layer>
+          <Layer noSubsets="0" opaque="0" queryable="1">
+            <Name>PER:CARTE_PRDD_04_POLES_D_ECHELLE_LOCALE</Name>
+            <Title>04 Pôles d'échelle locale</Title>
+            <Abstract>Layer-Group type layer: PER:CARTE_PRDD_04_POLES_D_ECHELLE_LOCALE</Abstract>
+            <KeywordList/>
+            <SRS>EPSG:31370</SRS>
+            <LatLonBoundingBox maxx="4.482592207387343" maxy="50.91434679525825" minx="4.2412735653799425" miny="50.76266082001365"/>
+            <BoundingBox SRS="EPSG:31370" maxx="165088.0" maxy="185088.0" minx="140000.0" miny="160000.0"/>
+          </Layer>
+          <Layer noSubsets="0" opaque="0" queryable="1">
+            <Name>PER:CARTE_PRDD_05_NOYAUX_D_IDENTITE_LOCALE</Name>
+            <Title>05 Noyaux d'identité locale</Title>
+            <Abstract>Layer-Group type layer: PER:CARTE_PRDD_05_NOYAUX_D_IDENTITE_LOCALE</Abstract>
+            <KeywordList/>
+            <SRS>EPSG:31370</SRS>
+            <LatLonBoundingBox maxx="4.482592207387343" maxy="50.91434679525825" minx="4.2412735653799425" miny="50.76266082001365"/>
+            <BoundingBox SRS="EPSG:31370" maxx="165088.0" maxy="185088.0" minx="140000.0" miny="160000.0"/>
+          </Layer>
+          <Layer noSubsets="0" opaque="0" queryable="1">
+            <Name>PER:CARTE_PRDD_06_ZONE_DE_REVITALISATION_URBAINE_2016</Name>
+            <Title>06 Zone de revitalisation urbaine</Title>
+            <Abstract>Layer-Group type layer: PER:CARTE_PRDD_06_ZONE_DE_REVITALISATION_URBAINE_2016</Abstract>
+            <KeywordList/>
+            <SRS>EPSG:31370</SRS>
+            <LatLonBoundingBox maxx="4.482592207387343" maxy="50.91434679525825" minx="4.2412735653799425" miny="50.76266082001365"/>
+            <BoundingBox SRS="EPSG:31370" maxx="165088.0" maxy="185088.0" minx="140000.0" miny="160000.0"/>
+          </Layer>
+          <Layer noSubsets="0" opaque="0" queryable="1">
+            <Name>PER:CARTE_PRDD_07_ZONES_PATRIMONIALES</Name>
+            <Title>07 Zones patrimoniales</Title>
+            <Abstract>Layer-Group type layer: PER:CARTE_PRDD_07_ZONES_PATRIMONIALES</Abstract>
+            <KeywordList/>
+            <SRS>EPSG:31370</SRS>
+            <LatLonBoundingBox maxx="4.482592207387343" maxy="50.91434679525825" minx="4.2412735653799425" miny="50.76266082001365"/>
+            <BoundingBox SRS="EPSG:31370" maxx="165088.0" maxy="185088.0" minx="140000.0" miny="160000.0"/>
+          </Layer>
+          <Layer noSubsets="0" opaque="0" queryable="1">
+            <Name>PER:CARTE_PRDD_08_PATRIMOINE_EMBLEMATIQUE</Name>
+            <Title>08 Patrimoine emblématique</Title>
+            <Abstract>Layer-Group type layer: PER:CARTE_PRDD_08_PATRIMOINE_EMBLEMATIQUE</Abstract>
+            <KeywordList/>
+            <SRS>EPSG:31370</SRS>
+            <LatLonBoundingBox maxx="4.482592207387343" maxy="50.91434679525825" minx="4.2412735653799425" miny="50.76266082001365"/>
+            <BoundingBox SRS="EPSG:31370" maxx="165088.0" maxy="185088.0" minx="140000.0" miny="160000.0"/>
+          </Layer>
+          <Layer noSubsets="0" opaque="0" queryable="1">
+            <Name>PER:CARTE_PRDD_09_RESEAUX_D_AXES_STRUCTURANTS_PATRIMONIAUX</Name>
+            <Title>09 Réseaux d'axes structurants patrimoniaux</Title>
+            <Abstract>Layer-Group type layer: PER:CARTE_PRDD_09_RESEAUX_D_AXES_STRUCTURANTS_PATRIMONIAUX</Abstract>
+            <KeywordList/>
+            <SRS>EPSG:31370</SRS>
+            <LatLonBoundingBox maxx="4.482635631396494" maxy="50.931982125444584" minx="4.239837314118492" miny="50.740436607569244"/>
+            <BoundingBox SRS="EPSG:31370" maxx="165088.0" maxy="185088.0" minx="140000.0" miny="160000.0"/>
+          </Layer>
+          <Layer noSubsets="0" opaque="0" queryable="1">
+            <Name>PER:CARTE_PRDD_10_ZONES_DE_VERDOIEMENT</Name>
+            <Title>10 Zones de verdoiement</Title>
+            <Abstract>Layer-Group type layer: PER:CARTE_PRDD_10_ZONES_DE_VERDOIEMENT</Abstract>
+            <KeywordList/>
+            <SRS>EPSG:31370</SRS>
+            <LatLonBoundingBox maxx="4.482592207387343" maxy="50.91434679525825" minx="4.2412735653799425" miny="50.76266082001365"/>
+            <BoundingBox SRS="EPSG:31370" maxx="165088.0" maxy="185088.0" minx="140000.0" miny="160000.0"/>
+          </Layer>
+          <Layer noSubsets="0" opaque="0" queryable="1">
+            <Name>PER:CARTE_PRDD_11_ELEMENTS_DU_MAILLAGE_VERT</Name>
+            <Title>11 Elements du maillage vert</Title>
+            <Abstract>Layer-Group type layer: PER:CARTE_PRDD_11_ELEMENTS_DU_MAILLAGE_VERT</Abstract>
+            <KeywordList/>
+            <SRS>EPSG:31370</SRS>
+            <LatLonBoundingBox maxx="4.481914589727506" maxy="50.91416234359296" minx="4.239817419691095" miny="50.76233939230115"/>
+            <BoundingBox SRS="EPSG:31370" maxx="165088.0" maxy="185088.0" minx="140000.0" miny="160000.0"/>
+          </Layer>
+          <Layer noSubsets="0" opaque="0" queryable="1">
+            <Name>PER:CARTE_PRDD_12_PROTECTION_DE_LA_BIODIVERSITE</Name>
+            <Title>12 Protection de la biodiversité</Title>
+            <Abstract>Layer-Group type layer: PER:CARTE_PRDD_12_PROTECTION_DE_LA_BIODIVERSITE</Abstract>
+            <KeywordList/>
+            <SRS>EPSG:31370</SRS>
+            <LatLonBoundingBox maxx="4.482592207387343" maxy="50.91434679525825" minx="4.2412735653799425" miny="50.76266082001365"/>
+            <BoundingBox SRS="EPSG:31370" maxx="165088.0" maxy="185088.0" minx="140000.0" miny="160000.0"/>
+          </Layer>
+          <Layer noSubsets="0" opaque="0" queryable="1">
+            <Name>PER:CARTE_PRDD_13_MAILLAGE_BLEU</Name>
+            <Title>13 Maillage bleu</Title>
+            <Abstract>Layer-Group type layer: PER:CARTE_PRDD_13_MAILLAGE_BLEU</Abstract>
+            <KeywordList/>
+            <SRS>EPSG:31370</SRS>
+            <LatLonBoundingBox maxx="4.481914589727506" maxy="50.91416229504463" minx="4.2380945434343635" miny="50.76233751924305"/>
+            <BoundingBox SRS="EPSG:31370" maxx="165088.0" maxy="185088.0" minx="140000.0" miny="160000.0"/>
+          </Layer>
+          <Layer noSubsets="0" opaque="0" queryable="1">
+            <Name>PER:CARTE_PRDD_14_RENFORCEMENT_DES_ESPACES_OUVERTS_A_L_ECHELLE_METROPOLITAINE</Name>
+            <Title>14 Renforcement des espaces ouverts à l'échelle métropolitaine</Title>
+            <Abstract>Layer-Group type layer: PER:CARTE_PRDD_14_RENFORCEMENT_DES_ESPACES_OUVERTS_A_L_ECHELLE_METROPOLITAINE</Abstract>
+            <KeywordList/>
+            <SRS>EPSG:31370</SRS>
+            <LatLonBoundingBox maxx="4.482605992396876" maxy="50.91994659277171" minx="4.240314944000609" miny="50.76265980904919"/>
+            <BoundingBox SRS="EPSG:31370" maxx="165088.0" maxy="185088.0" minx="140000.0" miny="160000.0"/>
+          </Layer>
+          <Layer noSubsets="0" opaque="0" queryable="1">
+            <Name>PER:CARTE_PRDD_15_AXES_DE_DEVELOPPEMENT_ECONOMIQUE</Name>
+            <Title>15 Axes de développement économique</Title>
+            <Abstract>Layer-Group type layer: PER:CARTE_PRDD_15_AXES_DE_DEVELOPPEMENT_ECONOMIQUE</Abstract>
+            <KeywordList/>
+            <SRS>EPSG:31370</SRS>
+            <LatLonBoundingBox maxx="4.482592207387343" maxy="50.91434679525825" minx="4.2412735653799425" miny="50.76266082001365"/>
+            <BoundingBox SRS="EPSG:31370" maxx="165088.0" maxy="185088.0" minx="140000.0" miny="160000.0"/>
+          </Layer>
+          <Layer noSubsets="0" opaque="0" queryable="1">
+            <Name>PER:CARTE_PRDD_16_POLES_DE_COMPETITIVITE_ET_CAMPUS_UNIVERSITAIRES</Name>
+            <Title>16 Pôles de compétitivité et campus universitaires</Title>
+            <Abstract>Layer-Group type layer: PER:CARTE_PRDD_16_POLES_DE_COMPETITIVITE_ET_CAMPUS_UNIVERSITAIRES</Abstract>
+            <KeywordList/>
+            <SRS>EPSG:31370</SRS>
+            <LatLonBoundingBox maxx="4.482592207387343" maxy="50.91434679525825" minx="4.2412735653799425" miny="50.76266082001365"/>
+            <BoundingBox SRS="EPSG:31370" maxx="165088.0" maxy="185088.0" minx="140000.0" miny="160000.0"/>
+          </Layer>
+          <Layer noSubsets="0" opaque="0" queryable="1">
+            <Name>PER:CARTE_PRDD_17_ZONE_D_ECONOMIE_URBAINE_STIMULEE</Name>
+            <Title>17 Zone d'économie urbaine stimulée</Title>
+            <Abstract>Layer-Group type layer: PER:CARTE_PRDD_17_ZONE_D_ECONOMIE_URBAINE_STIMULEE</Abstract>
+            <KeywordList/>
+            <SRS>EPSG:31370</SRS>
+            <LatLonBoundingBox maxx="4.482592207387343" maxy="50.91434679525825" minx="4.2412735653799425" miny="50.76266082001365"/>
+            <BoundingBox SRS="EPSG:31370" maxx="165088.0" maxy="185088.0" minx="140000.0" miny="160000.0"/>
+          </Layer>
+          <Layer noSubsets="0" opaque="0" queryable="1">
+            <Name>PER:CARTE_PRDD_18_RESEAU_STRUCTURANT_DE_TRANSPORT_EN_COMMUN</Name>
+            <Title>18 Réseau structurant de transport en commun</Title>
+            <Abstract>Layer-Group type layer: PER:CARTE_PRDD_18_RESEAU_STRUCTURANT_DE_TRANSPORT_EN_COMMUN</Abstract>
+            <KeywordList/>
+            <SRS>EPSG:31370</SRS>
+            <LatLonBoundingBox maxx="4.501862742176479" maxy="50.932778191395016" minx="4.220178068350866" miny="50.7390418956114"/>
+            <BoundingBox SRS="EPSG:31370" maxx="165088.0" maxy="185088.0" minx="140000.0" miny="160000.0"/>
+          </Layer>
+          <Layer noSubsets="0" opaque="0" queryable="1">
+            <Name>PER:CARTE_PRDD_19_PARKING_DE_TRANSIT</Name>
+            <Title>19 Parking de transit</Title>
+            <Abstract>Layer-Group type layer: PER:CARTE_PRDD_19_PARKING_DE_TRANSIT</Abstract>
+            <KeywordList/>
+            <SRS>EPSG:31370</SRS>
+            <LatLonBoundingBox maxx="4.482592207387343" maxy="50.91434679525825" minx="4.2412735653799425" miny="50.76266082001365"/>
+            <BoundingBox SRS="EPSG:31370" maxx="165088.0" maxy="185088.0" minx="140000.0" miny="160000.0"/>
+          </Layer>
+          <Layer noSubsets="0" opaque="0" queryable="1">
+            <Name>PER:CARTE_PRDD_20_RESEAU_STRUCTURANT_DE_VOIRIES</Name>
+            <Title>20 Réseau structurant de voiries</Title>
+            <Abstract>Layer-Group type layer: PER:CARTE_PRDD_20_RESEAU_STRUCTURANT_DE_VOIRIES</Abstract>
+            <KeywordList/>
+            <SRS>EPSG:31370</SRS>
+            <LatLonBoundingBox maxx="4.482592207387343" maxy="50.91434679525825" minx="4.2412735653799425" miny="50.76266082001365"/>
+            <BoundingBox SRS="EPSG:31370" maxx="165088.0" maxy="185088.0" minx="140000.0" miny="160000.0"/>
+          </Layer>
+          <Layer noSubsets="0" opaque="0" queryable="1">
+            <Name>PER:CARTE_PRDD_21_AXES_PENETRANTS</Name>
+            <Title>21 Axes Pénétrants</Title>
+            <Abstract>Layer-Group type layer: PER:CARTE_PRDD_21_AXES_PENETRANTS</Abstract>
+            <KeywordList/>
+            <SRS>EPSG:31370</SRS>
+            <LatLonBoundingBox maxx="4.482592207387343" maxy="50.91434679525825" minx="4.2412735653799425" miny="50.76266082001365"/>
+            <BoundingBox SRS="EPSG:31370" maxx="165088.0" maxy="185088.0" minx="140000.0" miny="160000.0"/>
+          </Layer>
+          <Layer noSubsets="0" opaque="0" queryable="1">
+            <Name>PER:CARTE_PRDD_22_RESEAUX_CYCLABLES</Name>
+            <Title>22 Réseaux cyclables</Title>
+            <Abstract>Layer-Group type layer: PER:CARTE_PRDD_22_RESEAUX_CYCLABLES</Abstract>
+            <KeywordList/>
+            <SRS>EPSG:31370</SRS>
+            <LatLonBoundingBox maxx="4.504400615353169" maxy="50.932939686992526" minx="4.2218174088683895" miny="50.73945837894823"/>
+            <BoundingBox SRS="EPSG:31370" maxx="165088.0" maxy="185088.0" minx="140000.0" miny="160000.0"/>
+          </Layer>
+
+        </Layer>
+      </Layer>
       <Layer noSubsets="0" opaque="0" queryable="1">
         <Name>PRAS</Name>
         <Title>PRAS</Title>
@@ -3734,22 +4067,42 @@
         </Style>
       </Layer>
       <Layer noSubsets="0" opaque="0" queryable="1">
-        <Name>PER:Zone_de_revitalisation_urbaine</Name>
-        <Title>Zone de revitalisation urbaine</Title>
+        <Name>PER:Zone_de_revitalisation_urbaine_2016</Name>
+        <Title>Zone de revitalisation urbaine 2016</Title>
         <Abstract/>
         <KeywordList>
           <Keyword>features</Keyword>
-          <Keyword>PER_ZRU</Keyword>
+          <Keyword>A10_ZRU_2016</Keyword>
         </KeywordList>
         <SRS>EPSG:31370</SRS>
-        <LatLonBoundingBox maxx="4.4814185885749405" maxy="50.913653774000515" minx="4.242470212763538" miny="50.76335283201384"/>
+        <LatLonBoundingBox maxx="4.413600846937732" maxy="50.88592135350879" minx="4.289975263592765" miny="50.79065723491583"/>
         <BoundingBox SRS="EPSG:31370" maxx="165088.0" maxy="185088.0" minx="140000.0" miny="160000.0"/>
         <Style>
           <Name>Style_ZRU2016</Name>
           <Title>Style_ZRU2016</Title>
           <LegendURL height="20" width="20">
             <Format>image/png</Format>
-            <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=PER%3AZone_de_revitalisation_urbaine" ns0:type="simple"/>
+            <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=PER%3AZone_de_revitalisation_urbaine_2016" ns0:type="simple"/>
+          </LegendURL>
+        </Style>
+      </Layer>
+      <Layer noSubsets="0" opaque="0" queryable="1">
+        <Name>PER:Zone_de_revitalisation_urbaine_2020</Name>
+        <Title>Zone de revitalisation urbaine 2020</Title>
+        <Abstract/>
+        <KeywordList>
+          <Keyword>features</Keyword>
+          <Keyword>A10_ZRU_2020</Keyword>
+        </KeywordList>
+        <SRS>EPSG:31370</SRS>
+        <LatLonBoundingBox maxx="4.444031364552706" maxy="50.89850803766236" minx="4.28995458193358" miny="50.790657224129404"/>
+        <BoundingBox SRS="EPSG:31370" maxx="165088.0" maxy="185088.0" minx="140000.0" miny="160000.0"/>
+        <Style>
+          <Name>Style_ZRU2020</Name>
+          <Title>Style_ZRU2020</Title>
+          <LegendURL height="20" width="20">
+            <Format>image/png</Format>
+            <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=PER%3AZone_de_revitalisation_urbaine_2020" ns0:type="simple"/>
           </LegendURL>
         </Style>
       </Layer>
@@ -3780,6 +4133,46 @@
           <LegendURL height="20" width="20">
             <Format>image/png</Format>
             <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=EDRLR&amp;style=EDRLR" ns0:type="simple" />
+          </LegendURL>
+        </Style>
+      </Layer>
+      <Layer noSubsets="0" opaque="0" queryable="1">
+        <Name>BDU:plan_de_qualite_paysagere_et_urbanistique</Name>
+        <Title>plan de qualité paysagère et urbanistique</Title>
+        <Abstract/>
+        <KeywordList>
+          <Keyword>features</Keyword>
+          <Keyword>A10_BKP</Keyword>
+        </KeywordList>
+        <SRS>EPSG:31370</SRS>
+        <LatLonBoundingBox maxx="4.481062668383027" maxy="50.91186639098099" minx="4.2487223073586" miny="50.767565104376736"/>
+        <BoundingBox SRS="EPSG:31370" maxx="165088.0" maxy="185088.0" minx="140000.0" miny="160000.0"/>
+        <Style>
+          <Name>bkp_fr</Name>
+          <Title>plan de qualité paysagère et urbanistique</Title>
+          <LegendURL height="20" width="20">
+            <Format>image/png</Format>
+            <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=BDU%3Aplan%20de%20qualit%C3%A9%20paysag%C3%A8re%20et%20urbanistique" ns0:type="simple"/>
+          </LegendURL>
+        </Style>
+      </Layer>
+      <Layer queryable="1" opaque="0">
+        <Name>BDU:VM_A60_TRACE_PERIMETER_IR_FR</Name>
+        <Title>Périmètre d'intérêt régional</Title>
+        <Abstract/>
+        <KeywordList>
+          <Keyword>features</Keyword>
+          <Keyword>VM_A60_TRACE_PERIMETER_IR_FR</Keyword>
+        </KeywordList>
+        <SRS>EPSG:31370</SRS>
+        <LatLonBoundingBox minx="4.367039424895221" miny="50.842434311573285" maxx="4.4352204479204165" maxy="50.861876340272254"/>
+        <BoundingBox SRS="EPSG:31370" minx="149953.114380523" miny="170255.362842085" maxx="154753.271" maxy="172415.91"/>
+        <Style>
+          <Name>traces_Perimeter_IR</Name>
+          <Title>Entites urbanistiques</Title>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=BDU%3AVM_A60_TRACE_PERIMETER_IR_FR"/>
           </LegendURL>
         </Style>
       </Layer>
@@ -4149,6 +4542,34 @@
         <Name>Orthophotoplans</Name>
         <Title>Orthophotoplans</Title>
         <Layer opaque="0" queryable="1">
+          <Name>Urbis:Ortho2019</Name>
+          <Title>Ortho2019</Title>
+          <Abstract>Ortho 2019</Abstract>
+          <KeywordList>
+            <Keyword>CIRB WMS - Geoserver</Keyword>
+            <Keyword>2019Pyramid</Keyword>
+            <Keyword>WCS</Keyword>
+            <Keyword>ImagePyramid</Keyword>
+          </KeywordList>
+          <EX_GeographicBoundingBox>
+            <westBoundLongitude>4.211236427697202</westBoundLongitude>
+            <eastBoundLongitude>4.50995172421579</eastBoundLongitude>
+            <southBoundLatitude>50.74116949200095</southBoundLatitude>
+            <northBoundLatitude>50.93005246835225</northBoundLatitude>
+          </EX_GeographicBoundingBox>
+          <BoundingBox CRS="CRS:84" maxx="4.50995172421579" maxy="50.93005246835225" minx="4.211236427697202" miny="50.74116949200095"/>
+          <BoundingBox CRS="EPSG:31370" maxx="160000.0" maxy="180000.0" minx="139000.0" miny="159000.0"/>
+          <Style>
+            <Name>raster</Name>
+            <Title>A boring default style</Title>
+            <Abstract>A sample style for rasters</Abstract>
+            <LegendURL height="20" width="20">
+              <Format>image/png</Format>
+              <OnlineResource ns0:href="http://geoservices-urbis.irisnet.be/geoserver/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Urbis%3AOrtho2019" ns0:type="simple"/>
+            </LegendURL>
+          </Style>
+        </Layer>
+        <Layer opaque="0" queryable="1">
           <Name>Urbis:Ortho2018</Name>
           <Title>Ortho 2018</Title>
           <Abstract>Ortho 2018</Abstract>
@@ -4381,8 +4802,35 @@
           <BoundingBox SRS="EPSG:4326" maxx="4.481318" maxy="50.914392" minx="4.242254" miny="50.76416" />
         </Layer>
         <Layer cascaded="1" queryable="0">
+          <Name>BDU_DEP:Orthophotoplans_1987</Name>
+          <Title>Orthophotoplans 1987</Title>
+          <Abstract />
+          <KeywordList />
+          <SRS>EPSG:4326</SRS>
+          <LatLonBoundingBox maxx="4.48125845419357" maxy="50.9218586969616" minx="4.23949305273467" miny="50.7599823865622" />
+          <BoundingBox SRS="EPSG:4326" maxx="50.9218586969616" maxy="4.48125845419357" minx="50.7599823865622" miny="4.23949305273467" />
+        </Layer>
+        <Layer cascaded="1" queryable="0">
+          <Name>BDU_DEP:Orthophotoplans_1977</Name>
+          <Title>Orthophotoplans 1977</Title>
+          <Abstract />
+          <KeywordList />
+          <SRS>EPSG:4326</SRS>
+          <LatLonBoundingBox maxx="4.48125845419357" maxy="50.9218586969616" minx="4.23949305273467" miny="50.7599823865622" />
+          <BoundingBox SRS="EPSG:4326" maxx="50.9218586969616" maxy="4.48125845419357" minx="50.7599823865622" miny="4.23949305273467" />
+        </Layer>
+        <Layer cascaded="1" queryable="0">
           <Name>BDU_DEP:Orthophotoplans_1971</Name>
           <Title>Orthophotoplans 1971</Title>
+          <Abstract />
+          <KeywordList />
+          <SRS>EPSG:4326</SRS>
+          <LatLonBoundingBox maxx="4.48125845419357" maxy="50.9218586969616" minx="4.23949305273467" miny="50.7599823865622" />
+          <BoundingBox SRS="EPSG:4326" maxx="50.9218586969616" maxy="4.48125845419357" minx="50.7599823865622" miny="4.23949305273467" />
+        </Layer>
+        <Layer cascaded="1" queryable="0">
+          <Name>BDU_DEP:Orthophotoplans_1961</Name>
+          <Title>Orthophotoplans 1961</Title>
           <Abstract />
           <KeywordList />
           <SRS>EPSG:4326</SRS>
@@ -4415,6 +4863,28 @@
           <SRS>EPSG:4326</SRS>
           <LatLonBoundingBox maxx="4.45281556729539" maxy="50.9218583977658" minx="4.29637905171423" miny="50.7779995665986" />
           <BoundingBox SRS="EPSG:4326" maxx="50.9218583977658" maxy="4.45281556729539" minx="50.7779995665986" miny="4.29637905171423" />
+        </Layer>
+      </Layer>
+      <Layer noSubsets="0" opaque="0" queryable="1">
+        <Name>Topographie</Name>
+        <Title>Topographie</Title>
+        <Layer noSubsets="0" opaque="0" queryable="1">
+          <Name>BDU:Isohypses_group</Name>
+          <Title>Isohypses</Title>
+          <Abstract>Layer-Group type layer: BDU:Isohypses_group</Abstract>
+          <KeywordList/>
+          <SRS>EPSG:31370</SRS>
+          <LatLonBoundingBox maxx="4.484211534966238" maxy="50.91543592922566" minx="4.240606746595234" miny="50.76156631575136"/>
+          <BoundingBox SRS="EPSG:31370" maxx="165088.0" maxy="185088.0" minx="140000.0" miny="160000.0"/>
+        </Layer>
+        <Layer noSubsets="0" opaque="0" queryable="1">
+          <Name>BDU:Topography</Name>
+          <Title>Topographie</Title>
+          <Abstract>Layer-Group type layer: BDU:Topography</Abstract>
+          <KeywordList/>
+          <SRS>EPSG:31370</SRS>
+          <LatLonBoundingBox maxx="4.484368000890428" maxy="50.91545388156367" minx="4.239611291762848" miny="50.76155624560088"/>
+          <BoundingBox SRS="EPSG:31370" maxx="165088.0" maxy="185088.0" minx="140000.0" miny="160000.0"/>
         </Layer>
       </Layer>
       <Layer noSubsets="0" opaque="0" queryable="1">

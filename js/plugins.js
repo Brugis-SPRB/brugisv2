@@ -37,7 +37,8 @@ module.exports = {
         BestEffortPlugin: require('./plugins/BrugisBE/BestEffort'),
         ShapeFilePlugin: require('../MapStore2/web/client/plugins/ShapeFile'),
         TOCItemsSettingsPlugin: require('../MapStore2/web/client/plugins/TOCItemsSettings'),
-        NotificationsPlugin: require('../MapStore2/web/client/plugins/Notifications')
+        NotificationsPlugin: require('../MapStore2/web/client/plugins/Notifications'),
+        BrugisServicePlugin: require('./plugins/MapHeader/BrugisService')
     },
     requires: {
 

@@ -11,6 +11,8 @@ const BRUGIS_SURVEY_CREATE_DONE = 'BRUGIS_SURVEY_CREATE_DONE';
 const BRUGIS_SURVEY_CREATE_FAILED = 'BRUGIS_SURVEY_CREATE_FAILED';
 const BRUGIS_SURVEY_TYPE_LOADED = 'BRUGIS_SURVEY_TYPE_LOADED';
 
+const {error} = require('../../../MapStore2/web/client/actions/notifications');
+
 function brugisSurveyTypeLoaded(info) {
     return {
       type: BRUGIS_SURVEY_TYPE_LOADED,
@@ -25,10 +27,10 @@ function brugisSurveyCreateDone(info) {
     };
 }
 
-function brugisSurveyCreateError(error) {
+function brugisSurveyCreateError(errormsg) {
     return {
         type: BRUGIS_SURVEY_CREATE_FAILED,
-        error
+        errormsg
     };
 }
 
@@ -45,10 +47,10 @@ function brugisSurveyLoaded(info) {
     };
 }
 
-function brugisSurveyLoadError(error) {
+function brugisSurveyLoadError(errormsg) {
     return {
         type: BRUGIS_SURVEY_LOAD_ERROR,
-        error
+        errormsg
     };
 }
 
@@ -106,7 +108,7 @@ function loadBrugisSurveyTypes(url) {
     };
 }
 
-function postNewSurvey(url, payload) {
+function postNewSurvey(url, payload, thisFromAbove) {
     return (dispatch) => {
         dispatch(brugisSurveyCreateStart());
         return axios.post(url, payload, {
@@ -116,13 +118,27 @@ function postNewSurvey(url, payload) {
                 if (response.data.success) {
                     dispatch(brugisSurveyCreateDone(response.data));
                 } else {
-                    dispatch(brugisSurveyCreateError(response.data.msg));
+                    dispatch(error({
+                        message: response.data.msg
+                    }));
                 }
             } else {
                 dispatch(brugisSurveyCreateError('response is not json (' + response + ')'));
             }
         }).catch((e) => {
-            dispatch(brugisSurveyCreateError(e));
+            if (e.data && e.data.msg) {
+                if (e.data.msg === "Invalid request: 'geom' area is too big") {
+                    // Ici comment exploiter this.context.intl.formatMessage({id: 'brugisSurvey.error.area_too_big'}) ?
+                    alert(thisFromAbove.context.intl.formatMessage({id: 'brugisSurvey.error.area_too_big'}));
+                } else {
+                    dispatch(error({
+                        message: e.data.msg,
+                        title: e.data.msg
+                    }));
+                }
+            } else {
+                dispatch(brugisSurveyCreateError(e));
+            }
         });
     };
 }

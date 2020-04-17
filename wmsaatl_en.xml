@@ -1577,32 +1577,6 @@
             </Layer>
           </Layer>
 
-          <Layer noSubsets="0" opaque="0" queryable="1">
-            <Name>Phototheque Wikimedia</Name>
-            <Title>Wikimedia pictures archive</Title>
-
-              <Layer noSubsets="0" opaque="0" queryable="1">
-                <Name>BDU_DMS_PROT:Phototheque_Wikimedia_DMS</Name>
-                <Title>Wikimedia pictures archive DMS</Title>
-                <Abstract/>
-                <KeywordList>
-                  <Keyword>features</Keyword>
-                  <Keyword>PUBA40_PHOTOTHEQUE_WIKIMEDIA_DMS</Keyword>
-                </KeywordList>
-                <SRS>EPSG:31370</SRS>
-                <LatLonBoundingBox maxx="4.4814185885749405" maxy="50.913653774000515" minx="4.242470212763538" miny="50.76335283201384"/>
-                <BoundingBox SRS="EPSG:31370" maxx="165088.0" maxy="185088.0" minx="140000.0" miny="160000.0"/>
-                <Style>
-                  <Name>point</Name>
-                  <Title>Default Point</Title>
-                  <LegendURL height="20" width="20">
-                    <Format>image/png</Format>
-                    <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=BDU_DMS_PROT%3APhototheque_Wikimedia_DMS" ns0:type="simple"/>
-                  </LegendURL>
-                </Style>
-              </Layer>
-            </Layer>
-
         </Layer>
         <Layer noSubsets="0" opaque="0" queryable="1">
           <Name>Urbanisme</Name>
@@ -1727,7 +1701,7 @@
             <Title>A azure polygon style</Title>
             <LegendURL height="20" width="20">
               <Format>image/png</Format>
-              <OnlineResource ns0:href="http://10.128.81.203:8080/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=BEE%3AZone_ZEUS" ns0:type="simple"/>
+              <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=BEE%3AZone_ZEUS" ns0:type="simple"/>
             </LegendURL>
           </Style>
           <Style>
@@ -1735,7 +1709,7 @@
             <Title>A azure polygon style</Title>
             <LegendURL height="20" width="20">
               <Format>image/png</Format>
-              <OnlineResource ns0:href="http://10.128.81.203:8080/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=BEE%3AZone_ZEUS&amp;style=Zone_ZEUS" ns0:type="simple"/>
+              <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=BEE%3AZone_ZEUS&amp;style=Zone_ZEUS" ns0:type="simple"/>
             </LegendURL>
           </Style>
         </Layer>
@@ -1767,6 +1741,27 @@
         <Layer noSubsets="0" opaque="0" queryable="1">
           <Name>Polluted areas catalogue</Name>
           <Title>Polluted areas catalogue</Title>
+          <Layer noSubsets="0" opaque="0" queryable="1">
+            <Name>BDU:PUBBELB_INVENTAIRE_ETAT_SOL_PUBLIC</Name>
+            <Title>PUBBELB_INVENTAIRE_ETAT_SOL_PUBLIC</Title>
+            <Abstract/>
+            <KeywordList>
+              <Keyword>features</Keyword>
+              <Keyword>PUBBELB_INVENTAIRE_ETAT_SOL_PUBLIC</Keyword>
+            </KeywordList>
+            <SRS>EPSG:31370</SRS>
+            <LatLonBoundingBox maxx="4.479551179274349" maxy="50.91222425243426" minx="4.252627282029799" miny="50.76873160510658"/>
+            <BoundingBox SRS="EPSG:31370" maxx="165088.0" maxy="185088.0" minx="140000.0" miny="160000.0"/>
+            <Style>
+              <Name>IBGE_Inventaire_etat_sol_public</Name>
+              <Title>inventaire etat du sol public</Title>
+              <LegendURL height="20" width="20">
+                <Format>image/png</Format>
+                <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=BDU%3APUBBELB_INVENTAIRE_ETAT_SOL_PUBLIC" ns0:type="simple"/>
+              </LegendURL>
+            </Style>
+          </Layer>
+
           <Layer cascaded="0" opaque="0" queryable="1">
             <Name>BDU:PUBBELB_INVENTAIRE_ETAT_SOL_PUBLIC</Name>
             <Title>PUBBELB_INVENTAIRE_ETAT_SOL_PUBLIC</Title>
@@ -2070,6 +2065,36 @@
         <Layer noSubsets="0" opaque="0" queryable="1">
           <Name>Hydrographic data</Name>
           <Title>Hydrographic data</Title>
+          <Layer queryable="1" opaque="0" cascaded="0">
+            <Name>bruenvi_water_groudwater_abstraction</Name>
+            <Title>Groundwater abstraction</Title>
+            <Abstract>Groundwater abstraction subject to authorization</Abstract>
+            <KeywordList>
+            <Keyword>captage</Keyword>
+            <Keyword> eau souterraine</Keyword>
+            <Keyword> permis</Keyword>
+            <Keyword>IBGE WMS - Mapserver - Fr</Keyword>
+            </KeywordList>
+            <CRS>EPSG:31370</CRS>
+            <EX_GeographicBoundingBox>
+            <westBoundLongitude>3.65481</westBoundLongitude>
+            <eastBoundLongitude>5.0827</eastBoundLongitude>
+            <southBoundLatitude>50.4787</southBoundLatitude>
+            <northBoundLatitude>51.1101</northBoundLatitude>
+            </EX_GeographicBoundingBox>
+            <BoundingBox CRS="EPSG:31370" minx="100000" miny="130000" maxx="200000" maxy="200000"/>
+            <BoundingBox CRS="EPSG:4326" minx="50.4787" miny="3.65481" maxx="51.1101" maxy="5.0827"/>
+            <BoundingBox CRS="EPSG:3812" minx="599997" miny="629995" maxx="700004" maxy="700006"/>
+            <BoundingBox CRS="EPSG:900913" minx="100000" miny="130000" maxx="200000" maxy="200000"/>
+            <Style>
+            <Name>default</Name>
+            <Title>default</Title>
+            <LegendURL width="191" height="76">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://wms.environnement.brussels/be_wms?language=fre&amp;version=1.3.0&amp;service=WMS&amp;request=GetLegendGraphic&amp;sld_version=1.1.0&amp;layer=bruenvi_water_groudwater_abstraction&amp;format=image/png&amp;STYLE=default"/>
+            </LegendURL>
+            </Style>
+          </Layer>
           <Layer cascaded="0" opaque="0" queryable="1">
             <Name>bruenvi_water_surface</Name>
             <Title>Water surface</Title>
@@ -3429,22 +3454,42 @@
           </Style>
         </Layer>
         <Layer noSubsets="0" opaque="0" queryable="1">
-          <Name>PER:Zone_de_revitalisation_urbaine</Name>
-          <Title>Zone de revitalisation urbaine</Title>
+          <Name>PER:Zone_de_revitalisation_urbaine_2016</Name>
+          <Title>Zone de revitalisation urbaine 2016</Title>
           <Abstract/>
           <KeywordList>
             <Keyword>features</Keyword>
-            <Keyword>PER_ZRU</Keyword>
+            <Keyword>A10_ZRU_2016</Keyword>
           </KeywordList>
           <SRS>EPSG:31370</SRS>
-          <LatLonBoundingBox maxx="4.4814185885749405" maxy="50.913653774000515" minx="4.242470212763538" miny="50.76335283201384"/>
+          <LatLonBoundingBox maxx="4.413600846937732" maxy="50.88592135350879" minx="4.289975263592765" miny="50.79065723491583"/>
           <BoundingBox SRS="EPSG:31370" maxx="165088.0" maxy="185088.0" minx="140000.0" miny="160000.0"/>
           <Style>
             <Name>Style_ZRU2016</Name>
             <Title>Style_ZRU2016</Title>
             <LegendURL height="20" width="20">
               <Format>image/png</Format>
-              <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=PER%3AZone_de_revitalisation_urbaine" ns0:type="simple"/>
+              <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=PER%3AZone_de_revitalisation_urbaine_2016" ns0:type="simple"/>
+            </LegendURL>
+          </Style>
+        </Layer>
+        <Layer noSubsets="0" opaque="0" queryable="1">
+          <Name>PER:Zone_de_revitalisation_urbaine_2020</Name>
+          <Title>Zone de revitalisation urbaine 2020</Title>
+          <Abstract/>
+          <KeywordList>
+            <Keyword>features</Keyword>
+            <Keyword>A10_ZRU_2020</Keyword>
+          </KeywordList>
+          <SRS>EPSG:31370</SRS>
+          <LatLonBoundingBox maxx="4.444031364552706" maxy="50.89850803766236" minx="4.28995458193358" miny="50.790657224129404"/>
+          <BoundingBox SRS="EPSG:31370" maxx="165088.0" maxy="185088.0" minx="140000.0" miny="160000.0"/>
+          <Style>
+            <Name>Style_ZRU2020</Name>
+            <Title>Style_ZRU2020</Title>
+            <LegendURL height="20" width="20">
+              <Format>image/png</Format>
+              <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=PER%3AZone_de_revitalisation_urbaine_2020" ns0:type="simple"/>
             </LegendURL>
           </Style>
         </Layer>
@@ -3475,6 +3520,46 @@
             <LegendURL height="20" width="20">
               <Format>image/png</Format>
               <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=EDRLR&amp;style=EDRLR" ns0:type="simple" />
+            </LegendURL>
+          </Style>
+        </Layer>
+        <Layer noSubsets="0" opaque="0" queryable="1">
+          <Name>BDU:plan_de_qualite_paysagere_et_urbanistique</Name>
+          <Title>landscape and urban quality plan</Title>
+          <Abstract/>
+          <KeywordList>
+            <Keyword>features</Keyword>
+            <Keyword>A10_BKP</Keyword>
+          </KeywordList>
+          <SRS>EPSG:31370</SRS>
+          <LatLonBoundingBox maxx="4.481062668383027" maxy="50.91186639098099" minx="4.2487223073586" miny="50.767565104376736"/>
+          <BoundingBox SRS="EPSG:31370" maxx="165088.0" maxy="185088.0" minx="140000.0" miny="160000.0"/>
+          <Style>
+            <Name>bkp_fr</Name>
+            <Title>plan de qualité paysagère et urbanistique</Title>
+            <LegendURL height="20" width="20">
+              <Format>image/png</Format>
+              <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=BDU%3Aplan%20de%20qualit%C3%A9%20paysag%C3%A8re%20et%20urbanistique" ns0:type="simple"/>
+            </LegendURL>
+          </Style>
+        </Layer>
+        <Layer queryable="1" opaque="0">
+          <Name>BDU:VM_A60_TRACE_PERIMETER_IR_FR</Name>
+          <Title>Perimeter of Regional Interest</Title>
+          <Abstract/>
+          <KeywordList>
+            <Keyword>features</Keyword>
+            <Keyword>VM_A60_TRACE_PERIMETER_IR_FR</Keyword>
+          </KeywordList>
+          <SRS>EPSG:31370</SRS>
+          <LatLonBoundingBox minx="4.367039424895221" miny="50.842434311573285" maxx="4.4352204479204165" maxy="50.861876340272254"/>
+          <BoundingBox SRS="EPSG:31370" minx="149953.114380523" miny="170255.362842085" maxx="154753.271" maxy="172415.91"/>
+          <Style>
+            <Name>traces_Perimeter_IR</Name>
+            <Title>Entites urbanistiques</Title>
+            <LegendURL width="20" height="20">
+              <Format>image/png</Format>
+              <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=BDU%3AVM_A60_TRACE_PERIMETER_IR_FR"/>
             </LegendURL>
           </Style>
         </Layer>
@@ -3883,6 +3968,64 @@
         <Layer noSubsets="0" opaque="0" queryable="1">
           <Name>Orthophotoplans</Name>
           <Title>Orthophotoplans</Title>
+          <Layer opaque="0" queryable="1">
+            <Name>Urbis:Ortho2019</Name>
+            <Title>Ortho2019</Title>
+            <Abstract>Ortho 2019</Abstract>
+            <KeywordList>
+              <Keyword>CIRB WMS - Geoserver</Keyword>
+              <Keyword>2019Pyramid</Keyword>
+              <Keyword>WCS</Keyword>
+              <Keyword>ImagePyramid</Keyword>
+            </KeywordList>
+            <EX_GeographicBoundingBox>
+              <westBoundLongitude>4.211236427697202</westBoundLongitude>
+              <eastBoundLongitude>4.50995172421579</eastBoundLongitude>
+              <southBoundLatitude>50.74116949200095</southBoundLatitude>
+              <northBoundLatitude>50.93005246835225</northBoundLatitude>
+            </EX_GeographicBoundingBox>
+            <BoundingBox CRS="CRS:84" maxx="4.50995172421579" maxy="50.93005246835225" minx="4.211236427697202" miny="50.74116949200095"/>
+            <BoundingBox CRS="EPSG:31370" maxx="160000.0" maxy="180000.0" minx="139000.0" miny="159000.0"/>
+            <Style>
+              <Name>raster</Name>
+              <Title>A boring default style</Title>
+              <Abstract>A sample style for rasters</Abstract>
+              <LegendURL height="20" width="20">
+                <Format>image/png</Format>
+                <OnlineResource ns0:href="http://geoservices-urbis.irisnet.be/geoserver/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Urbis%3AOrtho2019" ns0:type="simple"/>
+              </LegendURL>
+            </Style>
+          </Layer>
+          <Layer opaque="0" queryable="1">
+            <Name>Urbis:Ortho2018</Name>
+            <Title>Ortho 2018</Title>
+            <Abstract>Ortho 2018</Abstract>
+            <KeywordList>
+              <Keyword>CIRB WMS - Geoserver</Keyword>
+              <Keyword>2018Pyramid</Keyword>
+              <Keyword>WCS</Keyword>
+              <Keyword>ImagePyramid</Keyword>
+            </KeywordList>
+            <EX_GeographicBoundingBox>
+              <westBoundLongitude>4.225488048106667</westBoundLongitude>
+              <eastBoundLongitude>4.4957025695441475</eastBoundLongitude>
+              <southBoundLatitude>50.75017715801838</southBoundLatitude>
+              <northBoundLatitude>50.92106316179335</northBoundLatitude>
+            </EX_GeographicBoundingBox>
+            <BoundingBox CRS="EPSG:4326" minx="4.225488048106667" miny="50.75017715801838" maxx="4.4957025695441475" maxy="50.92106316179335"/>
+            <BoundingBox CRS="CRS:84" maxx="4.4957025695441475" maxy="50.92106316179335" minx="4.225488048106667" miny="50.75017715801838"/>
+            <BoundingBox CRS="EPSG:31370" maxx="159000.0" maxy="179000.0" minx="140000.0" miny="160000.0"/>
+            <Identifier authority="BE.CIRB">BRU_URBIS_ORTHO_RBC</Identifier>
+            <Style>
+              <Name>raster</Name>
+              <Title>A boring default style</Title>
+              <Abstract>A sample style for rasters</Abstract>
+              <LegendURL height="20" width="20">
+                <Format>image/png</Format>
+                <OnlineResource ns0:href="http://geoservices-urbis.irisnet.be/geoserver/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Urbis%3AOrtho2018" ns0:type="simple" />
+              </LegendURL>
+            </Style>
+          </Layer>
           <Layer queryable="0">
             <Name>Urbis:Ortho2017</Name>
             <Title>Ortho 2017</Title>
@@ -4079,8 +4222,35 @@
             <BoundingBox SRS="EPSG:4326" maxx="4.481318" maxy="50.914392" minx="4.242254" miny="50.76416" />
           </Layer>
           <Layer cascaded="1" queryable="0">
+            <Name>BDU_DEP:Orthophotoplans_1987</Name>
+            <Title>Orthophotoplans 1987</Title>
+            <Abstract />
+            <KeywordList />
+            <SRS>EPSG:4326</SRS>
+            <LatLonBoundingBox maxx="4.48125845419357" maxy="50.9218586969616" minx="4.23949305273467" miny="50.7599823865622" />
+            <BoundingBox SRS="EPSG:4326" maxx="50.9218586969616" maxy="4.48125845419357" minx="50.7599823865622" miny="4.23949305273467" />
+          </Layer>
+          <Layer cascaded="1" queryable="0">
+            <Name>BDU_DEP:Orthophotoplans_1977</Name>
+            <Title>Orthophotoplans 1977</Title>
+            <Abstract />
+            <KeywordList />
+            <SRS>EPSG:4326</SRS>
+            <LatLonBoundingBox maxx="4.48125845419357" maxy="50.9218586969616" minx="4.23949305273467" miny="50.7599823865622" />
+            <BoundingBox SRS="EPSG:4326" maxx="50.9218586969616" maxy="4.48125845419357" minx="50.7599823865622" miny="4.23949305273467" />
+          </Layer>
+          <Layer cascaded="1" queryable="0">
             <Name>BDU_DEP:Orthophotoplans_1971</Name>
             <Title>Orthophotoplans 1971</Title>
+            <Abstract />
+            <KeywordList />
+            <SRS>EPSG:4326</SRS>
+            <LatLonBoundingBox maxx="4.48125845419357" maxy="50.9218586969616" minx="4.23949305273467" miny="50.7599823865622" />
+            <BoundingBox SRS="EPSG:4326" maxx="50.9218586969616" maxy="4.48125845419357" minx="50.7599823865622" miny="4.23949305273467" />
+          </Layer>
+          <Layer cascaded="1" queryable="0">
+            <Name>BDU_DEP:Orthophotoplans_1961</Name>
+            <Title>Orthophotoplans 1961</Title>
             <Abstract />
             <KeywordList />
             <SRS>EPSG:4326</SRS>
@@ -4113,6 +4283,28 @@
             <SRS>EPSG:4326</SRS>
             <LatLonBoundingBox maxx="4.45281556729539" maxy="50.9218583977658" minx="4.29637905171423" miny="50.7779995665986" />
             <BoundingBox SRS="EPSG:4326" maxx="50.9218583977658" maxy="4.45281556729539" minx="50.7779995665986" miny="4.29637905171423" />
+          </Layer>
+        </Layer>
+        <Layer noSubsets="0" opaque="0" queryable="1">
+          <Name>Topographie</Name>
+          <Title>Topographie</Title>
+          <Layer noSubsets="0" opaque="0" queryable="1">
+            <Name>BDU:Isohypses_group</Name>
+            <Title>Isohypses</Title>
+            <Abstract>Layer-Group type layer: BDU:Isohypses_group</Abstract>
+            <KeywordList/>
+            <SRS>EPSG:31370</SRS>
+            <LatLonBoundingBox maxx="4.484211534966238" maxy="50.91543592922566" minx="4.240606746595234" miny="50.76156631575136"/>
+            <BoundingBox SRS="EPSG:31370" maxx="165088.0" maxy="185088.0" minx="140000.0" miny="160000.0"/>
+          </Layer>
+          <Layer noSubsets="0" opaque="0" queryable="1">
+            <Name>BDU:Topography</Name>
+            <Title>Topography</Title>
+            <Abstract>Layer-Group type layer: BDU:Topography</Abstract>
+            <KeywordList/>
+            <SRS>EPSG:31370</SRS>
+            <LatLonBoundingBox maxx="4.484368000890428" maxy="50.91545388156367" minx="4.239611291762848" miny="50.76155624560088"/>
+            <BoundingBox SRS="EPSG:31370" maxx="165088.0" maxy="185088.0" minx="140000.0" miny="160000.0"/>
           </Layer>
         </Layer>
         <Layer noSubsets="0" opaque="0" queryable="1">

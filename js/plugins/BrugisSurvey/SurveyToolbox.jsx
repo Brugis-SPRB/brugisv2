@@ -3,9 +3,26 @@ const PropTypes = require('prop-types');
 var {Button, ButtonGroup} = require('react-bootstrap');
 const MapUtils = require('../../../MapStore2/web/client/utils/MapUtils');
 const CoordinatesUtils = require('../../../MapStore2/web/client/utils/CoordinatesUtils');
-const Message = require('../../../MapStore2/web/client/plugins/locale/Message');
+const selectIcon = require('./img/select.svg');
+const drawIcon = require('./img/draw.svg');
+const deleteIcon = require('./img/delete.svg');
+// const glueIcon = require('./img/join.svg');
+
+/*
+<ButtonGroup>
+    <Button
+      id="toolButton"
+      title={this.context.intl.formatMessage({id: 'brugisSurvey.glue'})}
+      bsSize={this.props.bsSize}
+      bsStyle="primary"
+      onClick={this.glueDrawing}>
+        <img src={glueIcon} height="45" width="38"></img>
+    </Button>
+</ButtonGroup>
+*/
 
 var SurveyToolBox = React.createClass({
+
     propTypes: {
         loadSurveyTypes: PropTypes.func,
         submitNewSurvey: PropTypes.func,
@@ -23,6 +40,9 @@ var SurveyToolBox = React.createClass({
         parcel: PropTypes.object,
         map: PropTypes.object,
         geoserver: PropTypes.string
+    },
+    contextTypes: {
+        intl: PropTypes.object.isRequired
     },
     getDefaultProps() {
         return {
@@ -63,18 +83,35 @@ var SurveyToolBox = React.createClass({
         return (
           <span>
                 <ButtonGroup>
-                    <Button bsSize={this.props.bsSize} bsStyle="primary" onClick={this.drawSurface} active={this.props.drawSurfaceActive}>
-                        <Message msgId="brugisSurvey.draw"/>
+                    <Button
+                      id="toolButton"
+                      title={this.context.intl.formatMessage({id: 'brugisSurvey.draw'})}
+                      bsSize={this.props.bsSize}
+                      bsStyle="primary"
+                      onClick={this.drawSurface}
+                      active={this.props.drawSurfaceActive}>
+                        <img src={drawIcon} height="45" width="38"></img>
                     </Button>
                 </ButtonGroup>
                 <ButtonGroup>
-                    <Button bsSize={this.props.bsSize} bsStyle="primary" onClick={this.selectParcel} active={this.props.selectParcelActive}>
-                        <Message msgId="brugisSurvey.select"/>
+                    <Button
+                      id="toolButton"
+                      title={this.context.intl.formatMessage({id: 'brugisSurvey.select'})}
+                      bsSize={this.props.bsSize}
+                      bsStyle="primary"
+                      onClick={this.selectParcel}
+                      active={this.props.selectParcelActive}>
+                        <img src={selectIcon} height="45" width="38"></img>
                     </Button>
                 </ButtonGroup>
                 <ButtonGroup>
-                    <Button bsSize={this.props.bsSize} bsStyle="primary" onClick={this.deleteDrawing}>
-                        <Message msgId="brugisSurvey.suppress"/>
+                    <Button
+                      id="toolButton"
+                      title={this.context.intl.formatMessage({id: 'brugisSurvey.suppress'})}
+                      bsSize={this.props.bsSize}
+                      bsStyle="primary"
+                      onClick={this.deleteDrawing}>
+                        <img src={deleteIcon} height="45" width="38"></img>
                     </Button>
                 </ButtonGroup>
           </span>
@@ -108,6 +145,9 @@ var SurveyToolBox = React.createClass({
     deleteDrawing() {
         this.props.onChangeDrawingStatus("clean", null, 'BrugisSurvey');
         this.props.onBrugisSurveyDeleteDrawings();
+    },
+    glueDrawing() {
+
     },
     needsSelectParcelRefresh(props) {
         if (props.point && props.point.pixel) {

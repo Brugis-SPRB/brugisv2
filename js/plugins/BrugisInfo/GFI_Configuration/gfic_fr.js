@@ -291,7 +291,7 @@ const gfiFr = {
 		"actiontype": "GRID",
 		"title": "[%REFSITEX%]",
 		"attributes": [{
-				"name": "Nom",
+				"name": "Objet",
 				"label": "[%OBJET%]",
 				"type": "string"
 			},
@@ -2016,7 +2016,7 @@ const gfiFr = {
 	},
 	"BDU:Limites_communales": {
 		"actiontype": "GRID",
-		"title": "Commune: [%MUFN%]",
+		"title": "Commune: [%MU_NAME_FRE%]",
 		"attributes": []
 	},
 	"BDU:Galeries_commercantes": {
@@ -2794,35 +2794,22 @@ const gfiFr = {
 			}
 		]
 	},
-	"BDU_DMS_PROT:Phototheque_Wikimedia_DMS": {
-		"actiontype": "GRID",
-		"title": "[%NAME%]",
+	"BDU:plan_de_qualite_paysagere_et_urbanistique": {
+		"actiontype": "REDIRECT",
+		"url": "[%URL_FR%]",
+		"title": "Plan de qualité paysagère et urbanistique",
 		"attributes": [{
-				"name": "Nom",
-				"label": "[%NAME%]",
-				"type": "string"
-			},
-			{
-				"name": "Image",
-				"label": "[%IMAGE%]",
-				"type": "picture"
-			},
-			{
-				"name": "Description",
-				"label": "[%DESCR_FR%]",
-				"type": "string"
-			},
-			{
-				"name": "Crédit",
-				"label": "[%CREDIT_FR%]",
-				"type": "string"
-			},
-			{
-				"name": "Source",
-				"label": "[%SOURCE%]",
-				"type": "string"
+				"name": "Lien",
+				"label": "[%URL_FR%]",
+				"type": "link",
+				"substutedString": "Cliquez ici."
 			}
 		]
+	},
+	"BDU:OPENPERMITS_FR": {
+		"actiontype": "LINK",
+		"url": "https://openpermits.brussels/fr/_[%REFNOVA%]",
+		"title": "Dossier [%REFNOVA%]"
 	}
 };
 

@@ -17,6 +17,7 @@ const {setControlProperty} = require('../../../MapStore2/web/client/actions/cont
 const {Panel} = require('react-bootstrap');
 const Dialog = require('../../../MapStore2/web/client/components/misc/Dialog');
 const Message = require('../../../MapStore2/web/client/plugins/locale/Message');
+const selfIntersectCheck = require('../../utils/SelfIntersectCheck');
 
 const {addremoveparcelsonactivativeEpic, reloadWhenNewSurveyIsDone} = require('./epics');
 
@@ -76,6 +77,9 @@ const BrugisSurvey = React.createClass({
       surveyUpdate: PropTypes.number,
       onPostRestartSurvey: PropTypes.func
   },
+  contextTypes: {
+      intl: PropTypes.object.isRequired
+  },
   getDefaultProps() {
       return {
           surveys: [],
@@ -92,7 +96,8 @@ const BrugisSurvey = React.createClass({
               overflow: "auto",
               top: "100px",
               left: "calc(50% - 150px)",
-              backgroundColor: "white"
+              backgroundColor: "white",
+              margin: "0px"
           },
           panelClassName: "toolbar-panel",
           visible: false,
@@ -141,21 +146,29 @@ const BrugisSurvey = React.createClass({
                   surveyAreaJson = union(surveyAreaJson, geomToMerge);
               }
           }
-          let surveyAreaWKT = stringify(surveyAreaJson);
-          this.props.onPostNewSurvey(
-            this.props.webreperagehost + "/res/reperage",
-            qs.stringify({
-              geom: surveyAreaWKT,
-              adr: infos.adr,
-              refdossier: infos.refdoc,
-              reptype: infos.type,
-              user: this.props.user
-            })
-          );
-          this.props.onChangeDrawingStatus("clean", null, 'BrugisSurvey');
-          this.props.onBrugisSurveyDeleteDrawings();
+          let selfIntersectResult = selfIntersectCheck(surveyAreaJson);
+          if (selfIntersectResult.intersections.features.length === 0) {
+              let surveyAreaWKT = stringify(surveyAreaJson);
+              this.props.onPostNewSurvey(
+              this.props.webreperagehost + "/res/reperage",
+                qs.stringify({
+                    geom: surveyAreaWKT,
+                    adr: infos.adr,
+                    refdossier: infos.refdoc,
+                    reptype: infos.type,
+                    user: this.props.user
+                }),
+                this
+                );
+              this.props.onChangeDrawingStatus("clean", null, 'BrugisSurvey');
+              this.props.onBrugisSurveyDeleteDrawings();
+          } else {
+              alert(this.context.intl.formatMessage({id: 'brugisSurvey.error.self_intersect'}));
+              this.props.onChangeDrawingStatus("clean", null, 'BrugisSurvey');
+              this.props.onBrugisSurveyDeleteDrawings();
+          }
       } else {
-          alert("Please Draw a geometry first");
+          alert(this.context.intl.formatMessage({id: 'brugisSurvey.error.missing_geometry'}));
       }
   },
 
@@ -213,7 +226,8 @@ const BrugisSurvey = React.createClass({
               }
               return (<Dialog id={this.props.id} style={this.props.panelStyle} className={this.props.panelClassName}>
                   <span role="header">
-                      <span className="settings-panel-title"><Message msgId="brugisSurvey.title_panel"/><button onClick={this.props.toggleControl} className="close">{this.props.closeGlyph ? <Glyphicon glyph={this.props.closeGlyph}/> : <span>×</span>}</button></span>
+                      <img src={Urbanalyseicon} height="28" width="28"></img>&nbsp;<span className="settings-panel-title"><Message msgId="brugisSurvey.title_panel"/>
+                      <button onClick={this.props.toggleControl} className="close">{this.props.closeGlyph ? <Glyphicon glyph={this.props.closeGlyph}/> : <span>×</span>}</button></span>
                   </span>
                   <span role="body">
                   {surveyPanel}
