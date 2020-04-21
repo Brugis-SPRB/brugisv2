@@ -2813,18 +2813,8 @@ const gfiFr = {
 	},
 	"PER:PRDD_*": {
 		"actiontype": "GRID",
-		"title": "Objet du PRDD",
+		"title": "[%GROUP_FR%]: [%CAT_FR%]",
 		"attributes": [{
-				"name": "Groupe",
-				"label": "[%GROUP_FR%]",
-				"type": "string"
-			},
-			{
-				"name": "Catégorie",
-				"label": "[%CAT_FR%]",
-				"type": "string"
-			},
-			{
 				"name": "Entité",
 				"label": "[%ENTITY_FR%]",
 				"type": "string"

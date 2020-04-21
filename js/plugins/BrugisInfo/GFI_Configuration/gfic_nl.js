@@ -2313,18 +2313,8 @@ const gfiNl = {
 	},
 	"PER:GPDO_*": {
 		"actiontype": "GRID",
-		"title": "GPDO objekt",
+		"title": "[%GROUP_DU%]: [%CAT_DU%]",
 		"attributes": [{
-				"name": "Groep",
-				"label": "[%GROUP_DU%]",
-				"type": "string"
-			},
-			{
-				"name": "Categorie",
-				"label": "[%CAT_DU%]",
-				"type": "string"
-			},
-			{
 				"name": "Objekt",
 				"label": "[%ENTITY_DU%]",
 				"type": "string"
