@@ -2810,6 +2810,26 @@ const gfiFr = {
 		"actiontype": "LINK",
 		"url": "https://openpermits.brussels/fr/_[%REFNOVA%]",
 		"title": "Dossier [%REFNOVA%]"
+	},
+	"PER:PRDD_*": {
+		"actiontype": "GRID",
+		"title": "Objet du PRDD",
+		"attributes": [{
+				"name": "Groupe",
+				"label": "[%GROUP_FR%]",
+				"type": "string"
+			},
+			{
+				"name": "Catégorie",
+				"label": "[%CAT_FR%]",
+				"type": "string"
+			},
+			{
+				"name": "Entité",
+				"label": "[%ENTITY_FR%]",
+				"type": "string"
+			}
+		]
 	}
 };
 

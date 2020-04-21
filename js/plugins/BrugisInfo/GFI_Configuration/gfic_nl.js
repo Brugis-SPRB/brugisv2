@@ -2310,6 +2310,26 @@ const gfiNl = {
 		"actiontype": "LINK",
 		"url": "https://openpermits.brussels/nl/_[%REFNOVA%]",
 		"title": "Dossier [%REFNOVA%]"
+	},
+	"PER:GPDO_*": {
+		"actiontype": "GRID",
+		"title": "GPDO objekt",
+		"attributes": [{
+				"name": "Groep",
+				"label": "[%GROUP_DU%]",
+				"type": "string"
+			},
+			{
+				"name": "Categorie",
+				"label": "[%CAT_DU%]",
+				"type": "string"
+			},
+			{
+				"name": "Objekt",
+				"label": "[%ENTITY_DU%]",
+				"type": "string"
+			}
+		]
 	}
 };
 module.exports = gfiNl;
