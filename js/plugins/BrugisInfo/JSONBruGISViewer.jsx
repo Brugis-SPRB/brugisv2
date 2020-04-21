@@ -22,6 +22,17 @@ var JSONViewer = React.createClass({
     shouldComponentUpdate(nextProps) {
         return nextProps.response !== this.props.response;
     },
+    getGFIConfForLayer(curLocale, layername) {
+        if (GFI_DICT[curLocale]) {
+            for (let [key, value] of Object.entries(GFI_DICT[curLocale])) {
+                if (this.wildTest(key, layername)) {
+                    return value;
+                }
+            }
+            return null;
+        }
+        return null;
+    },
     render() {
         const RowViewer = this.props.rowViewer || PropertiesViewer;
 
@@ -45,7 +56,8 @@ var JSONViewer = React.createClass({
                     var displayTitle = feature.id;
                     var layerNameFromFeatureId = layerName;
                     var customRenderers = [];
-                    console.log(feature);
+                    var gfiConf = {};
+                    // console.log(feature);
                     try {
                         layerNameFromFeatureId = this.props.layers.split(":")[0].concat(":").concat(feature.id.split(".")[0]);
                     } catch(err) {
@@ -63,8 +75,8 @@ var JSONViewer = React.createClass({
                         }
                     }
                     // mode GRID: it renders a custom title, it customise all the attributes that need it and create a panel for each feature encountered
-                    var gfiConf = this.getGFIConfForLayer(curLocale, layerName)
-                    if(gfiConf){
+                    gfiConf = this.getGFIConfForLayer(curLocale, layerName);
+                    if (gfiConf) {
                         if (gfiConf.title) {
                             displayTitle = this.parseTitle(gfiConf.title, feature.properties);
                         }
@@ -90,19 +102,8 @@ var JSONViewer = React.createClass({
             </div>
         );
     },
-    getGFIConfForLayer(curLocale, layername) {
-        if(GFI_DICT[curLocale]){
-            for (let [key, value] of Object.entries(GFI_DICT[curLocale])) {
-                if(this.wildTest(key, layername)){
-                    return value;
-                }
-            }
-            return null;
-        }
-        return null;
-    },
     wildTest(wildcard, str) {
-        const re = new RegExp(`^${wildcard.replace(/\*/g,'.*').replace(/\?/g,'.')}$`,'i');
+        const re = new RegExp(`^${wildcard.replace(/\*/g, '.*').replace(/\?/g, '.')}$`, 'i');
         return re.test(str); // remove last 'i' above to have case sensitive
     },
 
