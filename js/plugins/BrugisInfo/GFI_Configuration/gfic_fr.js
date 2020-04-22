@@ -2818,6 +2818,11 @@ const gfiFr = {
 				"name": "Entité",
 				"label": "[%ENTITY_FR%]",
 				"type": "string"
+			},
+			{
+				"name": "Lien",
+				"label": "https://perspective.brussels/fr/plans-reglements-et-guides/plans-strategiques/plan-regional-de-developpement-prd/prdd",
+				"type": "link"
 			}
 		]
 	}

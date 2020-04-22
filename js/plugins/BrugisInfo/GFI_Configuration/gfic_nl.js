@@ -2318,6 +2318,11 @@ const gfiNl = {
 				"name": "Objekt",
 				"label": "[%ENTITY_DU%]",
 				"type": "string"
+			},
+			{
+				"name": "Link",
+				"label": "https://perspective.brussels/nl/plannen-reglementen-en-handleidingen/de-strategische-plannen/het-gewestelijk-ontwikkelingsplan-0",
+				"type": "link"
 			}
 		]
 	}
