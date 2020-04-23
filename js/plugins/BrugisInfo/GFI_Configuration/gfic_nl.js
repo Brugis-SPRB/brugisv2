@@ -2315,7 +2315,7 @@ const gfiNl = {
 		"actiontype": "GRID",
 		"title": "[%GROUP_DU%]: [%CAT_DU%]",
 		"attributes": [{
-				"name": "Objekt",
+				"name": "Entiteit",
 				"label": "[%ENTITY_DU%]",
 				"type": "string"
 			},
