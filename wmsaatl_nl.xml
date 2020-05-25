@@ -1846,7 +1846,7 @@
         <Title>Inventaris van de bodemgesteldheid</Title>
         <Layer noSubsets="0" opaque="0" queryable="1">
           <Name>BDU:PUBBELB_INVENTAIRE_ETAT_SOL_PUBLIC</Name>
-          <Title>PUBBELB_INVENTAIRE_ETAT_SOL_PUBLIC</Title>
+          <Title>Inventaris van de bodemgesteldheid</Title>
           <Abstract/>
           <KeywordList>
             <Keyword>features</Keyword>
@@ -1865,26 +1865,6 @@
           </Style>
         </Layer>
 
-        <Layer cascaded="0" opaque="0" queryable="1">
-          <Name>inventaire_etat_sol_public</Name>
-          <Title>Inventaris van de bodemgesteldheid</Title>
-          <KeywordList>
-            <Keyword>inventaire sol</Keyword>
-            <Keyword>IBGE WMS - Mapserver - Nl</Keyword>
-          </KeywordList>
-          <SRS>EPSG:31370</SRS>
-          <LatLonBoundingBox maxx="4.49186" maxy="50.9208" minx="4.22901" miny="50.7556" />
-          <BoundingBox SRS="EPSG:31370" maxx="158835" maxy="179004" minx="140352" miny="160632" />
-          <source>IBGE WMS - Mapserver - Nl</source>
-          <Style>
-            <Name>default</Name>
-            <Title>default</Title>
-            <LegendURL height="149" width="131">
-              <Format>image/png</Format>
-              <OnlineResource ns0:href="http://wms.ibgebim.be/ibgewms?version=1.1.1&amp;service=WMS&amp;request=GetLegendGraphic&amp;layer=inventaire_etat_sol_public&amp;format=image/png&amp;STYLE=default" ns0:type="simple" />
-            </LegendURL>
-          </Style>
-        </Layer>
       </Layer>
       <Layer noSubsets="0" opaque="0" queryable="1">
         <Name>Gebieden, Habitats, Landschappen</Name>
