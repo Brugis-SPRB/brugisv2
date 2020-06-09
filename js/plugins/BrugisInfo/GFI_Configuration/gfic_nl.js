@@ -111,7 +111,7 @@ const gfiNl = {
 	},
 	"BSO_DML_BESC:Opmerkelijke_bomen": {
 		"actiontype": "GRID",
-		"title": "[%TAX_NL%]",
+		"title": "[%NOM_NL%]",
 		"attributes": [{
 				"name": "Omtrek",
 				"label": "[%CIRCONFERENCE%] cm",
@@ -119,28 +119,23 @@ const gfiNl = {
 			},
 			{
 				"name": "Naam",
-				"label": "[%TAX_NL%]",
+				"label": "[%NOM_NL%]",
 				"type": "string"
 			},
 			{
 				"name": "Latijnse benaming",
-				"label": "[%TAX_LA%]",
+				"label": "[%NOM_LA%]",
 				"type": "string"
 			},
 			{
 				"name": "Boomfiche",
-				"label": "http://bomen-inventaris.irisnet.be/arbre/[%RESULTS_NL%]/[%ID_ARBRE_CMS%]/",
+				"label": "[%URL_NL%]",
 				"type": "link"
 			},
 			{
 				"name": "Foto",
-				"label": "http://bomen-inventaris.irisnet.be/medias/trees/[%FIRSTIMAGE%]",
+				"label": "[%FIRSTIMAGE%]",
 				"type": "picture"
-			},
-			{
-				"name": "Hoogte",
-				"label": "[%HAUTEUR%] m",
-				"type": "string"
 			},
 			{
 				"name": "Diameter kroon",
@@ -148,19 +143,9 @@ const gfiNl = {
 				"type": "string"
 			},
 			{
-				"name": "Localisatie",
-				"label": "[%EMPLACEMENT%]",
+				"name": "status",
+				"label": "[%STATUTS%]",
 				"type": "string"
-			},
-			{
-				"name": "Toestand",
-				"label": "[%LEGENDENL%]",
-				"type": "string"
-			},
-			{
-				"name": "CMS link",
-				"label": "http://bomen-inventaris.irisnet.be/manager/index.php?table=36&id=[%ID_ARBRE_CMS%]",
-				"type": "link"
 			}
 		]
 	},
