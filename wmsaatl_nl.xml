@@ -1843,8 +1843,8 @@
       <Title>leefmilieu brussel</Title>
 
       <Layer noSubsets="0" opaque="0" queryable="1">
-        <Name>Inventaire Etat du Sol</Name>
-        <Title>Inventaire Etat du Sol</Title>
+        <Name>Inventaris van de bodemgesteldheid</Name>
+        <Title>Inventaris van de bodemgesteldheid</Title>
         <Layer noSubsets="0" opaque="0" queryable="1">
           <Name>BDU:PUBBELB_INVENTAIRE_ETAT_SOL_PUBLIC</Name>
           <Title>Inventaris van de bodemgesteldheid</Title>
