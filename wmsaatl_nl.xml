@@ -1865,7 +1865,7 @@
             </LegendURL>
           </Style>
         </Layer>
-
+      </Layer>
       <Layer noSubsets="0" opaque="0" queryable="1">
         <Name>Gebieden, Habitats, Landschappen</Name>
         <Title>Gebieden, Habitats, Landschappen</Title>
