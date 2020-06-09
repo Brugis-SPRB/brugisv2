@@ -69,7 +69,7 @@ const gfiFr = {
 	},
 	"BDU_DMS_PROT:Arbres_remarquables": {
 		"actiontype": "GRID",
-		"title": "[%TAX_FR%]",
+		"title": "[%NOM_FR%]",
 		"attributes": [{
 				"name": "Circonférence",
 				"label": "[%CIRCONFERENCE%] cm",
@@ -77,28 +77,23 @@ const gfiFr = {
 			},
 			{
 				"name": "Nom",
-				"label": "[%TAX_FR%]",
+				"label": "[%NOM_FR%]",
 				"type": "string"
 			},
 			{
 				"name": "Taxon latin",
-				"label": "[%TAX_LA%]",
+				"label": "[%NOM_LA%]",
 				"type": "string"
 			},
 			{
 				"name": "Fiche de l'arbre",
-				"label": "http://arbres-inventaire.irisnet.be/arbre/[%RESULTS_FR%]/[%ID_ARBRE_CMS%]/",
+				"label": "[%URL_FR%]",
 				"type": "link"
 			},
 			{
 				"name": "Photo",
-				"label": "http://arbres-inventaire.irisnet.be/medias/trees/[%FIRSTIMAGE%]",
+				"label": "[%FIRSTIMAGE%]",
 				"type": "picture"
-			},
-			{
-				"name": "Hauteur",
-				"label": "[%HAUTEUR%] m",
-				"type": "string"
 			},
 			{
 				"name": "Diamètre de la cîme",
@@ -106,19 +101,9 @@ const gfiFr = {
 				"type": "string"
 			},
 			{
-				"name": "type d'emplacement",
-				"label": "[%EMPLACEMENT%]",
-				"type": "string"
-			},
-			{
 				"name": "statut",
-				"label": "[%LEGENDEFR%]",
+				"label": "[%STATUTS%]",
 				"type": "string"
-			},
-			{
-				"name": "Lien CMS",
-				"label": "http://arbres-inventaire.irisnet.be/manager/index.php?table=36&id=[%ID_ARBRE_CMS%]",
-				"type": "link"
 			}
 		]
 	},
