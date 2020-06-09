@@ -1842,7 +1842,7 @@
       <Name>leefmilieu brussel</Name>
       <Title>leefmilieu brussel</Title>
 
-      <Layer>
+      <Layer noSubsets="0" opaque="0" queryable="1">
         <Name>Inventaire Etat du Sol</Name>
         <Title>Inventaire Etat du Sol</Title>
         <Layer noSubsets="0" opaque="0" queryable="1">
