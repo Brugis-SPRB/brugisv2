@@ -4371,7 +4371,7 @@
         <BoundingBox SRS="EPSG:31370" maxx="157878.449" maxy="177860.059" minx="141737.497" miny="162020.529"/>
         <Style>
           <Name>UrbisAdmAdptZoomAttrLblADRN</Name>
-          <Title>Address points</Title>
+          <Title>Numéro de police</Title>
           <LegendURL height="40" width="119">
           <Format>image/png</Format>
           <OnlineResource ns0:href="http://geoservices-urbis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=UrbisAdm%3AAdpt" ns0:type="simple"/>

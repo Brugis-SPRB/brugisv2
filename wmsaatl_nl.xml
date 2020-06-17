@@ -4043,7 +4043,7 @@
       </Layer>
       <Layer noSubsets="0" opaque="0" queryable="1">
         <Name>UrbisAdm:Adpt</Name>
-        <Title>Address Points</Title>
+        <Title>Huisnummers</Title>
         <Abstract/>
         <KeywordList>
           <Keyword>CIRB WMS - Geoserver</Keyword>
