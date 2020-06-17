@@ -27,10 +27,10 @@ class InfoDescription extends React.Component {
                         <div>
                           <Message msgId="brugisInfo.webservice_wms_text" /><br/><br/>
                         <div>
-                          <Message msgId="brugisInfo.webservice_wms_example_1" /><a target="_blank" href="https://mybrugis.irisnet.be/geoserver/ows?">https://mybrugis.irisnet.be/geoserver/ows?</a><br/>
-                          <Message msgId="brugisInfo.webservice_wms_example_2" /><a target="_blank" href="https://mybrugis.irisnet.be/geoserver/ows?service=wms&version=1.3.0&request=GetCapabilities">GetCapabilities WMS</a><br/>
-                          <Message msgId="brugisInfo.webservice_wms_example_3" /><a target="_blank" href="https://mybrugis.irisnet.be/geoserver/ows?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetMap&FORMAT=image%2Fpng&TRANSPARENT=true&LAYERS=BDU%3APatrimoine&STYLES=&SRS=EPSG%3A31370&CRS=EPSG%3A31370&TILED=true&WIDTH=256&HEIGHT=256&BBOX=148960%2C170752%2C149031.68%2C170823.68">GetMap</a><br/>
-                          <Message msgId="brugisInfo.webservice_wms_example_4" /><a target="_blank" href="https://mybrugis.irisnet.be/geoserver/ows?service=WMS&version=1.1.1&request=GetFeatureInfo&exceptions=application%2Fjson&id=dd5d36e7-abd0-8d4d-d74f-3b77d685e7f4&layers=BDU:Patrimoine&query_layers=BDU:Patrimoine&x=51&y=51&height=101&width=101&srs=EPSG:31370&bbox=148829.7997120187,170672.04027971838,148886.3597120187,170728.60027971838&feature_count=10&info_format=application%2Fjson&ENV=">GetFeatureInfo</a><br/>
+                          <Message msgId="brugisInfo.webservice_wms_example_1" /><a target="_blank" href="https://gis.urban.brussels/geoserver/ows?">https://gis.urban.brussels/geoserver/ows?</a><br/>
+                          <Message msgId="brugisInfo.webservice_wms_example_2" /><a target="_blank" href="https://gis.urban.brussels/geoserver/ows?service=wms&version=1.3.0&request=GetCapabilities">GetCapabilities WMS</a><br/>
+                          <Message msgId="brugisInfo.webservice_wms_example_3" /><a target="_blank" href="https://gis.urban.brussels/geoserver/ows?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetMap&FORMAT=image%2Fpng&TRANSPARENT=true&LAYERS=BDU%3APatrimoine&STYLES=&SRS=EPSG%3A31370&CRS=EPSG%3A31370&TILED=true&WIDTH=256&HEIGHT=256&BBOX=148960%2C170752%2C149031.68%2C170823.68">GetMap</a><br/>
+                          <Message msgId="brugisInfo.webservice_wms_example_4" /><a target="_blank" href="https://gis.urban.brussels/geoserver/ows?service=WMS&version=1.1.1&request=GetFeatureInfo&exceptions=application%2Fjson&id=dd5d36e7-abd0-8d4d-d74f-3b77d685e7f4&layers=BDU:Patrimoine&query_layers=BDU:Patrimoine&x=51&y=51&height=101&width=101&srs=EPSG:31370&bbox=148829.7997120187,170672.04027971838,148886.3597120187,170728.60027971838&feature_count=10&info_format=application%2Fjson&ENV=">GetFeatureInfo</a><br/>
                         </div>
                         </div>
                     </p>
@@ -39,10 +39,10 @@ class InfoDescription extends React.Component {
                         <div>
                           <Message msgId="brugisInfo.webservice_wfs_text" /><br/><br/>
                         <div>
-                          <Message msgId="brugisInfo.webservice_wfs_example_1" /><a target="_blank" href="https://mybrugis.irisnet.be/geoserver/ows?">https://mybrugis.irisnet.be/geoserver/ows?</a><br/>
-                          <Message msgId="brugisInfo.webservice_wfs_example_2" /><a target="_blank" href="https://mybrugis.irisnet.be/geoserver/ows?service=wfs&version=1.1.0&request=GetCapabilities">GetCapabilities WFS</a><br/>
-                          <Message msgId="brugisInfo.webservice_wfs_example_3" /><a target="_blank" href="https://mybrugis.irisnet.be/geoserver/BDU/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=BDU%3APatrimoine">GetFeature WFS</a><br/>
-                          <Message msgId="brugisInfo.webservice_wfs_example_4" /><a target="_blank" href="https://mybrugis.irisnet.be/geoserver/wfs?request=GetFeature&version=1.1.0&typeName=BDU:Patrimoine&propertyName=BENAMING_FR,TYPE_VRIJWARING_FR,FOTO&BBOX=148780,170615,148932,170782,EPSG:31370">GetFeature BBOX WFS</a><br/>
+                          <Message msgId="brugisInfo.webservice_wfs_example_1" /><a target="_blank" href="https://gis.urban.brussels/geoserver/ows?">https://gis.urban.brussels/geoserver/ows?</a><br/>
+                          <Message msgId="brugisInfo.webservice_wfs_example_2" /><a target="_blank" href="https://gis.urban.brussels/geoserver/ows?service=wfs&version=1.1.0&request=GetCapabilities">GetCapabilities WFS</a><br/>
+                          <Message msgId="brugisInfo.webservice_wfs_example_3" /><a target="_blank" href="https://gis.urban.brussels/geoserver/BDU/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=BDU%3APatrimoine">GetFeature WFS</a><br/>
+                          <Message msgId="brugisInfo.webservice_wfs_example_4" /><a target="_blank" href="https://gis.urban.brussels/geoserver/wfs?request=GetFeature&version=1.1.0&typeName=BDU:Patrimoine&propertyName=BENAMING_FR,TYPE_VRIJWARING_FR,FOTO&BBOX=148780,170615,148932,170782,EPSG:31370">GetFeature BBOX WFS</a><br/>
                         </div>
                         </div>
                     </p>
