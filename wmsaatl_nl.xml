@@ -4076,7 +4076,6 @@
           <OnlineResource ns0:href="http://geoservices-urbis.irisnet.be/geoserver/wms?request=GetLegendGraphic&format=image%2Fpng&width=20&height=20&layer=UrbisAdm%3AAdpt&style=UrbisAdmAdptGray" ns0:type="simple"/>
           </LegendURL>
         </Style>
-        <ScaleHint max="1999.0" min="0.0"/>
       </Layer>
       <Layer noSubsets="0" opaque="0" queryable="1">
         <Name>Kadaster</Name>
