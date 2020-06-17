@@ -4064,7 +4064,7 @@
           <Title>Address points</Title>
           <LegendURL height="40" width="119">
           <Format>image/png</Format>
-          <OnlineResource ns0:href="http://geoservices-urbis.irisnet.be/geoserver/wms?request=GetLegendGraphic&format=image%2Fpng&width=20&height=20&layer=UrbisAdm%3AAdpt" ns0:type="simple"/>
+          <OnlineResource ns0:href="http://geoservices-urbis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=UrbisAdm%3AAdpt" ns0:type="simple"/>
           </LegendURL>
         </Style>
         <Style>
@@ -4072,7 +4072,7 @@
           <Title>Address points</Title>
           <LegendURL height="40" width="119">
           <Format>image/png</Format>
-          <OnlineResource ns0:href="http://geoservices-urbis.irisnet.be/geoserver/wms?request=GetLegendGraphic&format=image%2Fpng&width=20&height=20&layer=UrbisAdm%3AAdpt&style=UrbisAdmAdptGray" ns0:type="simple"/>
+          <OnlineResource ns0:href="http://geoservices-urbis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=UrbisAdm%3AAdpt&amp;style=UrbisAdmAdptGray" ns0:type="simple"/>
           </LegendURL>
         </Style>
       </Layer>
