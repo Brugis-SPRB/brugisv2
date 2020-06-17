@@ -4352,6 +4352,43 @@
         </Style>
       </Layer>
       <Layer noSubsets="0" opaque="0" queryable="1">
+        <Name>UrbisAdm:Adpt</Name>
+        <Title>Address Points</Title>
+        <Abstract>
+        Brussels-Capital Region : Entity Address Point (ADPT) is the location of the address points of the Brussels-Capital
+        </Abstract>
+        <KeywordList>
+          <Keyword>CIRB WMS - Geoserver</Keyword>
+          <Keyword>features</Keyword>
+          <Keyword>URB_ADPT_MV</Keyword>
+          <Keyword>Addresses</Keyword>
+          <Keyword>Belgium</Keyword>
+          <Keyword>Région de Bruxelles-Capitale</Keyword>
+          <Keyword>single family dwelling</Keyword>
+        </KeywordList>
+        <LatLonBoundingBox maxx="4.479727500440942" maxy="50.91081601225553" minx="4.2502238736878" miny="50.76836820771438"/>
+        <BoundingBox SRS="CRS:84" minx="4.2502238736878" miny="50.76836820771438" maxx="4.479727500440942" maxy="50.91081601225553"/>
+        <BoundingBox SRS="EPSG:4326" minx="4.2502238736878" miny="50.76836820771438" maxx="4.479727500440942" maxy="50.91081601225553"/>
+        <BoundingBox SRS="EPSG:31370" maxx="157878.449" maxy="177860.059" minx="141737.497" miny="162020.529"/>
+        <Style>
+          <Name>UrbisAdmAdptZoomAttrLblADRN</Name>
+          <Title>Address points</Title>
+          <LegendURL height="40" width="119">
+          <Format>image/png</Format>
+          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://geoservices-urbis.irisnet.be/geoserver/wms?request=GetLegendGraphic&format=image%2Fpng&width=20&height=20&layer=UrbisAdm%3AAdpt" xlink:type="simple"/>
+          </LegendURL>
+        </Style>
+        <Style>
+          <Name>UrbisAdmAdptGray</Name>
+          <Title>Address points</Title>
+          <LegendURL height="40" width="119">
+          <Format>image/png</Format>
+          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://geoservices-urbis.irisnet.be/geoserver/wms?request=GetLegendGraphic&format=image%2Fpng&width=20&height=20&layer=UrbisAdm%3AAdpt&style=UrbisAdmAdptGray" xlink:type="simple"/>
+          </LegendURL>
+        </Style>
+        <ScaleHint max="1999.0" min="0.0"/>
+      </Layer>
+      <Layer noSubsets="0" opaque="0" queryable="1">
         <Name>Cadastre</Name>
         <Title>Cadastre</Title>
         <Layer noSubsets="0" opaque="0" queryable="1">
