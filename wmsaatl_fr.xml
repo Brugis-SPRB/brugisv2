@@ -4354,9 +4354,7 @@
       <Layer noSubsets="0" opaque="0" queryable="1">
         <Name>UrbisAdm:Adpt</Name>
         <Title>Address Points</Title>
-        <Abstract>
-        Brussels-Capital Region : Entity Address Point (ADPT) is the location of the address points of the Brussels-Capital
-        </Abstract>
+        <Abstract>Brussels-Capital Region : Entity Address Point (ADPT) is the location of the address points of the Brussels-Capital</Abstract>
         <KeywordList>
           <Keyword>CIRB WMS - Geoserver</Keyword>
           <Keyword>features</Keyword>
