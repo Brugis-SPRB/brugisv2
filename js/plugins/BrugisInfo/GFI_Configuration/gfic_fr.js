@@ -102,7 +102,7 @@ const gfiFr = {
 			},
 			{
 				"name": "statut",
-				"label": "[%STATUTS%]",
+				"label": "[%STATUTS_FR%]",
 				"type": "string"
 			}
 		]
