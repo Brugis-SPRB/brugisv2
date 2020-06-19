@@ -144,14 +144,14 @@ const gfiNl = {
 			},
 			{
 				"name": "status",
-				"label": "[%STATUTS%]",
+				"label": "[%STATUTS_NL%]",
 				"type": "string"
 			}
 		]
 	},
 	"BSO_DML_BESC:Gevelde_ofverdwenen_bomen": {
 		"actiontype": "GRID",
-		"title": "[%TAX_NL%]",
+		"title": "[%NOM_NL%]",
 		"attributes": [{
 				"name": "Omtrek",
 				"label": "[%CIRCONFERENCE%] cm",
@@ -159,12 +159,12 @@ const gfiNl = {
 			},
 			{
 				"name": "Naam",
-				"label": "[%TAX_NL%]",
+				"label": "[%NOM_NL%]",
 				"type": "string"
 			},
 			{
 				"name": "Latijnse benaming",
-				"label": "[%TAX_LA%]",
+				"label": "[%NOM_LA%]",
 				"type": "string"
 			},
 			{
@@ -183,38 +183,23 @@ const gfiNl = {
 				"type": "picture"
 			},
 			{
-				"name": "Hoogte",
-				"label": "[%HAUTEUR%] m",
-				"type": "string"
-			},
-			{
 				"name": "Diameter kroon",
 				"label": "[%DIAMETRE_CIME%] m",
-				"type": "string"
-			},
-			{
-				"name": "Localisatie",
-				"label": "[%EMPLACEMENT%]",
-				"type": "string"
-			},
-			{
-				"name": "Toestand",
-				"label": "[%LEGENDENL%]",
 				"type": "string"
 			}
 		]
 	},
 	"BSO_DML_BESC:Opmerkelijke_bomen_zeldzaamheid": {
 		"actiontype": "GRID",
-		"title": "[%TAX_LA%]: [%RARETE%]",
+		"title": "[%NOM_LA%]: [%RARETE%]",
 		"attributes": [{
 				"name": "Id",
-				"label": "[%ID_ARBRE_CMS%]",
+				"label": "[%ID_ARBRES_CMS%]",
 				"type": "string"
 			},
 			{
 				"name": "Latijnse benaming",
-				"label": "[%TAX_LA%]",
+				"label": "[%NOM_LA%]",
 				"type": "string"
 			},
 			{
@@ -226,15 +211,10 @@ const gfiNl = {
 	},
 	"BSO_DML_BESC:Opmerkelijke_bomen_100_biggest": {
 		"actiontype": "GRID",
-		"title": "[%TAX_NL%]",
+		"title": "[%NOM_NL%]",
 		"attributes": [{
 				"name": "Omtrek",
 				"label": "[%CIRCONFERENCE%] cm",
-				"type": "string"
-			},
-			{
-				"name": "Afmetingenindex",
-				"label": "[%CLASSEMENTTAILLES%]",
 				"type": "string"
 			}
 		]

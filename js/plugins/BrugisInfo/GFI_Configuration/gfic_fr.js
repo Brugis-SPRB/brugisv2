@@ -142,22 +142,22 @@ const gfiFr = {
 			},
 			{
 				"name": "statut",
-				"label": "[%STATUTS%]",
+				"label": "[%STATUTS_FR%]",
 				"type": "string"
 			}
 		]
 	},
 	"BDU_DMS_PROT:Arbres_remarquables_rarete": {
 		"actiontype": "GRID",
-		"title": "[%TAX_LA%]: [%RARETE%]",
+		"title": "[%NOM_LA%]: [%RARETE%]",
 		"attributes": [{
 				"name": "Identifiant",
-				"label": "[%ID_ARBRE_CMS%]",
+				"label": "[%ID_ARBRES_CMS%]",
 				"type": "string"
 			},
 			{
 				"name": "Taxon latin",
-				"label": "[%TAX_LA%]",
+				"label": "[%NOM_LA%]",
 				"type": "string"
 			},
 			{
@@ -169,15 +169,10 @@ const gfiFr = {
 	},
 	"BDU_DMS_PROT:Arbres_remarquables_100_biggest": {
 		"actiontype": "GRID",
-		"title": "[%TAX_FR%]",
+		"title": "[%NOM_FR%]",
 		"attributes": [{
 				"name": "Circonférence",
 				"label": "[%CIRCONFERENCE%] cm",
-				"type": "string"
-			},
-			{
-				"name": "Classement des tailles",
-				"label": "[%CLASSEMENTTAILLES%]",
 				"type": "string"
 			}
 		]
