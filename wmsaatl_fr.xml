@@ -2249,6 +2249,37 @@
           </Style>
         </Layer>
       </Layer>
+      <Layer queryable="1" opaque="0" cascaded="0">
+        <Name>bruenvi_natura_2000_buffer</Name>
+        <Title>Natura 2000 - zone tampon de 100m</Title>
+        <Abstract>
+        Buffer de 100 metres autour du réseau Natura 2000 réseau qui concerne des sites naturels ou semi-naturels de l'Union européenne ayant une grande valeur patrimoniale,...
+        </Abstract>
+        <KeywordList>
+          <Keyword>affectation</Keyword>
+          <Keyword>Natura 2000</Keyword>
+          <Keyword>IBGE WMS - Mapserver - Fr</Keyword>
+        </KeywordList>
+        <CRS>EPSG:31370</CRS>
+        <EX_GeographicBoundingBox>
+          <westBoundLongitude>4.18201</westBoundLongitude>
+          <eastBoundLongitude>4.54602</eastBoundLongitude>
+          <southBoundLatitude>50.76</southBoundLatitude>
+          <northBoundLatitude>50.9178</northBoundLatitude>
+        </EX_GeographicBoundingBox>
+        <BoundingBox CRS="EPSG:31370" minx="136869" miny="161076" maxx="162465" maxy="178604"/>
+        <BoundingBox CRS="EPSG:4326" minx="50.76" miny="4.18201" maxx="50.9178" maxy="4.54602"/>
+        <BoundingBox CRS="EPSG:3812" minx="636867" miny="661075" maxx="662466" maxy="678606"/>
+        <BoundingBox CRS="EPSG:900913" minx="136869" miny="161076" maxx="162465" maxy="178604"/>
+        <Style>
+          <Name>default</Name>
+          <Title>default</Title>
+          <LegendURL width="147" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://wms.environnement.brussels/be_wms?language=fre&amp;version=1.3.0&amp;service=WMS&amp;request=GetLegendGraphic&amp;sld_version=1.1.0&amp;layer=bruenvi_natura_2000_buffer&amp;format=image/png&amp;STYLE=default"/>
+          </LegendURL>
+        </Style>
+      </Layer>
       <Layer noSubsets="0" opaque="0" queryable="1">
         <Name>Réserves et espaces verts</Name>
         <Title>Réserves et espaces verts</Title>
