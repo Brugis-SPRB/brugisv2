@@ -2114,9 +2114,9 @@
         </Layer>
         <Layer queryable="1" opaque="0" cascaded="0">
           <Name>bruenvi_natura_2000_buffer</Name>
-          <Title>Natura 2000 - zone tampon de 100m</Title>
+          <Title>Natura 2000 - zone tampon de 60m</Title>
           <Abstract>
-          Buffer de 100 metres autour du réseau Natura 2000 réseau qui concerne des sites naturels ou semi-naturels de l'Union européenne ayant une grande valeur patrimoniale,...
+          Buffer de 60 metres autour du réseau Natura 2000 réseau qui concerne des sites naturels ou semi-naturels de l'Union européenne ayant une grande valeur patrimoniale,...
           </Abstract>
           <KeywordList>
             <Keyword>affectation</Keyword>
