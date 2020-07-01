@@ -1571,7 +1571,7 @@ const gfiFr = {
 	},
 	"BDU_DMS_PROT:Inventaire_Irismonument": {
 		"actiontype": "GRID",
-		"title": "Inventaire Irismonument: [%ADDRESS_RESULTS_FR%]",
+		"title": "Inventaire Irismonument: [%STREET_FR%], [%NUMBER%]",
 		"attributes": [{
 				"name": "Nom",
 				"label": "[%NOM_FR%]",
@@ -1579,7 +1579,7 @@ const gfiFr = {
 			},
 			{
 				"name": "Adresse",
-				"label": "[%ADDRESS_RESULTS_FR%]",
+				"label": "[%STREET_FR%], [%NUMBER%]",
 				"type": "string"
 			},
 			{

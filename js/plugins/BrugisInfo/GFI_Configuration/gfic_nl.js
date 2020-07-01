@@ -221,7 +221,7 @@ const gfiNl = {
 	},
 	"BSO_DML_BESC:Inventaris_Irismonument": {
 		"actiontype": "GRID",
-		"title": "Inventaris Irismonument: [%ADDRESS_RESULTS_NL%]",
+		"title": "Inventaris Irismonument: [%STREET_NL%], [%NUMBER%]",
 		"attributes": [{
 				"name": "Naam",
 				"label": "[%NOM_NL%]",
@@ -229,7 +229,7 @@ const gfiNl = {
 			},
 			{
 				"name": "Adress",
-				"label": "[%ADDRESS_RESULTS_NL%]",
+				"label": "[%STREET_NL%], [%NUMBER%]",
 				"type": "string"
 			},
 			{
