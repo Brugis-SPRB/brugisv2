@@ -57,7 +57,7 @@ function printSubmit(url, spec) {
     return (dispatch) => {
         return axios.post(url, spec).then((response) => {
             if (typeof response.data === 'object') {
-                //let hackedUrl = "https://gis.urban.brussels" + response.data.getURL;
+                // let hackedUrl = "https://gis.urban.brussels" + response.data.getURL;
                 dispatch(printCreated(response.data && response.data.getURL));
             } else {
                 try {
