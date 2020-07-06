@@ -59,7 +59,7 @@ function replaceInFile(filePaths, from, to) {
 const args = process.argv.slice(2);
 
 if(args.length != 1) {
-  console.log("This script accept only one parameter ex: modenv DEV|STA|PRD")
+  console.log("This script accept only one parameter ex: modenv DEV|STA|STANEW|PRD|PRDNEW")
 }
 
 
