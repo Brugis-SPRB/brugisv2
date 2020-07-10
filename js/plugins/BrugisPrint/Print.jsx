@@ -126,7 +126,7 @@ class Print extends React.Component {
             enableRefresh: false
         },
         syncMapPreview: true,
-        useFixedScales: false,
+        useFixedScales: true,
         scales: [],
         ignoreLayers: ["google", "bing"],
         defaultBackground: "osm",
