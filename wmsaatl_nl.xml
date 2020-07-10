@@ -3736,12 +3736,33 @@
         <LatLonBoundingBox maxx="4.467966955492349" maxy="50.904814577400444" minx="4.24249366703288" miny="50.76899415866564" />
         <BoundingBox SRS="EPSG:31370" maxx="157052.237999992" maxy="177192.507388039" minx="141192.712000009" miny="162091.041842074" />
         <Style>
-          <Name>BBP_2</Name>
+          <Name>BBP_3</Name>
           <Title>BBP</Title>
           <Abstract />
           <LegendURL height="20" width="20">
             <Format>image/png</Format>
             <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=BBP" ns0:type="simple" />
+          </LegendURL>
+        </Style>
+      </Layer>
+      <Layer queryable="1">
+        <Name>BSO:BBP_OPGEHEVEN</Name>
+        <Title>Opgeheven BBP</Title>
+        <Abstract>VM_A60_PPAS_NL</Abstract>
+        <KeywordList>
+          <Keyword>VM_A60_PPAS_NL</Keyword>
+          <Keyword>features</Keyword>
+        </KeywordList>
+        <SRS>EPSG:31370</SRS>
+        <LatLonBoundingBox maxx="4.467966955492349" maxy="50.904814577400444" minx="4.24249366703288" miny="50.76899415866564" />
+        <BoundingBox SRS="EPSG:31370" maxx="157052.237999992" maxy="177192.507388039" minx="141192.712000009" miny="162091.041842074" />
+        <Style>
+          <Name>BBP_OPGEHEVEN</Name>
+          <Title>BBP</Title>
+          <Abstract />
+          <LegendURL height="20" width="20">
+            <Format>image/png</Format>
+            <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=BBP_OPGEHEVEN" ns0:type="simple" />
           </LegendURL>
         </Style>
       </Layer>
