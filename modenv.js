@@ -29,11 +29,11 @@ const ENV_CONFIG_SURVEY = {
 };
 
 const ENV_CONFIG_PRINTURL = {
-  'DEV'   : 'https://mbr227.irisnet.be/',
-  'STA'   : 'https://mbr227.irisnet.be/',
-  'STANEW'   : 'https://gislab.urban.brussels/',
-  'PRD'   : 'https://mbr227.irisnet.be/',
-  'PRDNEW'   : 'https://gis.urban.brussels/'
+  'DEV'   : 'https://mbr227.irisnet.be/geoserver/pdf',
+  'STA'   : 'https://mbr227.irisnet.be/geoserver/pdf',
+  'STANEW'   : 'https://gislab.urban.brussels/geoserver/pdf',
+  'PRD'   : 'https://mbr227.irisnet.be/geoserver/pdf',
+  'PRDNEW'   : 'https://gis.urban.brussels/print'
 };
 
 
