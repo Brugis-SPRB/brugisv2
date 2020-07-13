@@ -5,34 +5,26 @@ const glob = require('glob');
 
 const ENV_CONFIG_GEOSERVER_URBIS = {
   'DEV' : 'http://10.128.81.203:8080/geoserver/URBIS/wms',
-  'STA' : 'http://mybrugis.irisnetlab.be/geoserver/URBIS/wms',
   'STANEW' : 'https://gislab.urban.brussels/geoserver/URBIS/wms',
-  'PRD' : 'https://mybrugis.irisnet.be/geoserver/URBIS/wms',
   'PRDNEW' : 'https://gis.urban.brussels/geoserver/URBIS/wms'
 };
 
 const ENV_CONFIG_GEOSERVER = {
   'DEV' : 'http://10.128.81.203:8080/geoserver/ows',
-  'STA' : 'http://mybrugis.irisnetlab.be/geoserver/ows',
   'STANEW' : 'https://gislab.urban.brussels/geoserver/ows',
-  'PRD' : 'https://mybrugis.irisnet.be/geoserver/ows',
   'PRDSTUB' : 'https://mybrugis.irisnet.be/geoserver/www/wmsaatl/wmsc_brugis_anon.xml',
   'PRDNEW' : 'https://gis.urban.brussels/geoserver/ows'
 };
 
 const ENV_CONFIG_SURVEY = {
   'DEV' : 'http://10.128.81.205:8080/',
-  'STA' : 'https://mbr127.irisnetlab.be/',
   'STANEW' : 'https://gislab.urban.brussels/',
-  'PRD' : "https://mbr227.irisnet.be/",
   'PRDNEW' : 'https://gis.urban.brussels/'
 };
 
 const ENV_CONFIG_PRINTURL = {
-  'DEV'   : 'https://mbr227.irisnet.be/geoserver/pdf',
-  'STA'   : 'https://mbr227.irisnet.be/geoserver/pdf',
+  'DEV'   : 'http://10.128.81.203:8080/geoserver/pdf',
   'STANEW'   : 'https://gislab.urban.brussels/geoserver/pdf',
-  'PRD'   : 'https://mbr227.irisnet.be/geoserver/pdf',
   'PRDNEW'   : 'https://gis.urban.brussels/print'
 };
 
@@ -59,7 +51,7 @@ function replaceInFile(filePaths, from, to) {
 const args = process.argv.slice(2);
 
 if(args.length != 1) {
-  console.log("This script accept only one parameter ex: modenv DEV|STA|STANEW|PRD|PRDNEW")
+  console.log("This script accept only one parameter ex: modenv DEV|STANEW|PRDNEW")
 }
 
 
@@ -92,6 +84,6 @@ replaceSync(
 
 replaceSync(
   "./localConfig.json",
-  ENV_CONFIG_PRINTURL['DEV'], ENV_CONFIG_PRINTURL[args[0]],
+  'https://mbr227.irisnet.be/geoserver/pdf', ENV_CONFIG_PRINTURL[args[0]],
   'utf-8'
 );
