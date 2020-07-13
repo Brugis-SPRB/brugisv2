@@ -931,7 +931,7 @@
                 <Title>Inventaire</Title>
                 <LegendURL height="40" width="80">
                   <Format>image/png</Format>
-                  <OnlineResource ns0:href="http://svappmavw115:8080/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=BDU_DMS_PROT%3AInventaire_l%C3%A9gal_des_sites_et_Quartiers_L%C3%A9opold" ns0:type="simple"/>
+                  <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=BDU_DMS_PROT%3AInventaire_l%C3%A9gal_des_sites_et_Quartiers_L%C3%A9opold" ns0:type="simple"/>
                 </LegendURL>
               </Style>
             </Layer>
@@ -1466,7 +1466,7 @@
                 <Title>DMS_Inventaire_batiments</Title>
                 <LegendURL height="280" width="154">
                   <Format>image/png</Format>
-                  <OnlineResource ns0:href="http://svappmavw115:8080/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=BDU_DMS_PROT%3AInventaire_batiments" ns0:type="simple"/>
+                  <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=BDU_DMS_PROT%3AInventaire_batiments" ns0:type="simple"/>
                 </LegendURL>
               </Style>
             </Layer>
@@ -1545,7 +1545,7 @@
                 </LegendURL>
               </Style>
             </Layer>
-            <Layer queryable="1">
+            <!--Layer queryable="1">
               <Name>BDU_DMS_PROT:Arbres_remarquables_rarete</Name>
               <Title>Rarity of remarkable trees</Title>
               <Abstract />
@@ -1574,7 +1574,7 @@
                   <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Arbres_remarquables_rarete&amp;style=Arbres_Remarquables_57bd0668" ns0:type="simple" />
                 </LegendURL>
               </Style>
-            </Layer>
+            </Layer-->
           </Layer>
 
         </Layer>
