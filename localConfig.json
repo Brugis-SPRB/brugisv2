@@ -568,7 +568,7 @@
 						 }, {
                  "name": "Print",
 								 "cfg":{
-									 "useFixedScales": false
+									 "useFixedScales": true
 								 }
              }, {
                  "name": "BrugisSurvey",
