@@ -320,7 +320,7 @@ class Print extends React.Component {
                 this.props.configurePrintMap(newMap.center, mapZoom, scaleZoom, scales[scaleZoom],
                     this.filterLayers(newPrintSpec), newMap.projection, this.props.currentLocale);
             } else {
-                this.props.configurePrintMap(newMap.center, newMap.zoom, newMap.zoom, this.props.scales[newMap.zoom],
+                this.props.configurePrintMap(newMap.center, newMap.zoom, newMap.zoom, this.props.scales[Math.round(newMap.zoom)],
                     this.filterLayers(newPrintSpec), newMap.projection, this.props.currentLocale);
             }
         }
