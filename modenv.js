@@ -4,12 +4,14 @@ const fs = require('fs')
 const glob = require('glob');
 
 const ENV_CONFIG_GEOSERVER_URBIS = {
+  'PRD' : 'https://mybrugis.irisnet.be/geoserver/URBIS/wms',
   'DEV' : 'http://10.128.81.203:8080/geoserver/URBIS/wms',
   'STANEW' : 'https://gislab.urban.brussels/geoserver/URBIS/wms',
   'PRDNEW' : 'https://gis.urban.brussels/geoserver/URBIS/wms'
 };
 
 const ENV_CONFIG_GEOSERVER = {
+  'PRD' : 'https://mybrugis.irisnet.be/geoserver/ows',
   'DEV' : 'http://10.128.81.203:8080/geoserver/ows',
   'STANEW' : 'https://gislab.urban.brussels/geoserver/ows',
   'PRDSTUB' : 'https://mybrugis.irisnet.be/geoserver/www/wmsaatl/wmsc_brugis_anon.xml',
@@ -17,12 +19,14 @@ const ENV_CONFIG_GEOSERVER = {
 };
 
 const ENV_CONFIG_SURVEY = {
+  'PRD' : "https://mbr227.irisnet.be/",
   'DEV' : 'http://10.128.81.205:8080/',
   'STANEW' : 'https://gislab.urban.brussels/',
   'PRDNEW' : 'https://gis.urban.brussels/'
 };
 
 const ENV_CONFIG_PRINTURL = {
+  'PRD'   : 'https://mbr227.irisnet.be/geoserver/pdf',
   'DEV'   : 'http://10.128.81.203:8080/geoserver/pdf',
   'STANEW'   : 'https://gislab.urban.brussels/geoserver/pdf',
   'PRDNEW'   : 'https://gis.urban.brussels/print'
