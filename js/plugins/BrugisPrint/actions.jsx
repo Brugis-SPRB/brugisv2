@@ -57,7 +57,7 @@ function printSubmit(url, spec) {
     return (dispatch) => {
         return axios.post(url, spec).then((response) => {
             if (typeof response.data === 'object') {
-                let hackedUrl = response.data.getURL.replace("http", "https");
+                let hackedUrl = response.data.getURL.replace("http", "https").replace("geoserver/pdf", "print");
                 dispatch(printCreated(response.data && hackedUrl));
             } else {
                 try {
