@@ -12,6 +12,7 @@ const PRINT_CREATED = 'PRINT_CREATED';
 const PRINT_CANCEL = 'PRINT_CANCEL';
 
 const axios = require('../../../MapStore2/web/client/libs/ajax');
+const EnvUtils = require('../../utils/EnvUtils');
 
 function printCapabilitiesLoaded(capabilities) {
     return {
@@ -57,7 +58,10 @@ function printSubmit(url, spec) {
     return (dispatch) => {
         return axios.post(url, spec).then((response) => {
             if (typeof response.data === 'object') {
-                let hackedUrl = response.data.getURL.replace("http", "https").replace("geoserver/pdf", "print");
+                let hackedUrl = response.data.getURL.replace("http", "https");
+                if (EnvUtils.getEnvironment() === EnvUtils.PRDNEW) {
+                    hackedUrl = hackedUrl.replace("geoserver/pdf", "print");
+                }
                 dispatch(printCreated(response.data && hackedUrl));
             } else {
                 try {
