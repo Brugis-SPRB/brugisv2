@@ -59,9 +59,9 @@ function printSubmit(url, spec) {
         return axios.post(url, spec).then((response) => {
             if (typeof response.data === 'object') {
                 let hackedUrl = response.data.getURL;
-                if (EnvUtils.getEnvironment() === EnvUtils.PRDNEW || EnvUtils.getEnvironment() === EnvUtils.STANEW) {
+                if (EnvUtils.getEnvironment() === 'PRDNEW' || EnvUtils.getEnvironment() === 'STANEW') {
                     hackedUrl = hackedUrl.replace("http", "https");
-                    if (EnvUtils.getEnvironment() === EnvUtils.PRDNEW) {
+                    if (EnvUtils.getEnvironment() === 'PRDNEW') {
                         hackedUrl = hackedUrl.replace("geoserver/pdf", "print");
                     }
                 }
