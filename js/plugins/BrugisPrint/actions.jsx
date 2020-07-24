@@ -58,7 +58,7 @@ function printSubmit(url, spec) {
     return (dispatch) => {
         return axios.post(url, spec).then((response) => {
             if (typeof response.data === 'object') {
-                let hackedUrl = response.data.getURL;
+                var hackedUrl = response.data.getURL;
                 if (EnvUtils.getEnvironment() === EnvUtils.PRDNEW || EnvUtils.getEnvironment() === EnvUtils.STANEW) {
                     hackedUrl = hackedUrl.replace("http", "https");
                     if (EnvUtils.getEnvironment() === EnvUtils.PRDNEW) {
