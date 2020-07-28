@@ -4,29 +4,24 @@ const fs = require('fs')
 const glob = require('glob');
 
 const ENV_CONFIG_GEOSERVER_URBIS = {
-  'PRD' : 'https://mybrugis.irisnet.be/geoserver/URBIS/wms',
   'DEV' : 'http://10.128.81.203:8080/geoserver/URBIS/wms',
   'STANEW' : 'https://gislab.urban.brussels/geoserver/URBIS/wms',
   'PRDNEW' : 'https://gis.urban.brussels/geoserver/URBIS/wms'
 };
 
 const ENV_CONFIG_GEOSERVER = {
-  'PRD' : 'https://mybrugis.irisnet.be/geoserver/ows',
   'DEV' : 'http://10.128.81.203:8080/geoserver/ows',
   'STANEW' : 'https://gislab.urban.brussels/geoserver/ows',
-  'PRDSTUB' : 'https://mybrugis.irisnet.be/geoserver/www/wmsaatl/wmsc_brugis_anon.xml',
   'PRDNEW' : 'https://gis.urban.brussels/geoserver/ows'
 };
 
 const ENV_CONFIG_SURVEY = {
-  'PRD' : "https://mbr227.irisnet.be/",
-  'DEV' : 'http://10.128.81.205:8080/',
-  'STANEW' : 'https://gislab.urban.brussels/',
-  'PRDNEW' : 'https://gis.urban.brussels/'
+  'DEV' : 'http://10.128.81.205:8080/WebReperage',
+  'STANEW' : 'https://gislab.urban.brussels/WebReperage',
+  'PRDNEW' : 'https://gis.urban.brussels/WebReperage'
 };
 
 const ENV_CONFIG_PRINTURL = {
-  'PRD'   : 'https://mbr227.irisnet.be/geoserver/pdf',
   'DEV'   : 'http://10.128.81.203:8080/geoserver/pdf',
   'STANEW'   : 'https://gislab.urban.brussels/geoserver/pdf',
   'PRDNEW'   : 'https://gis.urban.brussels/print'
@@ -62,32 +57,32 @@ if(args.length != 1) {
 newLine = ENV_CONFIG_GEOSERVER[args[0]]+ "?"
 replaceInFile(
   ["./wmsaatl_en.xml", "./wmsaatl_fr.xml", "./wmsaatl_nl.xml"],
-  "https://mybrugis.irisnet.be/geoserver/wms?", newLine
+  "https://gis.urban.brussels/geoserver/wms?", newLine
 );
 
 replaceInFile(
   ["./config-en.json", "./config-fr.json", "./config-nl.json"],
-  ENV_CONFIG_SURVEY['PRD'], ENV_CONFIG_SURVEY[args[0]]
+  "https://gis.urban.brussels/WebReperage", ENV_CONFIG_SURVEY[args[0]]
 );
 
 replaceInFile(
   ["./config-en.json", "./config-fr.json", "./config-nl.json"],
-  ENV_CONFIG_GEOSERVER['PRD'], ENV_CONFIG_GEOSERVER[args[0]]
+  "https://gis.urban.brussels/geoserver/ows", ENV_CONFIG_GEOSERVER[args[0]]
 );
 
 replaceInFile(
   ["./config-en.json", "./config-fr.json", "./config-nl.json"],
-  ENV_CONFIG_GEOSERVER_URBIS['PRD'], ENV_CONFIG_GEOSERVER_URBIS[args[0]]
+  "https://gis.urban.brussels/geoserver/URBIS/wms", ENV_CONFIG_GEOSERVER_URBIS[args[0]]
 );
 
 replaceSync(
   "./js/appConfig.js",
-  ENV_CONFIG_GEOSERVER['PRDSTUB'], ENV_CONFIG_GEOSERVER[args[0]],
+  "https://gis.urban.brussels/geoserver/ows", ENV_CONFIG_GEOSERVER[args[0]],
   'utf-8'
 );
 
 replaceSync(
   "./localConfig.json",
-  'https://mbr227.irisnet.be/geoserver/pdf', ENV_CONFIG_PRINTURL[args[0]],
+  'https://gis.urban.brussels/print', ENV_CONFIG_PRINTURL[args[0]],
   'utf-8'
 );

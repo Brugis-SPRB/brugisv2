@@ -1,10 +1,10 @@
 {
 	"proxyUrl": {
 		"url": "/brugis/proxy/?url=",
-		"useCORS": ["https://mbr227.irisnet.be","http://10.128.81.205:8080", "https://gislab.urban.brussels", "https://gis.urban.brussels"]
+		"useCORS": ["http://10.128.81.205:8080", "https://gislab.urban.brussels", "https://gis.urban.brussels"]
 	},
 	"geoStoreUrl": "/brugis/rest/geostore",
-	"printUrl": "https://mbr227.irisnet.be/geoserver/pdf/info.json?url=https://mbr227.irisnet.be/geoserver/pdf",
+	"printUrl": "https://gis.urban.brussels/print/info.json?url=https://gis.urban.brussels/print",
 	"bingApiKey": "AhuXBu7ipR1gNbBfXhtUAyCZ6rkC5PkWpxs2MnMRZ1ZupxQfivjLCch22ozKSCAn",
 	"translationsPath": ["./MapStore2/web/client/translations", "./js/translations"],
   "themePrefix": "brugis",
@@ -159,7 +159,7 @@
 						"closeGlyph":"1-close",
 						"initialCatalogURL":{
 							 "csw":"http://geobru.irisnet.be/geonetwork/srv/fr/csw",
-							 "wms":"https://mybrugis.irisnet.be/geoserver/wms"
+							 "wms":"https://gis.urban.brussels/geoserver/wms"
 						}
 				 }
 			}, {
@@ -462,7 +462,7 @@
                   "closeGlyph":"1-close",
                   "initialCatalogURL":{
                      "csw":"http://geobru.irisnet.be/geonetwork/srv/fr/csw",
-                     "wms":"https://mybrugis.irisnet.be/geoserver/wms"
+                     "wms":"https://gis.urban.brussels/geoserver/wms"
                   }
                }
             },{

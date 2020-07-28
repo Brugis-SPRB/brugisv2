@@ -1,8 +1,8 @@
 {
 	"version": 2,
 	"survey": {
-		"host": "https://mbr227.irisnet.be/WebReperage",
-		"geoserver": "https://mybrugis.irisnet.be/geoserver/ows"
+		"host": "https://gis.urban.brussels/WebReperage",
+		"geoserver": "https://gis.urban.brussels/geoserver/ows"
 	},
 	"map": {
 		"projection": "EPSG:31370",
@@ -27,7 +27,7 @@
 		"layers": [{
 
 			"type": "wms",
-			"url": ["https://mybrugis.irisnet.be/geoserver/URBIS/wms"],
+			"url": ["https://gis.urban.brussels/geoserver/URBIS/wms"],
 			"title": "UrbisFR Gray",
 			"name": "URBIS:urbisFRGray",
 			"group": "background",
@@ -39,7 +39,7 @@
 		}, {
 
 			"type": "wms",
-			"url": ["https://mybrugis.irisnet.be/geoserver/URBIS/wms"],
+			"url": ["https://gis.urban.brussels/geoserver/URBIS/wms"],
 			"title": "UrbisFR",
 			"name": "URBIS:urbisFR",
 			"group": "background",
@@ -51,7 +51,7 @@
 		}, {
 
 			"type": "wms",
-			"url": ["https://mybrugis.irisnet.be/geoserver/wms"],
+			"url": ["https://gis.urban.brussels/geoserver/wms"],
 			"title": "Aquarelle",
 			"name": "BCR:Aquarelle",
 			"group": "background",
@@ -62,7 +62,7 @@
 			"format": "image/png8"
 		},{
         	"type": "wms",
-            "url":["https://mybrugis.irisnet.be/geoserver/wms"],
+            "url":["https://gis.urban.brussels/geoserver/wms"],
         	"title": "ZEUS",
         	"name": "BEE:Zone_ZEUS",
             "visibility": true,
@@ -71,7 +71,7 @@
         	"format": "image/png8"
         },{
         	"type": "wms",
-            "url":["https://mybrugis.irisnet.be/geoserver/wms"],
+            "url":["https://gis.urban.brussels/geoserver/wms"],
         	"title": "Zones de développement 2015",
         	"name": "BEE:Zones_de_developpement_2015",
             "visibility": true,
@@ -80,6 +80,6 @@
         	"format": "image/png8"
         }]
 
-		
+
 	}
 }

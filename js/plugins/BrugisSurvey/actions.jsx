@@ -94,7 +94,7 @@ function loadBrugisSurveys(url, data) {
 }
 
 function loadBrugisSurveyTypes(url) {
-    // url = https://mbr227.irisnet.be/WebReperage/resources/ReperagesType?_dc=1499942897118&user=
+    // url = https://gis.urban.brussels/WebReperage/resources/ReperagesType?_dc=1499942897118&user=
     return (dispatch) => {
         return axios.get(url).then((response) => {
             if (typeof response.data === 'object') {
