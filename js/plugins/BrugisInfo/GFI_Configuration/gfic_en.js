@@ -333,60 +333,60 @@ const gfiEn = {
 	},
 	"BDU:Patrimoine": {
 		"actiontype": "GRID",
-		"title": "[%MS]: [%DENOMINATION%]",
+		"title": "[%BESCHERMD_ALS_FR%]: [%BENAMING_PAT_VW_FR%]",
 		"attributes": [{
 				"name": "Dénomination",
-				"label": "[%DENOMINATION%]",
+				"label": "[%BENAMING_PAT_VW_FR%]",
 				"type": "string"
 			},
 			{
-				"name": "Commune",
-				"label": "[%COMMUNE%]",
+				"name": "Addresse du bien",
+				"label": "[%NUMMER_VAN%], [%STRAAT_FR%], [%POSTCODE%] [%GEMEENTE_FR%]",
 				"type": "string"
 			},
 			{
-				"name": "Adresse",
-				"label": "[%ADRESSE%]",
+				"name": "Type de protection",
+				"label": "[%TYPE_VRIJWARING_FR%]",
 				"type": "string"
 			},
 			{
-				"name": "N° de police",
-				"label": "[%NRPOLICE%]",
+				"name": "Protégé en temps que",
+				"label": "[%BESCHERMD_ALS_FR%]",
 				"type": "string"
 			},
 			{
-				"name": "Mon./Site/Ens.",
-				"label": "[%MS%]",
-				"type": "string"
+				"name": "Date du premier arrêté",
+				"label": "[%DATUM_AG1%]",
+				"type": "date"
 			},
 			{
-				"name": "Class./Sauv.",
-				"label": "[%CLSV%]",
-				"type": "string"
+				"name": "Date du dernier arrêté",
+				"label": "[%DATUM_AG2%]",
+				"type": "date"
 			},
 			{
-				"name": "Date AD",
-				"label": "[%AD%]",
-				"type": "string"
+				"name": "Premier arrêté",
+				"label": "[%DOCUM_AG1%]",
+				"type": "link"
 			},
 			{
-				"name": "N° de dossier",
-				"label": "[%DMSFOLDERNR%]",
-				"type": "string"
+				"name": "Dernier arrêté",
+				"label": "[%DOCUM_AG2%]",
+				"type": "link"
 			},
 			{
-				"name": "Commentaire",
-				"label": "[%COMMENTAIRE%]",
-				"type": "string"
+				"name": "Photo",
+				"label": "[%FOTO%]",
+				"type": "picture"
 			},
 			{
-				"name": "EXTPROT",
-				"label": "[%EXTPROT%]",
-				"type": "string"
+				"name": "Zone de Protection",
+				"label": "['Non','Oui'][[%VRIJWARINGSZONE%]]",
+				"type": "eval"
 			},
 			{
-				"name": "NB",
-				"label": "[%NB%]",
+				"name": "Référence DMS",
+				"label": "[%NUMMER_DOSSIER%]/[%CODE_DOSSIER%]",
 				"type": "string"
 			},
 			{
@@ -396,76 +396,7 @@ const gfiEn = {
 			}
 		]
 	},
-	"BDU:Zones_de_protection": {
-		"actiontype": "GRID",
-		"title": "[%MS%] en [%CLSV%]: [%DENOMINATION%]",
-		"attributes": [{
-				"name": "Dénomination",
-				"label": "[%DENOMINATION%]",
-				"type": "string"
-			},
-			{
-				"name": "Commune",
-				"label": "[%COMMUNE%]",
-				"type": "string"
-			},
-			{
-				"name": "Adresse",
-				"label": "[%ADRESSE%]",
-				"type": "string"
-			},
-			{
-				"name": "N° de police",
-				"label": "[%NRPOLICE%]",
-				"type": "string"
-			},
-			{
-				"name": "Mon./Site/Ens.",
-				"label": "[%MS%]",
-				"type": "string"
-			},
-			{
-				"name": "Class./Sauv.",
-				"label": "[%CLSV%]",
-				"type": "string"
-			},
-			{
-				"name": "Date AD",
-				"label": "[%AD%]",
-				"type": "string"
-			},
-			{
-				"name": "N° de dossier",
-				"label": "[%DMSFOLDERNR%]",
-				"type": "string"
-			},
-			{
-				"name": "Commentaire",
-				"label": "[%COMMENTAIRE%]",
-				"type": "string"
-			},
-			{
-				"name": "EXTPROT",
-				"label": "[%EXTPROT%]",
-				"type": "string"
-			},
-			{
-				"name": "NB",
-				"label": "[%NB%]",
-				"type": "string"
-			}
-		]
-	},
-	"BDU:Zones_de_protection_UNESCO": {
-		"actiontype": "GRID",
-		"title": "Zone de protection UNESCO: [%NOM_FR%]",
-		"attributes": [{
-			"name": "Dénomination",
-			"label": "[%NOM_FR%]",
-			"type": "string"
-		}]
-	},
-	"BDU:Patrimoine_New": {
+	"BDU:MONUMENT_CLASSEMENT_ARRETE_DEFINITIF": {
 		"actiontype": "GRID",
 		"title": "[%BESCHERMD_ALS_FR%]: [%BENAMING_PAT_VW_FR%]",
 		"attributes": [{
@@ -491,12 +422,12 @@ const gfiEn = {
 			{
 				"name": "Date du premier arrêté",
 				"label": "[%DATUM_AG1%]",
-				"type": "string"
+				"type": "date"
 			},
 			{
 				"name": "Date du dernier arrêté",
 				"label": "[%DATUM_AG2%]",
-				"type": "string"
+				"type": "date"
 			},
 			{
 				"name": "Premier arrêté",
@@ -515,15 +446,1069 @@ const gfiEn = {
 			},
 			{
 				"name": "Zone de Protection",
-				"label": "['Oui','Non'][[%VRIJWARINGSZONE%]]",
+				"label": "['Non','Oui'][[%VRIJWARINGSZONE%]]",
 				"type": "eval"
 			},
 			{
 				"name": "Référence DMS",
 				"label": "[%NUMMER_DOSSIER%]/[%CODE_DOSSIER%]",
 				"type": "string"
+			},
+			{
+				"name": "Description",
+				"label": "[%NOTA_FR%]",
+				"type": "string"
 			}
 		]
+	},
+	"BDU:MONUMENT_CLASSEMENT_OUVERTURE_DE_PROCEDURE": {
+		"actiontype": "GRID",
+		"title": "[%BESCHERMD_ALS_FR%]: [%BENAMING_PAT_VW_FR%]",
+		"attributes": [{
+				"name": "Dénomination",
+				"label": "[%BENAMING_PAT_VW_FR%]",
+				"type": "string"
+			},
+			{
+				"name": "Addresse du bien",
+				"label": "[%NUMMER_VAN%], [%STRAAT_FR%], [%POSTCODE%] [%GEMEENTE_FR%]",
+				"type": "string"
+			},
+			{
+				"name": "Type de protection",
+				"label": "[%TYPE_VRIJWARING_FR%]",
+				"type": "string"
+			},
+			{
+				"name": "Protégé en temps que",
+				"label": "[%BESCHERMD_ALS_FR%]",
+				"type": "string"
+			},
+			{
+				"name": "Date du premier arrêté",
+				"label": "[%DATUM_AG1%]",
+				"type": "date"
+			},
+			{
+				"name": "Date du dernier arrêté",
+				"label": "[%DATUM_AG2%]",
+				"type": "date"
+			},
+			{
+				"name": "Premier arrêté",
+				"label": "[%DOCUM_AG1%]",
+				"type": "link"
+			},
+			{
+				"name": "Dernier arrêté",
+				"label": "[%DOCUM_AG2%]",
+				"type": "link"
+			},
+			{
+				"name": "Photo",
+				"label": "[%FOTO%]",
+				"type": "picture"
+			},
+			{
+				"name": "Zone de Protection",
+				"label": "['Non','Oui'][[%VRIJWARINGSZONE%]]",
+				"type": "eval"
+			},
+			{
+				"name": "Référence DMS",
+				"label": "[%NUMMER_DOSSIER%]/[%CODE_DOSSIER%]",
+				"type": "string"
+			},
+			{
+				"name": "Description",
+				"label": "[%NOTA_FR%]",
+				"type": "string"
+			}
+		]
+	},
+	"BDU:MONUMENT_SAUVEGARDE_ARRETE_DEFINITIF": {
+		"actiontype": "GRID",
+		"title": "[%BESCHERMD_ALS_FR%]: [%BENAMING_PAT_VW_FR%]",
+		"attributes": [{
+				"name": "Dénomination",
+				"label": "[%BENAMING_PAT_VW_FR%]",
+				"type": "string"
+			},
+			{
+				"name": "Addresse du bien",
+				"label": "[%NUMMER_VAN%], [%STRAAT_FR%], [%POSTCODE%] [%GEMEENTE_FR%]",
+				"type": "string"
+			},
+			{
+				"name": "Type de protection",
+				"label": "[%TYPE_VRIJWARING_FR%]",
+				"type": "string"
+			},
+			{
+				"name": "Protégé en temps que",
+				"label": "[%BESCHERMD_ALS_FR%]",
+				"type": "string"
+			},
+			{
+				"name": "Date du premier arrêté",
+				"label": "[%DATUM_AG1%]",
+				"type": "date"
+			},
+			{
+				"name": "Date du dernier arrêté",
+				"label": "[%DATUM_AG2%]",
+				"type": "date"
+			},
+			{
+				"name": "Premier arrêté",
+				"label": "[%DOCUM_AG1%]",
+				"type": "link"
+			},
+			{
+				"name": "Dernier arrêté",
+				"label": "[%DOCUM_AG2%]",
+				"type": "link"
+			},
+			{
+				"name": "Photo",
+				"label": "[%FOTO%]",
+				"type": "picture"
+			},
+			{
+				"name": "Zone de Protection",
+				"label": "['Non','Oui'][[%VRIJWARINGSZONE%]]",
+				"type": "eval"
+			},
+			{
+				"name": "Référence DMS",
+				"label": "[%NUMMER_DOSSIER%]/[%CODE_DOSSIER%]",
+				"type": "string"
+			},
+			{
+				"name": "Description",
+				"label": "[%NOTA_FR%]",
+				"type": "string"
+			}
+		]
+	},
+	"BDU:MONUMENT_SAUVEGARDE_OUVERTURE_DE_PROCEDURE": {
+		"actiontype": "GRID",
+		"title": "[%BESCHERMD_ALS_FR%]: [%BENAMING_PAT_VW_FR%]",
+		"attributes": [{
+				"name": "Dénomination",
+				"label": "[%BENAMING_PAT_VW_FR%]",
+				"type": "string"
+			},
+			{
+				"name": "Addresse du bien",
+				"label": "[%NUMMER_VAN%], [%STRAAT_FR%], [%POSTCODE%] [%GEMEENTE_FR%]",
+				"type": "string"
+			},
+			{
+				"name": "Type de protection",
+				"label": "[%TYPE_VRIJWARING_FR%]",
+				"type": "string"
+			},
+			{
+				"name": "Protégé en temps que",
+				"label": "[%BESCHERMD_ALS_FR%]",
+				"type": "string"
+			},
+			{
+				"name": "Date du premier arrêté",
+				"label": "[%DATUM_AG1%]",
+				"type": "date"
+			},
+			{
+				"name": "Date du dernier arrêté",
+				"label": "[%DATUM_AG2%]",
+				"type": "date"
+			},
+			{
+				"name": "Premier arrêté",
+				"label": "[%DOCUM_AG1%]",
+				"type": "link"
+			},
+			{
+				"name": "Dernier arrêté",
+				"label": "[%DOCUM_AG2%]",
+				"type": "link"
+			},
+			{
+				"name": "Photo",
+				"label": "[%FOTO%]",
+				"type": "picture"
+			},
+			{
+				"name": "Zone de Protection",
+				"label": "['Non','Oui'][[%VRIJWARINGSZONE%]]",
+				"type": "eval"
+			},
+			{
+				"name": "Référence DMS",
+				"label": "[%NUMMER_DOSSIER%]/[%CODE_DOSSIER%]",
+				"type": "string"
+			},
+			{
+				"name": "Description",
+				"label": "[%NOTA_FR%]",
+				"type": "string"
+			}
+		]
+	},
+	"BDU:ENSEMBLE_CLASSEMENT_ARRETE_DEFINITIF": {
+		"actiontype": "GRID",
+		"title": "[%BESCHERMD_ALS_FR%]: [%BENAMING_PAT_VW_FR%]",
+		"attributes": [{
+				"name": "Dénomination",
+				"label": "[%BENAMING_PAT_VW_FR%]",
+				"type": "string"
+			},
+			{
+				"name": "Addresse du bien",
+				"label": "[%NUMMER_VAN%], [%STRAAT_FR%], [%POSTCODE%] [%GEMEENTE_FR%]",
+				"type": "string"
+			},
+			{
+				"name": "Type de protection",
+				"label": "[%TYPE_VRIJWARING_FR%]",
+				"type": "string"
+			},
+			{
+				"name": "Protégé en temps que",
+				"label": "[%BESCHERMD_ALS_FR%]",
+				"type": "string"
+			},
+			{
+				"name": "Date du premier arrêté",
+				"label": "[%DATUM_AG1%]",
+				"type": "date"
+			},
+			{
+				"name": "Date du dernier arrêté",
+				"label": "[%DATUM_AG2%]",
+				"type": "date"
+			},
+			{
+				"name": "Premier arrêté",
+				"label": "[%DOCUM_AG1%]",
+				"type": "link"
+			},
+			{
+				"name": "Dernier arrêté",
+				"label": "[%DOCUM_AG2%]",
+				"type": "link"
+			},
+			{
+				"name": "Photo",
+				"label": "[%FOTO%]",
+				"type": "picture"
+			},
+			{
+				"name": "Zone de Protection",
+				"label": "['Non','Oui'][[%VRIJWARINGSZONE%]]",
+				"type": "eval"
+			},
+			{
+				"name": "Référence DMS",
+				"label": "[%NUMMER_DOSSIER%]/[%CODE_DOSSIER%]",
+				"type": "string"
+			},
+			{
+				"name": "Description",
+				"label": "[%NOTA_FR%]",
+				"type": "string"
+			}
+		]
+	},
+	"BDU:ENSEMBLE_CLASSEMENT_OUVERTURE_DE_PROCEDURE": {
+		"actiontype": "GRID",
+		"title": "[%BESCHERMD_ALS_FR%]: [%BENAMING_PAT_VW_FR%]",
+		"attributes": [{
+				"name": "Dénomination",
+				"label": "[%BENAMING_PAT_VW_FR%]",
+				"type": "string"
+			},
+			{
+				"name": "Addresse du bien",
+				"label": "[%NUMMER_VAN%], [%STRAAT_FR%], [%POSTCODE%] [%GEMEENTE_FR%]",
+				"type": "string"
+			},
+			{
+				"name": "Type de protection",
+				"label": "[%TYPE_VRIJWARING_FR%]",
+				"type": "string"
+			},
+			{
+				"name": "Protégé en temps que",
+				"label": "[%BESCHERMD_ALS_FR%]",
+				"type": "string"
+			},
+			{
+				"name": "Date du premier arrêté",
+				"label": "[%DATUM_AG1%]",
+				"type": "date"
+			},
+			{
+				"name": "Date du dernier arrêté",
+				"label": "[%DATUM_AG2%]",
+				"type": "date"
+			},
+			{
+				"name": "Premier arrêté",
+				"label": "[%DOCUM_AG1%]",
+				"type": "link"
+			},
+			{
+				"name": "Dernier arrêté",
+				"label": "[%DOCUM_AG2%]",
+				"type": "link"
+			},
+			{
+				"name": "Photo",
+				"label": "[%FOTO%]",
+				"type": "picture"
+			},
+			{
+				"name": "Zone de Protection",
+				"label": "['Non','Oui'][[%VRIJWARINGSZONE%]]",
+				"type": "eval"
+			},
+			{
+				"name": "Référence DMS",
+				"label": "[%NUMMER_DOSSIER%]/[%CODE_DOSSIER%]",
+				"type": "string"
+			},
+			{
+				"name": "Description",
+				"label": "[%NOTA_FR%]",
+				"type": "string"
+			}
+		]
+	},
+	"BDU:ENSEMBLE_SAUVEGARDE_ARRETE_DEFINITIF": {
+		"actiontype": "GRID",
+		"title": "[%BESCHERMD_ALS_FR%]: [%BENAMING_PAT_VW_FR%]",
+		"attributes": [{
+				"name": "Dénomination",
+				"label": "[%BENAMING_PAT_VW_FR%]",
+				"type": "string"
+			},
+			{
+				"name": "Addresse du bien",
+				"label": "[%NUMMER_VAN%], [%STRAAT_FR%], [%POSTCODE%] [%GEMEENTE_FR%]",
+				"type": "string"
+			},
+			{
+				"name": "Type de protection",
+				"label": "[%TYPE_VRIJWARING_FR%]",
+				"type": "string"
+			},
+			{
+				"name": "Protégé en temps que",
+				"label": "[%BESCHERMD_ALS_FR%]",
+				"type": "string"
+			},
+			{
+				"name": "Date du premier arrêté",
+				"label": "[%DATUM_AG1%]",
+				"type": "date"
+			},
+			{
+				"name": "Date du dernier arrêté",
+				"label": "[%DATUM_AG2%]",
+				"type": "date"
+			},
+			{
+				"name": "Premier arrêté",
+				"label": "[%DOCUM_AG1%]",
+				"type": "link"
+			},
+			{
+				"name": "Dernier arrêté",
+				"label": "[%DOCUM_AG2%]",
+				"type": "link"
+			},
+			{
+				"name": "Photo",
+				"label": "[%FOTO%]",
+				"type": "picture"
+			},
+			{
+				"name": "Zone de Protection",
+				"label": "['Non','Oui'][[%VRIJWARINGSZONE%]]",
+				"type": "eval"
+			},
+			{
+				"name": "Référence DMS",
+				"label": "[%NUMMER_DOSSIER%]/[%CODE_DOSSIER%]",
+				"type": "string"
+			},
+			{
+				"name": "Description",
+				"label": "[%NOTA_FR%]",
+				"type": "string"
+			}
+		]
+	},
+	"BDU:ENSEMBLE_SAUVEGARDE_OUVERTURE_DE_PROCEDURE": {
+		"actiontype": "GRID",
+		"title": "[%BESCHERMD_ALS_FR%]: [%BENAMING_PAT_VW_FR%]",
+		"attributes": [{
+				"name": "Dénomination",
+				"label": "[%BENAMING_PAT_VW_FR%]",
+				"type": "string"
+			},
+			{
+				"name": "Addresse du bien",
+				"label": "[%NUMMER_VAN%], [%STRAAT_FR%], [%POSTCODE%] [%GEMEENTE_FR%]",
+				"type": "string"
+			},
+			{
+				"name": "Type de protection",
+				"label": "[%TYPE_VRIJWARING_FR%]",
+				"type": "string"
+			},
+			{
+				"name": "Protégé en temps que",
+				"label": "[%BESCHERMD_ALS_FR%]",
+				"type": "string"
+			},
+			{
+				"name": "Date du premier arrêté",
+				"label": "[%DATUM_AG1%]",
+				"type": "date"
+			},
+			{
+				"name": "Date du dernier arrêté",
+				"label": "[%DATUM_AG2%]",
+				"type": "date"
+			},
+			{
+				"name": "Premier arrêté",
+				"label": "[%DOCUM_AG1%]",
+				"type": "link"
+			},
+			{
+				"name": "Dernier arrêté",
+				"label": "[%DOCUM_AG2%]",
+				"type": "link"
+			},
+			{
+				"name": "Photo",
+				"label": "[%FOTO%]",
+				"type": "picture"
+			},
+			{
+				"name": "Zone de Protection",
+				"label": "['Non','Oui'][[%VRIJWARINGSZONE%]]",
+				"type": "eval"
+			},
+			{
+				"name": "Référence DMS",
+				"label": "[%NUMMER_DOSSIER%]/[%CODE_DOSSIER%]",
+				"type": "string"
+			},
+			{
+				"name": "Description",
+				"label": "[%NOTA_FR%]",
+				"type": "string"
+			}
+		]
+	},
+	"BDU:SITE_CLASSEMENT_ARRETE_DEFINITIF": {
+		"actiontype": "GRID",
+		"title": "[%BESCHERMD_ALS_FR%]: [%BENAMING_PAT_VW_FR%]",
+		"attributes": [{
+				"name": "Dénomination",
+				"label": "[%BENAMING_PAT_VW_FR%]",
+				"type": "string"
+			},
+			{
+				"name": "Addresse du bien",
+				"label": "[%NUMMER_VAN%], [%STRAAT_FR%], [%POSTCODE%] [%GEMEENTE_FR%]",
+				"type": "string"
+			},
+			{
+				"name": "Type de protection",
+				"label": "[%TYPE_VRIJWARING_FR%]",
+				"type": "string"
+			},
+			{
+				"name": "Protégé en temps que",
+				"label": "[%BESCHERMD_ALS_FR%]",
+				"type": "string"
+			},
+			{
+				"name": "Date du premier arrêté",
+				"label": "[%DATUM_AG1%]",
+				"type": "date"
+			},
+			{
+				"name": "Date du dernier arrêté",
+				"label": "[%DATUM_AG2%]",
+				"type": "date"
+			},
+			{
+				"name": "Premier arrêté",
+				"label": "[%DOCUM_AG1%]",
+				"type": "link"
+			},
+			{
+				"name": "Dernier arrêté",
+				"label": "[%DOCUM_AG2%]",
+				"type": "link"
+			},
+			{
+				"name": "Photo",
+				"label": "[%FOTO%]",
+				"type": "picture"
+			},
+			{
+				"name": "Zone de Protection",
+				"label": "['Non','Oui'][[%VRIJWARINGSZONE%]]",
+				"type": "eval"
+			},
+			{
+				"name": "Référence DMS",
+				"label": "[%NUMMER_DOSSIER%]/[%CODE_DOSSIER%]",
+				"type": "string"
+			},
+			{
+				"name": "Description",
+				"label": "[%NOTA_FR%]",
+				"type": "string"
+			}
+		]
+	},
+	"BDU:SITE_CLASSEMENT_OUVERTURE_DE_PROCEDURE": {
+		"actiontype": "GRID",
+		"title": "[%BESCHERMD_ALS_FR%]: [%BENAMING_PAT_VW_FR%]",
+		"attributes": [{
+				"name": "Dénomination",
+				"label": "[%BENAMING_PAT_VW_FR%]",
+				"type": "string"
+			},
+			{
+				"name": "Addresse du bien",
+				"label": "[%NUMMER_VAN%], [%STRAAT_FR%], [%POSTCODE%] [%GEMEENTE_FR%]",
+				"type": "string"
+			},
+			{
+				"name": "Type de protection",
+				"label": "[%TYPE_VRIJWARING_FR%]",
+				"type": "string"
+			},
+			{
+				"name": "Protégé en temps que",
+				"label": "[%BESCHERMD_ALS_FR%]",
+				"type": "string"
+			},
+			{
+				"name": "Date du premier arrêté",
+				"label": "[%DATUM_AG1%]",
+				"type": "date"
+			},
+			{
+				"name": "Date du dernier arrêté",
+				"label": "[%DATUM_AG2%]",
+				"type": "date"
+			},
+			{
+				"name": "Premier arrêté",
+				"label": "[%DOCUM_AG1%]",
+				"type": "link"
+			},
+			{
+				"name": "Dernier arrêté",
+				"label": "[%DOCUM_AG2%]",
+				"type": "link"
+			},
+			{
+				"name": "Photo",
+				"label": "[%FOTO%]",
+				"type": "picture"
+			},
+			{
+				"name": "Zone de Protection",
+				"label": "['Non','Oui'][[%VRIJWARINGSZONE%]]",
+				"type": "eval"
+			},
+			{
+				"name": "Référence DMS",
+				"label": "[%NUMMER_DOSSIER%]/[%CODE_DOSSIER%]",
+				"type": "string"
+			},
+			{
+				"name": "Description",
+				"label": "[%NOTA_FR%]",
+				"type": "string"
+			}
+		]
+	},
+	"BDU:SITE_SAUVEGARDE_ARRETE_DEFINITIF": {
+		"actiontype": "GRID",
+		"title": "[%BESCHERMD_ALS_FR%]: [%BENAMING_PAT_VW_FR%]",
+		"attributes": [{
+				"name": "Dénomination",
+				"label": "[%BENAMING_PAT_VW_FR%]",
+				"type": "string"
+			},
+			{
+				"name": "Addresse du bien",
+				"label": "[%NUMMER_VAN%], [%STRAAT_FR%], [%POSTCODE%] [%GEMEENTE_FR%]",
+				"type": "string"
+			},
+			{
+				"name": "Type de protection",
+				"label": "[%TYPE_VRIJWARING_FR%]",
+				"type": "string"
+			},
+			{
+				"name": "Protégé en temps que",
+				"label": "[%BESCHERMD_ALS_FR%]",
+				"type": "string"
+			},
+			{
+				"name": "Date du premier arrêté",
+				"label": "[%DATUM_AG1%]",
+				"type": "date"
+			},
+			{
+				"name": "Date du dernier arrêté",
+				"label": "[%DATUM_AG2%]",
+				"type": "date"
+			},
+			{
+				"name": "Premier arrêté",
+				"label": "[%DOCUM_AG1%]",
+				"type": "link"
+			},
+			{
+				"name": "Dernier arrêté",
+				"label": "[%DOCUM_AG2%]",
+				"type": "link"
+			},
+			{
+				"name": "Photo",
+				"label": "[%FOTO%]",
+				"type": "picture"
+			},
+			{
+				"name": "Zone de Protection",
+				"label": "['Non','Oui'][[%VRIJWARINGSZONE%]]",
+				"type": "eval"
+			},
+			{
+				"name": "Référence DMS",
+				"label": "[%NUMMER_DOSSIER%]/[%CODE_DOSSIER%]",
+				"type": "string"
+			},
+			{
+				"name": "Description",
+				"label": "[%NOTA_FR%]",
+				"type": "string"
+			}
+		]
+	},
+	"BDU:SITE_SAUVEGARDE_OUVERTURE_DE_PROCEDURE": {
+		"actiontype": "GRID",
+		"title": "[%BESCHERMD_ALS_FR%]: [%BENAMING_PAT_VW_FR%]",
+		"attributes": [{
+				"name": "Dénomination",
+				"label": "[%BENAMING_PAT_VW_FR%]",
+				"type": "string"
+			},
+			{
+				"name": "Addresse du bien",
+				"label": "[%NUMMER_VAN%], [%STRAAT_FR%], [%POSTCODE%] [%GEMEENTE_FR%]",
+				"type": "string"
+			},
+			{
+				"name": "Type de protection",
+				"label": "[%TYPE_VRIJWARING_FR%]",
+				"type": "string"
+			},
+			{
+				"name": "Protégé en temps que",
+				"label": "[%BESCHERMD_ALS_FR%]",
+				"type": "string"
+			},
+			{
+				"name": "Date du premier arrêté",
+				"label": "[%DATUM_AG1%]",
+				"type": "date"
+			},
+			{
+				"name": "Date du dernier arrêté",
+				"label": "[%DATUM_AG2%]",
+				"type": "date"
+			},
+			{
+				"name": "Premier arrêté",
+				"label": "[%DOCUM_AG1%]",
+				"type": "link"
+			},
+			{
+				"name": "Dernier arrêté",
+				"label": "[%DOCUM_AG2%]",
+				"type": "link"
+			},
+			{
+				"name": "Photo",
+				"label": "[%FOTO%]",
+				"type": "picture"
+			},
+			{
+				"name": "Zone de Protection",
+				"label": "['Non','Oui'][[%VRIJWARINGSZONE%]]",
+				"type": "eval"
+			},
+			{
+				"name": "Référence DMS",
+				"label": "[%NUMMER_DOSSIER%]/[%CODE_DOSSIER%]",
+				"type": "string"
+			},
+			{
+				"name": "Description",
+				"label": "[%NOTA_FR%]",
+				"type": "string"
+			}
+		]
+	},
+	"BDU:SITE_ARCHEOLOGIQUE_CLASSEMENT_ARRETE_DEFINITIF": {
+		"actiontype": "GRID",
+		"title": "[%BESCHERMD_ALS_FR%]: [%BENAMING_PAT_VW_FR%]",
+		"attributes": [{
+				"name": "Dénomination",
+				"label": "[%BENAMING_PAT_VW_FR%]",
+				"type": "string"
+			},
+			{
+				"name": "Addresse du bien",
+				"label": "[%NUMMER_VAN%], [%STRAAT_FR%], [%POSTCODE%] [%GEMEENTE_FR%]",
+				"type": "string"
+			},
+			{
+				"name": "Type de protection",
+				"label": "[%TYPE_VRIJWARING_FR%]",
+				"type": "string"
+			},
+			{
+				"name": "Protégé en temps que",
+				"label": "[%BESCHERMD_ALS_FR%]",
+				"type": "string"
+			},
+			{
+				"name": "Date du premier arrêté",
+				"label": "[%DATUM_AG1%]",
+				"type": "date"
+			},
+			{
+				"name": "Date du dernier arrêté",
+				"label": "[%DATUM_AG2%]",
+				"type": "date"
+			},
+			{
+				"name": "Premier arrêté",
+				"label": "[%DOCUM_AG1%]",
+				"type": "link"
+			},
+			{
+				"name": "Dernier arrêté",
+				"label": "[%DOCUM_AG2%]",
+				"type": "link"
+			},
+			{
+				"name": "Photo",
+				"label": "[%FOTO%]",
+				"type": "picture"
+			},
+			{
+				"name": "Zone de Protection",
+				"label": "['Non','Oui'][[%VRIJWARINGSZONE%]]",
+				"type": "eval"
+			},
+			{
+				"name": "Référence DMS",
+				"label": "[%NUMMER_DOSSIER%]/[%CODE_DOSSIER%]",
+				"type": "string"
+			},
+			{
+				"name": "Description",
+				"label": "[%NOTA_FR%]",
+				"type": "string"
+			}
+		]
+	},
+	"BDU:SITE_ARCHEOLOGIQUE_CLASSEMENT_OUVERTURE_DE_PROCEDURE": {
+		"actiontype": "GRID",
+		"title": "[%BESCHERMD_ALS_FR%]: [%BENAMING_PAT_VW_FR%]",
+		"attributes": [{
+				"name": "Dénomination",
+				"label": "[%BENAMING_PAT_VW_FR%]",
+				"type": "string"
+			},
+			{
+				"name": "Addresse du bien",
+				"label": "[%NUMMER_VAN%], [%STRAAT_FR%], [%POSTCODE%] [%GEMEENTE_FR%]",
+				"type": "string"
+			},
+			{
+				"name": "Type de protection",
+				"label": "[%TYPE_VRIJWARING_FR%]",
+				"type": "string"
+			},
+			{
+				"name": "Protégé en temps que",
+				"label": "[%BESCHERMD_ALS_FR%]",
+				"type": "string"
+			},
+			{
+				"name": "Date du premier arrêté",
+				"label": "[%DATUM_AG1%]",
+				"type": "date"
+			},
+			{
+				"name": "Date du dernier arrêté",
+				"label": "[%DATUM_AG2%]",
+				"type": "date"
+			},
+			{
+				"name": "Premier arrêté",
+				"label": "[%DOCUM_AG1%]",
+				"type": "link"
+			},
+			{
+				"name": "Dernier arrêté",
+				"label": "[%DOCUM_AG2%]",
+				"type": "link"
+			},
+			{
+				"name": "Photo",
+				"label": "[%FOTO%]",
+				"type": "picture"
+			},
+			{
+				"name": "Zone de Protection",
+				"label": "['Non','Oui'][[%VRIJWARINGSZONE%]]",
+				"type": "eval"
+			},
+			{
+				"name": "Référence DMS",
+				"label": "[%NUMMER_DOSSIER%]/[%CODE_DOSSIER%]",
+				"type": "string"
+			},
+			{
+				"name": "Description",
+				"label": "[%NOTA_FR%]",
+				"type": "string"
+			}
+		]
+	},
+	"BDU:SITE_ARCHEOLOGIQUE_SAUVEGARDE_ARRETE_DEFINITIF": {
+		"actiontype": "GRID",
+		"title": "[%BESCHERMD_ALS_FR%]: [%BENAMING_PAT_VW_FR%]",
+		"attributes": [{
+				"name": "Dénomination",
+				"label": "[%BENAMING_PAT_VW_FR%]",
+				"type": "string"
+			},
+			{
+				"name": "Addresse du bien",
+				"label": "[%NUMMER_VAN%], [%STRAAT_FR%], [%POSTCODE%] [%GEMEENTE_FR%]",
+				"type": "string"
+			},
+			{
+				"name": "Type de protection",
+				"label": "[%TYPE_VRIJWARING_FR%]",
+				"type": "string"
+			},
+			{
+				"name": "Protégé en temps que",
+				"label": "[%BESCHERMD_ALS_FR%]",
+				"type": "string"
+			},
+			{
+				"name": "Date du premier arrêté",
+				"label": "[%DATUM_AG1%]",
+				"type": "date"
+			},
+			{
+				"name": "Date du dernier arrêté",
+				"label": "[%DATUM_AG2%]",
+				"type": "date"
+			},
+			{
+				"name": "Premier arrêté",
+				"label": "[%DOCUM_AG1%]",
+				"type": "link"
+			},
+			{
+				"name": "Dernier arrêté",
+				"label": "[%DOCUM_AG2%]",
+				"type": "link"
+			},
+			{
+				"name": "Photo",
+				"label": "[%FOTO%]",
+				"type": "picture"
+			},
+			{
+				"name": "Zone de Protection",
+				"label": "['Non','Oui'][[%VRIJWARINGSZONE%]]",
+				"type": "eval"
+			},
+			{
+				"name": "Référence DMS",
+				"label": "[%NUMMER_DOSSIER%]/[%CODE_DOSSIER%]",
+				"type": "string"
+			},
+			{
+				"name": "Description",
+				"label": "[%NOTA_FR%]",
+				"type": "string"
+			}
+		]
+	},
+	"BDU:SITE_ARCHEOLOGIQUE_SAUVEGARDE_OUVERTURE_DE_PROCEDURE": {
+		"actiontype": "GRID",
+		"title": "[%BESCHERMD_ALS_FR%]: [%BENAMING_PAT_VW_FR%]",
+		"attributes": [{
+				"name": "Dénomination",
+				"label": "[%BENAMING_PAT_VW_FR%]",
+				"type": "string"
+			},
+			{
+				"name": "Addresse du bien",
+				"label": "[%NUMMER_VAN%], [%STRAAT_FR%], [%POSTCODE%] [%GEMEENTE_FR%]",
+				"type": "string"
+			},
+			{
+				"name": "Type de protection",
+				"label": "[%TYPE_VRIJWARING_FR%]",
+				"type": "string"
+			},
+			{
+				"name": "Protégé en temps que",
+				"label": "[%BESCHERMD_ALS_FR%]",
+				"type": "string"
+			},
+			{
+				"name": "Date du premier arrêté",
+				"label": "[%DATUM_AG1%]",
+				"type": "date"
+			},
+			{
+				"name": "Date du dernier arrêté",
+				"label": "[%DATUM_AG2%]",
+				"type": "date"
+			},
+			{
+				"name": "Premier arrêté",
+				"label": "[%DOCUM_AG1%]",
+				"type": "link"
+			},
+			{
+				"name": "Dernier arrêté",
+				"label": "[%DOCUM_AG2%]",
+				"type": "link"
+			},
+			{
+				"name": "Photo",
+				"label": "[%FOTO%]",
+				"type": "picture"
+			},
+			{
+				"name": "Zone de Protection",
+				"label": "['Non','Oui'][[%VRIJWARINGSZONE%]]",
+				"type": "eval"
+			},
+			{
+				"name": "Référence DMS",
+				"label": "[%NUMMER_DOSSIER%]/[%CODE_DOSSIER%]",
+				"type": "string"
+			},
+			{
+				"name": "Description",
+				"label": "[%NOTA_FR%]",
+				"type": "string"
+			}
+		]
+	},
+	"BDU:Zones_de_protection": {
+		"actiontype": "GRID",
+		"title": "Zone de protection de [%BESCHERMD_ALS_FR%]: [%BENAMING_PAT_VW_FR%]",
+		"attributes": [{
+				"name": "Dénomination",
+				"label": "[%BENAMING_PAT_VW_FR%]",
+				"type": "string"
+			},
+			{
+				"name": "Addresse du bien",
+				"label": "[%NUMMER_VAN%], [%STRAAT_FR%], [%POSTCODE%] [%GEMEENTE_FR%]",
+				"type": "string"
+			},
+			{
+				"name": "Type de protection",
+				"label": "[%TYPE_VRIJWARING_FR%]",
+				"type": "string"
+			},
+			{
+				"name": "Protégé en temps que",
+				"label": "[%BESCHERMD_ALS_FR%]",
+				"type": "string"
+			},
+			{
+				"name": "Date du premier arrêté",
+				"label": "[%DATUM_AG1%]",
+				"type": "date"
+			},
+			{
+				"name": "Date du dernier arrêté",
+				"label": "[%DATUM_AG2%]",
+				"type": "date"
+			},
+			{
+				"name": "Premier arrêté",
+				"label": "[%DOCUM_AG1%]",
+				"type": "link"
+			},
+			{
+				"name": "Dernier arrêté",
+				"label": "[%DOCUM_AG2%]",
+				"type": "link"
+			},
+			{
+				"name": "Photo",
+				"label": "[%FOTO%]",
+				"type": "picture"
+			},
+			{
+				"name": "Zone de Protection",
+				"label": "['Non','Oui'][[%VRIJWARINGSZONE%]]",
+				"type": "eval"
+			},
+			{
+				"name": "Référence DMS",
+				"label": "[%NUMMER_DOSSIER%]/[%CODE_DOSSIER%]",
+				"type": "string"
+			},
+			{
+				"name": "Description",
+				"label": "[%NOTA_FR%]",
+				"type": "string"
+			}
+		]
+	},
+	"BDU:Zones_de_protection_UNESCO": {
+		"actiontype": "GRID",
+		"title": "Zone de protection UNESCO: [%NOM_FR%]",
+		"attributes": [{
+			"name": "Dénomination",
+			"label": "[%NOM_FR%]",
+			"type": "string"
+		}]
 	},
 	"AATL_DMS_SITE_ARBR:Visites_arbres": {
 		"actiontype": "GRID",
