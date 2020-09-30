@@ -1663,7 +1663,26 @@
             </LegendURL>
           </Style>
         </Layer>
-        <Layer queryable="1">
+        <Layer noSubsets="0" opaque="0" queryable="1">
+          <Name>BSO:Gronden_bestemd_voor_industrie</Name>
+          <Title>Gronden bestemd voor industrie</Title>
+          <Abstract/>
+          <KeywordList>
+            <Keyword>features</Keyword>
+            <Keyword>VM_A60_TRACE_TERAFFIND_NL</Keyword>
+          </KeywordList>
+          <SRS>EPSG:31370</SRS>
+          <LatLonBoundingBox maxx="4.420456776286697" maxy="50.880613432589776" minx="4.297610980534655" miny="50.81107849827353"/>
+          <BoundingBox SRS="EPSG:31370" maxx="165088.0" maxy="185088.0" minx="140000.0" miny="160000.0"/>
+          <Style>
+            <Name>polygon</Name>
+            <Title>polygon</Title>
+            <LegendURL height="20" width="20">
+              <Format>image/png</Format>
+              <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=BSO%3AGronden_bestemd_voor_industrie" ns0:type="simple"/>
+            </LegendURL>
+          </Style>
+        </Layer>        <Layer queryable="1">
           <Name>BSO_DSP:Prioritaire_ontwikkelingspolen</Name>
           <Title>Prioritaire ontwikkelingspolen</Title>
           <Abstract />
