@@ -3738,7 +3738,8 @@
               <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=PPAS_ABROGES" ns0:type="simple" />
             </LegendURL>
           </Style>
-        </Layer>        <Layer noSubsets="0" opaque="0" queryable="1">
+        </Layer>
+        <Layer noSubsets="0" opaque="0" queryable="1">
           <Name>PER:Zone_de_revitalisation_urbaine_2016</Name>
           <Title>Urban regeneration Area 2016</Title>
           <Abstract/>
@@ -3848,7 +3849,26 @@
             </LegendURL>
           </Style>
         </Layer>
-      </Layer>
+        <Layer queryable="1" opaque="0">
+          <Name>PER:School_Contracts</Name>
+          <Title>School Contracts</Title>
+          <Abstract/>
+          <KeywordList>
+            <Keyword>features</Keyword>
+            <Keyword>A10_CONTRATS_ECOLES</Keyword>
+          </KeywordList>
+          <SRS>EPSG:31370</SRS>
+          <LatLonBoundingBox minx="4.239734220616913" miny="50.759183094790245" maxx="4.481458862781607" maxy="50.912073830970535"/>
+          <BoundingBox SRS="EPSG:31370" minx="141000.0" miny="161000.0" maxx="158000.0" maxy="178000.0"/>
+          <Style>
+            <Name>PER:Contrats_ecole</Name>
+            <Title>PER:Contrats_ecole</Title>
+            <LegendURL width="159" height="60">
+              <Format>image/png</Format>
+              <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=PER%3ASchool%20Contracts"/>
+            </LegendURL>
+          </Style>
+        </Layer>      </Layer>
       <Layer>
         <Title>European structural funds</Title>
         <Abstract>A compliant implementation of WMS plus most of the SLD extension (dynamic styling). Can also generate PDF, SVG, KML, GeoRSS</Abstract>
