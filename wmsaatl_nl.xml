@@ -3895,6 +3895,26 @@
           </LegendURL>
         </Style>
       </Layer>
+      <Layer queryable="1" opaque="0">
+        <Name>PER:schoolcontracten</Name>
+        <Title>schoolcontracten</Title>
+        <Abstract/>
+        <KeywordList>
+          <Keyword>features</Keyword>
+          <Keyword>A10_CONTRATS_ECOLES</Keyword>
+        </KeywordList>
+        <SRS>EPSG:31370</SRS>
+        <LatLonBoundingBox minx="4.239734220616913" miny="50.759183094790245" maxx="4.481458862781607" maxy="50.912073830970535"/>
+        <BoundingBox SRS="EPSG:31370" minx="141000.0" miny="161000.0" maxx="158000.0" maxy="178000.0"/>
+        <Style>
+          <Name>PER:schoolcontracten</Name>
+          <Title>PER:schoolcontracten</Title>
+          <LegendURL width="144" height="60">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=PER%3Aschoolcontracten"/>
+          </LegendURL>
+        </Style>
+      </Layer>
     </Layer>
     <Layer>
       <Title>Europese structuurfondsen</Title>
