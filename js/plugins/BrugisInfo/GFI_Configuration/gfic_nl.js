@@ -2290,6 +2290,56 @@ const gfiNl = {
 				"type": "link"
 			}
 		]
+	},
+	"BCR:URBADM_STATISTICAL_DISTRICT": {
+		"actiontype": "GRID",
+		"title": "Statistisch sector [%%][%%]",
+		"attributes": [{
+			"name": "Naam",
+			"label": "[%SD_NAME_DUT%]",
+			"type": "string"
+			},
+			{
+				"name": "Municipaal sector",
+				"label": "[%MD_NAME_DUT%]",
+				"type": "string"
+			},
+			{
+				"name": "Gemeente",
+				"label": "[%MU_NAME_DUT%]",
+				"type": "string"
+			},
+			{
+				"name": "Gewest",
+				"label": "[%RE_NAME_DUT%]",
+				"type": "string"
+			},
+			{
+				"name": "Referencie statistisch sector INS",
+				"label": "[%SD_SDDC%][%MU_NATIONAL_CODE%]",
+				"type": "string"
+			},
+			{
+				"name": "Statistisch sector referencie",
+				"label": "[%SD_SDDC%]",
+				"type": "string"
+			},
+			{
+				"name": "Gemeente referencie INS",
+				"label": "[%MU_NATIONAL_CODE%]",
+				"type": "string"
+			},
+			{
+				"name": "Gemeente referencie",
+				"label": "[%MU_ID%]",
+				"type": "string"
+			},
+			{
+				"name": "Municipaal sector referencie",
+				"label": "[%MD_MDRC%]",
+				"type": "string"
+			}
+		]
 	}
 };
 module.exports = gfiNl;

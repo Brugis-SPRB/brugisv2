@@ -2790,6 +2790,56 @@ const gfiFr = {
 				"type": "link"
 			}
 		]
+	},
+	"BCR:URBADM_STATISTICAL_DISTRICT": {
+		"actiontype": "GRID",
+		"title": "Secteur Statistique [%%][%%]",
+		"attributes": [{
+			"name": "Nom",
+			"label": "[%SD_NAME_FRE%]",
+			"type": "string"
+			},
+			{
+				"name": "Secteur municipal",
+				"label": "[%MD_NAME_FRE%]",
+				"type": "string"
+			},
+			{
+				"name": "Commune",
+				"label": "[%MU_NAME_FRE%]",
+				"type": "string"
+			},
+			{
+				"name": "Région",
+				"label": "[%RE_NAME_FRE%]",
+				"type": "string"
+			},
+			{
+				"name": "Référence secteur statistique INS",
+				"label": "[%SD_SDDC%][%MU_NATIONAL_CODE%]",
+				"type": "string"
+			},
+			{
+				"name": "Référence secteur statistique",
+				"label": "[%SD_SDDC%]",
+				"type": "string"
+			},
+			{
+				"name": "Référence communale INS",
+				"label": "[%MU_NATIONAL_CODE%]",
+				"type": "string"
+			},
+			{
+				"name": "Référence communale",
+				"label": "[%MU_ID%]",
+				"type": "string"
+			},
+			{
+				"name": "Référence secteur municipal",
+				"label": "[%MD_MDRC%]",
+				"type": "string"
+			}
+		]
 	}
 };
 
