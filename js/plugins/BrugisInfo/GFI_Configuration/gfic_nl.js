@@ -2300,7 +2300,7 @@ const gfiNl = {
 			"type": "string"
 			},
 			{
-				"name": "Municipaal sector",
+				"name": "Gemeentelijke sector",
 				"label": "[%MD_NAME_DUT%]",
 				"type": "string"
 			},
@@ -2315,27 +2315,27 @@ const gfiNl = {
 				"type": "string"
 			},
 			{
-				"name": "Referencie statistisch sector INS",
+				"name": "Referentie statistische sector NIS",
 				"label": "[%SD_SDDC%][%MU_NATIONAL_CODE%]",
 				"type": "string"
 			},
 			{
-				"name": "Statistisch sector referencie",
+				"name": "Referentie statistische sector",
 				"label": "[%SD_SDDC%]",
 				"type": "string"
 			},
 			{
-				"name": "Gemeente referencie INS",
+				"name": "Referentie gemeente NIS",
 				"label": "[%MU_NATIONAL_CODE%]",
 				"type": "string"
 			},
 			{
-				"name": "Gemeente referencie",
+				"name": "Referentie gemeente",
 				"label": "[%MU_ID%]",
 				"type": "string"
 			},
 			{
-				"name": "Municipaal sector referencie",
+				"name": "Referentie gemeentijke sector",
 				"label": "[%MD_MDRC%]",
 				"type": "string"
 			}
