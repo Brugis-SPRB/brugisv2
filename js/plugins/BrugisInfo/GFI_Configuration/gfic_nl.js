@@ -423,8 +423,8 @@ const gfiNl = {
 				"type": "date"
 			},
 			{
-				"name": "DATBESONTWEIG",
-				"label": "[%DATBESONTWEIG%]",
+				"name": "DATBESONTEIG",
+				"label": "[%DATBESONTEIG%]",
 				"type": "date"
 			},
 			{
@@ -2316,7 +2316,7 @@ const gfiNl = {
 			},
 			{
 				"name": "Referentie statistische sector NIS",
-				"label": "[%SD_SDDC%][%MU_NATIONAL_CODE%]",
+				"label": "[%MU_NATIONAL_CODE%][%SD_SDDC%]",
 				"type": "string"
 			},
 			{

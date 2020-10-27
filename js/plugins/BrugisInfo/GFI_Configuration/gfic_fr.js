@@ -2816,7 +2816,7 @@ const gfiFr = {
 			},
 			{
 				"name": "Référence secteur statistique INS",
-				"label": "[%SD_SDDC%][%MU_NATIONAL_CODE%]",
+				"label": "[%MU_NATIONAL_CODE%][%SD_SDDC%]",
 				"type": "string"
 			},
 			{
