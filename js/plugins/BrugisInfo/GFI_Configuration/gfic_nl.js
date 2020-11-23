@@ -413,6 +413,16 @@ const gfiNl = {
 				"type": "string"
 			},
 			{
+				"name": "Procedure type vòòr COBAT18",
+				"label": "[%TYPEPROCEDURE%]",
+				"type": "string"
+			},
+			{
+				"name": "Procedure type COBAT18",
+				"label": "[%TYPEPROCEDURECOBAT18%]",
+				"type": "string"
+			},
+			{
 				"name": "Besluit type",
 				"label": "[%BESLUITTYPE%]",
 				"type": "string"

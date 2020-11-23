@@ -1653,6 +1653,16 @@ const gfiFr = {
 				"type": "string"
 			},
 			{
+				"name": "Type de procédure pré COBAT18",
+				"label": "[%TYPEPROCEDURE%]",
+				"type": "string"
+			},
+			{
+				"name": "Type de procédure COBAT18",
+				"label": "[%TYPEPROCEDURECOBAT18%]",
+				"type": "string"
+			},
+			{
 				"name": "Type d'arrêté",
 				"label": "[%TYPEARRETE%]",
 				"type": "string"
