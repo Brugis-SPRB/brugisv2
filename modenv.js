@@ -21,7 +21,7 @@ const ENV_CONFIG_GEOSERVER = {
 const ENV_CONFIG_SURVEY = {
   'PRD' : "https://mbr227.irisnet.be/WebReperage",
   'DEV' : 'http://10.128.81.205:8080/WebReperage',
-  'STANEW' : 'https://gis.urban.brussels/WebReperage2',
+  'STANEW' : 'https://gislab.urban.brussels/WebReperage',
   'PRDNEW' : 'https://gis.urban.brussels/WebReperage'
 };
 
