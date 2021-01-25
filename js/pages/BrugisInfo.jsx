@@ -14,6 +14,7 @@ import BrugisContact from '../components/BrugisContact';
 // import BrugisTitle from '../components/BrugisTitle';
 
 import BrugisLogo from '../../assets/img/Brugis_envecto_nondidju_500px.svg';
+import uBrugisLogo from '../../assets/img/ubrugis_blanc_no_baseline.svg';
 import toTopArrow from '../components/img/noun_Arrow_2333167.svg';
 
 const url = require('url');
@@ -75,12 +76,12 @@ class BrugisInfo extends React.Component {
                           <div onClick={this.goBrugis.bind(this)} title={this.context.intl.formatMessage({id: 'brugisInfo.main_go_back_to_brugis'})} style={{ flexGrow: 1}}>
                              <div style={{
                                 height: '52px',
-                                width: '52px',
+                                width: '150px',
                                 padding: '5px',
                                 backgroundColor: '#345d6f',
                                 boxShadow: '0 3px 6px rgba(0, 0, 0, 0.12), 0 4px 8px rgba(0, 0, 0, 0.24)'
                               }} id="bibIllBeBack">
-                                <Image src={BrugisLogo} responsive/>
+                                <Image src={uBrugisLogo} responsive/>
                              </div>
                           </div>
                           <div style={{ flexGrow: 3}} />
