@@ -4171,6 +4171,53 @@
         <Name>Kadaster</Name>
         <Title>Kadaster</Title>
         <Layer noSubsets="0" opaque="0" queryable="1">
+          <Name>2020</Name>
+          <Title>2020</Title>
+          <Layer noSubsets="0" opaque="0" queryable="1">
+            <Name>BSO:Gebouw_2020</Name>
+            <Title>Gebouw 2020</Title>
+            <Abstract/>
+            <KeywordList>
+              <Keyword>features</Keyword>
+              <Keyword>V_URBIS_PAB_AB_0</Keyword>
+            </KeywordList>
+            <SRS>EPSG:31370</SRS>
+            <LatLonBoundingBox maxx="4.4814185885749405" maxy="50.913653774000515" minx="4.242470212763538" miny="50.76335283201384"/>
+            <BoundingBox SRS="EPSG:31370" maxx="165088.0" maxy="185088.0" minx="140000.0" miny="160000.0"/>
+            <Style>
+              <Name>Gebouw</Name>
+              <Title>Gebouw</Title>
+              <LegendURL height="20" width="20">
+                <Format>image/png</Format>
+                <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=BSO%3AGebouw_2020" ns0:type="simple"/>
+              </LegendURL>
+            </Style>
+            <ScaleHint max="5000.1" min="0.0"/>
+          </Layer>
+          <Layer noSubsets="0" opaque="0" queryable="1">
+            <Name>BSO:Perceel_2020</Name>
+            <Title>Perceel 2020</Title>
+            <Abstract/>
+            <KeywordList>
+              <Keyword>features</Keyword>
+              <Keyword>V_URBIS_PAB_AP_0</Keyword>
+              <Keyword>SINGLETILE</Keyword>
+            </KeywordList>
+            <SRS>EPSG:31370</SRS>
+            <LatLonBoundingBox maxx="4.4814185885749405" maxy="50.913653774000515" minx="4.242470212763538" miny="50.76335283201384"/>
+            <BoundingBox SRS="EPSG:31370" maxx="165088.0" maxy="185088.0" minx="140000.0" miny="160000.0"/>
+            <Style>
+              <Name>Perceel</Name>
+              <Title>Perceel</Title>
+              <LegendURL height="20" width="20">
+                <Format>image/png</Format>
+                <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=BSO%3APerceel_2020" ns0:type="simple"/>
+              </LegendURL>
+            </Style>
+            <ScaleHint max="5000.1" min="0.0"/>
+          </Layer>
+        </Layer>
+        <Layer noSubsets="0" opaque="0" queryable="1">
           <Name>2019</Name>
           <Title>2019</Title>
           <Layer noSubsets="0" opaque="0" queryable="1">
@@ -4179,7 +4226,7 @@
             <Abstract/>
             <KeywordList>
               <Keyword>features</Keyword>
-              <Keyword>V_URBIS_PAB_AB_0</Keyword>
+              <Keyword>V_URBIS_PAB_AB_1</Keyword>
             </KeywordList>
             <SRS>EPSG:31370</SRS>
             <LatLonBoundingBox maxx="4.4814185885749405" maxy="50.913653774000515" minx="4.242470212763538" miny="50.76335283201384"/>
@@ -4200,7 +4247,7 @@
             <Abstract/>
             <KeywordList>
               <Keyword>features</Keyword>
-              <Keyword>V_URBIS_PAB_AP_0</Keyword>
+              <Keyword>V_URBIS_PAB_AP_1</Keyword>
               <Keyword>SINGLETILE</Keyword>
             </KeywordList>
             <SRS>EPSG:31370</SRS>
@@ -4226,7 +4273,7 @@
             <Abstract/>
             <KeywordList>
               <Keyword>features</Keyword>
-              <Keyword>V_URBIS_PAB_AB_1</Keyword>
+              <Keyword>V_URBIS_PAB_AB_2</Keyword>
             </KeywordList>
             <SRS>EPSG:31370</SRS>
             <LatLonBoundingBox maxx="4.4814185885749405" maxy="50.913653774000515" minx="4.242470212763538" miny="50.76335283201384"/>
@@ -4247,53 +4294,6 @@
             <Abstract/>
             <KeywordList>
               <Keyword>features</Keyword>
-              <Keyword>V_URBIS_PAB_AP_1</Keyword>
-              <Keyword>SINGLETILE</Keyword>
-            </KeywordList>
-            <SRS>EPSG:31370</SRS>
-            <LatLonBoundingBox maxx="4.4814185885749405" maxy="50.913653774000515" minx="4.242470212763538" miny="50.76335283201384"/>
-            <BoundingBox SRS="EPSG:31370" maxx="165088.0" maxy="185088.0" minx="140000.0" miny="160000.0"/>
-            <Style>
-              <Name>Perceel</Name>
-              <Title>Perceel</Title>
-              <LegendURL height="20" width="20">
-                <Format>image/png</Format>
-                <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=BSO%3APerceel_2018" ns0:type="simple"/>
-              </LegendURL>
-            </Style>
-            <ScaleHint max="5000.1" min="0.0"/>
-          </Layer>
-        </Layer>
-        <Layer noSubsets="0" opaque="0" queryable="1">
-          <Name>2017</Name>
-          <Title>2017</Title>
-          <Layer noSubsets="0" opaque="0" queryable="1">
-            <Name>BSO:Gebouw_2017</Name>
-            <Title>Gebouw 2017</Title>
-            <Abstract/>
-            <KeywordList>
-              <Keyword>features</Keyword>
-              <Keyword>V_URBIS_PAB_AB_2</Keyword>
-            </KeywordList>
-            <SRS>EPSG:31370</SRS>
-            <LatLonBoundingBox maxx="4.4814185885749405" maxy="50.913653774000515" minx="4.242470212763538" miny="50.76335283201384"/>
-            <BoundingBox SRS="EPSG:31370" maxx="165088.0" maxy="185088.0" minx="140000.0" miny="160000.0"/>
-            <Style>
-              <Name>Gebouw</Name>
-              <Title>Gebouw</Title>
-              <LegendURL height="20" width="20">
-                <Format>image/png</Format>
-                <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=BSO%3AGebouw_2017" ns0:type="simple"/>
-              </LegendURL>
-            </Style>
-            <ScaleHint max="5000.1" min="0.0"/>
-          </Layer>
-          <Layer noSubsets="0" opaque="0" queryable="1">
-            <Name>BSO:Perceel_2017</Name>
-            <Title>Perceel 2017</Title>
-            <Abstract/>
-            <KeywordList>
-              <Keyword>features</Keyword>
               <Keyword>V_URBIS_PAB_AP_2</Keyword>
               <Keyword>SINGLETILE</Keyword>
             </KeywordList>
@@ -4305,7 +4305,7 @@
               <Title>Perceel</Title>
               <LegendURL height="20" width="20">
                 <Format>image/png</Format>
-                <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=BSO%3APerceel_2017" ns0:type="simple"/>
+                <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=BSO%3APerceel_2018" ns0:type="simple"/>
               </LegendURL>
             </Style>
             <ScaleHint max="5000.1" min="0.0"/>
