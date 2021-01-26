@@ -13,7 +13,7 @@ import Animated from 'animated/lib/targets/react-dom';
 import BrugisContact from '../components/BrugisContact';
 // import BrugisTitle from '../components/BrugisTitle';
 
-import BrugisLogo from '../../assets/img/Brugis_envecto_nondidju_500px.svg';
+// import BrugisLogo from '../../assets/img/Brugis_envecto_nondidju_500px.svg';
 import uBrugisLogo from '../../assets/img/ubrugis_blanc_no_baseline.svg';
 import toTopArrow from '../components/img/noun_Arrow_2333167.svg';
 
