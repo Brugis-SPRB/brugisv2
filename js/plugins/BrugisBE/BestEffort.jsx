@@ -22,7 +22,7 @@ class BestEffort extends React.Component {
         return (
             <div id={this.props.id} style={this.props.style}>
                 <label>
-                  <img style={{ height:'20px', verticalAlign: 'bottom', marginRight:'10px'}} src={uBrugisLogo} responsive/>
+                  <img style={{ height: '20px', verticalAlign: 'bottom', marginRight: '10px'}} src={uBrugisLogo} responsive/>
                   <Message msgId="best-effort" /><a href="mailto:brugis@urban.brussels"><Message msgId="BruGISTeam" /></a>
                 </label>
             </div>
