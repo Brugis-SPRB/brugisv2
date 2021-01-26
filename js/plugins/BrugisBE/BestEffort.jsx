@@ -5,7 +5,9 @@ const Message = require('../../../MapStore2/web/client/components/I18N/Message')
 const assign = require('object-assign');
 const PropTypes = require('prop-types');
 
-import uBrugisLogo from '../../../assets/img/ubrugis_blue_no_baseline.svg';
+// import uBrugisLogo from '../../../assets/img/ubrugis_blue_no_baseline.svg';
+import uBrugisLogo from '../../../assets/img/ubrugis_blanc_no_baseline.svg';
+
 
 class BestEffort extends React.Component {
     static propTypes = {
@@ -21,9 +23,12 @@ class BestEffort extends React.Component {
     render() {
         return (
             <div id={this.props.id} style={this.props.style}>
-                <label>
-                  <img style={{ height: '20px', verticalAlign: 'bottom', marginRight: '10px'}} src={uBrugisLogo} responsive/>
-                  <Message msgId="best-effort" /><a href="mailto:brugis@urban.brussels"><Message msgId="BruGISTeam" /></a>
+                <label style={{ verticalAlign: 'middle'}}>
+                  <img style={{ height: '30px', padding: '3px', paddingLeft: '10px', paddingRight: '10px', verticalAlign: 'bottom', marginRight: '10px', backgroundColor: '#345d6f'}} src={uBrugisLogo} responsive/>
+                  <Message style={{ verticalAlign: 'super'}} msgId="best-effort" />
+                  <a href="mailto:brugis@urban.brussels">
+                    <Message style={{ verticalAlign: 'baseline'}} msgId="BruGISTeam" />
+                  </a>
                 </label>
             </div>
         );
