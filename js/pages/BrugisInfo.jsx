@@ -13,8 +13,8 @@ import Animated from 'animated/lib/targets/react-dom';
 import BrugisContact from '../components/BrugisContact';
 // import BrugisTitle from '../components/BrugisTitle';
 
-// import BrugisLogo from '../../assets/img/Brugis_envecto_nondidju_500px.svg';
-import uBrugisLogo from '../../assets/img/ubrugis_blanc_no_baseline.svg';
+import BrugisLogo from '../../assets/img/Brugis_envecto_nondidju_500px.svg';
+// import uBrugisLogo from '../../assets/img/ubrugis_blanc_no_baseline.svg';
 import toTopArrow from '../components/img/noun_Arrow_2333167.svg';
 
 const url = require('url');
@@ -81,7 +81,7 @@ class BrugisInfo extends React.Component {
                                 backgroundColor: '#345d6f',
                                 boxShadow: '0 3px 6px rgba(0, 0, 0, 0.12), 0 4px 8px rgba(0, 0, 0, 0.24)'
                               }} id="bibIllBeBack">
-                                <Image src={uBrugisLogo} responsive/>
+                                <Image src={BrugisLogo} responsive/>
                              </div>
                           </div>
                           <div style={{ flexGrow: 3}} />
