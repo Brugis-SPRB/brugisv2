@@ -76,7 +76,7 @@ class BrugisInfo extends React.Component {
                           <div onClick={this.goBrugis.bind(this)} title={this.context.intl.formatMessage({id: 'brugisInfo.main_go_back_to_brugis'})} style={{ flexGrow: 1}}>
                              <div style={{
                                 height: '52px',
-                                width: '150px',
+                                width: '134px',
                                 padding: '5px',
                                 backgroundColor: '#345d6f',
                                 boxShadow: '0 3px 6px rgba(0, 0, 0, 0.12), 0 4px 8px rgba(0, 0, 0, 0.24)'
