@@ -2,12 +2,28 @@ const news = {
     "locale": "nl-NL",
     "news": [
       {
-              "datestart": "2020-06-01",
-              "dateend": "2020-06-15",
-              "defcon": "5",
-              "title": "Migratie van BruGIS-infrastructuur",
-              "img": 'brugis.png',
-              "message": "Op donderdag 11 en vrijdag 12 juni verandert BruGIS van infrastructuur. Deze grootschalige update kan tijdens deze dagen mogelijks leiden tot problemen bij het openen van de site en het gebruik van de webservices."
+        "datestart": "2021-01-27",
+        "dateend": "2021-03-31",
+        "defcon": "5",
+        "title": "Nieuwe lagen van Brussel Mobiliteit: Trees et potential Trees",
+        "img": 'brugis.png',
+        "message": "Twee lagen van Bruxelles Mobilité werden toegevoegd aan de BruGIS-boomstructuur:  Trees et potential Trees."
+      },
+      {
+        "datestart": "2021-01-27",
+        "dateend": "2021-03-31",
+        "defcon": "5",
+        "title": "Kadaster 2020 beschikbaar",
+        "img": 'brugis.png',
+        "message": "De nieuwe kadastraal kaart 2020, percelen en gebouwen, is beschikbaar onder Basiskaart, kadaster."
+      },
+      {
+        "datestart": "2020-06-01",
+        "dateend": "2020-06-15",
+        "defcon": "5",
+        "title": "Migratie van BruGIS-infrastructuur",
+        "img": 'brugis.png',
+        "message": "Op donderdag 11 en vrijdag 12 juni verandert BruGIS van infrastructuur. Deze grootschalige update kan tijdens deze dagen mogelijks leiden tot problemen bij het openen van de site en het gebruik van de webservices."
       },
       {
         "datestart": "2020-06-15",

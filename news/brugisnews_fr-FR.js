@@ -3,6 +3,22 @@ const news = {
     "locale": "fr-FR",
     "news": [
       {
+        "datestart": "2021-01-27",
+        "dateend": "2021-03-31",
+        "defcon": "5",
+        "title": "Nouvelles couches Bruxelles Mobilité: Trees et potential Trees",
+        "img": 'brugis.png',
+        "message": "Deux couches provenant de Bruxelles Mobilité ont été ajoutées dans l'arborescence de BruGIS: Trees et potential Trees."
+      },
+      {
+        "datestart": "2021-01-27",
+        "dateend": "2021-03-31",
+        "defcon": "5",
+        "title": "Cadastre 2020 disponible",
+        "img": 'brugis.png',
+        "message": "Le nouveau fond cadastral 2020, parcelles et bâtiments, est disponible sous Fond de plan, cadastre."
+      },
+      {
         "datestart": "2020-06-01",
         "dateend": "2020-06-15",
         "defcon": "5",
