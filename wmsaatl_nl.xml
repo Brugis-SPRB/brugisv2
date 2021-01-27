@@ -2319,323 +2319,343 @@
           </Style>
         </Layer>
       </Layer>
-      <Layer queryable="1">
-        <Name>bm_inspire_nl:Taxi_Collecto</Name>
-        <Title>Taxis en Collecto haltes</Title>
-        <Abstract>Brussels Hoofdstedelijk Gewest : De locaties van de taxihaltes en de Collecto stopplaatsen in het Brussels Hoofdstedelijk Gewest. Collecto is een collectieve taxidienst die zeven dagen op zeven beschikbaar is tussen 23 uur 's avonds en 6 uur 's ochtends, en dit in het hele Brussels Hoofdstedelijk Gewest. Collecto bedient momenteel meer dan 200 vertrekpunten (gelegen aan de MIVB-haltes).</Abstract>
-        <KeywordList>
-          <Keyword>Tansportnetwerk</Keyword>
-          <Keyword>vervoerssysteem</Keyword>
-          <Keyword>vervoersmiddel</Keyword>
-          <Keyword>busstation</Keyword>
-          <Keyword>openbaar vervoersmiddel</Keyword>
-          <Keyword>Mobiliteit</Keyword>
-          <Keyword>Taxi</Keyword>
-          <Keyword>Bruxelles Mobilité WMS - Geoserver</Keyword>
-        </KeywordList>
-        <CRS>EPSG:31370</CRS>
-        <CRS>CRS:84</CRS>
-        <EX_GeographicBoundingBox>
-          <westBoundLongitude>4.26</westBoundLongitude>
-          <eastBoundLongitude>4.5</eastBoundLongitude>
-          <southBoundLatitude>50.77</southBoundLatitude>
-          <northBoundLatitude>50.9</northBoundLatitude>
-        </EX_GeographicBoundingBox>
-        <BoundingBox CRS="EPSG:31370" maxx="156802" maxy="177503" minx="142785" miny="163232" />
-        <Attribution>
-          <Title>Bruxelles Mobilite / Brussel Mobiliteit</Title>
-          <OnlineResource ns0:href="http://www.mobielbrussel.irisnet.be/content/opendata/" ns0:type="simple" />
-          <LogoURL height="66" width="169">
-            <Format>image/png</Format>
-            <OnlineResource ns0:href=" http://data-mobility.brussels/static/img/Bruxelles_Mobilite_bilingue_small.png " ns0:type="simple" />
-          </LogoURL>
-        </Attribution>
-        <MetadataURL type="ISO19115:2003">
-          <Format>text/html</Format>
-          <OnlineResource ns0:href="http://geonetwork.geobru.irisnetlab.be/geonetwork/srv/eng/csw?Request=GetRecordById#38;Service=CSW&amp;Version=2.0.2&amp;elementSetName=full&amp;outputSchema=http://www.isotc211.org/2005/gmd&amp;id=05882529-a99f-4768-83d2-f23ded7ef154" ns0:type="simple" />
-        </MetadataURL>
+      <Layer>
+        <Name>Openbare vervoer</Name>
+        <Title>Openbare vervoer</Title>
+        <Layer queryable="1">
+          <Name>bm_inspire_nl:Taxi_Collecto</Name>
+          <Title>Taxis en Collecto haltes</Title>
+          <Abstract>Brussels Hoofdstedelijk Gewest : De locaties van de taxihaltes en de Collecto stopplaatsen in het Brussels Hoofdstedelijk Gewest. Collecto is een collectieve taxidienst die zeven dagen op zeven beschikbaar is tussen 23 uur 's avonds en 6 uur 's ochtends, en dit in het hele Brussels Hoofdstedelijk Gewest. Collecto bedient momenteel meer dan 200 vertrekpunten (gelegen aan de MIVB-haltes).</Abstract>
+          <KeywordList>
+            <Keyword>Tansportnetwerk</Keyword>
+            <Keyword>vervoerssysteem</Keyword>
+            <Keyword>vervoersmiddel</Keyword>
+            <Keyword>busstation</Keyword>
+            <Keyword>openbaar vervoersmiddel</Keyword>
+            <Keyword>Mobiliteit</Keyword>
+            <Keyword>Taxi</Keyword>
+            <Keyword>Bruxelles Mobilité WMS - Geoserver</Keyword>
+          </KeywordList>
+          <CRS>EPSG:31370</CRS>
+          <CRS>CRS:84</CRS>
+          <EX_GeographicBoundingBox>
+            <westBoundLongitude>4.26</westBoundLongitude>
+            <eastBoundLongitude>4.5</eastBoundLongitude>
+            <southBoundLatitude>50.77</southBoundLatitude>
+            <northBoundLatitude>50.9</northBoundLatitude>
+          </EX_GeographicBoundingBox>
+          <BoundingBox CRS="EPSG:31370" maxx="156802" maxy="177503" minx="142785" miny="163232" />
+          <Attribution>
+            <Title>Bruxelles Mobilite / Brussel Mobiliteit</Title>
+            <OnlineResource ns0:href="http://www.mobielbrussel.irisnet.be/content/opendata/" ns0:type="simple" />
+            <LogoURL height="66" width="169">
+              <Format>image/png</Format>
+              <OnlineResource ns0:href=" http://data-mobility.brussels/static/img/Bruxelles_Mobilite_bilingue_small.png " ns0:type="simple" />
+            </LogoURL>
+          </Attribution>
+          <MetadataURL type="ISO19115:2003">
+            <Format>text/html</Format>
+            <OnlineResource ns0:href="http://geonetwork.geobru.irisnetlab.be/geonetwork/srv/eng/csw?Request=GetRecordById#38;Service=CSW&amp;Version=2.0.2&amp;elementSetName=full&amp;outputSchema=http://www.isotc211.org/2005/gmd&amp;id=05882529-a99f-4768-83d2-f23ded7ef154" ns0:type="simple" />
+          </MetadataURL>
+        </Layer>
       </Layer>
-      <Layer queryable="1">
-        <Name>Zones_30</Name>
-        <Title>Zones 30</Title>
-        <Abstract>Brussels Hoofdstedelijk Gewest : Een aanduiding van zones 30, de woonzones en de voetgangerszones in het Brussels Hoofdstedelijk Gewest. Deze wijkwegen waar een grotere snelheidsbeperking wordt opgelegd zijn geprojecteerd op de UrbIS Street Sections.</Abstract>
-        <KeywordList>
-          <Keyword>Tansportnetwerk</Keyword>
-          <Keyword>voetgangerszone</Keyword>
-          <Keyword>verkeersvoorschrift</Keyword>
-          <Keyword>plaatselijk verkeer</Keyword>
-          <Keyword>verkeersveiligheid</Keyword>
-          <Keyword>Mobiliteit</Keyword>
-          <Keyword>Bruxelles Mobilité WMS - Geoserver</Keyword>
-        </KeywordList>
-        <CRS>EPSG:31370</CRS>
-        <CRS>CRS:84</CRS>
-        <EX_GeographicBoundingBox>
-          <westBoundLongitude>4.243</westBoundLongitude>
-          <eastBoundLongitude>4.482</eastBoundLongitude>
-          <southBoundLatitude>50.763</southBoundLatitude>
-          <northBoundLatitude>50.913</northBoundLatitude>
-        </EX_GeographicBoundingBox>
-        <BoundingBox CRS="EPSG:31370" maxx="158006" maxy="178085" minx="141275" miny="161464" />
-        <Attribution>
-          <Title>Bruxelles Mobilite / Brussel Mobiliteit</Title>
-          <OnlineResource ns0:href="http://www.mobielbrussel.irisnet.be/content/opendata/" ns0:type="simple" />
-          <LogoURL height="66" width="169">
-            <Format>image/png</Format>
-            <OnlineResource ns0:href=" http://data-mobility.brussels/static/img/Bruxelles_Mobilite_bilingue_small.png " ns0:type="simple" />
-          </LogoURL>
-        </Attribution>
-        <MetadataURL type="ISO19115:2003">
-          <Format>text/html</Format>
-          <OnlineResource ns0:href="http://geonetwork.geobru.irisnetlab.be/geonetwork/srv/eng/csw?Request=GetRecordById&amp;Service=CSW&amp;Version=2.0.2&amp;elementSetName=full&amp;outputSchema=http://www.isotc211.org/2005/gmd&amp;id=6e6ce68e-a552-4513-91c6-e9b6dbd541e2" ns0:type="simple" />
-        </MetadataURL>
-        <Style>
-          <Name>nl_inspire_z30</Name>
-          <Title>Standaard weergave</Title>
-        </Style>
-        <Style>
-          <Name>nl_inspire_z30_alt</Name>
-          <Title>Alternatieve weergave</Title>
-        </Style>
+      <Layer>
+        <Name>Netwerk en verkeer</Name>
+        <Title>Netwerk en verkeer</Title>
+        <Layer queryable="1">
+          <Name>Zones_30</Name>
+          <Title>Zones 30</Title>
+          <Abstract>Brussels Hoofdstedelijk Gewest : Een aanduiding van zones 30, de woonzones en de voetgangerszones in het Brussels Hoofdstedelijk Gewest. Deze wijkwegen waar een grotere snelheidsbeperking wordt opgelegd zijn geprojecteerd op de UrbIS Street Sections.</Abstract>
+          <KeywordList>
+            <Keyword>Tansportnetwerk</Keyword>
+            <Keyword>voetgangerszone</Keyword>
+            <Keyword>verkeersvoorschrift</Keyword>
+            <Keyword>plaatselijk verkeer</Keyword>
+            <Keyword>verkeersveiligheid</Keyword>
+            <Keyword>Mobiliteit</Keyword>
+            <Keyword>Bruxelles Mobilité WMS - Geoserver</Keyword>
+          </KeywordList>
+          <CRS>EPSG:31370</CRS>
+          <CRS>CRS:84</CRS>
+          <EX_GeographicBoundingBox>
+            <westBoundLongitude>4.243</westBoundLongitude>
+            <eastBoundLongitude>4.482</eastBoundLongitude>
+            <southBoundLatitude>50.763</southBoundLatitude>
+            <northBoundLatitude>50.913</northBoundLatitude>
+          </EX_GeographicBoundingBox>
+          <BoundingBox CRS="EPSG:31370" maxx="158006" maxy="178085" minx="141275" miny="161464" />
+          <Attribution>
+            <Title>Bruxelles Mobilite / Brussel Mobiliteit</Title>
+            <OnlineResource ns0:href="http://www.mobielbrussel.irisnet.be/content/opendata/" ns0:type="simple" />
+            <LogoURL height="66" width="169">
+              <Format>image/png</Format>
+              <OnlineResource ns0:href=" http://data-mobility.brussels/static/img/Bruxelles_Mobilite_bilingue_small.png " ns0:type="simple" />
+            </LogoURL>
+          </Attribution>
+          <MetadataURL type="ISO19115:2003">
+            <Format>text/html</Format>
+            <OnlineResource ns0:href="http://geonetwork.geobru.irisnetlab.be/geonetwork/srv/eng/csw?Request=GetRecordById&amp;Service=CSW&amp;Version=2.0.2&amp;elementSetName=full&amp;outputSchema=http://www.isotc211.org/2005/gmd&amp;id=6e6ce68e-a552-4513-91c6-e9b6dbd541e2" ns0:type="simple" />
+          </MetadataURL>
+          <Style>
+            <Name>nl_inspire_z30</Name>
+            <Title>Standaard weergave</Title>
+          </Style>
+          <Style>
+            <Name>nl_inspire_z30_alt</Name>
+            <Title>Alternatieve weergave</Title>
+          </Style>
+        </Layer>
+        <Layer queryable="1">
+          <Name>Tunnels</Name>
+          <Title>Wegtunnels</Title>
+          <Abstract>Brussels Hoofdstedelijk Gewest : De ligging van de tunnels in het Brussels Hoofdstedelijk Gewest. In deze laag zijn zowel de verkeers- als voetgangerstunnels opgenomen.</Abstract>
+          <KeywordList>
+            <Keyword>Tansportnetwerk</Keyword>
+            <Keyword>tunnel</Keyword>
+            <Keyword>wegennet</Keyword>
+            <Keyword>Mobiliteit</Keyword>
+            <Keyword>Bruxelles Mobilité WMS - Geoserver</Keyword>
+          </KeywordList>
+          <CRS>EPSG:31370</CRS>
+          <CRS>CRS:84</CRS>
+          <EX_GeographicBoundingBox>
+            <westBoundLongitude>4.243</westBoundLongitude>
+            <eastBoundLongitude>4.482</eastBoundLongitude>
+            <southBoundLatitude>50.763</southBoundLatitude>
+            <northBoundLatitude>50.913</northBoundLatitude>
+          </EX_GeographicBoundingBox>
+          <BoundingBox CRS="EPSG:31370" maxx="155069" maxy="174415" minx="146208" miny="167229" />
+          <Attribution>
+            <Title>Bruxelles Mobilite / Brussel Mobiliteit</Title>
+            <OnlineResource ns0:href="http://www.mobielbrussel.irisnet.be/content/opendata/" ns0:type="simple" />
+            <LogoURL height="66" width="169">
+              <Format>image/png</Format>
+              <OnlineResource ns0:href=" http://data-mobility.brussels/static/img/Bruxelles_Mobilite_bilingue_small.png " ns0:type="simple" />
+            </LogoURL>
+          </Attribution>
+          <MetadataURL type="ISO19115:2003">
+            <Format>text/html</Format>
+            <OnlineResource ns0:href="http://geonetwork.geobru.irisnetlab.be/geonetwork/srv/eng/csw?Request=GetRecordById&amp;Service=CSW&amp;Version=2.0.2&amp;elementSetName=full&amp;outputSchema=http://www.isotc211.org/2005/gmd&amp;id=eb87d3b5-23ea-4c81-85b0-7d21968c5ce4" ns0:type="simple" />
+          </MetadataURL>
+          <Style>
+            <Name>nl_inspire_tunnels</Name>
+            <Title>Standaardweergave</Title>
+            <Abstract>Eenvoudige weergave van de tunnels met label</Abstract>
+          </Style>
+          <Style>
+            <Name>nl_inspire_tunnels_kleur</Name>
+            <Title>Meerkleurige weergave</Title>
+            <Abstract>Chorochromatische weergave van de tunnels</Abstract>
+          </Style>
+        </Layer>
+        <Layer queryable="1">
+          <Name>Regional_roads</Name>
+          <Title>Gewestwegen</Title>
+          <Abstract>Brussels Hoofdstedelijk Gewest : In het Brussels Hoofdstedelijk Gewest zijn de openbare wegen opgedeeld in gewestelijke (doorgaans de meest structurerende verkeersassen) en gemeentelijke wegen (doorgaans wegen van lokale aard). Ongeveer 20% van het wegennet worden door het gewest beheerd.</Abstract>
+          <KeywordList>
+            <Keyword>Tansportnetwerk</Keyword>
+            <Keyword>wegennet</Keyword>
+            <Keyword>wegenonderhoud</Keyword>
+            <Keyword>stadsverkeer</Keyword>
+            <Keyword>hoofdweg</Keyword>
+            <Keyword>gewest</Keyword>
+            <Keyword>bestuurlijke grens</Keyword>
+            <Keyword>Mobiliteit</Keyword>
+            <Keyword>Bruxelles Mobilité WMS - Geoserver</Keyword>
+          </KeywordList>
+          <CRS>EPSG:31370</CRS>
+          <CRS>CRS:84</CRS>
+          <EX_GeographicBoundingBox>
+            <westBoundLongitude>4.243</westBoundLongitude>
+            <eastBoundLongitude>4.482</eastBoundLongitude>
+            <southBoundLatitude>50.768</southBoundLatitude>
+            <northBoundLatitude>50.912</northBoundLatitude>
+          </EX_GeographicBoundingBox>
+          <BoundingBox CRS="EPSG:31370" maxx="158006" maxy="177946" minx="141274" miny="162029" />
+          <Attribution>
+            <Title>Bruxelles Mobilite / Brussel Mobiliteit</Title>
+            <OnlineResource ns0:href="http://www.mobielbrussel.irisnet.be/content/opendata/" ns0:type="simple" />
+            <LogoURL height="66" width="169">
+              <Format>image/png</Format>
+              <OnlineResource ns0:href=" http://data-mobility.brussels/static/img/Bruxelles_Mobilite_bilingue_small.png " ns0:type="simple" />
+            </LogoURL>
+          </Attribution>
+          <MetadataURL type="ISO19115:2003">
+            <Format>text/html</Format>
+            <OnlineResource ns0:href="http://geonetwork.geobru.irisnetlab.be/geonetwork/srv/eng/csw?Request=GetRecordById&amp;Service=CSW&amp;Version=2.0.2&amp;elementSetName=full&amp;outputSchema=http://www.isotc211.org/2005/gmd&amp;id=33ab10f7-7845-4e18-9354-40e83bbbe15c" ns0:type="simple" />
+          </MetadataURL>
+        </Layer>
       </Layer>
-      <Layer queryable="1">
-        <Name>Tunnels</Name>
-        <Title>Wegtunnels</Title>
-        <Abstract>Brussels Hoofdstedelijk Gewest : De ligging van de tunnels in het Brussels Hoofdstedelijk Gewest. In deze laag zijn zowel de verkeers- als voetgangerstunnels opgenomen.</Abstract>
-        <KeywordList>
-          <Keyword>Tansportnetwerk</Keyword>
-          <Keyword>tunnel</Keyword>
-          <Keyword>wegennet</Keyword>
-          <Keyword>Mobiliteit</Keyword>
-          <Keyword>Bruxelles Mobilité WMS - Geoserver</Keyword>
-        </KeywordList>
-        <CRS>EPSG:31370</CRS>
-        <CRS>CRS:84</CRS>
-        <EX_GeographicBoundingBox>
-          <westBoundLongitude>4.243</westBoundLongitude>
-          <eastBoundLongitude>4.482</eastBoundLongitude>
-          <southBoundLatitude>50.763</southBoundLatitude>
-          <northBoundLatitude>50.913</northBoundLatitude>
-        </EX_GeographicBoundingBox>
-        <BoundingBox CRS="EPSG:31370" maxx="155069" maxy="174415" minx="146208" miny="167229" />
-        <Attribution>
-          <Title>Bruxelles Mobilite / Brussel Mobiliteit</Title>
-          <OnlineResource ns0:href="http://www.mobielbrussel.irisnet.be/content/opendata/" ns0:type="simple" />
-          <LogoURL height="66" width="169">
-            <Format>image/png</Format>
-            <OnlineResource ns0:href=" http://data-mobility.brussels/static/img/Bruxelles_Mobilite_bilingue_small.png " ns0:type="simple" />
-          </LogoURL>
-        </Attribution>
-        <MetadataURL type="ISO19115:2003">
-          <Format>text/html</Format>
-          <OnlineResource ns0:href="http://geonetwork.geobru.irisnetlab.be/geonetwork/srv/eng/csw?Request=GetRecordById&amp;Service=CSW&amp;Version=2.0.2&amp;elementSetName=full&amp;outputSchema=http://www.isotc211.org/2005/gmd&amp;id=eb87d3b5-23ea-4c81-85b0-7d21968c5ce4" ns0:type="simple" />
-        </MetadataURL>
-        <Style>
-          <Name>nl_inspire_tunnels</Name>
-          <Title>Standaardweergave</Title>
-          <Abstract>Eenvoudige weergave van de tunnels met label</Abstract>
-        </Style>
-        <Style>
-          <Name>nl_inspire_tunnels_kleur</Name>
-          <Title>Meerkleurige weergave</Title>
-          <Abstract>Chorochromatische weergave van de tunnels</Abstract>
-        </Style>
+      <Layer>
+        <Name>Fiets</Name>
+        <Title>Fiets</Title>
+        <Layer queryable="1">
+          <Name>icr</Name>
+          <Title>Gewestelijk fietsnetwerk</Title>
+          <Abstract>Brussels Hoofdstedelijk Gewest : De gewestelijke fietsroutes zijn aanbevolen fietswegen voor verplaatsingen op middellange en lange afstand die door verschillende gemeenten lopen. In het algemeen volgen deze routes lokale wegen, omdat het verkeer er minder druk is, minder snel verloopt en dus minder stresserend is dan op de hoofdwegen. Vermits bepaalde natuurlijke of kunstmatige obstakels (brug over een dal, een kanaal, een autosnelweg, doorgang onder een spoorweg, enz.) moeten worden genomen, lopen de routes echter soms ook over grotere verkeersaders.</Abstract>
+          <KeywordList>
+            <Keyword>Tansportnetwerk</Keyword>
+            <Keyword>gewest</Keyword>
+            <Keyword>fiets</Keyword>
+            <Keyword>fietspad</Keyword>
+            <Keyword>verkeersroute</Keyword>
+            <Keyword>Mobiliteit</Keyword>
+            <Keyword>Bruxelles Mobilité WMS - Geoserver</Keyword>
+          </KeywordList>
+          <CRS>EPSG:31370</CRS>
+          <CRS>CRS:84</CRS>
+          <EX_GeographicBoundingBox>
+            <westBoundLongitude>4.257</westBoundLongitude>
+            <eastBoundLongitude>4.481</eastBoundLongitude>
+            <southBoundLatitude>50.763</southBoundLatitude>
+            <northBoundLatitude>50.914</northBoundLatitude>
+          </EX_GeographicBoundingBox>
+          <BoundingBox CRS="EPSG:31370" maxx="157945" maxy="178194" minx="142271" miny="161487" />
+          <Attribution>
+            <Title>Bruxelles Mobilite / Brussel Mobiliteit</Title>
+            <OnlineResource ns0:href="http://www.mobielbrussel.irisnet.be/content/opendata/" ns0:type="simple" />
+            <LogoURL height="66" width="169">
+              <Format>image/png</Format>
+              <OnlineResource ns0:href=" http://data-mobility.brussels/static/img/Bruxelles_Mobilite_bilingue_small.png " ns0:type="simple" />
+            </LogoURL>
+          </Attribution>
+          <MetadataURL type="ISO19115:2003">
+            <Format>text/html</Format>
+            <OnlineResource ns0:href="http://geonetwork.geobru.irisnetlab.be/geonetwork/srv/eng/csw?Request=GetRecordById&amp;Service=CSW&amp;Version=2.0.2&amp;elementSetName=full&amp;outputSchema=http://www.isotc211.org/2005/gmd&amp;id=33ab10f7-7845-4e18-9354-40e83bbbe15c" ns0:type="simple" />
+          </MetadataURL>
+        </Layer>
+        <Layer queryable="1">
+          <Name>Bike_Infrastructure</Name>
+          <Title>Fietsinfrastructuur</Title>
+          <Abstract>Brussels Hoofdstedelijk Gewest : De fietsinfrastructuur is een aanduiding van de fietspaden, de gemarkeerde fietsstroken, fietsgoten en fiets/busstroken. De data is gecreeerd in het kader van de fietskaart en door de cartografische opzet van deze kaart soms grote afwijkingen vertonen.</Abstract>
+          <KeywordList>
+            <Keyword>Tansportnetwerk</Keyword>
+            <Keyword>fiets</Keyword>
+            <Keyword>fietspad</Keyword>
+            <Keyword> verkeersinfrastructuur</Keyword>
+            <Keyword>Mobiliteit</Keyword>
+            <Keyword>Bruxelles Mobilité WMS - Geoserver</Keyword>
+          </KeywordList>
+          <CRS>EPSG:31370</CRS>
+          <CRS>CRS:84</CRS>
+          <EX_GeographicBoundingBox>
+            <westBoundLongitude>4.234</westBoundLongitude>
+            <eastBoundLongitude>4.492</eastBoundLongitude>
+            <southBoundLatitude>50.739</southBoundLatitude>
+            <northBoundLatitude>50.926</northBoundLatitude>
+          </EX_GeographicBoundingBox>
+          <BoundingBox CRS="EPSG:31370" maxx="158765" maxy="179549" minx="140624" miny="158821" />
+          <Attribution>
+            <Title>Bruxelles Mobilite / Brussel Mobiliteit</Title>
+            <OnlineResource ns0:href="http://www.mobielbrussel.irisnet.be/content/opendata/" ns0:type="simple" />
+            <LogoURL height="66" width="169">
+              <Format>image/png</Format>
+              <OnlineResource ns0:href=" http://data-mobility.brussels/static/img/Bruxelles_Mobilite_bilingue_small.png " ns0:type="simple" />
+            </LogoURL>
+          </Attribution>
+          <MetadataURL type="ISO19115:2003">
+            <Format>text/html</Format>
+            <OnlineResource ns0:href="http://geonetwork.geobru.irisnetlab.be/geonetwork/srv/eng/csw?Request=GetRecordById&amp;Service=CSW&amp;Version=2.0.2&amp;elementSetName=full&amp;outputSchema=http://www.isotc211.org/2005/gmd&amp;id=b469ad31-7cc5-42ba-bc20-ded14677f5d6" ns0:type="simple" />
+          </MetadataURL>
+        </Layer>
       </Layer>
-      <Layer queryable="1">
-        <Name>Regional_roads</Name>
-        <Title>Gewestwegen</Title>
-        <Abstract>Brussels Hoofdstedelijk Gewest : In het Brussels Hoofdstedelijk Gewest zijn de openbare wegen opgedeeld in gewestelijke (doorgaans de meest structurerende verkeersassen) en gemeentelijke wegen (doorgaans wegen van lokale aard). Ongeveer 20% van het wegennet worden door het gewest beheerd.</Abstract>
-        <KeywordList>
-          <Keyword>Tansportnetwerk</Keyword>
-          <Keyword>wegennet</Keyword>
-          <Keyword>wegenonderhoud</Keyword>
-          <Keyword>stadsverkeer</Keyword>
-          <Keyword>hoofdweg</Keyword>
-          <Keyword>gewest</Keyword>
-          <Keyword>bestuurlijke grens</Keyword>
-          <Keyword>Mobiliteit</Keyword>
-          <Keyword>Bruxelles Mobilité WMS - Geoserver</Keyword>
-        </KeywordList>
-        <CRS>EPSG:31370</CRS>
-        <CRS>CRS:84</CRS>
-        <EX_GeographicBoundingBox>
-          <westBoundLongitude>4.243</westBoundLongitude>
-          <eastBoundLongitude>4.482</eastBoundLongitude>
-          <southBoundLatitude>50.768</southBoundLatitude>
-          <northBoundLatitude>50.912</northBoundLatitude>
-        </EX_GeographicBoundingBox>
-        <BoundingBox CRS="EPSG:31370" maxx="158006" maxy="177946" minx="141274" miny="162029" />
-        <Attribution>
-          <Title>Bruxelles Mobilite / Brussel Mobiliteit</Title>
-          <OnlineResource ns0:href="http://www.mobielbrussel.irisnet.be/content/opendata/" ns0:type="simple" />
-          <LogoURL height="66" width="169">
-            <Format>image/png</Format>
-            <OnlineResource ns0:href=" http://data-mobility.brussels/static/img/Bruxelles_Mobilite_bilingue_small.png " ns0:type="simple" />
-          </LogoURL>
-        </Attribution>
-        <MetadataURL type="ISO19115:2003">
-          <Format>text/html</Format>
-          <OnlineResource ns0:href="http://geonetwork.geobru.irisnetlab.be/geonetwork/srv/eng/csw?Request=GetRecordById&amp;Service=CSW&amp;Version=2.0.2&amp;elementSetName=full&amp;outputSchema=http://www.isotc211.org/2005/gmd&amp;id=33ab10f7-7845-4e18-9354-40e83bbbe15c" ns0:type="simple" />
-        </MetadataURL>
+      <Layer>
+        <Name>Veiligheid</Name>
+        <Title>Veiligheid</Title>
+        <Layer queryable="1">
+          <Name>speedcameras</Name>
+          <Title>Flitspalen</Title>
+          <Abstract>Brussels Hoofdstedelijk Gewest : De locaties van de flitspalen langs de gewestwegen. Dit zijn zowel de snelheidscamera's als de gecombineerde roodlicht en snelheidscamera's.</Abstract>
+          <KeywordList>
+            <Keyword>Tansportnetwerk</Keyword>
+            <Keyword>verkeerscontrole</Keyword>
+            <Keyword>verkeersveiligheid</Keyword>
+            <Keyword>snelheid</Keyword>
+            <Keyword>Mobiliteit</Keyword>
+            <Keyword>Camera</Keyword>
+            <Keyword>Bruxelles Mobilité WMS - Geoserver</Keyword>
+          </KeywordList>
+          <CRS>EPSG:31370</CRS>
+          <CRS>CRS:84</CRS>
+          <EX_GeographicBoundingBox>
+            <westBoundLongitude>4.234</westBoundLongitude>
+            <eastBoundLongitude>4.492</eastBoundLongitude>
+            <southBoundLatitude>50.739</southBoundLatitude>
+            <northBoundLatitude>50.926</northBoundLatitude>
+          </EX_GeographicBoundingBox>
+          <BoundingBox CRS="EPSG:31370" maxx="155511" maxy="175697" minx="144491" miny="162777" />
+          <Attribution>
+            <Title>Bruxelles Mobilite / Brussel Mobiliteit</Title>
+            <OnlineResource ns0:href="http://www.mobielbrussel.irisnet.be/content/opendata/" ns0:type="simple" />
+            <LogoURL height="66" width="169">
+              <Format>image/png</Format>
+              <OnlineResource ns0:href=" http://data-mobility.brussels/static/img/Bruxelles_Mobilite_bilingue_small.png " ns0:type="simple" />
+            </LogoURL>
+          </Attribution>
+          <MetadataURL type="ISO19115:2003">
+            <Format>text/html</Format>
+            <OnlineResource ns0:href="http://geonetwork.geobru.irisnetlab.be/geonetwork/srv/eng/csw?Request=GetRecordById&amp;Service=CSW&amp;Version=2.0.2&amp;elementSetName=full&amp;outputSchema=http://www.isotc211.org/2005/gmd&amp;id=ab15b440-92f4-4d3a-add8-41f03c0b6741" ns0:type="simple" />
+          </MetadataURL>
+        </Layer>
+        <Layer queryable="1" opaque="0">
+          <Name>zaca</Name>
+          <Title>Ongevalgevoelige zones</Title>
+          <Abstract/>
+          <KeywordList>
+            <Keyword>Bruxelles Mobilité WMS - Geoserver - bm_security</Keyword>
+          </KeywordList>
+          <CRS>EPSG:31370</CRS>
+          <CRS>CRS:84</CRS>
+          <EX_GeographicBoundingBox>
+          <westBoundLongitude>4.278859331825334</westBoundLongitude>
+          <eastBoundLongitude>4.464635204847239</eastBoundLongitude>
+          <southBoundLatitude>50.78489226357894</southBoundLatitude>
+          <northBoundLatitude>50.90195907298419</northBoundLatitude>
+          </EX_GeographicBoundingBox>
+          <BoundingBox CRS="CRS:84" minx="4.278859331825334" miny="50.78489226357894" maxx="4.464635204847239" maxy="50.90195907298419"/>
+          <BoundingBox CRS="EPSG:31370" minx="143750.255977003" miny="163856.697017985" maxx="156818.303869532" maxy="176874.798"/>
+          <Style>
+          <Name>bm_security:sec_zaca</Name>
+          </Style>
+        </Layer>
       </Layer>
-      <Layer queryable="1">
-        <Name>icr</Name>
-        <Title>Gewestelijk fietsnetwerk</Title>
-        <Abstract>Brussels Hoofdstedelijk Gewest : De gewestelijke fietsroutes zijn aanbevolen fietswegen voor verplaatsingen op middellange en lange afstand die door verschillende gemeenten lopen. In het algemeen volgen deze routes lokale wegen, omdat het verkeer er minder druk is, minder snel verloopt en dus minder stresserend is dan op de hoofdwegen. Vermits bepaalde natuurlijke of kunstmatige obstakels (brug over een dal, een kanaal, een autosnelweg, doorgang onder een spoorweg, enz.) moeten worden genomen, lopen de routes echter soms ook over grotere verkeersaders.</Abstract>
-        <KeywordList>
-          <Keyword>Tansportnetwerk</Keyword>
-          <Keyword>gewest</Keyword>
-          <Keyword>fiets</Keyword>
-          <Keyword>fietspad</Keyword>
-          <Keyword>verkeersroute</Keyword>
-          <Keyword>Mobiliteit</Keyword>
-          <Keyword>Bruxelles Mobilité WMS - Geoserver</Keyword>
-        </KeywordList>
-        <CRS>EPSG:31370</CRS>
-        <CRS>CRS:84</CRS>
-        <EX_GeographicBoundingBox>
-          <westBoundLongitude>4.257</westBoundLongitude>
-          <eastBoundLongitude>4.481</eastBoundLongitude>
-          <southBoundLatitude>50.763</southBoundLatitude>
-          <northBoundLatitude>50.914</northBoundLatitude>
-        </EX_GeographicBoundingBox>
-        <BoundingBox CRS="EPSG:31370" maxx="157945" maxy="178194" minx="142271" miny="161487" />
-        <Attribution>
-          <Title>Bruxelles Mobilite / Brussel Mobiliteit</Title>
-          <OnlineResource ns0:href="http://www.mobielbrussel.irisnet.be/content/opendata/" ns0:type="simple" />
-          <LogoURL height="66" width="169">
-            <Format>image/png</Format>
-            <OnlineResource ns0:href=" http://data-mobility.brussels/static/img/Bruxelles_Mobilite_bilingue_small.png " ns0:type="simple" />
-          </LogoURL>
-        </Attribution>
-        <MetadataURL type="ISO19115:2003">
-          <Format>text/html</Format>
-          <OnlineResource ns0:href="http://geonetwork.geobru.irisnetlab.be/geonetwork/srv/eng/csw?Request=GetRecordById&amp;Service=CSW&amp;Version=2.0.2&amp;elementSetName=full&amp;outputSchema=http://www.isotc211.org/2005/gmd&amp;id=33ab10f7-7845-4e18-9354-40e83bbbe15c" ns0:type="simple" />
-        </MetadataURL>
-      </Layer>
-      <Layer queryable="1">
-        <Name>Bike_Infrastructure</Name>
-        <Title>Fietsinfrastructuur</Title>
-        <Abstract>Brussels Hoofdstedelijk Gewest : De fietsinfrastructuur is een aanduiding van de fietspaden, de gemarkeerde fietsstroken, fietsgoten en fiets/busstroken. De data is gecreeerd in het kader van de fietskaart en door de cartografische opzet van deze kaart soms grote afwijkingen vertonen.</Abstract>
-        <KeywordList>
-          <Keyword>Tansportnetwerk</Keyword>
-          <Keyword>fiets</Keyword>
-          <Keyword>fietspad</Keyword>
-          <Keyword> verkeersinfrastructuur</Keyword>
-          <Keyword>Mobiliteit</Keyword>
-          <Keyword>Bruxelles Mobilité WMS - Geoserver</Keyword>
-        </KeywordList>
-        <CRS>EPSG:31370</CRS>
-        <CRS>CRS:84</CRS>
-        <EX_GeographicBoundingBox>
-          <westBoundLongitude>4.234</westBoundLongitude>
-          <eastBoundLongitude>4.492</eastBoundLongitude>
-          <southBoundLatitude>50.739</southBoundLatitude>
-          <northBoundLatitude>50.926</northBoundLatitude>
-        </EX_GeographicBoundingBox>
-        <BoundingBox CRS="EPSG:31370" maxx="158765" maxy="179549" minx="140624" miny="158821" />
-        <Attribution>
-          <Title>Bruxelles Mobilite / Brussel Mobiliteit</Title>
-          <OnlineResource ns0:href="http://www.mobielbrussel.irisnet.be/content/opendata/" ns0:type="simple" />
-          <LogoURL height="66" width="169">
-            <Format>image/png</Format>
-            <OnlineResource ns0:href=" http://data-mobility.brussels/static/img/Bruxelles_Mobilite_bilingue_small.png " ns0:type="simple" />
-          </LogoURL>
-        </Attribution>
-        <MetadataURL type="ISO19115:2003">
-          <Format>text/html</Format>
-          <OnlineResource ns0:href="http://geonetwork.geobru.irisnetlab.be/geonetwork/srv/eng/csw?Request=GetRecordById&amp;Service=CSW&amp;Version=2.0.2&amp;elementSetName=full&amp;outputSchema=http://www.isotc211.org/2005/gmd&amp;id=b469ad31-7cc5-42ba-bc20-ded14677f5d6" ns0:type="simple" />
-        </MetadataURL>
-      </Layer>
-      <Layer queryable="1">
-        <Name>speedcameras</Name>
-        <Title>Flitspalen</Title>
-        <Abstract>Brussels Hoofdstedelijk Gewest : De locaties van de flitspalen langs de gewestwegen. Dit zijn zowel de snelheidscamera's als de gecombineerde roodlicht en snelheidscamera's.</Abstract>
-        <KeywordList>
-          <Keyword>Tansportnetwerk</Keyword>
-          <Keyword>verkeerscontrole</Keyword>
-          <Keyword>verkeersveiligheid</Keyword>
-          <Keyword>snelheid</Keyword>
-          <Keyword>Mobiliteit</Keyword>
-          <Keyword>Camera</Keyword>
-          <Keyword>Bruxelles Mobilité WMS - Geoserver</Keyword>
-        </KeywordList>
-        <CRS>EPSG:31370</CRS>
-        <CRS>CRS:84</CRS>
-        <EX_GeographicBoundingBox>
-          <westBoundLongitude>4.234</westBoundLongitude>
-          <eastBoundLongitude>4.492</eastBoundLongitude>
-          <southBoundLatitude>50.739</southBoundLatitude>
-          <northBoundLatitude>50.926</northBoundLatitude>
-        </EX_GeographicBoundingBox>
-        <BoundingBox CRS="EPSG:31370" maxx="155511" maxy="175697" minx="144491" miny="162777" />
-        <Attribution>
-          <Title>Bruxelles Mobilite / Brussel Mobiliteit</Title>
-          <OnlineResource ns0:href="http://www.mobielbrussel.irisnet.be/content/opendata/" ns0:type="simple" />
-          <LogoURL height="66" width="169">
-            <Format>image/png</Format>
-            <OnlineResource ns0:href=" http://data-mobility.brussels/static/img/Bruxelles_Mobilite_bilingue_small.png " ns0:type="simple" />
-          </LogoURL>
-        </Attribution>
-        <MetadataURL type="ISO19115:2003">
-          <Format>text/html</Format>
-          <OnlineResource ns0:href="http://geonetwork.geobru.irisnetlab.be/geonetwork/srv/eng/csw?Request=GetRecordById&amp;Service=CSW&amp;Version=2.0.2&amp;elementSetName=full&amp;outputSchema=http://www.isotc211.org/2005/gmd&amp;id=ab15b440-92f4-4d3a-add8-41f03c0b6741" ns0:type="simple" />
-        </MetadataURL>
-      </Layer>
-      <Layer queryable="1">
-        <Name>parkingpublic</Name>
-        <Title>Openbare parkings</Title>
-        <Abstract>Brussels Hoofdstedelijk Gewest : De locaties van de openbare parkings in het Brussels Hoofdstedelijk Gewest. De localisatie is gebeurd op basis van de coordinaten van de hoofdingang van de parking (postadres van de parking). Het is mogelijk dat er ook andere ingangen zijn.</Abstract>
-        <KeywordList>
-          <Keyword>Tansportnetwerk</Keyword>
-          <Keyword>parkeervoorziening</Keyword>
-          <Keyword>(auto)parkeerplaats</Keyword>
-          <Keyword>verkeersinfrastructuur</Keyword>
-          <Keyword>Mobiliteit</Keyword>
-          <Keyword>Bruxelles Mobilité WMS - Geoserver</Keyword>
-        </KeywordList>
-        <CRS>EPSG:31370</CRS>
-        <CRS>CRS:84</CRS>
-        <EX_GeographicBoundingBox>
-          <westBoundLongitude>4.26</westBoundLongitude>
-          <eastBoundLongitude>4.5</eastBoundLongitude>
-          <southBoundLatitude>50.77</southBoundLatitude>
-          <northBoundLatitude>50.9</northBoundLatitude>
-        </EX_GeographicBoundingBox>
-        <BoundingBox CRS="EPSG:31370" maxx="156802" maxy="177503" minx="142785" miny="163232" />
-        <Attribution>
-          <Title>Bruxelles Mobilite / Brussel Mobiliteit</Title>
-          <OnlineResource ns0:href="http://www.mobielbrussel.irisnet.be/content/opendata/" ns0:type="simple" />
-          <LogoURL height="66" width="169">
-            <Format>image/png</Format>
-            <OnlineResource ns0:href=" http://data-mobility.brussels/static/img/Bruxelles_Mobilite_bilingue_small.png " ns0:type="simple" />
-          </LogoURL>
-        </Attribution>
-        <MetadataURL type="ISO19115:2003">
-          <Format>text/html</Format>
-          <OnlineResource ns0:href="http://geonetwork.geobru.irisnetlab.be/geonetwork/srv/eng/csw?Request=GetRecordById#38;Service=CSW&amp;Version=2.0.2&amp;elementSetName=full&amp;outputSchema=http://www.isotc211.org/2005/gmd&amp;id=5d68c6ff-8875-4fdc-85db-aa298d1ca072" ns0:type="simple" />
-        </MetadataURL>
-      </Layer>
-      <Layer queryable="1" opaque="0">
-        <Name>zaca</Name>
-        <Title>zaca</Title>
-        <Abstract/>
-        <KeywordList>
-          <Keyword>Bruxelles Mobilité WMS - Geoserver - bm_security</Keyword>
-        </KeywordList>
-        <CRS>EPSG:31370</CRS>
-        <CRS>CRS:84</CRS>
-        <EX_GeographicBoundingBox>
-        <westBoundLongitude>4.278859331825334</westBoundLongitude>
-        <eastBoundLongitude>4.464635204847239</eastBoundLongitude>
-        <southBoundLatitude>50.78489226357894</southBoundLatitude>
-        <northBoundLatitude>50.90195907298419</northBoundLatitude>
-        </EX_GeographicBoundingBox>
-        <BoundingBox CRS="CRS:84" minx="4.278859331825334" miny="50.78489226357894" maxx="4.464635204847239" maxy="50.90195907298419"/>
-        <BoundingBox CRS="EPSG:31370" minx="143750.255977003" miny="163856.697017985" maxx="156818.303869532" maxy="176874.798"/>
-        <Style>
-        <Name>bm_security:sec_zaca</Name>
-        </Style>
+      <Layer>
+        <Name>Parking</Name>
+        <Title>Parking</Title>
+        <Layer queryable="1">
+          <Name>parkingpublic</Name>
+          <Title>Openbare parkeerplaatsen</Title>
+          <Abstract>Brussels Hoofdstedelijk Gewest : De locaties van de openbare parkings in het Brussels Hoofdstedelijk Gewest. De localisatie is gebeurd op basis van de coordinaten van de hoofdingang van de parking (postadres van de parking). Het is mogelijk dat er ook andere ingangen zijn.</Abstract>
+          <KeywordList>
+            <Keyword>Tansportnetwerk</Keyword>
+            <Keyword>parkeervoorziening</Keyword>
+            <Keyword>(auto)parkeerplaats</Keyword>
+            <Keyword>verkeersinfrastructuur</Keyword>
+            <Keyword>Mobiliteit</Keyword>
+            <Keyword>Bruxelles Mobilité WMS - Geoserver</Keyword>
+          </KeywordList>
+          <CRS>EPSG:31370</CRS>
+          <CRS>CRS:84</CRS>
+          <EX_GeographicBoundingBox>
+            <westBoundLongitude>4.26</westBoundLongitude>
+            <eastBoundLongitude>4.5</eastBoundLongitude>
+            <southBoundLatitude>50.77</southBoundLatitude>
+            <northBoundLatitude>50.9</northBoundLatitude>
+          </EX_GeographicBoundingBox>
+          <BoundingBox CRS="EPSG:31370" maxx="156802" maxy="177503" minx="142785" miny="163232" />
+          <Attribution>
+            <Title>Bruxelles Mobilite / Brussel Mobiliteit</Title>
+            <OnlineResource ns0:href="http://www.mobielbrussel.irisnet.be/content/opendata/" ns0:type="simple" />
+            <LogoURL height="66" width="169">
+              <Format>image/png</Format>
+              <OnlineResource ns0:href=" http://data-mobility.brussels/static/img/Bruxelles_Mobilite_bilingue_small.png " ns0:type="simple" />
+            </LogoURL>
+          </Attribution>
+          <MetadataURL type="ISO19115:2003">
+            <Format>text/html</Format>
+            <OnlineResource ns0:href="http://geonetwork.geobru.irisnetlab.be/geonetwork/srv/eng/csw?Request=GetRecordById#38;Service=CSW&amp;Version=2.0.2&amp;elementSetName=full&amp;outputSchema=http://www.isotc211.org/2005/gmd&amp;id=5d68c6ff-8875-4fdc-85db-aa298d1ca072" ns0:type="simple" />
+          </MetadataURL>
+        </Layer>
       </Layer>
     </Layer>
     <Layer>
