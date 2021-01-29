@@ -4,14 +4,14 @@ var {REMOVE_NODE} = require('../../../MapStore2/web/client/actions/layers');
 const assign = require('object-assign');
 const EnvUtils = require('../../utils/EnvUtils');
 const SERVER_MAPPING_URL = {
-											"IBSA WMS - Geoserver": "http://gis.irisnet.be/geoserver/ibsa_bisa/wms",
-											"AGIV WMS - Basiskaart": "http://geoservices.informatievlaanderen.be/raadpleegdiensten/GRB-basiskaart/wms",
-											"AGIV WMS - Historische kaarten": "http://geoservices.informatievlaanderen.be/raadpleegdiensten/histcart/wms",
+											"IBSA WMS - Geoserver": "https://gis.irisnet.be/geoserver/ibsa_bisa/wms",
+											"AGIV WMS - Basiskaart": "https://geoservices.informatievlaanderen.be/raadpleegdiensten/GRB-basiskaart/wms",
+											"AGIV WMS - Historische kaarten": "https://geoservices.informatievlaanderen.be/raadpleegdiensten/histcart/wms",
 											"CIRB WMS - Geoserver": "https://geoservices-urbis.irisnet.be/geoserver/ows",
-											"STIB WMS - Geoserver": "http://gis.irisnet.be/geoserver/stib_mivb/wms",
-											"Bruxelles Mobilité WMS - Geoserver": "http://data-mobility.irisnet.be/geoserver/bm_inspire_en/ows",
-											"Bruxelles Mobilité WMS - Geoserver - bm_security": "http://data-mobility.brussels/geoserver/bm_security/ows",
-											"Bruxelles Mobilité WMS - Geoserver - bm_public_space": "http://data-mobility.brussels/geoserver/bm_public_space/ows",
+											"STIB WMS - Geoserver": "https://gis.irisnet.be/geoserver/stib_mivb/wms",
+											"Bruxelles Mobilité WMS - Geoserver": "https://data-mobility.irisnet.be/geoserver/bm_inspire_en/ows",
+											"Bruxelles Mobilité WMS - Geoserver - bm_security": "https://data-mobility.brussels/geoserver/bm_security/ows",
+											"Bruxelles Mobilité WMS - Geoserver - bm_public_space": "https://data-mobility.brussels/geoserver/bm_public_space/ows",
 											"IBGE WMS - Mapserver": "https://wms.environnement.brussels/be_wms",
 											"IBGE WMS - Mapserver - Fr": "https://wms.environnement.brussels/be_wms",
 											"IBGE WMS - Mapserver - Nl": "https://wms.environnement.brussels/lb_wms"
