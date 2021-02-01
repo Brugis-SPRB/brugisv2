@@ -46,7 +46,7 @@ module.exports = {
                     "autoload": true
                   },
                   "Bruxelles Mobilité": {
-                    "url": "http://data-mobility.brussels/geoserver/bm_inspire_fr/ows",
+                    "url": "https://data-mobility.brussels/geoserver/bm_inspire_fr/ows",
                     "type": "wms",
                     "title": "Bruxelles Mobilité",
                     "autoload": false
@@ -64,25 +64,25 @@ module.exports = {
                     "autoload": false
                   },
                   'AGIV WMS - Basiskaart': {
-                    "url": "http://geoservices.informatievlaanderen.be/raadpleegdiensten/GRB-basiskaart/wms",
+                    "url": "https://geoservices.informatievlaanderen.be/raadpleegdiensten/GRB-basiskaart/wms",
                     "type": "wms",
                     "title": "AGIV WMS - Basiskaart",
                     "autoload": false
                   },
                   'Stib mivb': {
-                    "url": "http://gis.irisnet.be/geoserver/stib_mivb/wms?",
+                    "url": "https://gis.irisnet.be/geoserver/stib_mivb/wms?",
                     "type": "wms",
                     "title": "Stib mivb",
                     "autoload": false
                   },
                   'IBSA WMS': {
-                    "url": "http://gis.irisnet.be/geoserver/ibsa_bisa/wms?",
+                    "url": "https://gis.irisnet.be/geoserver/ibsa_bisa/wms?",
                     "type": "wms",
                     "title": "IBSA WMS",
                     "autoload": false
                   },
                   'CIRB WMS': {
-                    "url": "http://geoservices-urbis.irisnet.be/geoserver/ows?",
+                    "url": "https://geoservices-urbis.irisnet.be/geoserver/ows?",
                     "type": "wms",
                     "title": "CIRB WMS",
                     "autoload": false

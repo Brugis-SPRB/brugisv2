@@ -5,7 +5,7 @@ const news = {
         "datestart": "2021-01-27",
         "dateend": "2021-03-31",
         "defcon": "5",
-        "title": "Nieuwe lagen van Brussel Mobiliteit: Trees et potential Trees",
+        "title": "Nieuwe lagen van Brussel Mobiliteit: Trees en potential Trees",
         "img": 'brugis.png',
         "message": "Twee lagen van Bruxelles Mobilité werden toegevoegd aan de BruGIS-boomstructuur:  Trees et potential Trees."
       },
