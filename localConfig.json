@@ -1,7 +1,7 @@
 {
 	"proxyUrl": {
 		"url": "/brugis/proxy/?url=",
-		"useCORS": ["https://mbr227.irisnet.be","http://10.128.81.205:8080", "https://gislab.urban.brussels", "https://gis.urban.brussels"]
+		"useCORS": ["https://mbr227.irisnet.be","http://10.128.81.205:8080", "https://gislab.urban.brussels", "https://gis.urban.brussels", "https://data-mobility.brussels"]
 	},
 	"geoStoreUrl": "/brugis/rest/geostore",
 	"printUrl": "https://mbr227.irisnet.be/geoserver/pdf/info.json?url=https://mbr227.irisnet.be/geoserver/pdf",
