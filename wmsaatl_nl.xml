@@ -1964,6 +1964,71 @@
             </LegendURL>
           </Style>
         </Layer>
+
+        <Layer queryable="0" opaque="0" cascaded="0">
+          <Name>natura_2000_habitat_aqua</Name>
+          <Title>Natura 2000 habitats (aquatisch)</Title>
+          <Abstract>
+          Aanwezigheid van de habitats van communautair et gewestelijke belang in het Brussels Gewest
+          </Abstract>
+          <KeywordList>
+            <Keyword>biodiversiteit</Keyword>
+            <Keyword>Natura 2000</Keyword>
+            <Keyword>habitats</Keyword>
+            <Keyword>biotoop</Keyword>
+            <Keyword>natuur</Keyword>
+            <Keyword>IBGE WMS - Mapserver - Nl</Keyword>
+          </KeywordList>
+          <CRS>EPSG:31370</CRS>
+          <EX_GeographicBoundingBox>
+            <westBoundLongitude>4.30154</westBoundLongitude>
+            <eastBoundLongitude>4.44312</eastBoundLongitude>
+            <southBoundLatitude>50.7843</southBoundLatitude>
+            <northBoundLatitude>50.8805</northBoundLatitude>
+          </EX_GeographicBoundingBox>
+          <BoundingBox CRS="EPSG:31370" minx="145270" miny="163758" maxx="155234" maxy="174462"/>
+          <Style>
+            <Name>default</Name>
+            <Title>default</Title>
+            <LegendURL width="282" height="23">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://wms.environnement.brussels/lb_wms?language=fre&amp;version=1.3.0&amp;service=WMS&amp;request=GetLegendGraphic&amp;sld_version=1.1.0&amp;layer=natura_2000_habitat_aqua&amp;format=image/png&amp;STYLE=default"/>
+            </LegendURL>
+          </Style>
+        </Layer>
+        <Layer queryable="0" opaque="0" cascaded="0">
+          <Name>natura_2000_habitat_pt</Name>
+          <Title>Natura 2000 habitats (punthabitats)</Title>
+          <Abstract>
+          Aanwezigheid van de habitats van communautair et gewestelijke belang in het Brussels Gewest
+          </Abstract>
+          <KeywordList>
+            <Keyword>biodiversiteit</Keyword>
+            <Keyword>Natura 2000</Keyword>
+            <Keyword>habitats</Keyword>
+            <Keyword>biotoop</Keyword>
+            <Keyword>natuur</Keyword>
+            <Keyword>IBGE WMS - Mapserver - Nl</Keyword>
+            <Keyword>SINGLETILE</Keyword>
+          </KeywordList>
+          <CRS>EPSG:31370</CRS>
+          <EX_GeographicBoundingBox>
+            <westBoundLongitude>4.29497</westBoundLongitude>
+            <eastBoundLongitude>4.44633</eastBoundLongitude>
+            <southBoundLatitude>50.7889</southBoundLatitude>
+            <northBoundLatitude>50.887</northBoundLatitude>
+          </EX_GeographicBoundingBox>
+          <BoundingBox CRS="EPSG:31370" minx="144808" miny="164269" maxx="155459" maxy="175183"/>
+          <Style>
+            <Name>default</Name>
+            <Title>default</Title>
+            <LegendURL width="287" height="38">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://wms.environnement.brussels/lb_wms?language=fre&amp;version=1.3.0&amp;service=WMS&amp;request=GetLegendGraphic&amp;sld_version=1.1.0&amp;layer=natura_2000_habitat_pt&amp;format=image/png&amp;STYLE=default"/>
+            </LegendURL>
+          </Style>
+        </Layer>
+
         <Layer cascaded="0" opaque="0" queryable="1">
           <Name>bruenvi_areas_limitation_aircraft_noise</Name>
           <Title>Gebieden van beperking van vliegtuiglawaai</Title>

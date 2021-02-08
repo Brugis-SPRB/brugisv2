@@ -2163,6 +2163,69 @@
             </LegendURL>
           </Style>
         </Layer>
+        <Layer queryable="0" opaque="0" cascaded="0">
+          <Name>natura_2000_habitat_aqua</Name>
+          <Title>Habitats Natura 2000 (aquatique)</Title>
+          <Abstract>
+          Présence des habitats d’intérêt communautaire et régional dans la Région bruxelloise
+          </Abstract>
+          <KeywordList>
+            <Keyword>biodiversité</Keyword>
+            <Keyword>Natura 2000</Keyword>
+            <Keyword>habitats</Keyword>
+            <Keyword>biotopes</Keyword>
+            <Keyword>nature</Keyword>
+            <Keyword>IBGE WMS - Mapserver - Fr</Keyword>
+          </KeywordList>
+          <CRS>EPSG:31370</CRS>
+          <EX_GeographicBoundingBox>
+            <westBoundLongitude>4.30154</westBoundLongitude>
+            <eastBoundLongitude>4.44312</eastBoundLongitude>
+            <southBoundLatitude>50.7843</southBoundLatitude>
+            <northBoundLatitude>50.8805</northBoundLatitude>
+          </EX_GeographicBoundingBox>
+          <BoundingBox CRS="EPSG:31370" minx="145270" miny="163758" maxx="155234" maxy="174462"/>
+          <Style>
+            <Name>default</Name>
+            <Title>default</Title>
+            <LegendURL width="244" height="23">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://wms.environnement.brussels/be_wms?language=fre&amp;version=1.3.0&amp;service=WMS&amp;request=GetLegendGraphic&amp;sld_version=1.1.0&amp;layer=natura_2000_habitat_aqua&amp;format=image/png&amp;STYLE=default"/>
+            </LegendURL>
+          </Style>
+        </Layer>
+        <Layer queryable="0" opaque="0" cascaded="0">
+          <Name>natura_2000_habitat_pt</Name>
+          <Title>Habitats Natura 2000 (habitats ponctuels)</Title>
+          <Abstract>
+          Présence des habitats d’intérêt communautaire et régional dans la Région bruxelloise
+          </Abstract>
+          <KeywordList>
+            <Keyword>biodiversité</Keyword>
+            <Keyword>Natura 2000</Keyword>
+            <Keyword>habitats</Keyword>
+            <Keyword>biotopes</Keyword>
+            <Keyword>nature</Keyword>
+            <Keyword>IBGE WMS - Mapserver - Fr</Keyword>
+            <Keyword>SINGLETILE</Keyword>
+          </KeywordList>
+          <CRS>EPSG:31370</CRS>
+          <EX_GeographicBoundingBox>
+            <westBoundLongitude>4.29497</westBoundLongitude>
+            <eastBoundLongitude>4.44633</eastBoundLongitude>
+            <southBoundLatitude>50.7889</southBoundLatitude>
+            <northBoundLatitude>50.887</northBoundLatitude>
+          </EX_GeographicBoundingBox>
+          <BoundingBox CRS="EPSG:31370" minx="144808" miny="164269" maxx="155459" maxy="175183"/>
+          <Style>
+            <Name>default</Name>
+            <Title>default</Title>
+            <LegendURL width="357" height="41">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://wms.environnement.brussels/be_wms?language=fre&amp;version=1.3.0&amp;service=WMS&amp;request=GetLegendGraphic&amp;sld_version=1.1.0&amp;layer=natura_2000_habitat_pt&amp;format=image/png&amp;STYLE=default"/>
+            </LegendURL>
+          </Style>
+        </Layer>
         <Layer cascaded="0" opaque="0" queryable="1">
           <Name>bruenvi_areas_limitation_aircraft_noise</Name>
           <Title>Zones de limitation du bruit des avions</Title>
