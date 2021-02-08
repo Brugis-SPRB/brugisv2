@@ -1935,7 +1935,7 @@
         </Layer>
         <Layer queryable="1" opaque="0" cascaded="0">
           <Name>bruenvi_natura_2000_buffer</Name>
-          <Title>Natura 2000 - 60m buffer</Title>
+          <Title>Natura 2000 (60m buffer)</Title>
           <Abstract>
           Buffer de 60 metres autour du réseau Natura 2000 réseau qui concerne des sites naturels ou semi-naturels de l'Union européenne ayant une grande valeur patrimoniale,...
           </Abstract>
@@ -1964,7 +1964,6 @@
             </LegendURL>
           </Style>
         </Layer>
-
         <Layer queryable="0" opaque="0" cascaded="0">
           <Name>natura_2000_habitat_aqua</Name>
           <Title>Natura 2000 habitats (aquatisch)</Title>
@@ -2028,7 +2027,6 @@
             </LegendURL>
           </Style>
         </Layer>
-
         <Layer cascaded="0" opaque="0" queryable="1">
           <Name>bruenvi_areas_limitation_aircraft_noise</Name>
           <Title>Gebieden van beperking van vliegtuiglawaai</Title>
