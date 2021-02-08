@@ -2640,8 +2640,8 @@
           </Layer>
         </Layer>
         <Layer>
-          <Name>Bicycles</Name>
-          <Title>Bicycles</Title>
+          <Name>Security</Name>
+          <Title>Security</Title>
           <Layer queryable="1">
             <Name>speedcameras</Name>
             <Title>speedcameras</Title>
