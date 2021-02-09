@@ -3,6 +3,14 @@ const news = {
     "locale": "fr-FR",
     "news": [
       {
+        "datestart": "2021-02-16",
+        "dateend": "2021-05-15",
+        "defcon": "5",
+        "title": "Nouvelle couche urban: Zones des règlements communaux d'urbanisme",
+        "img": 'brugis.png',
+        "message": "Une nouvelle couche urban a été ajoutée dans l'arborescence de BruGIS: Zones des règlements communaux d'urbanisme."
+      },
+      {
         "datestart": "2021-02-09",
         "dateend": "2021-04-30",
         "defcon": "5",

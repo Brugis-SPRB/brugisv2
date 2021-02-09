@@ -2,6 +2,14 @@ const news = {
     "locale": "nl-NL",
     "news": [
       {
+        "datestart": "2021-02-16",
+        "dateend": "2021-05-15",
+        "defcon": "5",
+        "title": "Nieuwe laag van Urban : De gemeentelijke stedenbouwkundige verordeningen",
+        "img": 'brugis.png',
+        "message": "Er werd een nieuwe laag van Urban toegevoegd aan de bommstructuur van BruGIS : De gemeentelijke stedenbouwkundige verordeningen"."
+      },
+      {
         "datestart": "2021-02-09",
         "dateend": "2021-04-30",
         "defcon": "5",
