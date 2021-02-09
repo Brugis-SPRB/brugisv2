@@ -3,6 +3,14 @@ const news = {
     "locale": "fr-FR",
     "news": [
       {
+        "datestart": "2021-02-09",
+        "dateend": "2021-04-30",
+        "defcon": "5",
+        "title": "Nouvelles couches Bruxelles Environnement: Zones Natura 2000: aquatiques et ponctuels",
+        "img": 'brugis.png',
+        "message": "Deux couches provenant de Bruxelles Environnement ont été ajoutées dans l'arborescence de BruGIS: aquatiques et ponctuels."
+      },
+      {
         "datestart": "2021-01-27",
         "dateend": "2021-03-31",
         "defcon": "5",

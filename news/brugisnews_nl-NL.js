@@ -2,12 +2,20 @@ const news = {
     "locale": "nl-NL",
     "news": [
       {
+        "datestart": "2021-02-09",
+        "dateend": "2021-04-30",
+        "defcon": "5",
+        "title": "Nieuwe lagen Leefmilieu Brussel: Natura 2000-zones: aquatisch en punthabitats",
+        "img": 'brugis.png',
+        "message": "Twee lagen van Leefmilieu Brussel zijn toegevoegd aan de BruGIS-boomstructuur: aquatisch en punthabitats."
+      },
+      {
         "datestart": "2021-01-27",
         "dateend": "2021-03-31",
         "defcon": "5",
         "title": "Nieuwe lagen van Brussel Mobiliteit: Trees en potential Trees",
         "img": 'brugis.png',
-        "message": "Twee lagen van Bruxelles Mobilité werden toegevoegd aan de BruGIS-boomstructuur:  Trees et potential Trees."
+        "message": "Twee lagen van Brussel Mobiliteit werden toegevoegd aan de BruGIS-boomstructuur:  Trees et potential Trees."
       },
       {
         "datestart": "2021-01-27",

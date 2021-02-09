@@ -1663,6 +1663,33 @@
             </LegendURL>
           </Style>
         </Layer>
+        <Layer queryable="1" opaque="0">
+          <Name>BSO:Gemeentelijke_bouwverordening</Name>
+          <Title>Gemeentelijke bouwverordening</Title>
+          <Abstract/>
+          <KeywordList>
+            <Keyword>VM_A60_TRACE_RCU_NL</Keyword>
+            <Keyword>features</Keyword>
+          </KeywordList>
+          <CRS>EPSG:31370</CRS>
+          <CRS>CRS:84</CRS>
+          <EX_GeographicBoundingBox>
+            <westBoundLongitude>4.222033116412722</westBoundLongitude>
+            <eastBoundLongitude>4.38385553407293</eastBoundLongitude>
+            <southBoundLatitude>50.716169721711225</southBoundLatitude>
+            <northBoundLatitude>50.863147442954144</northBoundLatitude>
+          </EX_GeographicBoundingBox>
+            <BoundingBox CRS="CRS:84" minx="4.222033116412722" miny="50.716169721711225" maxx="4.38385553407293" maxy="50.863147442954144"/>
+            <BoundingBox CRS="EPSG:31370" minx="139744.484375" miny="156217.58369305544" maxx="151136.988582221" maxy="172557.358069847"/>
+          <Style>
+            <Name>polygon</Name>
+            <Title>polygon</Title>
+            <LegendURL width="20" height="20">
+              <Format>image/png</Format>
+              <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://mybrugis.irisnet.be/geoserver/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=BSO%3AGemeentelijke_bouwverordening"/>
+            </LegendURL>
+          </Style>
+        </Layer>
         <Layer noSubsets="0" opaque="0" queryable="1">
           <Name>BSO:Gronden_bestemd_voor_industrie</Name>
           <Title>Gronden bestemd voor industrie</Title>
