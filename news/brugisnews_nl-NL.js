@@ -7,7 +7,7 @@ const news = {
         "defcon": "5",
         "title": "Nieuwe laag van Urban : De gemeentelijke stedenbouwkundige verordeningen",
         "img": 'brugis.png',
-        "message": "Er werd een nieuwe laag van Urban toegevoegd aan de bommstructuur van BruGIS : De gemeentelijke stedenbouwkundige verordeningen"."
+        "message": "Er werd een nieuwe laag van Urban toegevoegd aan de bommstructuur van BruGIS : De gemeentelijke stedenbouwkundige verordeningen."
       },
       {
         "datestart": "2021-02-09",
