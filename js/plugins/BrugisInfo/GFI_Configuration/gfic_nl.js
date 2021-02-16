@@ -52,7 +52,7 @@ const gfiNl = {
 		"title": "Toegankelijkheid: [%ZONE%]",
 		"attributes": [{
 			"name": "Soort zone",
-			"label": "[%ZONE%]",
+			"label": "[%ZONE_NL%]",
 			"type": "string"
 		}]
 	},
@@ -61,7 +61,7 @@ const gfiNl = {
 		"title": "Uithangborden: [%ZONE%]",
 		"attributes": [{
 			"name": "Soort zone",
-			"label": "[%ZONE%]",
+			"label": "[%ZONE_NL%]",
 			"type": "string"
 		}]
 	},
@@ -70,7 +70,7 @@ const gfiNl = {
 		"title": "Reclame: [%ZONE%]",
 		"attributes": [{
 			"name": "Soort zone",
-			"label": "[%ZONE%]",
+			"label": "[%ZONE_NL%]",
 			"type": "string"
 		}]
 	},
