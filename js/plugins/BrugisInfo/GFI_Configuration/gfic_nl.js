@@ -49,7 +49,7 @@ const gfiNl = {
 	},
 	"BSO:Toegankelijkheid": {
 		"actiontype": "GRID",
-		"title": "Toegankelijkheid: [%ZONE%]",
+		"title": "Toegankelijkheid: [%ZONE_NL%]",
 		"attributes": [{
 			"name": "Soort zone",
 			"label": "[%ZONE_NL%]",
@@ -58,7 +58,7 @@ const gfiNl = {
 	},
 	"BSO:Uithangborden": {
 		"actiontype": "GRID",
-		"title": "Uithangborden: [%ZONE%]",
+		"title": "Uithangborden: [%ZONE_NL%]",
 		"attributes": [{
 			"name": "Soort zone",
 			"label": "[%ZONE_NL%]",
@@ -67,7 +67,7 @@ const gfiNl = {
 	},
 	"BSO:Reclame": {
 		"actiontype": "GRID",
-		"title": "Reclame: [%ZONE%]",
+		"title": "Reclame: [%ZONE_NL%]",
 		"attributes": [{
 			"name": "Soort zone",
 			"label": "[%ZONE_NL%]",
