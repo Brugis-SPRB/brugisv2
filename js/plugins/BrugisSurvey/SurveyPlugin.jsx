@@ -156,7 +156,8 @@ const BrugisSurvey = React.createClass({
                     adr: infos.adr,
                     refdossier: infos.refdoc,
                     reptype: infos.type,
-                    user: this.props.user
+                    user: this.props.user,
+                    brugisuser: 'BruGIS-website'
                 }),
                 this
                 );
