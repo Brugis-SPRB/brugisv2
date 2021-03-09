@@ -247,7 +247,7 @@ const gfiFr = {
 			},
 			{
 				"name": "ID",
-				"label": "[%ID%]",
+				"label": "[%ID_DRU%]",
 				"type": "string"
 			}
 		]
@@ -1179,7 +1179,7 @@ const gfiFr = {
 			},
 			{
 				"name": "Fiche web",
-				"label": "http://quartiers.brussels/1/q/[%ID%]",
+				"label": "http://quartiers.brussels/1/q/[%ID_DRU%]",
 				"type": "link"
 			},
 			{
@@ -1239,7 +1239,7 @@ const gfiFr = {
 			},
 			{
 				"name": "Fiche web",
-				"label": "http://quartiers.brussels/1/qp/[%ID%]",
+				"label": "http://quartiers.brussels/1/qp/[%ID_DRU%]",
 				"type": "link"
 			},
 			{

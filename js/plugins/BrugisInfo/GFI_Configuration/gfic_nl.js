@@ -314,7 +314,7 @@ const gfiNl = {
 			},
 			{
 				"name": "ID",
-				"label": "[%ID%]",
+				"label": "[%ID_DRU%]",
 				"type": "string"
 			}
 		]
@@ -1014,7 +1014,7 @@ const gfiNl = {
 			},
 			{
 				"name": "Webfiche",
-				"label": "http://wijken.brussels/1/q/[%ID%]",
+				"label": "http://wijken.brussels/1/q/[%ID_DRU%]",
 				"type": "link"
 			},
 			{
@@ -1074,7 +1074,7 @@ const gfiNl = {
 			},
 			{
 				"name": "Webfiche",
-				"label": "http://wijken.brussels/1/qp/[%ID%]",
+				"label": "http://wijken.brussels/1/qp/[%ID_DRU%]",
 				"type": "link"
 			},
 			{
