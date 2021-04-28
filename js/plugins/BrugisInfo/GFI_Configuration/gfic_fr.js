@@ -109,7 +109,7 @@ const gfiFr = {
 	},
 	"BDU_DMS_PROT:Arbres_remarquables_abattus_ou_disparus": {
 		"actiontype": "GRID",
-		"title": "[%TAX_FR%]",
+		"title": "[%NOM_FR%]",
 		"attributes": [{
 				"name": "Circonférence",
 				"label": "[%CIRCONFERENCE%] cm",

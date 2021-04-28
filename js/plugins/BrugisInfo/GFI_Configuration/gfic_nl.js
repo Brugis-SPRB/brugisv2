@@ -168,18 +168,13 @@ const gfiNl = {
 				"type": "string"
 			},
 			{
-				"name": "CMS link",
-				"label": "http://bomen-inventaris.irisnet.be/manager/index.php?table=36&id=[%ID_ARBRE_CMS%]",
-				"type": "link"
-			},
-			{
 				"name": "Boomfiche",
-				"label": "http://bomen-inventaris.irisnet.be/arbre/[%RESULTS_NL%]/[%ID_ARBRE_CMS%]/",
+				"label": "[%URL_NL%]",
 				"type": "link"
 			},
 			{
 				"name": "Foto",
-				"label": "http://bomen-inventaris.irisnet.be/medias/trees/[%FIRSTIMAGE%]",
+				"label": "[%FIRSTIMAGE%]",
 				"type": "picture"
 			},
 			{
