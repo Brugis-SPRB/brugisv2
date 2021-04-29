@@ -127,7 +127,7 @@ const gfiFr = {
 			},
 			{
 				"name": "Fiche de l'arbre",
-				"label": "[%URL_FR%]/",
+				"label": "[%URL_FR%]",
 				"type": "link"
 			},
 			{
