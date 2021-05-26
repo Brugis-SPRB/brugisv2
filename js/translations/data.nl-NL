@@ -90,7 +90,7 @@
       "import": "Import",
       "close": "Voltooid"
     },
-    "Area": "Overvlakte",
+    "Area": "Oppervlakte",
     "Centroid": "Zwaartepunt",
     "Language": "Taal",
     "msgId0": "{name} heeft op {takenDate, date, long} {numPhotos, plural, =0 {geen foto's} =1 {een foto} other {# foto's}} genomen.",

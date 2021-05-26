@@ -1088,7 +1088,7 @@ const gfiNl = {
 				"type": "date"
 			},
 			{
-				"name": "Entrepreneur",
+				"name": "Aannemer",
 				"label": "[%ENTREP%]",
 				"type": "string"
 			},
