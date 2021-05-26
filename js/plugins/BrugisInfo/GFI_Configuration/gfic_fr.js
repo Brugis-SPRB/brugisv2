@@ -1174,7 +1174,7 @@ const gfiFr = {
 			},
 			{
 				"name": "Actif",
-				"label": "[%ACTIF%]",
+				"label": "[%STADE%]",
 				"type": "string"
 			},
 			{
@@ -1184,7 +1184,7 @@ const gfiFr = {
 			},
 			{
 				"name": "Date de début",
-				"label": "[%DT_DEBUT%]",
+				"label": "[%DEBUT%]",
 				"type": "date"
 			},
 			{
@@ -1194,7 +1194,7 @@ const gfiFr = {
 			},
 			{
 				"name": "Année",
-				"label": "[%ANNEE%]",
+				"label": "[%SERIE%]",
 				"type": "string"
 			},
 			{
@@ -1205,11 +1205,6 @@ const gfiFr = {
 			{
 				"name": "Bureau",
 				"label": "[%BUREAU%]",
-				"type": "string"
-			},
-			{
-				"name": "Référence compta.",
-				"label": "[%REF_COMPTA%]",
 				"type": "string"
 			}
 		]
@@ -1281,21 +1276,11 @@ const gfiFr = {
 	},
 	"BDU_DRU:Contrats_de_renovation_urbaine_Programmes": {
 		"actiontype": "GRID",
-		"title": "Contrat de rénovation urbaine (Programmes): [%NOM_FR%]",
+		"title": "Contrat de rénovation urbaine (Programmes): [%AME_FR%]",
 		"attributes": [{
 				"name": "Contrat de RU",
-				"label": "[%NOM_FR%]",
+				"label": "[%NAME_FR%]",
 				"type": "string"
-			},
-			{
-				"name": "Série",
-				"label": "[%SERIE%]",
-				"type": "string"
-			},
-			{
-				"name": "Documentation",
-				"label": "[%DOC%]",
-				"type": "link"
 			}
 		]
 	},

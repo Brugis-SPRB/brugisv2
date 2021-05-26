@@ -1004,7 +1004,7 @@ const gfiNl = {
 			},
 			{
 				"name": "Actief",
-				"label": "[%ACTIF%]",
+				"label": "[%STADE%]",
 				"type": "string"
 			},
 			{
@@ -1014,7 +1014,7 @@ const gfiNl = {
 			},
 			{
 				"name": "Begindatum",
-				"label": "[%DT_DEBUT%]",
+				"label": "[%DEBUT%]",
 				"type": "date"
 			},
 			{
@@ -1024,7 +1024,7 @@ const gfiNl = {
 			},
 			{
 				"name": "Jaar",
-				"label": "[%ANNEE%]",
+				"label": "[%SERIE%]",
 				"type": "string"
 			},
 			{
@@ -1035,11 +1035,6 @@ const gfiNl = {
 			{
 				"name": "studiebureau",
 				"label": "[%BUREAU%]",
-				"type": "string"
-			},
-			{
-				"name": "Comptabiliteit",
-				"label": "[%REF_COMPTA%]",
 				"type": "string"
 			}
 		]
@@ -1111,21 +1106,11 @@ const gfiNl = {
 	},
 	"BSO_DSV:Stadsvernieuwingscontracten_Programmas": {
 		"actiontype": "GRID",
-		"title": "Stadsvernieuwingscontracten (Programmas): [%NOM_NL%]",
+		"title": "Stadsvernieuwingscontracten (Programmas): [%NAME_NL%]",
 		"attributes": [{
 				"name": "SV Contrat",
-				"label": "[%NOM_NL%]",
+				"label": "[%NAME_NL%]",
 				"type": "string"
-			},
-			{
-				"name": "Serie",
-				"label": "[%SERIE%]",
-				"type": "string"
-			},
-			{
-				"name": "Documenten",
-				"label": "[%DOC%]",
-				"type": "link"
 			}
 		]
 	},
