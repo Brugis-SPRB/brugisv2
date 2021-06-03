@@ -154,362 +154,6 @@
         <SRS>EPSG:900913</SRS>
         <LatLonBoundingBox maxx="4.49547992326272" maxy="50.9218586969616" minx="4.22527159306639" miny="50.7599660513373" />
         <Layer noSubsets="0" opaque="0" queryable="1">
-          <Name>RRU</Name>
-          <Title>RRU</Title>
-          <Layer noSubsets="0" opaque="0" queryable="1">
-            <Name>Publicité</Name>
-            <Title>Publicité</Title>
-            <Layer queryable="1">
-              <Name>BDU:Espaces_verts</Name>
-              <Title>Espaces verts</Title>
-              <Abstract />
-              <KeywordList>
-                <Keyword>A10_RRU_ESPVERT</Keyword>
-                <Keyword>features</Keyword>
-              </KeywordList>
-              <SRS>EPSG:31370</SRS>
-              <LatLonBoundingBox maxx="4.4793546402929145" maxy="50.913596057962835" minx="4.2424703658155485" miny="50.76341280228884" />
-              <BoundingBox SRS="EPSG:31370" maxx="157851.758012765" maxy="178169.335000078" minx="141192.712" miny="161470.180000081" />
-              <Style>
-                <Name>Espace vert</Name>
-                <Title>Espaces verts</Title>
-                <Abstract />
-                <LegendURL height="20" width="20">
-                  <Format>image/png</Format>
-                  <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Espaces_verts" ns0:type="simple" />
-                </LegendURL>
-              </Style>
-              <Style>
-                <Name>Groengebieden</Name>
-                <Title>Groengebieden</Title>
-                <Abstract />
-                <LegendURL height="20" width="20">
-                  <Format>image/png</Format>
-                  <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Espaces_verts&amp;style=Groengebieden" ns0:type="simple" />
-                </LegendURL>
-              </Style>
-            </Layer>
-            <Layer queryable="1">
-              <Name>BDU:Biens_classes_ou_en_sauvegarde</Name>
-              <Title>Biens classés ou en sauvegarde</Title>
-              <Abstract />
-              <KeywordList>
-                <Keyword>features</Keyword>
-                <Keyword>VM_A40_CLASVGD</Keyword>
-              </KeywordList>
-              <SRS>EPSG:31370</SRS>
-              <LatLonBoundingBox maxx="4.478169709989028" maxy="50.90437454523197" minx="4.248607806424558" miny="50.763399482792785" />
-              <BoundingBox SRS="EPSG:31370" maxx="157769.962" maxy="177143.49721064" minx="141622.696" miny="161467.996842084" />
-              <Style>
-                <Name>Biens classes ou en sauvegarde</Name>
-                <Title>Biens classes ou en sauvegarde</Title>
-                <Abstract>Biens classes ou en sauvegarde</Abstract>
-                <LegendURL height="20" width="20">
-                  <Format>image/png</Format>
-                  <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Biens_classes_ou_en_sauvegarde" ns0:type="simple" />
-                </LegendURL>
-              </Style>
-              <Style>
-                <Name>Goed dat beschermd is of ingeschreven op de bewaarlijst</Name>
-                <Title>Goed dat beschermd is of ingeschreven op de bewaarlijst</Title>
-                <Abstract>Goed dat beschermd is of ingeschreven op de bewaarlijst</Abstract>
-                <LegendURL height="20" width="20">
-                  <Format>image/png</Format>
-                  <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Biens_classes_ou_en_sauvegarde&amp;style=Goed+dat+beschermd+is+of+ingeschreven+op+de+bewaarlijst" ns0:type="simple" />
-                </LegendURL>
-              </Style>
-            </Layer>
-            <Layer queryable="1">
-              <Name>BDU:Publicite</Name>
-              <Title>Publicité</Title>
-              <Abstract />
-              <KeywordList>
-                <Keyword>A10_RRU_PUB</Keyword>
-                <Keyword>features</Keyword>
-              </KeywordList>
-              <SRS>EPSG:31370</SRS>
-              <LatLonBoundingBox maxx="4.481540382044033" maxy="50.91359611759904" minx="4.242470365795714" miny="50.76321342021597" />
-              <BoundingBox SRS="EPSG:31370" maxx="158005.471999992" maxy="178169.335842081" minx="141192.712000018" miny="161448.001048908" />
-              <Style>
-                <Name>Publicite</Name>
-                <Title>Publicite</Title>
-                <Abstract />
-                <LegendURL height="20" width="20">
-                  <Format>image/png</Format>
-                  <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Publicite" ns0:type="simple" />
-                </LegendURL>
-              </Style>
-              <Style>
-                <Name>Reclame</Name>
-                <Title>Reclame</Title>
-                <Abstract />
-                <LegendURL height="20" width="20">
-                  <Format>image/png</Format>
-                  <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Publicite&amp;style=Reclame" ns0:type="simple" />
-                </LegendURL>
-              </Style>
-            </Layer>
-          </Layer>
-          <Layer noSubsets="0" opaque="0" queryable="1">
-            <Name>Enseignes</Name>
-            <Title>Enseignes</Title>
-            <Layer queryable="1">
-              <Name>BDU:Galeries_commercantes</Name>
-              <Title>Galeries commerçantes</Title>
-              <Abstract />
-              <KeywordList>
-                <Keyword>A10_AF_GALCOMM</Keyword>
-                <Keyword>features</Keyword>
-              </KeywordList>
-              <SRS>EPSG:31370</SRS>
-              <LatLonBoundingBox maxx="4.46355095398464" maxy="50.8946976555756" minx="4.279589616898083" miny="50.81459298156196" />
-              <BoundingBox SRS="EPSG:31370" maxx="156743.083999992" maxy="176067.019842078" minx="143800.675000006" miny="167160.489842088" />
-              <Style>
-                <Name>Galeries commercantes</Name>
-                <Title>Galeries commercantes</Title>
-                <Abstract />
-                <LegendURL height="20" width="20">
-                  <Format>image/png</Format>
-                  <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Galeries_commercantes" ns0:type="simple" />
-                </LegendURL>
-              </Style>
-              <Style>
-                <Name>Winkelgalerijen</Name>
-                <Title>Winkelgalerijen</Title>
-                <Abstract />
-                <LegendURL height="20" width="20">
-                  <Format>image/png</Format>
-                  <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Galeries_commercantes&amp;style=Winkelgalerijen" ns0:type="simple" />
-                </LegendURL>
-              </Style>
-            </Layer>
-            <Layer queryable="1">
-              <Name>BDU:Liseres_de_noyau_commercial</Name>
-              <Title>Liserés de noyau commercial</Title>
-              <Abstract />
-              <KeywordList>
-                <Keyword>features</Keyword>
-                <Keyword>A10_AF_NOYCOMM</Keyword>
-              </KeywordList>
-              <SRS>EPSG:31370</SRS>
-              <LatLonBoundingBox maxx="4.4658619837100035" maxy="50.90087956084193" minx="4.292366048663395" miny="50.7869460334785" />
-              <BoundingBox SRS="EPSG:31370" maxx="156904.759108068" maxy="176754.768842068" minx="144700.240000006" miny="164085.270436819" />
-              <Style>
-                <Name>Liserés de noyau commercial</Name>
-                <Title>Liseres de noyau commercial</Title>
-                <Abstract />
-                <LegendURL height="20" width="20">
-                  <Format>image/png</Format>
-                  <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Liseres_de_noyau_commercial" ns0:type="simple" />
-                </LegendURL>
-              </Style>
-              <Style>
-                <Name>Linten voor handelskern</Name>
-                <Title>Linten voor handelskern</Title>
-                <Abstract />
-                <LegendURL height="20" width="20">
-                  <Format>image/png</Format>
-                  <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Liseres_de_noyau_commercial&amp;style=Linten+voor+handelskern" ns0:type="simple" />
-                </LegendURL>
-              </Style>
-            </Layer>
-            <Layer queryable="1">
-              <Name>BDU:Espaces_verts</Name>
-              <Title>Espaces verts</Title>
-              <Abstract />
-              <KeywordList>
-                <Keyword>A10_RRU_ESPVERT</Keyword>
-                <Keyword>features</Keyword>
-              </KeywordList>
-              <SRS>EPSG:31370</SRS>
-              <LatLonBoundingBox maxx="4.4793546402929145" maxy="50.913596057962835" minx="4.2424703658155485" miny="50.76341280228884" />
-              <BoundingBox SRS="EPSG:31370" maxx="157851.758012765" maxy="178169.335000078" minx="141192.712" miny="161470.180000081" />
-              <Style>
-                <Name>Espace vert</Name>
-                <Title>Espaces verts</Title>
-                <Abstract />
-                <LegendURL height="20" width="20">
-                  <Format>image/png</Format>
-                  <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Espaces_verts" ns0:type="simple" />
-                </LegendURL>
-              </Style>
-              <Style>
-                <Name>Groengebieden</Name>
-                <Title>Groengebieden</Title>
-                <Abstract />
-                <LegendURL height="20" width="20">
-                  <Format>image/png</Format>
-                  <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Espaces_verts&amp;style=Groengebieden" ns0:type="simple" />
-                </LegendURL>
-              </Style>
-            </Layer>
-            <Layer queryable="1">
-              <Name>BDU:Biens_classes_ou_en_sauvegarde</Name>
-              <Title>Biens classés ou en sauvegarde</Title>
-              <Abstract />
-              <KeywordList>
-                <Keyword>features</Keyword>
-                <Keyword>VM_A40_CLASVGD</Keyword>
-              </KeywordList>
-              <SRS>EPSG:31370</SRS>
-              <LatLonBoundingBox maxx="4.478169709989028" maxy="50.90437454523197" minx="4.248607806424558" miny="50.763399482792785" />
-              <BoundingBox SRS="EPSG:31370" maxx="157769.962" maxy="177143.49721064" minx="141622.696" miny="161467.996842084" />
-              <Style>
-                <Name>Biens classes ou en sauvegarde</Name>
-                <Title>Biens classes ou en sauvegarde</Title>
-                <Abstract>Biens classes ou en sauvegarde</Abstract>
-                <LegendURL height="20" width="20">
-                  <Format>image/png</Format>
-                  <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Biens_classes_ou_en_sauvegarde" ns0:type="simple" />
-                </LegendURL>
-              </Style>
-              <Style>
-                <Name>Goed dat beschermd is of ingeschreven op de bewaarlijst</Name>
-                <Title>Goed dat beschermd is of ingeschreven op de bewaarlijst</Title>
-                <Abstract>Goed dat beschermd is of ingeschreven op de bewaarlijst</Abstract>
-                <LegendURL height="20" width="20">
-                  <Format>image/png</Format>
-                  <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Biens_classes_ou_en_sauvegarde&amp;style=Goed+dat+beschermd+is+of+ingeschreven+op+de+bewaarlijst" ns0:type="simple" />
-                </LegendURL>
-              </Style>
-            </Layer>
-            <Layer queryable="1">
-              <Name>BDU:Enseignes</Name>
-              <Title>Enseignes</Title>
-              <Abstract />
-              <KeywordList>
-                <Keyword>features</Keyword>
-                <Keyword>A10_RRU_ENS</Keyword>
-              </KeywordList>
-              <SRS>EPSG:31370</SRS>
-              <LatLonBoundingBox maxx="4.4815377371778204" maxy="50.91251168533954" minx="4.243647422994477" miny="50.76321465595634" />
-              <BoundingBox SRS="EPSG:31370" maxx="158005.471999992" maxy="178048.697842097" minx="141275.288997002" miny="161448.001048908" />
-              <Style>
-                <Name>Enseignes</Name>
-                <Title>Enseignes</Title>
-                <Abstract />
-                <LegendURL height="20" width="20">
-                  <Format>image/png</Format>
-                  <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Enseignes" ns0:type="simple" />
-                </LegendURL>
-              </Style>
-              <Style>
-                <Name>Uithangborden</Name>
-                <Title>Uithangborden</Title>
-                <Abstract />
-                <LegendURL height="20" width="20">
-                  <Format>image/png</Format>
-                  <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Enseignes&amp;style=Uithangborden" ns0:type="simple" />
-                </LegendURL>
-              </Style>
-            </Layer>
-            <Layer queryable="1">
-              <Name>BDU:Zichee</Name>
-              <Title>Zichée</Title>
-              <Abstract />
-              <KeywordList>
-                <Keyword>features</Keyword>
-                <Keyword>A10_AF_ZICHEE</Keyword>
-              </KeywordList>
-              <SRS>EPSG:31370</SRS>
-              <LatLonBoundingBox maxx="4.477387070217805" maxy="50.901112280478905" minx="4.254513192332806" miny="50.763372966306044" />
-              <BoundingBox SRS="EPSG:31370" maxx="157715.450695506" maxy="176780.588842066" minx="142037.528418829" miny="161464.403842084" />
-              <Style>
-                <Name>Zichee</Name>
-                <Title>ZICHEE</Title>
-                <Abstract />
-                <LegendURL height="20" width="20">
-                  <Format>image/png</Format>
-                  <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Zichee" ns0:type="simple" />
-                </LegendURL>
-              </Style>
-              <Style>
-                <Name>GCHEWS</Name>
-                <Title>GCHEWS</Title>
-                <Abstract />
-                <LegendURL height="20" width="20">
-                  <Format>image/png</Format>
-                  <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Zichee&amp;style=GCHEWS" ns0:type="simple" />
-                </LegendURL>
-              </Style>
-            </Layer>
-          </Layer>
-          <Layer noSubsets="0" opaque="0" queryable="1">
-            <Name>Accessibilité</Name>
-            <Title>Accessibilité</Title>
-            <Layer queryable="1">
-              <Name>BDU:Espaces_verts</Name>
-              <Title>Espaces verts</Title>
-              <Abstract />
-              <KeywordList>
-                <Keyword>A10_RRU_ESPVERT</Keyword>
-                <Keyword>features</Keyword>
-              </KeywordList>
-              <SRS>EPSG:31370</SRS>
-              <LatLonBoundingBox maxx="4.4793546402929145" maxy="50.913596057962835" minx="4.2424703658155485" miny="50.76341280228884" />
-              <BoundingBox SRS="EPSG:31370" maxx="157851.758012765" maxy="178169.335000078" minx="141192.712" miny="161470.180000081" />
-              <Style>
-                <Name>Espace vert</Name>
-                <Title>Espaces verts</Title>
-                <Abstract />
-                <LegendURL height="20" width="20">
-                  <Format>image/png</Format>
-                  <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Espaces_verts" ns0:type="simple" />
-                </LegendURL>
-              </Style>
-              <Style>
-                <Name>Groengebieden</Name>
-                <Title>Groengebieden</Title>
-                <Abstract />
-                <LegendURL height="20" width="20">
-                  <Format>image/png</Format>
-                  <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Espaces_verts&amp;style=Groengebieden" ns0:type="simple" />
-                </LegendURL>
-              </Style>
-            </Layer>
-            <Layer noSubsets="0" opaque="0" queryable="1">
-              <Name>BDU:Accessibilite_lineaire</Name>
-              <Title>Accessibilité linéaire</Title>
-              <Abstract/>
-              <KeywordList>
-                <Keyword>features</Keyword>
-                <Keyword>A60_RRU_ZACC_LINEAR</Keyword>
-              </KeywordList>
-              <SRS>EPSG:31370</SRS>
-              <LatLonBoundingBox maxx="4.4814185885749405" maxy="50.913653774000515" minx="4.242470212763538" miny="50.76335283201384"/>
-              <BoundingBox SRS="EPSG:31370" maxx="165088.0" maxy="185088.0" minx="140000.0" miny="160000.0"/>
-              <Style>
-                <Name>Accessibilite_linear</Name>
-                <Title>Accessibilite</Title>
-                <LegendURL height="60" width="62">
-                  <Format>image/png</Format>
-                  <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=BDU%3AAccessibilite_lineaire" ns0:type="simple"/>
-                </LegendURL>
-              </Style>
-            </Layer>
-            <Layer noSubsets="0" opaque="0" queryable="1">
-              <Name>BDU:Accessibilite_ponctuelle</Name>
-              <Title>Arrêts</Title>
-              <Abstract/>
-              <KeywordList>
-                <Keyword>features</Keyword>
-                <Keyword>A60_RRU_ZACC_POINT</Keyword>
-              </KeywordList>
-              <SRS>EPSG:31370</SRS>
-              <LatLonBoundingBox maxx="4.4814185885749405" maxy="50.913653774000515" minx="4.242470212763538" miny="50.76335283201384"/>
-              <BoundingBox SRS="EPSG:31370" maxx="165088.0" maxy="185088.0" minx="140000.0" miny="160000.0"/>
-              <Style>
-                <Name>Accessibilite_points</Name>
-                <Title>gold square point style</Title>
-                <LegendURL height="100" width="100">
-                  <Format>image/png</Format>
-                  <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=BDU%3AAccessibilite_ponctuelle" ns0:type="simple"/>
-                </LegendURL>
-              </Style>
-            </Layer>
-          </Layer>
-        </Layer>
-        <Layer noSubsets="0" opaque="0" queryable="1">
           <Name>Monuments et Sites</Name>
           <Title>Monuments et Sites</Title>
           <Layer noSubsets="0" opaque="0" queryable="1">
@@ -1919,6 +1563,362 @@
               <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Poles_de_developpement_prioritaire" ns0:type="simple" />
             </LegendURL>
           </Style>
+        </Layer>
+        <Layer noSubsets="0" opaque="0" queryable="1">
+          <Name>RRU</Name>
+          <Title>RRU</Title>
+          <Layer noSubsets="0" opaque="0" queryable="1">
+            <Name>Publicité</Name>
+            <Title>Publicité</Title>
+            <Layer queryable="1">
+              <Name>BDU:Espaces_verts</Name>
+              <Title>Espaces verts</Title>
+              <Abstract />
+              <KeywordList>
+                <Keyword>A10_RRU_ESPVERT</Keyword>
+                <Keyword>features</Keyword>
+              </KeywordList>
+              <SRS>EPSG:31370</SRS>
+              <LatLonBoundingBox maxx="4.4793546402929145" maxy="50.913596057962835" minx="4.2424703658155485" miny="50.76341280228884" />
+              <BoundingBox SRS="EPSG:31370" maxx="157851.758012765" maxy="178169.335000078" minx="141192.712" miny="161470.180000081" />
+              <Style>
+                <Name>Espace vert</Name>
+                <Title>Espaces verts</Title>
+                <Abstract />
+                <LegendURL height="20" width="20">
+                  <Format>image/png</Format>
+                  <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Espaces_verts" ns0:type="simple" />
+                </LegendURL>
+              </Style>
+              <Style>
+                <Name>Groengebieden</Name>
+                <Title>Groengebieden</Title>
+                <Abstract />
+                <LegendURL height="20" width="20">
+                  <Format>image/png</Format>
+                  <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Espaces_verts&amp;style=Groengebieden" ns0:type="simple" />
+                </LegendURL>
+              </Style>
+            </Layer>
+            <Layer queryable="1">
+              <Name>BDU:Biens_classes_ou_en_sauvegarde</Name>
+              <Title>Biens classés ou en sauvegarde</Title>
+              <Abstract />
+              <KeywordList>
+                <Keyword>features</Keyword>
+                <Keyword>VM_A40_CLASVGD</Keyword>
+              </KeywordList>
+              <SRS>EPSG:31370</SRS>
+              <LatLonBoundingBox maxx="4.478169709989028" maxy="50.90437454523197" minx="4.248607806424558" miny="50.763399482792785" />
+              <BoundingBox SRS="EPSG:31370" maxx="157769.962" maxy="177143.49721064" minx="141622.696" miny="161467.996842084" />
+              <Style>
+                <Name>Biens classes ou en sauvegarde</Name>
+                <Title>Biens classes ou en sauvegarde</Title>
+                <Abstract>Biens classes ou en sauvegarde</Abstract>
+                <LegendURL height="20" width="20">
+                  <Format>image/png</Format>
+                  <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Biens_classes_ou_en_sauvegarde" ns0:type="simple" />
+                </LegendURL>
+              </Style>
+              <Style>
+                <Name>Goed dat beschermd is of ingeschreven op de bewaarlijst</Name>
+                <Title>Goed dat beschermd is of ingeschreven op de bewaarlijst</Title>
+                <Abstract>Goed dat beschermd is of ingeschreven op de bewaarlijst</Abstract>
+                <LegendURL height="20" width="20">
+                  <Format>image/png</Format>
+                  <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Biens_classes_ou_en_sauvegarde&amp;style=Goed+dat+beschermd+is+of+ingeschreven+op+de+bewaarlijst" ns0:type="simple" />
+                </LegendURL>
+              </Style>
+            </Layer>
+            <Layer queryable="1">
+              <Name>BDU:Publicite</Name>
+              <Title>Publicité</Title>
+              <Abstract />
+              <KeywordList>
+                <Keyword>A10_RRU_PUB</Keyword>
+                <Keyword>features</Keyword>
+              </KeywordList>
+              <SRS>EPSG:31370</SRS>
+              <LatLonBoundingBox maxx="4.481540382044033" maxy="50.91359611759904" minx="4.242470365795714" miny="50.76321342021597" />
+              <BoundingBox SRS="EPSG:31370" maxx="158005.471999992" maxy="178169.335842081" minx="141192.712000018" miny="161448.001048908" />
+              <Style>
+                <Name>Publicite</Name>
+                <Title>Publicite</Title>
+                <Abstract />
+                <LegendURL height="20" width="20">
+                  <Format>image/png</Format>
+                  <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Publicite" ns0:type="simple" />
+                </LegendURL>
+              </Style>
+              <Style>
+                <Name>Reclame</Name>
+                <Title>Reclame</Title>
+                <Abstract />
+                <LegendURL height="20" width="20">
+                  <Format>image/png</Format>
+                  <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Publicite&amp;style=Reclame" ns0:type="simple" />
+                </LegendURL>
+              </Style>
+            </Layer>
+          </Layer>
+          <Layer noSubsets="0" opaque="0" queryable="1">
+            <Name>Enseignes</Name>
+            <Title>Enseignes</Title>
+            <Layer queryable="1">
+              <Name>BDU:Galeries_commercantes</Name>
+              <Title>Galeries commerçantes</Title>
+              <Abstract />
+              <KeywordList>
+                <Keyword>A10_AF_GALCOMM</Keyword>
+                <Keyword>features</Keyword>
+              </KeywordList>
+              <SRS>EPSG:31370</SRS>
+              <LatLonBoundingBox maxx="4.46355095398464" maxy="50.8946976555756" minx="4.279589616898083" miny="50.81459298156196" />
+              <BoundingBox SRS="EPSG:31370" maxx="156743.083999992" maxy="176067.019842078" minx="143800.675000006" miny="167160.489842088" />
+              <Style>
+                <Name>Galeries commercantes</Name>
+                <Title>Galeries commercantes</Title>
+                <Abstract />
+                <LegendURL height="20" width="20">
+                  <Format>image/png</Format>
+                  <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Galeries_commercantes" ns0:type="simple" />
+                </LegendURL>
+              </Style>
+              <Style>
+                <Name>Winkelgalerijen</Name>
+                <Title>Winkelgalerijen</Title>
+                <Abstract />
+                <LegendURL height="20" width="20">
+                  <Format>image/png</Format>
+                  <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Galeries_commercantes&amp;style=Winkelgalerijen" ns0:type="simple" />
+                </LegendURL>
+              </Style>
+            </Layer>
+            <Layer queryable="1">
+              <Name>BDU:Liseres_de_noyau_commercial</Name>
+              <Title>Liserés de noyau commercial</Title>
+              <Abstract />
+              <KeywordList>
+                <Keyword>features</Keyword>
+                <Keyword>A10_AF_NOYCOMM</Keyword>
+              </KeywordList>
+              <SRS>EPSG:31370</SRS>
+              <LatLonBoundingBox maxx="4.4658619837100035" maxy="50.90087956084193" minx="4.292366048663395" miny="50.7869460334785" />
+              <BoundingBox SRS="EPSG:31370" maxx="156904.759108068" maxy="176754.768842068" minx="144700.240000006" miny="164085.270436819" />
+              <Style>
+                <Name>Liserés de noyau commercial</Name>
+                <Title>Liseres de noyau commercial</Title>
+                <Abstract />
+                <LegendURL height="20" width="20">
+                  <Format>image/png</Format>
+                  <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Liseres_de_noyau_commercial" ns0:type="simple" />
+                </LegendURL>
+              </Style>
+              <Style>
+                <Name>Linten voor handelskern</Name>
+                <Title>Linten voor handelskern</Title>
+                <Abstract />
+                <LegendURL height="20" width="20">
+                  <Format>image/png</Format>
+                  <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Liseres_de_noyau_commercial&amp;style=Linten+voor+handelskern" ns0:type="simple" />
+                </LegendURL>
+              </Style>
+            </Layer>
+            <Layer queryable="1">
+              <Name>BDU:Espaces_verts</Name>
+              <Title>Espaces verts</Title>
+              <Abstract />
+              <KeywordList>
+                <Keyword>A10_RRU_ESPVERT</Keyword>
+                <Keyword>features</Keyword>
+              </KeywordList>
+              <SRS>EPSG:31370</SRS>
+              <LatLonBoundingBox maxx="4.4793546402929145" maxy="50.913596057962835" minx="4.2424703658155485" miny="50.76341280228884" />
+              <BoundingBox SRS="EPSG:31370" maxx="157851.758012765" maxy="178169.335000078" minx="141192.712" miny="161470.180000081" />
+              <Style>
+                <Name>Espace vert</Name>
+                <Title>Espaces verts</Title>
+                <Abstract />
+                <LegendURL height="20" width="20">
+                  <Format>image/png</Format>
+                  <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Espaces_verts" ns0:type="simple" />
+                </LegendURL>
+              </Style>
+              <Style>
+                <Name>Groengebieden</Name>
+                <Title>Groengebieden</Title>
+                <Abstract />
+                <LegendURL height="20" width="20">
+                  <Format>image/png</Format>
+                  <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Espaces_verts&amp;style=Groengebieden" ns0:type="simple" />
+                </LegendURL>
+              </Style>
+            </Layer>
+            <Layer queryable="1">
+              <Name>BDU:Biens_classes_ou_en_sauvegarde</Name>
+              <Title>Biens classés ou en sauvegarde</Title>
+              <Abstract />
+              <KeywordList>
+                <Keyword>features</Keyword>
+                <Keyword>VM_A40_CLASVGD</Keyword>
+              </KeywordList>
+              <SRS>EPSG:31370</SRS>
+              <LatLonBoundingBox maxx="4.478169709989028" maxy="50.90437454523197" minx="4.248607806424558" miny="50.763399482792785" />
+              <BoundingBox SRS="EPSG:31370" maxx="157769.962" maxy="177143.49721064" minx="141622.696" miny="161467.996842084" />
+              <Style>
+                <Name>Biens classes ou en sauvegarde</Name>
+                <Title>Biens classes ou en sauvegarde</Title>
+                <Abstract>Biens classes ou en sauvegarde</Abstract>
+                <LegendURL height="20" width="20">
+                  <Format>image/png</Format>
+                  <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Biens_classes_ou_en_sauvegarde" ns0:type="simple" />
+                </LegendURL>
+              </Style>
+              <Style>
+                <Name>Goed dat beschermd is of ingeschreven op de bewaarlijst</Name>
+                <Title>Goed dat beschermd is of ingeschreven op de bewaarlijst</Title>
+                <Abstract>Goed dat beschermd is of ingeschreven op de bewaarlijst</Abstract>
+                <LegendURL height="20" width="20">
+                  <Format>image/png</Format>
+                  <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Biens_classes_ou_en_sauvegarde&amp;style=Goed+dat+beschermd+is+of+ingeschreven+op+de+bewaarlijst" ns0:type="simple" />
+                </LegendURL>
+              </Style>
+            </Layer>
+            <Layer queryable="1">
+              <Name>BDU:Enseignes</Name>
+              <Title>Enseignes</Title>
+              <Abstract />
+              <KeywordList>
+                <Keyword>features</Keyword>
+                <Keyword>A10_RRU_ENS</Keyword>
+              </KeywordList>
+              <SRS>EPSG:31370</SRS>
+              <LatLonBoundingBox maxx="4.4815377371778204" maxy="50.91251168533954" minx="4.243647422994477" miny="50.76321465595634" />
+              <BoundingBox SRS="EPSG:31370" maxx="158005.471999992" maxy="178048.697842097" minx="141275.288997002" miny="161448.001048908" />
+              <Style>
+                <Name>Enseignes</Name>
+                <Title>Enseignes</Title>
+                <Abstract />
+                <LegendURL height="20" width="20">
+                  <Format>image/png</Format>
+                  <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Enseignes" ns0:type="simple" />
+                </LegendURL>
+              </Style>
+              <Style>
+                <Name>Uithangborden</Name>
+                <Title>Uithangborden</Title>
+                <Abstract />
+                <LegendURL height="20" width="20">
+                  <Format>image/png</Format>
+                  <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Enseignes&amp;style=Uithangborden" ns0:type="simple" />
+                </LegendURL>
+              </Style>
+            </Layer>
+            <Layer queryable="1">
+              <Name>BDU:Zichee</Name>
+              <Title>Zichée</Title>
+              <Abstract />
+              <KeywordList>
+                <Keyword>features</Keyword>
+                <Keyword>A10_AF_ZICHEE</Keyword>
+              </KeywordList>
+              <SRS>EPSG:31370</SRS>
+              <LatLonBoundingBox maxx="4.477387070217805" maxy="50.901112280478905" minx="4.254513192332806" miny="50.763372966306044" />
+              <BoundingBox SRS="EPSG:31370" maxx="157715.450695506" maxy="176780.588842066" minx="142037.528418829" miny="161464.403842084" />
+              <Style>
+                <Name>Zichee</Name>
+                <Title>ZICHEE</Title>
+                <Abstract />
+                <LegendURL height="20" width="20">
+                  <Format>image/png</Format>
+                  <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Zichee" ns0:type="simple" />
+                </LegendURL>
+              </Style>
+              <Style>
+                <Name>GCHEWS</Name>
+                <Title>GCHEWS</Title>
+                <Abstract />
+                <LegendURL height="20" width="20">
+                  <Format>image/png</Format>
+                  <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Zichee&amp;style=GCHEWS" ns0:type="simple" />
+                </LegendURL>
+              </Style>
+            </Layer>
+          </Layer>
+          <Layer noSubsets="0" opaque="0" queryable="1">
+            <Name>Accessibilité</Name>
+            <Title>Accessibilité</Title>
+            <Layer queryable="1">
+              <Name>BDU:Espaces_verts</Name>
+              <Title>Espaces verts</Title>
+              <Abstract />
+              <KeywordList>
+                <Keyword>A10_RRU_ESPVERT</Keyword>
+                <Keyword>features</Keyword>
+              </KeywordList>
+              <SRS>EPSG:31370</SRS>
+              <LatLonBoundingBox maxx="4.4793546402929145" maxy="50.913596057962835" minx="4.2424703658155485" miny="50.76341280228884" />
+              <BoundingBox SRS="EPSG:31370" maxx="157851.758012765" maxy="178169.335000078" minx="141192.712" miny="161470.180000081" />
+              <Style>
+                <Name>Espace vert</Name>
+                <Title>Espaces verts</Title>
+                <Abstract />
+                <LegendURL height="20" width="20">
+                  <Format>image/png</Format>
+                  <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Espaces_verts" ns0:type="simple" />
+                </LegendURL>
+              </Style>
+              <Style>
+                <Name>Groengebieden</Name>
+                <Title>Groengebieden</Title>
+                <Abstract />
+                <LegendURL height="20" width="20">
+                  <Format>image/png</Format>
+                  <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Espaces_verts&amp;style=Groengebieden" ns0:type="simple" />
+                </LegendURL>
+              </Style>
+            </Layer>
+            <Layer noSubsets="0" opaque="0" queryable="1">
+              <Name>BDU:Accessibilite_lineaire</Name>
+              <Title>Accessibilité linéaire</Title>
+              <Abstract/>
+              <KeywordList>
+                <Keyword>features</Keyword>
+                <Keyword>A60_RRU_ZACC_LINEAR</Keyword>
+              </KeywordList>
+              <SRS>EPSG:31370</SRS>
+              <LatLonBoundingBox maxx="4.4814185885749405" maxy="50.913653774000515" minx="4.242470212763538" miny="50.76335283201384"/>
+              <BoundingBox SRS="EPSG:31370" maxx="165088.0" maxy="185088.0" minx="140000.0" miny="160000.0"/>
+              <Style>
+                <Name>Accessibilite_linear</Name>
+                <Title>Accessibilite</Title>
+                <LegendURL height="60" width="62">
+                  <Format>image/png</Format>
+                  <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=BDU%3AAccessibilite_lineaire" ns0:type="simple"/>
+                </LegendURL>
+              </Style>
+            </Layer>
+            <Layer noSubsets="0" opaque="0" queryable="1">
+              <Name>BDU:Accessibilite_ponctuelle</Name>
+              <Title>Arrêts</Title>
+              <Abstract/>
+              <KeywordList>
+                <Keyword>features</Keyword>
+                <Keyword>A60_RRU_ZACC_POINT</Keyword>
+              </KeywordList>
+              <SRS>EPSG:31370</SRS>
+              <LatLonBoundingBox maxx="4.4814185885749405" maxy="50.913653774000515" minx="4.242470212763538" miny="50.76335283201384"/>
+              <BoundingBox SRS="EPSG:31370" maxx="165088.0" maxy="185088.0" minx="140000.0" miny="160000.0"/>
+              <Style>
+                <Name>Accessibilite_points</Name>
+                <Title>gold square point style</Title>
+                <LegendURL height="100" width="100">
+                  <Format>image/png</Format>
+                  <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=BDU%3AAccessibilite_ponctuelle" ns0:type="simple"/>
+                </LegendURL>
+              </Style>
+            </Layer>
+          </Layer>
         </Layer>
       </Layer>
       <Layer noSubsets="0" opaque="0" queryable="1">
