@@ -3,6 +3,14 @@ const news = {
     "locale": "fr-FR",
     "news": [
       {
+        "datestart": "2021-06-01",
+        "dateend": "2021-08-31",
+        "defcon": "5",
+        "title": "Modifications dans l'arborescence thématique de Brugis",
+        "img": 'brugis.png',
+        "message": "Les couches relatives au RRU se trouvent dorénavant sous Urbanisme. le dossier perspective.brussels a aussi fait l'objet de petits ajustements (nouvelles catégories PPAS et ZRU)."
+      },
+      {
         "datestart": "2021-02-16",
         "dateend": "2021-05-15",
         "defcon": "5",

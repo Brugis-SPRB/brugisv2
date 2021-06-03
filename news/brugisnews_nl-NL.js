@@ -2,6 +2,14 @@ const news = {
     "locale": "nl-NL",
     "news": [
       {
+        "datestart": "2021-06-01",
+        "dateend": "2021-08-31",
+        "defcon": "5",
+        "title": "Wijzigingen in de thematische boomstructuur van Brugis",
+        "img": 'brugis.png',
+        "message": "De lagen die betrekking hebben op de GSV zijn nu te vinden onder Stedenbouw. De rubriek perspectief.brussels is ook het onderwerp geweest van kleine aanpassingen (nieuwe categorie BBP en ZSH)."
+      },
+      {
         "datestart": "2021-02-16",
         "dateend": "2021-05-15",
         "defcon": "5",
