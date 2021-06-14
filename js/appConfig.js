@@ -46,9 +46,15 @@ module.exports = {
                     "autoload": true
                   },
                   "Bruxelles Mobilité": {
-                    "url": "https://data-mobility.brussels/geoserver/bm_inspire_fr/ows",
+                    "url": "https://data.mobility.brussels/geoserver/bm_inspire_fr/ows?service=wms&request=getCapabilities",
                     "type": "wms",
                     "title": "Bruxelles Mobilité",
+                    "autoload": false
+                  },
+                  "Bruxelles Mobilité pedestrian": {
+                    "url": "https://data.mobility.brussels/geoserver/bm_pedestrian/wms?service=wms&request=getCapabilities",
+                    "type": "wms",
+                    "title": "Bruxelles Mobilité pedestrian",
                     "autoload": false
                   },
                   "Bruxelles environnement": {
