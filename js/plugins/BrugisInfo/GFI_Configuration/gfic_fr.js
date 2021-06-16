@@ -1276,7 +1276,7 @@ const gfiFr = {
 	},
 	"BDU_DRU:Contrats_de_renovation_urbaine_Programmes": {
 		"actiontype": "GRID",
-		"title": "Contrat de rénovation urbaine (Programmes): [%AME_FR%]",
+		"title": "Contrat de rénovation urbaine (Programmes): [%NAME_FR%]",
 		"attributes": [{
 				"name": "Contrat de RU",
 				"label": "[%NAME_FR%]",
