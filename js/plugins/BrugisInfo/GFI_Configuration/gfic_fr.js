@@ -1570,6 +1570,32 @@ const gfiFr = {
 				"type": "string"
 			}
 		]
+	},
+	"PER:Schemas_directeurs": {
+		"actiontype": "GRID",
+		"title": "Schema directeur [%NUMBER%] - [%NOM%]",
+		"attributes": [{
+			"name": "Nom",
+			"label": "[%NOM%]",
+			"type": "string"
+		},
+		{
+			"name": "Numéro",
+			"label": "[%NUMBER%]",
+			"type": "string"
+		},
+		{
+				"name": "Date d'approbation",
+				"label": "[%DATE_APPROUVE%]",
+				"type": "string"
+		},
+		{
+				"name": "Lien",
+				"label": "[%URL_FR%]",
+				"type": "link",
+				"substutedString": "Cliquez ici."
+		}
+		]
 	}
 };
 

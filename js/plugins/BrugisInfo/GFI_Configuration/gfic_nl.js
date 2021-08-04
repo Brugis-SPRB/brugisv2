@@ -1465,6 +1465,32 @@ const gfiNl = {
 				"type": "string"
 			}
 		]
+	},
+	"PER:Richtschemas": {
+		"actiontype": "GRID",
+		"title": "Richtschema [%NUMBER%] - [%NAAM%]",
+		"attributes": [{
+			"name": "Naam",
+			"label": "[%NAAM%]",
+			"type": "string"
+		},
+		{
+			"name": "Nummer",
+			"label": "[%NUMBER%]",
+			"type": "string"
+		},
+		{
+				"name": "Goedgekeurd datum",
+				"label": "[%DATE_APPROUVE%]",
+				"type": "string"
+		},
+		{
+				"name": "Link",
+				"label": "[%URL_NL%]",
+				"type": "link",
+				"substutedString": "Klik hier."
+		}
+		]
 	}
 };
 module.exports = gfiNl;
