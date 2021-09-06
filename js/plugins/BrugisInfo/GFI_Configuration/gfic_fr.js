@@ -981,7 +981,7 @@ const gfiFr = {
 	},
 	"BDU:Zichee": {
 		"actiontype": "GRID",
-		"title": "Zone d'intérêt culturel, historique et d'embellisement",
+		"title": "Zone d'intérêt culturel, historique et d'embellissement",
 		"attributes": []
 	},
 	"BDU:Biens_classes_ou_en_sauvegarde": {
