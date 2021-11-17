@@ -1129,7 +1129,7 @@
               <Title>Historische kaarten</Title>
               <Layer queryable="1">
                 <Name>BSO_DML_ARCH:KAART_BASTENDORFF</Name>
-                <Title>Kaart Bastendorff</Title>
+                <Title>Gevectoriseerde Bastendorffkaart (1821 - 1832)</Title>
                 <Abstract>Layer-Group type layer: BSO_DML_ARCH:KAART_BASTENDORFF</Abstract>
                 <KeywordList/>
                 <SRS>EPSG:31370</SRS>
@@ -1139,6 +1139,26 @@
               <Layer noSubsets="0" opaque="0" queryable="1">
                 <Name>Gedetaileerde kaart Bastendorff</Name>
                 <Title>Gedetaileerde kaart Bastendorff</Title>
+                <Layer queryable="1" opaque="0">
+                  <Name>BSO_DML_ARCH:BAST_FONTEINEN</Name>
+                  <Title>Fonteinen</Title>
+                  <Abstract/>
+                  <KeywordList>
+                    <Keyword>features</Keyword>
+                    <Keyword>A40_ARCHEO_BASTENDORFF</Keyword>
+                  </KeywordList>
+                  <SRS>EPSG:31370</SRS>
+                  <LatLonBoundingBox minx="4.337178156933802" miny="50.832600659079674" maxx="4.368868961836379" maxy="50.85799190830123"/>
+                  <BoundingBox SRS="EPSG:31370" minx="147850.614622198" miny="169159.683897055" maxx="150081.93000361" maxy="171983.802854065"/>
+                  <Style>
+                    <Name>Bast_fonteinen</Name>
+                    <Title>Fonteinen</Title>
+                    <LegendURL width="20" height="20">
+                      <Format>image/png</Format>
+                      <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://10.128.81.203:8080/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=BSO_DML_ARCH%3ABAST_FONTEINEN"/>
+                    </LegendURL>
+                  </Style>
+                </Layer>
                 <Layer queryable="1" opaque="0">
                   <Name>BSO_DML_ARCH:BAST_STEDELIJKE_OPENBARE_VOORZIENINGEN</Name>
                   <Title>Stedelijke openbare voorzieningen</Title>
@@ -1196,6 +1216,26 @@
                     <LegendURL width="20" height="20">
                       <Format>image/png</Format>
                       <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://10.128.81.203:8080/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=BSO_DML_ARCH%3ABAST_VESTINGWERKEN"/>
+                    </LegendURL>
+                  </Style>
+                </Layer>
+                <Layer queryable="1" opaque="0">
+                  <Name>BSO_DML_ARCH:BAST_WATERPUTTEN</Name>
+                  <Title>Waterputten</Title>
+                  <Abstract/>
+                  <KeywordList>
+                    <Keyword>features</Keyword>
+                    <Keyword>A40_ARCHEO_BASTENDORFF</Keyword>
+                  </KeywordList>
+                  <SRS>EPSG:31370</SRS>
+                  <LatLonBoundingBox minx="4.337178156933802" miny="50.832600659079674" maxx="4.368868961836379" maxy="50.85799190830123"/>
+                  <BoundingBox SRS="EPSG:31370" minx="147850.614622198" miny="169159.683897055" maxx="150081.93000361" maxy="171983.802854065"/>
+                  <Style>
+                    <Name>Bast_waterputten</Name>
+                    <Title>Waterputten</Title>
+                    <LegendURL width="20" height="20">
+                      <Format>image/png</Format>
+                      <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://10.128.81.203:8080/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=BSO_DML_ARCH%3ABAST_WATERPUTTEN"/>
                     </LegendURL>
                   </Style>
                 </Layer>
