@@ -1124,323 +1124,6 @@
                 </Layer>
               </Layer>
             </Layer>
-            <Layer noSubsets="0" opaque="0" queryable="1">
-              <Name>Historische kaarten</Name>
-              <Title>Historische kaarten</Title>
-              <Layer queryable="1">
-                <Name>BSO_DML_ARCH:KAART_BASTENDORFF</Name>
-                <Title>Gevectoriseerde Bastendorffkaart (1821 - 1832)</Title>
-                <Abstract>Layer-Group type layer: BSO_DML_ARCH:KAART_BASTENDORFF</Abstract>
-                <KeywordList/>
-                <SRS>EPSG:31370</SRS>
-                <LatLonBoundingBox minx="4.337178156933802" miny="50.832600659079674" maxx="4.368868961836379" maxy="50.85799190830123"/>
-                <BoundingBox SRS="EPSG:31370" minx="147850.614622198" miny="169159.683897055" maxx="150081.93000361" maxy="171983.802854065"/>
-              </Layer>
-              <Layer noSubsets="0" opaque="0" queryable="1">
-                <Name>Gedetaileerde kaart Bastendorff</Name>
-                <Title>Gedetaileerde kaart Bastendorff</Title>
-                <Layer queryable="1" opaque="0">
-                  <Name>BSO_DML_ARCH:BAST_FONTEINEN</Name>
-                  <Title>Fonteinen</Title>
-                  <Abstract/>
-                  <KeywordList>
-                    <Keyword>features</Keyword>
-                    <Keyword>A40_ARCHEO_BASTENDORFF</Keyword>
-                  </KeywordList>
-                  <SRS>EPSG:31370</SRS>
-                  <LatLonBoundingBox minx="4.337178156933802" miny="50.832600659079674" maxx="4.368868961836379" maxy="50.85799190830123"/>
-                  <BoundingBox SRS="EPSG:31370" minx="147850.614622198" miny="169159.683897055" maxx="150081.93000361" maxy="171983.802854065"/>
-                  <Style>
-                    <Name>Bast_fonteinen</Name>
-                    <Title>Fonteinen</Title>
-                    <LegendURL width="20" height="20">
-                      <Format>image/png</Format>
-                      <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://10.128.81.203:8080/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=BSO_DML_ARCH%3ABAST_FONTEINEN"/>
-                    </LegendURL>
-                  </Style>
-                </Layer>
-                <Layer queryable="1" opaque="0">
-                  <Name>BSO_DML_ARCH:BAST_STEDELIJKE_OPENBARE_VOORZIENINGEN</Name>
-                  <Title>Stedelijke openbare voorzieningen</Title>
-                  <Abstract/>
-                  <KeywordList>
-                    <Keyword>features</Keyword>
-                    <Keyword>A40_ARCHEO_BASTENDORFF</Keyword>
-                  </KeywordList>
-                  <SRS>EPSG:31370</SRS>
-                  <LatLonBoundingBox minx="4.337178156933802" miny="50.832600659079674" maxx="4.368868961836379" maxy="50.85799190830123"/>
-                  <BoundingBox SRS="EPSG:31370" minx="147850.614622198" miny="169159.683897055" maxx="150081.93000361" maxy="171983.802854065"/>
-                  <Style>
-                    <Name>Bast_Stedelijke_openbare_voorzieningen</Name>
-                    <Title>Stedelijke openbare voorzieningen</Title>
-                    <LegendURL width="20" height="20">
-                      <Format>image/png</Format>
-                      <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://10.128.81.203:8080/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=BSO_DML_ARCH%3ABAST_STEDELIJKE_OPENBARE_VOORZIENINGEN"/>
-                    </LegendURL>
-                  </Style>
-                </Layer>
-                <Layer queryable="1" opaque="0">
-                  <Name>BSO_DML_ARCH:BAST_TRAPPEN</Name>
-                  <Title>Trappen</Title>
-                  <Abstract/>
-                  <KeywordList>
-                    <Keyword>features</Keyword>
-                    <Keyword>A40_ARCHEO_BASTENDORFF</Keyword>
-                  </KeywordList>
-                  <SRS>EPSG:31370</SRS>
-                  <LatLonBoundingBox minx="4.337178156933802" miny="50.832600659079674" maxx="4.368868961836379" maxy="50.85799190830123"/>
-                  <BoundingBox SRS="EPSG:31370" minx="147850.614622198" miny="169159.683897055" maxx="150081.93000361" maxy="171983.802854065"/>
-                  <Style>
-                    <Name>Bast_Trappen</Name>
-                    <Title>Trappen</Title>
-                    <LegendURL width="20" height="20">
-                      <Format>image/png</Format>
-                      <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://10.128.81.203:8080/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=BSO_DML_ARCH%3ABAST_TRAPPEN"/>
-                    </LegendURL>
-                  </Style>
-                </Layer>
-                <Layer queryable="1" opaque="0">
-                  <Name>BSO_DML_ARCH:BAST_VESTINGWERKEN</Name>
-                  <Title>Vestingwerken</Title>
-                  <Abstract/>
-                  <KeywordList>
-                    <Keyword>features</Keyword>
-                    <Keyword>A40_ARCHEO_BASTENDORFF</Keyword>
-                  </KeywordList>
-                  <SRS>EPSG:31370</SRS>
-                  <LatLonBoundingBox minx="4.337178156933802" miny="50.832600659079674" maxx="4.368868961836379" maxy="50.85799190830123"/>
-                  <BoundingBox SRS="EPSG:31370" minx="147850.614622198" miny="169159.683897055" maxx="150081.93000361" maxy="171983.802854065"/>
-                  <Style>
-                    <Name>Bast_Vestingwerken</Name>
-                    <Title>Vestingwerken</Title>
-                    <LegendURL width="20" height="20">
-                      <Format>image/png</Format>
-                      <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://10.128.81.203:8080/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=BSO_DML_ARCH%3ABAST_VESTINGWERKEN"/>
-                    </LegendURL>
-                  </Style>
-                </Layer>
-                <Layer queryable="1" opaque="0">
-                  <Name>BSO_DML_ARCH:BAST_WATERPUTTEN</Name>
-                  <Title>Waterputten</Title>
-                  <Abstract/>
-                  <KeywordList>
-                    <Keyword>features</Keyword>
-                    <Keyword>A40_ARCHEO_BASTENDORFF</Keyword>
-                  </KeywordList>
-                  <SRS>EPSG:31370</SRS>
-                  <LatLonBoundingBox minx="4.337178156933802" miny="50.832600659079674" maxx="4.368868961836379" maxy="50.85799190830123"/>
-                  <BoundingBox SRS="EPSG:31370" minx="147850.614622198" miny="169159.683897055" maxx="150081.93000361" maxy="171983.802854065"/>
-                  <Style>
-                    <Name>Bast_waterputten</Name>
-                    <Title>Waterputten</Title>
-                    <LegendURL width="20" height="20">
-                      <Format>image/png</Format>
-                      <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://10.128.81.203:8080/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=BSO_DML_ARCH%3ABAST_WATERPUTTEN"/>
-                    </LegendURL>
-                  </Style>
-                </Layer>
-                <Layer queryable="1" opaque="0">
-                  <Name>BSO_DML_ARCH:BAST_PRIVATE_INFRASTRUCTUREN</Name>
-                  <Title>Private infrastructuren</Title>
-                  <Abstract/>
-                  <KeywordList>
-                    <Keyword>features</Keyword>
-                    <Keyword>A40_ARCHEO_BASTENDORFF</Keyword>
-                  </KeywordList>
-                  <SRS>EPSG:31370</SRS>
-                  <LatLonBoundingBox minx="4.337178156933802" miny="50.832600659079674" maxx="4.368868961836379" maxy="50.85799190830123"/>
-                  <BoundingBox SRS="EPSG:31370" minx="147850.614622198" miny="169159.683897055" maxx="150081.93000361" maxy="171983.802854065"/>
-                  <Style>
-                    <Name>Bast_Private_infrastructuren</Name>
-                    <Title>Private infrastructuren</Title>
-                    <LegendURL width="20" height="20">
-                      <Format>image/png</Format>
-                      <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://10.128.81.203:8080/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=BSO_DML_ARCH%3ABAST_PRIVATE_INFRASTRUCTUREN"/>
-                    </LegendURL>
-                  </Style>
-                </Layer>
-                <Layer queryable="1" opaque="0">
-                  <Name>BSO_DML_ARCH:BAST_KUNSTWERKEN</Name>
-                  <Title>Kunstwerken</Title>
-                  <Abstract/>
-                  <KeywordList>
-                    <Keyword>features</Keyword>
-                    <Keyword>A40_ARCHEO_BASTENDORFF</Keyword>
-                  </KeywordList>
-                  <SRS>EPSG:31370</SRS>
-                  <LatLonBoundingBox minx="4.337178156933802" miny="50.832600659079674" maxx="4.368868961836379" maxy="50.85799190830123"/>
-                  <BoundingBox SRS="EPSG:31370" minx="147850.614622198" miny="169159.683897055" maxx="150081.93000361" maxy="171983.802854065"/>
-                  <Style>
-                    <Name>Bast_Kunstwerken</Name>
-                    <Title>Kunstwerken</Title>
-                    <LegendURL width="20" height="20">
-                      <Format>image/png</Format>
-                      <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://10.128.81.203:8080/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=BSO_DML_ARCH%3ABAST_KUNSTWERKEN"/>
-                    </LegendURL>
-                  </Style>
-                </Layer>
-                <Layer queryable="1" opaque="0">
-                  <Name>BSO_DML_ARCH:BAST_HYDROGRAPHISCH_NETWERK</Name>
-                  <Title>Hydrografisch netwerk</Title>
-                  <Abstract/>
-                  <KeywordList>
-                    <Keyword>features</Keyword>
-                    <Keyword>A40_ARCHEO_BASTENDORFF</Keyword>
-                  </KeywordList>
-                  <SRS>EPSG:31370</SRS>
-                  <LatLonBoundingBox minx="4.337178156933802" miny="50.832600659079674" maxx="4.368868961836379" maxy="50.85799190830123"/>
-                  <BoundingBox SRS="EPSG:31370" minx="147850.614622198" miny="169159.683897055" maxx="150081.93000361" maxy="171983.802854065"/>
-                  <Style>
-                    <Name>Bast_Hydrografisch_netwerk</Name>
-                    <Title>Hydrografisch netwerk</Title>
-                    <LegendURL width="20" height="20">
-                      <Format>image/png</Format>
-                      <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://10.128.81.203:8080/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=BSO_DML_ARCH%3ABAST_HYDROGRAPHISCH_NETWERK"/>
-                    </LegendURL>
-                  </Style>
-                </Layer>
-                <Layer queryable="1" opaque="0">
-                  <Name>BSO_DML_ARCH:BAST_GEBOUWEN</Name>
-                  <Title>Gebouwen</Title>
-                  <Abstract/>
-                  <KeywordList>
-                    <Keyword>features</Keyword>
-                    <Keyword>A40_ARCHEO_BASTENDORFF</Keyword>
-                  </KeywordList>
-                  <SRS>EPSG:31370</SRS>
-                  <LatLonBoundingBox minx="4.337178156933802" miny="50.832600659079674" maxx="4.368868961836379" maxy="50.85799190830123"/>
-                  <BoundingBox SRS="EPSG:31370" minx="147850.614622198" miny="169159.683897055" maxx="150081.93000361" maxy="171983.802854065"/>
-                  <Style>
-                    <Name>Bast_Gebouwen</Name>
-                    <Title>Gebouwen</Title>
-                    <LegendURL width="20" height="20">
-                      <Format>image/png</Format>
-                      <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://10.128.81.203:8080/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=BSO_DML_ARCH%3ABAST_GEBOUWEN"/>
-                    </LegendURL>
-                  </Style>
-                </Layer>
-                <Layer queryable="1" opaque="0">
-                  <Name>BSO_DML_ARCH:BAST_BINNENPLAATSEN</Name>
-                  <Title>Binnenplaatsen</Title>
-                  <Abstract/>
-                  <KeywordList>
-                    <Keyword>features</Keyword>
-                    <Keyword>A40_ARCHEO_BASTENDORFF</Keyword>
-                  </KeywordList>
-                  <SRS>EPSG:31370</SRS>
-                  <LatLonBoundingBox minx="4.337178156933802" miny="50.832600659079674" maxx="4.368868961836379" maxy="50.85799190830123"/>
-                  <BoundingBox SRS="EPSG:31370" minx="147850.614622198" miny="169159.683897055" maxx="150081.93000361" maxy="171983.802854065"/>
-                  <Style>
-                    <Name>Bast_Binnenplaatsen</Name>
-                    <Title>Binnenplaatsen</Title>
-                    <LegendURL width="20" height="20">
-                      <Format>image/png</Format>
-                      <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://10.128.81.203:8080/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=BSO_DML_ARCH%3ABAST_BINNENPLAATSEN"/>
-                    </LegendURL>
-                  </Style>
-                </Layer>
-                <Layer queryable="1" opaque="0">
-                  <Name>BSO_DML_ARCH:BAST_TUINEN</Name>
-                  <Title>Tuinen</Title>
-                  <Abstract/>
-                  <KeywordList>
-                    <Keyword>features</Keyword>
-                    <Keyword>A40_ARCHEO_BASTENDORFF</Keyword>
-                  </KeywordList>
-                  <SRS>EPSG:31370</SRS>
-                  <LatLonBoundingBox minx="4.337178156933802" miny="50.832600659079674" maxx="4.368868961836379" maxy="50.85799190830123"/>
-                  <BoundingBox SRS="EPSG:31370" minx="147850.614622198" miny="169159.683897055" maxx="150081.93000361" maxy="171983.802854065"/>
-                  <Style>
-                    <Name>Bast_Tuinen</Name>
-                    <Title>Tuinen</Title>
-                    <LegendURL width="20" height="20">
-                      <Format>image/png</Format>
-                      <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://10.128.81.203:8080/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=BSO_DML_ARCH%3ABAST_TUINEN"/>
-                    </LegendURL>
-                  </Style>
-                </Layer>
-                <Layer queryable="1" opaque="0">
-                  <Name>BSO_DML_ARCH:BAST_PARKEN</Name>
-                  <Title>Parken</Title>
-                  <Abstract/>
-                  <KeywordList>
-                    <Keyword>features</Keyword>
-                    <Keyword>A40_ARCHEO_BASTENDORFF</Keyword>
-                  </KeywordList>
-                  <SRS>EPSG:31370</SRS>
-                  <LatLonBoundingBox minx="4.337178156933802" miny="50.832600659079674" maxx="4.368868961836379" maxy="50.85799190830123"/>
-                  <BoundingBox SRS="EPSG:31370" minx="147850.614622198" miny="169159.683897055" maxx="150081.93000361" maxy="171983.802854065"/>
-                  <Style>
-                    <Name>Bast_Parken</Name>
-                    <Title>Parken</Title>
-                    <LegendURL width="20" height="20">
-                      <Format>image/png</Format>
-                      <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://10.128.81.203:8080/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=BSO_DML_ARCH%3ABAST_PARKEN"/>
-                    </LegendURL>
-                  </Style>
-                </Layer>
-                <Layer queryable="1" opaque="0">
-                  <Name>BSO_DML_ARCH:BAST_ERFDIENSTBAARHEDEN</Name>
-                  <Title>Erfdienstbaarheden</Title>
-                  <Abstract/>
-                  <KeywordList>
-                    <Keyword>features</Keyword>
-                    <Keyword>A40_ARCHEO_BASTENDORFF</Keyword>
-                  </KeywordList>
-                  <SRS>EPSG:31370</SRS>
-                  <LatLonBoundingBox minx="4.337178156933802" miny="50.832600659079674" maxx="4.368868961836379" maxy="50.85799190830123"/>
-                  <BoundingBox SRS="EPSG:31370" minx="147850.614622198" miny="169159.683897055" maxx="150081.93000361" maxy="171983.802854065"/>
-                  <Style>
-                    <Name>Bast_Erfdienstbaarheden</Name>
-                    <Title>Erfdienstbaarheden</Title>
-                    <LegendURL width="20" height="20">
-                      <Format>image/png</Format>
-                      <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://10.128.81.203:8080/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=BSO_DML_ARCH%3ABAST_ERFDIENSTBAARHEDEN"/>
-                    </LegendURL>
-                  </Style>
-                </Layer>
-                <Layer queryable="1" opaque="0">
-                  <Name>BSO_DML_ARCH:BAST_OPENBARE_WEGEN</Name>
-                  <Title>Openbare wegen</Title>
-                  <Abstract/>
-                  <KeywordList>
-                    <Keyword>features</Keyword>
-                    <Keyword>A40_ARCHEO_BASTENDORFF</Keyword>
-                  </KeywordList>
-                  <SRS>EPSG:31370</SRS>
-                  <LatLonBoundingBox minx="4.337178156933802" miny="50.832600659079674" maxx="4.368868961836379" maxy="50.85799190830123"/>
-                  <BoundingBox SRS="EPSG:31370" minx="147850.614622198" miny="169159.683897055" maxx="150081.93000361" maxy="171983.802854065"/>
-                  <Style>
-                    <Name>Bast_Openbare_wegen</Name>
-                    <Title>Openbare wegen</Title>
-                    <LegendURL width="20" height="20">
-                      <Format>image/png</Format>
-                      <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://10.128.81.203:8080/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=BSO_DML_ARCH%3ABAST_OPENBARE_WEGEN"/>
-                    </LegendURL>
-                  </Style>
-                </Layer>
-                <Layer queryable="1" opaque="0">
-                  <Name>BSO_DML_ARCH:BAST_PERCELEN</Name>
-                  <Title>Percelen</Title>
-                  <Abstract/>
-                  <KeywordList>
-                    <Keyword>features</Keyword>
-                    <Keyword>A40_ARCHEO_BASTENDORFF</Keyword>
-                  </KeywordList>
-                  <SRS>EPSG:31370</SRS>
-                  <LatLonBoundingBox minx="4.337178156933802" miny="50.832600659079674" maxx="4.368868961836379" maxy="50.85799190830123"/>
-                  <BoundingBox SRS="EPSG:31370" minx="147850.614622198" miny="169159.683897055" maxx="150081.93000361" maxy="171983.802854065"/>
-                  <Style>
-                    <Name>Bast_Percelen</Name>
-                    <Title>Percelen</Title>
-                    <LegendURL width="20" height="20">
-                      <Format>image/png</Format>
-                      <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://10.128.81.203:8080/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=BSO_DML_ARCH%3ABAST_PERCELEN"/>
-                    </LegendURL>
-                  </Style>
-                </Layer>
-              </Layer>
-            </Layer>
           </Layer>
           <Layer noSubsets="0" opaque="0" queryable="1">
             <Name>Bouwkundige Erfgoed</Name>
@@ -5171,6 +4854,319 @@
       <Layer noSubsets="0" opaque="0" queryable="1">
         <Name>Historische kaarten</Name>
         <Title>Historische kaarten</Title>
+        <Layer queryable="1">
+          <Name>BSO_DML_ARCH:KAART_BASTENDORFF</Name>
+          <Title>Gevectoriseerde Bastendorffkaart (1821 - 1832)</Title>
+          <Abstract>Layer-Group type layer: BSO_DML_ARCH:KAART_BASTENDORFF</Abstract>
+          <KeywordList/>
+          <SRS>EPSG:31370</SRS>
+          <LatLonBoundingBox minx="4.337178156933802" miny="50.832600659079674" maxx="4.368868961836379" maxy="50.85799190830123"/>
+          <BoundingBox SRS="EPSG:31370" minx="147850.614622198" miny="169159.683897055" maxx="150081.93000361" maxy="171983.802854065"/>
+        </Layer>
+        <Layer noSubsets="0" opaque="0" queryable="1">
+          <Name>Gedetaileerde kaart Bastendorff</Name>
+          <Title>Gedetaileerde kaart Bastendorff</Title>
+          <Layer queryable="1" opaque="0">
+            <Name>BSO_DML_ARCH:BAST_FONTEINEN</Name>
+            <Title>Fonteinen</Title>
+            <Abstract/>
+            <KeywordList>
+              <Keyword>features</Keyword>
+              <Keyword>A40_ARCHEO_BASTENDORFF</Keyword>
+            </KeywordList>
+            <SRS>EPSG:31370</SRS>
+            <LatLonBoundingBox minx="4.337178156933802" miny="50.832600659079674" maxx="4.368868961836379" maxy="50.85799190830123"/>
+            <BoundingBox SRS="EPSG:31370" minx="147850.614622198" miny="169159.683897055" maxx="150081.93000361" maxy="171983.802854065"/>
+            <Style>
+              <Name>Bast_fonteinen</Name>
+              <Title>Fonteinen</Title>
+              <LegendURL width="20" height="20">
+                <Format>image/png</Format>
+                <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://10.128.81.203:8080/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=BSO_DML_ARCH%3ABAST_FONTEINEN"/>
+              </LegendURL>
+            </Style>
+          </Layer>
+          <Layer queryable="1" opaque="0">
+            <Name>BSO_DML_ARCH:BAST_STEDELIJKE_OPENBARE_VOORZIENINGEN</Name>
+            <Title>Stedelijke openbare voorzieningen</Title>
+            <Abstract/>
+            <KeywordList>
+              <Keyword>features</Keyword>
+              <Keyword>A40_ARCHEO_BASTENDORFF</Keyword>
+            </KeywordList>
+            <SRS>EPSG:31370</SRS>
+            <LatLonBoundingBox minx="4.337178156933802" miny="50.832600659079674" maxx="4.368868961836379" maxy="50.85799190830123"/>
+            <BoundingBox SRS="EPSG:31370" minx="147850.614622198" miny="169159.683897055" maxx="150081.93000361" maxy="171983.802854065"/>
+            <Style>
+              <Name>Bast_Stedelijke_openbare_voorzieningen</Name>
+              <Title>Stedelijke openbare voorzieningen</Title>
+              <LegendURL width="20" height="20">
+                <Format>image/png</Format>
+                <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://10.128.81.203:8080/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=BSO_DML_ARCH%3ABAST_STEDELIJKE_OPENBARE_VOORZIENINGEN"/>
+              </LegendURL>
+            </Style>
+          </Layer>
+          <Layer queryable="1" opaque="0">
+            <Name>BSO_DML_ARCH:BAST_TRAPPEN</Name>
+            <Title>Trappen</Title>
+            <Abstract/>
+            <KeywordList>
+              <Keyword>features</Keyword>
+              <Keyword>A40_ARCHEO_BASTENDORFF</Keyword>
+            </KeywordList>
+            <SRS>EPSG:31370</SRS>
+            <LatLonBoundingBox minx="4.337178156933802" miny="50.832600659079674" maxx="4.368868961836379" maxy="50.85799190830123"/>
+            <BoundingBox SRS="EPSG:31370" minx="147850.614622198" miny="169159.683897055" maxx="150081.93000361" maxy="171983.802854065"/>
+            <Style>
+              <Name>Bast_Trappen</Name>
+              <Title>Trappen</Title>
+              <LegendURL width="20" height="20">
+                <Format>image/png</Format>
+                <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://10.128.81.203:8080/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=BSO_DML_ARCH%3ABAST_TRAPPEN"/>
+              </LegendURL>
+            </Style>
+          </Layer>
+          <Layer queryable="1" opaque="0">
+            <Name>BSO_DML_ARCH:BAST_VESTINGWERKEN</Name>
+            <Title>Vestingwerken</Title>
+            <Abstract/>
+            <KeywordList>
+              <Keyword>features</Keyword>
+              <Keyword>A40_ARCHEO_BASTENDORFF</Keyword>
+            </KeywordList>
+            <SRS>EPSG:31370</SRS>
+            <LatLonBoundingBox minx="4.337178156933802" miny="50.832600659079674" maxx="4.368868961836379" maxy="50.85799190830123"/>
+            <BoundingBox SRS="EPSG:31370" minx="147850.614622198" miny="169159.683897055" maxx="150081.93000361" maxy="171983.802854065"/>
+            <Style>
+              <Name>Bast_Vestingwerken</Name>
+              <Title>Vestingwerken</Title>
+              <LegendURL width="20" height="20">
+                <Format>image/png</Format>
+                <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://10.128.81.203:8080/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=BSO_DML_ARCH%3ABAST_VESTINGWERKEN"/>
+              </LegendURL>
+            </Style>
+          </Layer>
+          <Layer queryable="1" opaque="0">
+            <Name>BSO_DML_ARCH:BAST_WATERPUTTEN</Name>
+            <Title>Waterputten</Title>
+            <Abstract/>
+            <KeywordList>
+              <Keyword>features</Keyword>
+              <Keyword>A40_ARCHEO_BASTENDORFF</Keyword>
+            </KeywordList>
+            <SRS>EPSG:31370</SRS>
+            <LatLonBoundingBox minx="4.337178156933802" miny="50.832600659079674" maxx="4.368868961836379" maxy="50.85799190830123"/>
+            <BoundingBox SRS="EPSG:31370" minx="147850.614622198" miny="169159.683897055" maxx="150081.93000361" maxy="171983.802854065"/>
+            <Style>
+              <Name>Bast_waterputten</Name>
+              <Title>Waterputten</Title>
+              <LegendURL width="20" height="20">
+                <Format>image/png</Format>
+                <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://10.128.81.203:8080/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=BSO_DML_ARCH%3ABAST_WATERPUTTEN"/>
+              </LegendURL>
+            </Style>
+          </Layer>
+          <Layer queryable="1" opaque="0">
+            <Name>BSO_DML_ARCH:BAST_PRIVATE_INFRASTRUCTUREN</Name>
+            <Title>Private infrastructuren</Title>
+            <Abstract/>
+            <KeywordList>
+              <Keyword>features</Keyword>
+              <Keyword>A40_ARCHEO_BASTENDORFF</Keyword>
+            </KeywordList>
+            <SRS>EPSG:31370</SRS>
+            <LatLonBoundingBox minx="4.337178156933802" miny="50.832600659079674" maxx="4.368868961836379" maxy="50.85799190830123"/>
+            <BoundingBox SRS="EPSG:31370" minx="147850.614622198" miny="169159.683897055" maxx="150081.93000361" maxy="171983.802854065"/>
+            <Style>
+              <Name>Bast_Private_infrastructuren</Name>
+              <Title>Private infrastructuren</Title>
+              <LegendURL width="20" height="20">
+                <Format>image/png</Format>
+                <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://10.128.81.203:8080/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=BSO_DML_ARCH%3ABAST_PRIVATE_INFRASTRUCTUREN"/>
+              </LegendURL>
+            </Style>
+          </Layer>
+          <Layer queryable="1" opaque="0">
+            <Name>BSO_DML_ARCH:BAST_KUNSTWERKEN</Name>
+            <Title>Kunstwerken</Title>
+            <Abstract/>
+            <KeywordList>
+              <Keyword>features</Keyword>
+              <Keyword>A40_ARCHEO_BASTENDORFF</Keyword>
+            </KeywordList>
+            <SRS>EPSG:31370</SRS>
+            <LatLonBoundingBox minx="4.337178156933802" miny="50.832600659079674" maxx="4.368868961836379" maxy="50.85799190830123"/>
+            <BoundingBox SRS="EPSG:31370" minx="147850.614622198" miny="169159.683897055" maxx="150081.93000361" maxy="171983.802854065"/>
+            <Style>
+              <Name>Bast_Kunstwerken</Name>
+              <Title>Kunstwerken</Title>
+              <LegendURL width="20" height="20">
+                <Format>image/png</Format>
+                <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://10.128.81.203:8080/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=BSO_DML_ARCH%3ABAST_KUNSTWERKEN"/>
+              </LegendURL>
+            </Style>
+          </Layer>
+          <Layer queryable="1" opaque="0">
+            <Name>BSO_DML_ARCH:BAST_HYDROGRAPHISCH_NETWERK</Name>
+            <Title>Hydrografisch netwerk</Title>
+            <Abstract/>
+            <KeywordList>
+              <Keyword>features</Keyword>
+              <Keyword>A40_ARCHEO_BASTENDORFF</Keyword>
+            </KeywordList>
+            <SRS>EPSG:31370</SRS>
+            <LatLonBoundingBox minx="4.337178156933802" miny="50.832600659079674" maxx="4.368868961836379" maxy="50.85799190830123"/>
+            <BoundingBox SRS="EPSG:31370" minx="147850.614622198" miny="169159.683897055" maxx="150081.93000361" maxy="171983.802854065"/>
+            <Style>
+              <Name>Bast_Hydrografisch_netwerk</Name>
+              <Title>Hydrografisch netwerk</Title>
+              <LegendURL width="20" height="20">
+                <Format>image/png</Format>
+                <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://10.128.81.203:8080/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=BSO_DML_ARCH%3ABAST_HYDROGRAPHISCH_NETWERK"/>
+              </LegendURL>
+            </Style>
+          </Layer>
+          <Layer queryable="1" opaque="0">
+            <Name>BSO_DML_ARCH:BAST_GEBOUWEN</Name>
+            <Title>Gebouwen</Title>
+            <Abstract/>
+            <KeywordList>
+              <Keyword>features</Keyword>
+              <Keyword>A40_ARCHEO_BASTENDORFF</Keyword>
+            </KeywordList>
+            <SRS>EPSG:31370</SRS>
+            <LatLonBoundingBox minx="4.337178156933802" miny="50.832600659079674" maxx="4.368868961836379" maxy="50.85799190830123"/>
+            <BoundingBox SRS="EPSG:31370" minx="147850.614622198" miny="169159.683897055" maxx="150081.93000361" maxy="171983.802854065"/>
+            <Style>
+              <Name>Bast_Gebouwen</Name>
+              <Title>Gebouwen</Title>
+              <LegendURL width="20" height="20">
+                <Format>image/png</Format>
+                <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://10.128.81.203:8080/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=BSO_DML_ARCH%3ABAST_GEBOUWEN"/>
+              </LegendURL>
+            </Style>
+          </Layer>
+          <Layer queryable="1" opaque="0">
+            <Name>BSO_DML_ARCH:BAST_BINNENPLAATSEN</Name>
+            <Title>Binnenplaatsen</Title>
+            <Abstract/>
+            <KeywordList>
+              <Keyword>features</Keyword>
+              <Keyword>A40_ARCHEO_BASTENDORFF</Keyword>
+            </KeywordList>
+            <SRS>EPSG:31370</SRS>
+            <LatLonBoundingBox minx="4.337178156933802" miny="50.832600659079674" maxx="4.368868961836379" maxy="50.85799190830123"/>
+            <BoundingBox SRS="EPSG:31370" minx="147850.614622198" miny="169159.683897055" maxx="150081.93000361" maxy="171983.802854065"/>
+            <Style>
+              <Name>Bast_Binnenplaatsen</Name>
+              <Title>Binnenplaatsen</Title>
+              <LegendURL width="20" height="20">
+                <Format>image/png</Format>
+                <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://10.128.81.203:8080/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=BSO_DML_ARCH%3ABAST_BINNENPLAATSEN"/>
+              </LegendURL>
+            </Style>
+          </Layer>
+          <Layer queryable="1" opaque="0">
+            <Name>BSO_DML_ARCH:BAST_TUINEN</Name>
+            <Title>Tuinen</Title>
+            <Abstract/>
+            <KeywordList>
+              <Keyword>features</Keyword>
+              <Keyword>A40_ARCHEO_BASTENDORFF</Keyword>
+            </KeywordList>
+            <SRS>EPSG:31370</SRS>
+            <LatLonBoundingBox minx="4.337178156933802" miny="50.832600659079674" maxx="4.368868961836379" maxy="50.85799190830123"/>
+            <BoundingBox SRS="EPSG:31370" minx="147850.614622198" miny="169159.683897055" maxx="150081.93000361" maxy="171983.802854065"/>
+            <Style>
+              <Name>Bast_Tuinen</Name>
+              <Title>Tuinen</Title>
+              <LegendURL width="20" height="20">
+                <Format>image/png</Format>
+                <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://10.128.81.203:8080/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=BSO_DML_ARCH%3ABAST_TUINEN"/>
+              </LegendURL>
+            </Style>
+          </Layer>
+          <Layer queryable="1" opaque="0">
+            <Name>BSO_DML_ARCH:BAST_PARKEN</Name>
+            <Title>Parken</Title>
+            <Abstract/>
+            <KeywordList>
+              <Keyword>features</Keyword>
+              <Keyword>A40_ARCHEO_BASTENDORFF</Keyword>
+            </KeywordList>
+            <SRS>EPSG:31370</SRS>
+            <LatLonBoundingBox minx="4.337178156933802" miny="50.832600659079674" maxx="4.368868961836379" maxy="50.85799190830123"/>
+            <BoundingBox SRS="EPSG:31370" minx="147850.614622198" miny="169159.683897055" maxx="150081.93000361" maxy="171983.802854065"/>
+            <Style>
+              <Name>Bast_Parken</Name>
+              <Title>Parken</Title>
+              <LegendURL width="20" height="20">
+                <Format>image/png</Format>
+                <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://10.128.81.203:8080/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=BSO_DML_ARCH%3ABAST_PARKEN"/>
+              </LegendURL>
+            </Style>
+          </Layer>
+          <Layer queryable="1" opaque="0">
+            <Name>BSO_DML_ARCH:BAST_ERFDIENSTBAARHEDEN</Name>
+            <Title>Erfdienstbaarheden</Title>
+            <Abstract/>
+            <KeywordList>
+              <Keyword>features</Keyword>
+              <Keyword>A40_ARCHEO_BASTENDORFF</Keyword>
+            </KeywordList>
+            <SRS>EPSG:31370</SRS>
+            <LatLonBoundingBox minx="4.337178156933802" miny="50.832600659079674" maxx="4.368868961836379" maxy="50.85799190830123"/>
+            <BoundingBox SRS="EPSG:31370" minx="147850.614622198" miny="169159.683897055" maxx="150081.93000361" maxy="171983.802854065"/>
+            <Style>
+              <Name>Bast_Erfdienstbaarheden</Name>
+              <Title>Erfdienstbaarheden</Title>
+              <LegendURL width="20" height="20">
+                <Format>image/png</Format>
+                <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://10.128.81.203:8080/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=BSO_DML_ARCH%3ABAST_ERFDIENSTBAARHEDEN"/>
+              </LegendURL>
+            </Style>
+          </Layer>
+          <Layer queryable="1" opaque="0">
+            <Name>BSO_DML_ARCH:BAST_OPENBARE_WEGEN</Name>
+            <Title>Openbare wegen</Title>
+            <Abstract/>
+            <KeywordList>
+              <Keyword>features</Keyword>
+              <Keyword>A40_ARCHEO_BASTENDORFF</Keyword>
+            </KeywordList>
+            <SRS>EPSG:31370</SRS>
+            <LatLonBoundingBox minx="4.337178156933802" miny="50.832600659079674" maxx="4.368868961836379" maxy="50.85799190830123"/>
+            <BoundingBox SRS="EPSG:31370" minx="147850.614622198" miny="169159.683897055" maxx="150081.93000361" maxy="171983.802854065"/>
+            <Style>
+              <Name>Bast_Openbare_wegen</Name>
+              <Title>Openbare wegen</Title>
+              <LegendURL width="20" height="20">
+                <Format>image/png</Format>
+                <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://10.128.81.203:8080/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=BSO_DML_ARCH%3ABAST_OPENBARE_WEGEN"/>
+              </LegendURL>
+            </Style>
+          </Layer>
+          <Layer queryable="1" opaque="0">
+            <Name>BSO_DML_ARCH:BAST_PERCELEN</Name>
+            <Title>Percelen</Title>
+            <Abstract/>
+            <KeywordList>
+              <Keyword>features</Keyword>
+              <Keyword>A40_ARCHEO_BASTENDORFF</Keyword>
+            </KeywordList>
+            <SRS>EPSG:31370</SRS>
+            <LatLonBoundingBox minx="4.337178156933802" miny="50.832600659079674" maxx="4.368868961836379" maxy="50.85799190830123"/>
+            <BoundingBox SRS="EPSG:31370" minx="147850.614622198" miny="169159.683897055" maxx="150081.93000361" maxy="171983.802854065"/>
+            <Style>
+              <Name>Bast_Percelen</Name>
+              <Title>Percelen</Title>
+              <LegendURL width="20" height="20">
+                <Format>image/png</Format>
+                <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://10.128.81.203:8080/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=BSO_DML_ARCH%3ABAST_PERCELEN"/>
+              </LegendURL>
+            </Style>
+          </Layer>
+        </Layer>
         <Layer cascaded="0" opaque="0" queryable="0">
           <Name>vandermaelen</Name>
           <Title>Kaart van Vandermaelen, 1846-1854 (Cartes topographiques de la Belgique 1/20.000)</Title>
