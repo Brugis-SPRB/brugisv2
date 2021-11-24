@@ -5171,7 +5171,7 @@
         <Title>Cartes historiques</Title>
         <Layer queryable="1">
           <Name>BDU_DMS_ARCH:PLAN_BASTENDORFF</Name>
-          <Title>Plan Bastendorff vectorisé (1812 - 1832)</Title>
+          <Title>Plan Bastendorff vectorisé (1821 - 1832)</Title>
           <Abstract>Layer-Group type layer: BDU_DMS_ARCH:PLAN_BASTENDORFF</Abstract>
           <KeywordList/>
           <SRS>EPSG:31370</SRS>
