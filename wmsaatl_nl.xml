@@ -160,7 +160,7 @@
             <Name>Wettelijk statuut en register</Name>
             <Title>Wettelijk statuut en register</Title>
             <Layer noSubsets="0" opaque="0" queryable="1">
-              <Name>BSO:Patrimonium</Name>
+              <Name>URBAN_DCE_IVBE:Patrimonium</Name>
               <Title>Patrimonium</Title>
               <Abstract />
               <KeywordList>
@@ -184,7 +184,7 @@
               <Name>Gedetaileerd patrimonium</Name>
               <Title>Gedetaileerd patrimonium</Title>
               <Layer noSubsets="0" opaque="0" queryable="1">
-                <Name>BSO:MONUMENT_BESCHERMING_DEFINITIEF_BESLUIT</Name>
+                <Name>URBAN_DCE_IVBE:MONUMENT_BESCHERMING_DEFINITIEF_BESLUIT</Name>
                 <Title>Monument - Bescherming - Definitief besluit</Title>
                 <Abstract />
                 <KeywordList>
@@ -205,7 +205,7 @@
                 </Style>
               </Layer>
               <Layer noSubsets="0" opaque="0" queryable="1">
-                <Name>BSO:MONUMENT_BESCHERMING_AANVRAAG_PROCEDURE</Name>
+                <Name>URBAN_DCE_IVBE:MONUMENT_BESCHERMING_AANVRAAG_PROCEDURE</Name>
                 <Title>Monument - Bescherming - Aanvraag procedure</Title>
                 <Abstract />
                 <KeywordList>
@@ -226,7 +226,7 @@
                 </Style>
               </Layer>
               <Layer noSubsets="0" opaque="0" queryable="1">
-                <Name>BSO:MONUMENT_BEWAARLIJST_DEFINITIEF_BESLUIT</Name>
+                <Name>URBAN_DCE_IVBE:MONUMENT_BEWAARLIJST_DEFINITIEF_BESLUIT</Name>
                 <Title>Monument - Bewaarlijst - Definitief besluit</Title>
                 <Abstract />
                 <KeywordList>
@@ -247,7 +247,7 @@
                 </Style>
               </Layer>
               <Layer noSubsets="0" opaque="0" queryable="1">
-                <Name>BSO:MONUMENT_BEWAARLIJST_AANVRAAG_PROCEDURE</Name>
+                <Name>URBAN_DCE_IVBE:MONUMENT_BEWAARLIJST_AANVRAAG_PROCEDURE</Name>
                 <Title>Monument - Bewaarlijst - Aanvraag procedure</Title>
                 <Abstract />
                 <KeywordList>
@@ -268,7 +268,7 @@
                 </Style>
               </Layer>
               <Layer noSubsets="0" opaque="0" queryable="1">
-                <Name>BSO:GEHEEL_BESCHERMING_DEFINITIEF_BESLUIT</Name>
+                <Name>URBAN_DCE_IVBE:GEHEEL_BESCHERMING_DEFINITIEF_BESLUIT</Name>
                 <Title>Geheel - Bescherming - Definitief besluit</Title>
                 <Abstract />
                 <KeywordList>
@@ -289,7 +289,7 @@
                 </Style>
               </Layer>
               <Layer noSubsets="0" opaque="0" queryable="1">
-                <Name>BSO:GEHEEL_BESCHERMING_AANVRAAG_PROCEDURE</Name>
+                <Name>URBAN_DCE_IVBE:GEHEEL_BESCHERMING_AANVRAAG_PROCEDURE</Name>
                 <Title>Geheel - Bescherming - Aanvraag procedure</Title>
                 <Abstract />
                 <KeywordList>
@@ -310,7 +310,7 @@
                 </Style>
               </Layer>
               <Layer noSubsets="0" opaque="0" queryable="1">
-                <Name>BSO:GEHEEL_BEWAARLIJST_DEFINITIEF_BESLUIT</Name>
+                <Name>URBAN_DCE_IVBE:GEHEEL_BEWAARLIJST_DEFINITIEF_BESLUIT</Name>
                 <Title>Geheel - Bewaarlijst - Definitief besluit</Title>
                 <Abstract />
                 <KeywordList>
@@ -331,7 +331,7 @@
                 </Style>
               </Layer>
               <Layer noSubsets="0" opaque="0" queryable="1">
-                <Name>BSO:GEHEEL_BEWAARLIJST_AANVRAAG_PROCEDURE</Name>
+                <Name>URBAN_DCE_IVBE:GEHEEL_BEWAARLIJST_AANVRAAG_PROCEDURE</Name>
                 <Title>Geheel - Bewaarlijst - Aanvraag procedure</Title>
                 <Abstract />
                 <KeywordList>
@@ -352,7 +352,7 @@
                 </Style>
               </Layer>
               <Layer noSubsets="0" opaque="0" queryable="1">
-                <Name>BSO:LANDSCHAP_BESCHERMING_DEFINITIEF_BESLUIT</Name>
+                <Name>URBAN_DCE_NE:LANDSCHAP_BESCHERMING_DEFINITIEF_BESLUIT</Name>
                 <Title>Landschap - Bescherming - Definitief besluit</Title>
                 <Abstract />
                 <KeywordList>
@@ -373,7 +373,7 @@
                 </Style>
               </Layer>
               <Layer noSubsets="0" opaque="0" queryable="1">
-                <Name>BSO:LANDSCHAP_BESCHERMING_AANVRAAG_PROCEDURE</Name>
+                <Name>URBAN_DCE_NE:LANDSCHAP_BESCHERMING_AANVRAAG_PROCEDURE</Name>
                 <Title>Landschap - Bescherming - Aanvraag procedure</Title>
                 <Abstract />
                 <KeywordList>
@@ -394,7 +394,7 @@
                 </Style>
               </Layer>
               <Layer noSubsets="0" opaque="0" queryable="1">
-                <Name>BSO:LANDSCHAP_BEWAARLIJST_DEFINITIEF_BESLUIT</Name>
+                <Name>URBAN_DCE_NE:LANDSCHAP_BEWAARLIJST_DEFINITIEF_BESLUIT</Name>
                 <Title>Landschap - Bewaarlijst - Definitief besluit</Title>
                 <Abstract />
                 <KeywordList>
@@ -415,7 +415,7 @@
                 </Style>
               </Layer>
               <Layer noSubsets="0" opaque="0" queryable="1">
-                <Name>BSO:LANDSCHAP_BEWAARLIJST_AANVRAAG_PROCEDURE</Name>
+                <Name>URBAN_DCE_NE:LANDSCHAP_BEWAARLIJST_AANVRAAG_PROCEDURE</Name>
                 <Title>Landschap - Bewaarlijst - Aanvraag procedure</Title>
                 <Abstract />
                 <KeywordList>
@@ -436,7 +436,7 @@
                 </Style>
               </Layer>
               <Layer noSubsets="0" opaque="0" queryable="1">
-                <Name>BSO:ARCHEOLOGISCHE_LANDSCHAP_BESCHERMING_DEFINITIEF_BESLUIT</Name>
+                <Name>URBAN_DCE_AE:ARCHEOLOGISCHE_LANDSCHAP_BESCHERMING_DEFINITIEF_BESLUIT</Name>
                 <Title>Archeologische Landschap - Bescherming - Definitief besluit</Title>
                 <Abstract />
                 <KeywordList>
@@ -457,7 +457,7 @@
                 </Style>
               </Layer>
               <Layer noSubsets="0" opaque="0" queryable="1">
-                <Name>BSO:ARCHEOLOGISCHE_LANDSCHAP_BESCHERMING_AANVRAAG_PROCEDURE</Name>
+                <Name>URBAN_DCE_AE:ARCHEOLOGISCHE_LANDSCHAP_BESCHERMING_AANVRAAG_PROCEDURE</Name>
                 <Title>Archeologische Landschap - Bescherming - Aanvraag procedure</Title>
                 <Abstract />
                 <KeywordList>
@@ -478,7 +478,7 @@
                 </Style>
               </Layer>
               <Layer noSubsets="0" opaque="0" queryable="1">
-                <Name>BSO:ARCHEOLOGISCHE_LANDSCHAP_BEWAARLIJST_DEFINITIEF_BESLUIT</Name>
+                <Name>URBAN_DCE_AE:ARCHEOLOGISCHE_LANDSCHAP_BEWAARLIJST_DEFINITIEF_BESLUIT</Name>
                 <Title>Archeologische Landschap - Bewaarlijst - Definitief besluit</Title>
                 <Abstract />
                 <KeywordList>
@@ -499,7 +499,7 @@
                 </Style>
               </Layer>
               <Layer noSubsets="0" opaque="0" queryable="1">
-                <Name>BSO:ARCHEOLOGISCHE_LANDSCHAP_BEWAARLIJST_AANVRAAG_PROCEDURE</Name>
+                <Name>URBAN_DCE_AE:ARCHEOLOGISCHE_LANDSCHAP_BEWAARLIJST_AANVRAAG_PROCEDURE</Name>
                 <Title>Archeologische Landschap - Bewaarlijst - Aanvraag procedure</Title>
                 <Abstract />
                 <KeywordList>
@@ -520,7 +520,7 @@
                 </Style>
               </Layer>
               <Layer noSubsets="0" opaque="0" queryable="1">
-                <Name>BSO_DML_BESC:Akteneming</Name>
+                <Name>URBAN_DCE_IVBE:Akteneming</Name>
                 <Title>Akteneming</Title>
                 <Abstract />
                 <KeywordList>
@@ -541,7 +541,7 @@
                 </Style>
               </Layer>
               <Layer noSubsets="0" opaque="0" queryable="1">
-                <Name>BSO_DML_BESC:Besluit_tot_niet_bescherming</Name>
+                <Name>URBAN_DCE_IVBE:Besluit_tot_niet_bescherming</Name>
                 <Title>Besluit tot niet bescherming</Title>
                 <Abstract />
                 <KeywordList>
@@ -563,7 +563,7 @@
               </Layer>
             </Layer>
             <Layer noSubsets="0" opaque="0" queryable="1">
-              <Name>BSO_DML_BESC:Wettelijke_inventaris_van_de_Leopoldwijk</Name>
+              <Name>URBAN_DCE_IVBE:Wettelijke_inventaris_van_de_Leopoldwijk</Name>
               <Title>Wettelijke inventaris van de Leopoldwijk</Title>
               <Abstract/>
               <KeywordList>
@@ -583,7 +583,7 @@
               </Style>
             </Layer>
             <Layer noSubsets="0" opaque="0" queryable="1">
-              <Name>BDU_DMS_PROT:Wettelijke_inventaris_van_de_landschappen</Name>
+              <Name>URBAN_DCE_NE:Wettelijke_inventaris_van_de_landschappen</Name>
               <Title>Wettelijke inventaris van de landschappen</Title>
               <Abstract/>
               <KeywordList>
@@ -603,7 +603,7 @@
               </Style>
             </Layer>
             <Layer noSubsets="0" opaque="0" queryable="1">
-              <Name>BSO_DML_BESC:Wettelijke_inventaris_van_de_landschappen_en_Leopoldswijk</Name>
+              <Name>URBAN_DCE_IVBE:Wettelijke_inventaris_van_de_landschappen_en_Leopoldswijk</Name>
               <Title>Wettelijke inventaris van de landschappen en Leopoldswijk</Title>
               <Abstract/>
               <KeywordList>
@@ -623,7 +623,7 @@
               </Style>
             </Layer>
             <Layer queryable="1">
-              <Name>BSO:Vrijwaringzone</Name>
+              <Name>URBAN_DCE_IVBE:Vrijwaringzone</Name>
               <Title>Vrijwaringzone</Title>
               <Abstract>VM_A40_ZPROT</Abstract>
               <KeywordList>
@@ -653,7 +653,7 @@
               </Style>
             </Layer>
             <Layer queryable="1">
-              <Name>BSO:Vrijwaringzone_UNESCO</Name>
+              <Name>URBAN_DCE_IVBE:Vrijwaringzone_UNESCO</Name>
               <Title>Vrijwaringzone_UNESCO</Title>
               <Abstract>A40_ZUNESCO</Abstract>
               <KeywordList>
@@ -690,7 +690,7 @@
               <Name>Archeologische atlas</Name>
               <Title>Archeologische atlas</Title>
               <Layer queryable="1">
-                <Name>BSO_DML_ARCH:Oude_begraafplaatsen</Name>
+                <Name>URBAN_DCE_AE:Oude_begraafplaatsen</Name>
                 <Title>Oude begraafplaatsen</Title>
                 <Abstract />
                 <KeywordList>
@@ -720,7 +720,7 @@
                 </Style>
               </Layer>
               <Layer queryable="1">
-                <Name>BSO_DML_ARCH:Losse_vondsten</Name>
+                <Name>URBAN_DCE_AE:Losse_vondsten</Name>
                 <Title>Losse vondsten</Title>
                 <Abstract />
                 <KeywordList>
@@ -750,7 +750,7 @@
                 </Style>
               </Layer>
               <Layer queryable="1">
-                <Name>BSO_DML_ARCH:Oud_waternetwerk</Name>
+                <Name>URBAN_DCE_AE:Oud_waternetwerk</Name>
                 <Title>Oud waternetwerk</Title>
                 <Abstract />
                 <KeywordList>
@@ -780,7 +780,7 @@
                 </Style>
               </Layer>
               <Layer queryable="1">
-                <Name>BSO_DML_ARCH:Gelokaliseerde_sites_met_plan</Name>
+                <Name>URBAN_DCE_AE:Gelokaliseerde_sites_met_plan</Name>
                 <Title>Gelokaliseerde sites (met plan)</Title>
                 <Abstract />
                 <KeywordList>
@@ -810,7 +810,7 @@
                 </Style>
               </Layer>
               <Layer queryable="1">
-                <Name>BSO_DML_ARCH:Gelokaliseerde_sites_zonder_plan</Name>
+                <Name>URBAN_DCE_AE:Gelokaliseerde_sites_zonder_plan</Name>
                 <Title>Gelokaliseerde sites (zonder plan)</Title>
                 <Abstract />
                 <KeywordList>
@@ -840,7 +840,7 @@
                 </Style>
               </Layer>
               <Layer queryable="1">
-                <Name>BSO_DML_ARCH:Niet_gelokaliseerde_sites</Name>
+                <Name>URBAN_DCE_AE:Niet_gelokaliseerde_sites</Name>
                 <Title>Niet gelokaliseerde sites</Title>
                 <Abstract />
                 <KeywordList>
@@ -870,7 +870,7 @@
                 </Style>
               </Layer>
               <Layer queryable="1">
-                <Name>BSO_DML_ARCH:Potentiele_sites</Name>
+                <Name>URBAN_DCE_AE:Potentiele_sites</Name>
                 <Title>Potentiële sites</Title>
                 <Abstract />
                 <KeywordList>
@@ -909,7 +909,7 @@
                 </Style>
               </Layer>
               <Layer queryable="1">
-                <Name>BSO_DML_ARCH:Uitbreidingszones_van_sites</Name>
+                <Name>URBAN_DCE_AE:Uitbreidingszones_van_sites</Name>
                 <Title>Uitbreidingszones van sites</Title>
                 <Abstract />
                 <KeywordList>
@@ -955,7 +955,7 @@
                 <Name>Brussel-Vijfhoek: Brouwerijen</Name>
                 <Title>Brussel-Vijfhoek: Brouwerijen</Title>
                 <Layer noSubsets="0" opaque="0" queryable="1">
-                  <Name>BSO_DML_ARCH:Brouwerijen_gelokaliseerd_zonder_plan</Name>
+                  <Name>URBAN_DCE_AE:Brouwerijen_gelokaliseerd_zonder_plan</Name>
                   <Title>Brouwerijen gelokaliseerd zonder plan</Title>
                   <Abstract/>
                   <KeywordList>
@@ -975,7 +975,7 @@
                   </Style>
                 </Layer>
                 <Layer noSubsets="0" opaque="0" queryable="1">
-                  <Name>BSO_DML_ARCH:Brouwerijen_gelokaliseerd_met_plan</Name>
+                  <Name>URBAN_DCE_AE:Brouwerijen_gelokaliseerd_met_plan</Name>
                   <Title>Brouwerijen gelokaliseerd met plan</Title>
                   <Abstract/>
                   <KeywordList>
@@ -999,7 +999,7 @@
                 <Name>Brussel-Vijfhoek: Kloosters</Name>
                 <Title>Brussel-Vijfhoek: Kloosters</Title>
                 <Layer noSubsets="0" opaque="0" queryable="1">
-                  <Name>BSO_DML_ARCH:Kloosters_van_de_16de_eeuw</Name>
+                  <Name>URBAN_DCE_AE:Kloosters_van_de_16de_eeuw</Name>
                   <Title>Kloosters van de 16de eeuw</Title>
                   <Abstract/>
                   <KeywordList>
@@ -1019,7 +1019,7 @@
                   </Style>
                 </Layer>
                 <Layer noSubsets="0" opaque="0" queryable="1">
-                  <Name>BSO_DML_ARCH:Kloosters_van_de_17de_eeuw</Name>
+                  <Name>URBAN_DCE_AE:Kloosters_van_de_17de_eeuw</Name>
                   <Title>Kloosters van de 17de eeuw</Title>
                   <Abstract/>
                   <KeywordList>
@@ -1039,7 +1039,7 @@
                   </Style>
                 </Layer>
                 <Layer noSubsets="0" opaque="0" queryable="1">
-                  <Name>BSO_DML_ARCH:Kloosters_bewaarde_resten</Name>
+                  <Name>URBAN_DCE_AE:Kloosters_bewaarde_resten</Name>
                   <Title>Kloosters bewaarde resten</Title>
                   <Abstract/>
                   <KeywordList>
@@ -1059,7 +1059,7 @@
                   </Style>
                 </Layer>
                 <Layer noSubsets="0" opaque="0" queryable="1">
-                  <Name>BSO_DML_ARCH:Kloosters_van_de_18de_eeuw</Name>
+                  <Name>URBAN_DCE_AE:Kloosters_van_de_18de_eeuw</Name>
                   <Title>Kloosters van de 18de eeuw</Title>
                   <Abstract/>
                   <KeywordList>
@@ -1083,7 +1083,7 @@
                 <Name>Brussel-Vijfhoek: Refugiehuizen</Name>
                 <Title>Brussel-Vijfhoek: Refugiehuizen</Title>
                 <Layer noSubsets="0" opaque="0" queryable="1">
-                  <Name>BSO_DML_ARCH:Refugiehuizen_gelokaliseerd_zonder_plan</Name>
+                  <Name>URBAN_DCE_AE:Refugiehuizen_gelokaliseerd_zonder_plan</Name>
                   <Title>Refugiehuizen gelokaliseerd zonder plan</Title>
                   <Abstract/>
                   <KeywordList>
@@ -1103,7 +1103,7 @@
                   </Style>
                 </Layer>
                 <Layer noSubsets="0" opaque="0" queryable="1">
-                  <Name>BSO_DML_ARCH:Refugiehuizen_gelokaliseerd_met_plan</Name>
+                  <Name>URBAN_DCE_AE:Refugiehuizen_gelokaliseerd_met_plan</Name>
                   <Title>Refugiehuizen gelokaliseerd met plan</Title>
                   <Abstract/>
                   <KeywordList>
@@ -1129,7 +1129,7 @@
             <Name>Bouwkundige Erfgoed</Name>
             <Title>Bouwkundige Erfgoed</Title>
             <Layer noSubsets="0" opaque="0" queryable="1">
-              <Name>BSO_DML_BESC:Inventaris_Irismonument</Name>
+              <Name>URBAN_DCE_IVBE:Inventaris_Irismonument</Name>
               <Title>Inventaris Irismonument</Title>
               <Abstract/>
               <KeywordList>
@@ -1154,7 +1154,7 @@
             <Name>Natuur Erfgoed</Name>
             <Title>Natuur Erfgoed</Title>
             <Layer noSubsets="0" opaque="0" queryable="1">
-              <Name>BSO_DML_BESC:Opmerkelijke_bomen</Name>
+              <Name>URBAN_DCE_NE:Opmerkelijke_bomen</Name>
               <Title>Opmerkelijke bomen</Title>
               <Abstract />
               <KeywordList>
@@ -1176,7 +1176,7 @@
               </Style>
             </Layer>
             <Layer noSubsets="0" opaque="0" queryable="1">
-              <Name>BSO_DML_BESC:Gevelde_of_verdwenen_bomen</Name>
+              <Name>URBAN_DCE_NE:Gevelde_of_verdwenen_bomen</Name>
               <Title>Gevelde of verdwenen bomen</Title>
               <Abstract />
               <KeywordList>
@@ -1197,7 +1197,7 @@
               </Style>
             </Layer>
             <Layer noSubsets="0" opaque="0" queryable="1">
-              <Name>BSO_DML_BESC:Opmerkelijke_bomen_100_biggest</Name>
+              <Name>URBAN_DCE_NE:Opmerkelijke_bomen_100_biggest</Name>
               <Title>Opmerkelijke bomen - 100 grotere</Title>
               <Abstract />
               <KeywordList>
@@ -1218,7 +1218,7 @@
               </Style>
             </Layer>
             <!--Layer noSubsets="0" opaque="0" queryable="1">
-            <Name>BSO_DML_BESC:Opmerkelijke_bomen_zeldzaamheid</Name>
+            <Name>URBAN_DCE_NE:Opmerkelijke_bomen_zeldzaamheid</Name>
             <Title>Opmerkelijke bomen - zeldzaamheid</Title>
             <Abstract />
             <KeywordList>
@@ -1245,7 +1245,7 @@
         <Name>Stedenbouw</Name>
         <Title>Stedenbouw</Title>
         <Layer noSubsets="0" opaque="0" queryable="1">
-          <Name>BSO:OPENPERMITS_NL</Name>
+          <Name>URBAN_DS:OPENPERMITS_NL</Name>
           <Title>Stedenbouwkundige vergunningen</Title>
           <Abstract/>
           <KeywordList>
@@ -1266,7 +1266,7 @@
           </Style>
         </Layer>
         <Layer queryable="1">
-          <Name>BSO:Verkavelingen</Name>
+          <Name>URBAN_DS:Verkavelingen</Name>
           <Title>Verkavelingen</Title>
           <Abstract />
           <KeywordList>
@@ -1287,7 +1287,7 @@
           </Style>
         </Layer>
         <Layer queryable="1">
-          <Name>BSO:Gezoneerde_verordeningen</Name>
+          <Name>URBAN_DS:Gezoneerde_verordeningen</Name>
           <Title>Gezoneerde verordeningen</Title>
           <Abstract />
           <KeywordList>
@@ -1308,7 +1308,7 @@
           </Style>
         </Layer>
         <Layer queryable="1" opaque="0">
-          <Name>BSO:Gemeentelijke_bouwverordening</Name>
+          <Name>URBAN_DS:Gemeentelijke_bouwverordening</Name>
           <Title>Gemeentelijke bouwverordening</Title>
           <Abstract/>
           <KeywordList>
@@ -1335,7 +1335,7 @@
           </Style>
         </Layer>
         <Layer noSubsets="0" opaque="0" queryable="1">
-          <Name>BSO:Gronden_bestemd_voor_industrie</Name>
+          <Name>URBAN_DS:Gronden_bestemd_voor_industrie</Name>
           <Title>Gronden bestemd voor industrie</Title>
           <Abstract/>
           <KeywordList>
@@ -1355,7 +1355,7 @@
           </Style>
         </Layer>
         <Layer queryable="1">
-          <Name>BSO_DSP:Prioritaire_ontwikkelingspolen</Name>
+          <Name>PERSPECTIVE_NL:Prioritaire_ontwikkelingspolen</Name>
           <Title>Prioritaire ontwikkelingspolen</Title>
           <Abstract />
           <KeywordList>
@@ -1382,7 +1382,7 @@
             <Name>Reclame</Name>
             <Title>Reclame</Title>
             <Layer queryable="1">
-              <Name>BSO:Groengebieden</Name>
+              <Name>URBAN_DS:Groengebieden</Name>
               <Title>Groengebieden</Title>
               <Abstract>A10_RRU_ESPVERT</Abstract>
               <KeywordList>
@@ -1412,7 +1412,7 @@
               </Style>
             </Layer>
             <Layer queryable="1">
-              <Name>BSO:Goed_dat_beschermd_is_of_ingeschreven_op_de_bewaarlijst</Name>
+              <Name>URBAN_DCE_IVBE:Goed_dat_beschermd_is_of_ingeschreven_op_de_bewaarlijst</Name>
               <Title>Goed dat beschermd is of ingeschreven op de bewaarlijst</Title>
               <Abstract>VM_A40_CLASVGD</Abstract>
               <KeywordList>
@@ -1442,7 +1442,7 @@
               </Style>
             </Layer>
             <Layer queryable="1">
-              <Name>BSO:Reclame</Name>
+              <Name>URBAN_DS:Reclame</Name>
               <Title>Reclame</Title>
               <Abstract>A10_RRU_PUB</Abstract>
               <KeywordList>
@@ -1476,7 +1476,7 @@
             <Name>Uithangborden</Name>
             <Title>Uithangborden</Title>
             <Layer queryable="1">
-              <Name>BSO:Winkelgalerijen</Name>
+              <Name>PERSPECTIVE_NL:Winkelgalerijen</Name>
               <Title>Winkelgalerijen</Title>
               <Abstract />
               <KeywordList>
@@ -1506,7 +1506,7 @@
               </Style>
             </Layer>
             <Layer queryable="1">
-              <Name>BSO:Linten_voor_handelskern</Name>
+              <Name>PERSPECTIVE_NL:Linten_voor_handelskern</Name>
               <Title>Linten voor handelskern</Title>
               <Abstract />
               <KeywordList>
@@ -1536,7 +1536,7 @@
               </Style>
             </Layer>
             <Layer queryable="1">
-              <Name>BSO:Groengebieden</Name>
+              <Name>URBAN_DS:Groengebieden</Name>
               <Title>Groengebieden</Title>
               <Abstract>A10_RRU_ESPVERT</Abstract>
               <KeywordList>
@@ -1566,7 +1566,7 @@
               </Style>
             </Layer>
             <Layer queryable="1">
-              <Name>BSO:Goed_dat_beschermd_is_of_ingeschreven_op_de_bewaarlijst</Name>
+              <Name>URBAN_DCE_IVBE:Goed_dat_beschermd_is_of_ingeschreven_op_de_bewaarlijst</Name>
               <Title>Goed dat beschermd is of ingeschreven op de bewaarlijst</Title>
               <Abstract>VM_A40_CLASVGD</Abstract>
               <KeywordList>
@@ -1596,7 +1596,7 @@
               </Style>
             </Layer>
             <Layer queryable="1">
-              <Name>BSO:Uithangborden</Name>
+              <Name>URBAN_DS:Uithangborden</Name>
               <Title>Uithangborden</Title>
               <Abstract>A10_RRU_ENS</Abstract>
               <KeywordList>
@@ -1626,7 +1626,7 @@
               </Style>
             </Layer>
             <Layer queryable="1">
-              <Name>BSO:GCHEWS</Name>
+              <Name>PERSPECTIVE_NL:GCHEWS</Name>
               <Title>GCHEWS</Title>
               <Abstract />
               <KeywordList>
@@ -1660,7 +1660,7 @@
             <Name>Toegankelijkheid</Name>
             <Title>Toegankelijkheid</Title>
             <Layer queryable="1">
-              <Name>BSO:Groengebieden</Name>
+              <Name>URBAN_DS:Groengebieden</Name>
               <Title>Groengebieden</Title>
               <Abstract>A10_RRU_ESPVERT</Abstract>
               <KeywordList>
@@ -1690,7 +1690,7 @@
               </Style>
             </Layer>
             <Layer noSubsets="0" opaque="0" queryable="1">
-              <Name>BSO:Toegankelijkheid_lijnen</Name>
+              <Name>URBAN_DS:Toegankelijkheid_lijnen</Name>
               <Title>Toegankelijkheid lijnen</Title>
               <Abstract/>
               <KeywordList>
@@ -1710,7 +1710,7 @@
               </Style>
             </Layer>
             <Layer noSubsets="0" opaque="0" queryable="1">
-              <Name>BSO:Toegankelijkheid_punten</Name>
+              <Name>URBAN_DS:Toegankelijkheid_punten</Name>
               <Title>Stoppen</Title>
               <Abstract/>
               <KeywordList>
@@ -1736,7 +1736,7 @@
         <Name>Stedelijke herwaardering</Name>
         <Title>Stedelijke herwaardering</Title>
         <Layer noSubsets="0" opaque="0" queryable="1">
-          <Name>BSO_DSV:Wijkcontracten_Projecten</Name>
+          <Name>URBAN_DSV:Wijkcontracten_Projecten</Name>
           <Title>Wijkcontracten (Projecten)</Title>
           <Abstract/>
           <KeywordList>
@@ -1756,7 +1756,7 @@
           </Style>
         </Layer>
         <Layer noSubsets="0" opaque="0" queryable="1">
-          <Name>BSO_DSV:Wijkcontracten_Programmas</Name>
+          <Name>URBAN_DSV:Wijkcontracten_Programmas</Name>
           <Title>Wijkcontracten (Programma’s)</Title>
           <Abstract/>
           <KeywordList>
@@ -1767,7 +1767,7 @@
           <LatLonBoundingBox maxx="4.479916592688879" maxy="50.91365373892416" minx="4.24247021276358" miny="50.763393168788134"/>
           <BoundingBox SRS="EPSG:31370" maxx="165088.0" maxy="185088.0" minx="140000.0" miny="160000.0"/>
           <Style>
-            <Name>BSO_DSV:Wijkcontracten_Programmas</Name>
+            <Name>URBAN_DSV:Wijkcontracten_Programmas</Name>
             <Title>Wijkcontracten (Programma's)</Title>
             <LegendURL height="40" width="61">
               <Format>image/png</Format>
@@ -1776,7 +1776,7 @@
           </Style>
         </Layer>
         <Layer noSubsets="0" opaque="0" queryable="1">
-          <Name>BSO_DSV:Stadsvernieuwingscontracten_Programmas</Name>
+          <Name>URBAN_DSV:Stadsvernieuwingscontracten_Programmas</Name>
           <Title>Stadsvernieuwingscontracten (Programmas)</Title>
           <Abstract/>
           <KeywordList>
@@ -1796,7 +1796,7 @@
           </Style>
         </Layer>
         <Layer queryable="1">
-          <Name>BSO_DSV:Voorkooprecht</Name>
+          <Name>URBAN_DSV:Voorkooprecht</Name>
           <Title>Voorkooprecht (Alleen maar Ord. 18/07/2002)</Title>
           <Abstract />
           <KeywordList>
@@ -1836,7 +1836,7 @@
       <SRS>EPSG:900913</SRS>
       <LatLonBoundingBox maxx="4.49547992326272" maxy="50.9218586969616" minx="4.22527159306639" miny="50.7599660513373" />
       <Layer noSubsets="0" opaque="0" queryable="1">
-        <Name>BEE:Zone_ZEUS</Name>
+        <Name>SPRB_SPRB_SPRB_SPRB_SPRB_SPRB_SPRB_SPRB_SPRB_SPRB_SPRB_SPRB_SPRB_SPRB_SPRB_SPRB_SPRB_BEE:Zone_ZEUS</Name>
         <Title>Zone ZEUS</Title>
         <Abstract/>
         <KeywordList>
@@ -1864,7 +1864,7 @@
         </Style>
       </Layer>
       <Layer noSubsets="0" opaque="1" queryable="1">
-        <Name>BEW:Ontwikkelingszones_2015</Name>
+        <Name>GOB_GOB_GOB_GOB_GOB_GOB_GOB_GOB_GOB_GOB_GOB_GOB_GOB_GOB_GOB_GOB_GOB_BEW:Ontwikkelingszones_2015</Name>
         <Title>Ontwikkelingszones 2015</Title>
         <Abstract />
         <KeywordList>
@@ -1893,7 +1893,7 @@
         <Name>Inventaris van de bodemgesteldheid</Name>
         <Title>Inventaris van de bodemgesteldheid</Title>
         <Layer noSubsets="0" opaque="0" queryable="1">
-          <Name>BDU:PUBBELB_INVENTAIRE_ETAT_SOL_PUBLIC</Name>
+          <Name>BE:PUBBELB_INVENTAIRE_ETAT_SOL_PUBLIC</Name>
           <Title>Inventaris van de bodemgesteldheid</Title>
           <Abstract/>
           <KeywordList>
@@ -2753,7 +2753,7 @@
       <Name>huisvesting.brussels</Name>
       <Title>huisvesting.brussels</Title>
       <Layer noSubsets="0" opaque="0" queryable="1">
-        <Name>BSO:Zones_met_verhoogde_huurprijs_bestemd_voor_de_svk</Name>
+        <Name>GOB_BH:Zones_met_verhoogde_huurprijs_bestemd_voor_de_svk</Name>
         <Title>Zones met verhoogde huurprijs bestemd voor de SVK</Title>
         <Abstract/>
         <KeywordList>
@@ -2790,72 +2790,72 @@
           <Name>Algemene kaarten</Name>
           <Title>Algemene kaarten</Title>
           <Layer noSubsets="0" opaque="0" queryable="1">
-            <Name>PER:KAART_GPDO_1_RUIMTELIJKE_RUGGENGRAAT_EN_VISIE_VOOR_BRUSSEL</Name>
+            <Name>PERSPECTIVE_NL:KAART_GPDO_1_RUIMTELIJKE_RUGGENGRAAT_EN_VISIE_VOOR_BRUSSEL</Name>
             <Title>1 Ruimtelijke ruggengraat en visie voor Brussel</Title>
-            <Abstract>Layer-Group type layer: PER:KAART_GPDO_1_RUIMTELIJKE_RUGGENGRAAT_EN_VISIE_VOOR_BRUSSEL</Abstract>
+            <Abstract>Layer-Group type layer: PERSPECTIVE_NL:KAART_GPDO_1_RUIMTELIJKE_RUGGENGRAAT_EN_VISIE_VOOR_BRUSSEL</Abstract>
             <KeywordList/>
             <SRS>EPSG:31370</SRS>
             <LatLonBoundingBox maxx="4.5029147493530415" maxy="50.93302979508387" minx="4.221228563430616" miny="50.73929601414212"/>
             <BoundingBox SRS="EPSG:31370" maxx="165088.0" maxy="185088.0" minx="140000.0" miny="160000.0"/>
           </Layer>
           <Layer noSubsets="0" opaque="0" queryable="1">
-            <Name>PER:KAART_GPDO_2_GROTE_GRONDRESERVES</Name>
+            <Name>PERSPECTIVE_NL:KAART_GPDO_2_GROTE_GRONDRESERVES</Name>
             <Title>2 Grote grondreserves</Title>
-            <Abstract>Layer-Group type layer: PER:KAART_GPDO_2_GROTE_GRONDRESERVES</Abstract>
+            <Abstract>Layer-Group type layer: PERSPECTIVE_NL:KAART_GPDO_2_GROTE_GRONDRESERVES</Abstract>
             <KeywordList/>
             <SRS>EPSG:31370</SRS>
             <LatLonBoundingBox maxx="4.48296557518834" maxy="50.914414116108844" minx="4.240867104763946" miny="50.76259333506502"/>
             <BoundingBox SRS="EPSG:31370" maxx="165088.0" maxy="185088.0" minx="140000.0" miny="160000.0"/>
           </Layer>
           <Layer noSubsets="0" opaque="0" queryable="1">
-            <Name>PER:KAART_GPDO_3_GROEN_EN_BLAUW_NETWERK</Name>
+            <Name>PERSPECTIVE_NL:KAART_GPDO_3_GROEN_EN_BLAUW_NETWERK</Name>
             <Title>3 Groen en blauw netwerk</Title>
-            <Abstract>Layer-Group type layer: PER:KAART_GPDO_3_GROEN_EN_BLAUW_NETWERK</Abstract>
+            <Abstract>Layer-Group type layer: PERSPECTIVE_NL:KAART_GPDO_3_GROEN_EN_BLAUW_NETWERK</Abstract>
             <KeywordList/>
             <SRS>EPSG:31370</SRS>
             <LatLonBoundingBox maxx="4.482979405115632" maxy="50.92001403617664" minx="4.239128689658547" miny="50.7625914770645"/>
             <BoundingBox SRS="EPSG:31370" maxx="165088.0" maxy="185088.0" minx="140000.0" miny="160000.0"/>
           </Layer>
           <Layer noSubsets="0" opaque="0" queryable="1">
-            <Name>PER:KAART_GPDO_4_OPENBARE_RUIMTE_EN_STADSVERNIEUWING</Name>
+            <Name>PERSPECTIVE_NL:KAART_GPDO_4_OPENBARE_RUIMTE_EN_STADSVERNIEUWING</Name>
             <Title>4 Openbare ruimte en stadsvernieuwing</Title>
-            <Abstract>Layer-Group type layer: PER:KAART_GPDO_4_OPENBARE_RUIMTE_EN_STADSVERNIEUWING</Abstract>
+            <Abstract>Layer-Group type layer: PERSPECTIVE_NL:KAART_GPDO_4_OPENBARE_RUIMTE_EN_STADSVERNIEUWING</Abstract>
             <KeywordList/>
             <SRS>EPSG:31370</SRS>
             <LatLonBoundingBox maxx="4.481914589727506" maxy="50.91416234359296" minx="4.239817419691095" miny="50.76233939230115"/>
             <BoundingBox SRS="EPSG:31370" maxx="165088.0" maxy="185088.0" minx="140000.0" miny="160000.0"/>
           </Layer>
           <Layer noSubsets="0" opaque="0" queryable="1">
-            <Name>PER:KAART_GPDO_5_ECONOMISCHE_ONTWIKKELING</Name>
+            <Name>PERSPECTIVE_NL:KAART_GPDO_5_ECONOMISCHE_ONTWIKKELING</Name>
             <Title>5 Economische ontwikkeling</Title>
-            <Abstract>Layer-Group type layer: PER:KAART_GPDO_5_ECONOMISCHE_ONTWIKKELING</Abstract>
+            <Abstract>Layer-Group type layer: PERSPECTIVE_NL:KAART_GPDO_5_ECONOMISCHE_ONTWIKKELING</Abstract>
             <KeywordList/>
             <SRS>EPSG:31370</SRS>
             <LatLonBoundingBox maxx="4.48296557518834" maxy="50.91441409195927" minx="4.239816737362674" miny="50.76233939230115"/>
             <BoundingBox SRS="EPSG:31370" maxx="165088.0" maxy="185088.0" minx="140000.0" miny="160000.0"/>
           </Layer>
           <Layer noSubsets="0" opaque="0" queryable="1">
-            <Name>PER:KAART_GPDO_6_STRUCTURERENDE_MOBILITEITSNETWERKEN</Name>
+            <Name>PERSPECTIVE_NL:KAART_GPDO_6_STRUCTURERENDE_MOBILITEITSNETWERKEN</Name>
             <Title>6 Structurerende mobiliteitsnetwerken</Title>
-            <Abstract>Layer-Group type layer: PER:KAART_GPDO_6_STRUCTURERENDE_MOBILITEITSNETWERKEN</Abstract>
+            <Abstract>Layer-Group type layer: PERSPECTIVE_NL:KAART_GPDO_6_STRUCTURERENDE_MOBILITEITSNETWERKEN</Abstract>
             <KeywordList/>
             <SRS>EPSG:31370</SRS>
             <LatLonBoundingBox maxx="4.5029147493530415" maxy="50.93302979508387" minx="4.221228563430616" miny="50.73929601414212"/>
             <BoundingBox SRS="EPSG:31370" maxx="165088.0" maxy="185088.0" minx="140000.0" miny="160000.0"/>
           </Layer>
           <Layer noSubsets="0" opaque="0" queryable="1">
-            <Name>PER:KAART_GPDO_7_FIETSNET</Name>
+            <Name>PERSPECTIVE_NL:KAART_GPDO_7_FIETSNET</Name>
             <Title>7 Fietsnet</Title>
-            <Abstract>Layer-Group type layer: PER:KAART_GPDO_7_FIETSNET</Abstract>
+            <Abstract>Layer-Group type layer: PERSPECTIVE_NL:KAART_GPDO_7_FIETSNET</Abstract>
             <KeywordList/>
             <SRS>EPSG:31370</SRS>
             <LatLonBoundingBox maxx="4.504966970270602" maxy="50.93302946375664" minx="4.221218523132021" miny="50.73936832837766"/>
             <BoundingBox SRS="EPSG:31370" maxx="165088.0" maxy="185088.0" minx="140000.0" miny="160000.0"/>
           </Layer>
           <Layer noSubsets="0" opaque="0" queryable="1">
-            <Name>PER:KAART_GPDO_8_HET_STADSPROJECT</Name>
+            <Name>PERSPECTIVE_NL:KAART_GPDO_8_HET_STADSPROJECT</Name>
             <Title>8 Het stadsproject</Title>
-            <Abstract>Layer-Group type layer: PER:KAART_GPDO_8_HET_STADSPROJECT</Abstract>
+            <Abstract>Layer-Group type layer: PERSPECTIVE_NL:KAART_GPDO_8_HET_STADSPROJECT</Abstract>
             <KeywordList/>
             <SRS>EPSG:31370</SRS>
             <LatLonBoundingBox maxx="4.502356606659889" maxy="50.932940069820106" minx="4.221827632054813" miny="50.739386052164924"/>
@@ -2866,198 +2866,198 @@
           <Name>Gedetailleerde kaarten</Name>
           <Title>Gedetailleerde kaarten</Title>
           <Layer noSubsets="0" opaque="0" queryable="1">
-            <Name>PER:KAART_GPDO_01_KANAALGEBIED_PROJECTSITES_PRIORITAIRE_ONTWIKKELINGSSITES</Name>
+            <Name>PERSPECTIVE_NL:KAART_GPDO_01_KANAALGEBIED_PROJECTSITES_PRIORITAIRE_ONTWIKKELINGSSITES</Name>
             <Title>01 Kanaalgebied Projectsites - Prioritaire ontwikkelingssites</Title>
-            <Abstract>Layer-Group type layer: PER:KAART_GPDO_01_KANAALGEBIED_PROJECTSITES_PRIORITAIRE_ONTWIKKELINGSSITES</Abstract>
+            <Abstract>Layer-Group type layer: PERSPECTIVE_NL:KAART_GPDO_01_KANAALGEBIED_PROJECTSITES_PRIORITAIRE_ONTWIKKELINGSSITES</Abstract>
             <KeywordList/>
             <SRS>EPSG:31370</SRS>
             <LatLonBoundingBox maxx="4.482592207387343" maxy="50.91434679525825" minx="4.2412735653799425" miny="50.76266082001365"/>
             <BoundingBox SRS="EPSG:31370" maxx="165088.0" maxy="185088.0" minx="140000.0" miny="160000.0"/>
           </Layer>
           <Layer noSubsets="0" opaque="0" queryable="1">
-            <Name>PER:KAART_GPDO_02_PRIORITAIRE_ONTWIKKELINGSSITES</Name>
+            <Name>PERSPECTIVE_NL:KAART_GPDO_02_PRIORITAIRE_ONTWIKKELINGSSITES</Name>
             <Title>02 Prioritaire ontwikkelingssites</Title>
-            <Abstract>Layer-Group type layer: PER:KAART_GPDO_02_PRIORITAIRE_ONTWIKKELINGSSITES</Abstract>
+            <Abstract>Layer-Group type layer: PERSPECTIVE_NL:KAART_GPDO_02_PRIORITAIRE_ONTWIKKELINGSSITES</Abstract>
             <KeywordList/>
             <SRS>EPSG:31370</SRS>
             <LatLonBoundingBox maxx="4.482592207387343" maxy="50.91434679525825" minx="4.2412735653799425" miny="50.76266082001365"/>
             <BoundingBox SRS="EPSG:31370" maxx="165088.0" maxy="185088.0" minx="140000.0" miny="160000.0"/>
           </Layer>
           <Layer noSubsets="0" opaque="0" queryable="1">
-            <Name>PER:KAART_GPDO_03_VIJFHOEK_VAN_BRUSSEL</Name>
+            <Name>PERSPECTIVE_NL:KAART_GPDO_03_VIJFHOEK_VAN_BRUSSEL</Name>
             <Title>03 Vijfhoek van Brussel</Title>
-            <Abstract>Layer-Group type layer: PER:KAART_GPDO_03_VIJFHOEK_VAN_BRUSSEL</Abstract>
+            <Abstract>Layer-Group type layer: PERSPECTIVE_NL:KAART_GPDO_03_VIJFHOEK_VAN_BRUSSEL</Abstract>
             <KeywordList/>
             <SRS>EPSG:31370</SRS>
             <LatLonBoundingBox maxx="4.482592207387343" maxy="50.91434679525825" minx="4.2412735653799425" miny="50.76266082001365"/>
             <BoundingBox SRS="EPSG:31370" maxx="165088.0" maxy="185088.0" minx="140000.0" miny="160000.0"/>
           </Layer>
           <Layer noSubsets="0" opaque="0" queryable="1">
-            <Name>PER:KAART_GPDO_04_LOKALE_POLEN</Name>
+            <Name>PERSPECTIVE_NL:KAART_GPDO_04_LOKALE_POLEN</Name>
             <Title>04 Lokale polen</Title>
-            <Abstract>Layer-Group type layer: PER:KAART_GPDO_04_LOKALE_POLEN</Abstract>
+            <Abstract>Layer-Group type layer: PERSPECTIVE_NL:KAART_GPDO_04_LOKALE_POLEN</Abstract>
             <KeywordList/>
             <SRS>EPSG:31370</SRS>
             <LatLonBoundingBox maxx="4.482592207387343" maxy="50.91434679525825" minx="4.2412735653799425" miny="50.76266082001365"/>
             <BoundingBox SRS="EPSG:31370" maxx="165088.0" maxy="185088.0" minx="140000.0" miny="160000.0"/>
           </Layer>
           <Layer noSubsets="0" opaque="0" queryable="1">
-            <Name>PER:KAART_GPDO_05_LOKALE_IDENTITEITSKERN</Name>
+            <Name>PERSPECTIVE_NL:KAART_GPDO_05_LOKALE_IDENTITEITSKERN</Name>
             <Title>05 Lokale identiteitskern</Title>
-            <Abstract>Layer-Group type layer: PER:KAART_GPDO_05_LOKALE_IDENTITEITSKERN</Abstract>
+            <Abstract>Layer-Group type layer: PERSPECTIVE_NL:KAART_GPDO_05_LOKALE_IDENTITEITSKERN</Abstract>
             <KeywordList/>
             <SRS>EPSG:31370</SRS>
             <LatLonBoundingBox maxx="4.482592207387343" maxy="50.91434679525825" minx="4.2412735653799425" miny="50.76266082001365"/>
             <BoundingBox SRS="EPSG:31370" maxx="165088.0" maxy="185088.0" minx="140000.0" miny="160000.0"/>
           </Layer>
           <Layer noSubsets="0" opaque="0" queryable="1">
-            <Name>PER:KAART_GPDO_06_ZONE_VOOR_STEDELIJKE_HERWAARDERING_2016</Name>
+            <Name>PERSPECTIVE_NL:KAART_GPDO_06_ZONE_VOOR_STEDELIJKE_HERWAARDERING_2016</Name>
             <Title>06 Zone voor stedelijke hewaardereing 2016</Title>
-            <Abstract>Layer-Group type layer: PER:KAART_GPDO_06_ZONE_VOOR_STEDELIJKE_HERWAARDERING_2016</Abstract>
+            <Abstract>Layer-Group type layer: PERSPECTIVE_NL:KAART_GPDO_06_ZONE_VOOR_STEDELIJKE_HERWAARDERING_2016</Abstract>
             <KeywordList/>
             <SRS>EPSG:31370</SRS>
             <LatLonBoundingBox maxx="4.482592207387343" maxy="50.91434679525825" minx="4.2412735653799425" miny="50.76266082001365"/>
             <BoundingBox SRS="EPSG:31370" maxx="165088.0" maxy="185088.0" minx="140000.0" miny="160000.0"/>
           </Layer>
           <Layer noSubsets="0" opaque="0" queryable="1">
-            <Name>PER:KAART_GPDO_07_ERFGOEDGEBEIDEN</Name>
+            <Name>PERSPECTIVE_NL:KAART_GPDO_07_ERFGOEDGEBEIDEN</Name>
             <Title>07 Erfgoedgebieden</Title>
-            <Abstract>Layer-Group type layer: PER:KAART_GPDO_07_ERFGOEDGEBEIDEN</Abstract>
+            <Abstract>Layer-Group type layer: PERSPECTIVE_NL:KAART_GPDO_07_ERFGOEDGEBEIDEN</Abstract>
             <KeywordList/>
             <SRS>EPSG:31370</SRS>
             <LatLonBoundingBox maxx="4.482592207387343" maxy="50.91434679525825" minx="4.2412735653799425" miny="50.76266082001365"/>
             <BoundingBox SRS="EPSG:31370" maxx="165088.0" maxy="185088.0" minx="140000.0" miny="160000.0"/>
           </Layer>
           <Layer noSubsets="0" opaque="0" queryable="1">
-            <Name>PER:KAART_GPDO_08_ICONISCH_ERFGOED</Name>
+            <Name>PERSPECTIVE_NL:KAART_GPDO_08_ICONISCH_ERFGOED</Name>
             <Title>08 Iconisch erfgoed</Title>
-            <Abstract>Layer-Group type layer: PER:KAART_GPDO_08_ICONISCH_ERFGOED</Abstract>
+            <Abstract>Layer-Group type layer: PERSPECTIVE_NL:KAART_GPDO_08_ICONISCH_ERFGOED</Abstract>
             <KeywordList/>
             <SRS>EPSG:31370</SRS>
             <LatLonBoundingBox maxx="4.482592207387343" maxy="50.91434679525825" minx="4.2412735653799425" miny="50.76266082001365"/>
             <BoundingBox SRS="EPSG:31370" maxx="165088.0" maxy="185088.0" minx="140000.0" miny="160000.0"/>
           </Layer>
           <Layer noSubsets="0" opaque="0" queryable="1">
-            <Name>PER:KAART_GPDO_09_NETWERK_VAN_STRUCTURERENDE_ERFGOEDASSEN</Name>
+            <Name>PERSPECTIVE_NL:KAART_GPDO_09_NETWERK_VAN_STRUCTURERENDE_ERFGOEDASSEN</Name>
             <Title>09 Netwerk van structurerende erfgoedassen</Title>
-            <Abstract>Layer-Group type layer: PER:KAART_GPDO_09_NETWERK_VAN_STRUCTURERENDE_ERFGOEDASSEN</Abstract>
+            <Abstract>Layer-Group type layer: PERSPECTIVE_NL:KAART_GPDO_09_NETWERK_VAN_STRUCTURERENDE_ERFGOEDASSEN</Abstract>
             <KeywordList/>
             <SRS>EPSG:31370</SRS>
             <LatLonBoundingBox maxx="4.482635631396494" maxy="50.931982125444584" minx="4.239837314118492" miny="50.740436607569244"/>
             <BoundingBox SRS="EPSG:31370" maxx="165088.0" maxy="185088.0" minx="140000.0" miny="160000.0"/>
           </Layer>
           <Layer noSubsets="0" opaque="0" queryable="1">
-            <Name>PER:KAART_GPDO_10_VERGROENINGSZONES</Name>
+            <Name>PERSPECTIVE_NL:KAART_GPDO_10_VERGROENINGSZONES</Name>
             <Title>10 Vergroeningszones</Title>
-            <Abstract>Layer-Group type layer: PER:KAART_GPDO_10_VERGROENINGSZONES</Abstract>
+            <Abstract>Layer-Group type layer: PERSPECTIVE_NL:KAART_GPDO_10_VERGROENINGSZONES</Abstract>
             <KeywordList/>
             <SRS>EPSG:31370</SRS>
             <LatLonBoundingBox maxx="4.482592207387343" maxy="50.91434679525825" minx="4.2412735653799425" miny="50.76266082001365"/>
             <BoundingBox SRS="EPSG:31370" maxx="165088.0" maxy="185088.0" minx="140000.0" miny="160000.0"/>
           </Layer>
           <Layer noSubsets="0" opaque="0" queryable="1">
-            <Name>PER:KAART_GPDO_11_GROEN_NETWERK</Name>
+            <Name>PERSPECTIVE_NL:KAART_GPDO_11_GROEN_NETWERK</Name>
             <Title>11 Groen netwerk</Title>
-            <Abstract>Layer-Group type layer: PER:KAART_GPDO_11_GROEN_NETWERK</Abstract>
+            <Abstract>Layer-Group type layer: PERSPECTIVE_NL:KAART_GPDO_11_GROEN_NETWERK</Abstract>
             <KeywordList/>
             <SRS>EPSG:31370</SRS>
             <LatLonBoundingBox maxx="4.482592207387343" maxy="50.91434679525825" minx="4.2412735653799425" miny="50.76266082001365"/>
             <BoundingBox SRS="EPSG:31370" maxx="165088.0" maxy="185088.0" minx="140000.0" miny="160000.0"/>
           </Layer>
           <Layer noSubsets="0" opaque="0" queryable="1">
-            <Name>PER:KAART_GPDO_12_BESCHERMING_VAN_DE_BIODIVERSITEIT</Name>
+            <Name>PERSPECTIVE_NL:KAART_GPDO_12_BESCHERMING_VAN_DE_BIODIVERSITEIT</Name>
             <Title>12 Bescherming van de biodiversiteit</Title>
-            <Abstract>Layer-Group type layer: PER:KAART_GPDO_12_BESCHERMING_VAN_DE_BIODIVERSITEIT</Abstract>
+            <Abstract>Layer-Group type layer: PERSPECTIVE_NL:KAART_GPDO_12_BESCHERMING_VAN_DE_BIODIVERSITEIT</Abstract>
             <KeywordList/>
             <SRS>EPSG:31370</SRS>
             <LatLonBoundingBox maxx="4.482592207387343" maxy="50.91434679525825" minx="4.2412735653799425" miny="50.76266082001365"/>
             <BoundingBox SRS="EPSG:31370" maxx="165088.0" maxy="185088.0" minx="140000.0" miny="160000.0"/>
           </Layer>
           <Layer noSubsets="0" opaque="0" queryable="1">
-            <Name>PER:KAART_GPDO_13_BLAUW_NETWERK</Name>
+            <Name>PERSPECTIVE_NL:KAART_GPDO_13_BLAUW_NETWERK</Name>
             <Title>13 Blauw netwerk</Title>
-            <Abstract>Layer-Group type layer: PER:KAART_GPDO_13_BLAUW_NETWERK</Abstract>
+            <Abstract>Layer-Group type layer: PERSPECTIVE_NL:KAART_GPDO_13_BLAUW_NETWERK</Abstract>
             <KeywordList/>
             <SRS>EPSG:31370</SRS>
             <LatLonBoundingBox maxx="4.482592207387343" maxy="50.91434675296011" minx="4.23948902148032" miny="50.76265890150132"/>
             <BoundingBox SRS="EPSG:31370" maxx="165088.0" maxy="185088.0" minx="140000.0" miny="160000.0"/>
           </Layer>
           <Layer noSubsets="0" opaque="0" queryable="1">
-            <Name>PER:KAART_GPDO_14_VERSTERKING_VAN_OPEN_RUIMTES_OP_EEN_GROOTSTESTEDELIJKE_SCHAAL</Name>
+            <Name>PERSPECTIVE_NL:KAART_GPDO_14_VERSTERKING_VAN_OPEN_RUIMTES_OP_EEN_GROOTSTESTEDELIJKE_SCHAAL</Name>
             <Title>14 Verstreking van open ruimtes op een grootstestedelijke schaal</Title>
-            <Abstract>Layer-Group type layer: PER:KAART_GPDO_14_VERSTERKING_VAN_OPEN_RUIMTES_OP_EEN_GROOTSTESTEDELIJKE_SCHAAL</Abstract>
+            <Abstract>Layer-Group type layer: PERSPECTIVE_NL:KAART_GPDO_14_VERSTERKING_VAN_OPEN_RUIMTES_OP_EEN_GROOTSTESTEDELIJKE_SCHAAL</Abstract>
             <KeywordList/>
             <SRS>EPSG:31370</SRS>
             <LatLonBoundingBox maxx="4.482605992396876" maxy="50.91994659277171" minx="4.240314944000609" miny="50.76265980904919"/>
             <BoundingBox SRS="EPSG:31370" maxx="165088.0" maxy="185088.0" minx="140000.0" miny="160000.0"/>
           </Layer>
           <Layer noSubsets="0" opaque="0" queryable="1">
-            <Name>PER:KAART_GPDO_15_ECONOMISCHE_ONTWIKKELINGSASSEN</Name>
+            <Name>PERSPECTIVE_NL:KAART_GPDO_15_ECONOMISCHE_ONTWIKKELINGSASSEN</Name>
             <Title>15 Economische ontwikkelingsassen</Title>
-            <Abstract>Layer-Group type layer: PER:KAART_GPDO_15_ECONOMISCHE_ONTWIKKELINGSASSEN</Abstract>
+            <Abstract>Layer-Group type layer: PERSPECTIVE_NL:KAART_GPDO_15_ECONOMISCHE_ONTWIKKELINGSASSEN</Abstract>
             <KeywordList/>
             <SRS>EPSG:31370</SRS>
             <LatLonBoundingBox maxx="4.482592207387343" maxy="50.91434679525825" minx="4.2412735653799425" miny="50.76266082001365"/>
             <BoundingBox SRS="EPSG:31370" maxx="165088.0" maxy="185088.0" minx="140000.0" miny="160000.0"/>
           </Layer>
           <Layer noSubsets="0" opaque="0" queryable="1">
-            <Name>PER:KAART_GPDO_16_COMPETITIVITEITSPOLEN_EN_UNIVERSITEITSCAMPUSSEN</Name>
+            <Name>PERSPECTIVE_NL:KAART_GPDO_16_COMPETITIVITEITSPOLEN_EN_UNIVERSITEITSCAMPUSSEN</Name>
             <Title>16 Competitiviteitspolen en universiteitscampussen</Title>
-            <Abstract>Layer-Group type layer: PER:KAART_GPDO_16_COMPETITIVITEITSPOLEN_EN_UNIVERSITEITSCAMPUSSEN</Abstract>
+            <Abstract>Layer-Group type layer: PERSPECTIVE_NL:KAART_GPDO_16_COMPETITIVITEITSPOLEN_EN_UNIVERSITEITSCAMPUSSEN</Abstract>
             <KeywordList/>
             <SRS>EPSG:31370</SRS>
             <LatLonBoundingBox maxx="4.482592207387343" maxy="50.91434679525825" minx="4.2412735653799425" miny="50.76266082001365"/>
             <BoundingBox SRS="EPSG:31370" maxx="165088.0" maxy="185088.0" minx="140000.0" miny="160000.0"/>
           </Layer>
           <Layer noSubsets="0" opaque="0" queryable="1">
-            <Name>PER:KAART_GPDO_17_ZONE_VAN_ECONOMISCHE_UITBOUW_IN_DE_STAD</Name>
+            <Name>PERSPECTIVE_NL:KAART_GPDO_17_ZONE_VAN_ECONOMISCHE_UITBOUW_IN_DE_STAD</Name>
             <Title>17 Zone van economische uitbouw in de stad</Title>
-            <Abstract>Layer-Group type layer: PER:KAART_GPDO_17_ZONE_VAN_ECONOMISCHE_UITBOUW_IN_DE_STAD</Abstract>
+            <Abstract>Layer-Group type layer: PERSPECTIVE_NL:KAART_GPDO_17_ZONE_VAN_ECONOMISCHE_UITBOUW_IN_DE_STAD</Abstract>
             <KeywordList/>
             <SRS>EPSG:31370</SRS>
             <LatLonBoundingBox maxx="4.482592207387343" maxy="50.91434679525825" minx="4.2412735653799425" miny="50.76266082001365"/>
             <BoundingBox SRS="EPSG:31370" maxx="165088.0" maxy="185088.0" minx="140000.0" miny="160000.0"/>
           </Layer>
           <Layer noSubsets="0" opaque="0" queryable="1">
-            <Name>PER:KAART_GPDO_18_STRUCTUREREND_OPENBAAR_VERVOERSNET</Name>
+            <Name>PERSPECTIVE_NL:KAART_GPDO_18_STRUCTUREREND_OPENBAAR_VERVOERSNET</Name>
             <Title>18 Structurerend openbaar vervoersnet</Title>
-            <Abstract>Layer-Group type layer: PER:KAART_GPDO_18_STRUCTUREREND_OPENBAAR_VERVOERSNET</Abstract>
+            <Abstract>Layer-Group type layer: PERSPECTIVE_NL:KAART_GPDO_18_STRUCTUREREND_OPENBAAR_VERVOERSNET</Abstract>
             <KeywordList/>
             <SRS>EPSG:31370</SRS>
             <LatLonBoundingBox maxx="4.502356606659889" maxy="50.932940069820106" minx="4.221827632054813" miny="50.739386052164924"/>
             <BoundingBox SRS="EPSG:31370" maxx="165088.0" maxy="185088.0" minx="140000.0" miny="160000.0"/>
           </Layer>
           <Layer noSubsets="0" opaque="0" queryable="1">
-            <Name>PER:KAART_GPDO_19_OVERSTAPPARKING</Name>
+            <Name>PERSPECTIVE_NL:KAART_GPDO_19_OVERSTAPPARKING</Name>
             <Title>19 Overstapparking</Title>
-            <Abstract>Layer-Group type layer: PER:KAART_GPDO_19_OVERSTAPPARKING</Abstract>
+            <Abstract>Layer-Group type layer: PERSPECTIVE_NL:KAART_GPDO_19_OVERSTAPPARKING</Abstract>
             <KeywordList/>
             <SRS>EPSG:31370</SRS>
             <LatLonBoundingBox maxx="4.482592207387343" maxy="50.91434679525825" minx="4.2412735653799425" miny="50.76266082001365"/>
             <BoundingBox SRS="EPSG:31370" maxx="165088.0" maxy="185088.0" minx="140000.0" miny="160000.0"/>
           </Layer>
           <Layer noSubsets="0" opaque="0" queryable="1">
-            <Name>PER:KAART_GPDO_20_STRUCTUREREND_WEGENNET</Name>
+            <Name>PERSPECTIVE_NL:KAART_GPDO_20_STRUCTUREREND_WEGENNET</Name>
             <Title>20 Structurerend wegennet</Title>
-            <Abstract>Layer-Group type layer: PER:KAART_GPDO_20_STRUCTUREREND_WEGENNET</Abstract>
+            <Abstract>Layer-Group type layer: PERSPECTIVE_NL:KAART_GPDO_20_STRUCTUREREND_WEGENNET</Abstract>
             <KeywordList/>
             <SRS>EPSG:31370</SRS>
             <LatLonBoundingBox maxx="4.482592207387343" maxy="50.91434679525825" minx="4.2412735653799425" miny="50.76266082001365"/>
             <BoundingBox SRS="EPSG:31370" maxx="165088.0" maxy="185088.0" minx="140000.0" miny="160000.0"/>
           </Layer>
           <Layer noSubsets="0" opaque="0" queryable="1">
-            <Name>PER:KAART_GPDO_21_INVALSWEGEN</Name>
+            <Name>PERSPECTIVE_NL:KAART_GPDO_21_INVALSWEGEN</Name>
             <Title>21 Invalswegen</Title>
-            <Abstract>Layer-Group type layer: PER:KAART_GPDO_21_INVALSWEGEN</Abstract>
+            <Abstract>Layer-Group type layer: PERSPECTIVE_NL:KAART_GPDO_21_INVALSWEGEN</Abstract>
             <KeywordList/>
             <SRS>EPSG:31370</SRS>
             <LatLonBoundingBox maxx="4.482592207387343" maxy="50.91434679525825" minx="4.2412735653799425" miny="50.76266082001365"/>
             <BoundingBox SRS="EPSG:31370" maxx="165088.0" maxy="185088.0" minx="140000.0" miny="160000.0"/>
           </Layer>
           <Layer noSubsets="0" opaque="0" queryable="1">
-            <Name>PER:KAART_GPDO_22_STRUCTUREREND_FIETSNET</Name>
+            <Name>PERSPECTIVE_NL:KAART_GPDO_22_STRUCTUREREND_FIETSNET</Name>
             <Title>22 Structurerend fietsnet</Title>
-            <Abstract>Layer-Group type layer: PER:KAART_GPDO_22_STRUCTUREREND_FIETSNET</Abstract>
+            <Abstract>Layer-Group type layer: PERSPECTIVE_NL:KAART_GPDO_22_STRUCTUREREND_FIETSNET</Abstract>
             <KeywordList/>
             <SRS>EPSG:31370</SRS>
             <LatLonBoundingBox maxx="4.504400615353169" maxy="50.932939686992526" minx="4.2218174088683895" miny="50.73945837894823"/>
@@ -3074,7 +3074,7 @@
           <Name>BSO:Bodembestemming</Name>
           <Title>Bodembestemming</Title>
           <Layer noSubsets="0" opaque="0" queryable="1">
-            <Name>BSO:Volledige_bodembestemming</Name>
+            <Name>PERSPECTIVE_NL:Volledige_bodembestemming</Name>
             <Title>Volledige bodembestemming</Title>
             <Abstract>Layer-Group type layer: Volledige_bodembestemming</Abstract>
             <SRS>EPSG:31370</SRS>
@@ -3085,7 +3085,7 @@
             <Name>Gedetaileerde bestemmingen</Name>
             <Title>Gedetaileerde bestemmingen</Title>
             <Layer queryable="1">
-              <Name>BSO:Winkelgalerijen</Name>
+              <Name>PERSPECTIVE_NL:Winkelgalerijen</Name>
               <Title>Winkelgalerijen</Title>
               <Abstract />
               <KeywordList>
@@ -3115,7 +3115,7 @@
               </Style>
             </Layer>
             <Layer queryable="1">
-              <Name>BSO:Transitparkeerplaats</Name>
+              <Name>PERSPECTIVE_NL:Transitparkeerplaats</Name>
               <Title>Transitparkeerplaats</Title>
               <Abstract />
               <KeywordList>
@@ -3145,7 +3145,7 @@
               </Style>
             </Layer>
             <Layer queryable="1">
-              <Name>BSO:Punten_van_wisselend_gemengd_ruimten</Name>
+              <Name>PERSPECTIVE_NL:Punten_van_wisselend_gemengd_ruimten</Name>
               <Title>Punten van wisselend gemengd ruimten</Title>
               <Abstract />
               <KeywordList>
@@ -3175,7 +3175,7 @@
               </Style>
             </Layer>
             <Layer queryable="1">
-              <Name>BSO:Linten_voor_handelskern</Name>
+              <Name>PERSPECTIVE_NL:Linten_voor_handelskern</Name>
               <Title>Linten voor handelskern</Title>
               <Abstract />
               <KeywordList>
@@ -3205,7 +3205,7 @@
               </Style>
             </Layer>
             <Layer queryable="1">
-              <Name>BSO:GCHEWS</Name>
+              <Name>PERSPECTIVE_NL:GCHEWS</Name>
               <Title>GCHEWS</Title>
               <Abstract />
               <KeywordList>
@@ -3235,7 +3235,7 @@
               </Style>
             </Layer>
             <Layer queryable="1">
-              <Name>BSO:Gebieden_van_gewestelijk_belang_met_uitgestelde_aanleg</Name>
+              <Name>PERSPECTIVE_NL:Gebieden_van_gewestelijk_belang_met_uitgestelde_aanleg</Name>
               <Title>Gebieden van gewestelijk belang met uitgestelde aanleg</Title>
               <Abstract />
               <KeywordList>
@@ -3265,7 +3265,7 @@
               </Style>
             </Layer>
             <Layer queryable="1">
-              <Name>BSO:Bestemmingen</Name>
+              <Name>PERSPECTIVE_NL:Bestemmingen</Name>
               <Title>Bestemmingen</Title>
               <Abstract />
               <KeywordList>
@@ -3322,7 +3322,7 @@
               </Style>
             </Layer>
             <Layer queryable="1">
-              <Name>BSO:Structurerende_ruimten</Name>
+              <Name>PERSPECTIVE_NL:Structurerende_ruimten</Name>
               <Title>Structurerende ruimten</Title>
               <Abstract />
               <KeywordList>
@@ -3357,7 +3357,7 @@
           <Name>Burelen</Name>
           <Title>Burelen</Title>
           <Layer queryable="1">
-            <Name>BSO:Maas</Name>
+            <Name>PERSPECTIVE_NL:Maas</Name>
             <Title>Maas</Title>
             <Abstract />
             <KeywordList>
@@ -3391,7 +3391,7 @@
           <Name>Wegen</Name>
           <Title>Wegen</Title>
           <Layer queryable="1">
-            <Name>BSO:Autosnelweg</Name>
+            <Name>PERSPECTIVE_NL:Autosnelweg</Name>
             <Title>Autosnelweg</Title>
             <Abstract />
             <KeywordList>
@@ -3421,7 +3421,7 @@
             </Style>
           </Layer>
           <Layer queryable="1">
-            <Name>BSO:Fietsroute</Name>
+            <Name>PERSPECTIVE_NL:Fietsroute</Name>
             <Title>Fietsroute</Title>
             <Abstract />
             <KeywordList>
@@ -3451,7 +3451,7 @@
             </Style>
           </Layer>
           <Layer queryable="1">
-            <Name>BSO:Grootstedelijke_weg</Name>
+            <Name>PERSPECTIVE_NL:Grootstedelijke_weg</Name>
             <Title>Grootstedelijke weg</Title>
             <Abstract />
             <KeywordList>
@@ -3481,7 +3481,7 @@
             </Style>
           </Layer>
           <Layer queryable="1">
-            <Name>BSO:Grootstedelijke_weg_in_tunnel</Name>
+            <Name>PERSPECTIVE_NL:Grootstedelijke_weg_in_tunnel</Name>
             <Title>Grootstedelijke weg in tunnel</Title>
             <Abstract />
             <KeywordList>
@@ -3511,7 +3511,7 @@
             </Style>
           </Layer>
           <Layer queryable="1">
-            <Name>BSO:Hoofdweg</Name>
+            <Name>PERSPECTIVE_NL:Hoofdweg</Name>
             <Title>Hoofdweg</Title>
             <Abstract />
             <KeywordList>
@@ -3541,7 +3541,7 @@
             </Style>
           </Layer>
           <Layer queryable="1">
-            <Name>BSO:Terkamerenbos_gebied</Name>
+            <Name>PERSPECTIVE_NL:Terkamerenbos_gebied</Name>
             <Title>Terkamerenbos gebied</Title>
             <Abstract />
             <KeywordList>
@@ -3575,7 +3575,7 @@
           <Name>Vervoer</Name>
           <Title>Vervoer</Title>
           <Layer queryable="1">
-            <Name>BSO:Station_of_halte</Name>
+            <Name>PERSPECTIVE_NL:Station_of_halte</Name>
             <Title>Station of halte</Title>
             <Abstract />
             <KeywordList>
@@ -3605,7 +3605,7 @@
             </Style>
           </Layer>
           <Layer queryable="1">
-            <Name>BSO:Aan_te_leggen_station_of_halte</Name>
+            <Name>PERSPECTIVE_NL:Aan_te_leggen_station_of_halte</Name>
             <Title>Aan te leggen station of halte</Title>
             <Abstract />
             <KeywordList>
@@ -3635,7 +3635,7 @@
             </Style>
           </Layer>
           <Layer queryable="1">
-            <Name>BSO:Station</Name>
+            <Name>PERSPECTIVE_NL:Station</Name>
             <Title>Station</Title>
             <Abstract />
             <KeywordList>
@@ -3665,7 +3665,7 @@
             </Style>
           </Layer>
           <Layer queryable="1">
-            <Name>BSO:Aan_te_leggen_station</Name>
+            <Name>PERSPECTIVE_NL:Aan_te_leggen_station</Name>
             <Title>Aan te leggen station</Title>
             <Abstract />
             <KeywordList>
@@ -3695,7 +3695,7 @@
             </Style>
           </Layer>
           <Layer queryable="1">
-            <Name>BSO:Lijn_in_onafhankelijke_baan</Name>
+            <Name>PERSPECTIVE_NL:Lijn_in_onafhankelijke_baan</Name>
             <Title>Lijn in onafhankelijke baan</Title>
             <Abstract />
             <KeywordList>
@@ -3725,7 +3725,7 @@
             </Style>
           </Layer>
           <Layer queryable="1">
-            <Name>BSO:Aan_te_leggen_lijn_in_onafhankelijke_baan</Name>
+            <Name>PERSPECTIVE_NL:Aan_te_leggen_lijn_in_onafhankelijke_baan</Name>
             <Title>Aan te leggen lijn in onafhankelijke baan</Title>
             <Abstract />
             <KeywordList>
@@ -3755,7 +3755,7 @@
             </Style>
           </Layer>
           <Layer queryable="1">
-            <Name>BSO:Spoorlijn</Name>
+            <Name>PERSPECTIVE_NL:Spoorlijn</Name>
             <Title>Spoorlijn</Title>
             <Abstract />
             <KeywordList>
@@ -3785,7 +3785,7 @@
             </Style>
           </Layer>
           <Layer queryable="1">
-            <Name>BSO:Voor_te_behouden_gebied_voor_ondergrondse_infrastructuur</Name>
+            <Name>PERSPECTIVE_NL:Voor_te_behouden_gebied_voor_ondergrondse_infrastructuur</Name>
             <Title>Voor te behouden gebied voor ondergrondse infrastructuur</Title>
             <Abstract />
             <KeywordList>
@@ -3879,7 +3879,7 @@
           <Name>Andere Lagen met betrekking tot de GBP</Name>
           <Title>Andere Lagen met betrekking tot de GBP</Title>
           <Layer noSubsets="0" opaque="0" queryable="1">
-            <Name>BSO:Erfdienstbaarheidsgebieden_rondom_bossen</Name>
+            <Name>PERSPECTIVE_NL:Erfdienstbaarheidsgebieden_rondom_bossen</Name>
             <Title>Erfdienstbaarheidsgebieden rondom bossen (60m)</Title>
             <Abstract/>
             <KeywordList>
@@ -3904,7 +3904,7 @@
         <Name>BBP</Name>
         <Title>BBP</Title>
         <Layer queryable="1">
-          <Name>BSO:BBP</Name>
+          <Name>PERSPECTIVE_NL:BBP</Name>
           <Title>BBP</Title>
           <Abstract>VM_A60_PPAS_NL</Abstract>
           <KeywordList>
@@ -3925,7 +3925,7 @@
           </Style>
         </Layer>
         <Layer queryable="1">
-          <Name>BSO:BBP_OPGEHEVEN</Name>
+          <Name>PERSPECTIVE_NL:BBP_OPGEHEVEN</Name>
           <Title>Opgeheven BBP</Title>
           <Abstract>VM_A60_PPAS_NL</Abstract>
           <KeywordList>
@@ -3947,7 +3947,7 @@
         </Layer>
       </Layer>
       <Layer noSubsets="0" opaque="0" queryable="1">
-        <Name>BSO:Beeldkwaliteitsplan</Name>
+        <Name>PERSPECTIVE_NL:Beeldkwaliteitsplan</Name>
         <Title>Beeldkwaliteitsplan</Title>
         <Abstract/>
         <KeywordList>
@@ -3967,7 +3967,7 @@
         </Style>
       </Layer>
       <Layer queryable="1" opaque="0">
-        <Name>PER:Gebied_van_gewestelijk_belang</Name>
+        <Name>PERSPECTIVE_NL:Gebied_van_gewestelijk_belang</Name>
         <Title>Gebied van gewestelijk belang</Title>
         <Abstract/>
         <KeywordList>
@@ -3991,7 +3991,7 @@
         <Name>ZSH</Name>
         <Title>ZSH</Title>
         <Layer noSubsets="0" opaque="0" queryable="1">
-          <Name>PER:Zone_voor_stedelijke_herwaardering_2016</Name>
+          <Name>PERSPECTIVE_NL:Zone_voor_stedelijke_herwaardering_2016</Name>
           <Title>Zone voor stedelijke herwaardering 2016</Title>
           <Abstract/>
           <KeywordList>
@@ -4011,7 +4011,7 @@
           </Style>
         </Layer>
         <Layer noSubsets="0" opaque="0" queryable="1">
-          <Name>PER:Zone_voor_stedelijke_herwaardering_2020</Name>
+          <Name>PERSPECTIVE_NL:Zone_voor_stedelijke_herwaardering_2020</Name>
           <Title>Zone voor stedelijke herwaardering 2020</Title>
           <Abstract/>
           <KeywordList>
@@ -4031,7 +4031,7 @@
           </Style>
         </Layer>
         <Layer queryable="1">
-          <Name>BSO:RVOHR</Name>
+          <Name>PERSPECTIVE_NL:RVOHR</Name>
           <Title>RVOHR</Title>
           <Abstract>A10_PRD_EDRLR</Abstract>
           <KeywordList>
@@ -4063,7 +4063,7 @@
       </Layer>
 
       <Layer queryable="1" opaque="0">
-        <Name>PER:Schoolcontracten</Name>
+        <Name>PERSPECTIVE_NL:Schoolcontracten</Name>
         <Title>Schoolcontracten</Title>
         <Abstract/>
         <KeywordList>
@@ -4095,7 +4095,7 @@
         <Name>2007-2013</Name>
         <Title>2007-2013</Title>
         <Layer queryable="1">
-          <Name>BSO:FEDER_project</Name>
+          <Name>GOB_BSY:FEDER_project</Name>
           <Title>FEDER project</Title>
           <Abstract />
           <KeywordList>
@@ -4125,7 +4125,7 @@
           </Style>
         </Layer>
         <Layer queryable="1">
-          <Name>BSO:Prioritaire_interventieGebieden</Name>
+          <Name>PERSPECTIVE_NL:Prioritaire_interventieGebieden</Name>
           <Title>Prioritaire interventiegebieden</Title>
           <Abstract />
           <KeywordList>
@@ -4180,7 +4180,7 @@
           </Style>
         </Layer>
         <Layer queryable="1">
-          <Name>BSO_DSV:Doel_2</Name>
+          <Name>GOB_BSY:Doel_2</Name>
           <Title>Doel 2</Title>
           <Abstract />
           <KeywordList>
@@ -4211,7 +4211,7 @@
       <SRS>EPSG:900913</SRS>
       <LatLonBoundingBox maxx="4.49547992326272" maxy="50.9218586969616" minx="4.22527159306639" miny="50.7599660513373" />
       <Layer queryable="1">
-        <Name>BSO:Gewestgrens</Name>
+        <Name>CIBG_URBIS:Gewestgrens</Name>
         <Title>Gewest grenzen</Title>
         <Abstract />
         <KeywordList>
@@ -4250,7 +4250,7 @@
         </Style>
       </Layer>
       <Layer queryable="1">
-        <Name>BSO:Gemeentegrenzen</Name>
+        <Name>CIBG_URBIS:Gemeentegrenzen</Name>
         <Title>Gemeentegrenzen</Title>
         <Abstract>ADM_MU</Abstract>
         <KeywordList>
@@ -4341,7 +4341,7 @@
           <Name>2020</Name>
           <Title>2020</Title>
           <Layer noSubsets="0" opaque="0" queryable="1">
-            <Name>BSO:Gebouw_2020</Name>
+            <Name>CIBG_URBIS:Gebouw_2020</Name>
             <Title>Gebouw 2020</Title>
             <Abstract/>
             <KeywordList>
@@ -4362,7 +4362,7 @@
             <ScaleHint max="5000.1" min="0.0"/>
           </Layer>
           <Layer noSubsets="0" opaque="0" queryable="1">
-            <Name>BSO:Perceel_2020</Name>
+            <Name>CIBG_URBIS:Perceel_2020</Name>
             <Title>Perceel 2020</Title>
             <Abstract/>
             <KeywordList>
@@ -4388,7 +4388,7 @@
           <Name>2019</Name>
           <Title>2019</Title>
           <Layer noSubsets="0" opaque="0" queryable="1">
-            <Name>BSO:Gebouw_2019</Name>
+            <Name>CIBG_URBIS:Gebouw_2019</Name>
             <Title>Gebouw 2019</Title>
             <Abstract/>
             <KeywordList>
@@ -4409,7 +4409,7 @@
             <ScaleHint max="5000.1" min="0.0"/>
           </Layer>
           <Layer noSubsets="0" opaque="0" queryable="1">
-            <Name>BSO:Perceel_2019</Name>
+            <Name>CIBG_URBIS:Perceel_2019</Name>
             <Title>Perceel 2019</Title>
             <Abstract/>
             <KeywordList>
@@ -4435,7 +4435,7 @@
           <Name>2018</Name>
           <Title>2018</Title>
           <Layer noSubsets="0" opaque="0" queryable="1">
-            <Name>BSO:Gebouw_2018</Name>
+            <Name>CIBG_URBIS:Gebouw_2018</Name>
             <Title>Gebouw 2018</Title>
             <Abstract/>
             <KeywordList>
@@ -4456,7 +4456,7 @@
             <ScaleHint max="5000.1" min="0.0"/>
           </Layer>
           <Layer noSubsets="0" opaque="0" queryable="1">
-            <Name>BSO:Perceel_2018</Name>
+            <Name>CIBG_URBIS:Perceel_2018</Name>
             <Title>Perceel 2018</Title>
             <Abstract/>
             <KeywordList>
@@ -4833,18 +4833,18 @@
         <Name>Topographie</Name>
         <Title>Topographie</Title>
         <Layer noSubsets="0" opaque="0" queryable="1">
-          <Name>BDU:Isohypses_group</Name>
+          <Name>URBAN_DCC_ER:Isohypses_group</Name>
           <Title>Isohypses</Title>
-          <Abstract>Layer-Group type layer: BDU:Isohypses_group</Abstract>
+          <Abstract>Layer-Group type layer: URBAN_DCC_ER:Isohypses_group</Abstract>
           <KeywordList/>
           <SRS>EPSG:31370</SRS>
           <LatLonBoundingBox maxx="4.484211534966238" maxy="50.91543592922566" minx="4.240606746595234" miny="50.76156631575136"/>
           <BoundingBox SRS="EPSG:31370" maxx="165088.0" maxy="185088.0" minx="140000.0" miny="160000.0"/>
         </Layer>
         <Layer noSubsets="0" opaque="0" queryable="1">
-          <Name>BDU:Topography</Name>
+          <Name>URBAN_DCC_ER:Topography</Name>
           <Title>Topographie</Title>
-          <Abstract>Layer-Group type layer: BDU:Topography</Abstract>
+          <Abstract>Layer-Group type layer: URBAN_DCC_ER:Topography</Abstract>
           <KeywordList/>
           <SRS>EPSG:31370</SRS>
           <LatLonBoundingBox maxx="4.484368000890428" maxy="50.91545388156367" minx="4.239611291762848" miny="50.76155624560088"/>
@@ -4855,9 +4855,9 @@
         <Name>Historische kaarten</Name>
         <Title>Historische kaarten</Title>
         <Layer queryable="1">
-          <Name>BSO_DML_ARCH:KAART_BASTENDORFF</Name>
+          <Name>URBAN_DCE_AE:KAART_BASTENDORFF</Name>
           <Title>Gevectoriseerde Bastendorffkaart (1821 - 1832)</Title>
-          <Abstract>Layer-Group type layer: BSO_DML_ARCH:KAART_BASTENDORFF</Abstract>
+          <Abstract>Layer-Group type layer: URBAN_DCE_AE:KAART_BASTENDORFF</Abstract>
           <KeywordList/>
           <SRS>EPSG:31370</SRS>
           <LatLonBoundingBox minx="4.337178156933802" miny="50.832600659079674" maxx="4.368868961836379" maxy="50.85799190830123"/>
@@ -4867,7 +4867,7 @@
           <Name>Gedetaileerde kaart Bastendorff</Name>
           <Title>Gedetaileerde kaart Bastendorff</Title>
           <Layer queryable="1" opaque="0">
-            <Name>BSO_DML_ARCH:BAST_FONTEINEN</Name>
+            <Name>URBAN_DCE_AE:BAST_FONTEINEN</Name>
             <Title>Fonteinen</Title>
             <Abstract/>
             <KeywordList>
@@ -4887,7 +4887,7 @@
             </Style>
           </Layer>
           <Layer queryable="1" opaque="0">
-            <Name>BSO_DML_ARCH:BAST_STEDELIJKE_OPENBARE_VOORZIENINGEN</Name>
+            <Name>URBAN_DCE_AE:BAST_STEDELIJKE_OPENBARE_VOORZIENINGEN</Name>
             <Title>Stedelijke openbare voorzieningen</Title>
             <Abstract/>
             <KeywordList>
@@ -4907,7 +4907,7 @@
             </Style>
           </Layer>
           <Layer queryable="1" opaque="0">
-            <Name>BSO_DML_ARCH:BAST_TRAPPEN</Name>
+            <Name>URBAN_DCE_AE:BAST_TRAPPEN</Name>
             <Title>Trappen</Title>
             <Abstract/>
             <KeywordList>
@@ -4927,7 +4927,7 @@
             </Style>
           </Layer>
           <Layer queryable="1" opaque="0">
-            <Name>BSO_DML_ARCH:BAST_VESTINGWERKEN</Name>
+            <Name>URBAN_DCE_AE:BAST_VESTINGWERKEN</Name>
             <Title>Vestingwerken</Title>
             <Abstract/>
             <KeywordList>
@@ -4947,7 +4947,7 @@
             </Style>
           </Layer>
           <Layer queryable="1" opaque="0">
-            <Name>BSO_DML_ARCH:BAST_WATERPUTTEN</Name>
+            <Name>URBAN_DCE_AE:BAST_WATERPUTTEN</Name>
             <Title>Waterputten</Title>
             <Abstract/>
             <KeywordList>
@@ -4967,7 +4967,7 @@
             </Style>
           </Layer>
           <Layer queryable="1" opaque="0">
-            <Name>BSO_DML_ARCH:BAST_PRIVATE_INFRASTRUCTUREN</Name>
+            <Name>URBAN_DCE_AE:BAST_PRIVATE_INFRASTRUCTUREN</Name>
             <Title>Private infrastructuren</Title>
             <Abstract/>
             <KeywordList>
@@ -4987,7 +4987,7 @@
             </Style>
           </Layer>
           <Layer queryable="1" opaque="0">
-            <Name>BSO_DML_ARCH:BAST_KUNSTWERKEN</Name>
+            <Name>URBAN_DCE_AE:BAST_KUNSTWERKEN</Name>
             <Title>Kunstwerken</Title>
             <Abstract/>
             <KeywordList>
@@ -5007,7 +5007,7 @@
             </Style>
           </Layer>
           <Layer queryable="1" opaque="0">
-            <Name>BSO_DML_ARCH:BAST_HYDROGRAPHISCH_NETWERK</Name>
+            <Name>URBAN_DCE_AE:BAST_HYDROGRAPHISCH_NETWERK</Name>
             <Title>Hydrografisch netwerk</Title>
             <Abstract/>
             <KeywordList>
@@ -5027,7 +5027,7 @@
             </Style>
           </Layer>
           <Layer queryable="1" opaque="0">
-            <Name>BSO_DML_ARCH:BAST_GEBOUWEN</Name>
+            <Name>URBAN_DCE_AE:BAST_GEBOUWEN</Name>
             <Title>Gebouwen</Title>
             <Abstract/>
             <KeywordList>
@@ -5047,7 +5047,7 @@
             </Style>
           </Layer>
           <Layer queryable="1" opaque="0">
-            <Name>BSO_DML_ARCH:BAST_BINNENPLAATSEN</Name>
+            <Name>URBAN_DCE_AE:BAST_BINNENPLAATSEN</Name>
             <Title>Binnenplaatsen</Title>
             <Abstract/>
             <KeywordList>
@@ -5067,7 +5067,7 @@
             </Style>
           </Layer>
           <Layer queryable="1" opaque="0">
-            <Name>BSO_DML_ARCH:BAST_TUINEN</Name>
+            <Name>URBAN_DCE_AE:BAST_TUINEN</Name>
             <Title>Tuinen</Title>
             <Abstract/>
             <KeywordList>
@@ -5087,7 +5087,7 @@
             </Style>
           </Layer>
           <Layer queryable="1" opaque="0">
-            <Name>BSO_DML_ARCH:BAST_PARKEN</Name>
+            <Name>URBAN_DCE_AE:BAST_PARKEN</Name>
             <Title>Parken</Title>
             <Abstract/>
             <KeywordList>
@@ -5107,7 +5107,7 @@
             </Style>
           </Layer>
           <Layer queryable="1" opaque="0">
-            <Name>BSO_DML_ARCH:BAST_ERFDIENSTBAARHEDEN</Name>
+            <Name>URBAN_DCE_AE:BAST_ERFDIENSTBAARHEDEN</Name>
             <Title>Erfdienstbaarheden</Title>
             <Abstract/>
             <KeywordList>
@@ -5127,7 +5127,7 @@
             </Style>
           </Layer>
           <Layer queryable="1" opaque="0">
-            <Name>BSO_DML_ARCH:BAST_OPENBARE_WEGEN</Name>
+            <Name>URBAN_DCE_AE:BAST_OPENBARE_WEGEN</Name>
             <Title>Openbare wegen</Title>
             <Abstract/>
             <KeywordList>
@@ -5147,7 +5147,7 @@
             </Style>
           </Layer>
           <Layer queryable="1" opaque="0">
-            <Name>BSO_DML_ARCH:BAST_PERCELEN</Name>
+            <Name>URBAN_DCE_AE:BAST_PERCELEN</Name>
             <Title>Percelen</Title>
             <Abstract/>
             <KeywordList>

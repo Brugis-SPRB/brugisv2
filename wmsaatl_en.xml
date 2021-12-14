@@ -160,7 +160,7 @@
             <Name>Publicité</Name>
             <Title>Publicity</Title>
             <Layer queryable="1">
-              <Name>BDU:Espaces_verts</Name>
+              <Name>PERSPECTIVE_FR:Espaces_verts</Name>
               <Title>Green areas</Title>
               <Abstract />
               <KeywordList>
@@ -190,7 +190,7 @@
               </Style>
             </Layer>
             <Layer queryable="1">
-              <Name>BDU:Biens_classes_ou_en_sauvegarde</Name>
+              <Name>URBAN_DPC_IPB:Biens_classes_ou_en_sauvegarde</Name>
               <Title>Protected or listed groups</Title>
               <Abstract />
               <KeywordList>
@@ -220,7 +220,7 @@
               </Style>
             </Layer>
             <Layer queryable="1">
-              <Name>BDU:Publicite</Name>
+              <Name>URBAN_DU:Publicite</Name>
               <Title>Publicity</Title>
               <Abstract />
               <KeywordList>
@@ -254,7 +254,7 @@
             <Name>Enseignes</Name>
             <Title>Shop signs</Title>
             <Layer queryable="1">
-              <Name>BDU:Galeries_commercantes</Name>
+              <Name>PERSPECTIVE_FR:Galeries_commercantes</Name>
               <Title>Shopping galleries</Title>
               <Abstract />
               <KeywordList>
@@ -284,7 +284,7 @@
               </Style>
             </Layer>
             <Layer queryable="1">
-              <Name>BDU:Liseres_de_noyau_commercial</Name>
+              <Name>PERSPECTIVE_FR:Liseres_de_noyau_commercial</Name>
               <Title>Commercial center strips</Title>
               <Abstract />
               <KeywordList>
@@ -314,7 +314,7 @@
               </Style>
             </Layer>
             <Layer queryable="1">
-              <Name>BDU:Espaces_verts</Name>
+              <Name>PERSPECTIVE_FR:Espaces_verts</Name>
               <Title>Green areas</Title>
               <Abstract />
               <KeywordList>
@@ -344,7 +344,7 @@
               </Style>
             </Layer>
             <Layer queryable="1">
-              <Name>BDU:Biens_classes_ou_en_sauvegarde</Name>
+              <Name>URBAN_DPC_IPB:Biens_classes_ou_en_sauvegarde</Name>
               <Title>Protected or listed goods</Title>
               <Abstract />
               <KeywordList>
@@ -374,7 +374,7 @@
               </Style>
             </Layer>
             <Layer queryable="1">
-              <Name>BDU:Enseignes</Name>
+              <Name>URBAN_DU:Enseignes</Name>
               <Title>Shop signs</Title>
               <Abstract />
               <KeywordList>
@@ -408,7 +408,7 @@
             <Name>Accessibilité</Name>
             <Title>Accessibility</Title>
             <Layer queryable="1">
-              <Name>BDU:Espaces_verts</Name>
+              <Name>PERSPECTIVE_FR:Espaces_verts</Name>
               <Title>Green areas</Title>
               <Abstract />
               <KeywordList>
@@ -438,7 +438,7 @@
               </Style>
             </Layer>
             <Layer noSubsets="0" opaque="0" queryable="1">
-              <Name>BDU:Accessibilite_lineaire</Name>
+              <Name>URBAN_DU:Accessibilite_lineaire</Name>
               <Title>Accessibility lines</Title>
               <Abstract/>
               <KeywordList>
@@ -458,7 +458,7 @@
               </Style>
             </Layer>
             <Layer noSubsets="0" opaque="0" queryable="1">
-              <Name>BDU:Accessibilite_ponctuelle</Name>
+              <Name>URBAN_DU:Accessibilite_ponctuelle</Name>
               <Title>Stops</Title>
               <Abstract/>
               <KeywordList>
@@ -486,7 +486,7 @@
             <Name>Patrimoine Architectural</Name>
             <Title>Legal status and Register</Title>
             <Layer queryable="1">
-              <Name>BDU:Patrimoine</Name>
+              <Name>URBAN_DPC_IPB:Patrimoine</Name>
               <Title>Heritage</Title>
               <Abstract>Ensemble, site et monuments</Abstract>
               <KeywordList>
@@ -537,7 +537,7 @@
               <Name>Patrimoine détaillé</Name>
               <Title>Detailed heritage</Title>
               <Layer noSubsets="0" opaque="0" queryable="1">
-                <Name>BDU:MONUMENT_CLASSEMENT_ARRETE_DEFINITIF</Name>
+                <Name>URBAN_DPC_IPB:MONUMENT_CLASSEMENT_ARRETE_DEFINITIF</Name>
                 <Title>Registered monument (final decree)</Title>
                 <Abstract />
                 <KeywordList>
@@ -558,7 +558,7 @@
                 </Style>
               </Layer>
               <Layer noSubsets="0" opaque="0" queryable="1">
-                <Name>BDU:MONUMENT_CLASSEMENT_OUVERTURE_DE_PROCEDURE</Name>
+                <Name>URBAN_DPC_IPB:MONUMENT_CLASSEMENT_OUVERTURE_DE_PROCEDURE</Name>
                 <Title>Registered monument (decree in progress)</Title>
                 <Abstract />
                 <KeywordList>
@@ -579,7 +579,7 @@
                 </Style>
               </Layer>
               <Layer noSubsets="0" opaque="0" queryable="1">
-                <Name>BDU:MONUMENT_SAUVEGARDE_ARRETE_DEFINITIF</Name>
+                <Name>URBAN_DPC_IPB:MONUMENT_SAUVEGARDE_ARRETE_DEFINITIF</Name>
                 <Title>Protected monument (final decree)</Title>
                 <Abstract />
                 <KeywordList>
@@ -600,7 +600,7 @@
                 </Style>
               </Layer>
               <Layer noSubsets="0" opaque="0" queryable="1">
-                <Name>BDU:MONUMENT_SAUVEGARDE_OUVERTURE_DE_PROCEDURE</Name>
+                <Name>URBAN_DPC_IPB:MONUMENT_SAUVEGARDE_OUVERTURE_DE_PROCEDURE</Name>
                 <Title>Protected monument (decree in progress)</Title>
                 <Abstract />
                 <KeywordList>
@@ -621,7 +621,7 @@
                 </Style>
               </Layer>
               <Layer noSubsets="0" opaque="0" queryable="1">
-                <Name>BDU:ENSEMBLE_CLASSEMENT_ARRETE_DEFINITIF</Name>
+                <Name>URBAN_DPC_IPB:ENSEMBLE_CLASSEMENT_ARRETE_DEFINITIF</Name>
                 <Title>Registered complex (final decree)</Title>
                 <Abstract />
                 <KeywordList>
@@ -642,7 +642,7 @@
                 </Style>
               </Layer>
               <Layer noSubsets="0" opaque="0" queryable="1">
-                <Name>BDU:ENSEMBLE_CLASSEMENT_OUVERTURE_DE_PROCEDURE</Name>
+                <Name>URBAN_DPC_IPB:ENSEMBLE_CLASSEMENT_OUVERTURE_DE_PROCEDURE</Name>
                 <Title>Registered complex (decree in progress)</Title>
                 <Abstract />
                 <KeywordList>
@@ -663,7 +663,7 @@
                 </Style>
               </Layer>
               <Layer noSubsets="0" opaque="0" queryable="1">
-                <Name>BDU:ENSEMBLE_SAUVEGARDE_ARRETE_DEFINITIF</Name>
+                <Name>URBAN_DPC_IPB:ENSEMBLE_SAUVEGARDE_ARRETE_DEFINITIF</Name>
                 <Title>Protected complex (final decree)</Title>
                 <Abstract />
                 <KeywordList>
@@ -684,7 +684,7 @@
                 </Style>
               </Layer>
               <Layer noSubsets="0" opaque="0" queryable="1">
-                <Name>BDU:ENSEMBLE_SAUVEGARDE_OUVERTURE_DE_PROCEDURE</Name>
+                <Name>URBAN_DPC_IPB:ENSEMBLE_SAUVEGARDE_OUVERTURE_DE_PROCEDURE</Name>
                 <Title>Protected complex (decree in progress)</Title>
                 <Abstract />
                 <KeywordList>
@@ -705,7 +705,7 @@
                 </Style>
               </Layer>
               <Layer noSubsets="0" opaque="0" queryable="1">
-                <Name>BDU:SITE_CLASSEMENT_ARRETE_DEFINITIF</Name>
+                <Name>URBAN_DPC_PN:SITE_CLASSEMENT_ARRETE_DEFINITIF</Name>
                 <Title>Registered site (final decree)</Title>
                 <Abstract />
                 <KeywordList>
@@ -726,7 +726,7 @@
                 </Style>
               </Layer>
               <Layer noSubsets="0" opaque="0" queryable="1">
-                <Name>BDU:SITE_CLASSEMENT_OUVERTURE_DE_PROCEDURE</Name>
+                <Name>URBAN_DPC_PN:SITE_CLASSEMENT_OUVERTURE_DE_PROCEDURE</Name>
                 <Title>Registered site (decree in progress)</Title>
                 <Abstract />
                 <KeywordList>
@@ -747,7 +747,7 @@
                 </Style>
               </Layer>
               <Layer noSubsets="0" opaque="0" queryable="1">
-                <Name>BDU:SITE_SAUVEGARDE_ARRETE_DEFINITIF</Name>
+                <Name>URBAN_DPC_PN:SITE_SAUVEGARDE_ARRETE_DEFINITIF</Name>
                 <Title>Protected site (final decree)</Title>
                 <Abstract />
                 <KeywordList>
@@ -768,7 +768,7 @@
                 </Style>
               </Layer>
               <Layer noSubsets="0" opaque="0" queryable="1">
-                <Name>BDU:SITE_SAUVEGARDE_OUVERTURE_DE_PROCEDURE</Name>
+                <Name>URBAN_DPC_PN:SITE_SAUVEGARDE_OUVERTURE_DE_PROCEDURE</Name>
                 <Title>Protected site (decree in progress)</Title>
                 <Abstract />
                 <KeywordList>
@@ -789,7 +789,7 @@
                 </Style>
               </Layer>
               <Layer noSubsets="0" opaque="0" queryable="1">
-                <Name>BDU:SITE_ARCHEOLOGIQUE_CLASSEMENT_ARRETE_DEFINITIF</Name>
+                <Name>URBAN_DPC_PN:SITE_ARCHEOLOGIQUE_CLASSEMENT_ARRETE_DEFINITIF</Name>
                 <Title>Registered archaeological site (final decree)</Title>
                 <Abstract />
                 <KeywordList>
@@ -810,7 +810,7 @@
                 </Style>
               </Layer>
               <Layer noSubsets="0" opaque="0" queryable="1">
-                <Name>BDU:SITE_ARCHEOLOGIQUE_CLASSEMENT_OUVERTURE_DE_PROCEDURE</Name>
+                <Name>URBAN_DPC_PN:SITE_ARCHEOLOGIQUE_CLASSEMENT_OUVERTURE_DE_PROCEDURE</Name>
                 <Title>Registered archaeological site (decree in progress)</Title>
                 <Abstract />
                 <KeywordList>
@@ -831,7 +831,7 @@
                 </Style>
               </Layer>
               <Layer noSubsets="0" opaque="0" queryable="1">
-                <Name>BDU:SITE_ARCHEOLOGIQUE_SAUVEGARDE_ARRETE_DEFINITIF</Name>
+                <Name>URBAN_DPC_PN:SITE_ARCHEOLOGIQUE_SAUVEGARDE_ARRETE_DEFINITIF</Name>
                 <Title>Protected archaeological site (final decree)</Title>
                 <Abstract />
                 <KeywordList>
@@ -852,7 +852,7 @@
                 </Style>
               </Layer>
               <Layer noSubsets="0" opaque="0" queryable="1">
-                <Name>BDU:SITE_ARCHEOLOGIQUE_SAUVEGARDE_OUVERTURE_DE_PROCEDURE</Name>
+                <Name>URBAN_DPC_PN:SITE_ARCHEOLOGIQUE_SAUVEGARDE_OUVERTURE_DE_PROCEDURE</Name>
                 <Title>Protected archaeological site (decree in progress)</Title>
                 <Abstract />
                 <KeywordList>
@@ -873,7 +873,7 @@
                 </Style>
               </Layer>
               <Layer noSubsets="0" opaque="0" queryable="1">
-                <Name>BDU_DMS_PROT:Prises_actes</Name>
+                <Name>URBAN_DPC_IPB:Prises_actes</Name>
                 <Title>Acknowledgements</Title>
                 <Abstract />
                 <KeywordList>
@@ -894,7 +894,7 @@
                 </Style>
               </Layer>
               <Layer noSubsets="0" opaque="0" queryable="1">
-                <Name>BDU_DMS_PROT:Arretes_de_non_classement</Name>
+                <Name>URBAN_DPC_IPB:Arretes_de_non_classement</Name>
                 <Title>Non registration decree</Title>
                 <Abstract />
                 <KeywordList>
@@ -916,7 +916,7 @@
               </Layer>
             </Layer>
             <Layer noSubsets="0" opaque="0" queryable="1">
-              <Name>BDU_DMS_PROT:Inventaire_legal_des_sites_et_Quartiers_Leopold</Name>
+              <Name>URBAN_DPC_PN:Inventaire_legal_des_sites_et_Quartiers_Leopold</Name>
               <Title>Legal Inventory of Sites and Leopold District</Title>
               <Abstract/>
               <KeywordList>
@@ -936,7 +936,7 @@
               </Style>
             </Layer>
             <Layer queryable="1">
-              <Name>BDU:Zones_de_protection</Name>
+              <Name>URBAN_DPC_IPB:Zones_de_protection</Name>
               <Title>Protection areas</Title>
               <Abstract />
               <KeywordList>
@@ -966,7 +966,7 @@
               </Style>
             </Layer>
             <Layer queryable="1">
-              <Name>BDU:Zones_de_protection_UNESCO</Name>
+              <Name>URBAN_DPC_IPB:Zones_de_protection_UNESCO</Name>
               <Title>UNESCO protection areas</Title>
               <Abstract />
               <KeywordList>
@@ -1003,7 +1003,7 @@
               <Name>Archeological atlas</Name>
               <Title>Archeological atlas</Title>
               <Layer queryable="1">
-                <Name>BDU_DMS_ARCH:Anciens_cimetieres</Name>
+                <Name>URBAN_DPC_PA:Anciens_cimetieres</Name>
                 <Title>Former graveyards</Title>
                 <Abstract />
                 <KeywordList>
@@ -1033,7 +1033,7 @@
                 </Style>
               </Layer>
               <Layer queryable="1">
-                <Name>BDU_DMS_ARCH:Decouvertes_isolees</Name>
+                <Name>URBAN_DPC_PA:Decouvertes_isolees</Name>
                 <Title>Isolated finds</Title>
                 <Abstract />
                 <KeywordList>
@@ -1063,7 +1063,7 @@
                 </Style>
               </Layer>
               <Layer queryable="1">
-                <Name>BDU_DMS_ARCH:Reseau_hydrographique_ancien</Name>
+                <Name>URBAN_DPC_PA:Reseau_hydrographique_ancien</Name>
                 <Title>Former hydrographic network</Title>
                 <Abstract />
                 <KeywordList>
@@ -1093,7 +1093,7 @@
                 </Style>
               </Layer>
               <Layer queryable="1">
-                <Name>BDU_DMS_ARCH:Sites_localises_avec_plan</Name>
+                <Name>URBAN_DPC_PA:Sites_localises_avec_plan</Name>
                 <Title>Sites located with map</Title>
                 <Abstract />
                 <KeywordList>
@@ -1123,7 +1123,7 @@
                 </Style>
               </Layer>
               <Layer queryable="1">
-                <Name>BDU_DMS_ARCH:Sites_localises_sans_plan</Name>
+                <Name>URBAN_DPC_PA:Sites_localises_sans_plan</Name>
                 <Title>Sites located without map</Title>
                 <Abstract />
                 <KeywordList>
@@ -1153,7 +1153,7 @@
                 </Style>
               </Layer>
               <Layer queryable="1">
-                <Name>BDU_DMS_ARCH:Sites_non_localises</Name>
+                <Name>URBAN_DPC_PA:Sites_non_localises</Name>
                 <Title>Non-located sites</Title>
                 <Abstract />
                 <KeywordList>
@@ -1183,7 +1183,7 @@
                 </Style>
               </Layer>
               <Layer queryable="1">
-                <Name>BDU_DMS_ARCH:Sites_potentiels</Name>
+                <Name>URBAN_DPC_PA:Sites_potentiels</Name>
                 <Title>Potential sites</Title>
                 <Abstract />
                 <KeywordList>
@@ -1222,7 +1222,7 @@
                 </Style>
               </Layer>
               <Layer queryable="1">
-                <Name>BDU_DMS_ARCH:Zones_d_extension_du_site</Name>
+                <Name>URBAN_DPC_PA:Zones_d_extension_du_site</Name>
                 <Title>Site extension areas</Title>
                 <Abstract />
                 <KeywordList>
@@ -1450,7 +1450,7 @@
             <Name>Patrimoine Architectural</Name>
             <Title>Architectural heritage</Title>
             <Layer noSubsets="0" opaque="0" queryable="1">
-              <Name>BDU_DMS_PROT:Inventaire_Irismonument</Name>
+              <Name>URBAN_DPC_IPB:Inventaire_Irismonument</Name>
               <Title>Irismonument inventory</Title>
               <Abstract/>
               <KeywordList>
@@ -1475,7 +1475,7 @@
             <Name>Patrimoine Naturel</Name>
             <Title>Natural heritage</Title>
             <Layer queryable="1">
-              <Name>BDU_DMS_PROT:Arbres_remarquables</Name>
+              <Name>URBAN_DPC_PN:Arbres_remarquables</Name>
               <Title>Remarkable trees</Title>
               <Abstract />
               <KeywordList>
@@ -1525,7 +1525,7 @@
               </Style>
             </Layer>
             <Layer queryable="1">
-              <Name>BDU_DMS_PROT:Arbres_remarquables_100_biggest</Name>
+              <Name>URBAN_DPC_PN:Arbres_remarquables_100_biggest</Name>
               <Title>The 100 largest trees</Title>
               <Abstract />
               <KeywordList>
@@ -1546,7 +1546,7 @@
               </Style>
             </Layer>
             <!--Layer queryable="1">
-              <Name>BDU_DMS_PROT:Arbres_remarquables_rarete</Name>
+              <Name>URBAN_DPC_PN:Arbres_remarquables_rarete</Name>
               <Title>Rarity of remarkable trees</Title>
               <Abstract />
               <KeywordList>
@@ -1582,7 +1582,7 @@
           <Name>Urbanisme</Name>
           <Title>Town planning</Title>
           <Layer queryable="1">
-            <Name>BDU:Lotissements</Name>
+            <Name>URBAN_DU:Lotissements</Name>
             <Title>Lots</Title>
             <Abstract />
             <KeywordList>
@@ -1607,7 +1607,7 @@
           <Name>Revitalisation urbaine</Name>
           <Title>Urban regeneration</Title>
           <Layer noSubsets="0" opaque="0" queryable="1">
-            <Name>BDU_DRU:Contrats_de_quartiers_Projets</Name>
+            <Name>URBAN_DRU:Contrats_de_quartiers_Projets</Name>
             <Title>Neighbourhood regeneration agreement (Projets)</Title>
             <Abstract/>
             <KeywordList>
@@ -1627,7 +1627,7 @@
             </Style>
           </Layer>
           <Layer noSubsets="0" opaque="0" queryable="1">
-            <Name>BDU_DRU:Contrats_de_quartiers_Programmes</Name>
+            <Name>URBAN_DRU:Contrats_de_quartiers_Programmes</Name>
             <Title>Neighbourhood regeneration agreement (Planning)</Title>
             <Abstract/>
             <KeywordList>
@@ -1647,7 +1647,7 @@
             </Style>
           </Layer>
           <Layer noSubsets="0" opaque="0" queryable="1">
-            <Name>BDU_DRU:Contrats_de_renovation_urbaine_Programmes</Name>
+            <Name>URBAN_DRU:Contrats_de_renovation_urbaine_Programmes</Name>
             <Title>Urban regeneration agreement (Planning)</Title>
             <Abstract/>
             <KeywordList>
@@ -1667,7 +1667,7 @@
             </Style>
           </Layer>
           <Layer queryable="1">
-            <Name>BDU_DRU:Zones_de_preemption</Name>
+            <Name>URBAN_DRU:Zones_de_preemption</Name>
             <Title>Zones de préemption (Ord. 18/07/2002 uniquement)</Title>
             <Abstract />
             <KeywordList>
@@ -1707,7 +1707,7 @@
         <SRS>EPSG:900913</SRS>
         <LatLonBoundingBox maxx="4.49547992326272" maxy="50.9218586969616" minx="4.22527159306639" miny="50.7599660513373" />
         <Layer noSubsets="0" opaque="0" queryable="1">
-          <Name>BEE:Zone_ZEUS</Name>
+          <Name>SPRB_SPRB_SPRB_SPRB_SPRB_SPRB_SPRB_SPRB_SPRB_SPRB_SPRB_SPRB_SPRB_SPRB_SPRB_SPRB_SPRB_BEE:Zone_ZEUS</Name>
           <Title>ZEUS zone</Title>
           <Abstract/>
           <KeywordList>
@@ -1735,7 +1735,7 @@
           </Style>
         </Layer>
         <Layer noSubsets="0" opaque="0" queryable="1">
-          <Name>BEE:Zones_de_developpement_2015</Name>
+          <Name>SPRB_SPRB_SPRB_SPRB_SPRB_SPRB_SPRB_SPRB_SPRB_SPRB_SPRB_SPRB_SPRB_SPRB_SPRB_SPRB_SPRB_BEE:Zones_de_developpement_2015</Name>
           <Title>Development Area 2015</Title>
           <Abstract />
           <KeywordList>
@@ -1763,7 +1763,7 @@
           <Name>Polluted areas catalogue</Name>
           <Title>Polluted areas catalogue</Title>
           <Layer noSubsets="0" opaque="0" queryable="1">
-            <Name>BDU:PUBBELB_INVENTAIRE_ETAT_SOL_PUBLIC</Name>
+            <Name>BE:PUBBELB_INVENTAIRE_ETAT_SOL_PUBLIC</Name>
             <Title>Cadastral Parcels in the Polluted areas catalogue</Title>
             <Abstract/>
             <KeywordList>
@@ -2742,7 +2742,7 @@
         <Name>housing.brussels</Name>
         <Title>housing.brussels</Title>
         <Layer noSubsets="0" opaque="0" queryable="1">
-          <Name>BDU:Quartiers_a_loyers_majores_destines_aux_ais</Name>
+          <Name>SPRB_BL:Quartiers_a_loyers_majores_destines_aux_ais</Name>
           <Title>Area with increased rents intended for AIS</Title>
           <Abstract/>
           <KeywordList>
@@ -2778,72 +2778,72 @@
             <Title>General maps</Title>
 
             <Layer noSubsets="0" opaque="0" queryable="1">
-              <Name>PER:CARTE_PRDD_1_ARMATURE_SPATIALE_ET_VISION_POUR_BRUXELLES</Name>
+              <Name>PERSPECTIVE_FR:CARTE_PRDD_1_ARMATURE_SPATIALE_ET_VISION_POUR_BRUXELLES</Name>
               <Title>1 Armature spatiale et vision pour Bruxelles</Title>
-              <Abstract>Layer-Group type layer: PER:CARTE_PRDD_1_ARMATURE_SPATIALE_ET_VISION_POUR_BRUXELLES</Abstract>
+              <Abstract>Layer-Group type layer: PERSPECTIVE_FR:CARTE_PRDD_1_ARMATURE_SPATIALE_ET_VISION_POUR_BRUXELLES</Abstract>
               <KeywordList/>
               <SRS>EPSG:31370</SRS>
               <LatLonBoundingBox maxx="4.501862742176479" maxy="50.932778191395016" minx="4.220178068350866" miny="50.7390418956114"/>
               <BoundingBox SRS="EPSG:31370" maxx="165088.0" maxy="185088.0" minx="140000.0" miny="160000.0"/>
             </Layer>
             <Layer noSubsets="0" opaque="0" queryable="1">
-              <Name>PER:CARTE_PRDD_2_GRANDES_RESSOURCES_FONCIERES</Name>
+              <Name>PERSPECTIVE_FR:CARTE_PRDD_2_GRANDES_RESSOURCES_FONCIERES</Name>
               <Title>2 Grandes Ressources Foncières</Title>
-              <Abstract>Layer-Group type layer: PER:CARTE_PRDD_2_GRANDES_RESSOURCES_FONCIERES</Abstract>
+              <Abstract>Layer-Group type layer: PERSPECTIVE_FR:CARTE_PRDD_2_GRANDES_RESSOURCES_FONCIERES</Abstract>
               <KeywordList/>
               <SRS>EPSG:31370</SRS>
               <LatLonBoundingBox maxx="4.4819068060294365" maxy="50.913662159589926" minx="4.242071629304819" miny="50.76329466458694"/>
               <BoundingBox SRS="EPSG:31370" maxx="165088.0" maxy="185088.0" minx="140000.0" miny="160000.0"/>
             </Layer>
             <Layer noSubsets="0" opaque="0" queryable="1">
-              <Name>PER:CARTE_PRDD_3_MAILLAGE_VERT_ET_BLEU</Name>
+              <Name>PERSPECTIVE_FR:CARTE_PRDD_3_MAILLAGE_VERT_ET_BLEU</Name>
               <Title>3 Maillage Vert et Bleu</Title>
-              <Abstract>Layer-Group type layer: PER:CARTE_PRDD_3_MAILLAGE_VERT_ET_BLEU</Abstract>
+              <Abstract>Layer-Group type layer: PERSPECTIVE_FR:CARTE_PRDD_3_MAILLAGE_VERT_ET_BLEU</Abstract>
               <KeywordList/>
               <SRS>EPSG:31370</SRS>
               <LatLonBoundingBox maxx="4.4707964005094185" maxy="50.91994612124158" minx="4.239473801383671" miny="50.76700822779816"/>
               <BoundingBox SRS="EPSG:31370" maxx="165088.0" maxy="185088.0" minx="140000.0" miny="160000.0"/>
             </Layer>
             <Layer noSubsets="0" opaque="0" queryable="1">
-              <Name>PER:CARTE_PRDD_4_ESPACE_PUBLIC_ET_RENOVATION_URBAINE</Name>
+              <Name>PERSPECTIVE_FR:CARTE_PRDD_4_ESPACE_PUBLIC_ET_RENOVATION_URBAINE</Name>
               <Title>4 Espace public et rénovation urbaine</Title>
-              <Abstract>Layer-Group type layer: PER:CARTE_PRDD_4_ESPACE_PUBLIC_ET_RENOVATION_URBAINE</Abstract>
+              <Abstract>Layer-Group type layer: PERSPECTIVE_FR:CARTE_PRDD_4_ESPACE_PUBLIC_ET_RENOVATION_URBAINE</Abstract>
               <KeywordList/>
               <SRS>EPSG:31370</SRS>
               <LatLonBoundingBox maxx="4.481540382025686" maxy="50.91359611002929" minx="4.24247036581555" miny="50.76336086880375"/>
               <BoundingBox SRS="EPSG:31370" maxx="165088.0" maxy="185088.0" minx="140000.0" miny="160000.0"/>
             </Layer>
             <Layer noSubsets="0" opaque="0" queryable="1">
-              <Name>PER:CARTE_PRDD_5_DEVELOPPEMENT_ECONOMIQUE</Name>
+              <Name>PERSPECTIVE_FR:CARTE_PRDD_5_DEVELOPPEMENT_ECONOMIQUE</Name>
               <Title>5 Développement économique</Title>
-              <Abstract>Layer-Group type layer: PER:CARTE_PRDD_5_DEVELOPPEMENT_ECONOMIQUE</Abstract>
+              <Abstract>Layer-Group type layer: PERSPECTIVE_FR:CARTE_PRDD_5_DEVELOPPEMENT_ECONOMIQUE</Abstract>
               <KeywordList/>
               <SRS>EPSG:31370</SRS>
               <LatLonBoundingBox maxx="4.48296557518834" maxy="50.914414116108844" minx="4.240867104763946" miny="50.76259333506502"/>
               <BoundingBox SRS="EPSG:31370" maxx="165088.0" maxy="185088.0" minx="140000.0" miny="160000.0"/>
             </Layer>
             <Layer noSubsets="0" opaque="0" queryable="1">
-              <Name>PER:CARTE_PRDD_6_RESEAUX_STRUCTURANTS_DE_MOBILITE</Name>
+              <Name>PERSPECTIVE_FR:CARTE_PRDD_6_RESEAUX_STRUCTURANTS_DE_MOBILITE</Name>
               <Title>6 Réseaux structurants de mobilité</Title>
-              <Abstract>Layer-Group type layer: PER:CARTE_PRDD_6_RESEAUX_STRUCTURANTS_DE_MOBILITE</Abstract>
+              <Abstract>Layer-Group type layer: PERSPECTIVE_FR:CARTE_PRDD_6_RESEAUX_STRUCTURANTS_DE_MOBILITE</Abstract>
               <KeywordList/>
               <SRS>EPSG:31370</SRS>
               <LatLonBoundingBox maxx="4.482592207387343" maxy="50.91434679525825" minx="4.2412735653799425" miny="50.76266082001365"/>
               <BoundingBox SRS="EPSG:31370" maxx="165088.0" maxy="185088.0" minx="140000.0" miny="160000.0"/>
             </Layer>
             <Layer noSubsets="0" opaque="0" queryable="1">
-              <Name>PER:CARTE_PRDD_7_RESEAU_CYCLABLE</Name>
+              <Name>PERSPECTIVE_FR:CARTE_PRDD_7_RESEAU_CYCLABLE</Name>
               <Title>7 Réseau cyclable</Title>
-              <Abstract>Layer-Group type layer: PER:CARTE_PRDD_7_RESEAU_CYCLABLE</Abstract>
+              <Abstract>Layer-Group type layer: PERSPECTIVE_FR:CARTE_PRDD_7_RESEAU_CYCLABLE</Abstract>
               <KeywordList/>
               <SRS>EPSG:31370</SRS>
               <LatLonBoundingBox maxx="4.504400615353169" maxy="50.932939686992526" minx="4.2218174088683895" miny="50.73945837894823"/>
               <BoundingBox SRS="EPSG:31370" maxx="165088.0" maxy="185088.0" minx="140000.0" miny="160000.0"/>
             </Layer>
             <Layer noSubsets="0" opaque="0" queryable="1">
-              <Name>PER:CARTE_PRDD_8_PROJET_DE_VILLE</Name>
+              <Name>PERSPECTIVE_FR:CARTE_PRDD_8_PROJET_DE_VILLE</Name>
               <Title>8 Projet de ville</Title>
-              <Abstract>Layer-Group type layer: PER:CARTE_PRDD_8_PROJET_DE_VILLE</Abstract>
+              <Abstract>Layer-Group type layer: PERSPECTIVE_FR:CARTE_PRDD_8_PROJET_DE_VILLE</Abstract>
               <KeywordList/>
               <SRS>EPSG:31370</SRS>
               <LatLonBoundingBox maxx="4.501862742176479" maxy="50.932778191395016" minx="4.220178068350866" miny="50.7390418956114"/>
@@ -2856,198 +2856,198 @@
             <Title>Detailed maps</Title>
 
             <Layer noSubsets="0" opaque="0" queryable="1">
-              <Name>PER:CARTE_PRDD_01_TERRITOIRE_DU_CANAL_SITES_PRIORITAIRES_DE_DEVELOPPEMENT</Name>
+              <Name>PERSPECTIVE_FR:CARTE_PRDD_01_TERRITOIRE_DU_CANAL_SITES_PRIORITAIRES_DE_DEVELOPPEMENT</Name>
               <Title>01 Territoire du canal - Sites prioritaires de développement</Title>
-              <Abstract>Layer-Group type layer: PER:CARTE_PRDD_01_TERRITOIRE_DU_CANAL_SITES_PRIORITAIRES_DE_DEVELOPPEMENT</Abstract>
+              <Abstract>Layer-Group type layer: PERSPECTIVE_FR:CARTE_PRDD_01_TERRITOIRE_DU_CANAL_SITES_PRIORITAIRES_DE_DEVELOPPEMENT</Abstract>
               <KeywordList/>
               <SRS>EPSG:31370</SRS>
               <LatLonBoundingBox maxx="4.482592207387343" maxy="50.91434679525825" minx="4.2412735653799425" miny="50.76266082001365"/>
               <BoundingBox SRS="EPSG:31370" maxx="165088.0" maxy="185088.0" minx="140000.0" miny="160000.0"/>
             </Layer>
             <Layer noSubsets="0" opaque="0" queryable="1">
-              <Name>PER:CARTE_PRDD_02_POLES_DE_DEVELOPPEMENT_PRIORITAIRE</Name>
+              <Name>PERSPECTIVE_FR:CARTE_PRDD_02_POLES_DE_DEVELOPPEMENT_PRIORITAIRE</Name>
               <Title>02 Pôles de développement prioritaire</Title>
-              <Abstract>Layer-Group type layer: PER:CARTE_PRDD_02_POLES_DE_DEVELOPPEMENT_PRIORITAIRE</Abstract>
+              <Abstract>Layer-Group type layer: PERSPECTIVE_FR:CARTE_PRDD_02_POLES_DE_DEVELOPPEMENT_PRIORITAIRE</Abstract>
               <KeywordList/>
               <SRS>EPSG:31370</SRS>
               <LatLonBoundingBox maxx="4.482592207387343" maxy="50.91434679525825" minx="4.2412735653799425" miny="50.76266082001365"/>
               <BoundingBox SRS="EPSG:31370" maxx="165088.0" maxy="185088.0" minx="140000.0" miny="160000.0"/>
             </Layer>
             <Layer noSubsets="0" opaque="0" queryable="1">
-              <Name>PER:CARTE_PRDD_03_PENTAGONE_DE_BRUXELLES</Name>
+              <Name>PERSPECTIVE_FR:CARTE_PRDD_03_PENTAGONE_DE_BRUXELLES</Name>
               <Title>03 Pentagone de Bruxelles</Title>
-              <Abstract>Layer-Group type layer: PER:CARTE_PRDD_03_PENTAGONE_DE_BRUXELLES</Abstract>
+              <Abstract>Layer-Group type layer: PERSPECTIVE_FR:CARTE_PRDD_03_PENTAGONE_DE_BRUXELLES</Abstract>
               <KeywordList/>
               <SRS>EPSG:31370</SRS>
               <LatLonBoundingBox maxx="4.482592207387343" maxy="50.91434679525825" minx="4.2412735653799425" miny="50.76266082001365"/>
               <BoundingBox SRS="EPSG:31370" maxx="165088.0" maxy="185088.0" minx="140000.0" miny="160000.0"/>
             </Layer>
             <Layer noSubsets="0" opaque="0" queryable="1">
-              <Name>PER:CARTE_PRDD_04_POLES_D_ECHELLE_LOCALE</Name>
+              <Name>PERSPECTIVE_FR:CARTE_PRDD_04_POLES_D_ECHELLE_LOCALE</Name>
               <Title>04 Pôles d'échelle locale</Title>
-              <Abstract>Layer-Group type layer: PER:CARTE_PRDD_04_POLES_D_ECHELLE_LOCALE</Abstract>
+              <Abstract>Layer-Group type layer: PERSPECTIVE_FR:CARTE_PRDD_04_POLES_D_ECHELLE_LOCALE</Abstract>
               <KeywordList/>
               <SRS>EPSG:31370</SRS>
               <LatLonBoundingBox maxx="4.482592207387343" maxy="50.91434679525825" minx="4.2412735653799425" miny="50.76266082001365"/>
               <BoundingBox SRS="EPSG:31370" maxx="165088.0" maxy="185088.0" minx="140000.0" miny="160000.0"/>
             </Layer>
             <Layer noSubsets="0" opaque="0" queryable="1">
-              <Name>PER:CARTE_PRDD_05_NOYAUX_D_IDENTITE_LOCALE</Name>
+              <Name>PERSPECTIVE_FR:CARTE_PRDD_05_NOYAUX_D_IDENTITE_LOCALE</Name>
               <Title>05 Noyaux d'identité locale</Title>
-              <Abstract>Layer-Group type layer: PER:CARTE_PRDD_05_NOYAUX_D_IDENTITE_LOCALE</Abstract>
+              <Abstract>Layer-Group type layer: PERSPECTIVE_FR:CARTE_PRDD_05_NOYAUX_D_IDENTITE_LOCALE</Abstract>
               <KeywordList/>
               <SRS>EPSG:31370</SRS>
               <LatLonBoundingBox maxx="4.482592207387343" maxy="50.91434679525825" minx="4.2412735653799425" miny="50.76266082001365"/>
               <BoundingBox SRS="EPSG:31370" maxx="165088.0" maxy="185088.0" minx="140000.0" miny="160000.0"/>
             </Layer>
             <Layer noSubsets="0" opaque="0" queryable="1">
-              <Name>PER:CARTE_PRDD_06_ZONE_DE_REVITALISATION_URBAINE_2016</Name>
+              <Name>PERSPECTIVE_FR:CARTE_PRDD_06_ZONE_DE_REVITALISATION_URBAINE_2016</Name>
               <Title>06 Zone de revitalisation urbaine</Title>
-              <Abstract>Layer-Group type layer: PER:CARTE_PRDD_06_ZONE_DE_REVITALISATION_URBAINE_2016</Abstract>
+              <Abstract>Layer-Group type layer: PERSPECTIVE_FR:CARTE_PRDD_06_ZONE_DE_REVITALISATION_URBAINE_2016</Abstract>
               <KeywordList/>
               <SRS>EPSG:31370</SRS>
               <LatLonBoundingBox maxx="4.482592207387343" maxy="50.91434679525825" minx="4.2412735653799425" miny="50.76266082001365"/>
               <BoundingBox SRS="EPSG:31370" maxx="165088.0" maxy="185088.0" minx="140000.0" miny="160000.0"/>
             </Layer>
             <Layer noSubsets="0" opaque="0" queryable="1">
-              <Name>PER:CARTE_PRDD_07_ZONES_PATRIMONIALES</Name>
+              <Name>PERSPECTIVE_FR:CARTE_PRDD_07_ZONES_PATRIMONIALES</Name>
               <Title>07 Zones patrimoniales</Title>
-              <Abstract>Layer-Group type layer: PER:CARTE_PRDD_07_ZONES_PATRIMONIALES</Abstract>
+              <Abstract>Layer-Group type layer: PERSPECTIVE_FR:CARTE_PRDD_07_ZONES_PATRIMONIALES</Abstract>
               <KeywordList/>
               <SRS>EPSG:31370</SRS>
               <LatLonBoundingBox maxx="4.482592207387343" maxy="50.91434679525825" minx="4.2412735653799425" miny="50.76266082001365"/>
               <BoundingBox SRS="EPSG:31370" maxx="165088.0" maxy="185088.0" minx="140000.0" miny="160000.0"/>
             </Layer>
             <Layer noSubsets="0" opaque="0" queryable="1">
-              <Name>PER:CARTE_PRDD_08_PATRIMOINE_EMBLEMATIQUE</Name>
+              <Name>PERSPECTIVE_FR:CARTE_PRDD_08_PATRIMOINE_EMBLEMATIQUE</Name>
               <Title>08 Patrimoine emblématique</Title>
-              <Abstract>Layer-Group type layer: PER:CARTE_PRDD_08_PATRIMOINE_EMBLEMATIQUE</Abstract>
+              <Abstract>Layer-Group type layer: PERSPECTIVE_FR:CARTE_PRDD_08_PATRIMOINE_EMBLEMATIQUE</Abstract>
               <KeywordList/>
               <SRS>EPSG:31370</SRS>
               <LatLonBoundingBox maxx="4.482592207387343" maxy="50.91434679525825" minx="4.2412735653799425" miny="50.76266082001365"/>
               <BoundingBox SRS="EPSG:31370" maxx="165088.0" maxy="185088.0" minx="140000.0" miny="160000.0"/>
             </Layer>
             <Layer noSubsets="0" opaque="0" queryable="1">
-              <Name>PER:CARTE_PRDD_09_RESEAUX_D_AXES_STRUCTURANTS_PATRIMONIAUX</Name>
+              <Name>PERSPECTIVE_FR:CARTE_PRDD_09_RESEAUX_D_AXES_STRUCTURANTS_PATRIMONIAUX</Name>
               <Title>09 Réseaux d'axes structurants patrimoniaux</Title>
-              <Abstract>Layer-Group type layer: PER:CARTE_PRDD_09_RESEAUX_D_AXES_STRUCTURANTS_PATRIMONIAUX</Abstract>
+              <Abstract>Layer-Group type layer: PERSPECTIVE_FR:CARTE_PRDD_09_RESEAUX_D_AXES_STRUCTURANTS_PATRIMONIAUX</Abstract>
               <KeywordList/>
               <SRS>EPSG:31370</SRS>
               <LatLonBoundingBox maxx="4.482635631396494" maxy="50.931982125444584" minx="4.239837314118492" miny="50.740436607569244"/>
               <BoundingBox SRS="EPSG:31370" maxx="165088.0" maxy="185088.0" minx="140000.0" miny="160000.0"/>
             </Layer>
             <Layer noSubsets="0" opaque="0" queryable="1">
-              <Name>PER:CARTE_PRDD_10_ZONES_DE_VERDOIEMENT</Name>
+              <Name>PERSPECTIVE_FR:CARTE_PRDD_10_ZONES_DE_VERDOIEMENT</Name>
               <Title>10 Zones de verdoiement</Title>
-              <Abstract>Layer-Group type layer: PER:CARTE_PRDD_10_ZONES_DE_VERDOIEMENT</Abstract>
+              <Abstract>Layer-Group type layer: PERSPECTIVE_FR:CARTE_PRDD_10_ZONES_DE_VERDOIEMENT</Abstract>
               <KeywordList/>
               <SRS>EPSG:31370</SRS>
               <LatLonBoundingBox maxx="4.482592207387343" maxy="50.91434679525825" minx="4.2412735653799425" miny="50.76266082001365"/>
               <BoundingBox SRS="EPSG:31370" maxx="165088.0" maxy="185088.0" minx="140000.0" miny="160000.0"/>
             </Layer>
             <Layer noSubsets="0" opaque="0" queryable="1">
-              <Name>PER:CARTE_PRDD_11_ELEMENTS_DU_MAILLAGE_VERT</Name>
+              <Name>PERSPECTIVE_FR:CARTE_PRDD_11_ELEMENTS_DU_MAILLAGE_VERT</Name>
               <Title>11 Elements du maillage vert</Title>
-              <Abstract>Layer-Group type layer: PER:CARTE_PRDD_11_ELEMENTS_DU_MAILLAGE_VERT</Abstract>
+              <Abstract>Layer-Group type layer: PERSPECTIVE_FR:CARTE_PRDD_11_ELEMENTS_DU_MAILLAGE_VERT</Abstract>
               <KeywordList/>
               <SRS>EPSG:31370</SRS>
               <LatLonBoundingBox maxx="4.481914589727506" maxy="50.91416234359296" minx="4.239817419691095" miny="50.76233939230115"/>
               <BoundingBox SRS="EPSG:31370" maxx="165088.0" maxy="185088.0" minx="140000.0" miny="160000.0"/>
             </Layer>
             <Layer noSubsets="0" opaque="0" queryable="1">
-              <Name>PER:CARTE_PRDD_12_PROTECTION_DE_LA_BIODIVERSITE</Name>
+              <Name>PERSPECTIVE_FR:CARTE_PRDD_12_PROTECTION_DE_LA_BIODIVERSITE</Name>
               <Title>12 Protection de la biodiversité</Title>
-              <Abstract>Layer-Group type layer: PER:CARTE_PRDD_12_PROTECTION_DE_LA_BIODIVERSITE</Abstract>
+              <Abstract>Layer-Group type layer: PERSPECTIVE_FR:CARTE_PRDD_12_PROTECTION_DE_LA_BIODIVERSITE</Abstract>
               <KeywordList/>
               <SRS>EPSG:31370</SRS>
               <LatLonBoundingBox maxx="4.482592207387343" maxy="50.91434679525825" minx="4.2412735653799425" miny="50.76266082001365"/>
               <BoundingBox SRS="EPSG:31370" maxx="165088.0" maxy="185088.0" minx="140000.0" miny="160000.0"/>
             </Layer>
             <Layer noSubsets="0" opaque="0" queryable="1">
-              <Name>PER:CARTE_PRDD_13_MAILLAGE_BLEU</Name>
+              <Name>PERSPECTIVE_FR:CARTE_PRDD_13_MAILLAGE_BLEU</Name>
               <Title>13 Maillage bleu</Title>
-              <Abstract>Layer-Group type layer: PER:CARTE_PRDD_13_MAILLAGE_BLEU</Abstract>
+              <Abstract>Layer-Group type layer: PERSPECTIVE_FR:CARTE_PRDD_13_MAILLAGE_BLEU</Abstract>
               <KeywordList/>
               <SRS>EPSG:31370</SRS>
               <LatLonBoundingBox maxx="4.481914589727506" maxy="50.91416229504463" minx="4.2380945434343635" miny="50.76233751924305"/>
               <BoundingBox SRS="EPSG:31370" maxx="165088.0" maxy="185088.0" minx="140000.0" miny="160000.0"/>
             </Layer>
             <Layer noSubsets="0" opaque="0" queryable="1">
-              <Name>PER:CARTE_PRDD_14_RENFORCEMENT_DES_ESPACES_OUVERTS_A_L_ECHELLE_METROPOLITAINE</Name>
+              <Name>PERSPECTIVE_FR:CARTE_PRDD_14_RENFORCEMENT_DES_ESPACES_OUVERTS_A_L_ECHELLE_METROPOLITAINE</Name>
               <Title>14 Renforcement des espaces ouverts à l'échelle métropolitaine</Title>
-              <Abstract>Layer-Group type layer: PER:CARTE_PRDD_14_RENFORCEMENT_DES_ESPACES_OUVERTS_A_L_ECHELLE_METROPOLITAINE</Abstract>
+              <Abstract>Layer-Group type layer: PERSPECTIVE_FR:CARTE_PRDD_14_RENFORCEMENT_DES_ESPACES_OUVERTS_A_L_ECHELLE_METROPOLITAINE</Abstract>
               <KeywordList/>
               <SRS>EPSG:31370</SRS>
               <LatLonBoundingBox maxx="4.482605992396876" maxy="50.91994659277171" minx="4.240314944000609" miny="50.76265980904919"/>
               <BoundingBox SRS="EPSG:31370" maxx="165088.0" maxy="185088.0" minx="140000.0" miny="160000.0"/>
             </Layer>
             <Layer noSubsets="0" opaque="0" queryable="1">
-              <Name>PER:CARTE_PRDD_15_AXES_DE_DEVELOPPEMENT_ECONOMIQUE</Name>
+              <Name>PERSPECTIVE_FR:CARTE_PRDD_15_AXES_DE_DEVELOPPEMENT_ECONOMIQUE</Name>
               <Title>15 Axes de développement économique</Title>
-              <Abstract>Layer-Group type layer: PER:CARTE_PRDD_15_AXES_DE_DEVELOPPEMENT_ECONOMIQUE</Abstract>
+              <Abstract>Layer-Group type layer: PERSPECTIVE_FR:CARTE_PRDD_15_AXES_DE_DEVELOPPEMENT_ECONOMIQUE</Abstract>
               <KeywordList/>
               <SRS>EPSG:31370</SRS>
               <LatLonBoundingBox maxx="4.482592207387343" maxy="50.91434679525825" minx="4.2412735653799425" miny="50.76266082001365"/>
               <BoundingBox SRS="EPSG:31370" maxx="165088.0" maxy="185088.0" minx="140000.0" miny="160000.0"/>
             </Layer>
             <Layer noSubsets="0" opaque="0" queryable="1">
-              <Name>PER:CARTE_PRDD_16_POLES_DE_COMPETITIVITE_ET_CAMPUS_UNIVERSITAIRES</Name>
+              <Name>PERSPECTIVE_FR:CARTE_PRDD_16_POLES_DE_COMPETITIVITE_ET_CAMPUS_UNIVERSITAIRES</Name>
               <Title>16 Pôles de compétitivité et campus universitaires</Title>
-              <Abstract>Layer-Group type layer: PER:CARTE_PRDD_16_POLES_DE_COMPETITIVITE_ET_CAMPUS_UNIVERSITAIRES</Abstract>
+              <Abstract>Layer-Group type layer: PERSPECTIVE_FR:CARTE_PRDD_16_POLES_DE_COMPETITIVITE_ET_CAMPUS_UNIVERSITAIRES</Abstract>
               <KeywordList/>
               <SRS>EPSG:31370</SRS>
               <LatLonBoundingBox maxx="4.482592207387343" maxy="50.91434679525825" minx="4.2412735653799425" miny="50.76266082001365"/>
               <BoundingBox SRS="EPSG:31370" maxx="165088.0" maxy="185088.0" minx="140000.0" miny="160000.0"/>
             </Layer>
             <Layer noSubsets="0" opaque="0" queryable="1">
-              <Name>PER:CARTE_PRDD_17_ZONE_D_ECONOMIE_URBAINE_STIMULEE</Name>
+              <Name>PERSPECTIVE_FR:CARTE_PRDD_17_ZONE_D_ECONOMIE_URBAINE_STIMULEE</Name>
               <Title>17 Zone d'économie urbaine stimulée</Title>
-              <Abstract>Layer-Group type layer: PER:CARTE_PRDD_17_ZONE_D_ECONOMIE_URBAINE_STIMULEE</Abstract>
+              <Abstract>Layer-Group type layer: PERSPECTIVE_FR:CARTE_PRDD_17_ZONE_D_ECONOMIE_URBAINE_STIMULEE</Abstract>
               <KeywordList/>
               <SRS>EPSG:31370</SRS>
               <LatLonBoundingBox maxx="4.482592207387343" maxy="50.91434679525825" minx="4.2412735653799425" miny="50.76266082001365"/>
               <BoundingBox SRS="EPSG:31370" maxx="165088.0" maxy="185088.0" minx="140000.0" miny="160000.0"/>
             </Layer>
             <Layer noSubsets="0" opaque="0" queryable="1">
-              <Name>PER:CARTE_PRDD_18_RESEAU_STRUCTURANT_DE_TRANSPORT_EN_COMMUN</Name>
+              <Name>PERSPECTIVE_FR:CARTE_PRDD_18_RESEAU_STRUCTURANT_DE_TRANSPORT_EN_COMMUN</Name>
               <Title>18 Réseau structurant de transport en commun</Title>
-              <Abstract>Layer-Group type layer: PER:CARTE_PRDD_18_RESEAU_STRUCTURANT_DE_TRANSPORT_EN_COMMUN</Abstract>
+              <Abstract>Layer-Group type layer: PERSPECTIVE_FR:CARTE_PRDD_18_RESEAU_STRUCTURANT_DE_TRANSPORT_EN_COMMUN</Abstract>
               <KeywordList/>
               <SRS>EPSG:31370</SRS>
               <LatLonBoundingBox maxx="4.501862742176479" maxy="50.932778191395016" minx="4.220178068350866" miny="50.7390418956114"/>
               <BoundingBox SRS="EPSG:31370" maxx="165088.0" maxy="185088.0" minx="140000.0" miny="160000.0"/>
             </Layer>
             <Layer noSubsets="0" opaque="0" queryable="1">
-              <Name>PER:CARTE_PRDD_19_PARKING_DE_TRANSIT</Name>
+              <Name>PERSPECTIVE_FR:CARTE_PRDD_19_PARKING_DE_TRANSIT</Name>
               <Title>19 Parking de transit</Title>
-              <Abstract>Layer-Group type layer: PER:CARTE_PRDD_19_PARKING_DE_TRANSIT</Abstract>
+              <Abstract>Layer-Group type layer: PERSPECTIVE_FR:CARTE_PRDD_19_PARKING_DE_TRANSIT</Abstract>
               <KeywordList/>
               <SRS>EPSG:31370</SRS>
               <LatLonBoundingBox maxx="4.482592207387343" maxy="50.91434679525825" minx="4.2412735653799425" miny="50.76266082001365"/>
               <BoundingBox SRS="EPSG:31370" maxx="165088.0" maxy="185088.0" minx="140000.0" miny="160000.0"/>
             </Layer>
             <Layer noSubsets="0" opaque="0" queryable="1">
-              <Name>PER:CARTE_PRDD_20_RESEAU_STRUCTURANT_DE_VOIRIES</Name>
+              <Name>PERSPECTIVE_FR:CARTE_PRDD_20_RESEAU_STRUCTURANT_DE_VOIRIES</Name>
               <Title>20 Réseau structurant de voiries</Title>
-              <Abstract>Layer-Group type layer: PER:CARTE_PRDD_20_RESEAU_STRUCTURANT_DE_VOIRIES</Abstract>
+              <Abstract>Layer-Group type layer: PERSPECTIVE_FR:CARTE_PRDD_20_RESEAU_STRUCTURANT_DE_VOIRIES</Abstract>
               <KeywordList/>
               <SRS>EPSG:31370</SRS>
               <LatLonBoundingBox maxx="4.482592207387343" maxy="50.91434679525825" minx="4.2412735653799425" miny="50.76266082001365"/>
               <BoundingBox SRS="EPSG:31370" maxx="165088.0" maxy="185088.0" minx="140000.0" miny="160000.0"/>
             </Layer>
             <Layer noSubsets="0" opaque="0" queryable="1">
-              <Name>PER:CARTE_PRDD_21_AXES_PENETRANTS</Name>
+              <Name>PERSPECTIVE_FR:CARTE_PRDD_21_AXES_PENETRANTS</Name>
               <Title>21 Axes Pénétrants</Title>
-              <Abstract>Layer-Group type layer: PER:CARTE_PRDD_21_AXES_PENETRANTS</Abstract>
+              <Abstract>Layer-Group type layer: PERSPECTIVE_FR:CARTE_PRDD_21_AXES_PENETRANTS</Abstract>
               <KeywordList/>
               <SRS>EPSG:31370</SRS>
               <LatLonBoundingBox maxx="4.482592207387343" maxy="50.91434679525825" minx="4.2412735653799425" miny="50.76266082001365"/>
               <BoundingBox SRS="EPSG:31370" maxx="165088.0" maxy="185088.0" minx="140000.0" miny="160000.0"/>
             </Layer>
             <Layer noSubsets="0" opaque="0" queryable="1">
-              <Name>PER:CARTE_PRDD_22_RESEAUX_CYCLABLES</Name>
+              <Name>PERSPECTIVE_FR:CARTE_PRDD_22_RESEAUX_CYCLABLES</Name>
               <Title>22 Réseaux cyclables</Title>
-              <Abstract>Layer-Group type layer: PER:CARTE_PRDD_22_RESEAUX_CYCLABLES</Abstract>
+              <Abstract>Layer-Group type layer: PERSPECTIVE_FR:CARTE_PRDD_22_RESEAUX_CYCLABLES</Abstract>
               <KeywordList/>
               <SRS>EPSG:31370</SRS>
               <LatLonBoundingBox maxx="4.504400615353169" maxy="50.932939686992526" minx="4.2218174088683895" miny="50.73945837894823"/>
@@ -3066,7 +3066,7 @@
               <Name>Detailed land use</Name>
               <Title>Detailed land use</Title>
               <Layer queryable="1">
-                <Name>BDU:Galeries_commercantes</Name>
+                <Name>PERSPECTIVE_FR:Galeries_commercantes</Name>
                 <Title>Shopping galleries</Title>
                 <Abstract />
                 <KeywordList>
@@ -3096,7 +3096,7 @@
                 </Style>
               </Layer>
               <Layer queryable="1">
-                <Name>BDU:Parking_de_transit</Name>
+                <Name>PERSPECTIVE_FR:Parking_de_transit</Name>
                 <Title>Transit car park</Title>
                 <Abstract />
                 <KeywordList>
@@ -3126,7 +3126,7 @@
                 </Style>
               </Layer>
               <Layer queryable="1">
-                <Name>BDU:Points_de_variation_de_mixite</Name>
+                <Name>PERSPECTIVE_FR:Points_de_variation_de_mixite</Name>
                 <Title>Points of mixed use</Title>
                 <Abstract />
                 <KeywordList>
@@ -3156,7 +3156,7 @@
                 </Style>
               </Layer>
               <Layer queryable="1">
-                <Name>BDU:Espaces_structurants</Name>
+                <Name>PERSPECTIVE_FR:Espaces_structurants</Name>
                 <Title>Structuring spaces</Title>
                 <Abstract />
                 <KeywordList>
@@ -3186,7 +3186,7 @@
                 </Style>
               </Layer>
               <Layer queryable="1">
-                <Name>BDU:Liseres_de_noyau_commercial</Name>
+                <Name>PERSPECTIVE_FR:Liseres_de_noyau_commercial</Name>
                 <Title>Commercial center strips</Title>
                 <Abstract />
                 <KeywordList>
@@ -3216,7 +3216,7 @@
                 </Style>
               </Layer>
               <Layer queryable="1">
-                <Name>BDU:Zichee</Name>
+                <Name>PERSPECTIVE_FR:Zichee</Name>
                 <Title>Areas of cultural, historic, aesthetic or improvement value (ACHEIV)</Title>
                 <Abstract />
                 <KeywordList>
@@ -3246,7 +3246,7 @@
                 </Style>
               </Layer>
               <Layer queryable="1">
-                <Name>BDU:Zones_d_interet_regional_a_amenagement_differe</Name>
+                <Name>PERSPECTIVE_FR:Zones_d_interet_regional_a_amenagement_differe</Name>
                 <Title>Areas of regional importance with postponed development (ARIPD)</Title>
                 <Abstract />
                 <KeywordList>
@@ -3276,7 +3276,7 @@
                 </Style>
               </Layer>
               <Layer queryable="1">
-                <Name>BDU:Affectations</Name>
+                <Name>PERSPECTIVE_FR:Affectations</Name>
                 <Title>Land use</Title>
                 <Abstract />
                 <KeywordList>
@@ -3338,7 +3338,7 @@
             <Name>Bureaux</Name>
             <Title>Offices</Title>
             <Layer queryable="1">
-              <Name>BDU:Maille</Name>
+              <Name>PERSPECTIVE_FR:Maille</Name>
               <Title>Mesh</Title>
               <Abstract />
               <KeywordList>
@@ -3372,7 +3372,7 @@
             <Name>Voirie</Name>
             <Title>Roads</Title>
             <Layer queryable="1">
-              <Name>BDU:Autoroutes</Name>
+              <Name>PERSPECTIVE_FR:Autoroutes</Name>
               <Title>Motorways</Title>
               <Abstract />
               <KeywordList>
@@ -3402,7 +3402,7 @@
               </Style>
             </Layer>
             <Layer queryable="1">
-              <Name>BDU:Itineraires_cyclables</Name>
+              <Name>PERSPECTIVE_FR:Itineraires_cyclables</Name>
               <Title>Bicycle routes</Title>
               <Abstract />
               <KeywordList>
@@ -3432,7 +3432,7 @@
               </Style>
             </Layer>
             <Layer queryable="1">
-              <Name>BDU:Voiries_metropolitaines</Name>
+              <Name>PERSPECTIVE_FR:Voiries_metropolitaines</Name>
               <Title>Metropolitan roads</Title>
               <Abstract />
               <KeywordList>
@@ -3462,7 +3462,7 @@
               </Style>
             </Layer>
             <Layer queryable="1">
-              <Name>BDU:Voiries_metropolitaines_en_tunnel</Name>
+              <Name>PERSPECTIVE_FR:Voiries_metropolitaines_en_tunnel</Name>
               <Title>Metropolitan tunnel roads</Title>
               <Abstract />
               <KeywordList>
@@ -3492,7 +3492,7 @@
               </Style>
             </Layer>
             <Layer queryable="1">
-              <Name>BDU:Voiries_principales</Name>
+              <Name>PERSPECTIVE_FR:Voiries_principales</Name>
               <Title>Main roads</Title>
               <Abstract />
               <KeywordList>
@@ -3522,7 +3522,7 @@
               </Style>
             </Layer>
             <Layer queryable="1">
-              <Name>BDU:Zone_du_Bois_de_la_Cambre</Name>
+              <Name>PERSPECTIVE_FR:Zone_du_Bois_de_la_Cambre</Name>
               <Title>Area of the Bois de la Cambre</Title>
               <Abstract />
               <KeywordList>
@@ -3556,7 +3556,7 @@
             <Name>Transport</Name>
             <Title>Transport</Title>
             <Layer queryable="1">
-              <Name>BDU:Gares_ou_points_d_arret</Name>
+              <Name>PERSPECTIVE_FR:Gares_ou_points_d_arret</Name>
               <Title>Train stations and stops</Title>
               <Abstract />
               <KeywordList>
@@ -3586,7 +3586,7 @@
               </Style>
             </Layer>
             <Layer queryable="1">
-              <Name>BDU:Gares_a_creer</Name>
+              <Name>PERSPECTIVE_FR:Gares_a_creer</Name>
               <Title>Train stations to be created</Title>
               <Abstract />
               <KeywordList>
@@ -3616,7 +3616,7 @@
               </Style>
             </Layer>
             <Layer queryable="1">
-              <Name>BDU:Stations</Name>
+              <Name>PERSPECTIVE_FR:Stations</Name>
               <Title>Stations</Title>
               <Abstract />
               <KeywordList>
@@ -3646,7 +3646,7 @@
               </Style>
             </Layer>
             <Layer queryable="1">
-              <Name>BDU:Stations_a_creer</Name>
+              <Name>PERSPECTIVE_FR:Stations_a_creer</Name>
               <Title>Stations to be created</Title>
               <Abstract />
               <KeywordList>
@@ -3676,7 +3676,7 @@
               </Style>
             </Layer>
             <Layer queryable="1">
-              <Name>BDU:Itineraires_en_site_independant</Name>
+              <Name>PERSPECTIVE_FR:Itineraires_en_site_independant</Name>
               <Title>Independant lane itineraries</Title>
               <Abstract />
               <KeywordList>
@@ -3706,7 +3706,7 @@
               </Style>
             </Layer>
             <Layer queryable="1">
-              <Name>BDU:Itineraires_en_site_independant_a_creer</Name>
+              <Name>PERSPECTIVE_FR:Itineraires_en_site_independant_a_creer</Name>
               <Title>Independant lane itineraries to be created</Title>
               <Abstract />
               <KeywordList>
@@ -3736,7 +3736,7 @@
               </Style>
             </Layer>
             <Layer queryable="1">
-              <Name>BDU:Lignes_de_chemin_de_fer</Name>
+              <Name>PERSPECTIVE_FR:Lignes_de_chemin_de_fer</Name>
               <Title>Railroad lines</Title>
               <Abstract />
               <KeywordList>
@@ -3766,7 +3766,7 @@
               </Style>
             </Layer>
             <Layer queryable="1">
-              <Name>BDU:Zone_a_reserver_pour_infrastructure_souterraine</Name>
+              <Name>PERSPECTIVE_FR:Zone_a_reserver_pour_infrastructure_souterraine</Name>
               <Title>Areas to be reserved for underground infrastructure</Title>
               <Abstract />
               <KeywordList>
@@ -3796,7 +3796,7 @@
               </Style>
             </Layer>
             <Layer queryable="1">
-              <Name>BDU_DRU:URBAN_II</Name>
+              <Name>SPRB_BSY:URBAN_II</Name>
               <Title>URBAN II</Title>
               <Abstract />
               <KeywordList>
@@ -3826,7 +3826,7 @@
               </Style>
             </Layer>
             <Layer queryable="1">
-              <Name>BDU:Zone_d_etude_du_projet_gare_et_de_la_ZIRAD</Name>
+              <Name>PERSPECTIVE_FR:Zone_d_etude_du_projet_gare_et_de_la_ZIRAD</Name>
               <Title>Area under consideration for the planned train station and the ARIPD</Title>
               <Abstract />
               <KeywordList>
@@ -3858,7 +3858,7 @@
           </Layer>
         </Layer>
         <Layer queryable="1">
-          <Name>BDU:PPAS</Name>
+          <Name>PERSPECTIVE_FR:PPAS</Name>
           <Title>Special Land Use Scheme (SLUS)</Title>
           <Abstract>VM_A60_PPAS_FR</Abstract>
           <KeywordList>
@@ -3879,7 +3879,7 @@
           </Style>
         </Layer>
         <Layer queryable="1">
-          <Name>BDU:PPAS_ABROGES</Name>
+          <Name>PERSPECTIVE_FR:PPAS_ABROGES</Name>
           <Title>Special Land Use Scheme (ended)</Title>
           <Abstract>VM_A60_PPAS_FR</Abstract>
           <KeywordList>
@@ -3900,7 +3900,7 @@
           </Style>
         </Layer>
         <Layer noSubsets="0" opaque="0" queryable="1">
-          <Name>PER:Zone_de_revitalisation_urbaine_2016</Name>
+          <Name>PERSPECTIVE_FR:Zone_de_revitalisation_urbaine_2016</Name>
           <Title>Urban regeneration Area 2016</Title>
           <Abstract/>
           <KeywordList>
@@ -3920,7 +3920,7 @@
           </Style>
         </Layer>
         <Layer noSubsets="0" opaque="0" queryable="1">
-          <Name>PER:Zone_de_revitalisation_urbaine_2020</Name>
+          <Name>PERSPECTIVE_FR:Zone_de_revitalisation_urbaine_2020</Name>
           <Title>Urban regeneration Area 2020</Title>
           <Abstract/>
           <KeywordList>
@@ -3940,7 +3940,7 @@
           </Style>
         </Layer>
         <Layer queryable="1">
-          <Name>BDU:EDRLR</Name>
+          <Name>PERSPECTIVE_FR:EDRLR</Name>
           <Title>EDRLR</Title>
           <Abstract />
           <KeywordList>
@@ -3970,7 +3970,7 @@
           </Style>
         </Layer>
         <Layer noSubsets="0" opaque="0" queryable="1">
-          <Name>BDU:plan_de_qualite_paysagere_et_urbanistique</Name>
+          <Name>PERSPECTIVE_FR:plan_de_qualite_paysagere_et_urbanistique</Name>
           <Title>landscape and urban quality plan</Title>
           <Abstract/>
           <KeywordList>
@@ -4041,7 +4041,7 @@
           <Name>2007-2013</Name>
           <Title>2007-2013</Title>
           <Layer queryable="1">
-            <Name>BDU:projet_FEDER</Name>
+            <Name>SPRB_BSY:projet_FEDER</Name>
             <Title>ERDF project</Title>
             <Abstract />
             <KeywordList>
@@ -4071,7 +4071,7 @@
             </Style>
           </Layer>
           <Layer queryable="1">
-            <Name>BDU:Zone_d_intervention_prioritaire</Name>
+            <Name>PERSPECTIVE_FR:Zone_d_intervention_prioritaire</Name>
             <Title>Prioritary intervention area</Title>
             <Abstract />
             <KeywordList>
@@ -4105,7 +4105,7 @@
           <Name>2000-2006</Name>
           <Title>2000-2006</Title>
           <Layer queryable="1">
-            <Name>BDU_DRU:URBAN_II</Name>
+            <Name>SPRB_BSY:URBAN_II</Name>
             <Title>URBAN II</Title>
             <Abstract />
             <KeywordList>
@@ -4126,7 +4126,7 @@
             </Style>
           </Layer>
           <Layer queryable="1">
-            <Name>BDU_DRU:Objectif_2</Name>
+            <Name>SPRB_BSY:Objectif_2</Name>
             <Title>Target 2</Title>
             <Abstract />
             <KeywordList>
@@ -4157,7 +4157,7 @@
         <SRS>EPSG:900913</SRS>
         <LatLonBoundingBox maxx="4.49547992326272" maxy="50.9218586969616" minx="4.22527159306639" miny="50.7599660513373" />
         <Layer queryable="1">
-          <Name>BDU:Limite_regionale</Name>
+          <Name>CIRB_URBIS:Limite_regionale</Name>
           <Title>Regional border</Title>
           <Abstract />
           <KeywordList>
@@ -4196,7 +4196,7 @@
           </Style>
         </Layer>
         <Layer queryable="1">
-          <Name>BDU:Limites_communales</Name>
+          <Name>CIRB_URBIS:Limites_communales</Name>
           <Title>Communal border</Title>
           <Abstract />
           <KeywordList>
@@ -4232,7 +4232,7 @@
             <Name>2020</Name>
             <Title>2020</Title>
             <Layer queryable="1">
-              <Name>BDU:Batiment_2020</Name>
+              <Name>CIRB_URBIS:Batiment_2020</Name>
               <Title>Building 2020</Title>
               <Abstract>V_PAB_AB_0</Abstract>
               <KeywordList>
@@ -4263,7 +4263,7 @@
               <ScaleHint max="5000.0" min="0.0" />
             </Layer>
             <Layer queryable="1">
-              <Name>BDU:Parcelle_2020</Name>
+              <Name>CIRB_URBIS:Parcelle_2020</Name>
               <Title>Parcel 2020</Title>
               <Abstract>V_PAB_AP_0</Abstract>
               <KeywordList>
@@ -4299,7 +4299,7 @@
             <Name>2019</Name>
             <Title>2019</Title>
             <Layer queryable="1">
-              <Name>BDU:Batiment_2019</Name>
+              <Name>CIRB_URBIS:Batiment_2019</Name>
               <Title>Building 2019</Title>
               <Abstract>V_PAB_AB_1</Abstract>
               <KeywordList>
@@ -4330,7 +4330,7 @@
               <ScaleHint max="5000.0" min="0.0" />
             </Layer>
             <Layer queryable="1">
-              <Name>BDU:Parcelle_2019</Name>
+              <Name>CIRB_URBIS:Parcelle_2019</Name>
               <Title>Parcel 2019</Title>
               <Abstract>V_PAB_AP_1</Abstract>
               <KeywordList>
@@ -4366,7 +4366,7 @@
             <Name>2018</Name>
             <Title>2018</Title>
             <Layer queryable="1">
-              <Name>BDU:Batiment_2018</Name>
+              <Name>CIRB_URBIS:Batiment_2018</Name>
               <Title>Building 2018</Title>
               <Abstract>V_PAB_AB_2</Abstract>
               <KeywordList>
@@ -4398,7 +4398,7 @@
               <ScaleHint max="5000.0" min="0.0" />
             </Layer>
             <Layer queryable="1">
-              <Name>BDU:Parcelle_2018</Name>
+              <Name>CIRB_URBIS:Parcelle_2018</Name>
               <Title>Parcel 2018</Title>
               <Abstract>V_PAB_AP_2</Abstract>
               <KeywordList>
@@ -4754,18 +4754,18 @@
           <Name>Topography</Name>
           <Title>Topography</Title>
           <Layer noSubsets="0" opaque="0" queryable="1">
-            <Name>BDU:Isohypses_group</Name>
+            <Name>URBAN_DCC_ER:Isohypses_group</Name>
             <Title>Isohypses - topolines</Title>
-            <Abstract>Layer-Group type layer: BDU:Isohypses_group</Abstract>
+            <Abstract>Layer-Group type layer: URBAN_DCC_ER:Isohypses_group</Abstract>
             <KeywordList/>
             <SRS>EPSG:31370</SRS>
             <LatLonBoundingBox maxx="4.484211534966238" maxy="50.91543592922566" minx="4.240606746595234" miny="50.76156631575136"/>
             <BoundingBox SRS="EPSG:31370" maxx="165088.0" maxy="185088.0" minx="140000.0" miny="160000.0"/>
           </Layer>
           <Layer noSubsets="0" opaque="0" queryable="1">
-            <Name>BDU:Topography</Name>
+            <Name>URBAN_DCC_ER:Topography</Name>
             <Title>Topography - digital terrain model</Title>
-            <Abstract>Layer-Group type layer: BDU:Topography</Abstract>
+            <Abstract>Layer-Group type layer: URBAN_DCC_ER:Topography</Abstract>
             <KeywordList/>
             <SRS>EPSG:31370</SRS>
             <LatLonBoundingBox maxx="4.484368000890428" maxy="50.91545388156367" minx="4.239611291762848" miny="50.76155624560088"/>

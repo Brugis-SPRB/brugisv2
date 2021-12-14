@@ -1,6 +1,6 @@
 
 const gfiFr = {
-	"BDU:Affectations": {
+	"PERSPECTIVE_FR:Affectations": {
 		"actiontype": "GRID",
 		"title": "Affectation: [%NAME_FR%]",
 		"attributes": [{
@@ -15,7 +15,7 @@ const gfiFr = {
 			}
 		]
 	},
-	"BDU:Espaces_structurants": {
+	"PERSPECTIVE_FR:Espaces_structurants": {
 		"actiontype": "GRID",
 		"title": "[%NAME_FR%]",
 		"attributes": [{
@@ -30,7 +30,7 @@ const gfiFr = {
 			}
 		]
 	},
-	"BDU:Maille": {
+	"PERSPECTIVE_FR:Maille": {
 		"actiontype": "GRID",
 		"title": "Maille [%%]",
 		"attributes": [{
@@ -49,7 +49,7 @@ const gfiFr = {
 			"type": "string"
 		}]
 	},
-	"BDU:Enseignes": {
+	"URBAN_DU:Enseignes": {
 		"actiontype": "GRID",
 		"title": "Enseignes: [%ZONE%]",
 		"attributes": [{
@@ -58,7 +58,7 @@ const gfiFr = {
 			"type": "string"
 		}]
 	},
-	"BDU:Publicite": {
+	"URBAN_DU:Publicite": {
 		"actiontype": "GRID",
 		"title": "Publicité: [%ZONE%]",
 		"attributes": [{
@@ -67,7 +67,7 @@ const gfiFr = {
 			"type": "string"
 		}]
 	},
-	"BDU_DMS_PROT:Arbres_remarquables": {
+	"URBAN_DPC_PN:Arbres_remarquables": {
 		"actiontype": "GRID",
 		"title": "[%NOM_FR%]",
 		"attributes": [{
@@ -107,7 +107,7 @@ const gfiFr = {
 			}
 		]
 	},
-	"BDU_DMS_PROT:Arbres_remarquables_abattus_ou_disparus": {
+	"URBAN_DPC_PN:Arbres_remarquables_abattus_ou_disparus": {
 		"actiontype": "GRID",
 		"title": "[%NOM_FR%]",
 		"attributes": [{
@@ -147,7 +147,7 @@ const gfiFr = {
 			}
 		]
 	},
-	"BDU_DMS_PROT:Arbres_remarquables_rarete": {
+	"URBAN_DPC_PN:Arbres_remarquables_rarete": {
 		"actiontype": "GRID",
 		"title": "[%NOM_LA%]: [%RARETE%]",
 		"attributes": [{
@@ -167,7 +167,7 @@ const gfiFr = {
 			}
 		]
 	},
-	"BDU_DMS_PROT:Arbres_remarquables_100_biggest": {
+	"URBAN_DPC_PN:Arbres_remarquables_100_biggest": {
 		"actiontype": "GRID",
 		"title": "[%NOM_FR%]",
 		"attributes": [{
@@ -252,7 +252,7 @@ const gfiFr = {
 			}
 		]
 	},
-	"BDU:Lotissements": {
+	"URBAN_DU:Lotissements": {
 		"actiontype": "GRID",
 		"title": "[%REFSITEX%]",
 		"attributes": [{
@@ -322,7 +322,7 @@ const gfiFr = {
 			}
 		]
 	},
-	"BDU:Zones_de_protection_UNESCO": {
+	"URBAN_DPC_IPB:Zones_de_protection_UNESCO": {
 		"actiontype": "GRID",
 		"title": "Zone de protection UNESCO: [%NOM_FR%]",
 		"attributes": [{
@@ -331,7 +331,7 @@ const gfiFr = {
 			"type": "string"
 		}]
 	},
-	"BDU:Patrimoine": {
+	"URBAN_DPC_IPB:Patrimoine": {
 		"actiontype": "GRID",
 		"title": "[%BESCHERMD_ALS_FR%]: [%BENAMING_PAT_VW_FR%]",
 		"attributes": [{
@@ -591,7 +591,7 @@ const gfiFr = {
 			}
 		]
 	},
-	"BDU:Zones_de_protection": {
+	"URBAN_DPC_IPB:Zones_de_protection": {
 		"actiontype": "GRID",
 		"title": "Zone de protection de [%BESCHERMD_ALS_FR%]: [%BENAMING_PAT_VW_FR%]",
 		"attributes": [{
@@ -724,7 +724,7 @@ const gfiFr = {
 			}
 		]
 	},
-	"BDU_DMS_PROT:Inventaire_Irismonument": {
+	"URBAN_DPC_IPB:Inventaire_Irismonument": {
 		"actiontype": "GRID",
 		"title": "Inventaire Irismonument: [%STREET_FR%], [%NUMBER%]",
 		"attributes": [{
@@ -749,7 +749,7 @@ const gfiFr = {
 			}
 		]
 	},
-	"BDU_DRU:Zones_de_preemption": {
+	"URBAN_DRU:Zones_de_preemption": {
 		"actiontype": "GRID",
 		"title": "Zone de préemption: [%NOM_FR%]",
 		"attributes": [{
@@ -784,7 +784,7 @@ const gfiFr = {
 			}
 		]
 	},
-	"BDU:PPAS": {
+	"PERSPECTIVE_FR:PPAS": {
 		"actiontype": "GRID",
 		"title": "Plan particulier d'affection du sol: [%OBJET%]",
 		"attributes": [{
@@ -954,37 +954,37 @@ const gfiFr = {
 			}
 		]
 	},
-	"BDU:Limites_communales": {
+	"CIRB_URBIS:Limites_communales": {
 		"actiontype": "GRID",
 		"title": "Commune: [%MU_NAME_FRE%]",
 		"attributes": []
 	},
-	"BDU:Galeries_commercantes": {
+	"PERSPECTIVE_FR:Galeries_commercantes": {
 		"actiontype": "GRID",
 		"title": "Galeries commerçantes",
 		"attributes": []
 	},
-	"BDU:Parking_de_transit": {
+	"PERSPECTIVE_FR:Parking_de_transit": {
 		"actiontype": "GRID",
 		"title": "Parking de transit",
 		"attributes": []
 	},
-	"BDU:Points_de_variation_de_mixite": {
+	"PERSPECTIVE_FR:Points_de_variation_de_mixite": {
 		"actiontype": "GRID",
 		"title": "Points de variation de mixité",
 		"attributes": []
 	},
-	"BDU:Liseres_de_noyau_commercial": {
+	"PERSPECTIVE_FR:Liseres_de_noyau_commercial": {
 		"actiontype": "GRID",
 		"title": "Liserés de noyau commercial",
 		"attributes": []
 	},
-	"BDU:Zichee": {
+	"PERSPECTIVE_FR:Zichee": {
 		"actiontype": "GRID",
 		"title": "Zone d'intérêt culturel, historique et d'embellissement",
 		"attributes": []
 	},
-	"BDU:Biens_classes_ou_en_sauvegarde": {
+	"URBAN_DPC_IPB:Biens_classes_ou_en_sauvegarde": {
 		"actiontype": "GRID",
 		"title": "Biens: [%BENAMING_PAT_VW_FR%]",
 		"attributes": [{
@@ -1049,7 +1049,7 @@ const gfiFr = {
 			}
 		]
 	},
-	"BDU_DMS_PROT:Inventaire_des_rocailles": {
+	"URBAN_DPC_PN:Inventaire_des_rocailles": {
 		"actiontype": "GRID",
 		"title": "Rocaille [%ID_XLS%]",
 		"attributes": [{
@@ -1164,7 +1164,7 @@ const gfiFr = {
 			}
 		]
 	},
-	"BDU_DRU:Contrats_de_quartiers_Programmes": {
+	"URBAN_DRU:Contrats_de_quartiers_Programmes": {
 		"actiontype": "GRID",
 		"title": "Contrat de Quartier (Programme): [%NOM_FR%]",
 		"attributes": [{
@@ -1209,7 +1209,7 @@ const gfiFr = {
 			}
 		]
 	},
-	"BDU_DRU:Contrats_de_quartiers_Projets": {
+	"URBAN_DRU:Contrats_de_quartiers_Projets": {
 		"actiontype": "GRID",
 		"title": "Contrat de Quartier (Projet): [%PROJ_FR%]",
 		"attributes": [{
@@ -1274,7 +1274,7 @@ const gfiFr = {
 			}
 		]
 	},
-	"BDU_DRU:Contrats_de_renovation_urbaine_Programmes": {
+	"URBAN_DRU:Contrats_de_renovation_urbaine_Programmes": {
 		"actiontype": "GRID",
 		"title": "Contrat de rénovation urbaine (Programmes): [%NAME_FR%]",
 		"attributes": [{
@@ -1419,7 +1419,7 @@ const gfiFr = {
 			}
 		]
 	},
-	"BDU:plan_de_qualite_paysagere_et_urbanistique": {
+	"PERSPECTIVE_FR:plan_de_qualite_paysagere_et_urbanistique": {
 		"actiontype": "REDIRECT",
 		"url": "[%URL_FR%]",
 		"title": "Plan de qualité paysagère et urbanistique",
@@ -1431,12 +1431,12 @@ const gfiFr = {
 			}
 		]
 	},
-	"BDU:OPENPERMITS_FR": {
+	"URBAN_DU:OPENPERMITS_FR": {
 		"actiontype": "LINK",
 		"url": "https://openpermits.brussels/fr/_[%REFNOVA%]",
 		"title": "Dossier [%REFNOVA%]"
 	},
-	"PER:PRDD_*": {
+	"PERSPECTIVE_FR:PRDD_*": {
 		"actiontype": "GRID",
 		"title": "[%GROUP_FR%]: [%CAT_FR%]",
 		"attributes": [{
@@ -1536,7 +1536,7 @@ const gfiFr = {
 			}
 		]
 	},
-	"BDU:Terrains_affectes_a_l_industrie": {
+	"URBAN_DU:Terrains_affectes_a_l_industrie": {
 		"actiontype": "GRID",
 		"title": "[%REFNOVA%]",
 		"attributes": [{
@@ -1571,7 +1571,7 @@ const gfiFr = {
 			}
 		]
 	},
-	"PER:Schemas_directeurs": {
+	"PERSPECTIVE_FR:Schemas_directeurs": {
 		"actiontype": "GRID",
 		"title": "Schema directeur [%NUMBER%] - [%NOM%]",
 		"attributes": [{

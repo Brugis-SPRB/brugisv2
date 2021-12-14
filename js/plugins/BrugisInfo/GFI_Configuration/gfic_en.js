@@ -1,5 +1,5 @@
 const gfiEn = {
-	"BDU:Affectations": {
+	"PERSPECTIVE_FR:Affectations": {
 		"actiontype": "GRID",
 		"title": "Affectation: [%NAME_FR%]",
 		"attributes": [{
@@ -14,7 +14,7 @@ const gfiEn = {
 			}
 		]
 	},
-	"BDU:Espaces_structurants": {
+	"PERSPECTIVE_FR:Espaces_structurants": {
 		"actiontype": "GRID",
 		"title": "[%NAME_FR%]",
 		"attributes": [{
@@ -29,7 +29,7 @@ const gfiEn = {
 			}
 		]
 	},
-	"BDU:Maille": {
+	"PERSPECTIVE_FR:Maille": {
 		"actiontype": "GRID",
 		"title": "Maille: [%GMLINK%]",
 		"attributes": [{
@@ -53,7 +53,7 @@ const gfiEn = {
 			"type": "string"
 		}]
 	},
-	"BDU:Enseignes": {
+	"URBAN_DU:Enseignes": {
 		"actiontype": "GRID",
 		"title": "Enseignes: [%ZONE%]",
 		"attributes": [{
@@ -281,7 +281,7 @@ const gfiEn = {
 			}
 		]
 	},
-	"BDU:Lotissements": {
+	"URBAN_DU:Lotissements": {
 		"actiontype": "GRID",
 		"title": "[%REFSITEX%]",
 		"attributes": [{
@@ -331,7 +331,7 @@ const gfiEn = {
 			}
 		]
 	},
-	"BDU:Patrimoine": {
+	"URBAN_DPC_IPB:Patrimoine": {
 		"actiontype": "GRID",
 		"title": "[%BESCHERMD_ALS_FR%]: [%BENAMING_PAT_VW_FR%]",
 		"attributes": [{
@@ -396,7 +396,7 @@ const gfiEn = {
 			}
 		]
 	},
-	"BDU:MONUMENT_CLASSEMENT_ARRETE_DEFINITIF": {
+	"URBAN_DPC_IPB:MONUMENT_CLASSEMENT_ARRETE_DEFINITIF": {
 		"actiontype": "GRID",
 		"title": "[%BESCHERMD_ALS_FR%]: [%BENAMING_PAT_VW_FR%]",
 		"attributes": [{
@@ -461,7 +461,7 @@ const gfiEn = {
 			}
 		]
 	},
-	"BDU:MONUMENT_CLASSEMENT_OUVERTURE_DE_PROCEDURE": {
+	"URBAN_DPC_IPB:MONUMENT_CLASSEMENT_OUVERTURE_DE_PROCEDURE": {
 		"actiontype": "GRID",
 		"title": "[%BESCHERMD_ALS_FR%]: [%BENAMING_PAT_VW_FR%]",
 		"attributes": [{
@@ -526,7 +526,7 @@ const gfiEn = {
 			}
 		]
 	},
-	"BDU:MONUMENT_SAUVEGARDE_ARRETE_DEFINITIF": {
+	"URBAN_DPC_IPB:MONUMENT_SAUVEGARDE_ARRETE_DEFINITIF": {
 		"actiontype": "GRID",
 		"title": "[%BESCHERMD_ALS_FR%]: [%BENAMING_PAT_VW_FR%]",
 		"attributes": [{
@@ -591,7 +591,7 @@ const gfiEn = {
 			}
 		]
 	},
-	"BDU:MONUMENT_SAUVEGARDE_OUVERTURE_DE_PROCEDURE": {
+	"URBAN_DPC_IPB:MONUMENT_SAUVEGARDE_OUVERTURE_DE_PROCEDURE": {
 		"actiontype": "GRID",
 		"title": "[%BESCHERMD_ALS_FR%]: [%BENAMING_PAT_VW_FR%]",
 		"attributes": [{
@@ -656,7 +656,7 @@ const gfiEn = {
 			}
 		]
 	},
-	"BDU:ENSEMBLE_CLASSEMENT_ARRETE_DEFINITIF": {
+	"URBAN_DPC_IPB:ENSEMBLE_CLASSEMENT_ARRETE_DEFINITIF": {
 		"actiontype": "GRID",
 		"title": "[%BESCHERMD_ALS_FR%]: [%BENAMING_PAT_VW_FR%]",
 		"attributes": [{
@@ -721,7 +721,7 @@ const gfiEn = {
 			}
 		]
 	},
-	"BDU:ENSEMBLE_CLASSEMENT_OUVERTURE_DE_PROCEDURE": {
+	"URBAN_DPC_IPB:ENSEMBLE_CLASSEMENT_OUVERTURE_DE_PROCEDURE": {
 		"actiontype": "GRID",
 		"title": "[%BESCHERMD_ALS_FR%]: [%BENAMING_PAT_VW_FR%]",
 		"attributes": [{
@@ -786,7 +786,7 @@ const gfiEn = {
 			}
 		]
 	},
-	"BDU:ENSEMBLE_SAUVEGARDE_ARRETE_DEFINITIF": {
+	"URBAN_DPC_IPB:ENSEMBLE_SAUVEGARDE_ARRETE_DEFINITIF": {
 		"actiontype": "GRID",
 		"title": "[%BESCHERMD_ALS_FR%]: [%BENAMING_PAT_VW_FR%]",
 		"attributes": [{
@@ -851,7 +851,7 @@ const gfiEn = {
 			}
 		]
 	},
-	"BDU:ENSEMBLE_SAUVEGARDE_OUVERTURE_DE_PROCEDURE": {
+	"URBAN_DPC_IPB:ENSEMBLE_SAUVEGARDE_OUVERTURE_DE_PROCEDURE": {
 		"actiontype": "GRID",
 		"title": "[%BESCHERMD_ALS_FR%]: [%BENAMING_PAT_VW_FR%]",
 		"attributes": [{
@@ -916,7 +916,7 @@ const gfiEn = {
 			}
 		]
 	},
-	"BDU:SITE_CLASSEMENT_ARRETE_DEFINITIF": {
+	"URBAN_DPC_PN:SITE_CLASSEMENT_ARRETE_DEFINITIF": {
 		"actiontype": "GRID",
 		"title": "[%BESCHERMD_ALS_FR%]: [%BENAMING_PAT_VW_FR%]",
 		"attributes": [{
@@ -981,7 +981,7 @@ const gfiEn = {
 			}
 		]
 	},
-	"BDU:SITE_CLASSEMENT_OUVERTURE_DE_PROCEDURE": {
+	"URBAN_DPC_PN:SITE_CLASSEMENT_OUVERTURE_DE_PROCEDURE": {
 		"actiontype": "GRID",
 		"title": "[%BESCHERMD_ALS_FR%]: [%BENAMING_PAT_VW_FR%]",
 		"attributes": [{
@@ -1046,7 +1046,7 @@ const gfiEn = {
 			}
 		]
 	},
-	"BDU:SITE_SAUVEGARDE_ARRETE_DEFINITIF": {
+	"URBAN_DPC_PN:SITE_SAUVEGARDE_ARRETE_DEFINITIF": {
 		"actiontype": "GRID",
 		"title": "[%BESCHERMD_ALS_FR%]: [%BENAMING_PAT_VW_FR%]",
 		"attributes": [{
@@ -1111,7 +1111,7 @@ const gfiEn = {
 			}
 		]
 	},
-	"BDU:SITE_SAUVEGARDE_OUVERTURE_DE_PROCEDURE": {
+	"URBAN_DPC_PN:SITE_SAUVEGARDE_OUVERTURE_DE_PROCEDURE": {
 		"actiontype": "GRID",
 		"title": "[%BESCHERMD_ALS_FR%]: [%BENAMING_PAT_VW_FR%]",
 		"attributes": [{
@@ -1176,7 +1176,7 @@ const gfiEn = {
 			}
 		]
 	},
-	"BDU:SITE_ARCHEOLOGIQUE_CLASSEMENT_ARRETE_DEFINITIF": {
+	"URBAN_DPC_PN:SITE_ARCHEOLOGIQUE_CLASSEMENT_ARRETE_DEFINITIF": {
 		"actiontype": "GRID",
 		"title": "[%BESCHERMD_ALS_FR%]: [%BENAMING_PAT_VW_FR%]",
 		"attributes": [{
@@ -1241,7 +1241,7 @@ const gfiEn = {
 			}
 		]
 	},
-	"BDU:SITE_ARCHEOLOGIQUE_CLASSEMENT_OUVERTURE_DE_PROCEDURE": {
+	"URBAN_DPC_PN:SITE_ARCHEOLOGIQUE_CLASSEMENT_OUVERTURE_DE_PROCEDURE": {
 		"actiontype": "GRID",
 		"title": "[%BESCHERMD_ALS_FR%]: [%BENAMING_PAT_VW_FR%]",
 		"attributes": [{
@@ -1306,7 +1306,7 @@ const gfiEn = {
 			}
 		]
 	},
-	"BDU:SITE_ARCHEOLOGIQUE_SAUVEGARDE_ARRETE_DEFINITIF": {
+	"URBAN_DPC_PN:SITE_ARCHEOLOGIQUE_SAUVEGARDE_ARRETE_DEFINITIF": {
 		"actiontype": "GRID",
 		"title": "[%BESCHERMD_ALS_FR%]: [%BENAMING_PAT_VW_FR%]",
 		"attributes": [{
@@ -1371,7 +1371,7 @@ const gfiEn = {
 			}
 		]
 	},
-	"BDU:SITE_ARCHEOLOGIQUE_SAUVEGARDE_OUVERTURE_DE_PROCEDURE": {
+	"URBAN_DPC_PN:SITE_ARCHEOLOGIQUE_SAUVEGARDE_OUVERTURE_DE_PROCEDURE": {
 		"actiontype": "GRID",
 		"title": "[%BESCHERMD_ALS_FR%]: [%BENAMING_PAT_VW_FR%]",
 		"attributes": [{
@@ -1436,7 +1436,7 @@ const gfiEn = {
 			}
 		]
 	},
-	"BDU:Zones_de_protection": {
+	"URBAN_DPC_IPB:Zones_de_protection": {
 		"actiontype": "GRID",
 		"title": "Zone de protection de [%BESCHERMD_ALS_FR%]: [%BENAMING_PAT_VW_FR%]",
 		"attributes": [{
@@ -1501,7 +1501,7 @@ const gfiEn = {
 			}
 		]
 	},
-	"BDU:Zones_de_protection_UNESCO": {
+	"URBAN_DPC_IPB:Zones_de_protection_UNESCO": {
 		"actiontype": "GRID",
 		"title": "Zone de protection UNESCO: [%NOM_FR%]",
 		"attributes": [{
@@ -1578,7 +1578,7 @@ const gfiEn = {
 			}
 		]
 	},
-	"BDU_DRU:Zones_de_preemption": {
+	"URBAN_DRU:Zones_de_preemption": {
 		"actiontype": "GRID",
 		"title": "Zone de préemption: [%NOM_FR%]",
 		"attributes": [{
@@ -1613,7 +1613,7 @@ const gfiEn = {
 			}
 		]
 	},
-	"BDU:PPAS": {
+	"PERSPECTIVE_FR:PPAS": {
 		"actiontype": "GRID",
 		"title": "Plan particulier d'affection du sol: [%OBJET%]",
 		"attributes": [{
@@ -1678,37 +1678,37 @@ const gfiEn = {
 			}
 		]
 	},
-	"BDU:Limites_communales": {
+	"CIRB_URBIS:Limites_communales": {
 		"actiontype": "GRID",
 		"title": "Commune: [MU_NAME_FRE%]",
 		"attributes": []
 	},
-	"BDU:Galeries_commercantes": {
+	"PERSPECTIVE_FR:Galeries_commercantes": {
 		"actiontype": "GRID",
 		"title": "Galeries commerçantes",
 		"attributes": []
 	},
-	"BDU:Parking_de_transit": {
+	"PERSPECTIVE_FR:Parking_de_transit": {
 		"actiontype": "GRID",
 		"title": "Parking de transit",
 		"attributes": []
 	},
-	"BDU:Points_de_variation_de_mixite": {
+	"PERSPECTIVE_FR:Points_de_variation_de_mixite": {
 		"actiontype": "GRID",
 		"title": "Points de variation de mixité",
 		"attributes": []
 	},
-	"BDU:Liseres_de_noyau_commercial": {
+	"PERSPECTIVE_FR:Liseres_de_noyau_commercial": {
 		"actiontype": "GRID",
 		"title": "Liserés de noyau commercial",
 		"attributes": []
 	},
-	"BDU:Zichee": {
+	"PERSPECTIVE_FR:Zichee": {
 		"actiontype": "GRID",
 		"title": "Zone d'intérêt culturel, historique et d'embellisement",
 		"attributes": []
 	},
-	"BDU:Biens_classes_ou_en_sauvegarde": {
+	"URBAN_DPC_IPB:Biens_classes_ou_en_sauvegarde": {
 		"actiontype": "GRID",
 		"title": "Biens: [%DENOMINATION%]",
 		"attributes": [{
@@ -1793,7 +1793,7 @@ const gfiEn = {
 			}
 		]
 	},
-	"BDU:plan_de_qualite_paysagere_et_urbanistique": {
+	"PERSPECTIVE_FR:plan_de_qualite_paysagere_et_urbanistique": {
 		"actiontype": "GRID",
 		"title": "Urban and Landscape quality map",
 		"attributes": [{

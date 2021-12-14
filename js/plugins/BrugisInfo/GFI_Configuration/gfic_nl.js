@@ -1,6 +1,6 @@
 
 const gfiNl = {
-	"BSO:Bestemmingen": {
+	"PERSPECTIVE_NL:Bestemmingen": {
 		"actiontype": "GRID",
 		"title": "[%NAME_NL%]",
 		"attributes": [{
@@ -15,7 +15,7 @@ const gfiNl = {
 			}
 		]
 	},
-	"BSO:Structurerende_ruimten": {
+	"PERSPECTIVE_NL:Structurerende_ruimten": {
 		"actiontype": "GRID",
 		"attributes": [{
 				"name": "Bestemmingen",
@@ -29,7 +29,7 @@ const gfiNl = {
 			}
 		]
 	},
-	"BSO:Linten_voor_handelskern": {
+	"PERSPECTIVE_NL:Linten_voor_handelskern": {
 		"actiontype": "GRID",
 		"attributes": [{
 			"name": "Bestemmingen",
@@ -37,7 +37,7 @@ const gfiNl = {
 			"type": "string"
 		}]
 	},
-	"BSO:Maas": {
+	"PERSPECTIVE_NL:Maas": {
 		"actiontype": "GRID",
 		"title": "Maas [%%]",
 		"attributes": [{
@@ -56,7 +56,7 @@ const gfiNl = {
 			"type": "string"
 		}]
 	},
-	"BSO:Uithangborden": {
+	"URBAN_DS:Uithangborden": {
 		"actiontype": "GRID",
 		"title": "Uithangborden: [%ZONE_NL%]",
 		"attributes": [{
@@ -65,7 +65,7 @@ const gfiNl = {
 			"type": "string"
 		}]
 	},
-	"BSO:Reclame": {
+	"URBAN_DS:Reclame": {
 		"actiontype": "GRID",
 		"title": "Reclame: [%ZONE_NL%]",
 		"attributes": [{
@@ -74,7 +74,7 @@ const gfiNl = {
 			"type": "string"
 		}]
 	},
-	"BSO_DSV:Voorkooprecht": {
+	"URBAN_DSV:Voorkooprecht": {
 		"actiontype": "GRID",
 		"title": "Voorkooprecht: [%NOM_NL%]",
 		"attributes": [{
@@ -109,7 +109,7 @@ const gfiNl = {
 			}
 		]
 	},
-	"BSO_DML_BESC:Opmerkelijke_bomen": {
+	"URBAN_DCE_NE:Opmerkelijke_bomen": {
 		"actiontype": "GRID",
 		"title": "[%NOM_NL%]",
 		"attributes": [{
@@ -184,7 +184,7 @@ const gfiNl = {
 			}
 		]
 	},
-	"BSO_DML_BESC:Opmerkelijke_bomen_zeldzaamheid": {
+	"URBAN_DCE_NE:Opmerkelijke_bomen_zeldzaamheid": {
 		"actiontype": "GRID",
 		"title": "[%NOM_LA%]: [%RARETE%]",
 		"attributes": [{
@@ -204,7 +204,7 @@ const gfiNl = {
 			}
 		]
 	},
-	"BSO_DML_BESC:Opmerkelijke_bomen_100_biggest": {
+	"URBAN_DCE_NE:Opmerkelijke_bomen_100_biggest": {
 		"actiontype": "GRID",
 		"title": "[%NOM_NL%]",
 		"attributes": [{
@@ -214,7 +214,7 @@ const gfiNl = {
 			}
 		]
 	},
-	"BSO_DML_BESC:Inventaris_Irismonument": {
+	"URBAN_DCE_IVBE:Inventaris_Irismonument": {
 		"actiontype": "GRID",
 		"title": "Inventaris Irismonument: [%STREET_NL%], [%NUMBER%]",
 		"attributes": [{
@@ -314,7 +314,7 @@ const gfiNl = {
 			}
 		]
 	},
-	"BSO:Verkavelingen": {
+	"URBAN_DS:Verkavelingen": {
 		"actiontype": "GRID",
 		"title": "[%REFSITEX%]",
 		"attributes": [{
@@ -384,7 +384,7 @@ const gfiNl = {
 			}
 		]
 	},
-	"BSO:BBP": {
+	"PERSPECTIVE_NL:BBP": {
 		"actiontype": "GRID",
 		"title": "BBP: [%OBJET%]",
 		"attributes": [{
@@ -459,7 +459,7 @@ const gfiNl = {
 			}
 		]
 	},
-	"BSO:Vrijwaringzone": {
+	"URBAN_DCE_IVBE:Vrijwaringzone": {
 		"actiontype": "GRID",
 		"title": "Vrijwaringzone van [%BESCHERMD_ALS_NL%]: [%BENAMING_PAT_VW_NL%]",
 		"attributes": [{
@@ -524,7 +524,7 @@ const gfiNl = {
 			}
 		]
 	},
-	"BSO:Patrimonium": {
+	"URBAN_DCE_IVBE:Patrimonium": {
 		"actiontype": "GRID",
 		"title": "[%BESCHERMD_ALS_NL%]: [%BENAMING_PAT_VW_NL%]",
 		"attributes": [{
@@ -849,12 +849,12 @@ const gfiNl = {
 			}
 		]
 	},
-	"BSO:Gemeentegrenzen": {
+	"CIBG_URBIS:Gemeentegrenzen": {
 		"actiontype": "GRID",
 		"title": "Commune: [%MU_NAME_DUT%]",
 		"attributes": []
 	},
-	"BSO:Goed_dat_beschermd_is_of_ingeschreven_op_de_bewaarlijst": {
+	"URBAN_DCE_IVBE:Goed_dat_beschermd_is_of_ingeschreven_op_de_bewaarlijst": {
 		"actiontype": "GRID",
 		"title": "Goed: [%BENAMING_PAT_VW_NL%]",
 		"attributes": [{
@@ -994,7 +994,7 @@ const gfiNl = {
 			}
 		]
 	},
-	"BSO_DSV:Wijkcontracten_Programmas": {
+	"URBAN_DSV:Wijkcontracten_Programmas": {
 		"actiontype": "GRID",
 		"title": "Wijkcontract (Programma): [%NOM_NL%]",
 		"attributes": [{
@@ -1039,7 +1039,7 @@ const gfiNl = {
 			}
 		]
 	},
-	"BSO_DSV:Wijkcontracten_Projecten": {
+	"URBAN_DSV:Wijkcontracten_Projecten": {
 		"actiontype": "GRID",
 		"title": "Wijkcontract (Project): [%PROJ_NL%]",
 		"attributes": [{
@@ -1104,7 +1104,7 @@ const gfiNl = {
 			}
 		]
 	},
-	"BSO_DSV:Stadsvernieuwingscontracten_Programmas": {
+	"URBAN_DSV:Stadsvernieuwingscontracten_Programmas": {
 		"actiontype": "GRID",
 		"title": "Stadsvernieuwingscontracten (Programmas): [%NAME_NL%]",
 		"attributes": [{
@@ -1279,7 +1279,7 @@ const gfiNl = {
 			}
 		]
 	},
-	"BSO:Beeldkwaliteitsplan": {
+	"PERSPECTIVE_NL:Beeldkwaliteitsplan": {
 		"actiontype": "REDIRECT",
 		"url": "[%URL_NL%]",
 		"title": "Beeldkwaliteitsplan",
@@ -1291,12 +1291,12 @@ const gfiNl = {
 			}
 		]
 	},
-	"BSO:OPENPERMITS_NL": {
+	"URBAN_DS:OPENPERMITS_NL": {
 		"actiontype": "LINK",
 		"url": "https://openpermits.brussels/nl/_[%REFNOVA%]",
 		"title": "Dossier [%REFNOVA%]"
 	},
-	"PER:GPDO_*": {
+	"PERSPECTIVE_NL:GPDO_*": {
 		"actiontype": "GRID",
 		"title": "[%GROUP_DU%]: [%CAT_DU%]",
 		"attributes": [{
@@ -1361,7 +1361,7 @@ const gfiNl = {
 			}
 		]
 	},
-	"BSO:Gemeentelijke_bouwverordening": {
+	"URBAN_DS:Gemeentelijke_bouwverordening": {
 		"actiontype": "GRID",
 		"title": "[%REFNOVA%]",
 		"attributes": [{
@@ -1396,7 +1396,7 @@ const gfiNl = {
 			}
 		]
 	},
-	"BSO:Gezoneerde_verordeningen": {
+	"URBAN_DS:Gezoneerde_verordeningen": {
 		"actiontype": "GRID",
 		"title": "[%REFNOVA%]",
 		"attributes": [{
@@ -1431,7 +1431,7 @@ const gfiNl = {
 			}
 		]
 	},
-	"BSO:Gronden_bestemd_voor_industrie": {
+	"URBAN_DS:Gronden_bestemd_voor_industrie": {
 		"actiontype": "GRID",
 		"title": "[%REFNOVA%]",
 		"attributes": [{
@@ -1466,7 +1466,7 @@ const gfiNl = {
 			}
 		]
 	},
-	"PER:Richtschemas": {
+	"PERSPECTIVE_NL:Richtschemas": {
 		"actiontype": "GRID",
 		"title": "Richtschema [%NUMBER%] - [%NAAM%]",
 		"attributes": [{
