@@ -4382,11 +4382,11 @@
         <LatLonBoundingBox minx="4.239734220616913" miny="50.759183094790245" maxx="4.481458862781607" maxy="50.912073830970535"/>
         <BoundingBox SRS="EPSG:31370" minx="141000.0" miny="161000.0" maxx="158000.0" maxy="178000.0"/>
         <Style>
-          <Name>PER:Contrats_ecole</Name>
-          <Title>PER:Contrats_ecole</Title>
+          <Name>Contrats_ecole</Name>
+          <Title>Contrats_ecole</Title>
           <LegendURL width="159" height="60">
             <Format>image/png</Format>
-            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=PER%3AContrats_Ecole"/>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=PERSPECTIVE_FR%3AContrats_Ecole"/>
           </LegendURL>
         </Style>
       </Layer>

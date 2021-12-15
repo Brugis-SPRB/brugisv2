@@ -4010,7 +4010,7 @@
           </Style>
         </Layer>
         <Layer queryable="1" opaque="0">
-          <Name>PER:School_Contracts</Name>
+          <Name>PERSPECTIVE_FR:Contrats_Ecole</Name>
           <Title>School Contracts</Title>
           <Abstract/>
           <KeywordList>
@@ -4025,7 +4025,7 @@
             <Title>PER:Contrats_ecole</Title>
             <LegendURL width="159" height="60">
               <Format>image/png</Format>
-              <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=PER%3ASchool%20Contracts"/>
+              <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=PERSPECTIVE_FR%3AContrats_Ecole"/>
             </LegendURL>
           </Style>
         </Layer>      </Layer>
