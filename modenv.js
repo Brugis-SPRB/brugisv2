@@ -4,10 +4,10 @@ const fs = require('fs')
 const glob = require('glob');
 
 const ENV_CONFIG_GEOSERVER_URBIS = {
-  'PRD' : 'https://mybrugis.irisnet.be/geoserver/URBIS/wms',
-  'DEV' : 'http://10.128.81.203:8080/geoserver/URBIS/wms',
-  'STANEW' : 'https://gislab.urban.brussels/geoserver/URBIS/wms',
-  'PRDNEW' : 'https://gis.urban.brussels/geoserver/URBIS/wms'
+  'PRD' : 'https://mybrugis.irisnet.be/geoserver/wms',
+  'DEV' : 'http://10.128.81.203:8080/geoserver/wms',
+  'STANEW' : 'https://gislab.urban.brussels/geoserver/wms',
+  'PRDNEW' : 'https://gis.urban.brussels/geoserver/wms'
 };
 
 const ENV_CONFIG_GEOSERVER = {

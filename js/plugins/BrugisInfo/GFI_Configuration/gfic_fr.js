@@ -177,7 +177,7 @@ const gfiFr = {
 			}
 		]
 	},
-	"BDU_DRU:Contrats_de_quartier": {
+	"URBAN_DRU:Contrats_de_quartier": {
 		"actiontype": "GRID",
 		"title": "Contrat de quartier: [%NOMCQ%]",
 		"attributes": [{
@@ -396,7 +396,7 @@ const gfiFr = {
 			}
 		]
 	},
-	"BDU:MONUMENT_*": {
+	"URBAN_DPC_IPB:MONUMENT_*": {
 		"actiontype": "GRID",
 		"title": "[%BESCHERMD_ALS_FR%]: [%BENAMING_PAT_VW_FR%]",
 		"attributes": [{
@@ -461,7 +461,7 @@ const gfiFr = {
 			}
 		]
 	},
-	"BDU:ENSEMBLE_*": {
+	"URBAN_DPC_IPB:ENSEMBLE_*": {
 		"actiontype": "GRID",
 		"title": "[%BESCHERMD_ALS_FR%]: [%BENAMING_PAT_VW_FR%]",
 		"attributes": [{
@@ -526,7 +526,7 @@ const gfiFr = {
 			}
 		]
 	},
-	"BDU:SITE_*": {
+	"URBAN_DPC_IPB:SITE_*": {
 		"actiontype": "GRID",
 		"title": "[%BESCHERMD_ALS_FR%]: [%BENAMING_PAT_VW_FR%]",
 		"attributes": [{
@@ -656,7 +656,7 @@ const gfiFr = {
 			}
 		]
 	},
-	"BDU_DMS_PROT:Visites_arbres": {
+	"URBAN_DPC_PN:Visites_arbres": {
 		"actiontype": "GRID",
 		"attributes": [{
 				"name": "Date de la dernière visite",
@@ -690,7 +690,7 @@ const gfiFr = {
 			}
 		]
 	},
-	"BDU_DMS_PROT_PRIVATE:Arbres_remarquables_valeur_patrimoniale": {
+	"URBAN_DPC_PN:Arbres_remarquables_valeur_patrimoniale": {
 		"actiontype": "GRID",
 		"attributes": [{
 				"name": "Valeur patrimoniale",
@@ -1309,7 +1309,7 @@ const gfiFr = {
 			}
 		]
 	},
-	"BDU_DMS_ARCH:Brasseries_*": {
+	"URBAN_DPC_PA:Brasseries_*": {
 		"actiontype": "GRID",
 		"title": "[%NAME%]",
 		"attributes": [{
@@ -1349,7 +1349,7 @@ const gfiFr = {
 			}
 		]
 	},
-	"BDU_DMS_ARCH:Couvents_*": {
+	"URBAN_DPC_PA:Couvents_*": {
 		"actiontype": "GRID",
 		"title": "[%NAME_FR%]",
 		"attributes": [{
@@ -1379,7 +1379,7 @@ const gfiFr = {
 			}
 		]
 	},
-	"BDU_DMS_ARCH:Refuges_*": {
+	"URBAN_DPC_PA:Refuges_*": {
 		"actiontype": "GRID",
 		"title": "[%NAME_FR%]",
 		"attributes": [{

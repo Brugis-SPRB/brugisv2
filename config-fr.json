@@ -26,9 +26,9 @@
 		"layers": [{
 
 			"type": "wms",
-			"url": ["https://mybrugis.irisnet.be/geoserver/URBIS/wms"],
+			"url": ["https://mybrugis.irisnet.be/geoserver/CIRB_URBIS/wms"],
 			"title": "UrbisFR Gray",
-			"name": "URBIS:urbisFRGray",
+			"name": "CIRB_URBIS:urbisFRGray",
 			"group": "background",
 			"visibility": true,
 			"origin": [140000.0, 160000.0],
@@ -38,9 +38,9 @@
 		}, {
 
 			"type": "wms",
-			"url": ["https://mybrugis.irisnet.be/geoserver/URBIS/wms"],
+			"url": ["https://mybrugis.irisnet.be/geoserver/CIRB_URBIS/wms"],
 			"title": "UrbisFR",
-			"name": "URBIS:urbisFR",
+			"name": "CIRB_URBIS:urbisFR",
 			"group": "background",
 			"visibility": false,
 			"format": "image/png8",

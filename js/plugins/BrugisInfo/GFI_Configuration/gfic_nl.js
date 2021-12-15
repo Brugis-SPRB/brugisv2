@@ -149,7 +149,7 @@ const gfiNl = {
 			}
 		]
 	},
-	"BSO_DML_BESC:Gevelde_ofverdwenen_bomen": {
+	"URBAN_DCE_NE:Gevelde_ofverdwenen_bomen": {
 		"actiontype": "GRID",
 		"title": "[%NOM_NL%]",
 		"attributes": [{
@@ -239,7 +239,7 @@ const gfiNl = {
 			}
 		]
 	},
-	"BSO_DSV:Wijkcontract": {
+	"URBAN_DSV:Wijkcontract": {
 		"actiontype": "GRID",
 		"title": "Wijkcontract: [%WIJKNAAM%]",
 		"attributes": [{
@@ -589,7 +589,7 @@ const gfiNl = {
 			}
 		]
 	},
-	"BSO:ARCHEOLOGISCHE_*": {
+	"URBAN_DCE_IVBE:ARCHEOLOGISCHE_*": {
 		"actiontype": "GRID",
 		"title": "[%BESCHERMD_ALS_NL%]: [%BENAMING_PAT_VW_NL%]",
 		"attributes": [{
@@ -654,7 +654,7 @@ const gfiNl = {
 			}
 		]
 	},
-	"BSO:GEHEEL_*": {
+	"URBAN_DCE_IVBE:GEHEEL_*": {
 		"actiontype": "GRID",
 		"title": "[%BESCHERMD_ALS_NL%]: [%BENAMING_PAT_VW_NL%]",
 		"attributes": [{
@@ -719,7 +719,7 @@ const gfiNl = {
 			}
 		]
 	},
-	"BSO:LANDSCHAP_*": {
+	"URBAN_DCE_IVBE:LANDSCHAP_*": {
 		"actiontype": "GRID",
 		"title": "[%BESCHERMD_ALS_NL%]: [%BENAMING_PAT_VW_NL%]",
 		"attributes": [{
@@ -784,7 +784,7 @@ const gfiNl = {
 			}
 		]
 	},
-	"BSO:MONUMENT_*": {
+	"URBAN_DCE_IVBE:MONUMENT_*": {
 		"actiontype": "GRID",
 		"title": "[%BESCHERMD_ALS_NL%]: [%BENAMING_PAT_VW_NL%]",
 		"attributes": [{
@@ -1139,7 +1139,7 @@ const gfiNl = {
 			}
 		]
 	},
-	"BSO_DML_ARCH:Brouwerijen_*": {
+	"URBAN_DCE_AE:Brouwerijen_*": {
 		"actiontype": "GRID",
 		"title": "[%NAME%]",
 		"attributes": [{
@@ -1179,7 +1179,7 @@ const gfiNl = {
 			}
 		]
 	},
-	"BSO_DML_ARCH:Kloosters_*": {
+	"URBAN_DCE_AE:Kloosters_*": {
 		"actiontype": "GRID",
 		"title": "[%NAME_NL%]",
 		"attributes": [{
@@ -1239,7 +1239,7 @@ const gfiNl = {
 			}
 		]
 	},
-	"BSO_DML_ARCH:Refugiehuizen_*": {
+	"URBAN_DCE_AE:Refugiehuizen_*": {
 		"actiontype": "GRID",
 		"title": "[%NAME_NL%]",
 		"attributes": [{
