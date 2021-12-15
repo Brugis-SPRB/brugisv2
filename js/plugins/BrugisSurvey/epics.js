@@ -21,7 +21,7 @@ const addremoveparcelsonactivativeEpic = (action$, store) =>
                     type: "wms",
                     url: state.brugisSurvey.geoserver,
                     visibility: true,
-                    name: "BDU:Parcelle_2020",
+                    name: "CIRB_URBIS:Parcelle_2020",
                     title: "Parcelle",
                     group: "brugis",
                     origin: [140000.0, 160000.0],
