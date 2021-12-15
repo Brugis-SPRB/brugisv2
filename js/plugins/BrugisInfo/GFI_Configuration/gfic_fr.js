@@ -40,15 +40,6 @@ const gfiFr = {
 			}
 		]
 	},
-	"BDU:Accessibilite": {
-		"actiontype": "GRID",
-		"title": "Accessibilité: [%ZONE%]",
-		"attributes": [{
-			"name": "Type de zone",
-			"label": "[%ZONE%]",
-			"type": "string"
-		}]
-	},
 	"URBAN_DU:Enseignes": {
 		"actiontype": "GRID",
 		"title": "Enseignes: [%ZONE%]",
@@ -859,7 +850,7 @@ const gfiFr = {
 			}
 		]
 	},
-	"BDU:Parcelle_*": {
+	"CIRB_URBIS:Parcelle_*": {
 		"actiontype": "GRID",
 		"title": "Parcelle 2014: [%CAPAKEY%]",
 		"attributes": [{
@@ -1284,7 +1275,7 @@ const gfiFr = {
 			}
 		]
 	},
-	"BDU:Quartiers_a_loyers_majores": {
+	"SPRB_BL:Quartiers_a_loyers_majores": {
 		"actiontype": "GRID",
 		"title": "Quartier n°[%MDRC%] - [%NAME_FR%]",
 		"attributes": [{
@@ -1501,7 +1492,7 @@ const gfiFr = {
 			}
 		]
 	},
-	"BDU:Reglements_*": {
+	"URBAN_DU:Reglements_*": {
 		"actiontype": "GRID",
 		"title": "[%REFNOVA%]",
 		"attributes": [{

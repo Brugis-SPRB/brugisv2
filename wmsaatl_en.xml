@@ -1268,7 +1268,7 @@
                 <Name>Brussels-Pentagone: Breweries</Name>
                 <Title>Brussels-Pentagone: Breweries</Title>
                 <Layer noSubsets="0" opaque="0" queryable="1">
-                  <Name>BDU_DMS_ARCH:Brasseries_localisées_sans_plan</Name>
+                  <Name>URBAN_DPC_PA:Brasseries_localisées_sans_plan</Name>
                   <Title>Breweries localized without plan</Title>
                   <Abstract/>
                   <KeywordList>
@@ -1283,7 +1283,7 @@
                     <Title>Brasseries sans plan</Title>
                     <LegendURL height="20" width="20">
                       <Format>image/png</Format>
-                      <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=BDU_DMS_ARCH%3ABrasseries_localis%C3%A9es_sans_plan" ns0:type="simple"/>
+                      <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=URBAN_DPC_PA%3ABrasseries_localis%C3%A9es_sans_plan" ns0:type="simple"/>
                     </LegendURL>
                   </Style>
                   <Style>
@@ -1291,12 +1291,12 @@
                     <Title>Brasseries sans plan</Title>
                     <LegendURL height="20" width="20">
                       <Format>image/png</Format>
-                      <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=BDU_DMS_ARCH%3ABrasseries_localis%C3%A9es_sans_plan&amp;style=archeologie_brasseries_sans_plan" ns0:type="simple"/>
+                      <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=URBAN_DPC_PA%3ABrasseries_localis%C3%A9es_sans_plan&amp;style=archeologie_brasseries_sans_plan" ns0:type="simple"/>
                     </LegendURL>
                   </Style>
                 </Layer>
                 <Layer noSubsets="0" opaque="0" queryable="1">
-                  <Name>BDU_DMS_ARCH:Brasseries_localisées_avec_plan</Name>
+                  <Name>URBAN_DPC_PA:Brasseries_localisées_avec_plan</Name>
                   <Title>Breweries localized with plan</Title>
                   <Abstract/>
                   <KeywordList>
@@ -1311,7 +1311,7 @@
                     <Title>Brasseries avec plan</Title>
                     <LegendURL height="20" width="20">
                       <Format>image/png</Format>
-                      <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=BDU_DMS_ARCH%3ABrasseries_localis%C3%A9es_avec_plan" ns0:type="simple"/>
+                      <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=URBAN_DPC_PA%3ABrasseries_localis%C3%A9es_avec_plan" ns0:type="simple"/>
                     </LegendURL>
                   </Style>
                 </Layer>
@@ -1320,7 +1320,7 @@
                 <Name>Brussels-Pentagone: Covenants</Name>
                 <Title>Brussels-Pentagone: Covenants</Title>
                 <Layer noSubsets="0" opaque="0" queryable="1">
-                  <Name>BDU_DMS_ARCH:Couvents_du_16ème_siècle</Name>
+                  <Name>URBAN_DPC_PA:Couvents_du_16ème_siècle</Name>
                   <Title>16th Century Convents</Title>
                   <Abstract/>
                   <KeywordList>
@@ -1335,12 +1335,12 @@
                     <Title>Couvents du 16Ã¨me siÃ¨cle</Title>
                     <LegendURL height="20" width="20">
                       <Format>image/png</Format>
-                      <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=BDU_DMS_ARCH%3ACouvents_du_16%C3%A8me_si%C3%A8cle" ns0:type="simple"/>
+                      <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=URBAN_DPC_PA%3ACouvents_du_16%C3%A8me_si%C3%A8cle" ns0:type="simple"/>
                     </LegendURL>
                   </Style>
                 </Layer>
                 <Layer noSubsets="0" opaque="0" queryable="1">
-                  <Name>BDU_DMS_ARCH:Couvents_du_17ème_siècle</Name>
+                  <Name>URBAN_DPC_PA:Couvents_du_17ème_siècle</Name>
                   <Title>17th century convents</Title>
                   <Abstract/>
                   <KeywordList>
@@ -1355,12 +1355,12 @@
                     <Title>Couvents du 17Ã¨me siÃ¨cle</Title>
                     <LegendURL height="20" width="20">
                       <Format>image/png</Format>
-                      <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=BDU_DMS_ARCH%3ACouvents_du_17%C3%A8me_si%C3%A8cle" ns0:type="simple"/>
+                      <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=URBAN_DPC_PA%3ACouvents_du_17%C3%A8me_si%C3%A8cle" ns0:type="simple"/>
                     </LegendURL>
                   </Style>
                 </Layer>
                 <Layer noSubsets="0" opaque="0" queryable="1">
-                  <Name>BDU_DMS_ARCH:Couvents_vestiges_conservés</Name>
+                  <Name>URBAN_DPC_PA:Couvents_vestiges_conservés</Name>
                   <Title>Convents, existing remains</Title>
                   <Abstract/>
                   <KeywordList>
@@ -1375,12 +1375,12 @@
                     <Title>Couvents vestiges conservÃ©s</Title>
                     <LegendURL height="20" width="20">
                       <Format>image/png</Format>
-                      <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=BDU_DMS_ARCH%3ACouvents_vestiges_conserv%C3%A9s" ns0:type="simple"/>
+                      <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=URBAN_DPC_PA%3ACouvents_vestiges_conserv%C3%A9s" ns0:type="simple"/>
                     </LegendURL>
                   </Style>
                 </Layer>
                 <Layer noSubsets="0" opaque="0" queryable="1">
-                  <Name>BDU_DMS_ARCH:Couvents_du_18ème_siècle</Name>
+                  <Name>URBAN_DPC_PA:Couvents_du_18ème_siècle</Name>
                   <Title>18th century convents</Title>
                   <Abstract/>
                   <KeywordList>
@@ -1395,7 +1395,7 @@
                     <Title>Couvents du 18Ã¨me siÃ¨cle</Title>
                     <LegendURL height="140" width="92">
                       <Format>image/png</Format>
-                      <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=BDU_DMS_ARCH%3ACouvents_du_18%C3%A8me_si%C3%A8cle" ns0:type="simple"/>
+                      <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=URBAN_DPC_PA%3ACouvents_du_18%C3%A8me_si%C3%A8cle" ns0:type="simple"/>
                     </LegendURL>
                   </Style>
                 </Layer>
@@ -1404,7 +1404,7 @@
                 <Name>Brussels-Pentagone: Refuges</Name>
                 <Title>Brussels-Pentagone: Refuges</Title>
                 <Layer noSubsets="0" opaque="0" queryable="1">
-                  <Name>BDU_DMS_ARCH:Refuges_localisés_sans_plan</Name>
+                  <Name>URBAN_DPC_PA:Refuges_localisés_sans_plan</Name>
                   <Title>Refuges localized without plan</Title>
                   <Abstract/>
                   <KeywordList>
@@ -1419,12 +1419,12 @@
                     <Title>Refuge sans plan</Title>
                     <LegendURL height="20" width="20">
                       <Format>image/png</Format>
-                      <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=BDU_DMS_ARCH%3ARefuges_localis%C3%A9s_sans_plan" ns0:type="simple"/>
+                      <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=URBAN_DPC_PA%3ARefuges_localis%C3%A9s_sans_plan" ns0:type="simple"/>
                     </LegendURL>
                   </Style>
                 </Layer>
                 <Layer noSubsets="0" opaque="0" queryable="1">
-                  <Name>BDU_DMS_ARCH:Refuges_localisés_avec_plan</Name>
+                  <Name>URBAN_DPC_PA:Refuges_localisés_avec_plan</Name>
                   <Title>Refuges localized with plan</Title>
                   <Abstract/>
                   <KeywordList>
@@ -1439,7 +1439,7 @@
                     <Title>Refuges localisÃ©s avec plan</Title>
                     <LegendURL height="20" width="20">
                       <Format>image/png</Format>
-                      <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=BDU_DMS_ARCH%3ARefuges_localis%C3%A9s_avec_plan" ns0:type="simple"/>
+                      <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=URBAN_DPC_PA%3ARefuges_localis%C3%A9s_avec_plan" ns0:type="simple"/>
                     </LegendURL>
                   </Style>
                 </Layer>

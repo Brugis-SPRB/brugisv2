@@ -970,7 +970,7 @@
                     <Title>Brouwerijen zonder plan</Title>
                     <LegendURL height="20" width="20">
                       <Format>image/png</Format>
-                      <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=BSO_DML_ARCH%3ABrouwerijen_gelokaliseerd_zonder_plan" ns0:type="simple"/>
+                      <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=URBAN_DCE_AE%3ABrouwerijen_gelokaliseerd_zonder_plan" ns0:type="simple"/>
                     </LegendURL>
                   </Style>
                 </Layer>
@@ -990,7 +990,7 @@
                     <Title>Brasseries avec plan</Title>
                     <LegendURL height="20" width="20">
                       <Format>image/png</Format>
-                      <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=BSO_DML_ARCH%3ABrouwerijen_gelokaliseerd_met_plan" ns0:type="simple"/>
+                      <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=URBAN_DCE_AE%3ABrouwerijen_gelokaliseerd_met_plan" ns0:type="simple"/>
                     </LegendURL>
                   </Style>
                 </Layer>
@@ -1014,7 +1014,7 @@
                     <Title>Kloosters van de 16de eeuw</Title>
                     <LegendURL height="20" width="20">
                       <Format>image/png</Format>
-                      <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=BSO_DML_ARCH%3AKloosters_van_de_16de_eeuw" ns0:type="simple"/>
+                      <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=URBAN_DCE_AE%3AKloosters_van_de_16de_eeuw" ns0:type="simple"/>
                     </LegendURL>
                   </Style>
                 </Layer>
@@ -1034,7 +1034,7 @@
                     <Title>Kloosters van de 17de eeuw</Title>
                     <LegendURL height="20" width="20">
                       <Format>image/png</Format>
-                      <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=BSO_DML_ARCH%3AKloosters_van_de_17de_eeuw" ns0:type="simple"/>
+                      <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=URBAN_DCE_AE%3AKloosters_van_de_17de_eeuw" ns0:type="simple"/>
                     </LegendURL>
                   </Style>
                 </Layer>
@@ -1054,7 +1054,7 @@
                     <Title>Kloosters bewaarde resten</Title>
                     <LegendURL height="20" width="20">
                       <Format>image/png</Format>
-                      <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=BSO_DML_ARCH%3AKloosters_bewaarde_resten" ns0:type="simple"/>
+                      <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=URBAN_DCE_AE%3AKloosters_bewaarde_resten" ns0:type="simple"/>
                     </LegendURL>
                   </Style>
                 </Layer>
@@ -1074,7 +1074,7 @@
                     <Title>kloosters van de 18de eeuw</Title>
                     <LegendURL height="140" width="127">
                       <Format>image/png</Format>
-                      <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=BSO_DML_ARCH%3AKloosters_van_de_18de_eeuw" ns0:type="simple"/>
+                      <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=URBAN_DCE_AE%3AKloosters_van_de_18de_eeuw" ns0:type="simple"/>
                     </LegendURL>
                   </Style>
                 </Layer>
@@ -1098,7 +1098,7 @@
                     <Title>Refugiehuizen gelokaliseerd zonder plan</Title>
                     <LegendURL height="20" width="20">
                       <Format>image/png</Format>
-                      <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=BSO_DML_ARCH%3ARefugiehuizen_gelokaliseerd_zonder_plan" ns0:type="simple"/>
+                      <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=URBAN_DCE_AE%3ARefugiehuizen_gelokaliseerd_zonder_plan" ns0:type="simple"/>
                     </LegendURL>
                   </Style>
                 </Layer>
@@ -1118,7 +1118,7 @@
                     <Title>Refugiehuizen gelokaliseerd met plan</Title>
                     <LegendURL height="20" width="20">
                       <Format>image/png</Format>
-                      <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=BSO_DML_ARCH%3ARefugiehuizen_gelokaliseerd_met_plan" ns0:type="simple"/>
+                      <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=URBAN_DCE_AE%3ARefugiehuizen_gelokaliseerd_met_plan" ns0:type="simple"/>
                     </LegendURL>
                   </Style>
                 </Layer>
@@ -1908,7 +1908,7 @@
             <Title>inventaire etat du sol public</Title>
             <LegendURL height="20" width="20">
               <Format>image/png</Format>
-              <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=BDU%3APUBBELB_INVENTAIRE_ETAT_SOL_PUBLIC" ns0:type="simple"/>
+              <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=BE%3APUBBELB_INVENTAIRE_ETAT_SOL_PUBLIC" ns0:type="simple"/>
             </LegendURL>
           </Style>
         </Layer>
@@ -3815,7 +3815,7 @@
             </Style>
           </Layer>
           <Layer queryable="1">
-            <Name>BSO_DSV:URBAN_II</Name>
+            <Name>GOB_BSY:URBAN_II</Name>
             <Title>URBAN II</Title>
             <Abstract />
             <KeywordList>
@@ -4882,7 +4882,7 @@
               <Title>Fonteinen</Title>
               <LegendURL width="20" height="20">
                 <Format>image/png</Format>
-                <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://10.128.81.203:8080/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=BSO_DML_ARCH%3ABAST_FONTEINEN"/>
+                <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://10.128.81.203:8080/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=URBAN_DCE_AE%3ABAST_FONTEINEN"/>
               </LegendURL>
             </Style>
           </Layer>
@@ -4902,7 +4902,7 @@
               <Title>Stedelijke openbare voorzieningen</Title>
               <LegendURL width="20" height="20">
                 <Format>image/png</Format>
-                <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://10.128.81.203:8080/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=BSO_DML_ARCH%3ABAST_STEDELIJKE_OPENBARE_VOORZIENINGEN"/>
+                <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://10.128.81.203:8080/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=URBAN_DCE_AE%3ABAST_STEDELIJKE_OPENBARE_VOORZIENINGEN"/>
               </LegendURL>
             </Style>
           </Layer>
@@ -4922,7 +4922,7 @@
               <Title>Trappen</Title>
               <LegendURL width="20" height="20">
                 <Format>image/png</Format>
-                <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://10.128.81.203:8080/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=BSO_DML_ARCH%3ABAST_TRAPPEN"/>
+                <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://10.128.81.203:8080/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=URBAN_DCE_AE%3ABAST_TRAPPEN"/>
               </LegendURL>
             </Style>
           </Layer>
@@ -4942,7 +4942,7 @@
               <Title>Vestingwerken</Title>
               <LegendURL width="20" height="20">
                 <Format>image/png</Format>
-                <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://10.128.81.203:8080/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=BSO_DML_ARCH%3ABAST_VESTINGWERKEN"/>
+                <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://10.128.81.203:8080/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=URBAN_DCE_AE%3ABAST_VESTINGWERKEN"/>
               </LegendURL>
             </Style>
           </Layer>
@@ -4962,7 +4962,7 @@
               <Title>Waterputten</Title>
               <LegendURL width="20" height="20">
                 <Format>image/png</Format>
-                <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://10.128.81.203:8080/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=BSO_DML_ARCH%3ABAST_WATERPUTTEN"/>
+                <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://10.128.81.203:8080/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=URBAN_DCE_AE%3ABAST_WATERPUTTEN"/>
               </LegendURL>
             </Style>
           </Layer>
@@ -4982,7 +4982,7 @@
               <Title>Private infrastructuren</Title>
               <LegendURL width="20" height="20">
                 <Format>image/png</Format>
-                <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://10.128.81.203:8080/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=BSO_DML_ARCH%3ABAST_PRIVATE_INFRASTRUCTUREN"/>
+                <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://10.128.81.203:8080/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=URBAN_DCE_AE%3ABAST_PRIVATE_INFRASTRUCTUREN"/>
               </LegendURL>
             </Style>
           </Layer>
@@ -5002,7 +5002,7 @@
               <Title>Kunstwerken</Title>
               <LegendURL width="20" height="20">
                 <Format>image/png</Format>
-                <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://10.128.81.203:8080/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=BSO_DML_ARCH%3ABAST_KUNSTWERKEN"/>
+                <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://10.128.81.203:8080/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=URBAN_DCE_AE%3ABAST_KUNSTWERKEN"/>
               </LegendURL>
             </Style>
           </Layer>
@@ -5022,7 +5022,7 @@
               <Title>Hydrografisch netwerk</Title>
               <LegendURL width="20" height="20">
                 <Format>image/png</Format>
-                <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://10.128.81.203:8080/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=BSO_DML_ARCH%3ABAST_HYDROGRAPHISCH_NETWERK"/>
+                <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://10.128.81.203:8080/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=URBAN_DCE_AE%3ABAST_HYDROGRAPHISCH_NETWERK"/>
               </LegendURL>
             </Style>
           </Layer>
@@ -5042,7 +5042,7 @@
               <Title>Gebouwen</Title>
               <LegendURL width="20" height="20">
                 <Format>image/png</Format>
-                <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://10.128.81.203:8080/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=BSO_DML_ARCH%3ABAST_GEBOUWEN"/>
+                <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://10.128.81.203:8080/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=URBAN_DCE_AE%3ABAST_GEBOUWEN"/>
               </LegendURL>
             </Style>
           </Layer>
@@ -5062,7 +5062,7 @@
               <Title>Binnenplaatsen</Title>
               <LegendURL width="20" height="20">
                 <Format>image/png</Format>
-                <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://10.128.81.203:8080/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=BSO_DML_ARCH%3ABAST_BINNENPLAATSEN"/>
+                <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://10.128.81.203:8080/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=URBAN_DCE_AE%3ABAST_BINNENPLAATSEN"/>
               </LegendURL>
             </Style>
           </Layer>
@@ -5082,7 +5082,7 @@
               <Title>Tuinen</Title>
               <LegendURL width="20" height="20">
                 <Format>image/png</Format>
-                <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://10.128.81.203:8080/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=BSO_DML_ARCH%3ABAST_TUINEN"/>
+                <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://10.128.81.203:8080/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=URBAN_DCE_AE%3ABAST_TUINEN"/>
               </LegendURL>
             </Style>
           </Layer>
@@ -5102,7 +5102,7 @@
               <Title>Parken</Title>
               <LegendURL width="20" height="20">
                 <Format>image/png</Format>
-                <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://10.128.81.203:8080/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=BSO_DML_ARCH%3ABAST_PARKEN"/>
+                <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://10.128.81.203:8080/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=URBAN_DCE_AE%3ABAST_PARKEN"/>
               </LegendURL>
             </Style>
           </Layer>
@@ -5122,7 +5122,7 @@
               <Title>Erfdienstbaarheden</Title>
               <LegendURL width="20" height="20">
                 <Format>image/png</Format>
-                <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://10.128.81.203:8080/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=BSO_DML_ARCH%3ABAST_ERFDIENSTBAARHEDEN"/>
+                <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://10.128.81.203:8080/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=URBAN_DCE_AE%3ABAST_ERFDIENSTBAARHEDEN"/>
               </LegendURL>
             </Style>
           </Layer>
@@ -5142,7 +5142,7 @@
               <Title>Openbare wegen</Title>
               <LegendURL width="20" height="20">
                 <Format>image/png</Format>
-                <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://10.128.81.203:8080/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=BSO_DML_ARCH%3ABAST_OPENBARE_WEGEN"/>
+                <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://10.128.81.203:8080/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=URBAN_DCE_AE%3ABAST_OPENBARE_WEGEN"/>
               </LegendURL>
             </Style>
           </Layer>
@@ -5162,7 +5162,7 @@
               <Title>Percelen</Title>
               <LegendURL width="20" height="20">
                 <Format>image/png</Format>
-                <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://10.128.81.203:8080/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=BSO_DML_ARCH%3ABAST_PERCELEN"/>
+                <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://10.128.81.203:8080/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=URBAN_DCE_AE%3ABAST_PERCELEN"/>
               </LegendURL>
             </Style>
           </Layer>

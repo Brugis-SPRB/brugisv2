@@ -47,15 +47,6 @@ const gfiNl = {
 			}
 		]
 	},
-	"BSO:Toegankelijkheid": {
-		"actiontype": "GRID",
-		"title": "Toegankelijkheid: [%ZONE_NL%]",
-		"attributes": [{
-			"name": "Soort zone",
-			"label": "[%ZONE_NL%]",
-			"type": "string"
-		}]
-	},
 	"URBAN_DS:Uithangborden": {
 		"actiontype": "GRID",
 		"title": "Uithangborden: [%ZONE_NL%]",
@@ -1114,7 +1105,7 @@ const gfiNl = {
 			}
 		]
 	},
-	"BSO:Zones_met_verhoogde_huurprijs": {
+	"GOB_BH:Zones_met_verhoogde_huurprijs": {
 		"actiontype": "GRID",
 		"title": "Zone nr [%MDRC%] - [%NAME_NL%]",
 		"attributes": [{
