@@ -21,25 +21,25 @@
     },
     "layers": [{
         	"type": "wms",
-            "url":["http://svappmavw019:8080/geoserver/URBIS/wms"],
+            "url":["http://svappmavw019:8080/geoserver/wms"],
         	"title": "UrbisFR",
-        	"name": "URBIS:urbisFR",
+        	"name": "CIRB_URBIS:urbisFR",
              "group": "background",
             "visibility": true,
         	"format": "image/png"
         },{
         	"type": "wms",
-            "url":["http://svappmavw019:8080/geoserver/URBIS/wms"],
+            "url":["http://svappmavw019:8080/geoserver/wms"],
         	"title": "UrbisNL",
-        	"name": "URBIS:urbisNL",
+        	"name": "CIBG_URBIS:urbisNL",
              "group": "background",
             "visibility": false,
         	"format": "image/png"
         },{
             "type": "vectorTile",
-            "url":["http://svappmavw019:8080/geoserver/URBIS/wms"],
+            "url":["http://svappmavw019:8080/geoserver/wms"],
         	"title": "UrbisNL",
-        	"name": "URBIS:urbisNL",
+        	"name": "CIBG_URBIS:urbisNL",
              "group": "background",
             "visibility": false,
         	"format": "image/png"
