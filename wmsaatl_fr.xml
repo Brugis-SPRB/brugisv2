@@ -5072,7 +5072,7 @@
           </Attribution>
         </Layer>
         <Layer cascaded="1" noSubsets="0" opaque="0" queryable="0">
-          <Name>BDU_DEP:Orthophotoplans_1996</Name>
+          <Name>URBAN_DCC_ER:Orthophotoplans_1996</Name>
           <Title>Orthophotoplans 1996</Title>
           <Abstract />
           <KeywordList />
@@ -5081,7 +5081,7 @@
           <BoundingBox SRS="EPSG:4326" maxx="4.481318" maxy="50.914392" minx="4.242254" miny="50.76416" />
         </Layer>
         <Layer cascaded="1" queryable="0">
-          <Name>BDU_DEP:Orthophotoplans_1987</Name>
+          <Name>URBAN_DCC_ER:Orthophotoplans_1987</Name>
           <Title>Orthophotoplans 1987</Title>
           <Abstract />
           <KeywordList />
@@ -5090,7 +5090,7 @@
           <BoundingBox SRS="EPSG:4326" maxx="50.9218586969616" maxy="4.48125845419357" minx="50.7599823865622" miny="4.23949305273467" />
         </Layer>
         <Layer cascaded="1" queryable="0">
-          <Name>BDU_DEP:Orthophotoplans_1977</Name>
+          <Name>URBAN_DCC_ER:Orthophotoplans_1977</Name>
           <Title>Orthophotoplans 1977</Title>
           <Abstract />
           <KeywordList />
@@ -5099,7 +5099,7 @@
           <BoundingBox SRS="EPSG:4326" maxx="50.9218586969616" maxy="4.48125845419357" minx="50.7599823865622" miny="4.23949305273467" />
         </Layer>
         <Layer cascaded="1" queryable="0">
-          <Name>BDU_DEP:Orthophotoplans_1971</Name>
+          <Name>URBAN_DCC_ER:Orthophotoplans_1971</Name>
           <Title>Orthophotoplans 1971</Title>
           <Abstract />
           <KeywordList />
@@ -5108,7 +5108,7 @@
           <BoundingBox SRS="EPSG:4326" maxx="50.9218586969616" maxy="4.48125845419357" minx="50.7599823865622" miny="4.23949305273467" />
         </Layer>
         <Layer cascaded="1" queryable="0">
-          <Name>BDU_DEP:Orthophotoplans_1961</Name>
+          <Name>URBAN_DCC_ER:Orthophotoplans_1961</Name>
           <Title>Orthophotoplans 1961</Title>
           <Abstract />
           <KeywordList />
@@ -5117,7 +5117,7 @@
           <BoundingBox SRS="EPSG:4326" maxx="50.9218586969616" maxy="4.48125845419357" minx="50.7599823865622" miny="4.23949305273467" />
         </Layer>
         <Layer cascaded="1" queryable="0">
-          <Name>BDU_DEP:Orthophotoplans_1953</Name>
+          <Name>URBAN_DCC_ER:Orthophotoplans_1953</Name>
           <Title>Orthophotoplans 1953</Title>
           <Abstract />
           <KeywordList />
@@ -5126,7 +5126,7 @@
           <BoundingBox SRS="EPSG:4326" maxx="50.9218586621538" maxy="4.49547992326272" minx="50.7599660513373" miny="4.22527159306639" />
         </Layer>
         <Layer cascaded="1" noSubsets="0" opaque="0" queryable="0">
-          <Name>BDU_DEP:Orthophotoplans_1944</Name>
+          <Name>URBAN_DCC_ER:Orthophotoplans_1944</Name>
           <Title>Orthophotoplans 1944</Title>
           <Abstract />
           <KeywordList />
@@ -5135,7 +5135,7 @@
           <BoundingBox SRS="EPSG:4326" maxx="4.481318" maxy="50.914392" minx="4.242254" miny="50.76416" />
         </Layer>
         <Layer cascaded="1" queryable="0">
-          <Name>BDU_DEP:Orthophotoplans_1935</Name>
+          <Name>URBAN_DCC_ER:Orthophotoplans_1935</Name>
           <Title>Orthophotoplans 1930 - 1935</Title>
           <Abstract />
           <KeywordList />
