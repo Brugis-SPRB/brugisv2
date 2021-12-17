@@ -756,7 +756,7 @@
               </Style>
             </Layer>
             <Layer noSubsets="0" opaque="0" queryable="1">
-              <Name>URBAN_DPC_PN:Inventaire_legal_des_sites_et_Quartiers_Leopold</Name>
+              <Name>URBAN_DPC_IPB:Inventaire_legal_des_sites_et_Quartiers_Leopold</Name>
               <Title>Inventaire légal des sites et Quartiers Léopold</Title>
               <Abstract/>
               <KeywordList>
