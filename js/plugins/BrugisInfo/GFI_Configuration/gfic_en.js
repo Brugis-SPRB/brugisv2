@@ -1,7 +1,7 @@
 const gfiEn = {
 	"PERSPECTIVE_FR:Affectations": {
 		"actiontype": "GRID",
-		"title": "Affectation: [%NAME_FR%]",
+		"title": "Affectation: [%NAME_FR%]: [%ENTITY_FR%]",
 		"attributes": [{
 				"name": "Affectation",
 				"label": "[%NAME_FR%]",

@@ -2,7 +2,7 @@
 const gfiNl = {
 	"PERSPECTIVE_NL:Bestemmingen": {
 		"actiontype": "GRID",
-		"title": "[%NAME_NL%]",
+		"title": "[%NAME_NL%]: [%ENTITY_DU%]",
 		"attributes": [{
 				"name": "Bestemmingen",
 				"label": "[%NAME_NL%]",
