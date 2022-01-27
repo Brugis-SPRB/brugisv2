@@ -3,6 +3,14 @@ const news = {
     "locale": "fr-FR",
     "news": [
       {
+        "datestart": "2022-01-29",
+        "dateend": "2022-02-28",
+        "defcon": "5",
+        "title": "Mis à jour de l'infrastructure de publication cartographique de Brugis",
+        "img": 'brugis.png',
+        "message": "Une mise à jour majeure de notre infrastructure de publication a eu lieu. L'usage courant de la plateforme BruGIS ne devrait pas être impacté par ce changement. Néanmoins, les cartes sauvegardées en local dans BruGIS s'en trouveront invalidées. N'hésitez pas à prendre contact avec notre équipe si vous rencontrez des difficultés lors de cette transition."
+      },
+      {
         "datestart": "2021-06-01",
         "dateend": "2021-08-31",
         "defcon": "5",

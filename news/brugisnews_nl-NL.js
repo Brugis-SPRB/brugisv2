@@ -2,6 +2,14 @@ const news = {
     "locale": "nl-NL",
     "news": [
       {
+        "datestart": "2022-01-29",
+        "dateend": "2022-02-28",
+        "defcon": "5",
+        "title": "Update van onze publicatie-infrastructuur Brugis",
+        "img": 'brugis.png',
+        "message": "We voeren een update van onze publicatie-infrastructuur uit. Het huidige gebruik van het BruGIS-platform zal door deze wijziging niet worden beïnvloed. Aarzel niet om contact op te nemen met ons team als u problemen ondervindt tijdens deze overgang."
+      },
+      {
         "datestart": "2021-06-01",
         "dateend": "2021-08-31",
         "defcon": "5",
