@@ -7,7 +7,7 @@ const news = {
         "defcon": "5",
         "title": "Update van onze publicatie-infrastructuur Brugis",
         "img": 'brugis.png',
-        "message": "We voeren een update van onze publicatie-infrastructuur uit. Het huidige gebruik van het BruGIS-platform zal door deze wijziging niet worden beïnvloed. Aarzel niet om contact op te nemen met ons team als u problemen ondervindt tijdens deze overgang."
+        "message": "We voeren een update van onze publicatie-infrastructuur uit. Het huidige gebruik van het BruGIS-platform zal door deze wijziging niet worden beïnvloed. Behalve voor de kaarten die lokaal in BruGIS zijn opgeslagen, deze zullen niet meer bruikbaar zijn en dienen opnieuw opgebouwd en opgeslagen te worden. Aarzel niet om contact op te nemen met ons team als u problemen ondervindt tijdens deze overgang."
       },
       {
         "datestart": "2021-06-01",
