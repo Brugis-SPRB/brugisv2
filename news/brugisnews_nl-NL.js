@@ -2,7 +2,7 @@ const news = {
     "locale": "nl-NL",
     "news": [
       {
-        "datestart": "2022-01-29",
+        "datestart": "2022-01-26",
         "dateend": "2022-02-28",
         "defcon": "5",
         "title": "Update van onze publicatie-infrastructuur Brugis",
