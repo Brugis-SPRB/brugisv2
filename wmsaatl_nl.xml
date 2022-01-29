@@ -1836,7 +1836,7 @@
       <SRS>EPSG:900913</SRS>
       <LatLonBoundingBox maxx="4.49547992326272" maxy="50.9218586969616" minx="4.22527159306639" miny="50.7599660513373" />
       <Layer noSubsets="0" opaque="0" queryable="1">
-        <Name>SPRB_SPRB_SPRB_SPRB_SPRB_SPRB_SPRB_SPRB_SPRB_SPRB_SPRB_SPRB_SPRB_SPRB_SPRB_SPRB_SPRB_BEE:Zone_ZEUS</Name>
+        <Name>SPRB_BEE:Zone_ZEUS</Name>
         <Title>Zone ZEUS</Title>
         <Abstract/>
         <KeywordList>
@@ -1864,7 +1864,7 @@
         </Style>
       </Layer>
       <Layer noSubsets="0" opaque="1" queryable="1">
-        <Name>GOB_GOB_GOB_GOB_GOB_GOB_GOB_GOB_GOB_GOB_GOB_GOB_GOB_GOB_GOB_GOB_GOB_BEW:Ontwikkelingszones_2015</Name>
+        <Name>GOB_BEW:Ontwikkelingszones_2015</Name>
         <Title>Ontwikkelingszones 2015</Title>
         <Abstract />
         <KeywordList>
