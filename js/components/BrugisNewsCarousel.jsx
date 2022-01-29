@@ -58,6 +58,9 @@ class BrugisNews extends React.Component {
     renderDate(dateStart) {
         return (
             <span className="newsdate">
+                <span className="year">
+                    {dateStart.toLocaleString(this.props.locale, { year: 'numeric'})}
+                </span>
                 <span className="month">
                     {dateStart.toLocaleString(this.props.locale, { month: 'long'})}
                 </span>
@@ -71,6 +74,9 @@ class BrugisNews extends React.Component {
     renderSimpleDate(dateStart) {
         return (
             <span className="newsdate">
+                <span className="year">
+                    {dateStart.toLocaleString(this.props.locale, { year: 'numeric'})}
+                </span>
                 <span className="month">
                     {dateStart.toLocaleString(this.props.locale, { month: 'long'})}
                 </span>
@@ -102,7 +108,7 @@ class BrugisNews extends React.Component {
                         </Col>
                         <Col md={6}>
                         <h2 >{newsItem.title}</h2>
-                        <h4>{dateStart.toLocaleString(this.props.locale, { month: 'long', day: 'numeric'})}</h4>
+                        <h4>{dateStart.toLocaleString(this.props.locale, { year: 'numeric', month: 'long', day: 'numeric'})}</h4>
                         <p style={{"padding": "10px", "lineHeight": '1em'}}>
                             {newsItem.message}
                         </p>
