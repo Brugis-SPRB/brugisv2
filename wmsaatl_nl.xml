@@ -4159,7 +4159,7 @@
         <Name>2000-2006</Name>
         <Title>2000-2006</Title>
         <Layer queryable="1">
-          <Name>BSO_DSV:URBAN_II</Name>
+          <Name>GOB_BSY:URBAN_II</Name>
           <Title>URBAN II</Title>
           <Abstract />
           <KeywordList>
