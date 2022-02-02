@@ -3,11 +3,11 @@ const news = {
     "news": [
       {
         "datestart": "2022-01-26",
-        "dateend": "2022-02-28",
+        "dateend": "2022-03-28",
         "defcon": "5",
         "title": "Update van onze publicatie-infrastructuur Brugis",
         "img": 'brugis.png',
-        "message": "We voeren een update van onze publicatie-infrastructuur uit. Het huidige gebruik van het BruGIS-platform zal door deze wijziging niet worden beïnvloed. Behalve voor de kaarten die lokaal in BruGIS zijn opgeslagen, deze zullen niet meer bruikbaar zijn en dienen opnieuw opgebouwd en opgeslagen te worden. Aarzel niet om contact op te nemen met ons team als u problemen ondervindt tijdens deze overgang."
+        "message": "We voeren een update van onze publicatie-infrastructuur uit. Het huidige gebruik van het BruGIS-platform zal door deze wijziging niet worden beïnvloed. Behalve voor de kaarten die lokaal in BruGIS zijn opgeslagen, deze zullen niet meer bruikbaar zijn en dienen opnieuw opgebouwd en opgeslagen te worden. Vergeet niet de cache van uw browser te wissen. Aarzel niet om contact op te nemen met ons team als u problemen ondervindt tijdens deze overgang."
       },
       {
         "datestart": "2021-06-01",
