@@ -4513,6 +4513,36 @@
           </Style>
         </Layer>
         <Layer opaque="0" queryable="1">
+          <Name>Urbis:Ortho2020PIR</Name>
+          <Title>Ortho2020 PIR</Title>
+          <Abstract>Ortho 2020</Abstract>
+          <KeywordList>
+            <Keyword>CIRB WMS - Geoserver</Keyword>
+            <Keyword>2020Pyramid_big_5000</Keyword>
+            <Keyword>WCS</Keyword>
+            <Keyword>ImagePyramid</Keyword>
+            <Keyword>2020</Keyword>
+            <Keyword>ortho</Keyword>
+          </KeywordList>
+          <EX_GeographicBoundingBox>
+            <westBoundLongitude>4.211236427697202</westBoundLongitude>
+            <eastBoundLongitude>4.50995172421579</eastBoundLongitude>
+            <southBoundLatitude>50.74116949200095</southBoundLatitude>
+            <northBoundLatitude>50.93005246835225</northBoundLatitude>
+          </EX_GeographicBoundingBox>
+          <BoundingBox CRS="CRS:84" maxx="4.50995172421579" maxy="50.93005246835225" minx="4.211236427697202" miny="50.74116949200095"/>
+          <BoundingBox CRS="EPSG:31370" maxx="161000.0" maxy="180000.0" minx="140000.0" miny="159000.0"/>
+          <Style>
+            <Name>raster</Name>
+            <Title>A boring default style</Title>
+            <Abstract>A sample style for rasters</Abstract>
+            <LegendURL height="20" width="20">
+              <Format>image/png</Format>
+              <OnlineResource ns0:href="http://geoservices-urbis.irisnet.be/geoserver/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Urbis%3AOrtho2020PIR" ns0:type="simple"/>
+            </LegendURL>
+          </Style>
+        </Layer>
+        <Layer opaque="0" queryable="1">
           <Name>Urbis:Ortho2019</Name>
           <Title>Ortho2019</Title>
           <Abstract>Ortho 2019</Abstract>
