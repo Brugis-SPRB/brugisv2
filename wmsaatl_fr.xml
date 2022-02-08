@@ -5199,7 +5199,7 @@
       <Layer noSubsets="0" opaque="0" queryable="1">
         <Name>Cartes historiques</Name>
         <Title>Cartes historiques</Title>
-        <Layer queryable="1">
+        <!--Layer queryable="1">
           <Name>URBAN_DPC_PA:PLAN_BASTENDORFF</Name>
           <Title>Plan Bastendorff vectorisé (1821 - 1832)</Title>
           <Abstract>Layer-Group type layer: URBAN_DPC_PA:PLAN_BASTENDORFF</Abstract>
@@ -5511,7 +5511,7 @@
               </LegendURL>
             </Style>
           </Layer>
-        </Layer>
+        </Layer-->
         <Layer cascaded="0" opaque="0" queryable="0">
           <Name>vandermaelen</Name>
           <Title>Carte de Vandermaelen, 1846-1854 (Cartes topographiques de la Belgique 1/20.000)</Title>

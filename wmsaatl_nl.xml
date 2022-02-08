@@ -4884,7 +4884,7 @@
       <Layer noSubsets="0" opaque="0" queryable="1">
         <Name>Historische kaarten</Name>
         <Title>Historische kaarten</Title>
-        <Layer queryable="1">
+        <!--Layer queryable="1">
           <Name>URBAN_DCE_AE:KAART_BASTENDORFF</Name>
           <Title>Gevectoriseerde Bastendorffkaart (1821 - 1832)</Title>
           <Abstract>Layer-Group type layer: URBAN_DCE_AE:KAART_BASTENDORFF</Abstract>
@@ -5196,7 +5196,7 @@
               </LegendURL>
             </Style>
           </Layer>
-        </Layer>
+        </Layer-->
         <Layer cascaded="0" opaque="0" queryable="0">
           <Name>vandermaelen</Name>
           <Title>Kaart van Vandermaelen, 1846-1854 (Cartes topographiques de la Belgique 1/20.000)</Title>
