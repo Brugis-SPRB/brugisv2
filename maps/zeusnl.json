@@ -3,7 +3,7 @@
    "version" : 2,
    "survey": {
      "host": "https://mbr227.irisnet.be/WebReperage",
-     "geoserver": "https://mybrugis.irisnet.be/geoserver/ows"
+     "geoserver": "https://gis.urban.brussels/geoserver/ows"
    },
   "map": {
     "projection": "EPSG:31370",
@@ -22,9 +22,9 @@
     },
     "layers": [{
           "type": "wms",
-            "url":["https://mybrugis.irisnet.be/geoserver/URBIS/wms"],
+            "url":["https://gis.urban.brussels/geoserver/URBIS/wms"],
           "title": "UrbisNL Gray",
-          "name": "URBIS:urbisNLGray",
+          "name": "CIBG_URBIS:urbisNLGray",
              "group": "background",
             "visibility": true,
             "origin" : [140000.0,160000.0],
@@ -34,9 +34,9 @@
         },{
 
         	"type": "wms",
-            "url":["https://mybrugis.irisnet.be/geoserver/URBIS/wms"],
+            "url":["https://gis.urban.brussels/geoserver/URBIS/wms"],
         	"title": "UrbisNL",
-        	"name": "URBIS:urbisNL",
+        	"name": "CIBG_URBIS:urbisNL",
              "group": "background",
             "visibility": false,
             "tiled" : true,
@@ -45,7 +45,7 @@
         	"format": "image/png8"
         },{
         	"type": "wms",
-            "url":["https://mybrugis.irisnet.be/geoserver/wms"],
+            "url":["https://gis.urban.brussels/geoserver/wms"],
         	"title": "Aquarelle",
         	"name": "BCR:Aquarelle",
             "group": "background",
@@ -57,18 +57,18 @@
         	"format": "image/png8"
         },{
         	"type": "wms",
-            "url":["https://mybrugis.irisnet.be/geoserver/wms"],
+            "url":["https://gis.urban.brussels/geoserver/wms"],
         	"title": "ZEUS",
-        	"name": "BEE:Zone_ZEUS",
+        	"name": "SPRB_BEE:Zone_ZEUS",
             "visibility": true,
             "origin" : [140000.0,160000.0],
             "tiled" : true,
         	"format": "image/png8"
         },{
         	"type": "wms",
-            "url":["https://mybrugis.irisnet.be/geoserver/wms"],
+            "url":["https://gis.urban.brussels/geoserver/wms"],
         	"title": "Ontwikkelingszones 2015",
-        	"name": "BEW:Ontwikkelingszones_2015",
+        	"name": "GOB_BEW:Ontwikkelingszones_2015",
             "visibility": true,
             "origin" : [140000.0,160000.0],
             "tiled" : true,
