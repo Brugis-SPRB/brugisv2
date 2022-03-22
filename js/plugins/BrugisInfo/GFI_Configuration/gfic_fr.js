@@ -1587,8 +1587,7 @@ const gfiFr = {
 				"substutedString": "Cliquez ici."
 		}
 		]
-	}
-	,
+	},
 	"TEST:A40_ARCHEO_CAVES": {
 		"actiontype": "GRID",
 		"title": "[%NAME_SUCCESSION_FR%]",
