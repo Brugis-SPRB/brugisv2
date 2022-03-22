@@ -1482,6 +1482,97 @@ const gfiNl = {
 				"substutedString": "Klik hier."
 		}
 		]
+	},
+	"TEST:A40_ARCHEO_CAVES": {
+		"actiontype": "GRID",
+		"title": "[%NAME_SUCCESSION_NL%]",
+		"attributes": [{
+			"name": "Naam/namen",
+			"label": "[%NAME_SUCCESSION_NL%]",
+			"type": "string"
+		},
+		{
+			"name": "Type en plan",
+			"label": "[%TYPE_PLAN_NL%]",
+			"type": "string"
+		},
+		{
+			"name": "Algemene periodisering",
+			"label": "[%PERIOD%]",
+			"type": "string"
+		},
+		{
+			"name": "Eerste gekende vermelding van het huis",
+			"label": "[%FIRST_KNOWN_MENTION%]",
+			"type": "string"
+		},
+		{
+			"name": "Datum oprichting-start",
+			"label": "[%CREATION_BEGIN%]",
+			"type": "string"
+		},
+		{
+			"name": "Datum oprichting-einde",
+			"label": "[%CREATION_END%]",
+			"type": "string"
+		},
+		{
+			"name": "Verbouwing-start",
+			"label": "[%TRANSFORM_BEGIN%]",
+			"type": "string"
+		},
+		{
+			"name": "Verbouwing-einde",
+			"label": "[%TRANSFORM_END%]",
+			"type": "string"
+		},
+		{
+			"name": "Verdwenen bedekking bewaard door overblijfselen",
+			"label": "[%ANCIENT_COVER_NL%]",
+			"type": "string"
+		},
+		{
+			"name": "Huidige bedekking",
+			"label": "[%CURRENT_COVER_NL%]",
+			"type": "string"
+		},
+		{
+			"name": "Uitrusting",
+			"label": "[%EQUIPMENTS_NL%]",
+			"type": "string"
+		},
+		{
+			"name": "Geïdentificeerde functies",
+			"label": "[%IDENTIFIED_FONCTIONS_NL%]",
+			"type": "string"
+		},
+		{
+			"name": "Beschrijving",
+			"label": "[%DESCRIPTION_NL%]",
+			"type": "string"
+		},
+		{
+			"name": "Archeologisch bewijs van voor de kelder",
+			"label": "[%PRE_CELLAR_ELEMENT_NL%]",
+			"type": "string"
+		},
+		{
+			"name": "Foto van het huis",
+			"label": "[%HOUSE_PHOTO%]",
+			"type": "picture"
+		},
+		{
+			"name": "Link",
+			"label": "[%LINK%]",
+			"type": "link",
+			"substutedString": "Clic hier."
+		},
+		{
+			"name": "Bronnen",
+			"label": "[%SOURCES%]",
+			"type": "string"
+		}
+		]
 	}
 };
 module.exports = gfiNl;
