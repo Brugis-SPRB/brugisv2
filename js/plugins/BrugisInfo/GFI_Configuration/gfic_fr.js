@@ -1588,6 +1588,98 @@ const gfiFr = {
 		}
 		]
 	}
+	,
+	"TEST:A40_ARCHEO_CAVES": {
+		"actiontype": "GRID",
+		"title": "[%NAME_SUCCESSION_FR%]",
+		"attributes": [{
+			"name": "Nom(s)",
+			"label": "[%NAME_SUCCESSION_FR%]",
+			"type": "string"
+		},
+		{
+			"name": "Type et plan",
+			"label": "[%TYPE_PLAN_FR%]",
+			"type": "string"
+		},
+		{
+			"name": "Périodisation générale",
+			"label": "[%PERIOD%]",
+			"type": "string"
+		},
+		{
+			"name": "Première mention connue de la maison",
+			"label": "[%FIRST_KNOWN_MENTION%]",
+			"type": "string"
+		},
+		{
+			"name": "Date création-début",
+			"label": "[%CREATION_BEGIN%]",
+			"type": "string"
+		},
+		{
+			"name": "Date création-fin",
+			"label": "[%CREATION_END%]",
+			"type": "string"
+		},
+		{
+			"name": "Transformations-début",
+			"label": "[%TRANSFORM_BEGIN%]",
+			"type": "string"
+		},
+		{
+			"name": "Transformations-fin",
+			"label": "[%TRANSFORM_END%]",
+			"type": "string"
+		},
+		{
+			"name": "Couvrement disparu conservé par des vestiges",
+			"label": "[%ANCIENT_COVER_FR%]",
+			"type": "string"
+		},
+		{
+			"name": "Couvrement actuel",
+			"label": "[%CURRENT_COVER_FR%]",
+			"type": "string"
+		},
+		{
+			"name": "Equipements",
+			"label": "[%EQUIPMENTS_FR%]",
+			"type": "string"
+		},
+		{
+			"name": "Fonctions identifiées",
+			"label": "[%IDENTIFIED_FONCTIONS_FR%]",
+			"type": "string"
+		},
+		{
+			"name": "Description",
+			"label": "[%DESCRIPTION_FR%]",
+			"type": "string"
+		},
+		{
+			"name": "Eléments archéologiques antérieurs à la cave",
+			"label": "[%PRE_CELLAR_ELEMENT_FR%]",
+			"type": "string"
+		},
+		{
+			"name": "Photo",
+			"label": "[%HOUSE_PHOTO%]",
+			"type": "picture"
+		},
+		{
+			"name": "Lien",
+			"label": "[%LINK%]",
+			"type": "link",
+			"substutedString": "Cliquez ici."
+		},
+		{
+			"name": "Sources",
+			"label": "[%SOURCES%]",
+			"type": "string"
+		}
+		]
+	}
 };
 
 module.exports = gfiFr;
