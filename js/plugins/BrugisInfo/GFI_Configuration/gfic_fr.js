@@ -1272,6 +1272,12 @@ const gfiFr = {
 				"name": "Contrat de RU",
 				"label": "[%NAME_FR%]",
 				"type": "string"
+			},
+			{
+					"name": "Lien",
+					"label": "[%URL%]",
+					"type": "link",
+					"substutedString": "Cliquez ici."
 			}
 		]
 	},

@@ -1102,6 +1102,12 @@ const gfiNl = {
 				"name": "SV Contrat",
 				"label": "[%NAME_NL%]",
 				"type": "string"
+			},
+			{
+					"name": "Link",
+					"label": "[%URL%]",
+					"type": "link",
+					"substutedString": "Clic hier."
 			}
 		]
 	},
