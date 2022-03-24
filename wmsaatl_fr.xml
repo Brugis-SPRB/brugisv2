@@ -1965,7 +1965,7 @@
           </Style>
         </Layer>
         <Layer noSubsets="0" opaque="0" queryable="1">
-          <Name>URBAN_DRU:Contrats_de_renovation_urbaine_Projets</Name>
+          <Name>URBAN_DRU:Contrats_de_renovation_urbaine_projets</Name>
           <Title>Contrats de rénovation urbaine (Projets)</Title>
           <Abstract/>
           <KeywordList>
