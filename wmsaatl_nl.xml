@@ -1776,6 +1776,26 @@
           </Style>
         </Layer>
         <Layer noSubsets="0" opaque="0" queryable="1">
+          <Name>URBAN_DSV:Stadsvernieuwingscontracten_Projecten</Name>
+          <Title>Stadsvernieuwingscontracten (Projecten)</Title>
+          <Abstract/>
+          <KeywordList>
+            <Keyword>a50_cru_proj</Keyword>
+            <Keyword>features</Keyword>
+          </KeywordList>
+          <SRS>EPSG:31370</SRS>
+          <LatLonBoundingBox maxx="4.479916592688879" maxy="50.91365373892416" minx="4.24247021276358" miny="50.763393168788134"/>
+          <BoundingBox SRS="EPSG:31370" maxx="165088.0" maxy="185088.0" minx="140000.0" miny="160000.0"/>
+          <Style>
+            <Name>BSO_DSV:Stadsvernieuwingscontracten</Name>
+            <Title>Stadsvernieuwingscontracten</Title>
+            <LegendURL height="20" width="20">
+              <Format>image/png</Format>
+              <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=BSO_DSV%3AStadsvernieuwingscontracten_Programmas" ns0:type="simple"/>
+            </LegendURL>
+          </Style>
+        </Layer>
+        <Layer noSubsets="0" opaque="0" queryable="1">
           <Name>URBAN_DSV:Stadsvernieuwingscontracten_Programmas</Name>
           <Title>Stadsvernieuwingscontracten (Programmas)</Title>
           <Abstract/>
