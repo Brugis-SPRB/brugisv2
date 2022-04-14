@@ -1274,10 +1274,30 @@ const gfiFr = {
 				"type": "string"
 			},
 			{
+					"name": "Phase",
+					"label": "[%PHASE%]",
+					"type": "string"
+			},
+			{
 					"name": "Lien",
 					"label": "[%URL%]",
 					"type": "link",
 					"substutedString": "Cliquez ici."
+			}
+		]
+	},
+	"URBAN_DRU:Contrats_de_renovation_urbaine_projets": {
+		"actiontype": "GRID",
+		"title": "Contrat de rénovation urbaine (Projets): [%NAME_FR%]",
+		"attributes": [{
+				"name": "Contrat de RU",
+				"label": "[%NAME_FR%]",
+				"type": "string"
+			},
+			{
+					"name": "CRU",
+					"label": "[%CRU%]",
+					"type": "string"
 			}
 		]
 	},

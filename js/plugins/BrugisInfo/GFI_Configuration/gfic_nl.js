@@ -1104,10 +1104,30 @@ const gfiNl = {
 				"type": "string"
 			},
 			{
+					"name": "Fase",
+					"label": "[%FASE%]",
+					"type": "string"
+			},
+			{
 					"name": "Link",
 					"label": "[%URL%]",
 					"type": "link",
 					"substutedString": "Clic hier."
+			}
+		]
+	},
+	"URBAN_DSV:Stadsvernieuwingscontracten_Projecten": {
+		"actiontype": "GRID",
+		"title": "Stadsvernieuwingscontracten (Projecten): [%NAME_NL%]",
+		"attributes": [{
+				"name": "Contrat de RU",
+				"label": "[%NAME_NL%]",
+				"type": "string"
+			},
+			{
+					"name": "SVC",
+					"label": "[%SVC%]",
+					"type": "string"
 			}
 		]
 	},
