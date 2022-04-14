@@ -852,7 +852,7 @@ const gfiFr = {
 	},
 	"CIRB_URBIS:Parcelle_*": {
 		"actiontype": "GRID",
-		"title": "Parcelle 2014: [%CAPAKEY%]",
+		"title": "Parcelle: [%CAPAKEY%]",
 		"attributes": [{
 				"name": "APNC_MAPC",
 				"label": "[%APNC_MAPC%]",
