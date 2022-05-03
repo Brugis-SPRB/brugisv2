@@ -1274,15 +1274,15 @@ const gfiFr = {
 				"type": "string"
 			},
 			{
-					"name": "Phase",
-					"label": "[%PHASE%]",
-					"type": "string"
+				"name": "Phase",
+				"label": "[%PHASE%]",
+				"type": "string"
 			},
 			{
-					"name": "Lien",
-					"label": "[%URL%]",
-					"type": "link",
-					"substutedString": "Cliquez ici."
+				"name": "Lien",
+				"label": "[%URL%]",
+				"type": "link",
+				"substutedString": "Cliquez ici."
 			}
 		]
 	},
@@ -1290,14 +1290,24 @@ const gfiFr = {
 		"actiontype": "GRID",
 		"title": "Contrat de rénovation urbaine (Projets): [%NAME_FR%]",
 		"attributes": [{
-				"name": "Contrat de RU",
+				"name": "Nom",
 				"label": "[%NAME_FR%]",
 				"type": "string"
 			},
 			{
-					"name": "CRU",
-					"label": "[%CRU%]",
-					"type": "string"
+				"name": "CRU",
+				"label": "[%CRU%]",
+				"type": "string"
+			},
+			{
+				"name": "Numéro",
+				"label": "[%NUM%]",
+				"type": "string"
+			},
+			{
+				"name": "Porteur",
+				"label": "[%PORTEUR%]",
+				"type": "string"
 			}
 		]
 	},

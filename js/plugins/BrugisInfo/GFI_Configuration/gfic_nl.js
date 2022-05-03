@@ -1104,15 +1104,15 @@ const gfiNl = {
 				"type": "string"
 			},
 			{
-					"name": "Fase",
-					"label": "[%FASE%]",
-					"type": "string"
+				"name": "Fase",
+				"label": "[%FASE%]",
+				"type": "string"
 			},
 			{
-					"name": "Link",
-					"label": "[%URL%]",
-					"type": "link",
-					"substutedString": "Clic hier."
+				"name": "Link",
+				"label": "[%URL%]",
+				"type": "link",
+				"substutedString": "Clic hier."
 			}
 		]
 	},
@@ -1120,14 +1120,24 @@ const gfiNl = {
 		"actiontype": "GRID",
 		"title": "Stadsvernieuwingscontracten (Projecten): [%NAME_NL%]",
 		"attributes": [{
-				"name": "Contrat de RU",
+				"name": "Naam",
 				"label": "[%NAME_NL%]",
 				"type": "string"
 			},
 			{
-					"name": "SVC",
-					"label": "[%SVC%]",
-					"type": "string"
+				"name": "SVC",
+				"label": "[%SVC%]",
+				"type": "string"
+			},
+			{
+				"name": "Nummer",
+				"label": "[%NUM%]",
+				"type": "string"
+			},
+			{
+				"name": "Projectleider",
+				"label": "[%PORTEUR%]",
+				"type": "string"
 			}
 		]
 	},
