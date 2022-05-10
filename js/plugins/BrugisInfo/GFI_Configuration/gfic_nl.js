@@ -1138,6 +1138,16 @@ const gfiNl = {
 				"name": "Projectleider",
 				"label": "[%PORTEUR%]",
 				"type": "string"
+			},
+			{
+				"name": "Subsidie SVC",
+				"label": "[%SUBSIDE_CRU%]€",
+				"type": "string"
+			},
+			{
+				"name": "Totaal geassocieerd bedrag",
+				"label": "[%MONTANT_ASSOCIE_TOTAL%]€",
+				"type": "string"
 			}
 		]
 	},

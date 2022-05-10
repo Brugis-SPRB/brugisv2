@@ -1308,6 +1308,16 @@ const gfiFr = {
 				"name": "Porteur",
 				"label": "[%PORTEUR%]",
 				"type": "string"
+			},
+			{
+				"name": "Subside CRU",
+				"label": "[%SUBSIDE_CRU%]€",
+				"type": "string"
+			},
+			{
+				"name": "Montant associé total",
+				"label": "[%MONTANT_ASSOCIE_TOTAL%]€",
+				"type": "string"
 			}
 		]
 	},
