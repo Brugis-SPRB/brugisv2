@@ -1776,7 +1776,7 @@
           </Style>
         </Layer>
         <Layer noSubsets="0" opaque="0" queryable="1">
-          <Name>URBAN_DSV:Stadsvernieuwingscontracten_Projecten</Name>
+          <Name>URBAN_DSV:Stadsvernieuwingscontracten_projecten</Name>
           <Title>Stadsvernieuwingscontracten (Projecten)</Title>
           <Abstract/>
           <KeywordList>
