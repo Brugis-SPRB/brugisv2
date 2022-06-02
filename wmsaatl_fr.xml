@@ -589,7 +589,7 @@
                 </Style>
               </Layer>
               <Layer noSubsets="0" opaque="0" queryable="1">
-                <Name>URBAN_DPC_PN:SITE_ARCHEOLOGIQUE_CLASSEMENT_ARRETE_DEFINITIF</Name>
+                <Name>URBAN_DPC_PA:SITE_ARCHEOLOGIQUE_CLASSEMENT_ARRETE_DEFINITIF</Name>
                 <Title>Site archéologique - Classement - Arrêté définitif</Title>
                 <Abstract />
                 <KeywordList>
@@ -610,7 +610,7 @@
                 </Style>
               </Layer>
               <Layer noSubsets="0" opaque="0" queryable="1">
-                <Name>URBAN_DPC_PN:SITE_ARCHEOLOGIQUE_CLASSEMENT_OUVERTURE_DE_PROCEDURE</Name>
+                <Name>URBAN_DPC_PA:SITE_ARCHEOLOGIQUE_CLASSEMENT_OUVERTURE_DE_PROCEDURE</Name>
                 <Title>Site archéologique - Classement - Ouverture de procédure</Title>
                 <Abstract />
                 <KeywordList>
@@ -631,7 +631,7 @@
                 </Style>
               </Layer>
               <Layer noSubsets="0" opaque="0" queryable="1">
-                <Name>URBAN_DPC_PN:SITE_ARCHEOLOGIQUE_SAUVEGARDE_ARRETE_DEFINITIF</Name>
+                <Name>URBAN_DPC_PA:SITE_ARCHEOLOGIQUE_SAUVEGARDE_ARRETE_DEFINITIF</Name>
                 <Title>Site archéologique - Sauvegarde - Arrêté définitif</Title>
                 <Abstract />
                 <KeywordList>
@@ -652,7 +652,7 @@
                 </Style>
               </Layer>
               <Layer noSubsets="0" opaque="0" queryable="1">
-                <Name>URBAN_DPC_PN:SITE_ARCHEOLOGIQUE_SAUVEGARDE_OUVERTURE_DE_PROCEDURE</Name>
+                <Name>URBAN_DPC_PA:SITE_ARCHEOLOGIQUE_SAUVEGARDE_OUVERTURE_DE_PROCEDURE</Name>
                 <Title>Site archéologique - Sauvegarde - Ouverture de procédure</Title>
                 <Abstract />
                 <KeywordList>
