@@ -1571,7 +1571,7 @@
             <Name>Publicité</Name>
             <Title>Publicité</Title>
             <Layer queryable="1">
-              <Name>PERSPECTIVE_FR:Espaces_verts</Name>
+              <Name>URBAN_DU:espaces_verts</Name>
               <Title>Espaces verts</Title>
               <Abstract />
               <KeywordList>
@@ -1725,7 +1725,7 @@
               </Style>
             </Layer>
             <Layer queryable="1">
-              <Name>PERSPECTIVE_FR:Espaces_verts</Name>
+              <Name>URBAN_DU:espaces_verts</Name>
               <Title>Espaces verts</Title>
               <Abstract />
               <KeywordList>
@@ -1849,7 +1849,7 @@
             <Name>Accessibilité</Name>
             <Title>Accessibilité</Title>
             <Layer queryable="1">
-              <Name>PERSPECTIVE_FR:Espaces_verts</Name>
+              <Name>URBAN_DU:espaces_verts</Name>
               <Title>Espaces verts</Title>
               <Abstract />
               <KeywordList>
