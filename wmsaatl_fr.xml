@@ -4838,7 +4838,7 @@
             <Abstract>A sample style for rasters</Abstract>
             <LegendURL height="20" width="20">
               <Format>image/png</Format>
-              <OnlineResource ns0:href="http://geoservices-urbis.irisnet.be/geoserver/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=UrbisAdm%3AOrtho2021Eo" xlink:type="simple"/>
+              <OnlineResource ns0:href="http://geoservices-urbis.irisnet.be/geoserver/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=UrbisAdm%3AOrtho2021Eo" ns0:type="simple"/>
             </LegendURL>
           </Style>
         </Layer>
@@ -4868,7 +4868,7 @@
           <Abstract>A sample style for rasters</Abstract>
           <LegendURL height="20" width="20">
             <Format>image/png</Format>
-            <OnlineResource ns0:href="http://geoservices-urbis.irisnet.be/geoserver/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=UrbisAdm%3AOrtho2021Ns" xlink:type="simple"/>
+            <OnlineResource ns0:href="http://geoservices-urbis.irisnet.be/geoserver/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=UrbisAdm%3AOrtho2021Ns" ns0:type="simple"/>
           </LegendURL>
           </Style>
         </Layer>
@@ -4898,7 +4898,7 @@
           <Abstract>A sample style for rasters</Abstract>
           <LegendURL height="20" width="20">
             <Format>image/png</Format>
-            <OnlineResource ns0:href="http://geoservices-urbis.irisnet.be/geoserver/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=UrbisAdm%3AOrtho2021PirEo" xlink:type="simple"/>
+            <OnlineResource ns0:href="http://geoservices-urbis.irisnet.be/geoserver/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=UrbisAdm%3AOrtho2021PirEo" ns0:type="simple"/>
           </LegendURL>
           </Style>
         </Layer>
@@ -4907,6 +4907,7 @@
           <Title>Ortho 2021PirNs</Title>
           <Abstract/>
           <KeywordList>
+            <Keyword>CIRB WMS - Geoserver</Keyword>
             <Keyword>2021PyramidPirNS</Keyword>
             <Keyword>WCS</Keyword>
             <Keyword>ImagePyramid</Keyword>
@@ -4927,7 +4928,7 @@
           <Abstract>A sample style for rasters</Abstract>
           <LegendURL height="20" width="20">
             <Format>image/png</Format>
-            <OnlineResource ns0:href="http://geoservices-urbis.irisnet.be/geoserver/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=UrbisAdm%3AOrtho2021PirNs" xlink:type="simple"/>
+            <OnlineResource ns0:href="http://geoservices-urbis.irisnet.be/geoserver/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=UrbisAdm%3AOrtho2021PirNs" ns0:type="simple"/>
           </LegendURL>
           </Style>
         </Layer>
