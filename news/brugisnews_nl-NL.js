@@ -2,6 +2,14 @@ const news = {
     "locale": "nl-NL",
     "news": [
       {
+        "datestart": "2022-06-24",
+        "dateend": "2022-09-01",
+        "defcon": "5",
+        "title": "Nieuwe orthophotoplannen 2021",
+        "img": 'brugis.png',
+        "message": "De nieuwe orthofotoplannen voor 2021 zijn nu beschikbaar. Deze zijn het resultaat van noord-zuid en oost-west vluchten, in normaal licht en in bijna-infrarood spectrum."
+      },
+      {
         "datestart": "2022-01-26",
         "dateend": "2022-03-28",
         "defcon": "5",

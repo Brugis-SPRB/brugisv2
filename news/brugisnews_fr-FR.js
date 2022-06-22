@@ -3,6 +3,14 @@ const news = {
     "locale": "fr-FR",
     "news": [
       {
+        "datestart": "2022-06-24",
+        "dateend": "2022-09-01",
+        "defcon": "5",
+        "title": "Nouveaux orthophotoplans 2021",
+        "img": 'brugis.png',
+        "message": "Les nouveaux orthophotoplans 2021 sont dorénavant disponibles. Ceux-ci proposent des survols Nord-Sud et Est-Ouest, en lumière normale et en proche infrarouge."
+      },
+      {
         "datestart": "2022-01-26",
         "dateend": "2022-03-28",
         "defcon": "5",
