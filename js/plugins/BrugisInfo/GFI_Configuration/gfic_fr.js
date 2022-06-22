@@ -1290,13 +1290,13 @@ const gfiFr = {
 		"actiontype": "GRID",
 		"title": "Contrat de rénovation urbaine (Projets): [%NAME_FR%]",
 		"attributes": [{
-				"name": "Nom",
-				"label": "[%NAME_FR%]",
+				"name": "CRU",
+				"label": "[%CRU%]",
 				"type": "string"
 			},
 			{
-				"name": "CRU",
-				"label": "[%CRU%]",
+				"name": "Nom",
+				"label": "[%NAME_FR%]",
 				"type": "string"
 			},
 			{

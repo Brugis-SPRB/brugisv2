@@ -1120,13 +1120,13 @@ const gfiNl = {
 		"actiontype": "GRID",
 		"title": "Stadsvernieuwingscontracten (Projecten): [%NAME_NL%]",
 		"attributes": [{
-				"name": "Naam",
-				"label": "[%NAME_NL%]",
+				"name": "SVC",
+				"label": "[%SVC%]",
 				"type": "string"
 			},
 			{
-				"name": "SVC",
-				"label": "[%SVC%]",
+				"name": "Naam",
+				"label": "[%NAME_NL%]",
 				"type": "string"
 			},
 			{
