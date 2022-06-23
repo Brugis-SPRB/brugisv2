@@ -4626,7 +4626,7 @@
 
         <Layer opaque="0" queryable="1">
           <Name>Urbis:Ortho2020</Name>
-          <Title>Ortho2020</Title>
+          <Title>Ortho 2020</Title>
           <Abstract>Ortho 2020</Abstract>
           <KeywordList>
             <Keyword>CIRB WMS - Geoserver</Keyword>
@@ -4686,7 +4686,7 @@
         </Layer>
         <Layer opaque="0" queryable="1">
           <Name>Urbis:Ortho2019</Name>
-          <Title>Ortho2019</Title>
+          <Title>Ortho 2019</Title>
           <Abstract>Ortho 2019</Abstract>
           <KeywordList>
             <Keyword>CIRB WMS - Geoserver</Keyword>
