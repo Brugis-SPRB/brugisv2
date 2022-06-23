@@ -4505,7 +4505,7 @@
 
         <Layer opaque="0" queryable="1">
           <Name>UrbisAdm:Ortho2021Eo</Name>
-          <Title>Ortho 2021Eo</Title>
+          <Title>Ortho 2021 Oost-West</Title>
           <Abstract/>
           <KeywordList>
             <Keyword>CIRB WMS - Geoserver</Keyword>
@@ -4535,7 +4535,7 @@
         </Layer>
         <Layer opaque="0" queryable="1">
           <Name>UrbisAdm:Ortho2021Ns</Name>
-          <Title>Ortho 2021Ns</Title>
+          <Title>Ortho 2021 Noord-Zuid</Title>
           <Abstract/>
           <KeywordList>
             <Keyword>CIRB WMS - Geoserver</Keyword>
@@ -4565,7 +4565,7 @@
         </Layer>
         <Layer opaque="0" queryable="1">
           <Name>UrbisAdm:Ortho2021PirEo</Name>
-          <Title>Ortho 2021PirEo</Title>
+          <Title>Ortho 2021 bijna-infrarood Oost-West</Title>
           <Abstract/>
           <KeywordList>
             <Keyword>CIRB WMS - Geoserver</Keyword>
@@ -4595,7 +4595,7 @@
         </Layer>
         <Layer opaque="0" queryable="1">
           <Name>UrbisAdm:Ortho2021PirNs</Name>
-          <Title>Ortho 2021PirNs</Title>
+          <Title>Ortho 2021 bijna-infrarood Noord-Zuid</Title>
           <Abstract/>
           <KeywordList>
             <Keyword>CIRB WMS - Geoserver</Keyword>
@@ -4656,7 +4656,7 @@
         </Layer>
         <Layer opaque="0" queryable="1">
           <Name>Urbis:Ortho2020PIR</Name>
-          <Title>Ortho2020 PIR</Title>
+          <Title>Ortho 2020 bijna-infrarood</Title>
           <Abstract>Ortho 2020</Abstract>
           <KeywordList>
             <Keyword>CIRB WMS - Geoserver</Keyword>
