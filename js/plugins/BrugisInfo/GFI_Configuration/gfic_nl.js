@@ -1628,7 +1628,8 @@ const gfiNl = {
 				"label": "[%URL_PRIME_IMMO_NL%]",
 				"type": "link",
 				"substutedString": "Clic hier."
-		},{
+		},
+		{
 				"name": "Premiebedrag voor werken, materiaal, ...",
 				"label": "[%URL_PRIME_MAT_NL%]",
 				"type": "link",

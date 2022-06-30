@@ -1733,7 +1733,8 @@ const gfiFr = {
 				"label": "[%URL_PRIME_IMMO_FR%]",
 				"type": "link",
 				"substutedString": "Cliquez ici."
-		},{
+		},
+		{
 				"name": "Prime Travaux & matériel",
 				"label": "[%URL_PRIME_MAT_FR%]",
 				"type": "link",
