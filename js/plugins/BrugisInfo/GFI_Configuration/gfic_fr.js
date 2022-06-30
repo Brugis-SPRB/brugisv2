@@ -1724,6 +1724,28 @@ const gfiFr = {
 			"type": "string"
 		}
 		]
+	},
+	"SPRB_BEE:Zone_de_Developpement_2022": {
+		"actiontype": "GRID",
+		"title": "Zone de Développement 2022",
+		"attributes": [{
+				"name": "Prime Acquisition batiment & terrain",
+				"label": "[%URL_PRIME_IMMO_FR%]",
+				"type": "link",
+				"substutedString": "Cliquez ici."
+		},{
+				"name": "Prime Travaux & matériel",
+				"label": "[%URL_PRIME_MAT_FR%]",
+				"type": "link",
+				"substutedString": "Cliquez ici."
+		},
+		{
+				"name": "Prime à la formation",
+				"label": "[%URL_PRIME_RECO_FR%]",
+				"type": "link",
+				"substutedString": "Cliquez ici."
+		}
+		]
 	}
 };
 

@@ -1619,6 +1619,28 @@ const gfiNl = {
 			"type": "string"
 		}
 		]
+	},
+	"GOB_BEW:Ontwikkelingszones_2022": {
+		"actiontype": "GRID",
+		"title": "Ontwikkelingszones 2022",
+		"attributes": [{
+				"name": "Premiebedrag voor gebouw of grond",
+				"label": "[%URL_PRIME_IMMO_NL%]",
+				"type": "link",
+				"substutedString": "Clic hier."
+		},{
+				"name": "Premiebedrag voor werken, materiaal, ...",
+				"label": "[%URL_PRIME_MAT_NL%]",
+				"type": "link",
+				"substutedString": "Clic hier."
+		},
+		{
+				"name": "Opleidingspremie project voor industriële omschakeling",
+				"label": "[%URL_PRIME_RECO_NL%]",
+				"type": "link",
+				"substutedString": "Clic hier."
+		}
+		]
 	}
 };
 module.exports = gfiNl;
