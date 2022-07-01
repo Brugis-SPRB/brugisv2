@@ -1112,7 +1112,7 @@ const gfiNl = {
 				"name": "Link",
 				"label": "[%URL%]",
 				"type": "link",
-				"substutedString": "Clic hier."
+				"substutedString": "Klik hier"
 			}
 		]
 	},
@@ -1525,7 +1525,7 @@ const gfiNl = {
 				"name": "Link",
 				"label": "[%URL_NL%]",
 				"type": "link",
-				"substutedString": "Klik hier."
+				"substutedString": "Klik hier"
 		}
 		]
 	},
@@ -1611,7 +1611,7 @@ const gfiNl = {
 			"name": "Link",
 			"label": "[%LINK%]",
 			"type": "link",
-			"substutedString": "Clic hier."
+			"substutedString": "Klik hier"
 		},
 		{
 			"name": "Bronnen",
@@ -1627,19 +1627,19 @@ const gfiNl = {
 				"name": "Premiebedrag voor gebouw of grond",
 				"label": "[%URL_PRIME_IMMO_NL%]",
 				"type": "link",
-				"substutedString": "Clic hier."
+				"substutedString": "Klik hier"
 		},
 		{
 				"name": "Premiebedrag voor werken, materiaal, ...",
 				"label": "[%URL_PRIME_MAT_NL%]",
 				"type": "link",
-				"substutedString": "Clic hier."
+				"substutedString": "Klik hier"
 		},
 		{
 				"name": "Opleidingspremie project voor industriële omschakeling",
 				"label": "[%URL_PRIME_RECO_NL%]",
 				"type": "link",
-				"substutedString": "Clic hier."
+				"substutedString": "Klik hier"
 		}
 		]
 	}

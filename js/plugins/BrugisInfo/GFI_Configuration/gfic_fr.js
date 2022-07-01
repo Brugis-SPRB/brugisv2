@@ -1282,7 +1282,7 @@ const gfiFr = {
 				"name": "Lien",
 				"label": "[%URL%]",
 				"type": "link",
-				"substutedString": "Cliquez ici."
+				"substutedString": "Cliquez ici"
 			}
 		]
 	},
@@ -1464,7 +1464,7 @@ const gfiFr = {
 				"name": "Lien",
 				"label": "[%URL_FR%]",
 				"type": "link",
-				"substutedString": "Cliquez ici."
+				"substutedString": "Cliquez ici"
 			}
 		]
 	},
@@ -1630,7 +1630,7 @@ const gfiFr = {
 				"name": "Lien",
 				"label": "[%URL_FR%]",
 				"type": "link",
-				"substutedString": "Cliquez ici."
+				"substutedString": "Cliquez ici"
 		}
 		]
 	},
@@ -1716,7 +1716,7 @@ const gfiFr = {
 			"name": "Lien",
 			"label": "[%LINK%]",
 			"type": "link",
-			"substutedString": "Cliquez ici."
+			"substutedString": "Cliquez ici"
 		},
 		{
 			"name": "Sources",
@@ -1732,19 +1732,19 @@ const gfiFr = {
 				"name": "Prime Acquisition batiment & terrain",
 				"label": "[%URL_PRIME_IMMO_FR%]",
 				"type": "link",
-				"substutedString": "Cliquez ici."
+				"substutedString": "Cliquez ici"
 		},
 		{
 				"name": "Prime Travaux & matériel",
 				"label": "[%URL_PRIME_MAT_FR%]",
 				"type": "link",
-				"substutedString": "Cliquez ici."
+				"substutedString": "Cliquez ici"
 		},
 		{
 				"name": "Prime à la formation",
 				"label": "[%URL_PRIME_RECO_FR%]",
 				"type": "link",
-				"substutedString": "Cliquez ici."
+				"substutedString": "Cliquez ici"
 		}
 		]
 	}
