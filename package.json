@@ -125,7 +125,7 @@
     "leaflet.nontiledlayer": "1.0.7",
     "lodash": "4.16.6",
     "lrucache": "1.0.3",
-    "moment": "2.21.0",
+    "moment": "2.29.4",
     "node-geo-distance": "1.2.0",
     "object-assign": "4.1.1",
     "ogc-schemas": "2.6.1",
