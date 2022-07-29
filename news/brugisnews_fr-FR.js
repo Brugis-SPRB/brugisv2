@@ -3,6 +3,14 @@ const news = {
     "locale": "fr-FR",
     "news": [
       {
+        "datestart": "2022-08-01",
+        "dateend": "2022-09-30",
+        "defcon": "5",
+        "title": "Plans d'aménagement directeur",
+        "img": 'brugis.png',
+        "message": "Les plans d'aménagement directeur (Perspective.brussels) sont dorénavant disponibles."
+      },
+      {
         "datestart": "2022-08-31",
         "dateend": "2022-09-30",
         "defcon": "5",

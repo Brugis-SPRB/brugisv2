@@ -1642,6 +1642,48 @@ const gfiNl = {
 				"substutedString": "Klik hier"
 		}
 		]
+	},
+	"PERSPECTIVE_NL:Richtplannen_van_aanleg": {
+		"actiontype": "GRID",
+		"title": "Richtplan van aanleg [%NAAM_ZONE%]",
+		"attributes": [{
+				"name": "Naam en nummer",
+				"label": "[%NAAM_ZONE%] - [%ID_PAD%]",
+				"type": "string"
+		},
+		{
+				"name": "Status",
+				"label": "[%STATUS%]",
+				"type": "string"
+		},
+		{
+				"name": "Link",
+				"label": "[%URL_NL%]",
+				"type": "link",
+				"substutedString": "Klik hier"
+		},
+		{
+				"name": "Besteldatum",
+				"label": "[%DATE_COMMANDE%]",
+				"type": "string"
+		},
+		{
+				"name": "Goedkeuringsdatum",
+				"label": "[%DATE_APPROBATION%]",
+				"type": "string"
+		},
+		{
+				"name": "Wijzigingsdatum",
+				"label": "[%DATE_MODIFICATION%]",
+				"type": "string"
+		},
+		{
+				"name": "Herroepingsdatum",
+				"label": "[%DATE_ABROGATION%]",
+				"type": "string"
+		}
+		]
 	}
 };
+
 module.exports = gfiNl;

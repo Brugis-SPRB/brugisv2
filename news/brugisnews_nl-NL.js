@@ -2,6 +2,14 @@ const news = {
     "locale": "nl-NL",
     "news": [
       {
+        "datestart": "2022-08-01",
+        "dateend": "2022-09-30",
+        "defcon": "5",
+        "title": "Richtplannen van aanleg",
+        "img": 'brugis.png',
+        "message": "De richtplannen van aanleg (Perspective.brussels) zijn nu beschikbaar."
+      },
+      {
         "datestart": "2022-08-31",
         "dateend": "2022-09-30",
         "defcon": "5",

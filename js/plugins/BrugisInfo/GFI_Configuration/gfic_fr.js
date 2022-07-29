@@ -1747,6 +1747,47 @@ const gfiFr = {
 				"substutedString": "Cliquez ici"
 		}
 		]
+	},
+	"PERSPECTIVE_FR:Plans_d_amenagement_directeur": {
+		"actiontype": "GRID",
+		"title": "Plan d'aménagement directeur [%NOM_ZONE%]",
+		"attributes": [{
+				"name": "Nom et numéro",
+				"label": "[%NOM_ZONE%] - [%ID_PAD%]",
+				"type": "string"
+		},
+		{
+				"name": "Statut",
+				"label": "[%STATUS%]",
+				"type": "string"
+		},
+		{
+				"name": "Lien",
+				"label": "[%URL_FR%]",
+				"type": "link",
+				"substutedString": "Cliquez ici"
+		},
+		{
+				"name": "Date de commande",
+				"label": "[%DATE_COMMANDE%]",
+				"type": "string"
+		},
+		{
+				"name": "Date d'approbation",
+				"label": "[%DATE_APPROBATION%]",
+				"type": "string"
+		},
+		{
+				"name": "Date de modification",
+				"label": "[%DATE_MODIFICATION%]",
+				"type": "string"
+		},
+		{
+				"name": "Date d'abrogation",
+				"label": "[%DATE_ABROGATION%]",
+				"type": "string"
+		}
+		]
 	}
 };
 
