@@ -2073,6 +2073,27 @@
         </Style>
       </Layer>
       <Layer noSubsets="0" opaque="0" queryable="1">
+        <Name>SPRB_BEE:Zones_de_developpement_2022</Name>
+        <Title>Zone de développement 2022</Title>
+        <Abstract />
+        <KeywordList>
+          <Keyword>features</Keyword>
+          <Keyword>E00_ZDEVELOPT2022</Keyword>
+        </KeywordList>
+        <SRS>EPSG:31370</SRS>
+        <LatLonBoundingBox maxx="4.479916592688879" maxy="50.91365373892416" minx="4.24247021276358" miny="50.763393168788134" />
+        <BoundingBox SRS="EPSG:31370" maxx="165088.0" maxy="185088.0" minx="140000.0" miny="160000.0" />
+        <Style>
+          <Name>Zone de développement</Name>
+          <Title>Zone de développement</Title>
+          <Abstract />
+          <LegendURL height="20" width="20">
+            <Format>image/png</Format>
+            <OnlineResource ns0:href="https://mybrugis.irisnet.be/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=Zones_de_developpement_2022" ns0:type="simple" />
+          </LegendURL>
+        </Style>
+      </Layer>
+      <Layer noSubsets="0" opaque="0" queryable="1">
         <Name>SPRB_BEE:Zones_de_developpement_2015</Name>
         <Title>Zone de développement 2015</Title>
         <Abstract />
