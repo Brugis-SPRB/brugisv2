@@ -1,0 +1,85 @@
+{
+	"version": 2,
+	"survey": {
+		"host": "https://mbr227.irisnet.be/WebReperage",
+		"geoserver": "https://gis.urban.brussels/geoserver/ows"
+	},
+	"map": {
+		"projection": "EPSG:31370",
+		"units": "m",
+		"center": {
+			"x": 150000,
+			"y": 170000,
+			"crs": "EPSG:31370"
+		},
+		"zoom": 2,
+		"maxExtent": [
+			10000, 20000,
+			300000, 250000
+		],
+		"mapOptions": {
+			"view": {
+				"resolutions": [49.0, 42.0, 28.0, 21.0, 14.0, 7.0, 5.6, 3.5, 2.8, 2.1, 1.4, 0.7, 0.56, 0.28, 0.14, 0.07, 0.056, 0.035, 0.028, 0.014],
+				"DPI": 90.71428571428571
+			}
+		},
+
+		"layers": [{
+
+			"type": "wms",
+			"url": ["https://gis.urban.brussels/geoserver/wms"],
+			"title": "UrbisFR Gray",
+			"name": "CIRB_URBIS:urbisFRGray",
+			"group": "background",
+			"visibility": true,
+			"origin": [140000.0, 160000.0],
+			"tiled": true,
+			"thumbURL": "assets/img/urbis_gray.PNG",
+			"format": "image/png8"
+		}, {
+
+			"type": "wms",
+			"url": ["https://gis.urban.brussels/geoserver/wms"],
+			"title": "UrbisFR",
+			"name": "CIRB_URBIS:urbisFR",
+			"group": "background",
+			"visibility": false,
+			"format": "image/png8",
+			"origin": [140000.0, 160000.0],
+			"thumbURL": "assets/img/urbis_color.PNG",
+			"tiled": true
+		}, {
+
+			"type": "wms",
+			"url": ["https://gis.urban.brussels/geoserver/wms"],
+			"title": "Aquarelle",
+			"name": "BCR:Aquarelle",
+			"group": "background",
+			"visibility": false,
+			"origin": [140000.0, 160000.0],
+			"tiled": true,
+			"thumbURL": "assets/img/aquarelle.PNG",
+			"format": "image/png8"
+		},{
+        	"type": "wms",
+            "url":["https://gis.urban.brussels/geoserver/wms"],
+        	"title": "ZEUS",
+        	"name": "SPRB_BEE:Zone_ZEUS",
+            "visibility": true,
+            "origin" : [140000.0,160000.0],
+            "tiled" : true,
+        	"format": "image/png8"
+        },{
+        	"type": "wms",
+            "url":["https://gis.urban.brussels/geoserver/wms"],
+        	"title": "Zones de développement 2022",
+        	"name": "SPRB_BEE:Zones_de_developpement_2022",
+            "visibility": true,
+            "origin" : [140000.0,160000.0],
+            "tiled" : true,
+        	"format": "image/png8"
+        }]
+
+
+	}
+}
