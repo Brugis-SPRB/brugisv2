@@ -22,7 +22,7 @@
     },
     "layers": [{
           "type": "wms",
-            "url":["https://gis.urban.brussels/geoserver/URBIS/wms"],
+            "url":["https://gis.urban.brussels/geoserver/wms"],
           "title": "UrbisNL Gray",
           "name": "CIBG_URBIS:urbisNLGray",
              "group": "background",
@@ -34,7 +34,7 @@
         },{
 
         	"type": "wms",
-            "url":["https://gis.urban.brussels/geoserver/URBIS/wms"],
+            "url":["https://gis.urban.brussels/geoserver/wms"],
         	"title": "UrbisNL",
         	"name": "CIBG_URBIS:urbisNL",
              "group": "background",

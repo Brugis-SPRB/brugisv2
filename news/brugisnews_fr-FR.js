@@ -3,6 +3,14 @@ const news = {
     "locale": "fr-FR",
     "news": [
       {
+        "datestart": "2022-08-31",
+        "dateend": "2022-09-30",
+        "defcon": "5",
+        "title": "Nouvelle zone de développement 2022",
+        "img": 'brugis.png',
+        "message": "La nouvelle zone de développement 2022 (Bruxelles Economie et Emploi) est dorénavant disponible."
+      },
+      {
         "datestart": "2022-06-24",
         "dateend": "2022-09-01",
         "defcon": "5",
