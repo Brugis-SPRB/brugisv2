@@ -1883,7 +1883,6 @@
           </LegendURL>
         </Style>
       </Layer>
-      <!--
       <Layer noSubsets="0" opaque="1" queryable="1">
         <Name>GOB_BEW:Ontwikkelingszones_2022</Name>
         <Title>Ontwikkelingszones 2022</Title>
@@ -1905,7 +1904,6 @@
           </LegendURL>
         </Style>
       </Layer>
-      !-->
       <Layer noSubsets="0" opaque="1" queryable="1">
         <Name>GOB_BEW:Ontwikkelingszones_2015</Name>
         <Title>Ontwikkelingszones 2015</Title>

@@ -2072,7 +2072,6 @@
           </LegendURL>
         </Style>
       </Layer>
-      <!--
       <Layer noSubsets="0" opaque="0" queryable="1">
         <Name>SPRB_BEE:Zones_de_developpement_2022</Name>
         <Title>Zone de développement 2022</Title>
@@ -2094,7 +2093,6 @@
           </LegendURL>
         </Style>
       </Layer>
-      !-->
       <Layer noSubsets="0" opaque="0" queryable="1">
         <Name>SPRB_BEE:Zones_de_developpement_2015</Name>
         <Title>Zone de développement 2015</Title>
@@ -4320,7 +4318,7 @@
           </LegendURL>
         </Style>
       </Layer>
-      
+
       <Layer noSubsets="0" opaque="0" queryable="1">
         <Name>PERSPECTIVE_FR:plan_de_qualite_paysagere_et_urbanistique</Name>
         <Title>plan de qualité paysagère et urbanistique</Title>
