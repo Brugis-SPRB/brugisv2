@@ -73,7 +73,7 @@
         	"type": "wms",
             "url":["https://gis.urban.brussels/geoserver/wms"],
         	"title": "Zones de développement 2022",
-        	"name": "SPRB_BEE:Zones_de_developpement_2022",
+        	"name": "SPRB_BEE:Zone_de_Developpement_2022",
             "visibility": true,
             "origin" : [140000.0,160000.0],
             "tiled" : true,
