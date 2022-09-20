@@ -1683,7 +1683,27 @@ const gfiNl = {
 				"type": "string"
 		}
 		]
-	}
+	},
+	"TEST:V_A20_DER_ALC_ZONE": {
+		"actiontype": "GRID",
+		"title": "Test Zones à la carte",
+		"attributes": [{
+			"name": "Titel",
+			"label": "TITEL",
+			"type": "string"
+		},
+		{
+			"name": "Image",
+			"label": "[%F_IMAGE%]",
+			"type": "picture"
+		},
+		{
+			"name": "Bescrijving",
+			"label": "BESCHRIJVING",
+			"type": "string"
+		}
+		]
+		}
 };
 
 module.exports = gfiNl;

@@ -1788,7 +1788,27 @@ const gfiFr = {
 				"type": "string"
 		}
 		]
-	}
+	},
+	"TEST:V_A20_DER_ALC_ZONE": {
+		"actiontype": "GRID",
+		"title": "Test Zones à la carte",
+		"attributes": [{
+			"name": "Titre",
+			"label": "TITRE",
+			"type": "string"
+		},
+		{
+			"name": "Image",
+			"label": "[%F_IMAGE%]",
+			"type": "picture"
+		},
+		{
+			"name": "Description",
+			"label": "DESCRIPTION",
+			"type": "string"
+		}
+		]
+		}
 };
 
 module.exports = gfiFr;
