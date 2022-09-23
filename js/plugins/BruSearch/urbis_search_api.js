@@ -50,6 +50,7 @@ const WFSApi = {
         request: "GetFeature",
         typeName: "CIRB_URBIS:Parcelle_2020",
         outputFormat: "application/json",
+        language: 'fre',
         FILTER: filter
       }, options || {}, defaultOptions);
 
