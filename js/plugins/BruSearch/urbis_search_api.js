@@ -11,7 +11,6 @@ const DEFAULT_URL = '//geoservices.irisnet.be/localization/Rest/Localize/getaddr
 const DEFAUTL_REVERSE_URL = '//nominatim.openstreetmap.org/reverse';
 
 const defaultOptions = {
-    language: '',
     spatialReference: '31370'
 };
 
@@ -23,7 +22,7 @@ const capakeyRegex = "\\d{5}[A-Z]{1}\\d{4}\\/\\d{2}[A-Z]\\d{3}";
  */
 const Api = {
     geocode: function(text, options) {
-        var params = assign({address: text}, options || {}, defaultOptions);
+        var params = assign({address: text, language: ''}, options || {}, defaultOptions);
         var url = urlUtil.format({
             host: DEFAULT_URL,
             query: params
