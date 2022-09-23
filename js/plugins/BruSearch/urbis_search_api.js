@@ -11,7 +11,7 @@ const DEFAULT_URL = '//geoservices.irisnet.be/localization/Rest/Localize/getaddr
 const DEFAUTL_REVERSE_URL = '//nominatim.openstreetmap.org/reverse';
 
 const defaultOptions = {
-    language: '',
+    language: 'fre',
     spatialReference: '31370'
 };
 
