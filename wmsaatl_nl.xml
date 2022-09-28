@@ -4265,6 +4265,132 @@
         </Layer>
       </Layer>
     </Layer>
+
+    <Layer noSubsets="0" opaque="0" queryable="1">
+      <Name>HYDRIA</Name>
+      <Title>HYDRIA</Title>
+      <Layer queryable="1" opaque="0">
+        <Name>HYDRIA:Bezoekkamers</Name>
+        <Title>Bezoekkamers</Title>
+        <Abstract/>
+        <KeywordList>
+          <Keyword>features</Keyword>
+          <Keyword>H00_CHAMBRE_VISITE</Keyword>
+        </KeywordList>
+        <SRS>EPSG:31370</SRS>
+        <LatLonBoundingBox minx="4.258414012092672" miny="50.76981578004035" maxx="4.445973694413634" maxy="50.89165652308647"/>
+        <BoundingBox SRS="EPSG:31370" minx="142310.390625" miny="162180.6875" maxx="155506.8125" maxy="175728.8125"/>
+        <Style>
+          <Title>HYDRIA:visitchambers_nl</Title>
+          <Name>HYDRIA:visitchambers_nl</Name>
+          <LegendURL width="61" height="320">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://10.128.81.203:8080/geoserver/wms?request=GetLegendGraphic&amp;version=1.1.1&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=HYDRIA%3ABezoekkamers"/>
+          </LegendURL>
+        </Style>
+      </Layer>
+      <Layer queryable="1" opaque="0">
+        <Name>HYDRIA:flowbru_stations</Name>
+        <Title>Flowbru stations</Title>
+        <Abstract/>
+        <KeywordList>
+          <Keyword>features</Keyword>
+          <Keyword>H00_STATION_FLOWBRU</Keyword>
+        </KeywordList>
+        <SRS>EPSG:31370</SRS>
+        <LatLonBoundingBox minx="4.25538626683805" miny="50.769509726115174" maxx="4.449496841621072" maxy="50.90994276490512"/>
+        <BoundingBox SRS="EPSG:31370" minx="142100.421875" miny="162146.953125" maxx="155752.4375" maxy="177763.015625"/>
+        <Style>
+          <Title>HYDRIA:flowbrustations_nl</Title>
+          <Name>HYDRIA:flowbrustations_nl</Name>
+          <LegendURL width="134" height="120">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://10.128.81.203:8080/geoserver/wms?request=GetLegendGraphic&amp;version=1.1.1&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=HYDRIA%3Aflowbru_stations"/>
+          </LegendURL>
+        </Style>
+      </Layer>
+      <Layer queryable="1" opaque="0">
+        <Name>HYDRIA:Collectoren</Name>
+        <Title>Collectoren</Title>
+        <Abstract/>
+        <KeywordList>
+          <Keyword>features</Keyword>
+          <Keyword>H00_COLLECTEUR</Keyword>
+        </KeywordList>
+        <SRS>EPSG:31370</SRS>
+        <LatLonBoundingBox minx="4.258386295934802" miny="50.76981592029921" maxx="4.445993666610958" maxy="50.90353851853423"/>
+        <BoundingBox SRS="EPSG:31370" minx="142310.375" miny="162180.703125" maxx="155506.8125" maxy="177050.59375"/>
+        <Style>
+          <Title>HYDRIA:collectors_nl</Title>
+          <Name>HYDRIA:collectors_nl</Name>
+          <LegendURL width="61" height="320">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://10.128.81.203:8080/geoserver/wms?request=GetLegendGraphic&amp;version=1.1.1&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=HYDRIA%3ACollectoren"/>
+          </LegendURL>
+        </Style>
+      </Layer>
+      <Layer queryable="1" opaque="0">
+        <Name>HYDRIA:Pompstations</Name>
+        <Title>Pompstations</Title>
+        <Abstract/>
+        <KeywordList>
+          <Keyword>features</Keyword>
+          <Keyword>H00_STATION_POMPAGE</Keyword>
+        </KeywordList>
+        <SRS>EPSG:31370</SRS>
+        <LatLonBoundingBox minx="4.315076962461065" miny="50.78392143357209" maxx="4.329833779100018" maxy="50.8321924989285"/>
+        <BoundingBox SRS="EPSG:31370" minx="146292.484375" miny="163745.484375" maxx="147329.375" maxy="169114.515625"/>
+        <Style>
+          <Title>HYDRIA:pumpstations_nl</Title>
+          <Name>HYDRIA:pumpstations_nl</Name>
+          <LegendURL width="109" height="60">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://10.128.81.203:8080/geoserver/wms?request=GetLegendGraphic&amp;version=1.1.1&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=HYDRIA%3APompstations"/>
+          </LegendURL>
+        </Style>
+      </Layer>
+      <Layer queryable="1" opaque="0">
+        <Name>HYDRIA:Stormbekkens</Name>
+        <Title>Stormbekkens</Title>
+        <Abstract/>
+        <KeywordList>
+          <Keyword>features</Keyword>
+          <Keyword>H00_BASSIN_ORAGE</Keyword>
+        </KeywordList>
+        <SRS>EPSG:31370</SRS>
+        <LatLonBoundingBox minx="4.310536191648506" miny="50.80648572733222" maxx="4.426947352682584" maxy="50.84801801053144"/>
+        <BoundingBox SRS="EPSG:31370" minx="145973.9375" miny="166255.9375" maxx="154172.0625" maxy="170874.296875"/>
+        <Style>
+          <Title>HYDRIA:stormbasins_nl</Title>
+          <Name>HYDRIA:stormbasins_nl</Name>
+          <LegendURL width="112" height="100">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://10.128.81.203:8080/geoserver/wms?request=GetLegendGraphic&amp;version=1.1.1&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=HYDRIA%3AStormbekkens"/>
+          </LegendURL>
+        </Style>
+      </Layer>
+      <Layer queryable="1" opaque="0">
+        <Name>HYDRIA:RWZI</Name>
+        <Title>RWZI</Title>
+        <Abstract/>
+        <KeywordList>
+          <Keyword>features</Keyword>
+          <Keyword>H00_RWZI_STEP</Keyword>
+        </KeywordList>
+        <SRS>EPSG:31370</SRS>
+        <LatLonBoundingBox minx="4.305589730744143" miny="50.80917368799326" maxx="4.412220676508454" maxy="50.90712410563865"/>
+        <BoundingBox SRS="EPSG:31370" minx="145631.03125" miny="166555.03125" maxx="153130.953125" maxy="177449.390625"/>
+        <Style>
+          <Title>HYDRIA:rwzi_step_nl</Title>
+          <Name>HYDRIA:rwzi_step_nl</Name>
+          <LegendURL width="103" height="40">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://10.128.81.203:8080/geoserver/wms?request=GetLegendGraphic&amp;version=1.1.1&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=HYDRIA%3ARWZI"/>
+          </LegendURL>
+        </Style>
+      </Layer>
+    </Layer>
+
     <Layer>
       <Title>Basiskaart</Title>
       <Abstract>A compliant implementation of WMS plus most of the SLD extension (dynamic styling). Can also generate PDF, SVG, KML, GeoRSS</Abstract>
