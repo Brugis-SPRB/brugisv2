@@ -4575,8 +4575,8 @@
     </Layer>
 
     <Layer noSubsets="0" opaque="0" queryable="1">
-      <Name>HYDRIA</Name>
-      <Title>HYDRIA</Title>
+      <Name>Hydria</Name>
+      <Title>Hydria</Title>
       <Layer queryable="1" opaque="0">
         <Name>HYDRIA:Chambres_de_visite</Name>
         <Title>Chambres de visite</Title>
