@@ -24,7 +24,7 @@ class BestEffort extends React.Component {
         return (
             <div id={this.props.id} style={this.props.style}>
                 <label style={{ verticalAlign: 'middle'}}>
-                  <a href="http://urban.brussels">
+                  <a href="https://urban.brussels">
                     <img style={{ height: '30px', padding: '3px', paddingLeft: '10px', paddingRight: '10px', marginRight: '10px', backgroundColor: '#345d6f'}} src={uBrugisLogo} responsive/>
                   </a>
                   <Message style={{ verticalAlign: 'super'}} msgId="best-effort" />
