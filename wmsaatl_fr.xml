@@ -4921,6 +4921,24 @@
               </LegendURL>
             </Style>
           </Layer>
+          <Layer queryable="1">
+            <Name>URBAN_DPC_PA:PLAN_BASTENDORFF</Name>
+            <Title>Plan Bastendorff vectorisé (1821 - 1832)</Title>
+            <Abstract/>
+            <KeywordList/>
+            <SRS>EPSG:31370</SRS>
+            <LatLonBoundingBox minx="4.3382250639538675" miny="50.83285347922943" maxx="4.3699160397457835" maxy="50.858244716326226"/>
+            <BoundingBox SRS="EPSG:31370" minx="147850.614622198" miny="169159.683897055" maxx="150081.93000361" maxy="171983.802854065"/>
+            <Style>
+              <Name>default-style-URBAN_DPC_PA:PLAN_BASTENDORFF</Name>
+              <Title>URBAN_DPC_PA:PLAN_BASTENDORFF style</Title>
+              <Abstract>Default style for URBAN_DPC_PA:PLAN_BASTENDORFF layer</Abstract>
+              <LegendURL width="20" height="20">
+                <Format>image/png</Format>
+                <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://10.128.81.203:8080/geoserver/wms?request=GetLegendGraphic&amp;version=1.1.1&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=URBAN_DPC_PA%3APLAN_BASTENDORFF"/>
+              </LegendURL>
+            </Style>
+          </Layer>
           <Layer cascaded="0" opaque="0" queryable="0">
             <Name>ferraris</Name>
             <Title>Carte de Ferraris, 1777 (Kabinetskaart der Oostenrijkse Nederlanden en het Prinsbisdom Luik)</Title>
