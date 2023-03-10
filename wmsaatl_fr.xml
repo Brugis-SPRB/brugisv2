@@ -4921,6 +4921,28 @@
               </LegendURL>
             </Style>
           </Layer>
+          <Layer queryable="1" opaque="0">
+            <Name>URBAN_DPC_PA:Huvenne_1858</Name>
+            <Title>Carte topographique et hypsométrique de Bruxelles et ses environs - Huvenne, 1858</Title>
+            <Abstract/>
+            <KeywordList>
+              <Keyword>IGN_Huvenne_1858</Keyword>
+              <Keyword>WCS</Keyword>
+              <Keyword>GeoTIFF</Keyword>
+            </KeywordList>
+            <SRS>EPSG:31370</SRS>
+            <LatLonBoundingBox minx="4.229738056879354" miny="50.78469992296144" maxx="4.46726993855489" maxy="50.899844478435405"/>
+            <BoundingBox SRS="EPSG:31370" minx="140309.68823493095" miny="163840.42669731737" maxx="157019.55156741117" maxy="176640.6752602577"/>
+            <Style>
+              <Title>Opaque Raster</Title>
+              <Abstract>A sample style that draws a raster, good for displaying imagery</Abstract>
+              <Name>raster</Name>
+              <LegendURL width="20" height="20">
+                <Format>image/png</Format>
+                <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://10.128.81.203:8080/geoserver/wms?request=GetLegendGraphic&amp;version=1.1.1&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=URBAN_DPC_PA%3AHuvenne_1858"/>
+              </LegendURL>
+            </Style>
+          </Layer>          
           <Layer queryable="1">
             <Name>URBAN_DPC_PA:PLAN_BASTENDORFF</Name>
             <Title>Plan Bastendorff vectorisé (1821 - 1832)</Title>
