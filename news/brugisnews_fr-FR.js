@@ -3,6 +3,22 @@ const news = {
     "locale": "fr-FR",
     "news": [
       {
+        "datestart": "2023-03-10",
+        "dateend": "2023-06-01",
+        "defcon": "5",
+        "title": "Changement des données cadastrales",
+        "img": 'brugis.png',
+        "message": "Les Données cadastrales (parcelles et bâti) sont dorénavant mises à jour en continu à partir de la source Urbis."
+      },
+      {
+        "datestart": "2023-03-10",
+        "dateend": "2023-06-01",
+        "defcon": "5",
+        "title": "Plans Bastendorff et Huvenne disponibles",
+        "img": 'brugis.png',
+        "message": "Les plans Bastendorff vectorisé et Huvenne scanné sont dorénavant disponibles dans les cartes historiques."
+      },
+      {
         "datestart": "2022-08-01",
         "dateend": "2022-09-30",
         "defcon": "5",
