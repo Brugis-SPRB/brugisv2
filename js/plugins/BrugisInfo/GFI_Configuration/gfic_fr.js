@@ -1808,7 +1808,33 @@ const gfiFr = {
 			"type": "string"
 		}
 		]
-		}
+	},
+	"URBAN_DPC_PN:Inventaire_legal_des_sites": {
+		"actiontype": "GRID",
+		"title": "Inventaire légal des sites: [%NAME_FR%]",
+		"attributes": [
+			{
+				"name": "Dénomination",
+				"label": "[%NAME_FR%]",
+				"type": "string"
+			},
+			{
+				"name": "Date de décision",
+				"label": "[%DECISION_DATE%]",
+				"type": "date"
+			},
+			{
+				"name": "Lien",
+				"label": "https://sites.heritage.brussels/fr/sites/[%ID_DPC%]",
+				"type": "link"
+			},
+			{
+				"name": "Document",
+				"label": "[%URL_LEGAL_DOC_1995%]",
+				"type": "link"
+			}
+		]
+	}
 };
 
 module.exports = gfiFr;

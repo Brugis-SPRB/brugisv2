@@ -1703,6 +1703,32 @@ const gfiNl = {
 			"type": "string"
 		}
 		]
+		},
+		"URBAN_DCE_NE:Wettelijke_inventaris_van_de_landschappen": {
+			"actiontype": "GRID",
+			"title": "Wettelijke inventaris van de landschappen: [%NAME_NL%]",
+			"attributes": [
+				{
+					"name": "Benaming",
+					"label": "[%NAME_NL%]",
+					"type": "string"
+				},
+				{
+					"name": "Beslissingsdatum",
+					"label": "[%DECISION_DATE%]",
+					"type": "date"
+				},
+				{
+					"name": "Link",
+					"label": "https://sites.heritage.brussels/nl/sites/[%ID_DPC%]",
+					"type": "link"
+				},
+				{
+					"name": "Document",
+					"label": "[%URL_LEGAL_DOC_1995%]",
+					"type": "link"
+				}
+			]
 		}
 };
 
