@@ -46,7 +46,13 @@
       "webservice_else_text_1": "De BruGIS-cel staat tot uw beschikking voor advies over kaarten en geomatica.",
       "webservice_else_text_2": "Gelieve ons te contacteren via onderstaand ",
       "webservice_else_text_3": "formulier",
-      "webservice_else_text_4": " voor al uw vragen."
+      "webservice_else_text_4": " voor al uw vragen.",
+      "context": "Context",
+            "context_text_1": "Een Geografisch InformatieSysteem (GIS) verschaft ruimtelijke informatie en de ermee verband houdende alfanumerieke gegevens.",
+            "context_text_2": "Deze cartografische site betreft het hele grondgebied van het Brussels Hoofdstedelijk Gewest.",
+            "context_text_3": "BruGIS® is een buitengewone, voortdurend geactualiseerde tool voor het beheer van de ruimtelijke ordening. Het biedt alle beschikbare, meest recente stedenbouwkundige gegevens over het Brusselse Gewest.",
+            "context_text_4": "Met de hulp van een zoekmotor kunt u uw adres lokaliseren, uw woning visualiseren op de luchtfoto van Brussel, de bestemming van de gebouwen rondom u ontdekken, de ligging opzoeken van de BBP's, de verkavelingen, de gebieden met archeologisch potentieel, de perimeters waarin u bepaalde premies kunt ontvangen, de beschermde landschappen, ...",
+            "context_text_5": "BruGIS® is bestemd voor wie beroepsmatig met ruimtelijke ordening bezig is, zoals stedenbouwkundigen, architecten, notarissen, maar het platform is ook een waardevolle bron van informatie voor gemeentebesturen en voor alle Brusselaars: wie er woont, verblijft, werkt, studeert, ..."
     },
     "best-effort": "Indicatieve kaart - Gerealiseerd door ",
     "brugisSurvey": {

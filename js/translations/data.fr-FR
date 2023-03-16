@@ -46,7 +46,14 @@
       "webservice_else_text_1": "La cellule BruGIS se tient à votre disposition pour tout conseil en matière de cartographie et de géomatique.",
       "webservice_else_text_2": "Veuillez nous contacter via le ",
       "webservice_else_text_3": "formulaire",
-      "webservice_else_text_4": " ci-dessous pour toutes vos questions."
+      "webservice_else_text_4": " ci-dessous pour toutes vos questions.",
+      "context_tooltip": "Contexte",
+            "context": "Contexte",
+            "context_text_1": "Un Système d’Information Géographique (ou GIS en anglais), présente des données spatiales et les informations textuelles qui y sont associées",
+                  "context_text_2": "Ce site cartographique couvre le territoire de la Région de Bruxelles-Capitale.",
+                  "context_text_3": "Formidable outil de gestion de l’aménagement du territoire, actualisé en permanence, BruGIS® présente toutes les données urbanistiques les plus récentes disponibles en Région bruxelloise.",
+                  "context_text_4": "Un moteur de recherche permet de localiser votre adresse, de visualiser votre maison sur la photo aérienne de Bruxelles, de connaître l’affectation des immeubles qui vous entourent, de situer les PPAS, les lotissements, les zones de potentiel archéologique, les périmètres dans lesquels certaines primes sont octroyées, les sites classés",
+                  "context_text_5": "Destiné aux professionnels de l’aménagement du territoire comme les urbanistes, les architectes, les notaires, mais également aux administrations communales, BruGIS® est aussi une source précieuse d’informations pour tous les Bruxellois : habitants, résidents, travailleurs, étudiants …"
     },
     "best-effort": "Carte indicative - Réalisé par ",
     "brugisSurvey": {

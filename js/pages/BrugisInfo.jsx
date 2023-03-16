@@ -19,6 +19,8 @@ import toTopArrow from '../components/img/noun_Arrow_2333167.svg';
 
 const url = require('url');
 const urlQuery = url.parse(window.location.href, true).query;
+const queryString = require('query-string');
+const queryParams = queryString.parse(window.location.href.split('?')[1]);
 
 // Little helpers ...
 // const burl = (name) => `url(../../../brugis/assets/img/${name})`;
@@ -27,6 +29,7 @@ import BrugisBackground from '../../assets/img/BruGIS_Vintage_2000_corr.jpg';
 import Brugis2000 from '../../assets/img/brugis_2000.png';
 import AchterGrond2000 from '../../assets/img/achtergrond_2000_4164.png';
 import VoorGrond2000 from '../../assets/img/voorgrond_2000.png';
+import BrugisContext from "@js/components/BrugisContext";
 
 class BrugisInfo extends React.Component {
     static propTypes = {
@@ -35,7 +38,11 @@ class BrugisInfo extends React.Component {
         match: PropTypes.object,
         loadNews: PropTypes.func,
         locale: PropTypes.string,
-        contentTabStyle: PropTypes.string
+        contentTabStyle: PropTypes.string,
+        urlQuery: PropTypes.object,
+        url: PropTypes.object,
+        localeLoaded: PropTypes.object,
+        panels: PropTypes.object
     };
 
     static contextTypes = {
@@ -48,8 +55,17 @@ class BrugisInfo extends React.Component {
         mode: 'desktop',
         loadNews: () => {},
         locale: 'en-EN',
+        urlQuery: {},
+        url: {},
+        localeLoaded: {value: false},
         contentTabStyle: {
             'min-height': '300px'
+        },
+        panels: {
+            brugisInfoNews: 0,
+            brugisContext: 1,
+            brugisInfoServices: 2,
+            brugisInfoContact: 3
         }
     };
 
@@ -59,6 +75,22 @@ class BrugisInfo extends React.Component {
                 require('../../assets/css/mobile.css');
             }
             this.props.loadNews();
+        }
+
+        if (!this.props.localeLoaded.value && this.props.urlQuery && this.props.urlQuery.lang) {
+            if (this.props.urlQuery.lang) {
+                const {dispatch} = this.props;
+                this.props.localeLoaded.value = true;
+                dispatch(loadLocale(null, this.props.urlQuery.lang))
+            }
+        }
+    }
+
+    componentDidMount() {
+        if (this.props.urlQuery && this.props.urlQuery.panel) {
+            if (this.refs && this.refs.parallax) {
+                this.refs.parallax.scrollTo(this.props.panels[this.props.urlQuery.panel]);
+            }
         }
     }
 
@@ -95,8 +127,9 @@ class BrugisInfo extends React.Component {
                                 fontFamily: 'Montserrat, sans-serif'
                            }}>
                             <div onClick={() => this.refs.parallax.scrollTo(0)} title={this.context.intl.formatMessage({id: 'brugisInfo.main_news_tooltip'})} id="bibNews"><Message msgId="brugisInfo.main_news"/></div>
-                            <div onClick={() => this.refs.parallax.scrollTo(1)} title={this.context.intl.formatMessage({id: 'brugisInfo.main_webservices_tooltip'})} id="bibWS"><Message msgId="brugisInfo.main_webservices"/></div>
-                            <div onClick={() => this.refs.parallax.scrollTo(2)} title={this.context.intl.formatMessage({id: 'brugisInfo.main_contact_tooltip'})} id="bibContact"><Message msgId="brugisInfo.main_contact"/></div>
+                            <div onClick={() => this.refs.parallax.scrollTo(1)} title={this.context.intl.formatMessage({id: 'brugisInfo.context_tooltip'})} id="bibContext"><Message msgId="brugisInfo.context_tooltip"/></div>
+                            <div onClick={() => this.refs.parallax.scrollTo(2)} title={this.context.intl.formatMessage({id: 'brugisInfo.main_webservices_tooltip'})} id="bibWS"><Message msgId="brugisInfo.main_webservices"/></div>
+                            <div onClick={() => this.refs.parallax.scrollTo(3)} title={this.context.intl.formatMessage({id: 'brugisInfo.main_contact_tooltip'})} id="bibContact"><Message msgId="brugisInfo.main_contact"/></div>
                           </div>
 
                           <div style={{ flexGrow: 3}} />
@@ -117,7 +150,7 @@ class BrugisInfo extends React.Component {
                </div>
                <Parallax
                   ref="parallax"
-                  pages={3}
+                pages={4}
                   style={{backgroundImage: "url(" + BrugisBackground + ")", backgroundSize: 'cover'}}
                   effect={(animation, toValue) =>
                      Animated.timing(animation, { toValue, duration: 650})}
@@ -153,17 +186,28 @@ class BrugisInfo extends React.Component {
                         </Grid>
                     </Parallax.Layer>
                     <Parallax.Layer
+                    id="brugisContext"
+                    offset={1.02}
+                    speed={1}
+                    style={styles}
+                    effect={(animation, toValue) =>
+                        Animated.timing(animation, {toValue, duration: 650})}>
+                    <BrugisContext goToBrugis={this.goBrugis.bind(this)} />
+                </Parallax.Layer>
+                <Parallax.Layer
                         id="brugisInfoServices"
-                        offset={1.02}
+                    offset={2.15}
                         speed={1}
                         style={styles}
                         effect={(animation, toValue) =>
                            Animated.timing(animation, { toValue, duration: 650})}>
-                        <InfoDescription scrollToContact={() => {this.refs.parallax.scrollTo(2); }}/>
+                    <InfoDescription scrollToContact={() => {
+                        this.parallax.scrollTo(2);
+                    }}/>
                     </Parallax.Layer>
                     <Parallax.Layer
                         id="brugisInfoContact"
-                        offset={2.15}
+                    offset={3.28}
                         speed={1}
                         style={styles}
                         effect={(animation, toValue) =>
@@ -185,13 +229,15 @@ class BrugisInfo extends React.Component {
     }
 
     scrollToContact() {
-        this.refs.parallax.scrollTo(2);
+        this.refs.parallax.scrollTo(3);
     }
 }
 
 module.exports = connect((state) => ({
     mode: urlQuery.mobile || state.browser && state.browser.mobile ? 'mobile' : 'desktop',
-    locale: state.locale && state.locale.current || "fr-FR"
+        locale: queryParams && queryParams.lang || state.locale && state.locale.current || "fr-FR",
+        urlQuery: queryParams,
+        url: url,
 }),
     {
         loadNews: () => {}
