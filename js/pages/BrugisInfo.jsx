@@ -44,7 +44,8 @@ class BrugisInfo extends React.Component {
         urlQuery: PropTypes.object,
         url: PropTypes.object,
         localeLoaded: PropTypes.object,
-        panels: PropTypes.object
+        panels: PropTypes.object,
+        dispatch: PropTypes.func
     };
 
     static contextTypes = {
@@ -239,7 +240,7 @@ module.exports = connect((state) => ({
     mode: urlQuery.mobile || state.browser && state.browser.mobile ? 'mobile' : 'desktop',
         locale: queryParams && queryParams.lang || state.locale && state.locale.current || "fr-FR",
         urlQuery: queryParams,
-        url: url,
+        url: url
 }),
     {
         loadNews: () => {}
