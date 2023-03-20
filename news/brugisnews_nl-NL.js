@@ -2,6 +2,22 @@ const news = {
     "locale": "nl-NL",
     "news": [
       {
+        "datestart": "2023-03-10",
+        "dateend": "2023-06-01",
+        "defcon": "5",
+        "title": "Wijziging van de kadastrale gegevens",
+        "img": 'brugis.png',
+        "message": "Kadastrale gegevens (percelen en gebouwen) worden nu continu bijgewerkt vanuit de Urbis-bron."
+      },
+      {
+        "datestart": "2023-03-10",
+        "dateend": "2023-06-01",
+        "defcon": "5",
+        "title": "Plannen Bastendorff en Huvenne beschikbaar",
+        "img": 'brugis.png',
+        "message": "Gevectoriseerde Bastendorff- en gescande Huvenne-plannen zijn nu beschikbaar onder de historische kaarten."
+      },
+      {
         "datestart": "2022-08-01",
         "dateend": "2022-09-30",
         "defcon": "5",

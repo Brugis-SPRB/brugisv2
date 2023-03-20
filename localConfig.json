@@ -293,7 +293,22 @@
 								 }
 							 }
 						},"MapFooter","BestEffort","BrugisService",
-            {
+						{
+							 "name":"DrawerMenu",
+							 "cfg":{
+									"glyph":"globe",
+									"buttonStyle":"primary",
+									"buttonClassName":"square-button",
+									"singleSection":true,
+									"menuOptions" : {
+											"resizable" : true,
+											"show" : true,
+											"overlapMap" : true,
+											"width" : 300
+									}
+							 }
+						},
+						{
                 "name" : "BrugisTree",
 								"cfg" : {
 										"serverMappingUrl" : {
@@ -535,7 +550,7 @@
                "cfg":{
                   "className":"square-button"
                }
-           },
+            },
             {
                "name":"BurgerMenu",
                "id": "BurgerMenu"
@@ -548,19 +563,6 @@
                 ]
              },
              {
-                "name":"DrawerMenu",
-                "cfg":{
-                   "glyph":"globe",
-                   "buttonStyle":"primary",
-                   "buttonClassName":"square-button",
-                   "singleSection":true,
-                   "menuOptions" : {
-                       "show" : true,
-                       "overlapMap" : true,
-                       "width" : 300
-                   }
-                }
-             }, {
                  "name":"MeasureArea"
              }, {
                  "name":"MeasureLength"
@@ -622,7 +624,7 @@
 	               "cfg": {
 	                   "formats": [
 	                       {"name": "application/json", "label": "GeoJSON"},
-	                       {"name": "application/x-gpkg", "label": "GeoPackage"},
+	                       {"name": "gpkg", "label": "GeoPackage"},
 	                       {"name": "gml3", "label": "GML3.1"},
 	                     	 {"name": "GML2", "label": "GML2"},
 	                       {"name": "csv", "label": "csv"},
