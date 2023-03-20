@@ -1,3 +1,5 @@
+import {loadLocale} from "../../MapStore2/web/client/actions/locale";
+
 const React = require('react');
 const PropTypes = require('prop-types');
 const {connect} = require('react-redux');
@@ -29,7 +31,7 @@ import BrugisBackground from '../../assets/img/BruGIS_Vintage_2000_corr.jpg';
 import Brugis2000 from '../../assets/img/brugis_2000.png';
 import AchterGrond2000 from '../../assets/img/achtergrond_2000_4164.png';
 import VoorGrond2000 from '../../assets/img/voorgrond_2000.png';
-import BrugisContext from "@js/components/BrugisContext";
+import BrugisContext from "../components/BrugisContext";
 
 class BrugisInfo extends React.Component {
     static propTypes = {
@@ -81,7 +83,7 @@ class BrugisInfo extends React.Component {
             if (this.props.urlQuery.lang) {
                 const {dispatch} = this.props;
                 this.props.localeLoaded.value = true;
-                dispatch(loadLocale(null, this.props.urlQuery.lang))
+                dispatch(loadLocale(null, this.props.urlQuery.lang));
             }
         }
     }

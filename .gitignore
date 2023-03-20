@@ -7,5 +7,7 @@ npm-debug.log
 coverage/
 web/.classpath
 web/.project
+web/overlays
 backend/.classpath
 backend/.project
+.idea/*
