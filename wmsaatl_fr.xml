@@ -1206,6 +1206,26 @@
                 </LegendURL>
               </Style>
             </Layer>
+            <Layer queryable="1" opaque="0">
+              <Name>URBAN_DPC_IPB:INVENTAIRE_ASCENSEURS_DPC</Name>
+              <Title>Inventaire des ascenseurs historiques</Title>
+              <Abstract/>
+              <KeywordList>
+                <Keyword>features</Keyword>
+                <Keyword>PUBA40_INV_ELEVATORS_DMS</Keyword>
+              </KeywordList>
+              <SRS>EPSG:31370</SRS>
+              <LatLonBoundingBox minx="4.294364445717775" miny="50.7976387124022" maxx="4.421019285268835" maxy="50.892368131068295"/>
+              <BoundingBox SRS="EPSG:31370" minx="144766.21875" miny="165244.546875" maxx="153677.328125" maxy="175779.796875"/>
+              <Style>
+                <Title>Elevators</Title>
+                <Name>A40_INV_ELEVATORS_FR</Name>
+                <LegendURL width="318" height="180">
+                  <Format>image/png</Format>
+                  <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://10.128.81.203:8080/geoserver/wms?request=GetLegendGraphic&amp;version=1.1.1&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=URBAN_DPC_IPB%3AINVENTAIRE_ASCENSEURS_DPC"/>
+                </LegendURL>
+              </Style>
+            </Layer>            
           </Layer>
           <Layer noSubsets="0" opaque="0" queryable="1">
             <Name>Patrimoine Naturel</Name>
@@ -4942,7 +4962,7 @@
                 <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://10.128.81.203:8080/geoserver/wms?request=GetLegendGraphic&amp;version=1.1.1&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=URBAN_DPC_PA%3AHuvenne_1858"/>
               </LegendURL>
             </Style>
-          </Layer>          
+          </Layer>
           <Layer queryable="1">
             <Name>URBAN_DPC_PA:PLAN_BASTENDORFF</Name>
             <Title>Plan Bastendorff vectorisé (1821 - 1832)</Title>
